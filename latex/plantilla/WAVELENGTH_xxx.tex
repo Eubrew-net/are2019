@@ -7,131 +7,75 @@
 
 \subsection{Cal-Step determination} \label{subsec:CSN}
 %% General text
-\piccaption{Sun Scan plot example: Ozone \emph{vs} Step Number \label{fig:SC_Example}}
-\parpic[r]{\includegraphics{../xxx_figures/xxx_figures_SC_INDIVIDUAL.eps}}
-The cal-step number (CSN) is calculated according to \texttt{IOS-Note\,\#96.01} using the \textit{sun scan} method.
+The sun scan routine takes direct-sun ozone measurements by moving the micrometer about 15 steps below and above the ozone reference position (wavelength \textit{Calibration step-number}). A Hg test is required before and after the measurement to assure the correct wavelength setting during the \emph{sun scan} test.Ozone \emph{versus} step number ideally shows a parabolic shape with maximum at the ozone reference position. With this choice, small wavelength shifts ($\approx \pm$\ 2 steps) do not affect the ozone value. This optimal micrometer position is a near-linear function of the ozone slant path at the time of the scan, see Figure \ref{fig:xxx_figures_SC_INDIVIDUAL}
 
-The sun scan routine takes direct-sun ozone measurements by moving the micrometer about 15 steps below and above the ozone reference position (wavelength \textit{Calibration step-number}). A Hg test is required before and after the mea\-su\-re\-ment to assure the correct wavelength setting du\-ring the \emph{sun scan} test.\\
-Ozone \emph{versus} step number ideally shows a parabolic shape with maximum at the ozone re\-fe\-ren\-ce position (Figure \ref{fig:SC_Example}). With this choice, small wavelength shifts ($\approx \pm$\ 2 steps) do not a\-ffect the ozone value. 
-This optimal micrometer position is a near-linear function of the ozone slant path at the time of the scan (Figure \ref{fig:Final_SC_Calculation}).
-The final micrometer position is derived using this linear relation at the climatological ozone slant path for a particular station, whose geographic location determines the mean ozone value and the solar zenith angle for the observations. For midlatitude stations a value near 680 is normally used ($340$\ ozone mean value $\times$\ $2.0$\ airmass).
+During the campaign, 13 sun-scan (SC) tests covering a ozone slant path range from 400 to 1100 DU were collected, see Figure \ref{fig:Final_SC_Calculation})). Unfortunately, the SC tests carried out before and during the campaign are not conclusive enough to analyze the CSN. These can be due to problem with SC routine; HG measurements or with the emulator used to run the software. 
+%The calculated Cal-Step Number (CSN) was 3 steps lower (912) as compared with the operational value (915). The same result was obtained from the analysis of the SC tests performed at the instrument's station, before the intercomparison. However, the results suggested that change the CSN gets worse and, hence, it was reversed. A CSN equal to 915 was used in the final calibration. Note that we used the midlatitude ozone slant path value 680 DU for the optimization. 
 
-Only sun-scans satisfying the following criteria are selected:
-\begin{enumerate}[itemsep=0cm]
-	\item HG step before and after the test $<$\ 1step
-	\item Residual of the parabola fit $<$\ 25
-	\item Neutral density filter $>$\ 0
-\end{enumerate}
-
-
-%% Instrument especific
-Sun-scan tests were performed to derive the ozone cal-step position, covering an ozone slant path range from 400 to 1200 DU (\textbf{\numSCnew}\ good observations). An example is given in Figure \ref{fig:SC_Example}.
-
-Due to communications problems the sun-scan tests performed at the station  before the campaign were not reliable. The problem was solved with a new serial to usb converter (operative from day 201). The instrument performance was normal after that. Sun-scan tests were performed during days 205 and 207 to derive the ozone cal-step position, covering an ozone slant path range from 400 to 1200 DU (\textbf{\numSCnew}\ good observations). An example is given in Figure \ref{fig:SC_Example}.
-
-
-%% OSC SATELLITE derived 
-%% No change
-For the optimization we used the mean ozone from \texttt{TOMS} and \texttt{OMI} overpass files and a standard airmass value of 2, giving a climatological ozone slant path of \textbf{\STATIONOSC}\ DU. This results in a cal-step number of \textbf{\CALCSTEP}\ $\pm$ \textbf{\calsteperror}\ step (Figure \ref{fig:_Final_SC_Calculation}).
-
-%% OSC Climatological
-%% No change
-For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the first days of the intercomparison (osc range from 400 DU to 1200 DU, Figure \ref{fig:Final_SC_Calculation_b}) confirmed the operational cal step, 286, the same result obtained from analysis of the SC tests performed at the instrument's station (osc range from 400 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}). The CSN number has not been changed in final configuration.
-
-For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the first days of the intercomparison (osc range from 300 DU to 1200 DU, Figure \ref{fig:Final_SC_Calculation_b}) resulted in a cal-step 2 steps lower than the operational value, the same result obtained from analysis of the SC tests performed at the instrument's station (osc range from 300 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}). The CSN number has not been changed in final configuration.
-
+%UNA FRASE QUE PUEDE AYuDAR
 %% Change
-For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the final days of the intercomparison (Figure \ref{fig:Final_SC_Calculation_b}) resulted in a cal-step number of \textbf{\CALCSTEPnew}\ $\pm$ \textbf{\calsteperrornew}\ steps. Similar result was obtained from analysis of the SC tests performed before the campaign (osc range from 400 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}), suggesting that a change in CSN would be needed. However, as part of IOS maintenance tasks, the CSN number was updated to the new value \textbf{915} on day 20312. This is 2 steps larger than the calculated CSN (913). We suggest to confirm the optimal CSN during the next months.
-
+%For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the final days of the intercomparison (Figure \ref{fig:Final_SC_Calculation_b}) resulted in a cal-step number of \textbf{\CALCSTEPnew}\ $\pm$ \textbf{\calsteperrornew}\ steps. Similar result was obtained from analysis of the SC tests performed before the campaign (osc range from 400 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}), suggesting that a change in CSN would be needed. However, as part of IOS maintenance tasks, the CSN number was updated to the new value \textbf{915} on day 20312. This is 2 steps larger than the calculated CSN (913). We suggest to confirm the optimal CSN during the next months.
 
 \begin{figure}[hbtp!]
 \begin{center}
+		\includegraphics[width=20cm]{./xxx_figures/xxx_figures_SC_INDIVIDUAL_2.eps}
+		\caption{Ozone measurements moving the micrometer 15 step around the operational CSN defined in the initial configuration}
+		\label{fig:xxx_figures_SC_INDIVIDUAL}
+\end{center}
+\end{figure}
 
-\IfFileExists{./xxx_figures/xxx_figures_Final_SC_Calculation_1.eps}
-{% if
-\subfigure[\textsl{Before campaign}]{\label{fig:Final_SC_Calculation_a}\includegraphics{./xxx_figures/xxx_figures_Final_SC_Calculation.eps}}\subfigure[\textsl{Campaign}]{\label{fig:Final_SC_Calculation_b}\includegraphics{./xxx_figures/xxx_figures_Final_SC_Calculation_1.eps}}
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=14cm]{./xxx_figures/xxx_figures_Final_SC_Calculation.eps}
   \caption{Ozone Slant Path \emph{vs} Calc -- Step number. Vertical solid line marks the calculated \emph{Cal Step Number} for a climatological OSC equal to \textbf{\STATIONOSC}\ (horizontal solid line). Blue area represents a 95\% confidence interval}
 \label{fig:Final_SC_Calculation}
-}
-{% else
-\includegraphics{./xxx_figures/xxx_figures_Final_SC_Calculation.eps}
-  \caption{Ozone Slant Path \emph{vs} Calc -- Step number. Vertical solid line marks the calculated \emph{Cal Step Number} for a climatological OSC equal to \textbf{\STATIONOSC}\ (horizontal solid line). Blue area represents a 95\% confidence interval}
-\label{fig:Final_SC_Calculation}
-}
 
 \end{center}
 \end{figure}
 
+\newpage
 \subsection{Dispersion Test} \label{subsec:DSP}
-We analyzed five available dispersion tests in the period 2007 to 2011. For all of them we processed data from Mercury and Cadmium spectral lamps, using quadratic functions to adjust the micrometer step number to wavelength positions.
-We analyzed two dispersion tests: one performed during the last intercomparison campaign (Arenosillo 2009, Cd and Hg spectral lamps) and another one performed during the current intercomparison (Hg, Zn and Cd  spectral lamps). We used quadratic functions to adjust the micrometer step number to wavelength positions.
+We analyzed the dispersion tests carried out in the previous and during this calibration. For all of them, we processed data from Mercury and Cadmium spectral lamps, using quadratic functions to adjust the micrometer step number to wavelength positions.
+The quadratic fitting was good for all the dispersion tests, with residuals being lower than 0.1 \AA\ in all slits, Figures \ref{fig:DSP_QUAD_RES_1}. An absorption coefficient equal to 0.3357 has been update to the final configuration.
+Individual wavelengths resolution, ozone absorption coefficient, sulfur dioxide absorption coefficient and Rayleigh absorption for the operational CSN $\pm$\,1 step are shown in Table \ref{tab:table_QDETAIL1} for the dispersion test performed during the current intercomparison using the UV dome and the internal Hg lamp. 
 
-
-\subsubsection{Ozone}
-%% solo cierto para brewer dobles
-For ozone calibration only the lines shorter than 3400 \AA\ were used. In all cases the results obtained were good, with residuals being less than 0.1 \AA\ on all slits (Figures \ref{fig:DSP_QUAD_RES_1} and \ref{fig:DSP_QUAD_RES_3}. Ozone absorption coefficient appeared to be quite stable since 2009, around 0.3415, but in disagreement with the operational value ($\approx\pm$1 micrometer step, see Table \ref{tab:table_dsp}). We tried this new absorption coefficient ozone value, but then the comparison with the reference instrument got worse. No change is suggested.
-
-%% ... para brewer simples
-The results obtained for both dispersion tests were good, with residuals being lower than 0.1 \AA\ in all slits (Figures \ref{fig:DSP_QUAD_RES} and \ref{fig:DSP_QUAD_RES_1}). The instrument constants are shown in Table \ref{tab:table_dsp}. For the new cal-step number (\textbf{162}) determined the ozone absorption coefficient differs by about 2 micrometer step with respect to current value (see Table \ref{tab:table_QDETAIL1}), so we decided to update the ozone absorption coefficient to this new value, i.e. \textbf{\Adef}.
-
-The quadratic fitting was good for all the dispersion tests, with residuals being lower than 0.1 \AA\ in all slits (just shown 2009 and 2011 results, Figures \ref{fig:DSP_QUAD_RES_2} and \ref{fig:DSP_QUAD_RES_3} respectively). Ozone absorption coefficient appeared to be very stable since 2005 and in agreement with the operational value ($\approx\pm$1 micrometer step, see Table \ref{tab:table_dsp}). No change is suggested.
-
-\begin{table}[htbp!] \centering
+\begin{table}[b] 
+\centering
 		\caption{Dispersion derived constants}
 		\label{tab:table_dsp}
 		\include{table_dsp_xxx}	
 \end{table}
 
-%-----dos-----
-\begin{figure}[htbp!]
-\begin{center}
-		\includegraphics{../xxx_figures/xxx_figures_DSP_QUAD_RES.eps}
-		\caption{\calyearold\ Residuals of quadratic fit}
-		\label{fig:DSP_QUAD_RES}
-\end{center}
-\end{figure}
-
 %-----uno-----
-\begin{figure}[htbp!]
+\begin{figure}[hbtp!]
 \begin{center}
-		\includegraphics{../xxx_figures/xxx_figures_DSP_QUAD_RES_1.eps}
+		\includegraphics[width=19cm]{./xxx_figures/xxx_figures_DSP_QUAD_RES_4.eps}
 		\caption{\calyear\ Residuals of quadratic fit}
 		\label{fig:DSP_QUAD_RES_1}
 \end{center}
 \end{figure}
 
-\clearpage
-Individual wavelengths resolution, ozone absorption coefficient, sulphur dioxide absorption coefficient and 
-Rayleigh absorption for the cal-step number $\pm$\,1 step are shown below (Table \ref{tab:table_QDETAIL} and Table \ref{tab:table_QDETAIL1}) for 2010 and \calyear dispersion tests.
-\vspace{1cm}
-%-----uno-----
-\begin{table}[htbp!] \centering
-		\caption{\calyearold\ Dispersion derived constants}
-		\label{tab:table_QDETAIL}
-		\rowcolors{7}{gray!35}{gray!35}
-		\include{table_QDETAIL_xxx}
-\end{table}
-
-%-----dos-----
-\begin{table}[htbp!] \centering
+\begin{table} 
+\centering
 		\caption{\calyear\ Dispersion derived constants}
 		\label{tab:table_QDETAIL1}
-		\rowcolors{7}{gray!35}{gray!35}
-		\include{table_QDETAIL1_xxx}
+	%	\rowcolors{7}{gray!35}{gray!35}
+		\include{table_QDETAIL2_xxx}
 \end{table}
 
+
 \clearpage
-\subsubsection{Umkehr}
+\subsection{Umkehr}
 For Umkehr calibration only the lines shorter than 3400 \AA\ were used.
 The Umkehr offset is calculated by forcing the wavelength of slit \#4 at the ozone position to be the same as on slit \#1 at the Umkehr setting. The Umkehr offset calculated is \textbf{\UMKoffsetnew}\ . 
 Table \ref{tab:table_umk1} summarizes the dispersion test for umkehr: wavelength, resolution and ozone absorption coefficient.
 \vspace{1cm}
 %---uno---
-\begin{table}[htbp!] \centering
-		\caption{\calyearold\ Umkehr dispersion constants}
-		\label{tab:table_umk}
-		\include{table_UMK_xxx}
-\end{table}
+%\begin{table}[htbp!] \centering
+%		\caption{\calyearold\ Umkehr dispersion constants}
+%		\label{tab:table_umk}
+%		\include{table_UMK_040}
+%\end{table}
 
 %---dos---
 \begin{table}[htbp!] \centering
@@ -140,7 +84,143 @@ Table \ref{tab:table_umk1} summarizes the dispersion test for umkehr: wavelength
 		\include{table_UMK1_xxx}
 \end{table}
 
-%\subsubsection{Ultraviolet}
-%For UV measurements another set of lines, covering the full spectral range were used for the analysis. The dispersion file \texttt{\DCFFILE}\ was calculated with this set detailed on file \texttt{\LFFILE}\.
 
 
+%
+%\piccaption{Sun Scan plot example: Ozone \emph{vs} Step Number \label{fig:SC_Example}}
+%\parpic[r]{\includegraphics{./xxx_figures/xxx_figures_SC_INDIVIDUAL.eps}}
+%The cal-step number (CSN) is calculated according to \texttt{IOS-Note\,\#96.01} using the \textit{sun scan} method.
+%
+%The sun scan routine takes direct-sun ozone measurements by moving the micrometer about 15 steps below and above the ozone reference position (wavelength \textit{Calibration step-number}). A Hg test is required before and after the mea\-su\-re\-ment to assure the correct wavelength setting du\-ring the \emph{sun scan} test.\\
+%Ozone \emph{versus} step number ideally shows a parabolic shape with maximum at the ozone re\-fe\-ren\-ce position (Figure \ref{fig:SC_Example}). With this choice, small wavelength shifts ($\approx \pm$\ 2 steps) do not a\-ffect the ozone value. 
+%This optimal micrometer position is a near-linear function of the ozone slant path at the time of the scan (Figure \ref{fig:Final_SC_Calculation}).
+%The final micrometer position is derived using this linear relation at the climatological ozone slant path for a particular station, whose geographic location determines the mean ozone value and the solar zenith angle for the observations. For midlatitude stations a value near 680 is normally used ($340$\ ozone mean value $\times$\ $2.0$\ airmass).
+%
+%Only sun-scans satisfying the following criteria are selected:
+%\begin{enumerate}[itemsep=0cm]
+	%\item HG step before and after the test $<$\ 1step
+	%\item Residual of the parabola fit $<$\ 25
+	%\item Neutral density filter $>$\ 0
+%\end{enumerate}
+%
+%
+%%% Instrument especific
+%Sun-scan tests were performed to derive the ozone cal-step position, covering an ozone slant path range from 400 to 1200 DU (\textbf{\numSCnew}\ good observations). An example is given in Figure \ref{fig:SC_Example}.
+%
+%Due to communications problems the sun-scan tests performed at the station  before the campaign were not reliable. The problem was solved with a new serial to usb converter (operative from day 201). The instrument performance was normal after that. Sun-scan tests were performed during days 205 and 207 to derive the ozone cal-step position, covering an ozone slant path range from 400 to 1200 DU (\textbf{\numSCnew}\ good observations). An example is given in Figure \ref{fig:SC_Example}.
+%
+%
+%%% OSC SATELLITE derived 
+%%% No change
+%For the optimization we used the mean ozone from \texttt{TOMS} and \texttt{OMI} overpass files and a standard airmass value of 2, giving a climatological ozone slant path of \textbf{\STATIONOSC}\ DU. This results in a cal-step number of \textbf{\CALCSTEP}\ $\pm$ \textbf{\calsteperror}\ step (Figure \ref{fig:_Final_SC_Calculation}).
+%
+%%% OSC Climatological
+%%% No change
+%For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the first days of the intercomparison (osc range from 400 DU to 1200 DU, Figure \ref{fig:Final_SC_Calculation_b}) confirmed the operational cal step, 286, the same result obtained from analysis of the SC tests performed at the instrument's station (osc range from 400 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}). The CSN number has not been changed in final configuration.
+%
+%For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the first days of the intercomparison (osc range from 300 DU to 1200 DU, Figure \ref{fig:Final_SC_Calculation_b}) resulted in a cal-step 2 steps lower than the operational value, the same result obtained from analysis of the SC tests performed at the instrument's station (osc range from 300 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}). The CSN number has not been changed in final configuration.
+%
+%%% Change
+%For the optimization we used the midlatitude ozone slant path value, i.e. \textbf{\STATIONOSC}\ DU. Analysis of the SC tests performed during the final days of the intercomparison (Figure \ref{fig:Final_SC_Calculation_b}) resulted in a cal-step number of \textbf{\CALCSTEPnew}\ $\pm$ \textbf{\calsteperrornew}\ steps. Similar result was obtained from analysis of the SC tests performed before the campaign (osc range from 400 DU to 1000 DU, Figure \ref{fig:Final_SC_Calculation_a}), suggesting that a change in CSN would be needed. However, as part of IOS maintenance tasks, the CSN number was updated to the new value \textbf{915} on day 20312. This is 2 steps larger than the calculated CSN (913). We suggest to confirm the optimal CSN during the next months.
+%
+%
+%\begin{figure}[hbtp!]
+%\begin{center}
+%
+%\IfFileExists{./xxx_figures/xxx_figures_Final_SC_Calculation_1.eps}
+%{% if
+%\subfigure[\textsl{Before campaign}]{\label{fig:Final_SC_Calculation_a}\includegraphics{./xxx_figures/xxx_figures_Final_SC_Calculation.eps}}\subfigure[\textsl{Campaign}]{\label{fig:Final_SC_Calculation_b}\includegraphics{./xxx_figures/xxx_figures_Final_SC_Calculation_1.eps}}
+  %\caption{Ozone Slant Path \emph{vs} Calc -- Step number. Vertical solid line marks the calculated \emph{Cal Step Number} for a climatological OSC equal to \textbf{\STATIONOSC}\ (horizontal solid line). Blue area represents a 95\% confidence interval}
+%\label{fig:Final_SC_Calculation}
+%}
+%{% else
+%\includegraphics{./xxx_figures/xxx_figures_Final_SC_Calculation.eps}
+  %\caption{Ozone Slant Path \emph{vs} Calc -- Step number. Vertical solid line marks the calculated \emph{Cal Step Number} for a climatological OSC equal to \textbf{\STATIONOSC}\ (horizontal solid line). Blue area represents a 95\% confidence interval}
+%\label{fig:Final_SC_Calculation}
+%}
+%
+%\end{center}
+%\end{figure}
+%
+%%\subsection{Dispersion Test} \label{subsec:DSP}
+%We analyzed five available dispersion tests in the period 2007 to 2017. For all of them we processed data from Mercury and Cadmium spectral lamps, using quadratic functions to adjust the micrometer step number to wavelength positions.
+%We analyzed two dispersion tests: one performed during the last intercomparison campaign (Arenosillo 2009, Cd and Hg spectral lamps) and another one performed during the current intercomparison (Hg, Zn and Cd  spectral lamps). We used quadratic functions to adjust the micrometer step number to wavelength positions.
+%
+%
+%\subsubsection{Ozone}
+%%% solo cierto para brewer dobles
+%For ozone calibration only the lines shorter than 3400 \AA\ were used. In all cases the results obtained were good, with residuals being less than 0.1 \AA\ on all slits (Figures \ref{fig:DSP_QUAD_RES_1} and \ref{fig:DSP_QUAD_RES_3}. Ozone absorption coefficient appeared to be quite stable since 2009, around 0.3415, but in disagreement with the operational value ($\approx\pm$1 micrometer step, see Table \ref{tab:table_dsp}). We tried this new absorption coefficient ozone value, but then the comparison with the reference instrument got worse. No change is suggested.
+%
+%%% ... para brewer simples
+%The results obtained for both dispersion tests were good, with residuals being lower than 0.1 \AA\ in all slits (Figures \ref{fig:DSP_QUAD_RES} and \ref{fig:DSP_QUAD_RES_1}). The instrument constants are shown in Table \ref{tab:table_dsp}. For the new cal-step number (\textbf{162}) determined the ozone absorption coefficient differs by about 2 micrometer step with respect to current value (see Table \ref{tab:table_QDETAIL1}), so we decided to update the ozone absorption coefficient to this new value, i.e. \textbf{\Adef}.
+%
+%The quadratic fitting was good for all the dispersion tests, with residuals being lower than 0.1 \AA\ in all slits (just shown 2009 and 2011 results, Figures \ref{fig:DSP_QUAD_RES_2} and \ref{fig:DSP_QUAD_RES_3} respectively). Ozone absorption coefficient appeared to be very stable since 2xxx and in agreement with the operational value ($\approx\pm$1 micrometer step, see Table \ref{tab:table_dsp}). No change is suggested.
+%
+%\begin{table}[htbp!] \centering
+		%\caption{Dispersion derived constants}
+		%\label{tab:table_dsp}
+		%\include{table_dsp_xxx}	
+%\end{table}
+%
+%%-----dos-----
+%\begin{figure}[htbp!]
+%\begin{center}
+		%\includegraphics{./xxx_figures/xxx_figures_DSP_QUAD_RES.eps}
+		%\caption{\calyearold\ Residuals of quadratic fit}
+		%\label{fig:DSP_QUAD_RES}
+%\end{center}
+%\end{figure}
+%
+%%-----uno-----
+%\begin{figure}[htbp!]
+%\begin{center}
+		%\includegraphics{./xxx_figures/xxx_figures_DSP_QUAD_RES_1.eps}
+		%\caption{\calyear\ Residuals of quadratic fit}
+		%\label{fig:DSP_QUAD_RES_1}
+%\end{center}
+%\end{figure}
+%
+%\clearpage
+%Individual wavelengths resolution, ozone absorption coefficient, sulphur dioxide absorption coefficient and 
+%Rayleigh absorption for the cal-step number $\pm$\,1 step are shown below (Table \ref{tab:table_QDETAIL} and Table \ref{tab:table_QDETAIL1}) for 2010 and \calyear dispersion tests.
+%\vspace{1cm}
+%%-----uno-----
+%\begin{table}[htbp!] \centering
+		%\caption{\calyearold\ Dispersion derived constants}
+		%\label{tab:table_QDETAIL}
+		%\rowcolors{7}{gray!35}{gray!35}
+		%\include{table_QDETAIL_xxx}
+%\end{table}
+%
+%%-----dos-----
+%\begin{table}[htbp!] \centering
+		%\caption{\calyear\ Dispersion derived constants}
+		%\label{tab:table_QDETAIL1}
+		%\rowcolors{7}{gray!35}{gray!35}
+		%\include{table_QDETAIL1_xxx}
+%\end{table}
+%
+%\clearpage
+%\subsubsection{Umkehr}
+%For Umkehr calibration only the lines shorter than 3400 \AA\ were used.
+%The Umkehr offset is calculated by forcing the wavelength of slit \#4 at the ozone position to be the same as on slit \#1 at the Umkehr setting. The Umkehr offset calculated is \textbf{\UMKoffsetnew}\ . 
+%Table \ref{tab:table_umk1} summarizes the dispersion test for umkehr: wavelength, resolution and ozone absorption coefficient.
+%\vspace{1cm}
+%%---uno---
+%\begin{table}[htbp!] \centering
+		%\caption{\calyearold\ Umkehr dispersion constants}
+		%\label{tab:table_umk}
+		%\include{table_UMK_xxx}
+%\end{table}
+%
+%%---dos---
+%\begin{table}[htbp!] \centering
+		%\caption{\calyear\ Umkehr dispersion constants}
+		%\label{tab:table_umk1}
+		%\include{table_UMK1_xxx}
+%\end{table}
+%
+%%\subsubsection{Ultraviolet}
+%%For UV measurements another set of lines, covering the full spectral range were used for the analysis. The dispersion file \texttt{\DCFFILE}\ was calculated with this set detailed on file \texttt{\LFFILE}\.
+%
+%
