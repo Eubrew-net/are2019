@@ -1,0 +1,68 @@
+ \documentclass[a4paper]{article} 
+ \usepackage[top=5cm, bottom=4cm, left=2.5cm, right=2.5cm]{geometry} 
+%\usepackage[absolute,showboxes]{textpos}
+ \usepackage[absolute]{textpos}
+% \usepackage[colorgrid,texcoord]{eso-pic}[2002/11/16]
+ \setlength{\parskip}{1.5mm}
+ 
+ %==== Language setup ================================================
+ \usepackage[UKenglish]{babel}%... Language setup
+% \usepackage[ansinew]{inputenc}%.. Recognizes �, �, etc$ 
+ \usepackage[OT1]{fontenc}%.... Type 1 fonts
+ \usepackage{url}
+ \hyphenation{pa-ra-bo-lic}
+ 
+%==== Graphs setup ====================================================
+ \usepackage[format=plain, indention=.2cm, margin=10pt,font=normalsize,labelfont=bf,labelsep=endash]{caption}
+ \usepackage{picins}
+ \usepackage{calc}
+ \usepackage[centerlast, bf]{subfigure}
+ \usepackage[dvips]{graphicx}
+ \usepackage{pdflscape}
+
+%==== Table setup ====================================================
+ \usepackage{lscape,ctable,longtable}
+ \usepackage[svgnames,table]{xcolor}
+ 
+%==== Listas ========================================================
+ \usepackage{enumitem}
+
+%==== PageStyle Setup ====================
+ \usepackage{color,fancyvrb}
+ \usepackage{fancyhdr}
+ \renewcommand{\headrulewidth}{0.8pt}
+ \renewcommand{\footrulewidth}{0pt}
+ \pagestyle{fancy}
+ \rfoot{\vspace{.25cm}\scriptsize{\brwname},\mbox{ }\thepage}
+ \cfoot{\scriptsize \textbf{Iza\~{n}a Atmospheric Research Center}, La Marina 20, 38071 S/C de Tenerife, Spain\\Tf: +34922151718/Fax: +3492274475}
+ \lfoot{}
+
+ \usepackage{hyperref}
+
+ \begin{document}
+ \include{cal_setup_xxx} % Necesario para FRONTPAGE (\brwname)
+ \include{cal_config_xxx} % DT, ETC y A de las configuraciones que aparecen en el setup
+ 
+%==== Primera pagina ====================================
+ \input{FRONTPAGE}
+
+%==== TOC's ==================================== 
+ \tableofcontents
+ \clearpage
+ \pagenumbering{arabic}
+
+%=============== Documento ================================ 
+ \input{INST_STATUS_xxx} \clearpage
+ \input{TEMPT_COEFF_xxx} \clearpage 
+ \input{FILTER_xxx} \clearpage
+ \input{WAVELENGTH_xxx} \clearpage
+ \input{ETC_xxx} \clearpage
+ \input{DAILY_SUMMARY_xxx} \clearpage
+ \input{CONFIG_xxx}
+
+%============ Apendices =============================================
+% \input{APPENDSC_xxx}
+ \input{APPEND_summary_xxx}
+ \input{checklist_xxx}
+ \end{document}
+			

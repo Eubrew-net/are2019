@@ -1,0 +1,150 @@
+\include{cal_etc_xxx}
+
+\section{ETC Transfer} \label{sec:ETC}
+
+\subsection{Ozone Extraterrestrial constant transfer}
+%% General text
+The ETC is obtained by comparison with the reference brewer \textbf{\brwref} using near-simultaneous measurements during \textbf{\caldays}\ days (two measurements are considered near-simultaneous if they are taken less than \textbf{\Tsync}\ minutes apart). Measurements with airmass difference greater than 3\% were removed from the analysis.
+
+Ozone is calculated using the following formula:
+
+\begin{equation}
+    O_3 = \frac{MS9 - ETC}{A1 \times M2}  
+    \label{eq:etc}
+\end{equation}
+
+\noindent where MS9 is Rayleigh corrected double ratios, A1 is the ozone absorption coefficient, M2 is the ozone airmass and ETC is the extraterrestrial constant. From this equation we can solve for ETC obtaining
+
+\[ETC = MS9 - O_3 \times A1 \times M2 = MS9 - A1 \times O_{3}^{ref} \times M2\]
+  
+The corrected counts (MS9) and the airmass factor (M2) are known and the ozone absorption coefficient can be computed from the wavelength calibration. Using the simultaneous ozone data from the reference instrument the ETC can be derived for each of the near-simultaneous observation pairs and then averaged (actually we take the median value of all ETC's).
+
+\subsubsection{Evaluation of the initial calibration}
+% No blinddays
+Brewer \brwname\ was present at the campaign during July 5-13, 2011 (Julian days \CALINI\ -\CALEND). We did not detect any change in instrument performance during the campaign days, except for some anomalous ozone data on day 190 afternoon, probably caused by tracking problems. We used the same dataset to evaluate the initial status of the instrument as well as for final calibration purposes.
+
+% No change
+Brewer \brwname\ was present at the campaign during the period from July 16 through July 27, 2012 (Julian days \CALINI\ -\CALEND). For the evaluation of initial calibration we used the period from days \textbf{\BLINDINI}\ to \textbf{\BLINDEND} (\textbf{\NobsCalblind}\ near-simultaneous direct sun ozone measurements), before the instrument cal step was changed. The original constants performance could be good enough, resulting in ozone measurements lower than 1\% as compared to \brwref\ for low ozone slant path range ($osc\leq600$) (see Figure \ref{fig:RATIO_ERRORBAR_blind}, blue dashed line), but with a rather moderate stray light effect, around -2\% at 1000 DU ozone slant column value. Correcting for the standard lamp ratio change made the comparison worse (same Figure, red dashed line). The ETC calculation gave an ETC value of \textbf{\ETCblind} (Figure \ref{fig:RATIO_ERRORBAR_blind},black dashed line), which did not agree the R6 ratio change (20 units). We can not be sure of this initial constants, though, due to the R6 ratio drop by more than 10 units during the instrument travelling, on the one hand, and on the other because of the wrong wavelength setting, as suggested in Figure \ref{fig:Final_SC_Calculation}.
+
+\vspace{1cm}
+
+%%156
+The calibration set comprises \textbf{\NobsCalblind} simultaneous direct sun ozone measurements from days \textbf{\BLINDINI} to \textbf{\BLINDEND} (blind days), which gives an ETC value of \textbf{\ETCblind} (Figure \ref{fig:CAL_2P_SCHIST_blind}), calculated as the median of the previous formula.
+
+The plot of the ratio with the reference \emph{vs} ozone slant path (OSP), of the original calibration , with and without Standard Lamp correction (Figure \ref{fig:RATIO_ERRORBAR_blind}) shows a remarkable slope with a 1\% underestimation corresponding to ozone slant path around 800(DU). The standard lamp correction does not improve the comparison.
+
+The calculated ETC using this set is \textbf{\ETCblind} (Figure \ref{fig:CAL_2P_SCHIST_blind}), calculated as the median of the previous formula with the Ozone Absorption coefficient from original calibration. The ETC is lower by 15 units compared with the previous calibration.  If we repeat the calculation of the ETC  using the ozone absorption coefficient of 2007 calibration instead (see previous discussion, subsection \ref{subsec:DSP}) the ETC is near the configuration value (\textbf{\ETCorig}) and the slope of ratios over OSP vanishes (Figures \ref{fig:CAL_2P_SCHIST_blind}, \ref{fig:RATIO_ERRORBAR_blind}).
+
+
+Most of measurements are performed for low OSP so the effect on the mean ozone is very low as you can see in Table \ref{tab:table_ETCdata_blind}.
+
+
+\begin{table}[hbp!] \centering
+		\caption{Daily mean ozone with original calibration, with and without standard lamp correction (with an asterisk). Blind Days}
+%		\caption{Daily mean ozone with original calibration and with the ETC (with an asterisk) calculated based on original ozone absorption coefficient (\textbf{\Adef}, see subsection \ref{subsec:DSP} ). Blind days}
+		\label{tab:table_ETCdata_blind}
+		\include{table_ETCdatasug_xxx}
+\end{table}
+
+
+\begin{figure}[hbtp!]
+\begin{center}   
+		\includegraphics{./xxx_figures/xxx_figures_RATIO_ERRORBAR_sug.eps}
+		\caption{Mean direct-sun ozone column percentage difference between Brewer \brwname\ and Brewer \brwref\ as a function of ozone slant path. The shadow areas represent standard deviation}
+		\label{fig:RATIO_ERRORBAR_blind}
+\end{center}
+\end{figure}
+
+\begin{figure}[hbtp!]
+\begin{center}
+		\includegraphics{./xxx_figures/xxx_figures_CAL_2P_SCHIST_sug.eps}
+		\caption{ETC determination by median of the values computed as defined in expression \ref{eq:etc}}
+		\label{fig:CAL_2P_SCHIST_blind}
+\end{center}
+\end{figure}
+
+
+\subsubsection{Final Calibration}
+For the final calibration we use \textbf{\NobsCalfin} simultaneous direct sun measurements from days \textbf{\FINALINI}\ to \textbf{\FINALEND}\ (final days used for calibration purposes). 
+The original configuration performance is found to be not good enough, underestimating ozone around -0.5\% as compared to \brwref. This discrepancy is even greater, around -1\%, for ozone slant path lower than 600 DU (see Figure \ref{fig:RATIO_ERRORBAR_fin_all}, blue dashed line). Correcting for the standard lamp ratio change improved the comparison (same Figure, red dashed line). The ETC calculation gives an ETC value of \textbf{\ETCdef} (Figure \ref{fig:CAL_2P_SCHIST_fin}), calculated as the median of the previous formula, Equation \ref{eq:etc}. This is approximately 10 units lower than the current ETC value (\textbf{\ETCorig}), the same change observed in R6 ratio (Figure \ref{fig:SL_R6_report}). However, we recommend using this new ETC, together with the new propossed standard lamp reference ratios, \textbf{430} for R6. The reasons for this are, first, the observed change in standard lamp intensity on day 189, which resulted in more stable ratios, and second, the improved ozone comparison \brwname\ \emph{vs} \brwref\ with the new constant. We updated the new calibration constants in the \texttt{ICF} provided.
+Mean daily total ozone values for the original and the final configurations are shown in table \ref{tab:table_ETCdatafin}, as well as relative differences with respect to \brwref.
+
+
+For the final calibration we use \textbf{\NobsCalfin} simultaneous direct sun measurements after the instrument CSN change, that is, from days \textbf{\FINALINI}\ to \textbf{\FINALEND}\ (final days used for calibration purposes). The ETC calculation gave a value of \textbf{\ETCfin}\ (Figure \ref{fig:CAL_2P_SCHIST_fin}), using the new ozone absorption coefficient proposed, \textbf{\Adef}. We show in Figure \ref{fig:RATIO_ERRORBAR_fin} the mean direct-sun ozone column percentage difference between Brewer \brwname\ and Brewer \brwref\ as a function of ozone slant path with the new constants, whereas mean daily total ozone values for the original and the final configurations are shown in table \ref{tab:table_ETCdatafin}, as well as relative differences with respect to \brwref.\\
+We updated the new calibration constants in the \texttt{ICF} provided.
+
+
+\begin{figure}[htp!]
+\begin{center}   
+		\includegraphics{./xxx_figures/xxx_figures_RATIO_ERRORBAR_fin.eps}
+		\caption{Mean direct-sun ozone column percentage difference between Brewer \brwname\ and Brewer \brwref\ as a function of ozone slant path. Blue and red areas represent standard deviation and 95\% confidence interval, respectively. Plotted are the final days of the campaign}
+		\label{fig:RATIO_ERRORBAR_fin}
+\end{center}
+\end{figure}
+
+\begin{table}[hbp!] \centering
+		\caption{Daily mean ozone processed with original and final ($^*$) calibration. Final Days}
+		\label{tab:table_ETCdatafin}
+		\include{table_ETCdatafin_xxx}
+\end{table}
+
+\begin{figure}[hbtp!]
+\begin{center}
+		\includegraphics{./xxx_figures/xxx_figures_CAL_2P_SCHIST_fin.eps}
+		\caption{ETC determination by median of the values computed as defined in expression \ref{eq:etc}}
+		\label{fig:CAL_2P_SCHIST_fin}
+\end{center}
+\end{figure}
+
+\clearpage
+% STANDARD LAMP REFERENCE VALUES
+\subsection{Standard Lamp Reference Values}
+The reference values of standard lamp ratios during the calibration period were \textbf{\slrefNEW} for R6  (Figure \ref{fig:SL_R6_report}) and \textbf{cuidado} for R5 (Figure \ref{fig:SL_R5_report}).
+
+% FIGURE R6
+\begin{figure}[hbtp!]
+\begin{center}
+
+\IfFileExists{./xxx_figures/xxx_figures_SL_R6_report_old.eps}
+{% if
+\subfigure[\textsl{Old instrumental constants}]{\label{fig:SL_R6_report_old}\includegraphics{./xxx_figures/xxx_figures_SL_R6_report_old.eps}}\subfigure[\textsl{New instrumental constants}]{\label{fig:SL_R6_report_new}\includegraphics{./xxx_figures/xxx_figures_SL_R6_report.eps}}
+  \caption{Standard Lamp $O_3$ R6 ratios: daily mean and standard deviation (squares), seven day running mean (circle) and individual tests (black dots). Reprocessed using old and new instrumental constants}
+\label{fig:SL_R6_report}
+}
+{% else
+\includegraphics{./xxx_figures/xxx_figures_SL_R6_report.eps}
+\caption{Standard Lamp $O_3$ R6 ratios: daily mean and standard deviation (squares), seven day running mean (circle) and individual tests (black dots)}
+		\label{fig:SL_R6_report}
+}
+
+\end{center}
+\end{figure}
+
+
+% FIGURE R5
+\begin{figure}[hbtp!]
+\begin{center}
+
+\IfFileExists{./xxx_figures/xxx_figures_SL_R5_report_old.eps}
+{% if
+	\subfigure[\textsl{Old instrumental constants}]{\label{fig:SL_R5_report_old}\includegraphics{./xxx_figures/xxx_figures_SL_R5_report_old.eps}}\subfigure[\textsl{New instrumental constants}]{\label{fig:SL_R5_report_new}\includegraphics{./xxx_figures/xxx_figures_SL_R5_report.eps}}
+  \caption{Standard Lamp $SO_2$ R5 ratios: daily mean and standard deviation (squares), seven day running mean (circle) and individual tests (black dots). Reprocessed using old and new instrumental constants}
+	\label{fig:SL_R5_report}
+}
+{% else
+	\includegraphics{./xxx_figures/xxx_figures_SL_R5_report.eps}
+	\caption{Standard Lamp $SO_2$ R5 ratios: daily mean and standard deviation (squares), seven day running mean (circle) and individual tests (black dots)}
+	\label{fig:SL_R5_report}
+}
+
+\end{center}
+\end{figure}
+
+
+ \begin{figure}[hbtp!]
+ \begin{center}
+		\includegraphics{./xxx_figures/xxx_figures_SL_I5_report.eps}
+		\caption{Standard Lamp intensity: daily mean and standard deviation (squares), seven day running mean (circle) and individual tests (black dots)}
+		\label{fig:SL_I5_report}
+ \end{center}
+ \end{figure}
