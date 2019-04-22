@@ -1,0 +1,2682 @@
+version=2
+dh120918Thessaloniki 40.634 -22.956  3.29pr1000
+co22:43:34dh: day header
+co22:43:34main: version 4.1007/04/2015 15:00:00
+co22:43:34skc: b00540
+co22:43:34autohg:  1 
+co22:43:34hifw2:  0 
+co22:43:34attn:  25000  80000 
+co22:43:34lowds:  1 
+co22:43:34cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256001302112July 12/04EXTRAS1002500080000110006-28-2017@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf17917zsfvaldcf15317uvres120918Thessaloniki40.634-22.95610003.561485-214650111110110020001skco3b00540@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+schedule-110.00azzehgsl-90.84b0b1ufhgtdb2dssltddstdss-85.37b0uztdsshgtdds-80.34b1uzhgb2tddssltddszs-75.44b0uzb1tdsshgschgtddszstdds-70.35b0uzb1tddsdssstddsdstd-65.44b1uztdds-64.30azb0b2ufslb1tddsdsds-60.35b0uzb1tdsshgtddstddstdds-55.44b0b1uztddsdstdb2sssltddsdsds-50.45b0uztddsb1tdsshgtdb2zssltdds-45.42b0uztddsb1sstddsdstdzstddsds-40.34b0uztddsb1tdsshgb2tddssltdzstdds-35.29b0uztddsb1tdssb2tddsdssltduftddstddszsw0tddsdsuf-30.35b0uztddsb1tdsshgb2tddssltduftddstddszsw0uftddstddstdzs-25.20azb0uztddsb1tddsdsntb2tddssltduftdsstddszsw0uftddstddstdzs0.00b0uzb1tdsshgtddsuftddstddsb2zsslw0tdds22.93b0uftddsb1tddssstddsuftddstddsds24.82b0uztddsb1tdsshgtddsuftddstdds27.79b0uztddsb1tddssstddsuftdb2dsdssl29.75b0uztddsb1tdsshgtddsuftdb2dssltdds32.68b0uztdb1dstddsssds34.68b0uztddsb1tdsshgtdds37.70b0uzb1tdsstddsds39.59azb0uzb1tdsshgnttdb2dssltdzsds44.57b0uzb1tddsdstddstdzstddsss49.66b0uzb1tddshgtdb2tddsslzsds54.58b0b1uztddsdskaum59.53b0uzb1tddstdds61.60b0kdumuz64.60b0b1uztdkdumds69.54b0b1uzhgtddskaum74.55b0b1uzhgtdkaum79.66b0b1uzdstdkaum84.59b0b1uzhgtdkaum89.56b0b1ufuihgtdb2tddsslkaum100.00azzeaphgrsdtslb2w0cib0hg180.00b00540@
+co22:43:34re: Running re from b00540 line -200
+co22:44:18re: Zenith ZEROING FAILURE !!
+co22:44:40re: Azimuth discrepancy = -20
+hk22:44:52 23 19 20 29 4.72-99-99
+co22:44:57hgfw2: HG FW#2 at step  0
+co22:46:55hg: Lamp not on... hg test terminated F1= 4 F4= 2
+co22:46:55hg: Lamp not detected f1= 4 f4= 2
+co22:46:57fr: Running fr from b00540 line -200
+hk22:46:59 24 19 20 29.7 4.83-99-99
+co22:48:15fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:48:19 23 19 20 29 4.72-99-99
+co22:48:21hgfw2: HG FW#2 at step  0
+co22:50:23hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co22:50:23hg: Lamp not detected f1= 4 f4= 5
+co22:50:23hg: HG failed
+hk22:50:26 24 19 20 29 4.72-99-99
+co22:50:29hgfw2: HG FW#2 at step  0
+co22:52:30hg: Lamp not on... hg test terminated F1= 2 F4= 2
+co22:52:30hg: Lamp not detected f1= 2 f4= 2
+co22:52:31fr: Running fr from b00540 line -200
+hk22:52:33 23 19 20 29 4.72-99-99
+co22:53:50fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:53:54 23 19 20 29.7 4.83-99-99
+co22:53:56hgfw2: HG FW#2 at step  0
+co22:55:58hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co22:55:58hg: Lamp not detected f1= 3 f4= 2
+co22:55:58hg: HG failed
+hk22:56:01 24 19 20 29 4.72-99-99
+co22:56:03hgfw2: HG FW#2 at step  0
+co22:58:04hg: Lamp not on... hg test terminated F1= 5 F4= 1
+co22:58:04hg: Lamp not detected f1= 5 f4= 1
+co22:58:06fr: Running fr from b00540 line -200
+hk22:58:08 23 19 20 29.7 4.83-99-99
+co22:59:25fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:59:29 23 19 20 28.4 4.62-99-99
+co22:59:31hgfw2: HG FW#2 at step  0
+co23:01:33hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co23:01:33hg: Lamp not detected f1= 3 f4= 3
+co23:01:33hg: HG failed
+hk23:01:36 23 19 21 29.7 4.83-99-99
+co23:01:38hgfw2: HG FW#2 at step  0
+co23:03:39hg: Lamp not on... hg test terminated F1= 4 F4= 317
+co23:03:39hg: Lamp not detected f1= 4 f4= 317
+co23:03:41fr: Running fr from b00540 line -200
+hk23:03:43 24 19 21 29 4.72-99-99
+co23:05:00fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:05:04 23 19 21 29 4.72-99-99
+co23:05:06hgfw2: HG FW#2 at step  0
+co23:07:08hg: Lamp not on... hg test terminated F1= 3 F4= 369
+co23:07:08hg: Lamp not detected f1= 3 f4= 369
+co23:07:08hg: HG failed
+hk23:07:11 24 19 21 29 4.72-99-99
+co23:07:13hgfw2: HG FW#2 at step  0
+co23:09:14hg: Lamp not on... hg test terminated F1= 2 F4= 377
+co23:09:14hg: Lamp not detected f1= 2 f4= 377
+co23:09:16fr: Running fr from b00540 line -200
+hk23:09:18 24 20 21 29 5.01-99-99
+co23:10:34fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:10:39 23 19 21 29 4.72-99-99
+co23:10:41hgfw2: HG FW#2 at step  0
+co23:12:42hg: Lamp not on... hg test terminated F1= 2 F4= 336
+co23:12:42hg: Lamp not detected f1= 2 f4= 336
+co23:12:42hg: HG failed
+hk23:12:45 24 20 21 28.4 4.9-99-99
+co23:12:47hgfw2: HG FW#2 at step  0
+co23:14:49hg: Lamp not on... hg test terminated F1= 2 F4= 353
+co23:14:49hg: Lamp not detected f1= 2 f4= 353
+co23:14:50fr: Running fr from b00540 line -200
+hk23:14:52 24 20 21 29 5.01-99-99
+co23:16:09fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:16:13 23 20 21 29 5.01-99-99
+co23:16:15hgfw2: HG FW#2 at step  0
+co23:18:17hg: Lamp not on... hg test terminated F1= 2 F4= 357
+co23:18:17hg: Lamp not detected f1= 2 f4= 357
+co23:18:17hg: HG failed
+hk23:18:20 24 20 21 28.4 4.9-99-99
+co23:18:22hgfw2: HG FW#2 at step  0
+co23:20:24hg: Lamp not on... hg test terminated F1= 3 F4= 364
+co23:20:24hg: Lamp not detected f1= 3 f4= 364
+co23:20:25fr: Running fr from b00540 line -200
+hk23:20:28 23 20 21 29 5.01-99-99
+co23:21:44fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:21:48 24 20 21 29.7 5.12-99-99
+co23:21:50hgfw2: HG FW#2 at step  0
+co23:23:52hg: Lamp not on... hg test terminated F1= 5 F4= 406
+co23:23:52hg: Lamp not detected f1= 5 f4= 406
+co23:23:52hg: HG failed
+hk23:23:55 24 20 21 29 5.01-99-99
+co23:23:57hgfw2: HG FW#2 at step  0
+co23:25:59hg: Lamp not on... hg test terminated F1= 4 F4= 390
+co23:25:59hg: Lamp not detected f1= 4 f4= 390
+co23:26:00fr: Running fr from b00540 line -200
+hk23:26:02 24 20 21 29 5.01-99-99
+co23:27:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:27:23 24 20 21 29 5.01-99-99
+co23:27:25hgfw2: HG FW#2 at step  0
+co23:29:27hg: Lamp not on... hg test terminated F1= 3 F4= 362
+co23:29:27hg: Lamp not detected f1= 3 f4= 362
+co23:29:27hg: HG failed
+hk23:29:30 24 20 21 29 5.01-99-99
+co23:29:32hgfw2: HG FW#2 at step  0
+hk23:31:36 24 20 21 28.4 4.9-99-99
+hgscan 0narrow 302warm= 223:31:36SEP 12/18 22 17 15 17 51 195 320 440 543 622 604 530 405 294 171 79 75 52 39 44 41 43 57 70 103 167 306 438 555 638 621 573 444 283 151 45 21 21 19 15
+hg23:32:40 .9988 157.9311 158 1242 24-1
+co23:32:41sum: Running sum from b00540 line -200
+co23:32:42ozsum: Running ozsum from b00540 line -200
+co23:32:42slsum: Running slsum from b00540 line -200
+co23:32:44hgsum: Running hgsum from b00540 line -200
+co23:32:45re: Running re from b00540 line -200
+co23:33:29re: Zenith ZEROING FAILURE !!
+co23:33:45re: Azimuth discrepancy =  0
+hk23:34:00 24 20 21 29 5.01-99-99
+co23:34:05hgfw2: HG FW#2 at step  0
+co23:36:04hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co23:36:04hg: Lamp not detected f1= 2 f4= 3
+co23:36:06fr: Running fr from b00540 line -200
+hk23:36:08 24 20 21 29 5.01-99-99
+co23:37:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:37:28 24 20 21 29 5.01-99-99
+co23:37:30hgfw2: HG FW#2 at step  0
+co23:39:31hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co23:39:31hg: Lamp not detected f1= 2 f4= 3
+co23:39:31hg: HG failed
+hk23:39:34 24 20 21 28.4 4.9-99-99
+co23:39:36hgfw2: HG FW#2 at step  0
+co23:41:38hg: Lamp not on... hg test terminated F1= 2 F4= 5
+co23:41:38hg: Lamp not detected f1= 2 f4= 5
+co23:41:39fr: Running fr from b00540 line -200
+hk23:41:41 24 20 21 29 5.01-99-99
+co23:42:57fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:43:01 24 20 21 29 5.01-99-99
+co23:43:03hgfw2: HG FW#2 at step  0
+co23:45:05hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co23:45:05hg: Lamp not detected f1= 4 f4= 3
+co23:45:05hg: HG failed
+hk23:45:08 24 20 21 28.4 4.9-99-99
+co23:45:09hgfw2: HG FW#2 at step  0
+co23:47:11hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co23:47:11hg: Lamp not detected f1= 2 f4= 3
+co23:47:12fr: Running fr from b00540 line -200
+hk23:47:15 24 20 21 28.4 4.9-99-99
+co23:48:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:48:34 24 20 21 28.4 4.9-99-99
+co23:48:36hgfw2: HG FW#2 at step  0
+co23:50:38hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co23:50:38hg: Lamp not detected f1= 3 f4= 3
+co23:50:38hg: HG failed
+hk23:50:41 24 20 21 28.4 4.9-99-99
+co23:50:43hgfw2: HG FW#2 at step  0
+co23:52:45hg: Lamp not on... hg test terminated F1= 2 F4= 375
+co23:52:45hg: Lamp not detected f1= 2 f4= 375
+co23:52:46fr: Running fr from b00540 line -200
+hk23:52:48 24 20 21 29 5.01-99-99
+co23:54:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:54:08 25 20 21 29 5.01-99-99
+co23:54:10hgfw2: HG FW#2 at step  0
+co23:56:11hg: Lamp not on... hg test terminated F1= 4 F4= 362
+co23:56:11hg: Lamp not detected f1= 4 f4= 362
+co23:56:11hg: HG failed
+hk23:56:14 24 20 21 28.4 4.9-99-99
+co00:00:02hgfw2: HG FW#2 at step  0
+co00:02:04hg: Lamp not on... hg test terminated F1= 4 F4= 349
+co00:02:04hg: Lamp not detected f1= 4 f4= 349
+co00:02:05fr: Running fr from b00540 line -200
+hk00:02:08 24 20 21 29 5.01-99-99
+co00:03:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:03:27 25 20 21 29 5.01-99-99
+co00:03:29hgfw2: HG FW#2 at step  0
+co00:05:31hg: Lamp not on... hg test terminated F1= 3 F4= 336
+co00:05:31hg: Lamp not detected f1= 3 f4= 336
+co00:05:31hg: HG failed
+hk00:05:34 25 20 21 29 5.01-99-99
+co00:05:35hgfw2: HG FW#2 at step  0
+hk00:07:40 25 20 21 29 5.01-99-99
+hgscan 0narrow 302warm= 200:07:40SEP 13/18 20 26 17 22 61 143 256 385 504 573 626 548 434 309 156 100 74 51 42 42 36 48 53 72 90 171 315 458 545 606 586 561 426 266 157 42 21 17 19 21
+hg00:08:44 .9995 159.3966 159 1232 25 0
+co00:08:45sum: Running sum from b00540 line -200
+co00:08:45ozsum: Running ozsum from b00540 line -200
+co00:08:46slsum: Running slsum from b00540 line -200
+co00:08:48hgsum: Running hgsum from b00540 line -200
+co00:08:48re: Running re from b00540 line -200
+co00:09:32re: Zenith ZEROING FAILURE !!
+co00:09:54re: Azimuth discrepancy = -4
+hk00:10:11 25 20 21 29 5.01-99-99
+co00:10:16hgfw2: HG FW#2 at step  0
+co00:12:15hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co00:12:15hg: Lamp not detected f1= 4 f4= 3
+co00:12:16fr: Running fr from b00540 line -200
+hk00:12:19 24 20 21 29 5.01-99-99
+co00:13:34fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:13:38 25 20 21 29 5.01-99-99
+co00:13:40hgfw2: HG FW#2 at step  0
+co00:15:42hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co00:15:42hg: Lamp not detected f1= 4 f4= 3
+co00:15:42hg: HG failed
+hk00:15:45 25 20 21 29 5.01-99-99
+co00:15:47hgfw2: HG FW#2 at step  0
+co00:17:49hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co00:17:49hg: Lamp not detected f1= 3 f4= 4
+co00:17:50fr: Running fr from b00540 line -200
+hk00:17:52 25 20 21 28.4 4.9-99-99
+co00:19:08fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:19:12 24 20 21 29 5.01-99-99
+co00:19:14hgfw2: HG FW#2 at step  0
+co00:21:16hg: Lamp not on... hg test terminated F1= 1 F4= 4
+co00:21:16hg: Lamp not detected f1= 1 f4= 4
+co00:21:16hg: HG failed
+hk00:21:19 24 20 21 29 5.01-99-99
+co00:21:21hgfw2: HG FW#2 at step  0
+co00:23:22hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co00:23:22hg: Lamp not detected f1= 4 f4= 4
+co00:23:23fr: Running fr from b00540 line -200
+hk00:23:26 24 20 21 29 5.01-99-99
+co00:24:41fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:24:45 24 20 21 29.7 5.12-99-99
+co00:24:47hgfw2: HG FW#2 at step  0
+co00:26:49hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co00:26:49hg: Lamp not detected f1= 4 f4= 3
+co00:26:49hg: HG failed
+hk00:26:52 25 20 21 29 5.01-99-99
+co00:26:54hgfw2: HG FW#2 at step  0
+co00:28:55hg: Lamp not on... hg test terminated F1= 3 F4= 330
+co00:28:55hg: Lamp not detected f1= 3 f4= 330
+co00:28:57fr: Running fr from b00540 line -200
+hk00:28:59 25 20 21 29 5.01-99-99
+co00:30:14fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:30:19 25 20 21 29 5.01-99-99
+co00:30:21hgfw2: HG FW#2 at step  0
+co00:32:22hg: Lamp not on... hg test terminated F1= 5 F4= 348
+co00:32:22hg: Lamp not detected f1= 5 f4= 348
+co00:32:22hg: HG failed
+hk00:32:25 25 20 21 28.4 4.9-99-99
+co00:32:27hgfw2: HG FW#2 at step  0
+co00:34:29hg: Lamp not on... hg test terminated F1= 4 F4= 361
+co00:34:29hg: Lamp not detected f1= 4 f4= 361
+co00:34:30fr: Running fr from b00540 line -200
+hk00:34:33 25 20 21 29 5.01-99-99
+co00:35:48fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:35:52 25 20 21 28.4 4.9-99-99
+co00:35:54hgfw2: HG FW#2 at step  0
+co00:37:56hg: Lamp not on... hg test terminated F1= 3 F4= 355
+co00:37:56hg: Lamp not detected f1= 3 f4= 355
+co00:37:56hg: HG failed
+hk00:37:59 24 20 21 29.7 5.12-99-99
+co00:38:01hgfw2: HG FW#2 at step  0
+hk00:40:05 25 20 21 29 5.01-99-99
+hgscan 0narrow 302warm= 200:40:05SEP 13/18 24 20 23 23 46 128 284 407 545 580 591 572 446 309 196 113 77 53 45 40 36 40 54 67 97 122 280 403 554 623 624 561 365 219 139 37 15 25 22 18
+hg00:41:09 .9981 159.3456 159 1214 25 0
+co00:41:10sum: Running sum from b00540 line -200
+co00:41:11ozsum: Running ozsum from b00540 line -200
+co00:41:11slsum: Running slsum from b00540 line -200
+co00:41:13hgsum: Running hgsum from b00540 line -200
+co00:41:14re: Running re from b00540 line -200
+co00:41:58re: Zenith ZEROING FAILURE !!
+co00:42:22re: Azimuth discrepancy = -7
+hk00:42:41 24 20 21 29 5.01-99-99
+co00:42:47hgfw2: HG FW#2 at step  0
+co00:44:45hg: Lamp not on... hg test terminated F1= 4 F4= 2
+co00:44:45hg: Lamp not detected f1= 4 f4= 2
+co00:44:46fr: Running fr from b00540 line -200
+hk00:44:49 25 20 21 28.4 4.9-99-99
+co00:46:04fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:46:09 24 20 21 29 5.01-99-99
+co00:46:10hgfw2: HG FW#2 at step  0
+co00:48:12hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co00:48:12hg: Lamp not detected f1= 4 f4= 5
+co00:48:12hg: HG failed
+hk00:48:15 25 20 21 29 5.01-99-99
+co00:48:17hgfw2: HG FW#2 at step  0
+co00:50:19hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co00:50:19hg: Lamp not detected f1= 5 f4= 5
+co00:50:20fr: Running fr from b00540 line -200
+hk00:50:23 25 20 21 29 5.01-99-99
+co00:51:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:51:42 24 20 21 29.7 5.12-99-99
+co00:51:44hgfw2: HG FW#2 at step  0
+co00:53:46hg: Lamp not on... hg test terminated F1= 3 F4= 1
+co00:53:46hg: Lamp not detected f1= 3 f4= 1
+co00:53:46hg: HG failed
+hk00:53:49 25 20 21 29.7 5.12-99-99
+co00:53:51hgfw2: HG FW#2 at step  0
+co00:55:53hg: Lamp not on... hg test terminated F1= 5 F4= 2
+co00:55:53hg: Lamp not detected f1= 5 f4= 2
+co00:55:54fr: Running fr from b00540 line -200
+hk00:55:56 25 20 21 29 5.01-99-99
+co00:57:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:57:16 24 20 21 29.7 5.12-99-99
+co00:57:18hgfw2: HG FW#2 at step  0
+co00:59:20hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co00:59:20hg: Lamp not detected f1= 5 f4= 3
+co00:59:20hg: HG failed
+hk00:59:23 25 20 21 29 5.01-99-99
+co00:59:25hgfw2: HG FW#2 at step  0
+co01:01:27hg: Lamp not on... hg test terminated F1= 2 F4= 348
+co01:01:27hg: Lamp not detected f1= 2 f4= 348
+co01:01:28fr: Running fr from b00540 line -200
+hk01:01:30 24 20 21 29 5.01-99-99
+co01:02:46fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:02:50 24 20 21 29 5.01-99-99
+co01:02:52hgfw2: HG FW#2 at step  0
+co01:04:54hg: Lamp not on... hg test terminated F1= 4 F4= 324
+co01:04:54hg: Lamp not detected f1= 4 f4= 324
+co01:04:54hg: HG failed
+hk01:04:57 25 20 21 29 5.01-99-99
+co01:04:58hgfw2: HG FW#2 at step  0
+co01:07:00hg: Lamp not on... hg test terminated F1= 4 F4= 331
+co01:07:00hg: Lamp not detected f1= 4 f4= 331
+co01:07:01fr: Running fr from b00540 line -200
+hk01:07:04 24 20 21 29.7 5.12-99-99
+co01:08:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:08:24 24 20 21 29 5.01-99-99
+co01:08:26hgfw2: HG FW#2 at step  0
+co01:10:27hg: Lamp not on... hg test terminated F1= 3 F4= 366
+co01:10:27hg: Lamp not detected f1= 3 f4= 366
+co01:10:27hg: HG failed
+hk01:10:30 25 20 21 29 5.01-99-99
+co01:10:32hgfw2: HG FW#2 at step  0
+co01:12:34hg: Lamp not on... hg test terminated F1= 4 F4= 398
+co01:12:34hg: Lamp not detected f1= 4 f4= 398
+co01:12:35fr: Running fr from b00540 line -200
+hk01:12:38 24 20 21 29 5.01-99-99
+co01:13:53fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:13:57 25 20 21 29 5.01-99-99
+co01:13:59hgfw2: HG FW#2 at step  0
+co01:16:01hg: Lamp not on... hg test terminated F1= 2 F4= 324
+co01:16:01hg: Lamp not detected f1= 2 f4= 324
+co01:16:01hg: HG failed
+hk01:16:04 25 20 21 29 5.01-99-99
+co01:16:06hgfw2: HG FW#2 at step  0
+hk01:18:10 25 20 21 29 5.01-99-99
+hgscan 0narrow 302warm= 201:18:10SEP 13/18 20 18 23 19 37 154 274 433 535 618 604 540 429 314 175 114 83 55 40 45 36 47 56 73 94 167 308 440 566 642 639 559 388 221 95 20 22 22 21 23
+hg01:19:14 .9979 159.5475 160 1246 25 1
+co01:19:15sum: Running sum from b00540 line -200
+co01:19:15ozsum: Running ozsum from b00540 line -200
+co01:19:16slsum: Running slsum from b00540 line -200
+co01:19:18hgsum: Running hgsum from b00540 line -200
+co01:19:18re: Running re from b00540 line -200
+co01:20:02re: Zenith ZEROING FAILURE !!
+co01:20:30re: Azimuth discrepancy = -6
+hk01:20:51 24 20 21 29 5.01-99-99
+co01:20:56hgfw2: HG FW#2 at step  0
+co01:22:55hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co01:22:55hg: Lamp not detected f1= 5 f4= 3
+co01:22:56fr: Running fr from b00540 line -200
+hk01:22:59 24 20 21 29.7 5.12-99-99
+co01:24:14fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:24:18 25 20 21 29 5.01-99-99
+co01:24:20hgfw2: HG FW#2 at step  0
+co01:26:22hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co01:26:22hg: Lamp not detected f1= 4 f4= 5
+co01:26:22hg: HG failed
+hk01:26:25 24 20 21 29 5.01-99-99
+co01:26:27hgfw2: HG FW#2 at step  0
+co01:28:29hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co01:28:29hg: Lamp not detected f1= 5 f4= 4
+co01:28:30fr: Running fr from b00540 line -200
+hk01:28:32 25 20 21 29 5.01-99-99
+co01:29:48fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:29:52 25 20 21 29.7 5.12-99-99
+co01:29:54hgfw2: HG FW#2 at step  0
+co01:31:56hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co01:31:56hg: Lamp not detected f1= 2 f4= 3
+co01:31:56hg: HG failed
+hk01:31:59 25 20 21 29.7 5.12-99-99
+co01:32:01hgfw2: HG FW#2 at step  0
+co01:34:02hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co01:34:02hg: Lamp not detected f1= 3 f4= 3
+co01:34:04fr: Running fr from b00540 line -200
+hk01:34:06 25 20 21 29.7 5.12-99-99
+co01:35:21fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:35:26 25 20 21 29 5.01-99-99
+co01:35:28hgfw2: HG FW#2 at step  0
+co01:37:29hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co01:37:29hg: Lamp not detected f1= 4 f4= 5
+co01:37:29hg: HG failed
+hk01:37:32 24 20 21 29.7 5.12-99-99
+co01:37:34hgfw2: HG FW#2 at step  0
+co01:39:36hg: Lamp not on... hg test terminated F1= 4 F4= 327
+co01:39:36hg: Lamp not detected f1= 4 f4= 327
+co01:39:37fr: Running fr from b00540 line -200
+hk01:39:40 24 20 21 29.7 5.12-99-99
+co01:40:55fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:40:59 25 20 21 29.7 5.12-99-99
+co01:41:01hgfw2: HG FW#2 at step  0
+co01:43:03hg: Lamp not on... hg test terminated F1= 4 F4= 327
+co01:43:03hg: Lamp not detected f1= 4 f4= 327
+co01:43:03hg: HG failed
+hk01:43:06 25 20 21 29.7 5.12-99-99
+co01:43:08hgfw2: HG FW#2 at step  0
+co01:45:10hg: Lamp not on... hg test terminated F1= 4 F4= 340
+co01:45:10hg: Lamp not detected f1= 4 f4= 340
+co01:45:11fr: Running fr from b00540 line -200
+hk01:45:13 24 20 21 29 5.01-99-99
+co01:46:29fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:46:33 24 20 21 29.7 5.12-99-99
+co01:46:35hgfw2: HG FW#2 at step  0
+co01:48:37hg: Lamp not on... hg test terminated F1= 3 F4= 356
+co01:48:37hg: Lamp not detected f1= 3 f4= 356
+co01:48:37hg: HG failed
+hk01:48:40 25 20 21 29.7 5.12-99-99
+co01:48:42hgfw2: HG FW#2 at step  0
+hk01:50:46 25 20 21 29 5.01-99-99
+hgscan 0narrow 302warm= 201:50:46SEP 13/18 22 20 17 21 37 133 253 403 528 553 611 558 444 318 202 99 81 47 35 39 37 42 54 70 90 191 348 461 549 600 616 547 429 306 168 60 23 22 19 23
+hg01:51:49 .9992 159.5521 160 1211 25 1
+co01:51:50sum: Running sum from b00540 line -200
+co01:51:51ozsum: Running ozsum from b00540 line -200
+co01:51:52slsum: Running slsum from b00540 line -200
+co01:51:54hgsum: Running hgsum from b00540 line -200
+co01:51:54re: Running re from b00540 line -200
+co01:52:38re: Zenith ZEROING FAILURE !!
+co01:53:09re: Azimuth discrepancy = -15
+hk01:53:31 25 20 21 29.7 5.12-99-99
+co01:53:36hgfw2: HG FW#2 at step  0
+co01:55:35hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co01:55:35hg: Lamp not detected f1= 3 f4= 2
+co01:55:37fr: Running fr from b00540 line -200
+hk01:55:39 25 20 21 29.7 5.12-99-99
+co01:56:54fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:56:58 24 20 21 29.7 5.12-99-99
+co01:57:00hgfw2: HG FW#2 at step  0
+co01:59:02hg: Lamp not on... hg test terminated F1= 2 F4= 5
+co01:59:02hg: Lamp not detected f1= 2 f4= 5
+co01:59:02hg: HG failed
+hk01:59:05 25 20 21 29.7 5.12-99-99
+co01:59:07hgfw2: HG FW#2 at step  0
+co02:01:09hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co02:01:09hg: Lamp not detected f1= 3 f4= 2
+co02:01:10fr: Running fr from b00540 line -200
+hk02:01:12 24 20 21 29.7 5.12-99-99
+co02:02:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:02:32 24 20 21 29.7 5.12-99-99
+co02:02:34hgfw2: HG FW#2 at step  0
+co02:04:36hg: Lamp not on... hg test terminated F1= 5 F4= 2
+co02:04:36hg: Lamp not detected f1= 5 f4= 2
+co02:04:36hg: HG failed
+hk02:04:39 25 20 21 29.7 5.12-99-99
+co02:04:41hgfw2: HG FW#2 at step  0
+co02:06:43hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co02:06:43hg: Lamp not detected f1= 3 f4= 2
+co02:06:44fr: Running fr from b00540 line -200
+hk02:06:46 25 20 21 29.7 5.12-99-99
+co02:08:01fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:08:06 25 20 21 29.7 5.12-99-99
+co02:08:08hgfw2: HG FW#2 at step  0
+co02:10:09hg: Lamp not on... hg test terminated F1= 1 F4= 3
+co02:10:09hg: Lamp not detected f1= 1 f4= 3
+co02:10:09hg: HG failed
+hk02:10:12 25 20 21 29.7 5.12-99-99
+co02:10:14hgfw2: HG FW#2 at step  0
+co02:12:16hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co02:12:16hg: Lamp not detected f1= 5 f4= 3
+co02:12:18fr: Running fr from b00540 line -200
+hk02:12:20 25 20 21 29.7 5.12-99-99
+co02:13:35fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:13:39 25 20 21 30.3 5.23-99-99
+co02:13:41hgfw2: HG FW#2 at step  0
+co02:15:43hg: Lamp not on... hg test terminated F1= 4 F4= 339
+co02:15:43hg: Lamp not detected f1= 4 f4= 339
+co02:15:43hg: HG failed
+hk02:15:46 24 20 21 29.7 5.12-99-99
+co02:15:48hgfw2: HG FW#2 at step  0
+co02:17:50hg: Lamp not on... hg test terminated F1= 5 F4= 360
+co02:17:50hg: Lamp not detected f1= 5 f4= 360
+co02:17:51fr: Running fr from b00540 line -200
+hk02:17:53 24 20 21 29.7 5.12-99-99
+co02:19:09fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:19:13 24 20 21 29 5.01-99-99
+co02:19:15hgfw2: HG FW#2 at step  0
+co02:21:17hg: Lamp not on... hg test terminated F1= 2 F4= 334
+co02:21:17hg: Lamp not detected f1= 2 f4= 334
+co02:21:17hg: HG failed
+hk02:21:20 25 20 21 29.7 5.12-99-99
+co02:21:22hgfw2: HG FW#2 at step  0
+co02:23:24hg: Lamp not on... hg test terminated F1= 3 F4= 364
+co02:23:24hg: Lamp not detected f1= 3 f4= 364
+co02:23:25fr: Running fr from b00540 line -200
+hk02:23:27 25 20 21 29.7 5.12-99-99
+co02:24:42fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:24:47 25 20 21 29 5.01-99-99
+co02:24:48hgfw2: HG FW#2 at step  0
+co02:26:50hg: Lamp not on... hg test terminated F1= 4 F4= 363
+co02:26:50hg: Lamp not detected f1= 4 f4= 363
+co02:26:50hg: HG failed
+hk02:26:53 24 20 21 30.3 5.23-99-99
+co02:26:55hgfw2: HG FW#2 at step  0
+hk02:29:00 24 20 21 29.7 5.12-99-99
+hgscan 0narrow 302warm= 202:29:00SEP 13/18 21 20 15 15 57 168 249 387 509 559 605 592 470 333 199 125 75 61 39 45 40 42 56 71 115 155 281 423 528 618 571 539 419 258 128 34 19 18 21 21
+hg02:30:03 .9991 159.8883 160 1223 24 1
+co02:30:04sum: Running sum from b00540 line -200
+co02:30:05ozsum: Running ozsum from b00540 line -200
+co02:30:06slsum: Running slsum from b00540 line -200
+co02:30:08hgsum: Running hgsum from b00540 line -200
+co02:30:08re: Running re from b00540 line -200
+co02:30:52re: Zenith ZEROING FAILURE !!
+co02:31:25re: Azimuth discrepancy = -16
+hk02:31:49 24 20 21 29.7 5.12-99-99
+co02:31:54hgfw2: HG FW#2 at step  0
+co02:33:52hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co02:33:52hg: Lamp not detected f1= 4 f4= 5
+co02:33:54fr: Running fr from b00540 line -200
+hk02:33:56 24 20 21 29.7 5.12-99-99
+co02:35:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:35:16 25 20 21 29.7 5.12-99-99
+co02:35:18hgfw2: HG FW#2 at step  0
+co02:37:20hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co02:37:20hg: Lamp not detected f1= 3 f4= 3
+co02:37:20hg: HG failed
+hk02:37:23 25 20 21 29.7 5.12-99-99
+co02:37:25hgfw2: HG FW#2 at step  0
+co02:39:26hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co02:39:26hg: Lamp not detected f1= 3 f4= 2
+co02:39:28fr: Running fr from b00540 line -200
+hk02:39:30 24 20 21 29.7 5.12-99-99
+co02:40:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:40:50 24 20 21 29 5.01-99-99
+co02:40:52hgfw2: HG FW#2 at step  0
+co02:42:53hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co02:42:53hg: Lamp not detected f1= 3 f4= 4
+co02:42:53hg: HG failed
+hk02:42:56 24 20 21 29.7 5.12-99-99
+co02:42:58hgfw2: HG FW#2 at step  0
+co02:45:00hg: Lamp not on... hg test terminated F1= 2 F4= 4
+co02:45:00hg: Lamp not detected f1= 2 f4= 4
+co02:45:01fr: Running fr from b00540 line -200
+hk02:45:04 24 20 21 29.7 5.12-99-99
+co02:46:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:46:23 24 20 21 29.7 5.12-99-99
+co02:46:25hgfw2: HG FW#2 at step  0
+co02:48:27hg: Lamp not on... hg test terminated F1= 7 F4= 3
+co02:48:27hg: Lamp not detected f1= 7 f4= 3
+co02:48:27hg: HG failed
+hk02:48:30 24 20 21 29.7 5.12-99-99
+co02:48:32hgfw2: HG FW#2 at step  0
+co02:50:34hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co02:50:34hg: Lamp not detected f1= 4 f4= 4
+co02:50:35fr: Running fr from b00540 line -200
+hk02:50:37 24 20 21 29.7 5.12-99-99
+co02:51:53fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:51:57 25 20 21 29.7 5.12-99-99
+co02:51:59hgfw2: HG FW#2 at step  0
+co02:54:01hg: Lamp not on... hg test terminated F1= 4 F4= 290
+co02:54:01hg: Lamp not detected f1= 4 f4= 290
+co02:54:01hg: HG failed
+hk02:54:04 25 20 21 29.7 5.12-99-99
+co02:54:05hgfw2: HG FW#2 at step  0
+co02:56:07hg: Lamp not on... hg test terminated F1= 3 F4= 318
+co02:56:07hg: Lamp not detected f1= 3 f4= 318
+co02:56:08fr: Running fr from b00540 line -200
+hk02:56:11 24 20 21 29.7 5.12-99-99
+co02:57:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:57:30 24 20 21 29.7 5.12-99-99
+co02:57:32hgfw2: HG FW#2 at step  0
+co02:59:34hg: Lamp not on... hg test terminated F1= 4 F4= 355
+co02:59:34hg: Lamp not detected f1= 4 f4= 355
+co02:59:34hg: HG failed
+hk02:59:37 24 20 21 29.7 5.12-99-99
+co02:59:39hgfw2: HG FW#2 at step  0
+co03:01:40hg: Lamp not on... hg test terminated F1= 4 F4= 370
+co03:01:40hg: Lamp not detected f1= 4 f4= 370
+co03:01:42fr: Running fr from b00540 line -200
+hk03:01:44 24 20 21 29.7 5.12-99-99
+co03:02:59fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:03:04 25 20 21 29.7 5.12-99-99
+co03:03:05hgfw2: HG FW#2 at step  0
+co03:05:07hg: Lamp not on... hg test terminated F1= 4 F4= 341
+co03:05:07hg: Lamp not detected f1= 4 f4= 341
+co03:05:07hg: HG failed
+hk03:05:10 25 20 21 29.7 5.12-99-99
+co03:05:12hgfw2: HG FW#2 at step  0
+hk03:07:17 24 20 21 29 5.01-99-99
+hgscan 0narrow 302warm= 203:07:17SEP 13/18 21 19 22 22 34 122 224 364 483 568 613 557 463 322 157 84 79 55 41 31 40 36 49 73 109 182 311 460 614 598 563 480 337 213 91 24 22 21 18 20
+hg03:08:20 .9957 161.526 162 1211 24 3
+hgscan 0narrow 302warm= 203:08:20SEP 13/18 21 26 23 24 92 193 343 478 555 592 613 500 384 224 119 88 70 36 40 44 39 43 49 63 88 122 281 438 548 633 615 587 485 293 170 32 22 21 18 22
+hg03:09:24 .9954 156.4792 156 1246 24-3
+hgscan 0narrow 302warm= 203:09:24SEP 13/18 21 19 16 19 42 147 311 476 582 608 639 543 414 296 118 110 70 48 43 36 42 38 48 76 100 162 267 390 590 660 619 554 405 269 161 33 21 19 17 21
+hg03:10:28 .9976 157.9558 158 1299 24-1
+co03:10:28sum: Running sum from b00540 line -200
+co03:10:29ozsum: Running ozsum from b00540 line -200
+co03:10:30slsum: Running slsum from b00540 line -200
+co03:10:32hgsum: Running hgsum from b00540 line -200
+co03:10:32re: Running re from b00540 line -200
+co03:11:16re: Zenith ZEROING FAILURE !!
+co03:11:51re: Azimuth discrepancy = -15
+hk03:12:16 25 20 21 30.3 5.23-99-99
+co03:12:21hgfw2: HG FW#2 at step  0
+co03:14:20hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co03:14:20hg: Lamp not detected f1= 3 f4= 4
+co03:14:22fr: Running fr from b00540 line -200
+hk03:14:24 24 20 21 29.7 5.12-99-99
+co03:15:40fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:15:44 24 20 21 29.7 5.12-99-99
+co03:15:46hgfw2: HG FW#2 at step  0
+co03:17:48hg: Lamp not on... hg test terminated F1= 4 F4= 2
+co03:17:48hg: Lamp not detected f1= 4 f4= 2
+co03:17:48hg: HG failed
+hk03:17:51 25 20 21 29.7 5.12-99-99
+co03:17:53hgfw2: HG FW#2 at step  0
+co03:19:54hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co03:19:54hg: Lamp not detected f1= 4 f4= 3
+co03:19:56fr: Running fr from b00540 line -200
+hk03:19:58 24 20 21 29.7 5.12-99-99
+co03:21:14fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:21:18 24 20 21 29.7 5.12-99-99
+co03:21:20hgfw2: HG FW#2 at step  0
+co03:23:22hg: Lamp not on... hg test terminated F1= 6 F4= 4
+co03:23:22hg: Lamp not detected f1= 6 f4= 4
+co03:23:22hg: HG failed
+hk03:23:25 24 20 21 30.3 5.23-99-99
+co03:23:26hgfw2: HG FW#2 at step  0
+co03:25:28hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co03:25:28hg: Lamp not detected f1= 3 f4= 4
+co03:25:30fr: Running fr from b00540 line -200
+hk03:25:32 24 20 21 29.7 5.12-99-99
+co03:26:47fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:26:52 24 20 21 29.7 5.12-99-99
+co03:26:53hgfw2: HG FW#2 at step  0
+co03:28:55hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co03:28:55hg: Lamp not detected f1= 3 f4= 4
+co03:28:55hg: HG failed
+hk03:28:58 24 20 21 30.3 5.23-99-99
+co03:29:00hgfw2: HG FW#2 at step  0
+co03:31:02hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co03:31:02hg: Lamp not detected f1= 5 f4= 5
+co03:31:03fr: Running fr from b00540 line -200
+hk03:31:06 24 20 21 30.3 5.23-99-99
+co03:32:21fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:32:25 24 20 21 29.7 5.12-99-99
+co03:32:27hgfw2: HG FW#2 at step  0
+co03:34:29hg: Lamp not on... hg test terminated F1= 4 F4= 298
+co03:34:29hg: Lamp not detected f1= 4 f4= 298
+co03:34:29hg: HG failed
+hk03:34:32 24 20 21 29.7 5.12-99-99
+co03:34:34hgfw2: HG FW#2 at step  0
+co03:36:36hg: Lamp not on... hg test terminated F1= 5 F4= 330
+co03:36:36hg: Lamp not detected f1= 5 f4= 330
+co03:36:37fr: Running fr from b00540 line -200
+hk03:36:39 24 20 20 30.3 5.23-99-99
+co03:37:54fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:37:59 24 19 20 29.7 4.83-99-99
+co03:38:01hgfw2: HG FW#2 at step  0
+co03:40:02hg: Lamp not on... hg test terminated F1= 4 F4= 305
+co03:40:02hg: Lamp not detected f1= 4 f4= 305
+co03:40:02hg: HG failed
+hk03:40:05 23 19 20 30.3 4.93-99-99
+co03:40:07hgfw2: HG FW#2 at step  0
+co03:42:09hg: Lamp not on... hg test terminated F1= 3 F4= 325
+co03:42:09hg: Lamp not detected f1= 3 f4= 325
+co03:42:10fr: Running fr from b00540 line -200
+hk03:42:13 24 19 20 29.7 4.83-99-99
+co03:43:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:43:32 24 19 20 29.7 4.83-99-99
+co03:43:34hgfw2: HG FW#2 at step  0
+co03:45:36hg: Lamp not on... hg test terminated F1= 4 F4= 372
+co03:45:36hg: Lamp not detected f1= 4 f4= 372
+co03:45:36hg: HG failed
+hk03:45:39 23 19 20 30.3 4.93-99-99
+co03:45:41hgfw2: HG FW#2 at step  0
+hk03:47:45 23 19 20 30.3 4.93-99-99
+hgscan 0narrow 302warm= 203:47:45SEP 13/18 18 17 18 20 47 147 281 386 474 539 557 546 449 307 144 108 64 48 41 36 36 39 47 60 89 164 332 440 561 594 568 525 392 276 151 45 21 15 19 18
+hg03:48:49 .9987 159.6594 160 1151 23 1
+co03:48:50sum: Running sum from b00540 line -200
+co03:48:50ozsum: Running ozsum from b00540 line -200
+co03:48:51slsum: Running slsum from b00540 line -200
+co03:48:53hgsum: Running hgsum from b00540 line -200
+co03:48:54re: Running re from b00540 line -200
+co03:49:38re: Zenith ZEROING FAILURE !!
+co03:50:15re: Azimuth discrepancy = -22
+hk03:50:41 24 19 20 29.7 4.83-99-99
+co03:50:46hgfw2: HG FW#2 at step  0
+co03:52:45hg: Lamp not on... hg test terminated F1= 2 F4= 4
+co03:52:45hg: Lamp not detected f1= 2 f4= 4
+co03:52:47fr: Running fr from b00540 line -200
+hk03:52:49 23 19 20 29.7 4.83-99-99
+co03:54:04fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:54:09 24 19 20 30.3 4.93-99-99
+co03:54:11hgfw2: HG FW#2 at step  0
+co03:56:12hg: Lamp not on... hg test terminated F1= 2 F4= 2
+co03:56:12hg: Lamp not detected f1= 2 f4= 2
+co03:56:12hg: HG failed
+hk03:56:16 23 19 20 30.3 4.93-99-99
+co03:56:17hgfw2: HG FW#2 at step  0
+co03:58:19hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co03:58:19hg: Lamp not detected f1= 4 f4= 3
+co03:58:20fr: Running fr from b00540 line -200
+hk03:58:23 23 19 20 30.3 4.93-99-99
+co03:59:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:59:42 24 19 20 29.7 4.83-99-99
+co03:59:44hgfw2: HG FW#2 at step  0
+co04:01:46hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co04:01:46hg: Lamp not detected f1= 3 f4= 3
+co04:01:46hg: HG failed
+hk04:01:49 24 19 20 29.7 4.83-99-99
+co04:01:51hgfw2: HG FW#2 at step  0
+co04:03:53hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co04:03:53hg: Lamp not detected f1= 4 f4= 3
+co04:03:54fr: Running fr from b00540 line -200
+hk04:03:56 24 19 20 29.7 4.83-99-99
+co04:05:11fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:05:16 23 19 20 29.7 4.83-99-99
+co04:05:18hgfw2: HG FW#2 at step  0
+co04:07:19hg: Lamp not on... hg test terminated F1= 5 F4= 2
+co04:07:20hg: Lamp not detected f1= 5 f4= 2
+co04:07:20hg: HG failed
+hk04:07:23 24 19 20 30.3 4.93-99-99
+co04:07:25hgfw2: HG FW#2 at step  0
+co04:09:26hg: Lamp not on... hg test terminated F1= 3 F4= 5
+co04:09:26hg: Lamp not detected f1= 3 f4= 5
+co04:09:28fr: Running fr from b00540 line -200
+hk04:09:30 23 19 20 30.3 4.93-99-99
+co04:10:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:10:50 23 19 20 30.3 4.93-99-99
+co04:10:51hgfw2: HG FW#2 at step  0
+co04:12:53hg: Lamp not on... hg test terminated F1= 3 F4= 301
+co04:12:53hg: Lamp not detected f1= 3 f4= 301
+co04:12:53hg: HG failed
+hk04:12:56 23 19 20 29.7 4.83-99-99
+co04:12:58hgfw2: HG FW#2 at step  0
+co04:15:00hg: Lamp not on... hg test terminated F1= 3 F4= 318
+co04:15:00hg: Lamp not detected f1= 3 f4= 318
+co04:15:01fr: Running fr from b00540 line -200
+hk04:15:04 23 19 20 29.7 4.83-99-99
+co04:16:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:16:23 23 19 20 30.3 4.93-99-99
+co04:16:25hgfw2: HG FW#2 at step  0
+co04:18:27hg: Lamp not on... hg test terminated F1= 3 F4= 346
+co04:18:27hg: Lamp not detected f1= 3 f4= 346
+co04:18:27hg: HG failed
+hk04:18:30 24 19 20 30.3 4.93-99-99
+co04:18:32hgfw2: HG FW#2 at step  0
+co04:20:33hg: Lamp not on... hg test terminated F1= 3 F4= 350
+co04:20:33hg: Lamp not detected f1= 3 f4= 350
+co04:20:35fr: Running fr from b00540 line -200
+hk04:20:37 23 19 20 29.7 4.83-99-99
+co04:21:52fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:21:56 23 19 20 30.3 4.93-99-99
+co04:21:58hgfw2: HG FW#2 at step  0
+hk04:24:02 24 19 20 30.3 4.93-99-99
+hgscan 0narrow 302warm= 204:24:02SEP 13/18 16 20 17 17 24 98 183 256 389 454 494 455 422 297 161 86 63 46 42 27 31 37 45 59 80 192 274 417 518 542 497 454 359 237 126 45 23 16 18 22
+hg04:25:06 .9966 161.598 162 1036 24 3
+hgscan 0narrow 302warm= 204:25:06SEP 13/18 21 18 18 21 61 137 250 353 486 505 536 563 409 288 127 90 60 46 36 36 32 39 43 63 83 163 286 415 547 549 574 477 387 286 201 95 26 20 19 19
+hg04:26:10 .996 159.0262 159 1085 24 0
+co04:26:10sum: Running sum from b00540 line -200
+co04:26:11ozsum: Running ozsum from b00540 line -200
+co04:26:12slsum: Running slsum from b00540 line -200
+co04:26:14hgsum: Running hgsum from b00540 line -200
+co04:26:15re: Running re from b00540 line -200
+co04:26:59re: Zenith ZEROING FAILURE !!
+co04:27:38re: Azimuth discrepancy = -24
+hk04:28:06 24 19 20 30.3 4.93-99-99
+co04:28:11hgfw2: HG FW#2 at step  0
+co04:30:09hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co04:30:09hg: Lamp not detected f1= 4 f4= 4
+co04:30:11fr: Running fr from b00540 line -200
+hk04:30:13 23 19 20 29.7 4.83-99-99
+co04:31:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:31:33 24 19 20 30.3 4.93-99-99
+co04:31:35hgfw2: HG FW#2 at step  0
+co04:33:36hg: Lamp not on... hg test terminated F1= 2 F4= 4
+co04:33:37hg: Lamp not detected f1= 2 f4= 4
+co04:33:37hg: HG failed
+hk04:33:40 24 19 20 29.7 4.83-99-99
+co04:33:42hgfw2: HG FW#2 at step  0
+co04:35:43hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co04:35:43hg: Lamp not detected f1= 4 f4= 3
+co04:35:45fr: Running fr from b00540 line -200
+hk04:35:47 23 19 20 29.7 4.83-99-99
+co04:37:02fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:37:07 24 19 20 30.3 4.93-99-99
+co04:37:09hgfw2: HG FW#2 at step  0
+co04:39:11hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co04:39:11hg: Lamp not detected f1= 3 f4= 2
+co04:39:11hg: HG failed
+hk04:39:14 23 19 20 29.7 4.83-99-99
+co04:39:15hgfw2: HG FW#2 at step  0
+co04:41:17hg: Lamp not on... hg test terminated F1= 3 F4= 5
+co04:41:17hg: Lamp not detected f1= 3 f4= 5
+co04:41:18fr: Running fr from b00540 line -200
+hk04:41:21 24 19 20 29.7 4.83-99-99
+co04:42:36fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:42:40 23 19 20 30.3 4.93-99-99
+co04:42:42hgfw2: HG FW#2 at step  0
+co04:44:44hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co04:44:44hg: Lamp not detected f1= 3 f4= 3
+co04:44:44hg: HG failed
+hk04:44:47 24 19 20 29.7 4.83-99-99
+co04:44:49hgfw2: HG FW#2 at step  0
+co04:46:51hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co04:46:51hg: Lamp not detected f1= 3 f4= 2
+co04:46:52fr: Running fr from b00540 line -200
+hk04:46:54 23 19 20 30.3 4.93-99-99
+co04:48:10fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:48:14 23 19 20 30.3 4.93-99-99
+co04:48:16hgfw2: HG FW#2 at step  0
+co04:50:17hg: Lamp not on... hg test terminated F1= 1 F4= 269
+co04:50:17hg: Lamp not detected f1= 1 f4= 269
+co04:50:18hg: HG failed
+hk04:50:21 23 19 20 29.7 4.83-99-99
+co04:50:22hgfw2: HG FW#2 at step  0
+co04:52:24hg: Lamp not on... hg test terminated F1= 2 F4= 280
+co04:52:24hg: Lamp not detected f1= 2 f4= 280
+co04:52:25fr: Running fr from b00540 line -200
+hk04:52:28 23 19 20 29.7 4.83-99-99
+co04:53:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:53:47 23 19 20 30.3 4.93-99-99
+co04:53:49hgfw2: HG FW#2 at step  0
+co04:55:51hg: Lamp not on... hg test terminated F1= 2 F4= 316
+co04:55:51hg: Lamp not detected f1= 2 f4= 316
+co04:55:51hg: HG failed
+hk04:55:54 24 19 20 30.3 4.93-99-99
+co04:55:56hgfw2: HG FW#2 at step  0
+co04:57:58hg: Lamp not on... hg test terminated F1= 2 F4= 317
+co04:57:58hg: Lamp not detected f1= 2 f4= 317
+co04:57:59fr: Running fr from b00540 line -200
+hk04:58:01 24 19 20 29.7 4.83-99-99
+co04:59:17fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:59:21 23 19 20 30.3 4.93-99-99
+co04:59:23hgfw2: HG FW#2 at step  0
+hk05:01:27 24 19 20 29.7 4.83-99-99
+hgscan 0narrow 302warm= 205:01:27SEP 13/18 17 17 19 16 41 158 263 370 432 457 487 448 390 267 168 82 59 46 37 30 29 34 37 55 74 95 233 305 417 508 495 463 370 279 149 44 17 17 16 19
+hg05:02:31 .9978 157.4945 157 995 24-2
+hgscan 0narrow 302warm= 205:02:31SEP 13/18 19 17 18 13 39 160 257 342 492 546 551 493 348 262 132 76 53 40 37 31 33 36 51 70 81 130 255 398 500 581 528 484 403 254 151 45 20 22 16 14
+hg05:03:35 .9986 158.3457 158 1132 24-1
+co05:03:36sum: Running sum from b00540 line -200
+co05:03:36ozsum: Running ozsum from b00540 line -200
+co05:03:37slsum: Running slsum from b00540 line -200
+co05:03:39hgsum: Running hgsum from b00540 line -200
+co05:03:40re: Running re from b00540 line -200
+co05:04:24re: Zenith ZEROING FAILURE !!
+co05:05:05re: Azimuth discrepancy = -23
+hk05:05:34 24 19 21 30.3 4.93-99-99
+co05:05:39hgfw2: HG FW#2 at step  0
+co05:07:38hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co05:07:38hg: Lamp not detected f1= 4 f4= 4
+co05:07:39fr: Running fr from b00540 line -200
+hk05:07:42 24 20 21 30.3 5.23-99-99
+co05:08:57fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:09:01 24 20 21 29.7 5.12-99-99
+co05:09:03hgfw2: HG FW#2 at step  0
+co05:11:05hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co05:11:05hg: Lamp not detected f1= 4 f4= 3
+co05:11:05hg: HG failed
+hk05:11:08 24 20 21 29 5.01-99-99
+co05:11:10hgfw2: HG FW#2 at step  0
+co05:13:12hg: Lamp not on... hg test terminated F1= 5 F4= 2
+co05:13:12hg: Lamp not detected f1= 5 f4= 2
+co05:13:13fr: Running fr from b00540 line -200
+hk05:13:15 24 20 21 29.7 5.12-99-99
+co05:14:31fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:14:35 24 20 21 29.7 5.12-99-99
+co05:14:37hgfw2: HG FW#2 at step  0
+co05:16:39hg: Lamp not on... hg test terminated F1= 3 F4= 1
+co05:16:39hg: Lamp not detected f1= 3 f4= 1
+co05:16:39hg: HG failed
+hk05:16:42 24 20 21 29.7 5.12-99-99
+co05:16:44hgfw2: HG FW#2 at step  0
+co05:18:46hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co05:18:46hg: Lamp not detected f1= 3 f4= 2
+co05:18:47fr: Running fr from b00540 line -200
+hk05:18:49 24 20 21 29.7 5.12-99-99
+co05:20:04fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:20:09 24 20 21 29.7 5.12-99-99
+co05:20:11hgfw2: HG FW#2 at step  0
+co05:22:13hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co05:22:13hg: Lamp not detected f1= 3 f4= 3
+co05:22:13hg: HG failed
+hk05:22:16 24 20 21 29.7 5.12-99-99
+co05:22:17hgfw2: HG FW#2 at step  0
+co05:24:19hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co05:24:19hg: Lamp not detected f1= 4 f4= 3
+co05:24:21fr: Running fr from b00540 line -200
+hk05:24:23 25 20 21 29.7 5.12-99-99
+co05:25:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:25:42 24 20 21 29.7 5.12-99-99
+co05:25:44hgfw2: HG FW#2 at step  0
+co05:27:46hg: Lamp not on... hg test terminated F1= 4 F4= 277
+co05:27:46hg: Lamp not detected f1= 4 f4= 277
+co05:27:46hg: HG failed
+hk05:27:49 24 20 21 29.7 5.12-99-99
+co05:27:51hgfw2: HG FW#2 at step  0
+co05:29:53hg: Lamp not on... hg test terminated F1= 3 F4= 294
+co05:29:53hg: Lamp not detected f1= 3 f4= 294
+co05:29:54fr: Running fr from b00540 line -200
+hk05:29:56 24 20 22 29 5.01-99-99
+co05:31:11fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:31:16 25 20 22 29 5.01-99-99
+co05:31:18hgfw2: HG FW#2 at step  0
+co05:33:19hg: Lamp not on... hg test terminated F1= 2 F4= 323
+co05:33:19hg: Lamp not detected f1= 2 f4= 323
+co05:33:19hg: HG failed
+hk05:33:22 24 20 22 29 5.01-99-99
+co05:33:24hgfw2: HG FW#2 at step  0
+co05:35:26hg: Lamp not on... hg test terminated F1= 4 F4= 324
+co05:35:26hg: Lamp not detected f1= 4 f4= 324
+co05:35:27fr: Running fr from b00540 line -200
+hk05:35:30 24 21 22 28.4 5.19-99-99
+co05:36:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:36:49 25 21 22 28.4 5.19-99-99
+co05:36:51hgfw2: HG FW#2 at step  0
+co05:38:53hg: Lamp not on... hg test terminated F1= 4 F4= 287
+co05:38:53hg: Lamp not detected f1= 4 f4= 287
+co05:38:53hg: HG failed
+hk05:38:56 25 21 22 29 5.31-99-99
+co05:38:58hgfw2: HG FW#2 at step  0
+hk05:41:02 25 21 22 28.4 5.19-99-99
+hgscan 0narrow 302warm= 205:41:02SEP 13/18 17 19 21 17 29 100 221 350 480 554 590 555 470 348 240 101 78 62 44 43 45 46 69 71 137 277 367 462 589 586 580 496 379 279 161 44 17 18 17 16
+hg05:42:06 .9938 162.0436 162 1176 25 3
+hgscan 0narrow 302warm= 205:42:06SEP 13/18 19 19 18 19 47 151 266 440 547 588 589 544 401 252 144 77 67 43 39 29 41 39 41 59 89 112 256 427 558 629 628 567 476 322 176 39 22 19 16 17
+hg05:43:10 .9971 157.2423 157 1218 25-2
+hgscan 0narrow 302warm= 205:43:10SEP 13/18 20 14 17 18 55 195 330 508 585 629 654 561 442 314 156 94 84 58 44 47 43 46 54 73 94 161 286 454 555 652 670 594 457 302 170 72 21 21 18 19
+hg05:44:14 .9981 157.4441 157 1306 25-2
+hgscan 0narrow 302warm= 205:44:14SEP 13/18 18 22 21 20 31 119 243 367 539 612 642 666 563 359 192 107 86 61 38 43 40 42 60 77 132 214 380 553 681 642 627 483 359 214 92 19 21 21 20 21
+hg05:45:17 .9913 162.9661 163 1284 25 4
+hgscan 0narrow 302warm= 205:45:17SEP 13/18 19 22 19 22 70 182 324 481 612 683 683 580 428 284 166 98 85 62 47 39 48 45 53 91 110 161 296 459 615 685 659 625 483 333 190 72 21 18 23 19
+hg05:46:21 .9976 157.3668 157 1368 25-2
+co05:46:21hg: HG cal too far off limits - resetting micrometer(s)
+co05:46:21re: Running re from main.asc
+co05:47:05re: Zenith ZEROING FAILURE !!
+co05:47:49re: Azimuth discrepancy = -37
+co05:48:49ab_sk: Running ab_sk from main.asc
+hk05:49:07 26 22 23 27.7 5.37-99-99
+co05:49:12hgfw2: HG FW#2 at step  0
+co05:51:11hg: Lamp not on... hg test terminated F1= 6 F4= 5
+co05:51:11hg: Lamp not detected f1= 6 f4= 5
+co05:51:12fr: Running fr from b00540 line -200
+hk05:51:15 26 22 23 28.4 5.5-99-99
+co05:52:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:52:34 26 22 23 27.7 5.37-99-99
+co05:52:36hgfw2: HG FW#2 at step  0
+co05:54:38hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co05:54:38hg: Lamp not detected f1= 3 f4= 3
+co05:54:38hg: HG failed
+hk05:54:41 26 22 23 27.7 5.37-99-99
+co05:54:43hgfw2: HG FW#2 at step  0
+co05:56:45hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co05:56:45hg: Lamp not detected f1= 4 f4= 4
+co05:56:46fr: Running fr from b00540 line -200
+hk05:56:48 27 22 23 27.7 5.37-99-99
+co05:58:04fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:58:08 26 22 23 27.7 5.37-99-99
+co05:58:10hgfw2: HG FW#2 at step  0
+co06:00:12hg: Lamp not on... hg test terminated F1= 6 F4= 4
+co06:00:12hg: Lamp not detected f1= 6 f4= 4
+co06:00:12hg: HG failed
+hk06:00:15 27 22 23 27.7 5.37-99-99
+co06:00:17hgfw2: HG FW#2 at step  0
+co06:02:19hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co06:02:19hg: Lamp not detected f1= 3 f4= 4
+co06:02:20fr: Running fr from b00540 line -200
+hk06:02:22 27 22 24 27.7 5.37-99-99
+co06:03:37fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:03:41 27 23 24 27.7 5.69-99-99
+co06:03:43hgfw2: HG FW#2 at step  0
+co06:05:45hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co06:05:45hg: Lamp not detected f1= 4 f4= 5
+co06:05:45hg: HG failed
+hk06:05:48 27 23 24 27.1 5.56-99-99
+co06:05:50hgfw2: HG FW#2 at step  0
+co06:07:52hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co06:07:52hg: Lamp not detected f1= 4 f4= 5
+co06:07:53fr: Running fr from b00540 line -200
+hk06:07:55 27 23 24 27.7 5.69-99-99
+co06:09:11fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:09:15 27 23 24 27.1 5.56-99-99
+co06:09:17hgfw2: HG FW#2 at step  0
+co06:11:19hg: Lamp not on... hg test terminated F1= 5 F4= 274
+co06:11:19hg: Lamp not detected f1= 5 f4= 274
+co06:11:19hg: HG failed
+hk06:11:22 27 23 24 27.1 5.56-99-99
+co06:11:24hgfw2: HG FW#2 at step  0
+co06:13:26hg: Lamp not on... hg test terminated F1= 4 F4= 286
+co06:13:26hg: Lamp not detected f1= 4 f4= 286
+co06:13:27fr: Running fr from b00540 line -200
+hk06:13:29 27 23 24 27.1 5.56-99-99
+co06:14:44fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:14:49 28 23 24 27.7 5.69-99-99
+co06:14:51hgfw2: HG FW#2 at step  0
+co06:16:52hg: Lamp not on... hg test terminated F1= 5 F4= 297
+co06:16:52hg: Lamp not detected f1= 5 f4= 297
+co06:16:53hg: HG failed
+hk06:16:56 27 23 24 27.1 5.56-99-99
+co06:16:58hgfw2: HG FW#2 at step  0
+co06:18:59hg: Lamp not on... hg test terminated F1= 4 F4= 310
+co06:18:59hg: Lamp not detected f1= 4 f4= 310
+co06:19:00fr: Running fr from b00540 line -200
+hk06:19:03 28 23 24 27.1 5.56-99-99
+co06:20:22fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:20:26 28 23 25 27.1 5.56-99-99
+co06:20:28hgfw2: HG FW#2 at step  0
+co06:22:30hg: Lamp not on... hg test terminated F1= 6 F4= 261
+co06:22:30hg: Lamp not detected f1= 6 f4= 261
+co06:22:30hg: HG failed
+hk06:22:33 28 23 25 27.7 5.69-99-99
+co06:22:35hgfw2: HG FW#2 at step  0
+co06:24:37hg: Lamp not on... hg test terminated F1= 4 F4= 262
+co06:24:37hg: Lamp not detected f1= 4 f4= 262
+co06:24:38fr: Running fr from b00540 line -200
+hk06:24:40 28 24 25 27.1 5.88-99-99
+co06:25:56fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:26:00 28 24 25 27.1 5.88-99-99
+co06:26:02hgfw2: HG FW#2 at step  0
+co06:28:04hg: Lamp not on... hg test terminated F1= 7 F4= 240
+co06:28:04hg: Lamp not detected f1= 7 f4= 240
+co06:28:04hg: HG failed
+hk06:28:07 29 24 25 27.1 5.88-99-99
+co06:28:09hgfw2: HG FW#2 at step  0
+co06:30:10hg: Lamp not on... hg test terminated F1= 6 F4= 252
+co06:30:10hg: Lamp not detected f1= 6 f4= 252
+co06:30:11fr: Running fr from b00540 line -200
+hk06:30:14 29 24 25 26.5 5.74-99-99
+co06:31:29fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:31:34 29 24 25 27.1 5.88-99-99
+co06:31:35hgfw2: HG FW#2 at step  0
+co06:33:37hg: Lamp not on... hg test terminated F1= 7 F4= 259
+co06:33:37hg: Lamp not detected f1= 7 f4= 259
+co06:33:37hg: HG failed
+hk06:33:40 29 24 25 27.1 5.88-99-99
+co06:33:42hgfw2: HG FW#2 at step  0
+co06:35:44hg: Lamp not on... hg test terminated F1= 4 F4= 257
+co06:35:44hg: Lamp not detected f1= 4 f4= 257
+co06:35:45fr: Running fr from b00540 line -200
+hk06:35:48 29 24 25 27.7 6.02-99-99
+co06:37:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:37:08 30 24 25 27.1 5.88-99-99
+co06:37:09hgfw2: HG FW#2 at step  0
+co06:39:11hg: Lamp not on... hg test terminated F1= 5 F4= 281
+co06:39:11hg: Lamp not detected f1= 5 f4= 281
+co06:39:11hg: HG failed
+hk06:39:14 29 24 25 27.1 5.88-99-99
+co06:39:16hgfw2: HG FW#2 at step  0
+hk06:41:21 30 25 25 27.7 6.37-99-99
+hgscan 0narrow 302warm= 206:41:21SEP 13/18 29 30 28 39 135 270 373 516 602 657 681 582 437 288 156 125 90 54 54 50 50 57 69 83 148 170 303 454 669 719 674 629 573 383 262 105 32 33 32 27
+hg06:42:24 .9922 155.972 156 1400 30-3
+hgscan 0narrow 302warm= 206:42:24SEP 13/18 30 32 33 28 65 196 354 540 651 685 730 657 502 323 163 108 90 67 63 51 52 54 59 82 147 165 311 501 644 722 707 671 505 373 204 75 33 31 33 29
+hg06:43:28 .9981 157.6138 158 1452 30-1
+co06:43:29az: Running az from b00540 line -64.3
+co06:44:13az: Azimuth discrepancy = -45
+co06:44:43b0: Running b0 from b00540 line -64.3
+co06:44:43b2: Running b2 from b00540 line -64.3
+co06:44:44uf: Running uf from b00540 line -64.3
+hk06:44:46 29 25 26 26.5 6.08-99-99
+co06:52:43b0: Running b0 from b00540 line -60.35
+co06:52:43uz: Running uz from b00540 line -60.35
+hk06:52:46 30 25 26 27.7 6.37-99-99
+co07:05:28b1: Running b1 from b00540 line -60.35
+co07:05:29td: Running td from b00540 line -60.35
+co07:05:49td: Time correction  19.1 seconds
+co07:05:49ss: Running ss from b00540 line -60.35
+hk07:05:52 31 26 26 25.8 6.27-99-99
+hk07:11:09 31 26 27 25.8 6.27-99-99
+co07:11:20hgfw2: HG FW#2 at step  0
+co07:11:25hg: Lamp not on... hg test terminated F1= 9 F4= 9
+co07:11:25hg: Lamp not detected f1= 9 f4= 9
+co07:11:26fr: Running fr from b00540 line -60.35
+hk07:11:28 31 27 27 26.5 6.79-99-99
+co07:12:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk07:12:49 31 27 27 25.8 6.63-99-99
+co07:12:51hgfw2: HG FW#2 at step  0
+co07:14:53hg: Lamp not on... hg test terminated F1= 11 F4= 10
+co07:14:53hg: Lamp not detected f1= 11 f4= 10
+co07:14:53hg: HG failed
+hk07:14:56 32 27 27 26.5 6.79-99-99
+co07:14:58hgfw2: HG FW#2 at step  0
+co07:17:00hg: Lamp not on... hg test terminated F1= 9 F4= 8
+co07:17:00hg: Lamp not detected f1= 9 f4= 8
+co07:17:01fr: Running fr from b00540 line -200
+hk07:17:03 31 27 27 25.8 6.63-99-99
+co07:18:20fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk07:18:24 32 27 27 25.8 6.63-99-99
+co07:18:26hgfw2: HG FW#2 at step  0
+co07:20:28hg: Lamp not on... hg test terminated F1= 9 F4= 11
+co07:20:28hg: Lamp not detected f1= 9 f4= 11
+co07:20:28hg: HG failed
+hk07:20:30 32 27 27 26.5 6.79-99-99
+co07:20:32hgfw2: HG FW#2 at step  0
+co07:22:34hg: Lamp not on... hg test terminated F1= 10 F4= 12
+co07:22:34hg: Lamp not detected f1= 10 f4= 12
+co07:22:35fr: Running fr from b00540 line -200
+hk07:22:38 32 27 27 26.5 6.79-99-99
+co07:23:54fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk07:23:58 32 27 27 25.8 6.63-99-99
+co07:24:00hgfw2: HG FW#2 at step  0
+co07:24:21hg: HOME key pressed
+hk07:24:24 32 27 27 25.8 6.63-99-99
+co07:24:26hgfw2: HG FW#2 at step  0
+hk07:24:29 32 27 27 26.5 6.79-99-99
+co07:24:31hgfw2: HG FW#2 at step  0
+co07:24:31hg: HOME key pressed
+hk07:24:34 32 27 27 26.5 6.79-99-99
+co07:24:36hgfw2: HG FW#2 at step  0
+hk07:24:39 32 27 27 25.8 6.63-99-99
+co07:24:41hgfw2: HG FW#2 at step  0
+hk07:24:45 32 27 27 26.5 6.79-99-99
+co07:24:56start:  PROGRAM start :  SEP 13/18 at 07:24:55
+co07:24:56pd: COM error  57( 9312) at 07:24:56 during pd
+co07:24:57pd: COM error  57( 9312) at 07:24:57 during pd
+co07:24:57pd: COM error  57( 9312) at 07:24:57 during pd
+co07:24:58re: Running re from main.asc
+co07:25:42re: Zenith ZEROING FAILURE !!
+co07:26:32re: Azimuth discrepancy = -6315
+co07:27:33ab_sk: Running ab_sk from main.asc
+hk07:27:51 32 27 27 26.5 6.79-99-99
+co07:27:52hg: HOME key pressed
+co07:27:57hgfw2: HG FW#2 at step  0
+co07:27:57hg: HOME key pressed
+co07:27:59hg: Going to menu
+co07:28:39pdfraphgpd: Running pdfraphgpd from menu line -200
+co07:28:44fr: Running fr from menu line -200
+hk07:28:47 32 27 27 25.8 6.63-99-99
+co07:30:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+ap07:30:06 30.94 26.25 26.56 1610.56 14.78 4.95-14.95 23.52 0 26.91 0 0 5.15-8.19 .06 0 30.94 26.25 26.56 1610.56 14.68 4.93-14.95 23.75 0 26.91 0 0 5.15-8.19 1.61 12.37
+hk07:30:25 32 27 27 26.5 6.79-99-99
+co07:30:29hgfw2: HG FW#2 at step  0
+co07:32:28hg: Lamp not on... hg test terminated F1= 15 F4= 269
+co07:32:28hg: Lamp not detected f1= 15 f4= 269
+co07:33:01pdcihgappd: Running pdcihgappd from menu line -200
+co07:33:07ci: Running ci from menu line -200
+hk07:33:19 32 27 27 25.8 6.63-99-99
+hk07:38:07 32 26 27 27.1 6.58-99-99
+co07:38:09hgfw2: HG FW#2 at step  0
+co07:40:11hg: Lamp not on... hg test terminated F1= 12 F4= 282
+co07:40:11hg: Lamp not detected f1= 12 f4= 282
+ap07:40:13 30.94 25.62 25.62 1610.56 14.78 4.95-14.95 23.52 0 27.56 0 0 5.15-8.19 .06 0 30.62 25.62 25.62 1610.56 14.68 4.93-14.95 23.75 0 28.21 0 0 5.15-8.19 1.61 12.37
+co07:41:26menu: BACKSPACE key pressed
+co07:41:58pdap: Running pdap from menu line -200
+co07:42:03pdap: HOME key pressed
+co07:42:19pdfrcislhgpd: Running pdfrcislhgpd from menu line -200
+co07:42:25fr: Running fr from menu line -200
+hk07:42:27 32 26 26 27.7 6.74-99-99
+co07:43:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co07:43:45ci: Running ci from menu line -200
+hk07:43:58 31 26 26 27.7 6.74-99-99
+hk07:53:45 32 26 26 27.1 6.58-99-99
+sla 0 474.060620 113281 330 749143 814692 861540 765935 602307rat 32.9375-320.9727-546.711-1116.59
+sla 0 474.690620 113128 325 749653 815351 861683 765843 602239rat 29.3711-325.1172-547.9805-1116.555
+sla 0 475.330620 113176 310 749373 815626 862845 765906 603201rat 31.39844-326.2578-553.6368-1109.82
+sla 0 475.960620 113365 321 749738 816375 863228 766566 603541rat 33.07031-326.5235-551.793-1111.172
+sla 0 476.590620 113232 340 749891 816699 863250 766960 603356rat 34.45703-326.0078-549.629-1114.859
+sla 0 477.220620 113634 342 749920 816528 863188 767822 604076rat 39.29688-320.0547-544.293-1114.586
+sla 0 477.850620 113118 328 750719 817886 863172 767434 604009rat 32.29297-329.7383-546.4571-1112.801
+summary07:55:57SEP 13/18 91.652 11.393 32sl 0 33-325-549-1114 3597 1843 749776.8 603247 3 3 3 3 9 6 446.9 741.1
+hk07:58:13 31 26 26 27.1 6.58-99-99
+co07:58:15hgfw2: HG FW#2 at step  0
+co08:00:17hg: Lamp not on... hg test terminated F1= 12 F4= 282
+co08:00:17hg: Lamp not detected f1= 12 f4= 282
+co08:03:20pdazrefrazhgpd: Running pdazrefrazhgpd from menu line -200
+co08:03:26az: Running az from menu line -200
+co08:04:18az: Azimuth discrepancy = -34
+co08:04:51re: Running re from menu line -200
+co08:05:36re: Zenith ZEROING FAILURE !!
+co08:06:30re: Azimuth discrepancy = -52
+co08:07:04fr: Running fr from menu line -200
+hk08:07:06 31 26 26 26.5 6.43-99-99
+co08:08:22fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co08:08:24az: Running az from menu line -200
+co08:09:17az: Azimuth discrepancy = -42
+hk08:09:53 31 26 26 27.1 6.58-99-99
+co08:09:58hgfw2: HG FW#2 at step  0
+co08:11:56hg: Lamp not on... hg test terminated F1= 10 F4= 270
+co08:11:56hg: Lamp not detected f1= 10 f4= 270
+hk08:26:50 31 26 26 27.1 6.58-99-99
+co09:34:41start:  PROGRAM start :  SEP 13/18 at 09:34:40
+co09:34:41pd: COM error  57( 9312) at 09:34:41 during pd
+co09:34:41pd: COM error  57( 9312) at 09:34:41 during pd
+co09:34:42pd: COM error  57( 9312) at 09:34:42 during pd
+co09:34:43re: Running re from main.asc
+co09:35:26re: Zenith ZEROING FAILURE !!
+co09:36:21re: Azimuth discrepancy = -6925
+co09:39:28pdapb1w1b0hphgdspd: Running pdapb1w1b0hphgdspd from menu line -200
+ap09:39:35 32.81 27.5 27.5 1610.56 14.78 4.93-14.95 23.52 0 26.25 0 0 5.15-8.15 .06 0 32.81 27.5 27.5 1610.56 14.68 4.9-14.95 23.75 0 26.25 0 0 5.15-8.15 1.61 12.37
+co09:39:51b1: Running b1 from menu line -200
+co09:39:51w1: Running w1 from menu line -200
+co09:44:52b0: Running b0 from menu line -200
+hk09:44:55 34 28 28 25.8 7-99-99
+co09:45:00hgfw2: HG FW#2 at step  0
+co09:46:59hg: Lamp not on... hg test terminated F1= 17 F4= 277
+co09:46:59hg: Lamp not detected f1= 17 f4= 277
+hk09:47:19 34 28 28 25.2 6.83-99-99
+dsa128 587.690620 15224 359 404423 671422 1341121 1541667 1373880rat 5107.766 3198.742 377.6172-802.7344
+co09:48:04ds: HOME key pressed
+co09:48:06ds: DS aborted
+co09:48:06ds: Going to menu
+co09:48:40pdapb1w1b0frhppd: Running pdapb1w1b0frhppd from menu line -200
+ap09:48:46 33.13 28.13 27.81 1621.5 14.78 4.93-14.95 23.52 0 26.25 0 0 5.15-8.15 .06 0 33.75 28.13 27.81 1610.56 14.68 4.9-14.95 23.75 0 25.6 0 0 5.15-8.15 1.61 12.37
+co09:49:03b1: Running b1 from menu line -200
+co09:49:03w1: Running w1 from menu line -200
+co09:54:04b0: Running b0 from menu line -200
+co09:54:04fr: Running fr from menu line -200
+hk09:54:07 35 29 29 25.2 7.21-99-99
+co09:55:24fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk09:59:08 35 29 29 25.2 7.21-99-99
+co10:07:36start:  PROGRAM start :  SEP 13/18 at 10:07:32
+hk10:07:36 35 29 29 24.5 7.02-99-99
+co10:07:49b1w1b0: Running b1w1b0 from menu line -200
+co10:07:55b1: Running b1 from menu line -200
+co10:07:55w1: Running w1 from menu line -200
+co10:12:56b0: Running b0 from menu line -200
+co10:20:41skc: Starting schedule B00540
+co10:20:41b0: Running b0 from B00540 line -40.34
+co10:20:41uz: Running uz from B00540 line -40.34
+hk10:20:44 35 30 29 24.5 7.42-99-99
+co10:31:36b0: Running b0 from B00540 line  34.68
+co10:31:36uz: Running uz from B00540 line  34.68
+hk10:31:39 36 30 30 25.2 7.61-99-99
+co10:42:45td: Running td from B00540 line  34.68
+co10:43:09td: Time correction  23.8 seconds
+hk10:43:26 36 30 30 25.2 7.61-99-99
+dsa128 643.820620 15257 528 402607 668053 1332430 1529002 1362709rat 5093.367 3184.969 369.9922-803.3672
+dsa128 644.460620 15604 522 405859 673693 1342562 1540911 1374085rat 5093.485 3183.172 371.0938-801.0703
+dsa128 645.10620 15707 545 410185 680508 1357139 1556964 1388605rat 5094.516 3186.078 369.4766-800.7031
+dsa128 645.750620 15740 495 412979 684979 1364491 1567173 1397995rat 5094.235 3186.805 374.8672-799.9531
+dsa128 646.390620 15791 510 412330 685077 1365790 1566836 1397862rat 5099.649 3184.844 369.3594-799.5781
+summary10:45:06SEP 13/18 37.209 1.253 36ds 2 5095 3185 371-801 7658 4361 1.3 318.3 3 1 2 2 4 3 .2 .8
+co10:46:43b1: Running b1 from B00540 line  34.68
+co10:46:43td: Running td from B00540 line  34.68
+co10:46:44td: Time correction  .1 seconds
+co10:46:44ss: Running ss from B00540 line  34.68
+hk10:46:47 36 30 30 24.5 7.42-99-99
+hk10:51:57 37 31 30 24.5 7.83-99-99
+co10:52:10hgfw2: HG FW#2 at step  0
+hk10:52:17 37 31 30 25.2 8.03-99-99
+hgscan 0narrow 302warm= 652.161710:52:17SEP 13/18 113 101 109 114 160 275 422 567 750 818 803 763 617 435 282 200 176 141 149 133 149 156 142 168 212 249 436 599 721 877 823 797 680 491 331 189 129 113 111 115
+hg10:53:20 .9983 157.526 158 1680 37-1
+co10:53:21td: Running td from B00540 line  34.68
+co10:53:22td: Time correction  .2 seconds
+hk10:53:39 37 31 31 24.5 7.83-99-99
+dsa128 654.030620 15447 580 400279 666771 1331104 1532065 1363788rat 5123.266 3199.5 382.1485-811.3438
+dsa128 654.670620 14974 534 394226 657124 1313738 1510111 1346857rat 5123.203 3197.516 375.5235-802.2422
+dsa128 655.310620 15342 590 397681 664355 1325113 1524679 1359034rat 5129.235 3193.102 380.3281-805.2656
+dsa128 655.950620 15475 546 403347 672557 1343680 1545335 1378408rat 5127.657 3199.758 378.5156-802.6485
+dsa128 656.60620 15567 622 404559 675962 1348999 1552784 1383025rat 5137.11 3199.649 382.6094-809.5
+summary10:55:18SEP 13/18 37.572 1.259 37ds 2 5128 3198 380-806 7708 4379 1 321 6 3 3 4 16 7 .4 1.8
+co10:58:11b0: Running b0 from B00540 line  37.7
+co10:58:12uz: Running uz from B00540 line  37.7
+hk10:58:14 37 31 31 24.5 7.83-99-99
+co11:11:07b1: Running b1 from B00540 line  37.7
+co11:11:08td: Running td from B00540 line  37.7
+co11:11:08td: Time correction  .3 seconds
+co11:11:08ss: Running ss from B00540 line  37.7
+hk11:11:12 36 31 31 24.5 7.83-99-99
+co11:16:29td: Running td from B00540 line  37.7
+co11:16:28td: Time correction -1.7 seconds
+hk11:16:33 37 31 31 24.5 7.83-99-99
+dsa128 676.930620 14915 594 392564 662986 1333255 1539991 1376755rat 5218.735 3239.86 394.3516-795.7735
+dsa128 677.570620 14896 697 392270 661910 1328449 1535161 1373320rat 5207.836 3232.664 396.2422-792.961
+dsa128 678.220620 14630 725 391343 660253 1326065 1533509 1371203rat 5212.907 3238.563 399.2969-795.25
+dsa128 678.860620 14668 655 391683 660237 1327691 1534717 1372206rat 5211.477 3241.625 397.1172-795.6719
+dsa128 679.50620 14656 705 390850 660354 1329294 1535931 1373756rat 5224.258 3244.266 395.086-794.3438
+summary11:18:12SEP 13/18 38.872 1.281 37ds 2 5215 3239 396-795 7758 4392 1.2 318.5 6 4 2 1 8 6 .4 1.3
+hk11:19:53 37 31 31 24.5 7.83-99-99
+dsa128 680.270620 14586 657 388814 658537 1323385 1532287 1370148rat 5235.336 3245.031 404.2578-795.6094
+dsa128 680.910620 14457 602 385957 653399 1315159 1521087 1361716rat 5233.078 3245.594 398.7813-790.2578
+dsa128 681.550620 14129 721 381332 645766 1299248 1506277 1347319rat 5242.328 3253.391 409.336-793.875
+dsa128 682.190620 14179 677 378623 642011 1291742 1496502 1338695rat 5242.883 3248.899 405.6485-793.4531
+dsa128 682.840620 14302 659 383342 649900 1307508 1513252 1355294rat 5238.539 3245.188 401.2891-788.4922
+summary11:21:33SEP 13/18 39.115 1.286 37ds 2 5238 3248 404-792 7774 4393 1.6 317.6 4 4 4 3 11 5 .3 1.4
+co11:27:38az: Running az from B00540 line  39.59
+co11:28:53az: Azimuth discrepancy = -51
+co11:29:41b0: Running b0 from B00540 line  39.59
+co11:29:42uz: Running uz from B00540 line  39.59
+hk11:29:44 37 32 32 23.9 8.04-99-99
+co11:39:25b1: Running b1 from B00540 line  39.59
+co11:39:25td: Running td from B00540 line  39.59
+co11:39:26td: Time correction  .4 seconds
+co11:39:26ss: Running ss from B00540 line  39.59
+hk11:39:30 38 32 32 24.5 8.25-99-99
+hk11:44:46 38 32 31 24.5 8.25-99-99
+co11:44:59hgfw2: HG FW#2 at step  0
+co11:45:03hg: Lamp not on... hg test terminated F1= 29 F4= 280
+co11:45:03hg: Lamp not detected f1= 29 f4= 280
+co11:45:04fr: Running fr from B00540 line  39.59
+hk11:45:06 37 32 31 24.5 8.25-99-99
+co11:46:22fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk11:46:27 38 32 31 23.9 8.04-99-99
+co11:46:28hgfw2: HG FW#2 at step  0
+co11:48:30hg: Lamp not on... hg test terminated F1= 38 F4= 266
+co11:48:30hg: Lamp not detected f1= 38 f4= 266
+co11:48:30hg: HG failed
+hk11:48:33 38 32 31 24.5 8.25-99-99
+co11:48:35hgfw2: HG FW#2 at step  0
+co11:50:37hg: Lamp not on... hg test terminated F1= 31 F4= 268
+co11:50:37hg: Lamp not detected f1= 31 f4= 268
+co11:50:38fr: Running fr from B00540 line -200
+hk11:50:41 37 32 31 24.5 8.25-99-99
+co11:51:57fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk11:52:02 38 32 31 24.5 8.25-99-99
+co11:52:04hgfw2: HG FW#2 at step  0
+co11:54:05hg: Lamp not on... hg test terminated F1= 37 F4= 278
+co11:54:05hg: Lamp not detected f1= 37 f4= 278
+co11:54:05hg: HG failed
+hk11:54:08 38 32 31 24.5 8.25-99-99
+co11:54:10hgfw2: HG FW#2 at step  0
+co11:56:12hg: Lamp not on... hg test terminated F1= 35 F4= 288
+co11:56:12hg: Lamp not detected f1= 35 f4= 288
+co11:56:13fr: Running fr from B00540 line -200
+hk11:56:16 38 31 31 24.5 7.83-99-99
+co11:57:33fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk11:57:37 37 31 31 25.2 8.03-99-99
+co11:57:39hgfw2: HG FW#2 at step  0
+co11:59:41hg: Lamp not on... hg test terminated F1= 33 F4= 294
+co11:59:41hg: Lamp not detected f1= 33 f4= 294
+co11:59:41hg: HG failed
+hk11:59:44 38 31 31 24.5 7.83-99-99
+co11:59:46hgfw2: HG FW#2 at step  0
+co12:01:47hg: Lamp not on... hg test terminated F1= 30 F4= 297
+co12:01:47hg: Lamp not detected f1= 30 f4= 297
+co12:01:48fr: Running fr from B00540 line -200
+hk12:01:51 38 31 30 25.2 8.03-99-99
+co12:03:08fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:03:12 37 31 30 25.8 8.24-99-99
+co12:03:14hgfw2: HG FW#2 at step  0
+co12:05:16hg: Lamp not on... hg test terminated F1= 32 F4= 293
+co12:05:16hg: Lamp not detected f1= 32 f4= 293
+co12:05:16hg: HG failed
+hk12:05:19 37 31 30 25.2 8.03-99-99
+co12:05:21hgfw2: HG FW#2 at step  0
+co12:07:22hg: Lamp not on... hg test terminated F1= 50 F4= 298
+co12:07:22hg: Lamp not detected f1= 50 f4= 298
+co12:07:24fr: Running fr from B00540 line -200
+hk12:07:26 37 30 29 25.8 7.81-99-99
+co12:08:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:08:47 37 30 29 26.5 8-99-99
+co12:08:49hgfw2: HG FW#2 at step  0
+co12:10:51hg: Lamp not on... hg test terminated F1= 38 F4= 308
+co12:10:51hg: Lamp not detected f1= 38 f4= 308
+co12:10:51hg: HG failed
+hk12:10:54 37 30 29 26.5 8-99-99
+co12:10:56hgfw2: HG FW#2 at step  0
+co12:12:58hg: Lamp not on... hg test terminated F1= 34 F4= 317
+co12:12:58hg: Lamp not detected f1= 34 f4= 317
+co12:12:59fr: Running fr from B00540 line -200
+hk12:13:01 37 30 29 25.8 7.81-99-99
+co12:14:18fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:14:22 36 30 29 25.8 7.81-99-99
+co12:14:24hgfw2: HG FW#2 at step  0
+co12:16:26hg: Lamp not on... hg test terminated F1= 36 F4= 312
+co12:16:26hg: Lamp not detected f1= 36 f4= 312
+co12:16:26hg: HG failed
+hk12:16:29 36 30 29 26.5 8-99-99
+co12:16:31hgfw2: HG FW#2 at step  0
+co12:18:33hg: Lamp not on... hg test terminated F1= 37 F4= 326
+co12:18:33hg: Lamp not detected f1= 37 f4= 326
+co12:18:34fr: Running fr from B00540 line -200
+hk12:18:36 36 30 29 25.8 7.81-99-99
+co12:19:53fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:19:57 36 30 29 26.5 8-99-99
+co12:19:59hgfw2: HG FW#2 at step  0
+hk12:22:04 36 30 29 26.5 8-99-99
+hgscan 0narrow 302warm= 212:22:04SEP 13/18 139 146 152 149 213 377 504 613 757 784 811 743 629 524 324 242 213 179 180 163 170 173 192 202 264 352 490 672 785 815 813 758 584 431 292 182 157 162 147 155
+hg12:23:07 0 161 161 1626 36 2
+hgscan 0narrow 302warm= 212:23:07SEP 13/18 150 146 152 157 183 279 439 574 759 810 855 853 745 569 375 280 225 197 168 185 165 176 199 243 248 400 526 679 831 889 861 813 698 498 334 218 153 141 152 147
+hg12:24:11 0 161 161 1744 36 2
+hgscan 0narrow 302warm= 212:24:11SEP 13/18 138 148 149 147 239 397 596 766 838 927 882 777 646 517 324 257 226 174 172 171 167 170 187 208 319 318 460 611 761 881 890 855 781 584 388 260 142 147 141 138
+hg12:25:15 .9906 155.273 155 1763 36-4
+hgscan 0narrow 302warm= 212:25:15SEP 13/18 161 163 154 154 212 345 505 719 851 900 929 860 666 533 372 262 213 206 181 177 179 177 194 224 262 325 488 642 803 883 909 822 660 493 333 215 165 146 144 142
+hg12:26:18 0 161 161 1812 36 2
+hgscan 0narrow 302warm= 212:26:18SEP 13/18 139 134 163 149 195 387 555 752 879 892 892 789 627 485 306 239 232 176 183 164 175 191 180 203 262 303 483 713 859 942 904 806 713 479 305 150 155 150 141 138
+hg12:27:22 .998 157.4006 157 1834 36-2
+co12:27:22hg: HG cal too far off limits - resetting micrometer(s)
+co12:27:22re: Running re from main.asc
+co12:28:06re: Zenith ZEROING FAILURE !!
+co12:29:25re: Azimuth discrepancy = -46
+co12:30:25ab_sk: Running ab_sk from main.asc
+hk12:30:44 36 30 30 25.8 7.81-99-99
+co12:30:49hgfw2: HG FW#2 at step  0
+co12:32:48hg: Lamp not on... hg test terminated F1= 32 F4= 36
+co12:32:48hg: Lamp not detected f1= 32 f4= 36
+co12:32:49fr: Running fr from B00540 line -200
+hk12:32:51 36 30 30 25.8 7.81-99-99
+co12:34:08fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:34:12 36 30 30 26.5 8-99-99
+co12:34:14hgfw2: HG FW#2 at step  0
+co12:36:16hg: Lamp not on... hg test terminated F1= 33 F4= 36
+co12:36:16hg: Lamp not detected f1= 33 f4= 36
+co12:36:16hg: HG failed
+hk12:36:19 36 30 30 25.8 7.81-99-99
+co12:36:21hgfw2: HG FW#2 at step  0
+co12:38:23hg: Lamp not on... hg test terminated F1= 45 F4= 36
+co12:38:23hg: Lamp not detected f1= 45 f4= 36
+co12:38:24fr: Running fr from B00540 line -200
+hk12:38:26 36 30 30 25.8 7.81-99-99
+co12:39:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:39:48 36 30 30 25.8 7.81-99-99
+co12:39:50hgfw2: HG FW#2 at step  0
+co12:41:51hg: Lamp not on... hg test terminated F1= 33 F4= 35
+co12:41:51hg: Lamp not detected f1= 33 f4= 35
+co12:41:51hg: HG failed
+hk12:41:54 36 30 30 25.8 7.81-99-99
+co12:41:56hgfw2: HG FW#2 at step  0
+co12:43:58hg: Lamp not on... hg test terminated F1= 48 F4= 29
+co12:43:58hg: Lamp not detected f1= 48 f4= 29
+co12:43:59fr: Running fr from B00540 line -200
+hk12:44:02 36 30 30 26.5 8-99-99
+co12:45:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:45:23 36 30 30 25.8 7.81-99-99
+co12:45:25hgfw2: HG FW#2 at step  0
+co12:47:27hg: Lamp not on... hg test terminated F1= 52 F4= 47
+co12:47:27hg: Lamp not detected f1= 52 f4= 47
+co12:47:27hg: HG failed
+hk12:47:30 36 30 30 25.8 7.81-99-99
+co12:47:32hgfw2: HG FW#2 at step  0
+co12:49:34hg: Lamp not on... hg test terminated F1= 33 F4= 34
+co12:49:34hg: Lamp not detected f1= 33 f4= 34
+co12:49:35fr: Running fr from B00540 line -200
+hk12:49:37 36 30 30 25.8 7.81-99-99
+co12:50:54fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:50:58 36 30 30 25.2 7.61-99-99
+co12:51:00hgfw2: HG FW#2 at step  0
+co12:53:02hg: Lamp not on... hg test terminated F1= 52 F4= 256
+co12:53:02hg: Lamp not detected f1= 52 f4= 256
+co12:53:02hg: HG failed
+hk12:53:05 36 30 30 25.8 7.81-99-99
+co12:53:07hgfw2: HG FW#2 at step  0
+co12:55:09hg: Lamp not on... hg test terminated F1= 35 F4= 271
+co12:55:09hg: Lamp not detected f1= 35 f4= 271
+co12:55:10fr: Running fr from B00540 line -200
+hk12:55:13 36 30 30 25.8 7.81-99-99
+co12:56:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk12:56:34 36 30 30 25.2 7.61-99-99
+co12:56:36hgfw2: HG FW#2 at step  0
+co12:58:38hg: Lamp not on... hg test terminated F1= 45 F4= 275
+co12:58:38hg: Lamp not detected f1= 45 f4= 275
+co12:58:38hg: HG failed
+hk12:58:41 36 30 30 25.8 7.81-99-99
+co12:58:43hgfw2: HG FW#2 at step  0
+co13:00:45hg: Lamp not on... hg test terminated F1= 47 F4= 274
+co13:00:45hg: Lamp not detected f1= 47 f4= 274
+co13:00:46fr: Running fr from B00540 line -200
+hk13:00:48 36 30 30 25.8 7.81-99-99
+co13:02:05fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:02:10 36 30 30 25.8 7.81-99-99
+co13:02:12hgfw2: HG FW#2 at step  0
+co13:04:13hg: Lamp not on... hg test terminated F1= 32 F4= 248
+co13:04:13hg: Lamp not detected f1= 32 f4= 248
+co13:04:14hg: HG failed
+hk13:04:17 36 30 30 25.2 7.61-99-99
+co13:04:19hgfw2: HG FW#2 at step  0
+co13:06:20hg: Lamp not on... hg test terminated F1= 34 F4= 263
+co13:06:20hg: Lamp not detected f1= 34 f4= 263
+co13:06:21fr: Running fr from B00540 line -200
+hk13:06:24 36 30 30 26.5 8-99-99
+co13:07:41fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:07:45 36 30 30 25.8 7.81-99-99
+co13:07:47hgfw2: HG FW#2 at step  0
+co13:09:49hg: Lamp not on... hg test terminated F1= 25 F4= 259
+co13:09:49hg: Lamp not detected f1= 25 f4= 259
+co13:09:49hg: HG failed
+hk13:09:52 36 30 30 25.8 7.81-99-99
+co13:09:54hgfw2: HG FW#2 at step  0
+co13:11:55hg: Lamp not on... hg test terminated F1= 28 F4= 260
+co13:11:55hg: Lamp not detected f1= 28 f4= 260
+co13:11:57fr: Running fr from B00540 line -200
+hk13:11:59 36 30 30 25.8 7.81-99-99
+co13:13:16fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:13:20 36 30 30 25.8 7.81-99-99
+co13:13:22hgfw2: HG FW#2 at step  0
+co13:15:24hg: Lamp not on... hg test terminated F1= 27 F4= 245
+co13:15:24hg: Lamp not detected f1= 27 f4= 245
+co13:15:24hg: HG failed
+hk13:15:27 36 30 30 25.8 7.81-99-99
+co13:15:29hgfw2: HG FW#2 at step  0
+co13:17:30hg: Lamp not on... hg test terminated F1= 32 F4= 256
+co13:17:30hg: Lamp not detected f1= 32 f4= 256
+co13:17:32fr: Running fr from B00540 line -200
+hk13:17:34 36 30 30 25.8 7.81-99-99
+co13:18:51fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:18:55 36 30 30 25.8 7.81-99-99
+co13:18:57hgfw2: HG FW#2 at step  0
+co13:20:59hg: Lamp not on... hg test terminated F1= 48 F4= 238
+co13:20:59hg: Lamp not detected f1= 48 f4= 238
+co13:20:59hg: HG failed
+hk13:21:02 36 30 30 25.8 7.81-99-99
+co13:21:04hgfw2: HG FW#2 at step  0
+co13:23:06hg: Lamp not on... hg test terminated F1= 26 F4= 243
+co13:23:06hg: Lamp not detected f1= 26 f4= 243
+co13:23:07fr: Running fr from B00540 line -200
+hk13:23:09 36 30 30 25.8 7.81-99-99
+co13:24:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:24:30 36 30 30 25.8 7.81-99-99
+co13:24:32hgfw2: HG FW#2 at step  0
+co13:26:34hg: Lamp not on... hg test terminated F1= 48 F4= 236
+co13:26:34hg: Lamp not detected f1= 48 f4= 236
+co13:26:34hg: HG failed
+hk13:26:37 36 30 30 25.8 7.81-99-99
+co13:26:39hgfw2: HG FW#2 at step  0
+co13:28:41hg: Lamp not on... hg test terminated F1= 30 F4= 279
+co13:28:41hg: Lamp not detected f1= 30 f4= 279
+co13:28:42fr: Running fr from B00540 line -200
+hk13:28:44 36 30 30 25.2 7.61-99-99
+co13:30:01fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:30:06 36 30 30 25.2 7.61-99-99
+co13:30:08hgfw2: HG FW#2 at step  0
+co13:32:09hg: Lamp not on... hg test terminated F1= 30 F4= 252
+co13:32:09hg: Lamp not detected f1= 30 f4= 252
+co13:32:09hg: HG failed
+hk13:32:12 36 30 30 25.8 7.81-99-99
+co13:32:14hgfw2: HG FW#2 at step  0
+co13:34:16hg: Lamp not on... hg test terminated F1= 29 F4= 272
+co13:34:16hg: Lamp not detected f1= 29 f4= 272
+co13:34:17fr: Running fr from B00540 line -200
+hk13:34:20 36 30 29 25.8 7.81-99-99
+co13:35:37fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:35:40 36 30 29 25.2 7.61-99-99
+co13:35:42hgfw2: HG FW#2 at step  0
+hk13:37:46 36 30 29 25.2 7.61-99-99
+hgscan 0narrow 302warm= 213:37:46SEP 13/18 121 141 117 126 190 294 404 582 689 708 750 683 569 416 223 188 168 148 147 152 146 144 179 168 190 254 436 537 704 830 764 701 547 406 280 141 176 143 140 160
+hg13:38:50 .998 158.2313 158 1580 36-1
+co13:38:52b0: Running b0 from B00540 line  54.58
+co13:38:52b1: Running b1 from B00540 line  54.58
+co13:38:53uz: Running uz from B00540 line  54.58
+hk13:38:55 36 30 29 25.2 7.61-99-99
+co13:50:48td: Running td from B00540 line  54.58
+co13:51:20td: Time correction  32.1 seconds
+hk13:51:39 36 30 29 25.8 7.81-99-99
+dsa64 832.10620 2579 637 104094 262404 646324 887278 848012rat 8112.055 4565.188 1021.664-605.3438
+dsa64 832.750620 2191 654 89223 227599 560245 773159 739617rat 8168.657 4571.61 1038.914-601.7344
+dsa64 833.390620 2471 608 100495 257510 635749 877246 838805rat 8205.938 4591.43 1041.523-605.5391
+dsa64 834.030620 2554 680 108973 278279 689727 951665 912013rat 8214.243 4614.071 1043.242-597.2344
+dsa64 834.670620 2551 645 106762 275246 680439 942728 903190rat 8256.004 4616.688 1059.82-599.6875
+summary13:53:23SEP 13/18 59.674 1.962 36ds 1 8191 4592 1041-602 10117 5095 1.3 315.3 54 24 14 4 48 14 .6 1.2
+co13:55:00b0: Running b0 from B00540 line  59.53
+co13:55:01uz: Running uz from B00540 line  59.53
+hk13:55:03 36 30 29 25.8 7.81-99-99
+co14:02:50b1: Running b1 from B00540 line  59.53
+co14:02:50td: Running td from B00540 line  59.53
+co14:02:51td: Time correction  .1 seconds
+hk14:03:09 35 30 29 25.8 7.81-99-99
+dsa64 843.530620 1876 613 74278 202959 517466 736770 711016rat 8683.184 4813.867 1154.234-581.711
+dsa64 844.170620 1731 655 69729 190402 487595 694402 671597rat 8694.078 4827.641 1152-573.1875
+dsa64 844.810620 1783 677 67443 185682 477131 681112 658139rat 8750.719 4848.938 1160.453-578.625
+dsa64 845.460620 1763 672 66421 183068 470426 672794 652475rat 8758.402 4853.586 1167-563.625
+dsa64 846.10620 1714 659 65518 181474 466441 668037 647912rat 8781.106 4857 1171.484-564.6875
+summary14:04:48SEP 13/18 61.674 2.084 35ds 1 8733 4840 1161-572 10565 5233 1.1 316.7 43 19 8 8 30 11 .4 2.2
+co14:06:26b0: Running b0 from B00540 line  61.6
+co14:06:26kd: Running kd from B00540 line  61.6
+hk14:06:29 35 29 29 25.8 7.39-99-99
+hk14:07:02 35 29 29 25.8 7.39-99-99
+um130918Thessaloniki 40.634-22.956 4.03pr10000 847.571640 1359 26855 68169 163408 220770 205210rat 9289.769 5125.5 1297.176-372.7344
+hk14:09:41 35 29 29 25.8 7.39-99-99
+um130918Thessaloniki 40.634-22.956 4.03pr10000 848.881640 1286 185186 206708 151688 136449 77594rat-1412.863-1872.676-488.1602-2539.274
+um130918Thessaloniki 40.634-22.956 4.03pr10000 850.221640 1262 25368 64498 154971 210592 194796rat 9328.344 5159.535 1322.254-394.043
+hk14:12:20 35 29 29 25.8 7.39-99-99
+um130918Thessaloniki 40.634-22.956 4.03pr10000 851.531640 1291 177589 199285 147232 132266 75623rat-1365.973-1849.191-494.0742-2516.356
+um130918Thessaloniki 40.634-22.956 4.03pr10000 852.871640 1152 24276 62829 151116 206298 191881rat 9421.047 5180.067 1341.652-369.6563
+hk14:14:59 35 29 29 25.8 7.39-99-99
+um130918Thessaloniki 40.634-22.956 4.03pr10000 854.181640 1212 170437 193610 142905 129143 73805rat-1289.973-1826.609-467.8203-2516.957
+um130918Thessaloniki 40.634-22.956 4.03pr10000 855.521640 1201 22895 59925 145325 199474 185978rat 9549.891 5244.86 1366.09-359.2813
+hk14:17:38 35 29 29 26.5 7.58-99-99
+um130918Thessaloniki 40.634-22.956 4.01pr10000 856.831640 1226 169656 190579 140718 126245 72063rat-1369.676-1857.313-499.8828-2523.211
+co14:20:16uz: Running uz from B00540 line  61.6
+hk14:20:18 35 29 29 27.1 7.76-99-99
+co14:30:36b0: Running b0 from B00540 line  64.6
+co14:30:37b1: Running b1 from B00540 line  64.6
+co14:30:37uz: Running uz from B00540 line  64.6
+hk14:30:40 35 29 29 27.1 7.76-99-99
+co14:41:59td: Running td from B00540 line  64.6
+co14:42:27td: Time correction  26.6 seconds
+co14:42:27kd: Running kd from B00540 line  64.6
+hk14:42:30 35 29 29 26.5 7.58-99-99
+hk14:43:04 35 29 29 26.5 7.58-99-99
+um130918Thessaloniki 40.634-22.956 4pr10000 883.611640 13085 24444 48999 109455 157101 150317rat 10968.17 5989.574 1725.031-262.1914
+hk14:45:43 35 28 29 26.5 7.18-99-99
+um130918Thessaloniki 40.634-22.956 4pr10000 884.921640 8418 129378 148855 117498 107858 65214rat-924.4609-1551.863-425.6407-2487.656
+um130918Thessaloniki 40.634-22.956 4pr10000 886.261640 5551 16132 40215 97827 145241 139463rat 11143.6 6010.746 1781.09-236.0274
+hk14:48:22 34 28 29 27.1 7.35-99-99
+um130918Thessaloniki 40.634-22.956 3.96pr10000 887.571640 2585 120145 138830 108803 99703 57883rat-901.1211-1521.316-412.086-2499.57
+co14:48:24b0: Running b0 from B00540 line  69.54
+co14:48:24b1: Running b1 from B00540 line  69.54
+co14:48:24uz: Running uz from B00540 line  69.54
+hk14:48:27 34 28 29 25.8 7-99-99
+hk14:58:02 34 28 29 26.5 7.18-99-99
+co14:58:24hgfw2: HG FW#2 at step  0
+co14:58:27hg: Lamp not on... hg test terminated F1= 23 F4= 276
+co14:58:27hg: Lamp not detected f1= 23 f4= 276
+co14:58:29fr: Running fr from B00540 line  69.54
+hk14:58:31 34 28 29 26.5 7.18-99-99
+co14:59:47fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk14:59:51 34 28 28 25.8 7-99-99
+co14:59:53hgfw2: HG FW#2 at step  0
+co15:01:55hg: Lamp not on... hg test terminated F1= 21 F4= 234
+co15:01:55hg: Lamp not detected f1= 21 f4= 234
+co15:01:55hg: HG failed
+hk15:01:58 34 28 29 26.5 7.18-99-99
+co15:02:00hgfw2: HG FW#2 at step  0
+hk15:04:04 34 28 29 25.8 7-99-99
+hgscan 0narrow 302warm= 215:04:04SEP 13/18 96 100 104 106 159 282 395 544 719 756 853 731 551 453 265 178 201 154 166 128 142 149 169 179 223 240 386 580 741 819 827 737 537 420 268 135 104 89 98 100
+hg15:05:08 .9975 158.6373 159 1672 34 0
+co15:05:08td: Running td from B00540 line -200
+co15:05:10td: Time correction  .4 seconds
+hk15:05:23 34 28 29 26.5 7.18-99-99
+dsa0 905.840620 730 470 13268 69749 245680 473777 511541rat 13520.06 7028.797 2236.656-309.0547
+dsa0 906.490620 584 483 12445 67027 236632 458672 496960rat 13655.59 7051.813 2253.945-297.9063
+dsa0 907.130620 608 486 11778 63357 225734 439823 477590rat 13705.99 7104.582 2271.219-292.4766
+dsa0 907.780620 1294 1270 11748 60932 216482 423085 461039rat 13836.92 7144.141 2286.969-280.5156
+dsa0 908.420620 4067 3924 13610 60156 207943 406346 443358rat 13955.7 7185.016 2308.781-276.9766
+summary15:07:07SEP 13/18 73.033 3.316 34ds 0 13735 7103 2272-291 14667 6462 .9 310.2 168 64 28 13 127 29 .6 1
+co15:08:44ka: Running ka from B00540 line -200
+hk15:08:47 33 28 29 25.8 7-99-99
+hk15:09:20 33 28 29 26.5 7.18-99-99
+um130918Thessaloniki 40.634-22.956 3.92pr10000 909.871640 2819 7534 21689 59672 97970 97032rat 12987.85 6985.047 2217.574-92.25781
+hk15:11:59 34 28 29 25.8 7-99-99
+um130918Thessaloniki 40.634-22.956 3.96pr10000 911.181640 3507 82521 98673 83277 78588 46784rat-292.0586-1079.242-285.8711-2445.688
+um130918Thessaloniki 40.634-22.956 3.96pr10000 912.521640 5885 10405 23543 59085 96608 95807rat 12961.96 7064.742 2298.324-89.23047
+hk15:14:38 34 28 29 25.8 7-99-99
+um130918Thessaloniki 40.634-22.956 3.96pr10000 913.831640 3251 78355 94826 80106 76288 45932rat-191.3867-1031.949-244.0039-2385.934
+um130918Thessaloniki 40.634-22.956 3.96pr10000 915.171640 4210 8459 20464 54246 90493 90080rat 13012.26 7206.422 2346.606-71.52735
+hk15:17:17 34 28 29 26.5 7.18-99-99
+um130918Thessaloniki 40.634-22.956 3.96pr10000 916.481640 1421 72147 87905 75088 71506 42350rat-109.6289-962.5664-239.1797-2388.695
+co15:17:18b0: Running b0 from B00540 line  74.55
+co15:17:18b1: Running b1 from B00540 line  74.55
+co15:17:19uz: Running uz from B00540 line  74.55
+hk15:17:21 34 28 29 26.5 7.18-99-99
+hk15:25:33 33 28 28 26.5 7.18-99-99
+co15:25:54hgfw2: HG FW#2 at step  0
+co15:25:59hg: Lamp not on... hg test terminated F1= 25 F4= 23
+co15:25:59hg: Lamp not detected f1= 25 f4= 23
+co15:26:00fr: Running fr from B00540 line  74.55
+hk15:26:02 34 27 28 25.8 6.63-99-99
+co15:27:18fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk15:27:23 33 27 28 26.5 6.79-99-99
+co15:27:25hgfw2: HG FW#2 at step  0
+co15:29:27hg: Lamp not on... hg test terminated F1= 26 F4= 18
+co15:29:27hg: Lamp not detected f1= 26 f4= 18
+co15:29:27hg: HG failed
+hk15:29:29 33 27 28 26.5 6.79-99-99
+co15:29:31hgfw2: HG FW#2 at step  0
+co15:31:33hg: Lamp not on... hg test terminated F1= 78 F4= 67
+co15:31:33hg: Lamp not detected f1= 78 f4= 67
+co15:31:34fr: Running fr from B00540 line -200
+hk15:31:37 33 27 28 26.5 6.79-99-99
+co15:32:53fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk15:32:57 33 27 28 26.5 6.79-99-99
+co15:32:59hgfw2: HG FW#2 at step  0
+co15:35:01hg: Lamp not on... hg test terminated F1= 157 F4= 160
+co15:35:01hg: Lamp not detected f1= 157 f4= 160
+co15:35:01hg: HG failed
+hk15:35:04 33 27 28 27.1 6.96-99-99
+co15:35:06hgfw2: HG FW#2 at step  0
+co15:37:08hg: Lamp not on... hg test terminated F1= 283 F4= 282
+co15:37:08hg: Lamp not detected f1= 283 f4= 282
+co15:37:09fr: Running fr from B00540 line -200
+hk15:37:11 33 27 27 27.1 6.96-99-99
+co15:38:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk15:38:32 33 27 28 26.5 6.79-99-99
+co15:38:34hgfw2: HG FW#2 at step  0
+co15:40:36hg: Lamp not on... hg test terminated F1= 27 F4= 240
+co15:40:36hg: Lamp not detected f1= 27 f4= 240
+co15:40:36hg: HG failed
+hk15:40:39 33 27 28 26.5 6.79-99-99
+co15:40:41hgfw2: HG FW#2 at step  0
+co15:42:43hg: Lamp not on... hg test terminated F1= 22 F4= 232
+co15:42:43hg: Lamp not detected f1= 22 f4= 232
+co15:42:44fr: Running fr from B00540 line -200
+hk15:42:47 33 27 28 27.1 6.96-99-99
+co15:44:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk15:44:07 33 27 28 26.5 6.79-99-99
+co15:44:09hgfw2: HG FW#2 at step  0
+co15:46:11hg: Lamp not on... hg test terminated F1= 18 F4= 275
+co15:46:11hg: Lamp not detected f1= 18 f4= 275
+co15:46:11hg: HG failed
+hk15:46:14 33 27 27 27.1 6.96-99-99
+co15:46:16hgfw2: HG FW#2 at step  0
+hk15:48:20 33 27 27 26.5 6.79-99-99
+hgscan 0narrow 302warm= 215:48:20SEP 13/18 92 93 94 89 147 276 423 562 686 707 774 690 552 415 277 175 159 145 123 133 126 128 146 152 186 241 384 552 712 747 761 725 579 435 318 183 125 142 147 140
+hg15:49:24 .9981 157.4842 157 1521 33-2
+hgscan 0narrow 302warm= 215:49:24SEP 13/18 129 173 124 147 171 305 450 583 732 786 814 780 690 565 437 282 255 212 196 199 195 189 213 237 318 457 580 727 843 861 826 771 627 465 314 206 199 183 185 172
+hg15:50:28 0 161 161 1675 33 2
+hgscan 0narrow 302warm= 215:50:28SEP 13/18 306 317 323 329 384 547 738 989 943 991 1027 992 893 745 612 473 433 437 421 447 425 424 429 449 515 674 789 781 939 1002 1252 965 826 650 504 320 277 329 344 414
+hg15:51:32 0 151 151 2029 33-8
+hgscan 0narrow 302warm= 215:51:32SEP 13/18 331 209 318 256 249 418 482 639 808 911 927 968 914 775 538 447 351 326 283 284 266 273 299 336 450 585 734 953 1034 988 1035 801 659 506 373 293 275 293 308 326
+hg15:52:36 0 171 171 1915 33 12
+hgscan 0narrow 302warm= 215:52:36SEP 13/18 292 329 347 447 417 586 787 910 842 911 900 804 651 518 325 221 263 245 224 201 166 179 218 219 223 287 418 534 718 889 876 813 677 481 346 221 209 191 194 203
+hg15:53:40 .9797 152.9528 153 1789 33-6
+co15:53:40hg: HG cal too far off limits - resetting micrometer(s)
+co15:53:40re: Running re from main.asc
+co15:54:24re: Zenith ZEROING FAILURE !!
+co15:55:59re: Azimuth discrepancy = -29
+co15:57:01ab_sk: Running ab_sk from main.asc
+hk15:57:19 33 27 27 27.1 6.96-99-99
+co15:57:25hgfw2: HG FW#2 at step  0
+co15:59:23hg: Lamp not on... hg test terminated F1= 20 F4= 20
+co15:59:23hg: Lamp not detected f1= 20 f4= 20
+co15:59:25fr: Running fr from B00540 line -200
+hk15:59:27 32 27 27 27.1 6.96-99-99
+co16:00:42fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk16:00:47 32 27 27 27.1 6.96-99-99
+co16:00:48hgfw2: HG FW#2 at step  0
+co16:02:50hg: Lamp not on... hg test terminated F1= 19 F4= 16
+co16:02:50hg: Lamp not detected f1= 19 f4= 16
+co16:02:50hg: HG failed
+hk16:02:53 32 27 27 27.1 6.96-99-99
+co16:02:55hgfw2: HG FW#2 at step  0
+co16:04:57hg: Lamp not on... hg test terminated F1= 13 F4= 16
+co16:04:57hg: Lamp not detected f1= 13 f4= 16
+co16:04:58fr: Running fr from B00540 line -200
+hk16:05:00 32 27 27 27.1 6.96-99-99
+co16:06:16fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk16:06:20 32 27 27 27.1 6.96-99-99
+co16:06:22hgfw2: HG FW#2 at step  0
+co16:08:24hg: Lamp not on... hg test terminated F1= 16 F4= 18
+co16:08:24hg: Lamp not detected f1= 16 f4= 18
+co16:08:24hg: HG failed
+hk16:08:27 31 27 27 27.1 6.96-99-99
+co16:08:29hgfw2: HG FW#2 at step  0
+co16:10:31hg: Lamp not on... hg test terminated F1= 15 F4= 18
+co16:10:31hg: Lamp not detected f1= 15 f4= 18
+co16:10:32fr: Running fr from B00540 line -200
+hk16:10:34 32 26 27 27.7 6.74-99-99
+co16:11:49fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk16:11:54 31 26 27 27.7 6.74-99-99
+co16:11:55hgfw2: HG FW#2 at step  0
+co16:13:57hg: Lamp not on... hg test terminated F1= 14 F4= 16
+co16:13:57hg: Lamp not detected f1= 14 f4= 16
+co16:13:57hg: HG failed
+hk16:14:00 32 26 27 27.7 6.74-99-99
+co16:14:02hgfw2: HG FW#2 at step  0
+co16:16:04hg: Lamp not on... hg test terminated F1= 16 F4= 17
+co16:16:04hg: Lamp not detected f1= 16 f4= 17
+co16:16:05fr: Running fr from B00540 line -200
+hk16:16:08 31 26 27 27.7 6.74-99-99
+co16:17:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk16:17:27 31 26 27 27.7 6.74-99-99
+co16:17:29hgfw2: HG FW#2 at step  0
+co16:19:31hg: Lamp not on... hg test terminated F1= 13 F4= 153
+co16:19:31hg: Lamp not detected f1= 13 f4= 153
+co16:19:31hg: HG failed
+hk16:19:34 32 26 26 27.7 6.74-99-99
+co16:19:36hgfw2: HG FW#2 at step  0
+co16:21:38hg: Lamp not on... hg test terminated F1= 16 F4= 143
+co16:21:38hg: Lamp not detected f1= 16 f4= 143
+co16:21:39fr: Running fr from B00540 line -200
+hk16:21:41 31 26 26 27.7 6.74-99-99
+co16:22:57fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk16:23:01 31 26 26 27.7 6.74-99-99
+co16:23:03hgfw2: HG FW#2 at step  0
+co16:25:05hg: Lamp not on... hg test terminated F1= 14 F4= 174
+co16:25:05hg: Lamp not detected f1= 14 f4= 174
+co16:25:05hg: HG failed
+hk16:25:08 31 26 26 27.7 6.74-99-99
+co16:25:10hgfw2: HG FW#2 at step  0
+hk16:27:14 31 26 26 27.7 6.74-99-99
+hgscan 0narrow 302warm= 216:27:14SEP 13/18 61 68 66 77 160 273 441 538 648 681 672 550 448 328 195 144 128 86 87 80 81 90 88 121 137 168 264 447 601 677 695 655 583 425 283 159 72 61 61 63
+hg16:28:18 .9911 154.3325 154 1349 31-5
+hgscan 0narrow 302warm= 216:28:18SEP 13/18 62 62 66 64 135 251 370 540 670 695 700 608 488 328 207 152 159 108 80 91 79 102 135 142 153 225 378 550 666 716 709 654 576 371 217 108 66 60 67 63
+hg16:29:21 .9978 157.5246 158 1416 31-1
+co16:29:23b0: Running b0 from B00540 line  84.58999
+co16:29:23b1: Running b1 from B00540 line  84.58999
+co16:29:24uz: Running uz from B00540 line  84.58999
+hk16:29:26 30 26 26 28.4 6.9-99-99
+co16:40:42b0: Running b0 from B00540 line  89.56
+co16:40:42b1: Running b1 from B00540 line  89.56
+co16:40:43uf: Running uf from B00540 line  89.56
+hk16:40:45 30 25 25 28.4 6.52-99-99
+co16:48:38ui: Running ui from B00540 line  89.56
+hk16:48:42 30 25 25 28.4 6.52-99-99
+co16:49:04hgfw2: HG FW#2 at step  0
+co16:49:07hg: Lamp not on... hg test terminated F1= 12 F4= 254
+co16:49:07hg: Lamp not detected f1= 12 f4= 254
+co16:49:08fr: Running fr from B00540 line  89.56
+hk16:49:11 30 25 25 29 6.67-99-99
+co16:50:27fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk16:50:31 30 25 25 28.4 6.52-99-99
+co16:50:33hgfw2: HG FW#2 at step  0
+co16:52:35hg: Lamp not on... hg test terminated F1= 12 F4= 214
+co16:52:35hg: Lamp not detected f1= 12 f4= 214
+co16:52:35hg: HG failed
+hk16:52:38 30 24 25 29 6.3-99-99
+co16:52:40hgfw2: HG FW#2 at step  0
+hk16:54:44 29 24 25 29 6.3-99-99
+hgscan 0narrow 302warm= 216:54:44SEP 13/18 47 52 55 53 71 149 292 410 547 596 619 579 458 329 230 154 141 100 73 80 76 82 88 104 146 223 363 492 557 636 613 554 436 308 194 82 56 49 47 52
+hg16:55:48 .999 159.9247 160 1255 29 1
+co16:55:49td: Running td from B00540 line -200
+co16:55:48td: Time correction -1 seconds
+co16:55:48b2: Running b2 from B00540 line -200
+co16:55:49td: Time correction  .1 seconds
+hk16:56:01 30 24 25 28.4 6.16-99-99
+co16:56:04ds: DS intensity too low ( 14/cy), skipping.
+co16:56:19zs: ZS intensity too low ( 17/cy), skipping.
+hk17:00:50 29 24 25 28.4 6.16-99-99
+sla 0 1021.140620 112900 223 746179 812249 858065 761245 598734rat 29.37891-330.6563-553.9688-1110.945
+sla 0 1021.780620 112833 230 747316 812384 858161 761896 599211rat 26.41016-327.5781-550.6563-1111.242
+sla 0 1022.410620 112976 230 746443 812545 858605 761909 599278rat 31.69922-328.3828-552.8985-1110.824
+sla 0 1023.040620 112941 239 747272 812818 859549 762942 599452rat 32.78125-323.8594-551.7774-1115.586
+sla 0 1023.670620 112981 225 747747 813138 859640 762607 600167rat 28-327.5703-554.2031-1108.324
+sla 0 1024.30620 112802 225 748305 812498 858730 762500 600608rat 24.05078-324.6719-550.086-1104.441
+sla 0 1024.930620 112831 221 747292 813309 858902 762333 600379rat 29.10547-330.1016-551.961-1105.156
+summary17:03:02SEP 13/18 69.576 2.802 29sl 0 29-328-552-1110 3579 1835 747222 599689.9 3 3 2 4 15 8 741.1 670.4
+co17:05:16ka: Running ka from B00540 line -200
+hk17:05:19 29 24 25 28.4 6.16-99-99
+hk17:05:59 29 24 25 28.4 6.16-99-99
+um130918Thessaloniki 40.634-22.956 3.66pr10000 1026.521640 442 446 436 464 443 470rat-59.73999-41.17993-6827.134 7812.137
+hk17:08:38 29 24 25 28.4 6.16-99-99
+um130918Thessaloniki 40.634-22.956 3.66pr10000 1027.831640 436 441 428 443 448 451rat 3742.373 4134.399 2321.692 925.8896
+um130918Thessaloniki 40.634-22.956 3.66pr10000 1029.171640 429 424 441 455 441 417rat 4115.839-41.18018-3377.063-4218.789
+hk17:11:17 30 24 25 28.4 6.16-99-99
+um130918Thessaloniki 40.634-22.956 3.7pr10000 1030.481640 418 422 416 448 429 427rat 3735.893 3755.093-4377.087-916.2026
+um130918Thessaloniki 40.634-22.956 3.7pr10000 1031.821640 434 419 402 416 404 431rat-61.80005-42.6001-19.80005-44.69995
+hk17:13:56 29 24 25 28.4 6.16-99-99
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1033.131640 431 401 435 412 426 400rat-59.73999-41.17993-19.13989-43.20996
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1034.471640 399 398 405 400 417 419rat 5876.752 4730.033 5917.352 414.3652
+hk17:16:35 29 24 25 29 6.3-99-99
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1035.781640 399 417 427 409 406 391rat-4161.485-6061.782-1568.16-1877.957
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1037.121640 414 399 411 399 409 404rat-59.73999-41.17993-19.13989-43.20996
+hk17:19:14 29 24 25 29 6.3-99-99
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1038.431640 388 406 385 397 395 394rat-4161.485 1793.567-1110.584-712.6783
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1039.771640 404 389 384 393 371 411rat-59.73999-41.17993-19.13989 1791.537
+hk17:21:53 28 24 25 28.4 6.16-99-99
+um130918Thessaloniki 40.634-22.956 3.62pr10000 1041.081640 400 385 375 381 381 380rat-57.67993-39.75977-18.47998-41.72022
+um130918Thessaloniki 40.634-22.956 3.62pr10000 1042.421640 378 394 397 398 375 398rat-5482.647-6211.064-6412.547 6352.347
+hk17:24:32 28 24 25 27.7 6.02-99-99
+um130918Thessaloniki 40.634-22.956 3.62pr10000 1043.731640 390 382 375 374 383 370rat-57.67993-39.75977-18.47998-41.72022
+um130918Thessaloniki 40.634-22.956 3.62pr10000 1045.071640 375 394 363 369 390 370rat-1084.305 5104.919 5126.198-5186.399
+hk17:27:11 29 24 25 29 6.3-99-99
+um130918Thessaloniki 40.634-22.956 3.66pr10000 1046.381640 382 383 376 382 368 374rat-59.73999-41.17993-19.13989-43.20996
+um130918Thessaloniki 40.634-22.956 3.66pr10000 1047.721640 380 387 375 372 384 388rat-1894.487-41.17993-19.13989 2371.456
+hk17:29:50 29 24 24 29 6.3-99-99
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1049.031640 374 376 395 371 350 376rat-59.73999-6647.139-19.13989-43.20996
+um130918Thessaloniki 40.634-22.956 3.64pr10000 1050.371640 374 366 379 393 397 364rat 6941.305 6586.399 810.6006-7044.255
+hk17:32:29 29 23 24 28.4 5.82-99-99
+um130918Thessaloniki 40.634-22.956 3.66pr10000 1051.681640 364 382 366 367 361 361rat-5996.232-41.17993-19.13989-43.20996
+co17:32:30az: Running az from B00540 line  100
+co17:33:42az: Azimuth discrepancy = -28
+co17:34:28ze: Running ze from B00540 line  100
+co17:35:08ze: Zenith discrepancy =  0
+ap17:35:09 27.5 22.81 23.75 1610.56 14.78 4.93-14.95 23.52 0 30.17 0 0 5.15-8.19 .06 0 28.13 22.81 23.75 1610.56 14.68 4.9-14.95 23.75 0 29.52 0 0 5.15-8.19 1.61 12.37
+hk17:35:28 29 23 24 28.4 5.82-99-99
+co17:35:30hgfw2: HG FW#2 at step  0
+co17:37:32hg: Lamp not on... hg test terminated F1= 10 F4= 9
+co17:37:32hg: Lamp not detected f1= 10 f4= 9
+co17:37:33fr: Running fr from B00540 line  100
+hk17:37:35 28 23 24 28.4 5.82-99-99
+co17:38:50fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk17:38:55 28 23 24 29 5.96-99-99
+co17:38:56hgfw2: HG FW#2 at step  0
+co17:40:58hg: Lamp not on... hg test terminated F1= 11 F4= 10
+co17:40:58hg: Lamp not detected f1= 11 f4= 10
+co17:40:58hg: HG failed
+hk17:41:01 28 23 24 28.4 5.82-99-99
+co17:41:03hgfw2: HG FW#2 at step  0
+co17:43:05hg: Lamp not on... hg test terminated F1= 6 F4= 9
+co17:43:05hg: Lamp not detected f1= 6 f4= 9
+co17:43:06fr: Running fr from B00540 line -200
+hk17:43:09 28 23 24 29 5.96-99-99
+co17:44:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk17:44:32 28 23 24 28.4 5.82-99-99
+co17:44:34hgfw2: HG FW#2 at step  0
+co17:46:36hg: Lamp not on... hg test terminated F1= 8 F4= 10
+co17:46:36hg: Lamp not detected f1= 8 f4= 10
+co17:46:36hg: HG failed
+hk17:46:39 28 23 24 28.4 5.82-99-99
+co17:46:41hgfw2: HG FW#2 at step  0
+co17:48:43hg: Lamp not on... hg test terminated F1= 9 F4= 8
+co17:48:43hg: Lamp not detected f1= 9 f4= 8
+co17:48:44fr: Running fr from B00540 line -200
+hk17:48:46 28 23 24 28.4 5.82-99-99
+co17:50:02fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk17:50:07 28 23 24 28.4 5.82-99-99
+co17:50:09hgfw2: HG FW#2 at step  0
+co17:52:11hg: Lamp not on... hg test terminated F1= 8 F4= 8
+co17:52:11hg: Lamp not detected f1= 8 f4= 8
+co17:52:11hg: HG failed
+hk17:52:14 28 23 24 28.4 5.82-99-99
+co17:52:16hgfw2: HG FW#2 at step  0
+co17:54:17hg: Lamp not on... hg test terminated F1= 8 F4= 7
+co17:54:17hg: Lamp not detected f1= 8 f4= 7
+co17:54:18fr: Running fr from B00540 line -200
+hk17:54:21 28 23 24 29 5.96-99-99
+co17:55:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk17:55:48 28 23 24 29 5.96-99-99
+co17:55:49hgfw2: HG FW#2 at step  0
+co17:57:51hg: Lamp not on... hg test terminated F1= 8 F4= 7
+co17:57:51hg: Lamp not detected f1= 8 f4= 7
+co17:57:51hg: HG failed
+hk17:57:54 28 23 24 29 5.96-99-99
+co17:57:56hgfw2: HG FW#2 at step  0
+co17:59:58hg: Lamp not on... hg test terminated F1= 7 F4= 185
+co17:59:58hg: Lamp not detected f1= 7 f4= 185
+co17:59:59fr: Running fr from B00540 line -200
+hk18:00:02 28 23 24 28.4 5.82-99-99
+co18:01:17fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:01:21 28 23 24 28.4 5.82-99-99
+co18:01:23hgfw2: HG FW#2 at step  0
+co18:03:25hg: Lamp not on... hg test terminated F1= 5 F4= 203
+co18:03:25hg: Lamp not detected f1= 5 f4= 203
+co18:03:25hg: HG failed
+hk18:03:28 27 23 24 28.4 5.82-99-99
+co18:03:30hgfw2: HG FW#2 at step  0
+hk18:05:34 28 23 24 28.4 5.82-99-99
+hgscan 0narrow 302warm= 218:05:34SEP 13/18 35 31 36 34 70 162 277 358 449 514 545 518 439 305 179 140 76 67 53 53 49 58 56 69 106 151 243 429 515 594 567 520 385 289 194 81 38 37 37 32
+hg18:06:38 .9972 159.0348 159 1139 28 0
+co18:06:39ze: Running ze from B00540 line -200
+co18:06:41ze: Zenith ZEROING FAILURE !!
+co18:06:41ze: Turning AZ 30 degrees and repeating ZE.
+co18:07:19ze: Zenith discrepancy =  0
+ap18:07:20 27.5 22.19 23.44 1610.56 14.78 4.95-14.95 23.52 0 29.52 0 0 5.15-8.19 .06 0 26.87 22.19 23.44 1610.56 14.68 4.9-14.95 23.75 31.2 29.52 0 0 5.15-8.19 1.61 12.37
+hk18:07:39 28 23 24 28.4 5.82-99-99
+co18:07:41hgfw2: HG FW#2 at step  0
+co18:09:43hg: Lamp not on... hg test terminated F1= 7 F4= 5
+co18:09:43hg: Lamp not detected f1= 7 f4= 5
+co18:09:44fr: Running fr from B00540 line -200
+hk18:09:46 27 23 24 28.4 5.82-99-99
+co18:11:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:11:08 27 23 24 28.4 5.82-99-99
+co18:11:10hgfw2: HG FW#2 at step  0
+co18:13:11hg: Lamp not on... hg test terminated F1= 9 F4= 5
+co18:13:11hg: Lamp not detected f1= 9 f4= 5
+co18:13:11hg: HG failed
+hk18:13:14 28 23 24 28.4 5.82-99-99
+co18:13:16hgfw2: HG FW#2 at step  0
+co18:15:18hg: Lamp not on... hg test terminated F1= 6 F4= 8
+co18:15:18hg: Lamp not detected f1= 6 f4= 8
+co18:15:19fr: Running fr from B00540 line -200
+hk18:15:22 28 23 24 28.4 5.82-99-99
+co18:16:39fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:16:43 27 23 24 28.4 5.82-99-99
+co18:16:45hgfw2: HG FW#2 at step  0
+co18:18:47hg: Lamp not on... hg test terminated F1= 7 F4= 9
+co18:18:47hg: Lamp not detected f1= 7 f4= 9
+co18:18:47hg: HG failed
+hk18:18:50 28 23 24 28.4 5.82-99-99
+co18:18:52hgfw2: HG FW#2 at step  0
+co18:20:54hg: Lamp not on... hg test terminated F1= 7 F4= 6
+co18:20:54hg: Lamp not detected f1= 7 f4= 6
+co18:20:55fr: Running fr from B00540 line -200
+hk18:20:57 27 23 24 28.4 5.82-99-99
+co18:22:15fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:22:19 28 23 24 29 5.96-99-99
+co18:22:21hgfw2: HG FW#2 at step  0
+co18:24:23hg: Lamp not on... hg test terminated F1= 8 F4= 6
+co18:24:23hg: Lamp not detected f1= 8 f4= 6
+co18:24:23hg: HG failed
+hk18:24:26 28 23 24 28.4 5.82-99-99
+co18:24:28hgfw2: HG FW#2 at step  0
+co18:26:29hg: Lamp not on... hg test terminated F1= 9 F4= 8
+co18:26:29hg: Lamp not detected f1= 9 f4= 8
+co18:26:31fr: Running fr from B00540 line -200
+hk18:26:33 27 23 24 28.4 5.82-99-99
+co18:27:50fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:27:54 27 23 24 28.4 5.82-99-99
+co18:27:56hgfw2: HG FW#2 at step  0
+co18:29:58hg: Lamp not on... hg test terminated F1= 7 F4= 5
+co18:29:58hg: Lamp not detected f1= 7 f4= 5
+co18:29:58hg: HG failed
+hk18:30:01 27 23 24 28.4 5.82-99-99
+co18:30:03hgfw2: HG FW#2 at step  0
+co18:32:05hg: Lamp not on... hg test terminated F1= 5 F4= 206
+co18:32:05hg: Lamp not detected f1= 5 f4= 206
+co18:32:06fr: Running fr from B00540 line -200
+hk18:32:08 27 23 24 28.4 5.82-99-99
+co18:33:25fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:33:30 27 23 24 27.7 5.69-99-99
+co18:33:32hgfw2: HG FW#2 at step  0
+co18:35:33hg: Lamp not on... hg test terminated F1= 6 F4= 201
+co18:35:33hg: Lamp not detected f1= 6 f4= 201
+co18:35:33hg: HG failed
+hk18:35:37 27 23 24 28.4 5.82-99-99
+co18:35:38hgfw2: HG FW#2 at step  0
+hk18:37:43 27 23 24 27.7 5.69-99-99
+hgscan 0narrow 302warm= 218:37:43SEP 13/18 33 31 25 36 42 105 187 296 382 480 509 548 427 339 171 93 70 59 52 44 49 50 58 68 97 165 298 437 500 522 535 471 416 303 192 88 35 30 28 35
+hg18:38:47 .9951 160.7741 161 1031 27 2
+hgscan 0narrow 302warm= 218:38:47SEP 13/18 32 31 27 29 101 209 330 472 539 555 554 442 352 231 153 113 74 56 55 47 46 50 51 73 91 130 231 351 495 566 552 542 444 293 196 75 31 35 35 31
+hg18:39:50 .9929 155.1182 155 1120 27-4
+hgscan 0narrow 302warm= 218:39:50SEP 13/18 31 32 32 29 31 139 263 385 496 554 570 544 440 325 175 95 83 64 49 52 49 59 63 77 145 193 318 465 562 585 560 505 365 269 150 50 34 30 27 32
+hg18:40:54 .9989 160.4488 160 1155 27 1
+co18:40:55ze: Running ze from B00540 line -200
+co18:40:57ze: Zenith ZEROING FAILURE !!
+co18:40:57ze: Turning AZ 30 degrees and repeating ZE.
+co18:42:20ze: Zenith discrepancy =  0
+ap18:42:21 27.19 21.88 22.81 1610.56 14.78 4.95-14.95 23.52 0 29.52 0 0 5.15-8.19 .06 0 26.87 21.88 22.81 1610.56 14.68 4.93-14.95 23.75 13.65 29.52 0 0 5.15-8.19 1.61 12.37
+hk18:42:40 27 23 23 29 5.96-99-99
+co18:42:42hgfw2: HG FW#2 at step  0
+co18:44:43hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co18:44:43hg: Lamp not detected f1= 5 f4= 3
+co18:44:44fr: Running fr from B00540 line -200
+hk18:44:47 27 23 23 28.4 5.82-99-99
+co18:46:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:46:07 27 23 23 28.4 5.82-99-99
+co18:46:09hgfw2: HG FW#2 at step  0
+co18:48:11hg: Lamp not on... hg test terminated F1= 9 F4= 7
+co18:48:11hg: Lamp not detected f1= 9 f4= 7
+co18:48:11hg: HG failed
+hk18:48:14 27 23 23 27.7 5.69-99-99
+co18:48:15hgfw2: HG FW#2 at step  0
+co18:50:17hg: Lamp not on... hg test terminated F1= 8 F4= 5
+co18:50:17hg: Lamp not detected f1= 8 f4= 5
+co18:50:18fr: Running fr from B00540 line -200
+hk18:50:21 27 23 23 28.4 5.82-99-99
+co18:51:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:51:50 27 23 23 27.7 5.69-99-99
+co18:51:52hgfw2: HG FW#2 at step  0
+co18:53:53hg: Lamp not on... hg test terminated F1= 6 F4= 8
+co18:53:53hg: Lamp not detected f1= 6 f4= 8
+co18:53:53hg: HG failed
+hk18:53:56 27 23 23 28.4 5.82-99-99
+co18:53:58hgfw2: HG FW#2 at step  0
+co18:56:00hg: Lamp not on... hg test terminated F1= 7 F4= 5
+co18:56:00hg: Lamp not detected f1= 7 f4= 5
+co18:56:01fr: Running fr from B00540 line -200
+hk18:56:04 27 22 23 28.4 5.5-99-99
+co18:57:21fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk18:57:25 27 22 23 27.7 5.37-99-99
+co18:57:27hgfw2: HG FW#2 at step  0
+co18:59:29hg: Lamp not on... hg test terminated F1= 7 F4= 5
+co18:59:29hg: Lamp not detected f1= 7 f4= 5
+co18:59:29hg: HG failed
+hk18:59:32 27 22 23 28.4 5.5-99-99
+co18:59:34hgfw2: HG FW#2 at step  0
+co19:01:36hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co19:01:36hg: Lamp not detected f1= 5 f4= 5
+co19:01:37fr: Running fr from B00540 line -200
+hk19:01:39 27 22 23 28.4 5.5-99-99
+co19:02:56fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:03:00 27 22 23 27.7 5.37-99-99
+co19:03:02hgfw2: HG FW#2 at step  0
+co19:05:04hg: Lamp not on... hg test terminated F1= 6 F4= 177
+co19:05:04hg: Lamp not detected f1= 6 f4= 177
+co19:05:04hg: HG failed
+hk19:05:07 27 22 23 28.4 5.5-99-99
+co19:05:09hgfw2: HG FW#2 at step  0
+co19:07:11hg: Lamp not on... hg test terminated F1= 5 F4= 147
+co19:07:11hg: Lamp not detected f1= 5 f4= 147
+co19:07:12fr: Running fr from B00540 line -200
+hk19:07:14 27 22 23 27.7 5.37-99-99
+co19:08:32fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:08:36 27 22 23 27.7 5.37-99-99
+co19:08:38hgfw2: HG FW#2 at step  0
+co19:10:40hg: Lamp not on... hg test terminated F1= 2 F4= 184
+co19:10:40hg: Lamp not detected f1= 2 f4= 184
+co19:10:40hg: HG failed
+hk19:10:43 27 22 23 27.1 5.25-99-99
+co19:10:45hgfw2: HG FW#2 at step  0
+hk19:12:49 27 22 23 27.7 5.37-99-99
+hgscan 0narrow 302warm= 219:12:49SEP 13/18 29 24 34 26 37 121 210 317 431 490 556 494 417 285 168 90 72 56 51 41 46 49 44 70 87 141 291 365 488 549 514 509 374 276 179 83 28 29 28 30
+hg19:13:53 .9988 159.5213 160 1105 27 1
+co19:13:54ze: Running ze from B00540 line -200
+co19:13:56ze: Zenith ZEROING FAILURE !!
+co19:13:56ze: Turning AZ 30 degrees and repeating ZE.
+co19:14:12ze: Zenith discrepancy =  0
+ap19:14:13 26.56 21.56 22.81 1610.56 14.78 4.95-14.95 23.52 0 29.52 0 0 5.15-8.19 .06 0 26.25 21.56 22.81 1610.56 14.68 4.93-14.95 23.75 23.4 28.87 0 0 5.15-8.19 1.61 12.37
+hk19:14:32 27 22 23 28.4 5.5-99-99
+co19:14:34hgfw2: HG FW#2 at step  0
+co19:16:35hg: Lamp not on... hg test terminated F1= 8 F4= 6
+co19:16:35hg: Lamp not detected f1= 8 f4= 6
+co19:16:36fr: Running fr from B00540 line -200
+hk19:16:39 27 22 23 28.4 5.5-99-99
+co19:17:55fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:17:59 27 22 23 27.7 5.37-99-99
+co19:18:01hgfw2: HG FW#2 at step  0
+co19:20:03hg: Lamp not on... hg test terminated F1= 7 F4= 5
+co19:20:03hg: Lamp not detected f1= 7 f4= 5
+co19:20:03hg: HG failed
+hk19:20:06 27 22 23 27.7 5.37-99-99
+co19:20:08hgfw2: HG FW#2 at step  0
+co19:22:09hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co19:22:09hg: Lamp not detected f1= 5 f4= 6
+co19:22:11fr: Running fr from B00540 line -200
+hk19:22:13 27 22 23 27.7 5.37-99-99
+co19:23:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:23:35 27 22 23 28.4 5.5-99-99
+co19:23:36hgfw2: HG FW#2 at step  0
+co19:25:38hg: Lamp not on... hg test terminated F1= 6 F4= 6
+co19:25:38hg: Lamp not detected f1= 6 f4= 6
+co19:25:38hg: HG failed
+hk19:25:41 27 22 23 28.4 5.5-99-99
+co19:25:43hgfw2: HG FW#2 at step  0
+co19:27:45hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co19:27:45hg: Lamp not detected f1= 5 f4= 5
+co19:27:46fr: Running fr from B00540 line -200
+hk19:27:49 27 22 23 27.7 5.37-99-99
+co19:29:06fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:29:10 27 22 23 27.7 5.37-99-99
+co19:29:12hgfw2: HG FW#2 at step  0
+co19:31:14hg: Lamp not on... hg test terminated F1= 5 F4= 9
+co19:31:14hg: Lamp not detected f1= 5 f4= 9
+co19:31:14hg: HG failed
+hk19:31:17 26 22 23 27.7 5.37-99-99
+co19:31:19hgfw2: HG FW#2 at step  0
+co19:33:21hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co19:33:21hg: Lamp not detected f1= 5 f4= 6
+co19:33:22fr: Running fr from B00540 line -200
+hk19:33:24 27 22 23 27.7 5.37-99-99
+co19:34:41fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:34:46 27 22 23 28.4 5.5-99-99
+co19:34:48hgfw2: HG FW#2 at step  0
+co19:36:50hg: Lamp not on... hg test terminated F1= 7 F4= 4
+co19:36:50hg: Lamp not detected f1= 7 f4= 4
+co19:36:50hg: HG failed
+hk19:36:53 26 22 23 28.4 5.5-99-99
+co19:36:55hgfw2: HG FW#2 at step  0
+co19:38:57hg: Lamp not on... hg test terminated F1= 5 F4= 147
+co19:38:57hg: Lamp not detected f1= 5 f4= 147
+co19:38:58fr: Running fr from B00540 line -200
+hk19:39:00 27 22 23 28.4 5.5-99-99
+co19:40:17fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:40:21 27 22 23 27.7 5.37-99-99
+co19:40:23hgfw2: HG FW#2 at step  0
+co19:42:25hg: Lamp not on... hg test terminated F1= 6 F4= 170
+co19:42:25hg: Lamp not detected f1= 6 f4= 170
+co19:42:25hg: HG failed
+hk19:42:28 27 22 23 27.7 5.37-99-99
+co19:42:30hgfw2: HG FW#2 at step  0
+hk19:44:34 26 22 23 28.4 5.5-99-99
+hgscan 0narrow 302warm= 219:44:34SEP 13/18 29 23 26 32 37 116 236 343 446 493 487 440 394 285 181 110 76 49 48 42 52 45 59 81 92 157 268 363 474 493 512 467 319 205 124 45 27 30 30 26
+hg19:45:38 .9984 159.9624 160 980 26 1
+co19:45:39ze: Running ze from B00540 line -200
+co19:45:41ze: Zenith ZEROING FAILURE !!
+co19:45:41ze: Turning AZ 30 degrees and repeating ZE.
+co19:45:57ze: Zenith discrepancy =  0
+ap19:45:58 25.94 21.25 22.19 1610.56 14.78 4.95-14.95 23.52 0 28.87 0 0 5.15-8.19 .06 0 26.25 21.25 22.19 1610.56 14.78 4.93-14.95 23.75 27.3 28.87 0 0 5.15-8.19 1.61 12.37
+hk19:46:17 26 22 23 28.4 5.5-99-99
+co19:46:19hgfw2: HG FW#2 at step  0
+co19:48:20hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co19:48:20hg: Lamp not detected f1= 5 f4= 5
+co19:48:21fr: Running fr from B00540 line -200
+hk19:48:24 27 22 23 27.7 5.37-99-99
+co19:49:40fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:49:44 27 22 23 27.7 5.37-99-99
+co19:49:46hgfw2: HG FW#2 at step  0
+co19:51:48hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co19:51:48hg: Lamp not detected f1= 5 f4= 4
+co19:51:48hg: HG failed
+hk19:51:51 27 22 23 28.4 5.5-99-99
+co19:51:53hgfw2: HG FW#2 at step  0
+co19:53:55hg: Lamp not on... hg test terminated F1= 3 F4= 6
+co19:53:55hg: Lamp not detected f1= 3 f4= 6
+co19:53:56fr: Running fr from B00540 line -200
+hk19:53:58 27 22 23 28.4 5.5-99-99
+co19:55:16fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk19:55:21 27 22 23 27.7 5.37-99-99
+co19:55:23hgfw2: HG FW#2 at step  0
+co19:57:25hg: Lamp not on... hg test terminated F1= 6 F4= 4
+co19:57:25hg: Lamp not detected f1= 6 f4= 4
+co19:57:25hg: HG failed
+hk19:57:28 26 22 23 27.7 5.37-99-99
+co19:57:30hgfw2: HG FW#2 at step  0
+co19:59:32hg: Lamp not on... hg test terminated F1= 9 F4= 5
+co19:59:32hg: Lamp not detected f1= 9 f4= 5
+co19:59:33fr: Running fr from B00540 line -200
+hk19:59:35 26 22 23 28.4 5.5-99-99
+co20:00:52fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:00:57 26 22 23 28.4 5.5-99-99
+co20:00:59hgfw2: HG FW#2 at step  0
+co20:03:01hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co20:03:01hg: Lamp not detected f1= 4 f4= 5
+co20:03:01hg: HG failed
+hk20:03:04 27 22 23 27.7 5.37-99-99
+co20:03:06hgfw2: HG FW#2 at step  0
+co20:05:07hg: Lamp not on... hg test terminated F1= 6 F4= 6
+co20:05:07hg: Lamp not detected f1= 6 f4= 6
+co20:05:08fr: Running fr from B00540 line -200
+hk20:05:11 26 22 23 28.4 5.5-99-99
+co20:06:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:06:32 26 22 23 27.7 5.37-99-99
+co20:06:34hgfw2: HG FW#2 at step  0
+co20:08:36hg: Lamp not on... hg test terminated F1= 4 F4= 156
+co20:08:36hg: Lamp not detected f1= 4 f4= 156
+co20:08:36hg: HG failed
+hk20:08:39 26 22 23 28.4 5.5-99-99
+co20:08:41hgfw2: HG FW#2 at step  0
+hk20:10:45 26 22 23 27.7 5.37-99-99
+hgscan 0narrow 302warm= 220:10:45SEP 13/18 22 23 28 27 52 137 238 324 430 488 482 473 363 281 168 94 77 51 42 40 41 44 62 59 103 166 259 377 471 511 502 420 365 253 138 49 31 25 23 24
+hg20:11:49 .9984 159.4863 159 993 26 0
+co20:11:50ze: Running ze from B00540 line -200
+co20:11:52ze: Zenith ZEROING FAILURE !!
+co20:11:52ze: Turning AZ 30 degrees and repeating ZE.
+co20:12:07ze: Zenith discrepancy =  0
+ap20:12:08 25.94 20.94 22.19 1610.56 14.78 4.95-14.95 23.52 0 28.87 0 0 5.15-8.19 .06 0 25.94 20.94 21.88 1610.56 14.78 4.93-14.95 23.75 25.35 28.87 0 0 5.15-8.19 1.61 12.37
+hk20:12:27 26 22 23 28.4 5.5-99-99
+co20:12:29hgfw2: HG FW#2 at step  0
+co20:14:31hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co20:14:31hg: Lamp not detected f1= 5 f4= 4
+co20:14:32fr: Running fr from B00540 line -200
+hk20:14:34 27 22 23 28.4 5.5-99-99
+co20:15:50fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:15:55 27 22 23 27.7 5.37-99-99
+co20:15:57hgfw2: HG FW#2 at step  0
+co20:17:58hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co20:17:58hg: Lamp not detected f1= 5 f4= 6
+co20:17:58hg: HG failed
+hk20:18:01 26 22 23 28.4 5.5-99-99
+co20:18:03hgfw2: HG FW#2 at step  0
+co20:20:05hg: Lamp not on... hg test terminated F1= 6 F4= 4
+co20:20:05hg: Lamp not detected f1= 6 f4= 4
+co20:20:06fr: Running fr from B00540 line -200
+hk20:20:09 26 22 23 27.7 5.37-99-99
+co20:21:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:21:30 27 22 23 27.7 5.37-99-99
+co20:21:32hgfw2: HG FW#2 at step  0
+co20:23:34hg: Lamp not on... hg test terminated F1= 6 F4= 4
+co20:23:34hg: Lamp not detected f1= 6 f4= 4
+co20:23:34hg: HG failed
+hk20:23:37 26 22 23 28.4 5.5-99-99
+co20:23:39hgfw2: HG FW#2 at step  0
+co20:25:40hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co20:25:40hg: Lamp not detected f1= 5 f4= 6
+co20:25:42fr: Running fr from B00540 line -200
+hk20:25:44 26 22 23 27.7 5.37-99-99
+co20:27:01fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:27:05 26 22 23 27.7 5.37-99-99
+co20:27:07hgfw2: HG FW#2 at step  0
+co20:29:09hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co20:29:09hg: Lamp not detected f1= 4 f4= 5
+co20:29:09hg: HG failed
+hk20:29:12 26 22 23 28.4 5.5-99-99
+co20:29:14hgfw2: HG FW#2 at step  0
+co20:31:16hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co20:31:16hg: Lamp not detected f1= 5 f4= 5
+co20:31:17fr: Running fr from B00540 line -200
+hk20:31:19 27 22 23 27.7 5.37-99-99
+co20:32:37fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:32:41 27 22 23 28.4 5.5-99-99
+co20:32:43hgfw2: HG FW#2 at step  0
+co20:34:44hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co20:34:44hg: Lamp not detected f1= 5 f4= 5
+co20:34:44hg: HG failed
+hk20:34:47 26 22 23 27.7 5.37-99-99
+co20:34:49hgfw2: HG FW#2 at step  0
+co20:36:51hg: Lamp not on... hg test terminated F1= 5 F4= 147
+co20:36:51hg: Lamp not detected f1= 5 f4= 147
+co20:36:52fr: Running fr from B00540 line -200
+hk20:36:55 26 22 23 28.4 5.5-99-99
+co20:38:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:38:16 26 22 23 27.7 5.37-99-99
+co20:38:18hgfw2: HG FW#2 at step  0
+co20:40:20hg: Lamp not on... hg test terminated F1= 3 F4= 166
+co20:40:20hg: Lamp not detected f1= 3 f4= 166
+co20:40:20hg: HG failed
+hk20:40:23 26 22 23 28.4 5.5-99-99
+co20:40:25hgfw2: HG FW#2 at step  0
+co20:42:27hg: Lamp not on... hg test terminated F1= 8 F4= 164
+co20:42:27hg: Lamp not detected f1= 8 f4= 164
+co20:42:28fr: Running fr from B00540 line -200
+hk20:42:30 26 22 23 27.7 5.37-99-99
+co20:43:48fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:43:52 26 22 23 27.7 5.37-99-99
+co20:43:54hgfw2: HG FW#2 at step  0
+co20:45:56hg: Lamp not on... hg test terminated F1= 5 F4= 160
+co20:45:56hg: Lamp not detected f1= 5 f4= 160
+co20:45:56hg: HG failed
+hk20:45:59 26 22 23 28.4 5.5-99-99
+co20:46:01hgfw2: HG FW#2 at step  0
+co20:48:02hg: Lamp not on... hg test terminated F1= 5 F4= 168
+co20:48:03hg: Lamp not detected f1= 5 f4= 168
+co20:48:04fr: Running fr from B00540 line -200
+hk20:48:06 26 22 23 28.4 5.5-99-99
+co20:49:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:49:28 27 22 23 27.7 5.37-99-99
+co20:49:30hgfw2: HG FW#2 at step  0
+co20:51:31hg: Lamp not on... hg test terminated F1= 8 F4= 137
+co20:51:31hg: Lamp not detected f1= 8 f4= 137
+co20:51:31hg: HG failed
+hk20:51:34 27 22 23 27.7 5.37-99-99
+co20:51:36hgfw2: HG FW#2 at step  0
+co20:53:38hg: Lamp not on... hg test terminated F1= 6 F4= 128
+co20:53:38hg: Lamp not detected f1= 6 f4= 128
+co20:53:39fr: Running fr from B00540 line -200
+hk20:53:42 26 22 23 27.7 5.37-99-99
+co20:54:59fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk20:55:03 26 22 23 28.4 5.5-99-99
+co20:55:05hgfw2: HG FW#2 at step  0
+co20:57:07hg: Lamp not on... hg test terminated F1= 4 F4= 194
+co20:57:07hg: Lamp not detected f1= 4 f4= 194
+co20:57:07hg: HG failed
+hk20:57:10 26 21 23 28.4 5.19-99-99
+co20:57:12hgfw2: HG FW#2 at step  0
+co20:59:14hg: Lamp not on... hg test terminated F1= 9 F4= 181
+co20:59:14hg: Lamp not detected f1= 9 f4= 181
+co20:59:15fr: Running fr from B00540 line -200
+hk20:59:17 26 22 23 27.7 5.37-99-99
+co21:00:34fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:00:38 26 22 23 27.7 5.37-99-99
+co21:00:40hgfw2: HG FW#2 at step  0
+co21:02:42hg: Lamp not on... hg test terminated F1= 7 F4= 146
+co21:02:42hg: Lamp not detected f1= 7 f4= 146
+co21:02:42hg: HG failed
+hk21:02:45 26 21 23 27.7 5.07-99-99
+co21:02:47hgfw2: HG FW#2 at step  0
+co21:04:49hg: Lamp not on... hg test terminated F1= 7 F4= 134
+co21:04:49hg: Lamp not detected f1= 7 f4= 134
+co21:04:50fr: Running fr from B00540 line -200
+hk21:04:53 26 22 23 27.7 5.37-99-99
+co21:06:10fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:06:14 26 21 23 27.7 5.07-99-99
+co21:06:16hgfw2: HG FW#2 at step  0
+co21:08:18hg: Lamp not on... hg test terminated F1= 7 F4= 165
+co21:08:18hg: Lamp not detected f1= 7 f4= 165
+co21:08:18hg: HG failed
+hk21:08:21 26 21 23 27.7 5.07-99-99
+co21:08:23hgfw2: HG FW#2 at step  0
+co21:10:25hg: Lamp not on... hg test terminated F1= 8 F4= 158
+co21:10:25hg: Lamp not detected f1= 8 f4= 158
+co21:10:26fr: Running fr from B00540 line -200
+hk21:10:28 26 22 23 27.7 5.37-99-99
+co21:11:46fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:11:50 26 21 23 27.7 5.07-99-99
+co21:11:52hgfw2: HG FW#2 at step  0
+co21:13:54hg: Lamp not on... hg test terminated F1= 5 F4= 161
+co21:13:54hg: Lamp not detected f1= 5 f4= 161
+co21:13:54hg: HG failed
+hk21:13:57 26 21 23 27.7 5.07-99-99
+co21:13:59hgfw2: HG FW#2 at step  0
+hk21:16:03 26 21 23 27.1 4.95-99-99
+hgscan 0narrow 302warm= 221:16:03SEP 13/18 28 32 31 34 66 141 230 345 397 436 436 428 333 205 148 77 62 47 45 41 37 47 52 71 77 146 235 329 404 447 472 425 342 236 155 78 26 28 29 30
+hg21:17:07 .9972 157.6961 158 883 26-1
+co21:17:07ze: Running ze from B00540 line -200
+co21:17:09ze: Zenith ZEROING FAILURE !!
+co21:17:09ze: Turning AZ 30 degrees and repeating ZE.
+co21:17:30ze: Zenith discrepancy =  0
+ap21:17:31 25 20.63 21.88 1610.56 14.78 4.95-14.95 23.52 0 28.87 0 0 5.15-8.19 .06 0 25.31 20.63 21.88 1610.56 14.78 4.93-14.95 23.75 23.4 28.21 0 0 5.15-8.19 1.61 12.37
+hk21:17:50 26 21 23 28.4 5.19-99-99
+co21:17:52hgfw2: HG FW#2 at step  0
+co21:19:54hg: Lamp not on... hg test terminated F1= 8 F4= 8
+co21:19:54hg: Lamp not detected f1= 8 f4= 8
+co21:19:55fr: Running fr from B00540 line -200
+hk21:19:57 26 21 23 27.7 5.07-99-99
+co21:21:13fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:21:17 26 21 23 28.4 5.19-99-99
+co21:21:19hgfw2: HG FW#2 at step  0
+co21:23:21hg: Lamp not on... hg test terminated F1= 7 F4= 6
+co21:23:21hg: Lamp not detected f1= 7 f4= 6
+co21:23:21hg: HG failed
+hk21:23:24 26 21 23 27.7 5.07-99-99
+co21:23:26hgfw2: HG FW#2 at step  0
+co21:25:27hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co21:25:27hg: Lamp not detected f1= 5 f4= 6
+co21:25:29fr: Running fr from B00540 line -200
+hk21:25:31 26 21 23 27.1 4.95-99-99
+co21:26:48fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:26:52 26 21 23 27.7 5.07-99-99
+co21:26:54hgfw2: HG FW#2 at step  0
+co21:28:56hg: Lamp not on... hg test terminated F1= 7 F4= 11
+co21:28:56hg: Lamp not detected f1= 7 f4= 11
+co21:28:56hg: HG failed
+hk21:28:59 26 21 23 27.7 5.07-99-99
+co21:29:01hgfw2: HG FW#2 at step  0
+co21:31:03hg: Lamp not on... hg test terminated F1= 7 F4= 8
+co21:31:03hg: Lamp not detected f1= 7 f4= 8
+co21:31:04fr: Running fr from B00540 line -200
+hk21:31:07 26 21 23 27.1 4.95-99-99
+co21:32:24fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:32:28 26 21 23 27.7 5.07-99-99
+co21:32:30hgfw2: HG FW#2 at step  0
+co21:34:32hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co21:34:32hg: Lamp not detected f1= 4 f4= 5
+co21:34:32hg: HG failed
+hk21:34:35 26 21 23 27.7 5.07-99-99
+co21:34:37hgfw2: HG FW#2 at step  0
+co21:36:39hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co21:36:39hg: Lamp not detected f1= 5 f4= 5
+co21:36:40fr: Running fr from B00540 line -200
+hk21:36:42 26 21 23 27.7 5.07-99-99
+co21:38:00fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:38:04 26 21 22 27.7 5.07-99-99
+co21:38:06hgfw2: HG FW#2 at step  0
+co21:40:07hg: Lamp not on... hg test terminated F1= 5 F4= 135
+co21:40:07hg: Lamp not detected f1= 5 f4= 135
+co21:40:07hg: HG failed
+hk21:40:11 26 21 22 27.1 4.95-99-99
+co21:40:12hgfw2: HG FW#2 at step  0
+hk21:42:17 26 21 22 27.7 5.07-99-99
+hgscan 0narrow 302warm= 221:42:17SEP 13/18 24 26 30 30 66 168 244 301 404 483 477 436 334 247 155 77 64 52 40 42 46 40 54 69 80 149 243 362 444 486 477 453 340 235 161 102 32 26 27 29
+hg21:43:20 .9962 158.375 158 963 26-1
+co21:43:21ze: Running ze from B00540 line -200
+co21:43:23ze: Zenith ZEROING FAILURE !!
+co21:43:23ze: Turning AZ 30 degrees and repeating ZE.
+co21:43:40ze: Zenith discrepancy =  0
+ap21:43:41 25 20.63 21.56 1610.56 14.78 4.95-14.95 23.52 0 28.87 0 0 5.15-8.19 .06 0 25 20.63 21.56 1610.56 14.78 4.93-14.95 23.75 0 28.87 0 0 5.15-8.19 1.61 12.37
+hk21:44:00 26 21 22 28.4 5.19-99-99
+co21:44:02hgfw2: HG FW#2 at step  0
+co21:46:04hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co21:46:04hg: Lamp not detected f1= 4 f4= 4
+co21:46:05fr: Running fr from B00540 line -200
+hk21:46:07 25 21 22 27.7 5.07-99-99
+co21:47:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:47:27 26 21 22 27.7 5.07-99-99
+co21:47:29hgfw2: HG FW#2 at step  0
+co21:49:31hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co21:49:31hg: Lamp not detected f1= 5 f4= 4
+co21:49:31hg: HG failed
+hk21:49:34 26 21 22 27.7 5.07-99-99
+co21:49:36hgfw2: HG FW#2 at step  0
+co21:51:38hg: Lamp not on... hg test terminated F1= 4 F4= 6
+co21:51:38hg: Lamp not detected f1= 4 f4= 6
+co21:51:39fr: Running fr from B00540 line -200
+hk21:51:41 26 21 22 27.7 5.07-99-99
+co21:52:58fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:53:02 26 21 22 28.4 5.19-99-99
+co21:53:04hgfw2: HG FW#2 at step  0
+co21:55:06hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co21:55:06hg: Lamp not detected f1= 5 f4= 6
+co21:55:06hg: HG failed
+hk21:55:09 26 21 22 28.4 5.19-99-99
+co21:55:11hgfw2: HG FW#2 at step  0
+co21:57:13hg: Lamp not on... hg test terminated F1= 47 F4= 50
+co21:57:13hg: Lamp not detected f1= 47 f4= 50
+co21:57:14fr: Running fr from B00540 line -200
+hk21:57:17 25 21 23 27.7 5.07-99-99
+co21:58:34fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk21:58:38 26 21 23 27.1 4.95-99-99
+co21:58:40hgfw2: HG FW#2 at step  0
+co22:00:42hg: Lamp not on... hg test terminated F1= 6 F4= 8
+co22:00:42hg: Lamp not detected f1= 6 f4= 8
+co22:00:42hg: HG failed
+hk22:00:45 26 21 23 27.7 5.07-99-99
+co22:00:47hgfw2: HG FW#2 at step  0
+co22:02:48hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co22:02:48hg: Lamp not detected f1= 5 f4= 6
+co22:02:49fr: Running fr from B00540 line -200
+hk22:02:52 26 21 23 27.7 5.07-99-99
+co22:04:09fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:04:13 26 21 23 27.1 4.95-99-99
+co22:04:15hgfw2: HG FW#2 at step  0
+co22:06:17hg: Lamp not on... hg test terminated F1= 5 F4= 7
+co22:06:17hg: Lamp not detected f1= 5 f4= 7
+co22:06:17hg: HG failed
+hk22:06:20 26 21 23 27.7 5.07-99-99
+co22:06:22hgfw2: HG FW#2 at step  0
+co22:08:24hg: Lamp not on... hg test terminated F1= 7 F4= 134
+co22:08:24hg: Lamp not detected f1= 7 f4= 134
+co22:08:25fr: Running fr from B00540 line -200
+hk22:08:27 25 21 22 27.7 5.07-99-99
+co22:09:44fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:09:49 25 21 22 27.7 5.07-99-99
+co22:09:51hgfw2: HG FW#2 at step  0
+co22:11:52hg: Lamp not on... hg test terminated F1= 7 F4= 151
+co22:11:52hg: Lamp not detected f1= 7 f4= 151
+co22:11:52hg: HG failed
+hk22:11:55 25 21 22 27.7 5.07-99-99
+co22:11:57hgfw2: HG FW#2 at step  0
+co22:13:59hg: Lamp not on... hg test terminated F1= 10 F4= 157
+co22:13:59hg: Lamp not detected f1= 10 f4= 157
+co22:14:00fr: Running fr from B00540 line -200
+hk22:14:03 25 21 22 27.7 5.07-99-99
+co22:15:20fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:15:25 25 21 22 27.7 5.07-99-99
+co22:15:27hgfw2: HG FW#2 at step  0
+co22:17:29hg: Lamp not on... hg test terminated F1= 6 F4= 192
+co22:17:29hg: Lamp not detected f1= 6 f4= 192
+co22:17:29hg: HG failed
+hk22:17:32 26 21 22 27.7 5.07-99-99
+co22:17:34hgfw2: HG FW#2 at step  0
+co22:19:36hg: Lamp not on... hg test terminated F1= 6 F4= 173
+co22:19:36hg: Lamp not detected f1= 6 f4= 173
+co22:19:37fr: Running fr from B00540 line -200
+hk22:19:39 26 21 22 27.7 5.07-99-99
+co22:20:56fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:21:00 26 21 22 27.1 4.95-99-99
+co22:21:02hgfw2: HG FW#2 at step  0
+co22:23:04hg: Lamp not on... hg test terminated F1= 5 F4= 169
+co22:23:04hg: Lamp not detected f1= 5 f4= 169
+co22:23:04hg: HG failed
+hk22:23:07 25 21 22 27.7 5.07-99-99
+co22:23:09hgfw2: HG FW#2 at step  0
+co22:25:11hg: Lamp not on... hg test terminated F1= 8 F4= 177
+co22:25:11hg: Lamp not detected f1= 8 f4= 177
+ed
+co22:25:12ed: Starting EndOfDay
+co22:25:12fr: Running fr from B00540 line -200
+hk22:25:14 26 21 22 27.1 4.95-99-99
+co22:26:31fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:26:36 26 21 22 27.7 5.07-99-99
+co22:26:38hgfw2: HG FW#2 at step  0
+co22:28:39hg: Lamp not on... hg test terminated F1= 6 F4= 170
+co22:28:39hg: Lamp not detected f1= 6 f4= 170
+co22:28:39hg: HG failed
+hk22:28:42 26 21 22 27.7 5.07-99-99
+co22:28:44hgfw2: HG FW#2 at step  0
+co22:30:46hg: Lamp not on... hg test terminated F1= 4 F4= 160
+co22:30:46hg: Lamp not detected f1= 4 f4= 160
+co22:30:47fr: Running fr from B00540 line -200
+hk22:30:50 26 21 22 27.1 4.95-99-99
+co22:32:07fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:32:11 26 21 22 27.7 5.07-99-99
+co22:32:13hgfw2: HG FW#2 at step  0
+co22:34:15hg: Lamp not on... hg test terminated F1= 9 F4= 147
+co22:34:15hg: Lamp not detected f1= 9 f4= 147
+co22:34:15hg: HG failed
+hk22:34:18 26 21 22 27.7 5.07-99-99
+co22:34:20hgfw2: HG FW#2 at step  0
+co22:36:22hg: Lamp not on... hg test terminated F1= 4 F4= 150
+co22:36:22hg: Lamp not detected f1= 4 f4= 150
+co22:36:23fr: Running fr from B00540 line -200
+hk22:36:25 26 21 22 27.1 4.95-99-99
+co22:37:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:37:47 25 21 22 27.7 5.07-99-99
+co22:37:49hgfw2: HG FW#2 at step  0
+co22:39:51hg: Lamp not on... hg test terminated F1= 8 F4= 151
+co22:39:51hg: Lamp not detected f1= 8 f4= 151
+co22:39:51hg: HG failed
+hk22:39:53 25 21 22 27.7 5.07-99-99
+co22:39:55hgfw2: HG FW#2 at step  0
+co22:41:57hg: Lamp not on... hg test terminated F1= 11 F4= 157
+co22:41:57hg: Lamp not detected f1= 11 f4= 157
+co22:41:58fr: Running fr from B00540 line -200
+hk22:42:01 25 21 22 27.7 5.07-99-99
+co22:43:18fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:43:22 26 21 22 27.1 4.95-99-99
+co22:43:24hgfw2: HG FW#2 at step  0
+co22:45:26hg: Lamp not on... hg test terminated F1= 6 F4= 183
+co22:45:26hg: Lamp not detected f1= 6 f4= 183
+co22:45:26hg: HG failed
+hk22:45:29 26 21 22 27.7 5.07-99-99
+co22:45:31hgfw2: HG FW#2 at step  0
+co22:47:32hg: Lamp not on... hg test terminated F1= 3 F4= 155
+co22:47:32hg: Lamp not detected f1= 3 f4= 155
+co22:47:34fr: Running fr from B00540 line -200
+hk22:47:36 26 21 22 27.1 4.95-99-99
+co22:48:53fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:48:57 26 21 22 27.7 5.07-99-99
+co22:49:00hgfw2: HG FW#2 at step  0
+co22:51:01hg: Lamp not on... hg test terminated F1= 4 F4= 157
+co22:51:01hg: Lamp not detected f1= 4 f4= 157
+co22:51:01hg: HG failed
+hk22:51:04 25 21 22 27.7 5.07-99-99
+co22:51:06hgfw2: HG FW#2 at step  0
+co22:53:08hg: Lamp not on... hg test terminated F1= 4 F4= 155
+co22:53:08hg: Lamp not detected f1= 4 f4= 155
+co22:53:09fr: Running fr from B00540 line -200
+hk22:53:11 25 21 22 27.1 4.95-99-99
+co22:54:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk22:54:33 25 21 22 27.7 5.07-99-99
+co22:54:34hgfw2: HG FW#2 at step  0
+co22:56:36hg: Lamp not on... hg test terminated F1= 7 F4= 181
+co22:56:36hg: Lamp not detected f1= 7 f4= 181
+co22:56:36hg: HG failed
+hk22:56:39 26 21 22 27.7 5.07-99-99
+co22:56:41hgfw2: HG FW#2 at step  0
+co22:58:43hg: Lamp not on... hg test terminated F1= 6 F4= 168
+co22:58:43hg: Lamp not detected f1= 6 f4= 168
+co22:58:44fr: Running fr from B00540 line -200
+hk22:58:47 25 21 22 27.7 5.07-99-99
+co23:00:04fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:00:08 26 21 22 27.1 4.95-99-99
+co23:00:10hgfw2: HG FW#2 at step  0
+co23:02:12hg: Lamp not on... hg test terminated F1= 8 F4= 159
+co23:02:12hg: Lamp not detected f1= 8 f4= 159
+co23:02:12hg: HG failed
+hk23:02:15 26 21 23 27.7 5.07-99-99
+co23:02:17hgfw2: HG FW#2 at step  0
+co23:04:19hg: Lamp not on... hg test terminated F1= 7 F4= 141
+co23:04:19hg: Lamp not detected f1= 7 f4= 141
+co23:04:20fr: Running fr from B00540 line -200
+hk23:04:22 26 21 23 27.7 5.07-99-99
+co23:05:40fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:05:44 26 21 23 27.1 4.95-99-99
+co23:05:46hgfw2: HG FW#2 at step  0
+co23:07:48hg: Lamp not on... hg test terminated F1= 5 F4= 148
+co23:07:48hg: Lamp not detected f1= 5 f4= 148
+co23:07:48hg: HG failed
+hk23:07:51 26 21 23 27.1 4.95-99-99
+co23:07:53hgfw2: HG FW#2 at step  0
+co23:09:54hg: Lamp not on... hg test terminated F1= 7 F4= 158
+co23:09:54hg: Lamp not detected f1= 7 f4= 158
+co23:09:56fr: Running fr from B00540 line -200
+hk23:09:58 26 21 23 27.7 5.07-99-99
+co23:11:15fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:11:19 25 21 23 27.1 4.95-99-99
+co23:11:21hgfw2: HG FW#2 at step  0
+co23:13:23hg: Lamp not on... hg test terminated F1= 4 F4= 156
+co23:13:23hg: Lamp not detected f1= 4 f4= 156
+co23:13:23hg: HG failed
+hk23:13:26 26 21 23 27.1 4.95-99-99
+co23:13:28hgfw2: HG FW#2 at step  0
+co23:15:30hg: Lamp not on... hg test terminated F1= 6 F4= 174
+co23:15:30hg: Lamp not detected f1= 6 f4= 174
+co23:15:31fr: Running fr from B00540 line -200
+hk23:15:33 26 21 23 27.1 4.95-99-99
+co23:16:50fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:16:55 26 21 23 27.7 5.07-99-99
+co23:16:57hgfw2: HG FW#2 at step  0
+co23:18:58hg: Lamp not on... hg test terminated F1= 5 F4= 164
+co23:18:58hg: Lamp not detected f1= 5 f4= 164
+co23:18:58hg: HG failed
+hk23:19:01 25 21 23 27.1 4.95-99-99
+co23:19:03hgfw2: HG FW#2 at step  0
+co23:21:05hg: Lamp not on... hg test terminated F1= 5 F4= 173
+co23:21:05hg: Lamp not detected f1= 5 f4= 173
+co23:21:06fr: Running fr from B00540 line -200
+hk23:21:09 26 21 23 27.7 5.07-99-99
+co23:22:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:22:30 26 21 23 27.1 4.95-99-99
+co23:22:32hgfw2: HG FW#2 at step  0
+co23:24:34hg: Lamp not on... hg test terminated F1= 6 F4= 160
+co23:24:34hg: Lamp not detected f1= 6 f4= 160
+co23:24:34hg: HG failed
+hk23:24:37 25 21 23 27.7 5.07-99-99
+co23:24:39hgfw2: HG FW#2 at step  0
+co23:26:41hg: Lamp not on... hg test terminated F1= 5 F4= 189
+co23:26:41hg: Lamp not detected f1= 5 f4= 189
+co23:26:42fr: Running fr from B00540 line -200
+hk23:26:44 26 21 23 27.1 4.95-99-99
+co23:28:02fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:28:06 26 21 23 27.1 4.95-99-99
+co23:28:08hgfw2: HG FW#2 at step  0
+co23:30:09hg: Lamp not on... hg test terminated F1= 4 F4= 195
+co23:30:09hg: Lamp not detected f1= 4 f4= 195
+co23:30:09hg: HG failed
+hk23:30:12 26 21 23 27.1 4.95-99-99
+co23:30:14hgfw2: HG FW#2 at step  0
+co23:32:16hg: Lamp not on... hg test terminated F1= 4 F4= 192
+co23:32:16hg: Lamp not detected f1= 4 f4= 192
+co23:32:17fr: Running fr from B00540 line -200
+hk23:32:20 26 21 23 27.1 4.95-99-99
+co23:33:37fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:33:41 26 21 23 27.7 5.07-99-99
+co23:33:43hgfw2: HG FW#2 at step  0
+co23:35:45hg: Lamp not on... hg test terminated F1= 4 F4= 157
+co23:35:45hg: Lamp not detected f1= 4 f4= 157
+co23:35:45hg: HG failed
+hk23:35:48 26 21 23 27.7 5.07-99-99
+co23:35:49hgfw2: HG FW#2 at step  0
+co23:37:51hg: Lamp not on... hg test terminated F1= 4 F4= 181
+co23:37:51hg: Lamp not detected f1= 4 f4= 181
+co23:37:53fr: Running fr from B00540 line -200
+hk23:37:55 26 21 23 27.7 5.07-99-99
+co23:39:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:39:16 26 21 23 27.1 4.95-99-99
+co23:39:18hgfw2: HG FW#2 at step  0
+co23:41:20hg: Lamp not on... hg test terminated F1= 5 F4= 153
+co23:41:20hg: Lamp not detected f1= 5 f4= 153
+co23:41:20hg: HG failed
+hk23:41:23 26 21 23 27.1 4.95-99-99
+co23:41:25hgfw2: HG FW#2 at step  0
+co23:43:27hg: Lamp not on... hg test terminated F1= 4 F4= 159
+co23:43:27hg: Lamp not detected f1= 4 f4= 159
+co23:43:28fr: Running fr from B00540 line -200
+hk23:43:30 26 21 23 27.7 5.07-99-99
+co23:44:48fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:44:52 26 21 22 27.7 5.07-99-99
+co23:44:54hgfw2: HG FW#2 at step  0
+co23:46:56hg: Lamp not on... hg test terminated F1= 4 F4= 179
+co23:46:56hg: Lamp not detected f1= 4 f4= 179
+co23:46:56hg: HG failed
+hk23:46:59 26 21 22 27.7 5.07-99-99
+co23:47:01hgfw2: HG FW#2 at step  0
+co23:49:02hg: Lamp not on... hg test terminated F1= 7 F4= 195
+co23:49:02hg: Lamp not detected f1= 7 f4= 195
+co23:49:04fr: Running fr from B00540 line -200
+hk23:49:06 26 21 22 27.1 4.95-99-99
+co23:50:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:50:27 26 21 22 27.1 4.95-99-99
+co23:50:29hgfw2: HG FW#2 at step  0
+co23:52:31hg: Lamp not on... hg test terminated F1= 4 F4= 194
+co23:52:31hg: Lamp not detected f1= 4 f4= 194
+co23:52:31hg: HG failed
+hk23:52:34 26 21 22 27.7 5.07-99-99
+co23:52:36hgfw2: HG FW#2 at step  0
+co23:54:38hg: Lamp not on... hg test terminated F1= 3 F4= 206
+co23:54:38hg: Lamp not detected f1= 3 f4= 206
+co23:54:39fr: Running fr from B00540 line -200
+hk23:54:41 26 21 22 27.1 4.95-99-99
+co23:55:59fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk23:56:03 26 21 22 27.1 4.95-99-99
+co00:00:02hgfw2: HG FW#2 at step  0
+co00:02:04hg: Lamp not on... hg test terminated F1= 4 F4= 154
+co00:02:04hg: Lamp not detected f1= 4 f4= 154
+co00:02:04hg: HG failed
+hk00:02:07 25 21 22 27.7 5.07-99-99
+co00:02:09hgfw2: HG FW#2 at step  0
+hk00:04:13 26 21 22 27.7 5.07-99-99
+hgscan 0narrow 302warm= 200:04:13SEP 14/18 21 22 16 24 30 109 195 289 375 399 412 394 316 237 156 75 54 45 38 42 34 42 46 59 88 175 249 341 386 432 414 403 312 228 150 55 20 24 23 25
+hg00:05:17 .9966 159.4921 159 844 26 0
+co00:05:18sum: Running sum from B00540 line -200
+co00:05:20ozsum: Running ozsum from B00540 line -200
+co00:05:21slsum: Running slsum from B00540 line -200
+co00:05:23hgsum: Running hgsum from B00540 line -200

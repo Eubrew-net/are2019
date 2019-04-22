@@ -1,0 +1,681 @@
+version=2
+dh220219Thessaloniki 40.634 -22.956  2.66pr1000
+co22:41:42dh: day header
+co22:41:42main: version 4.1007/04/2015 15:00:00
+co22:41:42skc: b005053
+co22:41:42autohg:  1 
+co22:41:42hifw2:  0 
+co22:41:42attn:  25000  80000 
+co22:41:42lowds:  1 
+co22:41:42cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025920000000000426975.3025600172112July 12/04EXTRAS1002500080000110002-04-2019@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf03519zsfvaldcf15317uvres220219Thessaloniki40.634-22.95610002.821455-114676111110110020001skco3b005053@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+schedule-110.00pdtdazzehgsl-92.08ufhgb1ufhgtdzssl-85.70ufhgb1ufhgzs-80.70uzb1sshgtddsb2dssl-75.67uzb1sshgtddszsds-70.63uzb1sshgtddsb2dssl-63.50uzb1sshgtddszsds-60.49uzb1sshgtddsb2dsslb1sshgtddszsds-55.36uzb1sshgtddstdntb1ufhgtddszsdsb1sshgtddszsds0.00ufb1sshgtddsb2dsslb1ufhgtddszsdsb1sshgtddszsds54.65uzb1sshgtddsb1ufhgtddszsds59.51uzb1sshgb2dssl61.99uzb1sshgtdds64.44uzhgtddstdkdumds69.38uzhgtddstdkdumds74.33uzhgtddstdkdumds79.31uzhgtddstdkdum84.29ufhgtdkeumtdkeumb1ufhgzs100.00zeaprsdtslhgb2w1cib0180.00B005054@
+co22:41:42re: Running re from b005053 line -200
+co22:42:28re: Zenith discrepancy = -2
+co22:42:34re: Azimuth discrepancy =  112
+hk22:42:45 12 9 10 9.399999 .82-99-99
+co22:42:49hgfw2: HG FW#2 at step  0
+hk22:47:50 12 9 10 8.7 .77-99-99
+hgscan 0narrow 302warm= 4.99333422:47:50FEB 22/19 83 102 96 451 1725 3365 5365 7311 8426 8981 9097 7771 6016 4069 2205 1295 856 543 433 349 392 441 546 842 1232 2027 3825 5598 7391 8510 8427 7906 6865 4999 3162 1568 400 84 84 84
+hg22:48:54 .9954 155.5518 156 17607 12-3
+hgscan 0narrow 302warm= 4.99333422:48:54FEB 22/19 78 76 83 217 1155 2584 4234 6161 7438 7888 8225 7456 5796 4059 2426 1245 815 543 371 312 292 367 468 768 1045 1991 3601 5085 6483 7157 6964 6496 5310 3717 2229 1014 175 77 61 74
+hg22:49:58 .9991 157.9662 158 15382 12-1
+co22:49:59az: Running az from b005053 line -200
+co22:50:12az: Azimuth discrepancy =  1
+co22:50:20w1: Running w1 from b005053 line -200
+co22:55:21fr: Running fr from b005053 line -200
+hk22:55:23 12 9 10 9.399999 .82-99-99
+co22:57:25fr: Micrometer #1 reference found at step 2435 (+CAL)= 2594 Now set to o3 offset = 2592
+hk22:57:29 13 9 10 10 .88-99-99
+co22:57:31hgfw2: HG FW#2 at step  0
+hk23:02:35 12 9 10 10 .88-99-99
+hgscan 0narrow 302warm= 4.99333423:02:35FEB 22/19 63 63 76 204 985 2029 3342 4877 5694 6139 6304 5522 4310 2935 1767 930 603 393 311 282 245 317 394 601 932 1666 3054 4521 5696 6535 6341 5960 4971 3486 2162 1042 206 73 67 63
+hg23:03:39 .998 157.0077 157 12839 12-2
+hgscan 0narrow 302warm= 4.99333423:03:39FEB 22/19 62 70 75 155 848 1947 3315 4807 6004 6481 6736 6249 4961 3537 2036 1056 697 433 340 289 315 351 450 686 1044 2052 3555 5023 6352 6934 6723 6150 4981 3456 2024 808 138 72 73 67
+hg23:04:42 .9997 158.7918 159 13670 12 0
+ap23:04:44 11.56 8.75 9.060001 1621.5 14.87 5-14.95 23.87 0 10.57 0 0 5.15-8.23 .06 0 11.88 8.75 9.060001 1610.56 14.78 4.98-14.95 23.99 19.5 9.92 0 0 5.15-8.23 1.58 12.37
+hk23:05:04 13 9 10 10 .88-99-99
+hk23:15:38 13 9 10 9.399999 .82-99-99
+rso3FEB 22/1923:24:06 13 191491 11 1250627 1349215 1420612 1255536 980735 2534357 191962 11 1252741 1351846 1423447 1257093 982292 2536661 .9975 1 .9983 .9981 .998 .9988 .9984 .9991 .0017-.0313-.0536-.1073 .345 .1779-.0753 .0015-.0316-.054-.1071 .3443 .1775-.075
+hk23:24:08 13 10 10 10 .94-99-99
+co23:24:08skc: Waiting until ZA = -110 now -148
+hk23:34:10 14 10 11 9.399999 .88-99-99
+co23:34:10skc: Waiting until ZA = -110 now -147.3
+hk23:44:12 14 10 11 9.399999 .88-99-99
+co23:44:12skc: Waiting until ZA = -110 now -146.5
+hk23:54:14 15 11 11 9.399999 .94-99-99
+co23:54:14skc: Waiting until ZA = -110 now -145.5
+hk00:00:02 15 11 11 8.7 .87-99-99
+co00:00:02skc: Waiting until ZA = -110 now -144.9
+hk00:10:04 15 11 11 9.399999 .94-99-99
+co00:10:04skc: Waiting until ZA = -110 now -143.7
+hk00:20:06 16 11 11 9.399999 .94-99-99
+co00:20:06skc: Waiting until ZA = -110 now -142.5
+hk00:30:07 15 11 11 9.399999 .94-99-99
+co00:30:07skc: Waiting until ZA = -110 now -141.2
+hk00:40:09 15 11 11 9.399999 .94-99-99
+co00:40:09skc: Waiting until ZA = -110 now -139.8
+hk00:50:11 15 11 11 10 1-99-99
+co00:50:11skc: Waiting until ZA = -110 now -138.3
+hk01:00:13 15 11 11 8.7 .87-99-99
+co01:00:13skc: Waiting until ZA = -110 now -136.8
+hk01:10:15 15 11 11 9.399999 .94-99-99
+co01:10:15skc: Waiting until ZA = -110 now -135.2
+hk01:20:17 15 11 11 9.399999 .94-99-99
+co01:20:17skc: Waiting until ZA = -110 now -133.6
+hk01:30:19 15 11 11 8.7 .87-99-99
+co01:30:19skc: Waiting until ZA = -110 now -131.9
+hk01:40:21 14 10 11 8.7 .82-99-99
+co01:40:21skc: Waiting until ZA = -110 now -130.2
+hk01:50:23 14 10 10 10 .94-99-99
+co01:50:23skc: Waiting until ZA = -110 now -128.4
+hk02:00:24 13 9 9 10 .88-99-99
+co02:00:24skc: Waiting until ZA = -110 now -126.7
+hk02:10:26 12 9 8 9.399999 .82-99-99
+co02:10:26skc: Waiting until ZA = -110 now -124.9
+hk02:20:28 12 8 8 10 .83-99-99
+co02:20:28skc: Waiting until ZA = -110 now -123.1
+hk02:30:30 11 7 7 10.6 .82-99-99
+co02:30:30skc: Waiting until ZA = -110 now -121.2
+hk02:40:32 11 7 7 10.6 .82-99-99
+co02:40:32skc: Waiting until ZA = -110 now -119.4
+hk02:50:34 10 7 6 10.6 .82-99-99
+co02:50:34skc: Waiting until ZA = -110 now -117.5
+hk03:00:36 10 6 6 10 .73-99-99
+co03:00:36skc: Waiting until ZA = -110 now -115.6
+hk03:10:38 9 6 6 10.6 .77-99-99
+co03:10:38skc: Waiting until ZA = -110 now -113.7
+hk03:20:40 9 6 5 11.3 .82-99-99
+co03:20:40skc: Waiting until ZA = -110 now -111.8
+co03:30:07ru: Running ru from B005054 line -110
+co03:30:13start:  PROGRAM start :  FEB 23/19 at 03:30:09
+hk03:30:13 9 6 5 10.6 .77-99-99
+co03:30:14ab_sk: Running ab_sk from main.asc
+co03:30:30ru: Running ru from B005054 line -110
+co03:30:30ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co03:30:30td: Running td from B005054 line -110
+co03:30:31td: Time correction  .7 seconds
+co03:30:31az: Running az from B005054 line -110
+co03:30:45az: Azimuth discrepancy = -1623
+co03:31:10ze: Running ze from B005054 line -110
+co03:31:23ze: Zenith discrepancy =  1
+hk03:31:25 9 6 5 11.3 .82-99-99
+co03:31:27hgfw2: HG FW#2 at step  0
+hk03:36:31 8 5 5 11.3 .77-99-99
+hgscan 0narrow 302warm= 4.99166703:36:31FEB 23/19 93 104 109 253 1431 3338 5671 8287 10058 10994 11572 10684 8469 6273 3733 2076 1444 883 668 597 591 671 867 1453 2023 3519 6086 8489 10567 11437 10946 10057 8096 5553 3364 1353 220 103 109 91
+hg03:37:35 .9999 159.2927 159 23009 8 0
+hk03:42:38 8 5 4 10.6 .72-99-99
+sla 0 222.940620 130178 1 847136 914451 962715 849005 662777rat-6.621094-343.8672-568.5703-1115.57
+sla 0 223.570620 131689 5 855941 924646 971470 856699 669012rat-12.52344-353.2266-568.8828-1114.332
+sla 0 224.210620 132432 7 859816 927982 975310 860979 671725rat-10.42578-347.0781-564.3086-1118.645
+sla 0 224.840620 132530 4 859845 927780 975221 860205 671252rat-14.60547-350.1289-567.9141-1117.746
+sla 0 225.470620 132276 3 861199 928381 975884 862314 672055rat-10.6875-342.0742-560.0196-1123.383
+sla 0 226.10620 131907 6 858028 925646 973850 858839 669887rat-12.25391-346.9102-568.7188-1119.676
+sla 0 226.730620 132329 5 856766 924705 973320 857581 670000rat-12.22656-348.918-572.8281-1112.363
+summary03:44:50FEB 23/19 52.711 1.641 8sl 0-11-347-567-1117 3564 1836 856961.6 669529.7 3 4 4 4 12 7 4708.5 3168
+hk03:47:06 7 5 4 11.3 .77-99-99
+co03:47:06skc: Waiting until ZA = -92.1 now -106.8
+hk03:57:08 7 4 3 11.3 .72-99-99
+co03:57:08skc: Waiting until ZA = -92.1 now -104.9
+hk04:07:09 7 4 3 11.9 .76-99-99
+co04:07:09skc: Waiting until ZA = -92.1 now -103
+hk04:17:11 6 3 3 12.6 .75-99-99
+co04:17:11skc: Waiting until ZA = -92.1 now -101.1
+hk04:27:13 6 3 3 11.9 .71-99-99
+co04:27:13skc: Waiting until ZA = -92.1 now -99.2
+hk04:37:15 7 3 3 12.6 .75-99-99
+co04:37:15skc: Waiting until ZA = -92.1 now -97.3
+hk04:47:17 6 3 3 12.6 .75-99-99
+co04:47:17skc: Waiting until ZA = -92.1 now -95.4
+hk04:57:19 6 3 3 12.6 .75-99-99
+co04:57:19skc: Waiting until ZA = -92.1 now -93.6
+co05:04:58ru: Running ru from B005054 line -92.08
+co05:04:58ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:04:58uf: Running uf from B005054 line -92.08
+hk05:05:01 7 3 3 13.2 .79-99-99
+hk05:13:41 7 3 3 13.2 .79-99-99
+co05:14:03hgfw2: HG FW#2 at step  0
+hk05:18:47 6 3 3 11.9 .71-99-99
+hgscan 0narrow 302warm= 4.99166705:18:47FEB 23/19 92 124 126 618 2081 4093 6593 8989 10401 10967 11250 9648 7341 4982 2878 1771 1187 761 637 535 543 638 745 1178 1758 2693 4921 7338 9699 11132 10880 10250 8992 6401 4174 2068 589 119 95 92
+hg05:19:50 .9955 155.6975 156 22382 6-3
+hgscan 0narrow 302warm= 4.99166705:19:50FEB 23/19 99 99 110 358 1530 3388 5659 8161 9948 10666 11107 10044 7907 5657 3401 1963 1292 801 638 538 551 621 819 1336 1894 3184 5539 7862 10004 11089 10625 9830 8108 5547 3488 1571 298 143 96 89
+hg05:20:54 .9994 158.3046 158 22196 6-1
+co05:20:55b1: Running b1 from B005054 line -92.08
+co05:20:55uf: Running uf from B005054 line -92.08
+hk05:20:58 6 3 3 12.6 .75-99-99
+hk05:29:31 5 3 2 13.2 .79-99-99
+co05:29:53hgfw2: HG FW#2 at step  0
+hk05:30:00 5 3 2 13.2 .79-99-99
+hgscan 0narrow 302warm= 8.97500105:30:00FEB 23/19 86 96 96 242 1262 2899 5025 7286 8891 9640 10040 9253 7419 5316 3311 1729 1152 738 557 481 487 559 725 1159 1709 3010 5140 7326 9256 10038 9596 8812 7311 5052 2982 1293 206 109 98 89
+hg05:31:04 .9999 158.8838 159 20078 5 0
+co05:31:05td: Running td from B005054 line -92.08
+co05:31:05td: Time correction -.2 seconds
+co05:31:25zs: ZS intensity too low ( 24/cy), skipping.
+hk05:36:28 5 3 2 12.6 .75-99-99
+sla 0 336.770620 127901 5 831982 897813 944405 833886 649568rat-8.203125E-02-337.6524-560.7188-1120.18
+sla 0 337.40620 127954 6 830866 898197 944818 834496 650575rat 9.1875-336.3086-559.4141-1116.574
+sla 0 338.030620 127843 2 832146 898654 946066 835186 650803rat 6.003907-334.8867-561.6485-1118.707
+sla 0 338.660620 128269 3 832904 897773 946643 835263 651579rat 2.339844-330.086-563.9766-1113.82
+sla 0 339.290620 127962 6 833126 899698 946302 835311 652064rat 1.40625-339.4219-562.1016-1110.781
+sla 0 339.920620 128049 0 834279 899572 947194 835968 651445rat-1.257813-335.2695-562.8047-1118.504
+sla 0 340.550620 128237 1 833954 900625 947455 836073 652093rat 1.042969-339.957-563.4844-1114.656
+summary05:38:39FEB 23/19 69.296 2.768 5sl 0 3-336-562-1116 3574 1842 832751.1 651161 4 3 2 3 11 7 1182.4 921.3
+co05:40:53ru: Running ru from B005054 line -85.7
+co05:40:59start:  PROGRAM start :  FEB 23/19 at 05:40:55
+hk05:40:59 6 3 2 13.2 .79-99-99
+co05:41:00ab_sk: Running ab_sk from main.asc
+co05:41:15ru: Running ru from B005054 line -85.7
+co05:41:16ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:41:16uf: Running uf from B005054 line -85.7
+hk05:41:18 5 3 2 13.9 .82-99-99
+hk05:49:49 5 2 2 13.2 .74-99-99
+co05:50:11hgfw2: HG FW#2 at step  0
+hk05:54:55 6 2 2 14.5 .81-99-99
+hgscan 0narrow 302warm= 4.99333405:54:55FEB 23/19 86 89 82 209 1163 2452 4261 6243 7510 8235 8575 7922 6175 4467 2716 1424 946 602 460 398 415 449 646 959 1403 2557 4486 6276 8012 8803 8388 7836 6446 4338 2599 1214 235 92 90 80
+hg05:55:58 .9997 158.6825 159 17378 6 0
+co05:55:59b1: Running b1 from B005054 line -85.7
+co05:55:59uf: Running uf from B005054 line -85.7
+hk05:56:02 6 3 2 14.5 .86-99-99
+hk06:04:34 6 3 2 13.9 .82-99-99
+co06:04:56hgfw2: HG FW#2 at step  0
+hk06:05:02 5 3 2 13.2 .79-99-99
+hgscan 0narrow 302warm= 8.94000106:05:02FEB 23/19 77 71 73 75 83 86 93 221 1191 2791 4744 6961 8341 9040 9560 8840 6961 4910 3128 1682 1681 2965 4886 6880 8660 9419 9070 8321 6890 4771 2809 1167 205 107 96 110 87 81 70 64
+hg06:06:06 0 201 201 9515 5 42
+hgscan 0narrow 302warm= 8.94000106:06:06FEB 23/19 76 85 115 334 1463 3054 5109 7224 8554 9106 9484 8381 6555 4672 2950 1546 1061 642 503 425 425 518 613 1031 1570 2831 4507 6484 8312 9430 9110 8509 7260 5117 3182 1529 279 100 89 93
+hg06:07:10 .9985 157.3528 157 18914 5-2
+hgscan 0narrow 302warm= 8.94000106:07:10FEB 23/19 92 90 91 173 1275 2744 4686 6810 8263 8910 9419 8749 6973 5022 3138 1637 1120 690 535 442 444 516 699 1087 1568 2846 4872 6928 8615 9485 9037 8266 6827 4765 2802 1304 228 96 87 84
+hg06:08:14 .9999 158.9597 159 18904 5 0
+co06:08:15ru: Running ru from B005054 line -80.7
+co06:08:16ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co06:08:16uz: Running uz from B005054 line -80.7
+hk06:08:18 5 3 2 13.2 .79-99-99
+co06:18:25b1: Running b1 from B005054 line -80.7
+co06:18:25ss: Running ss from B005054 line -80.7
+hk06:18:29 5 2 2 13.9 .77-99-99
+hk06:23:44 6 3 2 12.6 .75-99-99
+co06:23:53hgfw2: HG FW#2 at step  0
+hk06:24:00 5 3 2 13.2 .79-99-99
+hgscan 0narrow 302warm= 5.46666706:24:00FEB 23/19 65 55 53 55 60 63 62 62 78 81 77 91 149 870 2137 3751 5670 7153 7681 8137 8175 7758 7157 5698 3880 2198 880 132 89 84 77 81 73 65 61 67 53 49 63 54
+hg06:25:05 0 251 251 161 5 92
+hgscan 0narrow 302warm= 5.46666706:25:05FEB 23/19 79 84 77 204 1086 2480 4261 6171 7381 7982 8420 7624 6078 4403 2709 1383 937 589 422 392 428 429 588 886 1347 2449 4316 6025 7702 8434 8179 7551 6153 4243 2533 1099 191 92 77 79
+hg06:26:08 .9997 158.5866 159 16854 5 0
+co06:26:09td: Running td from B005054 line -80.7
+co06:26:10td: Time correction -.1 seconds
+hk06:26:23 5 3 2 13.2 .79-99-99
+co06:26:26ds: DS intensity too low ( 6/cy), skipping.
+co06:26:39zs: ZS intensity too low ( 295/cy), skipping.
+co06:26:39b2: Running b2 from B005054 line -80.7
+hk06:26:51 5 3 2 13.9 .82-99-99
+co06:26:55ds: DS intensity too low ( 5/cy), skipping.
+co06:27:08zs: ZS intensity too low ( 289/cy), skipping.
+hk06:31:41 5 2 2 13.2 .74-99-99
+sla 0 3920620 128036 2 830727 896744 943034 832853 649673rat 1.125-337.8594-559.7461-1113.918
+sla 0 392.630620 127899 4 829933 896109 943982 833706 648835rat 9.96875-330.1094-559.6836-1124.219
+sla 0 393.260620 127988 4 830969 897568 944476 833752 648853rat 4.640625-337.1563-561.7852-1124.344
+sla 0 393.890620 127764 1 831489 897592 944800 834259 650006rat 4.5625-334.5586-560.6094-1119.172
+sla 0 394.520620 127819 1 831822 897861 945150 833460 650099rat-1.503906-340.1719-566.543-1114.266
+sla 0 395.150620 128123 5 831917 898658 945653 834589 650677rat 4.03125-338.1094-562.8828-1116.371
+sla 0 395.780620 127939 5 833090 898454 945235 835150 650735rat .7421875-334.082-557.8946-1118.981
+summary06:33:53FEB 23/19 78.829 4.788 5sl 0 3-336-561-1119 3583 1847 831421 649839.7 4 3 3 4 17 9 999.3 805.7
+hk06:36:09 5 2 2 12.6 .7-99-99
+co06:36:09skc: Waiting until ZA = -75.7 now -75.7
+co06:36:15ru: Running ru from B005054 line -75.67
+co06:36:16ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co06:36:16uz: Running uz from B005054 line -75.67
+hk06:36:18 5 2 2 13.2 .74-99-99
+co06:47:35b1: Running b1 from B005054 line -75.67
+co06:47:35ss: Running ss from B005054 line -75.67
+hk06:47:39 6 2 2 13.2 .74-99-99
+hk06:52:56 6 2 2 13.9 .77-99-99
+co06:53:05hgfw2: HG FW#2 at step  0
+co06:53:10hg: Lamp not on... hg test terminated F1= 1 F4= 117
+co06:53:14hg: Lamp not on... hg test terminated F1= 0 F4= 120
+co06:53:14hg: Lamp not detected f1= 0 f4= 120
+co06:53:15fr: Running fr from B005054 line -75.67
+hk06:53:17 5 2 2 13.9 .77-99-99
+co06:54:34fr: Micrometer #1 reference found at step 2985 (+CAL)= 3144 Now set to o3 offset = 2592
+hk06:54:38 6 3 2 13.9 .82-99-99
+co06:54:40hgfw2: HG FW#2 at step  0
+co06:59:41hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co06:59:45hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co06:59:45hg: Lamp not detected f1= 0 f4= 6
+co06:59:45hg: HG failed
+hk06:59:48 6 3 2 13.2 .79-99-99
+co06:59:50hgfw2: HG FW#2 at step  0
+co07:04:51hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co07:04:55hg: Lamp not on... hg test terminated F1= 0 F4= 7
+co07:04:55hg: Lamp not detected f1= 0 f4= 7
+co07:04:56fr: Running fr from B005054 line -200
+hk07:04:58 6 3 2 13.2 .79-99-99
+co07:05:32fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk07:05:34 6 3 2 13.2 .79-99-99
+co07:05:36hgfw2: HG FW#2 at step  0
+co07:10:38hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co07:10:41hg: Lamp not on... hg test terminated F1= 1 F4= 4
+co07:10:41hg: Lamp not detected f1= 1 f4= 4
+co07:10:41hg: HG failed
+hk07:10:44 5 3 2 13.2 .79-99-99
+co07:10:46hgfw2: HG FW#2 at step  0
+co07:15:48hg: Lamp not on... hg test terminated F1= 0 F4= 8
+co07:15:51hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co07:15:51hg: Lamp not detected f1= 0 f4= 4
+co07:15:53fr: Running fr from B005054 line -200
+hk07:15:55 5 2 2 13.2 .74-99-99
+co07:16:29fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk07:16:31 5 2 2 13.9 .77-99-99
+co07:16:33hgfw2: HG FW#2 at step  0
+co07:21:34hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co07:21:38hg: Lamp not on... hg test terminated F1= 2 F4= 6
+co07:21:38hg: Lamp not detected f1= 2 f4= 6
+co07:21:38hg: HG failed
+hk07:21:41 6 3 2 13.9 .82-99-99
+co07:21:43hgfw2: HG FW#2 at step  0
+co07:26:44hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co07:26:48hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co07:26:48hg: Lamp not detected f1= 0 f4= 6
+co07:26:49fr: Running fr from B005054 line -200
+hk07:26:51 5 3 2 13.2 .79-99-99
+co07:27:25fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk07:27:27 5 3 2 13.9 .82-99-99
+co07:27:29hgfw2: HG FW#2 at step  0
+co07:32:30hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co07:32:34hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co07:32:34hg: Lamp not detected f1= 0 f4= 5
+co07:32:34hg: HG failed
+hk07:32:37 5 2 2 13.9 .77-99-99
+co07:32:39hgfw2: HG FW#2 at step  0
+co07:37:40hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co07:37:44hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co07:37:44hg: Lamp not detected f1= 0 f4= 3
+co07:37:45fr: Running fr from B005054 line -200
+hk07:37:48 6 3 2 13.2 .79-99-99
+co07:38:21fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk07:38:23 5 3 2 13.9 .82-99-99
+co07:38:25hgfw2: HG FW#2 at step  0
+co07:43:26hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co07:43:30hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co07:43:30hg: Lamp not detected f1= 0 f4= 3
+co07:43:30hg: HG failed
+hk07:43:33 5 3 2 13.9 .82-99-99
+co07:43:35hgfw2: HG FW#2 at step  0
+co07:48:36hg: Lamp not on... hg test terminated F1= 1 F4= 4
+co07:48:40hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co07:48:40hg: Lamp not detected f1= 0 f4= 5
+co07:48:41fr: Running fr from B005054 line -200
+hk07:48:44 5 3 2 13.9 .82-99-99
+co07:49:17fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk07:49:20 5 3 2 13.2 .79-99-99
+co07:49:22hgfw2: HG FW#2 at step  0
+co07:54:23hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co07:54:27hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co07:54:27hg: Lamp not detected f1= 0 f4= 4
+co07:54:27hg: HG failed
+hk07:54:30 5 2 2 12.6 .7-99-99
+co07:54:32hgfw2: HG FW#2 at step  0
+co07:59:33hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co07:59:37hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co07:59:37hg: Lamp not detected f1= 0 f4= 5
+co07:59:38fr: Running fr from B005054 line -200
+hk07:59:40 6 3 2 13.9 .82-99-99
+co08:00:14fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk08:00:16 6 3 2 13.9 .82-99-99
+co08:00:18hgfw2: HG FW#2 at step  0
+co08:05:19hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co08:05:23hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:05:23hg: Lamp not detected f1= 0 f4= 3
+co08:05:23hg: HG failed
+hk08:05:26 6 3 2 13.2 .79-99-99
+co08:05:28hgfw2: HG FW#2 at step  0
+co08:10:29hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co08:10:33hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co08:10:33hg: Lamp not detected f1= 0 f4= 4
+co08:10:34fr: Running fr from B005054 line -200
+hk08:10:37 5 2 2 13.2 .74-99-99
+co08:11:10fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk08:11:12 5 3 2 13.9 .82-99-99
+co08:11:14hgfw2: HG FW#2 at step  0
+co08:16:15hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co08:16:19hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:16:19hg: Lamp not detected f1= 0 f4= 3
+co08:16:20hg: HG failed
+hk08:16:22 5 2 2 13.2 .74-99-99
+co08:16:24hgfw2: HG FW#2 at step  0
+co08:21:26hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co08:21:29hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co08:21:30hg: Lamp not detected f1= 0 f4= 4
+co08:21:30fr: Running fr from B005054 line -200
+hk08:21:33 6 3 2 13.2 .79-99-99
+co08:22:06fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk08:22:08 6 3 2 13.2 .79-99-99
+co08:22:10hgfw2: HG FW#2 at step  0
+co08:27:11hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co08:27:15hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:27:15hg: Lamp not detected f1= 0 f4= 3
+co08:27:15hg: HG failed
+hk08:27:18 5 3 2 13.9 .82-99-99
+co08:27:20hgfw2: HG FW#2 at step  0
+co08:32:21hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co08:32:25hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co08:32:25hg: Lamp not detected f1= 0 f4= 6
+co08:32:26fr: Running fr from B005054 line -200
+hk08:32:29 5 3 2 13.2 .79-99-99
+co08:33:02fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk08:33:04 5 3 2 13.9 .82-99-99
+co08:33:06hgfw2: HG FW#2 at step  0
+co08:38:07hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:38:11hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:38:11hg: Lamp not detected f1= 0 f4= 3
+co08:38:11hg: HG failed
+hk08:38:14 5 2 2 13.9 .77-99-99
+co08:38:16hgfw2: HG FW#2 at step  0
+co08:43:17hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co08:43:21hg: Lamp not on... hg test terminated F1= 0 F4= 2
+co08:43:21hg: Lamp not detected f1= 0 f4= 2
+co08:43:22fr: Running fr from B005054 line -200
+hk08:43:25 6 3 3 13.9 .82-99-99
+co08:43:59fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk08:44:01 6 3 3 14.5 .86-99-99
+co08:44:03hgfw2: HG FW#2 at step  0
+co08:49:04hg: Lamp not on... hg test terminated F1= 0 F4= 2
+co08:49:08hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:49:08hg: Lamp not detected f1= 0 f4= 3
+co08:49:08hg: HG failed
+hk08:49:11 5 3 2 13.9 .82-99-99
+co08:49:13hgfw2: HG FW#2 at step  0
+co08:54:14hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co08:54:18hg: Lamp not on... hg test terminated F1= 0 F4= 6
+co08:54:18hg: Lamp not detected f1= 0 f4= 6
+co08:54:19fr: Running fr from B005054 line -200
+hk08:54:22 5 3 2 13.9 .82-99-99
+co08:54:55fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk08:54:58 5 3 2 13.2 .79-99-99
+co08:55:00hgfw2: HG FW#2 at step  0
+co09:00:01hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:00:05hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co09:00:05hg: Lamp not detected f1= 0 f4= 5
+co09:00:05hg: HG failed
+hk09:00:08 6 2 2 13.2 .74-99-99
+co09:00:10hgfw2: HG FW#2 at step  0
+co09:05:11hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:05:15hg: Lamp not on... hg test terminated F1= 0 F4= 2
+co09:05:15hg: Lamp not detected f1= 0 f4= 2
+co09:05:16fr: Running fr from B005054 line -200
+hk09:05:18 5 2 2 13.9 .77-99-99
+co09:05:51fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk09:05:54 5 2 2 13.2 .74-99-99
+co09:05:56hgfw2: HG FW#2 at step  0
+co09:10:57hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co09:11:01hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:11:01hg: Lamp not detected f1= 0 f4= 4
+co09:11:01hg: HG failed
+hk09:11:04 5 2 2 13.9 .77-99-99
+co09:11:06hgfw2: HG FW#2 at step  0
+co09:16:07hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:16:11hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:16:11hg: Lamp not detected f1= 0 f4= 4
+co09:16:12fr: Running fr from B005054 line -200
+hk09:16:14 5 2 2 13.9 .77-99-99
+co09:16:47fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk09:16:50 4 2 2 13.2 .74-99-99
+co09:16:52hgfw2: HG FW#2 at step  0
+co09:21:53hg: Lamp not on... hg test terminated F1= 1 F4= 6
+co09:21:57hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:21:57hg: Lamp not detected f1= 0 f4= 4
+co09:21:57hg: HG failed
+hk09:22:00 5 2 2 13.9 .77-99-99
+co09:22:02hgfw2: HG FW#2 at step  0
+co09:27:03hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co09:27:07hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co09:27:07hg: Lamp not detected f1= 0 f4= 4
+co09:27:08fr: Running fr from B005054 line -200
+hk09:27:10 4 2 2 13.9 .77-99-99
+co09:28:52fr: Micrometer #1 reference found at step-1482 (+CAL)=-1323 Now set to o3 offset = 2592
+hk09:28:57 5 2 2 13.9 .77-99-99
+co09:28:59hgfw2: HG FW#2 at step  0
+hk09:34:02 4 2 2 13.9 .77-99-99
+hgscan 0narrow 302warm= 4.99333409:34:02FEB 23/19 67 59 260 1080 2022 3309 4562 5273 5523 5641 4901 3743 2524 1378 723 513 310 253 248 162 150 219 254 340 476 736 1301 2529 3697 4939 5737 5687 5301 4738 3389 2140 1115 264 69 70
+hg09:35:06 .9929 144.2161 144 9840 4-15
+hgscan 0narrow 302warm= 4.99333409:35:06FEB 23/19 59 68 66 78 563 1587 2801 4075 5164 5582 5863 5498 4488 3250 1946 989 619 427 297 275 270 291 416 660 1012 1917 3188 4524 5553 5907 5701 5169 4198 2841 1523 572 80 64 68 59
+hg09:36:09 .9997 159.8188 160 11770 4 1
+co09:36:11ru: Running ru from B005054 line -55.37
+co09:36:16start:  PROGRAM start :  FEB 23/19 at 09:36:13
+hk09:36:16 4 2 2 13.9 .77-99-99
+co09:36:17ab_sk: Running ab_sk from main.asc
+co09:36:33ru: Running ru from B005054 line -55.37
+co09:36:34ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co09:36:34uz: Running uz from B005054 line -55.37
+hk09:36:36 5 2 2 13.2 .74-99-99
+co09:54:40b1: Running b1 from B005054 line -55.37
+co09:54:41ss: Running ss from B005054 line -55.37
+hk09:54:44 6 3 3 13.9 .82-99-99
+hk09:59:59 6 3 3 13.9 .82-99-99
+co10:00:10hgfw2: HG FW#2 at step  0
+co10:00:15hg: Lamp not on... hg test terminated F1= 0 F4= 166
+co10:00:19hg: Lamp not on... hg test terminated F1= 0 F4= 162
+co10:00:19hg: Lamp not detected f1= 0 f4= 162
+co10:00:19fr: Running fr from B005054 line -55.37
+hk10:00:22 5 3 3 13.9 .82-99-99
+co10:02:24fr: Micrometer #1 reference found at step 2339 (+CAL)= 2498 Now set to o3 offset = 2592
+hk10:02:29 6 3 3 13.9 .82-99-99
+co10:02:31hgfw2: HG FW#2 at step  0
+hk10:07:34 5 3 3 13.9 .82-99-99
+hgscan 0narrow 302warm= 4.99333410:07:34FEB 23/19 66 341 1035 1985 3048 4127 4665 4908 4848 4165 2981 1892 964 559 403 259 208 196 136 111 96 150 182 216 274 396 585 988 1958 3038 4218 5093 5109 4814 4356 3257 2097 1095 357 121
+hg10:08:38 .9901 133.4226 133 6019 5-26
+hgscan 0narrow 302warm= 4.99333410:08:38FEB 23/19 60 57 57 273 899 1887 3099 4257 4936 5216 5264 4581 3431 2271 1249 688 475 295 240 213 194 245 279 470 671 1218 2273 3457 4624 5412 5337 5114 4386 3122 1964 961 270 64 63 55
+hg10:09:42 .9949 155.3057 155 10676 5-4
+hgscan 0narrow 302warm= 4.99333410:09:42FEB 23/19 56 56 68 140 658 1537 2730 3983 4952 5303 5595 5189 4105 2874 1679 873 565 372 270 252 251 266 359 568 882 1646 2890 4161 5255 5643 5500 4993 4085 2781 1635 679 112 72 53 53
+hg10:10:45 .9997 158.8852 159 11238 5 0
+co10:10:46td: Running td from B005054 line -200
+co10:10:44td: Time correction -2.8 seconds
+hk10:11:01 6 3 3 14.5 .86-99-99
+co10:11:09ds: DS intensity too low ( 164/cy), skipping.
+hk10:11:29 5 3 3 13.9 .82-99-99
+zsa0 611.80620 121 2 7470 22901 58432 84267 79888rat 10525.22 5660.071 1590.547-239.8516
+zsa0 612.440620 110 5 7562 22956 58772 84866 79984rat 10504.44 5680.903 1596.219-265.4805
+zsa0 613.080620 122 3 7555 22856 58591 84631 79808rat 10495.34 5687.528 1597.512-262.9805
+zsa0 613.720620 127 3 7536 22906 58895 84695 80182rat 10509.59 5681.324 1578.293-245.9219
+zsa0 614.360620 114 3 7585 23008 58696 84549 80258rat 10473.9 5654.492 1585.508-234.2813
+zsa0 6150620 126 0 7624 23063 59314 85340 80918rat 10490.61 5684.258 1580.414-239.1641
+zsa0 615.640620 119 2 7365 22337 57351 83372 78480rat 10540.22 5721.953 1625.301-270.7774
+summary10:13:43FEB 23/19 50.884 1.577 5zs 0 10506 5682 1593-251 11309 5312 10.7 438.6 22 22 16 15 62 38 1.5 6.9
+co10:15:58td: Running td from B005054 line -200
+co10:15:58td: Time correction -.2 seconds
+co10:15:59nt: Running nt from B005054 line -200
+hk10:16:01 5 3 3 13.9 .82-99-99
+co10:20:44b1: Running b1 from B005054 line -200
+co10:20:45uf: Running uf from B005054 line -200
+hk10:20:47 5 3 3 13.9 .82-99-99
+hk10:28:50 5 3 3 13.9 .82-99-99
+co10:29:12hgfw2: HG FW#2 at step  0
+co10:29:16hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co10:29:19hg: Lamp not on... hg test terminated F1= 1 F4= 3
+co10:29:19hg: Lamp not detected f1= 1 f4= 3
+co10:29:20fr: Running fr from B005054 line -200
+hk10:29:23 5 3 3 13.9 .82-99-99
+co10:29:57fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk10:29:59 5 3 3 13.9 .82-99-99
+co10:30:01hgfw2: HG FW#2 at step  0
+co10:35:02hg: Lamp not on... hg test terminated F1= 0 F4= 2
+co10:35:06hg: Lamp not on... hg test terminated F1= 0 F4= 4
+co10:35:06hg: Lamp not detected f1= 0 f4= 4
+co10:35:06hg: HG failed
+hk10:35:09 5 3 3 13.9 .82-99-99
+co10:35:11hgfw2: HG FW#2 at step  0
+co10:40:12hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co10:40:16hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co10:40:16hg: Lamp not detected f1= 0 f4= 3
+co10:40:17fr: Running fr from B005054 line -200
+hk10:40:20 5 3 3 13.9 .82-99-99
+co10:40:53fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk10:40:55 6 3 3 13.9 .82-99-99
+co10:40:57hgfw2: HG FW#2 at step  0
+co10:45:58hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co10:46:02hg: Lamp not on... hg test terminated F1= 1 F4= 4
+co10:46:02hg: Lamp not detected f1= 1 f4= 4
+co10:46:02hg: HG failed
+hk10:46:05 5 3 3 14.5 .86-99-99
+co10:46:07hgfw2: HG FW#2 at step  0
+co10:51:08hg: Lamp not on... hg test terminated F1= 0 F4= 7
+co10:51:12hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co10:51:12hg: Lamp not detected f1= 0 f4= 3
+co10:51:13fr: Running fr from B005054 line -200
+hk10:51:16 5 3 3 13.9 .82-99-99
+co10:51:22fr: HOME key pressed
+co10:51:50fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?
+hk10:51:52 5 3 3 13.9 .82-99-99
+co10:51:54hgfw2: HG FW#2 at step  0
+hk10:51:57 5 3 3 14.5 .86-99-99
+co10:51:59hgfw2: HG FW#2 at step  0
+hk10:52:02 5 3 3 14.5 .86-99-99
+co10:52:04hgfw2: HG FW#2 at step  0
+hk10:52:07 5 3 3 13.9 .82-99-99
+co10:52:09hgfw2: HG FW#2 at step  0
+hk10:52:12 5 3 3 13.9 .82-99-99
+co10:52:14hgfw2: HG FW#2 at step  0
+hk10:52:17 5 3 3 13.2 .79-99-99
+co10:52:19hgfw2: HG FW#2 at step  0
+hk10:52:22 5 3 3 13.9 .82-99-99
+co10:52:24hgfw2: HG FW#2 at step  0
+hk10:52:27 5 3 3 13.9 .82-99-99
+co10:52:29hgfw2: HG FW#2 at step  0
+hk10:52:32 5 3 3 13.9 .82-99-99
+co10:52:34hgfw2: HG FW#2 at step  0
+hk10:52:37 5 3 3 13.9 .82-99-99
+co10:52:39hgfw2: HG FW#2 at step  0
+hk10:52:42 5 3 3 13.9 .82-99-99
+co10:52:44hgfw2: HG FW#2 at step  0
+hk10:52:46 5 3 3 14.5 .86-99-99
+co10:52:49hgfw2: HG FW#2 at step  0
+hk10:52:51 5 3 3 13.9 .82-99-99
+co10:52:53hgfw2: HG FW#2 at step  0
+hk10:52:56 5 3 3 13.9 .82-99-99
+co10:52:58hgfw2: HG FW#2 at step  0
+hk10:53:01 5 3 3 14.5 .86-99-99
+co10:53:03hgfw2: HG FW#2 at step  0
+hk10:53:06 5 3 3 13.9 .82-99-99
+co10:53:08hgfw2: HG FW#2 at step  0
+hk10:53:11 5 3 3 13.9 .82-99-99
+co10:53:13hgfw2: HG FW#2 at step  0
+hk10:53:16 6 3 3 13.9 .82-99-99
+co10:53:18hgfw2: HG FW#2 at step  0
+hk10:53:21 5 3 3 13.9 .82-99-99
+co10:53:23hgfw2: HG FW#2 at step  0
+hk10:53:26 5 3 3 14.5 .86-99-99
+co10:53:28hgfw2: HG FW#2 at step  0
+hk10:53:31 5 3 3 13.9 .82-99-99
+co10:53:33hgfw2: HG FW#2 at step  0
+hk10:53:36 5 3 3 13.9 .82-99-99
+co10:53:38hgfw2: HG FW#2 at step  0
+hk10:53:40 5 3 3 13.9 .82-99-99
+co10:53:42hgfw2: HG FW#2 at step  0
+hk10:53:45 5 3 3 13.9 .82-99-99
+co10:53:47hgfw2: HG FW#2 at step  0
+hk10:53:50 5 3 3 14.5 .86-99-99
+co10:53:52hgfw2: HG FW#2 at step  0
+hk10:53:55 5 3 3 13.9 .82-99-99
+co10:53:57hgfw2: HG FW#2 at step  0
+hk10:54:00 5 3 3 13.9 .82-99-99
+co10:54:02hgfw2: HG FW#2 at step  0
+hk10:54:05 5 3 3 14.5 .86-99-99
+co10:54:07hgfw2: HG FW#2 at step  0
+hk10:54:10 5 3 3 14.5 .86-99-99
+co10:54:12hgfw2: HG FW#2 at step  0
+hk10:54:15 5 3 3 13.9 .82-99-99
+co10:54:17hgfw2: HG FW#2 at step  0
+hk10:54:20 5 3 3 13.9 .82-99-99
+co10:54:22hgfw2: HG FW#2 at step  0
+hk10:54:25 5 3 3 14.5 .86-99-99
+co10:54:27hgfw2: HG FW#2 at step  0
+hk10:54:30 5 3 3 13.9 .82-99-99
+co10:54:32hgfw2: HG FW#2 at step  0
+hk10:54:35 6 3 3 13.9 .82-99-99
+co10:54:37hgfw2: HG FW#2 at step  0
+hk10:54:40 5 3 3 13.9 .82-99-99
+co10:54:42hgfw2: HG FW#2 at step  0
+hk10:54:44 5 3 3 13.9 .82-99-99
+co10:54:47hgfw2: HG FW#2 at step  0
+hk10:54:49 5 3 3 13.9 .82-99-99
+co10:54:51hgfw2: HG FW#2 at step  0
+co10:54:51hg: HOME key pressed
+hk10:54:54 6 3 3 14.5 .86-99-99
+co10:54:56hgfw2: HG FW#2 at step  0
+co10:55:07start:  PROGRAM start :  FEB 23/19 at 10:55:07
+co10:55:07pd: COM error  57( 9312) at 10:55:07 during pd
+co10:55:08pd: COM error  57( 9312) at 10:55:08 during pd
+co10:55:08pd: COM error  57( 9312) at 10:55:08 during pd
+co10:55:09re: Running re from main.asc
+co10:55:55re: Zenith discrepancy = -3
+co10:57:50re: Azimuth tracker ZEROING FAILURE !!
+co10:58:51ab_sk: Running ab_sk from main.asc
+co10:58:54ab_sk: HOME key pressed
+co10:59:01b1: Running b1 from menu line -200
+co10:59:16pdappd: Running pdappd from menu line -200
+ap10:59:23 5 1.88 1.88 1621.5 14.87 5.03-14.95 23.87 0 14.49 0 0 5.15-8.26 .07 0 4.06 1.88 1.88 1610.56 14.78 5-14.95 24.1 0 14.49 0 0 5.15-8.26 1.58 12.37
+co10:59:51b0: Running b0 from menu line -200
+co10:59:56td: Running td from menu line -200
+co10:59:56td: Time correction -.2 seconds
+co11:00:08b1: Running b1 from menu line -200
+co11:01:13b0: Running b0 from menu line -200
+co11:01:26pdslhgpd: Running pdslhgpd from menu line -200
+hk11:06:34 6 3 3 13.9 .82-99-99
+sla 0 666.880620 115877 3 394459 202020 97001 39076 14851rat-10105.47-7167.27-3961.188-4214.52
+sla 0 667.510620 116335 3 395005 202248 97052 39026 14805rat-10117.12-7177.766-3969.059-4222.434
+sla 0 668.140620 116305 3 395056 201615 97362 39283 14831rat-10089.14-7135.512-3954.406-4243.352
+sla 0 668.770620 115938 3 395034 202181 97276 39243 14791rat-10093.32-7152.199-3954.981-4250.66
+sla 0 669.40620 116334 1 395397 202623 97362 39060 14841rat-10117.49-7181.891-3979.012-4215.305
+sla 0 670.040620 116319 2 396158 202677 97577 39135 14833rat-10117.72-7174.821-3980.36-4226.168
+sla 0 670.670620 116294 4 396668 203075 97592 39226 14697rat-10113.48-7173.469-3971.063-4276.668
+summary11:08:46FEB 23/19 128.243 1.606 6sl 0-10108-7166-3967-4236 3446 2018 395396.7 14807 13 17 11 23 77 44 749.5 53
+hk11:11:02 5 3 3 14.5 .86-99-99
+co11:11:04hgfw2: HG FW#2 at step  0
+co11:16:05hg: Lamp not on... hg test terminated F1= 0 F4= 7
+co11:16:09hg: Lamp not on... hg test terminated F1= 1 F4= 6
+co11:16:09hg: Lamp not detected f1= 1 f4= 6
+co11:18:14pdaphgpd: Running pdaphgpd from menu line -200
+ap11:18:21 5.63 2.19 2.5 1610.56 14.87 5-14.95 23.87 0 14.49 0 0 5.15-8.26 .07 0 5 2.19 2.5 1610.56 14.78 4.98-14.95 23.99 0 13.84 0 0 5.15-8.26 1.57 12.37
+hk11:18:39 6 3 3 13.9 .82-99-99
+co11:18:44hgfw2: HG FW#2 at step  0
+co11:23:43hg: Lamp not on... hg test terminated F1= 0 F4= 2
+co11:23:47hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co11:23:47hg: Lamp not detected f1= 0 f4= 5
+co11:24:40pdhppd: Running pdhppd from menu line -200
+co11:24:59pdzeazpdsi: Running pdzeazpdsi from menu line -200
+co11:25:05ze: Running ze from menu line -200
+co11:25:17ze: Zenith discrepancy =  2
+co11:25:17az: Running az from menu line -200
+co11:27:12az: Azimuth tracker ZEROING FAILURE !!
+co11:27:14az: Going to menu
+co11:31:01re: Running re from menu line -200
+co11:31:47re: Zenith discrepancy = -2
+co11:32:44re: HOME key pressed
+co11:32:45re: Azimuth discrepancy =  2101
+co11:33:49pdhgpd: Running pdhgpd from menu line -200
+hk11:33:57 6 3 3 14.5 .86-99-99
+co11:34:01hgfw2: HG FW#2 at step  0
+co11:39:00hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co11:39:04hg: Lamp not on... hg test terminated F1= 0 F4= 5
+co11:39:04hg: Lamp not detected f1= 0 f4= 5
+co11:42:14az: Running az from menu line -200
+co11:44:08az: Azimuth tracker ZEROING FAILURE !!
+co12:14:49tt: Running tt from menu line -200
+co12:16:43ze: Running ze from menu line -200
+co12:16:56ze: Zenith discrepancy =  0
+co12:17:21st: Running st from menu line -200
+co12:17:40tt: Running tt from menu line -200
+hk12:21:00 5 3 3 14.5 .86-99-99
+co12:21:08hgfw2: HG FW#2 at step  0
+co12:21:45hg: DEL key pressed
+co12:21:48hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co12:21:52hg: Lamp not on... hg test terminated F1= 0 F4= 3
+co12:21:52hg: Lamp not detected f1= 0 f4= 3
+hk12:22:05 5 3 3 13.9 .82-99-99
+co12:22:22hgfw2: HG FW#2 at step  0
+co12:22:38hg: HOME key pressed
+co12:22:46fr: Running fr from menu line -200
+hk12:22:49 6 3 3 14.5 .86-99-99
+co12:23:22fr: -3000 steps - QUIT - Micrometer #1 jammed at MIN. end ?

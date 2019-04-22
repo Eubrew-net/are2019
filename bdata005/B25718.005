@@ -1,0 +1,1698 @@
+version=2
+dh140918Thessaloniki 40.634 -22.956  3.47pr1000
+co00:05:24dh: day header
+co00:05:24main: version 4.1007/04/2015 15:00:00
+co00:05:24skc: B00540
+co00:05:24autohg:  1 
+co00:05:24hifw2:  0 
+co00:05:24attn:  25000  80000 
+co00:05:24lowds:  1 
+co00:05:24cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256001302112July 12/04EXTRAS1002500080000110006-28-2017@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf17917zsfvaldcf15317uvres140918Thessaloniki40.634-22.95610003.491485-214650111110110020001skco3B00540@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+schedule-110.00azzehgsl-90.84b0b1ufhgtdb2dssltddstdss-85.37b0uztdsshgtdds-80.34b1uzhgb2tddssltddszs-75.44b0uzb1tdsshgschgtddszstdds-70.35b0uzb1tddsdssstddsdstd-65.44b1uztdds-64.30azb0b2ufslb1tddsdsds-60.35b0uzb1tdsshgtddstddstdds-55.44b0b1uztddsdstdb2sssltddsdsds-50.45b0uztddsb1tdsshgtdb2zssltdds-45.42b0uztddsb1sstddsdstdzstddsds-40.34b0uztddsb1tdsshgb2tddssltdzstdds-35.29b0uztddsb1tdssb2tddsdssltduftddstddszsw0tddsdsuf-30.35b0uztddsb1tdsshgb2tddssltduftddstddszsw0uftddstddstdzs-25.20azb0uztddsb1tddsdsntb2tddssltduftdsstddszsw0uftddstddstdzs0.00b0uzb1tdsshgtddsuftddstddsb2zsslw0tdds22.93b0uftddsb1tddssstddsuftddstddsds24.82b0uztddsb1tdsshgtddsuftddstdds27.79b0uztddsb1tddssstddsuftdb2dsdssl29.75b0uztddsb1tdsshgtddsuftdb2dssltdds32.68b0uztdb1dstddsssds34.68b0uztddsb1tdsshgtdds37.70b0uzb1tdsstddsds39.59azb0uzb1tdsshgnttdb2dssltdzsds44.57b0uzb1tddsdstddstdzstddsss49.66b0uzb1tddshgtdb2tddsslzsds54.58b0b1uztddsdskaum59.53b0uzb1tddstdds61.60b0kdumuz64.60b0b1uztdkdumds69.54b0b1uzhgtddskaum74.55b0b1uzhgtdkaum79.66b0b1uzdstdkaum84.59b0b1uzhgtdkaum89.56b0b1ufuihgtdb2tddsslkaum100.00azzeaphgrsdtslb2w0cib0hg180.00b00540@
+co00:05:24re: Running re from B00540 line -200
+co00:06:08re: Zenith ZEROING FAILURE !!
+co00:06:28re: Azimuth discrepancy = -9
+hk00:06:45 26 21 22 27.7 5.07-99-99
+co00:06:50hgfw2: HG FW#2 at step  0
+co00:08:48hg: Lamp not on... hg test terminated F1= 6 F4= 3
+co00:08:48hg: Lamp not detected f1= 6 f4= 3
+co00:08:50fr: Running fr from B00540 line -200
+hk00:08:53 26 21 22 27.1 4.95-99-99
+co00:10:08fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:10:12 26 21 22 27.7 5.07-99-99
+co00:10:14hgfw2: HG FW#2 at step  0
+co00:12:16hg: Lamp not on... hg test terminated F1= 7 F4= 4
+co00:12:16hg: Lamp not detected f1= 7 f4= 4
+co00:12:16hg: HG failed
+hk00:12:19 25 21 23 27.7 5.07-99-99
+co00:12:21hgfw2: HG FW#2 at step  0
+co00:14:23hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co00:14:23hg: Lamp not detected f1= 3 f4= 4
+co00:14:24fr: Running fr from B00540 line -200
+hk00:14:26 26 21 23 27.7 5.07-99-99
+co00:15:42fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:15:46 25 21 23 27.7 5.07-99-99
+co00:15:48hgfw2: HG FW#2 at step  0
+co00:17:50hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co00:17:50hg: Lamp not detected f1= 5 f4= 3
+co00:17:50hg: HG failed
+hk00:17:53 25 21 23 27.1 4.95-99-99
+co00:17:55hgfw2: HG FW#2 at step  0
+co00:19:56hg: Lamp not on... hg test terminated F1= 2 F4= 4
+co00:19:56hg: Lamp not detected f1= 2 f4= 4
+co00:19:57fr: Running fr from B00540 line -200
+hk00:20:00 26 21 23 27.7 5.07-99-99
+co00:21:15fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:21:19 25 21 23 27.7 5.07-99-99
+co00:21:21hgfw2: HG FW#2 at step  0
+co00:23:23hg: Lamp not on... hg test terminated F1= 6 F4= 5
+co00:23:23hg: Lamp not detected f1= 6 f4= 5
+co00:23:23hg: HG failed
+hk00:23:26 26 21 23 27.1 4.95-99-99
+co00:23:28hgfw2: HG FW#2 at step  0
+co00:25:30hg: Lamp not on... hg test terminated F1= 3 F4= 5
+co00:25:30hg: Lamp not detected f1= 3 f4= 5
+co00:25:31fr: Running fr from B00540 line -200
+hk00:25:33 26 21 23 27.1 4.95-99-99
+co00:26:49fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:26:53 25 21 23 27.1 4.95-99-99
+co00:26:55hgfw2: HG FW#2 at step  0
+hk00:28:59 26 21 23 27.7 5.07-99-99
+hgscan 0narrow 302warm= 200:28:59SEP 14/18 25 24 22 22 28 104 174 268 337 364 406 344 311 182 117 75 55 42 36 32 37 31 47 64 101 163 248 310 401 407 405 337 281 181 93 30 16 19 33 22
+hg00:30:03 .9985 160.4285 160 813 26 1
+co00:30:04sum: Running sum from B00540 line -200
+co00:30:04ozsum: Running ozsum from B00540 line -200
+co00:30:05slsum: Running slsum from B00540 line -200
+co00:30:07hgsum: Running hgsum from B00540 line -200
+co00:30:07re: Running re from B00540 line -200
+co00:30:51re: Zenith ZEROING FAILURE !!
+co00:31:16re: Azimuth discrepancy = -6
+hk00:31:34 26 21 23 27.7 5.07-99-99
+co00:31:40hgfw2: HG FW#2 at step  0
+co00:33:38hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co00:33:38hg: Lamp not detected f1= 4 f4= 4
+co00:33:40fr: Running fr from B00540 line -200
+hk00:33:42 26 21 23 27.1 4.95-99-99
+co00:34:57fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:35:02 26 21 23 27.1 4.95-99-99
+co00:35:04hgfw2: HG FW#2 at step  0
+co00:37:05hg: Lamp not on... hg test terminated F1= 6 F4= 4
+co00:37:06hg: Lamp not detected f1= 6 f4= 4
+co00:37:06hg: HG failed
+hk00:37:09 25 21 23 27.1 4.95-99-99
+co00:37:10hgfw2: HG FW#2 at step  0
+co00:39:12hg: Lamp not on... hg test terminated F1= 3 F4= 8
+co00:39:12hg: Lamp not detected f1= 3 f4= 8
+co00:39:13fr: Running fr from B00540 line -200
+hk00:39:16 26 21 23 27.1 4.95-99-99
+co00:40:31fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:40:36 26 21 23 27.7 5.07-99-99
+co00:40:37hgfw2: HG FW#2 at step  0
+co00:42:39hg: Lamp not on... hg test terminated F1= 4 F4= 2
+co00:42:39hg: Lamp not detected f1= 4 f4= 2
+co00:42:39hg: HG failed
+hk00:42:42 26 21 23 27.1 4.95-99-99
+co00:42:44hgfw2: HG FW#2 at step  0
+co00:44:46hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co00:44:46hg: Lamp not detected f1= 5 f4= 6
+co00:44:47fr: Running fr from B00540 line -200
+hk00:44:50 26 21 23 27.7 5.07-99-99
+co00:46:05fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:46:09 26 21 23 27.7 5.07-99-99
+co00:46:11hgfw2: HG FW#2 at step  0
+co00:48:13hg: Lamp not on... hg test terminated F1= 6 F4= 5
+co00:48:13hg: Lamp not detected f1= 6 f4= 5
+co00:48:13hg: HG failed
+hk00:48:16 26 21 23 27.1 4.95-99-99
+co00:48:18hgfw2: HG FW#2 at step  0
+co00:50:19hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co00:50:19hg: Lamp not detected f1= 5 f4= 6
+co00:50:21fr: Running fr from B00540 line -200
+hk00:50:23 26 21 23 27.1 4.95-99-99
+co00:51:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:51:43 25 21 22 27.1 4.95-99-99
+co00:51:45hgfw2: HG FW#2 at step  0
+co00:53:46hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co00:53:46hg: Lamp not detected f1= 3 f4= 3
+co00:53:46hg: HG failed
+hk00:53:50 25 21 22 27.7 5.07-99-99
+co00:53:51hgfw2: HG FW#2 at step  0
+co00:55:53hg: Lamp not on... hg test terminated F1= 2 F4= 131
+co00:55:53hg: Lamp not detected f1= 2 f4= 131
+co00:55:55fr: Running fr from B00540 line -200
+hk00:55:57 25 21 22 27.7 5.07-99-99
+co00:57:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk00:57:16 26 21 22 27.1 4.95-99-99
+co00:57:18hgfw2: HG FW#2 at step  0
+co00:59:20hg: Lamp not on... hg test terminated F1= 4 F4= 116
+co00:59:20hg: Lamp not detected f1= 4 f4= 116
+co00:59:20hg: HG failed
+hk00:59:23 26 21 22 27.7 5.07-99-99
+co00:59:25hgfw2: HG FW#2 at step  0
+co01:01:27hg: Lamp not on... hg test terminated F1= 4 F4= 121
+co01:01:27hg: Lamp not detected f1= 4 f4= 121
+co01:01:28fr: Running fr from B00540 line -200
+hk01:01:30 26 21 22 27.1 4.95-99-99
+co01:02:46fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:02:51 26 21 22 27.1 4.95-99-99
+co01:02:53hgfw2: HG FW#2 at step  0
+co01:04:55hg: Lamp not on... hg test terminated F1= 5 F4= 146
+co01:04:55hg: Lamp not detected f1= 5 f4= 146
+co01:04:55hg: HG failed
+hk01:04:58 26 21 22 27.1 4.95-99-99
+co01:05:00hgfw2: HG FW#2 at step  0
+co01:07:02hg: Lamp not on... hg test terminated F1= 3 F4= 146
+co01:07:02hg: Lamp not detected f1= 3 f4= 146
+co01:07:03fr: Running fr from B00540 line -200
+hk01:07:06 26 21 22 27.7 5.07-99-99
+co01:08:21fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:08:25 26 21 22 27.7 5.07-99-99
+co01:08:27hgfw2: HG FW#2 at step  0
+co01:10:29hg: Lamp not on... hg test terminated F1= 6 F4= 165
+co01:10:29hg: Lamp not detected f1= 6 f4= 165
+co01:10:29hg: HG failed
+hk01:10:32 25 21 22 27.7 5.07-99-99
+co01:10:34hgfw2: HG FW#2 at step  0
+co01:12:36hg: Lamp not on... hg test terminated F1= 7 F4= 165
+co01:12:36hg: Lamp not detected f1= 7 f4= 165
+co01:12:37fr: Running fr from B00540 line -200
+hk01:12:39 26 21 22 27.1 4.95-99-99
+co01:13:54fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:13:59 26 21 22 27.7 5.07-99-99
+co01:14:01hgfw2: HG FW#2 at step  0
+co01:16:03hg: Lamp not on... hg test terminated F1= 4 F4= 161
+co01:16:03hg: Lamp not detected f1= 4 f4= 161
+co01:16:03hg: HG failed
+hk01:16:06 26 21 22 27.1 4.95-99-99
+co01:16:07hgfw2: HG FW#2 at step  0
+co01:18:09hg: Lamp not on... hg test terminated F1= 5 F4= 160
+co01:18:09hg: Lamp not detected f1= 5 f4= 160
+co01:18:10fr: Running fr from B00540 line -200
+hk01:18:13 26 21 22 27.1 4.95-99-99
+co01:19:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:19:32 26 21 22 27.1 4.95-99-99
+co01:19:34hgfw2: HG FW#2 at step  0
+co01:21:36hg: Lamp not on... hg test terminated F1= 6 F4= 151
+co01:21:36hg: Lamp not detected f1= 6 f4= 151
+co01:21:36hg: HG failed
+hk01:21:39 26 21 22 27.7 5.07-99-99
+co01:21:41hgfw2: HG FW#2 at step  0
+co01:23:43hg: Lamp not on... hg test terminated F1= 5 F4= 140
+co01:23:43hg: Lamp not detected f1= 5 f4= 140
+co01:23:44fr: Running fr from B00540 line -200
+hk01:23:47 25 21 22 27.1 4.95-99-99
+co01:25:02fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:25:06 26 21 22 27.7 5.07-99-99
+co01:25:08hgfw2: HG FW#2 at step  0
+co01:27:10hg: Lamp not on... hg test terminated F1= 4 F4= 163
+co01:27:10hg: Lamp not detected f1= 4 f4= 163
+co01:27:10hg: HG failed
+hk01:27:13 26 21 22 27.7 5.07-99-99
+co01:27:15hgfw2: HG FW#2 at step  0
+hk01:29:19 25 21 22 27.7 5.07-99-99
+hgscan 0narrow 302warm= 201:29:19SEP 14/18 20 22 21 24 54 139 194 300 389 431 420 426 323 233 106 62 50 41 42 37 36 40 38 55 65 107 221 340 430 450 432 387 284 171 167 45 24 22 18 19
+hg01:30:23 .9952 159.2676 159 870 25 0
+co01:30:24sum: Running sum from B00540 line -200
+co01:30:24ozsum: Running ozsum from B00540 line -200
+co01:30:25slsum: Running slsum from B00540 line -200
+co01:30:27hgsum: Running hgsum from B00540 line -200
+co01:30:27re: Running re from B00540 line -200
+co01:31:12re: Zenith ZEROING FAILURE !!
+co01:31:38re: Azimuth discrepancy = -4
+hk01:32:00 25 21 22 27.1 4.95-99-99
+co01:32:05hgfw2: HG FW#2 at step  0
+co01:34:04hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co01:34:04hg: Lamp not detected f1= 3 f4= 4
+co01:34:05fr: Running fr from B00540 line -200
+hk01:34:08 26 21 22 27.7 5.07-99-99
+co01:35:23fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:35:27 26 21 22 27.7 5.07-99-99
+co01:35:29hgfw2: HG FW#2 at step  0
+co01:37:30hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co01:37:30hg: Lamp not detected f1= 5 f4= 3
+co01:37:30hg: HG failed
+hk01:37:34 25 21 22 27.7 5.07-99-99
+co01:37:35hgfw2: HG FW#2 at step  0
+co01:39:37hg: Lamp not on... hg test terminated F1= 2 F4= 5
+co01:39:37hg: Lamp not detected f1= 2 f4= 5
+co01:39:38fr: Running fr from B00540 line -200
+hk01:39:41 25 21 22 27.7 5.07-99-99
+co01:40:56fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:41:01 26 21 22 27.7 5.07-99-99
+co01:41:03hgfw2: HG FW#2 at step  0
+co01:43:04hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co01:43:04hg: Lamp not detected f1= 3 f4= 3
+co01:43:04hg: HG failed
+hk01:43:07 25 21 22 27.7 5.07-99-99
+co01:43:09hgfw2: HG FW#2 at step  0
+co01:45:11hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co01:45:11hg: Lamp not detected f1= 5 f4= 3
+co01:45:12fr: Running fr from B00540 line -200
+hk01:45:14 25 21 21 27.7 5.07-99-99
+co01:46:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:46:34 25 21 21 27.7 5.07-99-99
+co01:46:36hgfw2: HG FW#2 at step  0
+co01:48:38hg: Lamp not on... hg test terminated F1= 3 F4= 5
+co01:48:38hg: Lamp not detected f1= 3 f4= 5
+co01:48:38hg: HG failed
+hk01:48:41 25 21 21 28.4 5.19-99-99
+co01:48:43hgfw2: HG FW#2 at step  0
+co01:50:45hg: Lamp not on... hg test terminated F1= 4 F4= 6
+co01:50:45hg: Lamp not detected f1= 4 f4= 6
+co01:50:46fr: Running fr from B00540 line -200
+hk01:50:48 25 21 21 27.7 5.07-99-99
+co01:52:03fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:52:08 25 21 21 27.7 5.07-99-99
+co01:52:10hgfw2: HG FW#2 at step  0
+co01:54:11hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co01:54:11hg: Lamp not detected f1= 2 f4= 3
+co01:54:12hg: HG failed
+hk01:54:15 25 20 21 27.7 4.79-99-99
+co01:54:16hgfw2: HG FW#2 at step  0
+co01:56:18hg: Lamp not on... hg test terminated F1= 4 F4= 118
+co01:56:18hg: Lamp not detected f1= 4 f4= 118
+co01:56:19fr: Running fr from B00540 line -200
+hk01:56:22 25 20 21 27.1 4.67-99-99
+co01:57:37fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk01:57:42 25 21 21 27.7 5.07-99-99
+co01:57:44hgfw2: HG FW#2 at step  0
+co01:59:45hg: Lamp not on... hg test terminated F1= 4 F4= 128
+co01:59:45hg: Lamp not detected f1= 4 f4= 128
+co01:59:45hg: HG failed
+hk01:59:48 25 20 21 27.7 4.79-99-99
+co01:59:50hgfw2: HG FW#2 at step  0
+co02:01:52hg: Lamp not on... hg test terminated F1= 3 F4= 130
+co02:01:52hg: Lamp not detected f1= 3 f4= 130
+co02:01:53fr: Running fr from B00540 line -200
+hk02:01:55 24 21 21 27.7 5.07-99-99
+co02:03:10fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:03:15 25 21 22 27.1 4.95-99-99
+co02:03:17hgfw2: HG FW#2 at step  0
+co02:05:18hg: Lamp not on... hg test terminated F1= 4 F4= 135
+co02:05:18hg: Lamp not detected f1= 4 f4= 135
+co02:05:19hg: HG failed
+hk02:05:22 25 20 22 27.7 4.79-99-99
+co02:05:24hgfw2: HG FW#2 at step  0
+co02:07:26hg: Lamp not on... hg test terminated F1= 3 F4= 134
+co02:07:26hg: Lamp not detected f1= 3 f4= 134
+co02:07:27fr: Running fr from B00540 line -200
+hk02:07:29 25 20 21 27.7 4.79-99-99
+co02:08:46fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:08:51 25 20 21 27.1 4.67-99-99
+co02:08:52hgfw2: HG FW#2 at step  0
+co02:10:54hg: Lamp not on... hg test terminated F1= 5 F4= 141
+co02:10:54hg: Lamp not detected f1= 5 f4= 141
+co02:10:54hg: HG failed
+hk02:10:57 25 20 22 27.1 4.67-99-99
+co02:10:59hgfw2: HG FW#2 at step  0
+co02:13:01hg: Lamp not on... hg test terminated F1= 4 F4= 145
+co02:13:01hg: Lamp not detected f1= 4 f4= 145
+co02:13:02fr: Running fr from B00540 line -200
+hk02:13:04 25 20 22 27.7 4.79-99-99
+co02:14:21fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:14:25 25 21 22 27.7 5.07-99-99
+co02:14:27hgfw2: HG FW#2 at step  0
+co02:16:29hg: Lamp not on... hg test terminated F1= 3 F4= 154
+co02:16:29hg: Lamp not detected f1= 3 f4= 154
+co02:16:29hg: HG failed
+hk02:16:32 25 20 22 28.4 4.9-99-99
+co02:16:34hgfw2: HG FW#2 at step  0
+co02:18:35hg: Lamp not on... hg test terminated F1= 4 F4= 147
+co02:18:35hg: Lamp not detected f1= 4 f4= 147
+co02:18:37fr: Running fr from B00540 line -200
+hk02:18:39 25 21 22 27.7 5.07-99-99
+co02:19:56fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:20:00 25 21 22 27.7 5.07-99-99
+co02:20:02hgfw2: HG FW#2 at step  0
+co02:22:04hg: Lamp not on... hg test terminated F1= 5 F4= 156
+co02:22:04hg: Lamp not detected f1= 5 f4= 156
+co02:22:04hg: HG failed
+hk02:22:06 25 21 22 27.1 4.95-99-99
+co02:22:08hgfw2: HG FW#2 at step  0
+hk02:24:13 25 21 22 27.1 4.95-99-99
+hgscan 0narrow 302warm= 202:24:13SEP 14/18 14 20 18 17 50 142 183 282 374 400 437 433 356 279 161 81 54 43 32 31 37 35 45 53 74 125 241 321 383 454 432 407 314 215 128 43 21 20 18 23
+hg02:25:16 .9978 159.9503 160 891 25 1
+co02:25:17sum: Running sum from B00540 line -200
+co02:25:18ozsum: Running ozsum from B00540 line -200
+co02:25:19slsum: Running slsum from B00540 line -200
+co02:25:20hgsum: Running hgsum from B00540 line -200
+co02:25:21re: Running re from B00540 line -200
+co02:26:06re: Zenith ZEROING FAILURE !!
+co02:26:37re: Azimuth discrepancy = -9
+hk02:27:01 25 21 22 27.1 4.95-99-99
+co02:27:06hgfw2: HG FW#2 at step  0
+co02:29:04hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co02:29:04hg: Lamp not detected f1= 4 f4= 5
+co02:29:06fr: Running fr from B00540 line -200
+hk02:29:08 25 20 22 27.1 4.67-99-99
+co02:30:24fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:30:28 25 21 22 27.7 5.07-99-99
+co02:30:30hgfw2: HG FW#2 at step  0
+co02:32:32hg: Lamp not on... hg test terminated F1= 1 F4= 3
+co02:32:32hg: Lamp not detected f1= 1 f4= 3
+co02:32:32hg: HG failed
+hk02:32:35 25 20 22 27.7 4.79-99-99
+co02:32:37hgfw2: HG FW#2 at step  0
+co02:34:38hg: Lamp not on... hg test terminated F1= 4 F4= 2
+co02:34:38hg: Lamp not detected f1= 4 f4= 2
+co02:34:40fr: Running fr from B00540 line -200
+hk02:34:42 25 20 22 27.7 4.79-99-99
+co02:35:57fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:36:02 25 20 22 27.7 4.79-99-99
+co02:36:04hgfw2: HG FW#2 at step  0
+co02:38:05hg: Lamp not on... hg test terminated F1= 4 F4= 7
+co02:38:05hg: Lamp not detected f1= 4 f4= 7
+co02:38:05hg: HG failed
+hk02:38:08 25 20 22 27.7 4.79-99-99
+co02:38:10hgfw2: HG FW#2 at step  0
+co02:40:12hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co02:40:12hg: Lamp not detected f1= 4 f4= 3
+co02:40:13fr: Running fr from B00540 line -200
+hk02:40:16 25 20 21 27.1 4.67-99-99
+co02:41:31fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:41:35 24 20 21 27.1 4.67-99-99
+co02:41:37hgfw2: HG FW#2 at step  0
+co02:43:39hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co02:43:39hg: Lamp not detected f1= 4 f4= 4
+co02:43:39hg: HG failed
+hk02:43:42 25 20 21 27.7 4.79-99-99
+co02:43:44hgfw2: HG FW#2 at step  0
+co02:45:46hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co02:45:46hg: Lamp not detected f1= 4 f4= 4
+co02:45:47fr: Running fr from B00540 line -200
+hk02:45:49 25 20 21 27.7 4.79-99-99
+co02:47:04fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:47:09 25 20 21 27.1 4.67-99-99
+co02:47:11hgfw2: HG FW#2 at step  0
+co02:49:12hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co02:49:12hg: Lamp not detected f1= 2 f4= 3
+co02:49:12hg: HG failed
+hk02:49:16 25 20 21 27.7 4.79-99-99
+co02:49:17hgfw2: HG FW#2 at step  0
+co02:51:19hg: Lamp not on... hg test terminated F1= 3 F4= 124
+co02:51:19hg: Lamp not detected f1= 3 f4= 124
+co02:51:21fr: Running fr from B00540 line -200
+hk02:51:23 24 20 21 27.7 4.79-99-99
+co02:52:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:52:43 25 20 21 27.1 4.67-99-99
+co02:52:44hgfw2: HG FW#2 at step  0
+co02:54:46hg: Lamp not on... hg test terminated F1= 5 F4= 128
+co02:54:46hg: Lamp not detected f1= 5 f4= 128
+co02:54:46hg: HG failed
+hk02:54:49 24 20 21 27.1 4.67-99-99
+co02:54:51hgfw2: HG FW#2 at step  0
+co02:56:53hg: Lamp not on... hg test terminated F1= 4 F4= 120
+co02:56:53hg: Lamp not detected f1= 4 f4= 120
+co02:56:54fr: Running fr from B00540 line -200
+hk02:56:56 25 20 21 27.7 4.79-99-99
+co02:58:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk02:58:16 25 20 21 27.7 4.79-99-99
+co02:58:18hgfw2: HG FW#2 at step  0
+co03:00:20hg: Lamp not on... hg test terminated F1= 2 F4= 149
+co03:00:20hg: Lamp not detected f1= 2 f4= 149
+co03:00:20hg: HG failed
+hk03:00:23 25 20 21 27.7 4.79-99-99
+co03:00:25hgfw2: HG FW#2 at step  0
+co03:02:27hg: Lamp not on... hg test terminated F1= 2 F4= 144
+co03:02:27hg: Lamp not detected f1= 2 f4= 144
+co03:02:28fr: Running fr from B00540 line -200
+hk03:02:30 24 20 21 27.7 4.79-99-99
+co03:03:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:03:50 25 20 21 27.7 4.79-99-99
+co03:03:52hgfw2: HG FW#2 at step  0
+co03:05:53hg: Lamp not on... hg test terminated F1= 3 F4= 126
+co03:05:53hg: Lamp not detected f1= 3 f4= 126
+co03:05:53hg: HG failed
+hk03:05:56 25 20 21 27.7 4.79-99-99
+co03:05:58hgfw2: HG FW#2 at step  0
+co03:08:00hg: Lamp not on... hg test terminated F1= 4 F4= 118
+co03:08:00hg: Lamp not detected f1= 4 f4= 118
+co03:08:01fr: Running fr from B00540 line -200
+hk03:08:04 24 20 21 27.7 4.79-99-99
+co03:09:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:09:24 25 20 21 27.7 4.79-99-99
+co03:09:25hgfw2: HG FW#2 at step  0
+co03:11:27hg: Lamp not on... hg test terminated F1= 2 F4= 143
+co03:11:27hg: Lamp not detected f1= 2 f4= 143
+co03:11:27hg: HG failed
+hk03:11:30 25 20 21 27.7 4.79-99-99
+co03:11:32hgfw2: HG FW#2 at step  0
+hk03:13:37 25 20 21 27.1 4.67-99-99
+hgscan 0narrow 302warm= 203:13:37SEP 14/18 23 17 21 17 19 86 159 248 382 411 426 401 306 210 129 83 63 42 34 30 35 30 39 54 72 109 212 306 408 424 392 388 280 172 108 22 17 18 19 19
+hg03:14:40 .9976 160.0961 160 850 25 1
+co03:14:41sum: Running sum from B00540 line -200
+co03:14:42ozsum: Running ozsum from B00540 line -200
+co03:14:43slsum: Running slsum from B00540 line -200
+co03:14:44hgsum: Running hgsum from B00540 line -200
+co03:14:45re: Running re from B00540 line -200
+co03:15:29re: Zenith ZEROING FAILURE !!
+co03:16:04re: Azimuth discrepancy = -14
+hk03:16:29 25 20 21 28.4 4.9-99-99
+co03:16:34hgfw2: HG FW#2 at step  0
+co03:18:33hg: Lamp not on... hg test terminated F1= 5 F4= 5
+co03:18:33hg: Lamp not detected f1= 5 f4= 5
+co03:18:35fr: Running fr from B00540 line -200
+hk03:18:37 25 20 21 27.1 4.67-99-99
+co03:19:53fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:19:57 24 20 21 27.7 4.79-99-99
+co03:19:59hgfw2: HG FW#2 at step  0
+co03:22:01hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co03:22:01hg: Lamp not detected f1= 3 f4= 3
+co03:22:01hg: HG failed
+hk03:22:04 24 20 21 27.1 4.67-99-99
+co03:22:06hgfw2: HG FW#2 at step  0
+co03:24:07hg: Lamp not on... hg test terminated F1= 3 F4= 5
+co03:24:07hg: Lamp not detected f1= 3 f4= 5
+co03:24:08fr: Running fr from B00540 line -200
+hk03:24:11 24 20 21 27.1 4.67-99-99
+co03:25:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:25:31 24 20 21 27.7 4.79-99-99
+co03:25:33hgfw2: HG FW#2 at step  0
+co03:27:34hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co03:27:34hg: Lamp not detected f1= 4 f4= 3
+co03:27:34hg: HG failed
+hk03:27:37 25 20 21 27.7 4.79-99-99
+co03:27:39hgfw2: HG FW#2 at step  0
+co03:29:41hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co03:29:41hg: Lamp not detected f1= 4 f4= 5
+co03:29:42fr: Running fr from B00540 line -200
+hk03:29:45 24 20 21 27.1 4.67-99-99
+co03:31:00fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:31:04 25 20 21 27.7 4.79-99-99
+co03:31:06hgfw2: HG FW#2 at step  0
+co03:33:08hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co03:33:08hg: Lamp not detected f1= 3 f4= 3
+co03:33:08hg: HG failed
+hk03:33:11 25 20 21 27.7 4.79-99-99
+co03:33:13hgfw2: HG FW#2 at step  0
+co03:35:15hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co03:35:15hg: Lamp not detected f1= 4 f4= 4
+co03:35:16fr: Running fr from B00540 line -200
+hk03:35:18 25 20 21 27.7 4.79-99-99
+co03:36:34fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:36:38 24 20 21 27.7 4.79-99-99
+co03:36:40hgfw2: HG FW#2 at step  0
+co03:38:41hg: Lamp not on... hg test terminated F1= 4 F4= 2
+co03:38:41hg: Lamp not detected f1= 4 f4= 2
+co03:38:41hg: HG failed
+hk03:38:44 24 20 21 27.7 4.79-99-99
+co03:38:46hgfw2: HG FW#2 at step  0
+co03:40:48hg: Lamp not on... hg test terminated F1= 6 F4= 104
+co03:40:48hg: Lamp not detected f1= 6 f4= 104
+co03:40:49fr: Running fr from B00540 line -200
+hk03:40:52 25 20 21 27.7 4.79-99-99
+co03:42:07fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:42:12 25 20 21 27.1 4.67-99-99
+co03:42:13hgfw2: HG FW#2 at step  0
+co03:44:15hg: Lamp not on... hg test terminated F1= 3 F4= 139
+co03:44:15hg: Lamp not detected f1= 3 f4= 139
+co03:44:15hg: HG failed
+hk03:44:18 25 20 21 27.1 4.67-99-99
+co03:44:20hgfw2: HG FW#2 at step  0
+co03:46:22hg: Lamp not on... hg test terminated F1= 4 F4= 122
+co03:46:22hg: Lamp not detected f1= 4 f4= 122
+co03:46:23fr: Running fr from B00540 line -200
+hk03:46:25 24 20 21 27.7 4.79-99-99
+co03:47:41fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:47:45 24 20 21 27.1 4.67-99-99
+co03:47:47hgfw2: HG FW#2 at step  0
+co03:49:49hg: Lamp not on... hg test terminated F1= 2 F4= 131
+co03:49:49hg: Lamp not detected f1= 2 f4= 131
+co03:49:49hg: HG failed
+hk03:49:52 24 20 21 27.7 4.79-99-99
+co03:49:54hgfw2: HG FW#2 at step  0
+co03:51:55hg: Lamp not on... hg test terminated F1= 5 F4= 135
+co03:51:55hg: Lamp not detected f1= 5 f4= 135
+co03:51:57fr: Running fr from B00540 line -200
+hk03:51:59 24 20 21 27.7 4.79-99-99
+co03:53:14fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk03:53:18 24 20 21 27.7 4.79-99-99
+co03:53:20hgfw2: HG FW#2 at step  0
+co03:55:22hg: Lamp not on... hg test terminated F1= 3 F4= 148
+co03:55:22hg: Lamp not detected f1= 3 f4= 148
+co03:55:22hg: HG failed
+hk03:55:25 24 20 21 27.7 4.79-99-99
+co03:55:27hgfw2: HG FW#2 at step  0
+hk03:57:31 24 20 21 27.7 4.79-99-99
+hgscan 0narrow 302warm= 203:57:31SEP 14/18 16 18 21 21 49 122 215 277 376 418 399 348 281 167 90 57 55 33 35 27 29 34 38 51 66 88 193 308 398 402 381 349 278 162 80 26 17 19 19 17
+hg03:58:35 .9981 158.5343 159 801 24 0
+co03:58:36sum: Running sum from B00540 line -200
+co03:58:37ozsum: Running ozsum from B00540 line -200
+co03:58:38slsum: Running slsum from B00540 line -200
+co03:58:39hgsum: Running hgsum from B00540 line -200
+co03:58:40re: Running re from B00540 line -200
+co03:59:24re: Zenith ZEROING FAILURE !!
+co04:00:02re: Azimuth discrepancy = -15
+hk04:00:28 24 20 21 28.4 4.9-99-99
+co04:00:34hgfw2: HG FW#2 at step  0
+co04:02:32hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co04:02:32hg: Lamp not detected f1= 2 f4= 3
+co04:02:34fr: Running fr from B00540 line -200
+hk04:02:36 24 20 21 27.1 4.67-99-99
+co04:03:52fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:03:56 24 20 21 27.7 4.79-99-99
+co04:03:58hgfw2: HG FW#2 at step  0
+co04:06:00hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co04:06:00hg: Lamp not detected f1= 5 f4= 3
+co04:06:00hg: HG failed
+hk04:06:03 24 19 21 27.1 4.41-99-99
+co04:06:05hgfw2: HG FW#2 at step  0
+co04:08:06hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co04:08:06hg: Lamp not detected f1= 3 f4= 4
+co04:08:08fr: Running fr from B00540 line -200
+hk04:08:10 24 20 21 27.7 4.79-99-99
+co04:09:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:09:30 24 20 21 27.1 4.67-99-99
+co04:09:32hgfw2: HG FW#2 at step  0
+co04:11:34hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co04:11:34hg: Lamp not detected f1= 4 f4= 4
+co04:11:34hg: HG failed
+hk04:11:37 24 20 21 27.7 4.79-99-99
+co04:11:39hgfw2: HG FW#2 at step  0
+co04:13:41hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co04:13:41hg: Lamp not detected f1= 5 f4= 3
+co04:13:42fr: Running fr from B00540 line -200
+hk04:13:44 24 20 20 27.7 4.79-99-99
+co04:14:59fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:15:03 24 20 20 27.1 4.67-99-99
+co04:15:05hgfw2: HG FW#2 at step  0
+co04:17:07hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co04:17:07hg: Lamp not detected f1= 3 f4= 3
+co04:17:07hg: HG failed
+hk04:17:10 23 20 20 27.7 4.79-99-99
+co04:17:12hgfw2: HG FW#2 at step  0
+co04:19:14hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co04:19:14hg: Lamp not detected f1= 3 f4= 2
+co04:19:15fr: Running fr from B00540 line -200
+hk04:19:17 24 20 20 27.1 4.67-99-99
+co04:20:33fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:20:37 24 19 20 27.7 4.51-99-99
+co04:20:39hgfw2: HG FW#2 at step  0
+co04:22:41hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co04:22:41hg: Lamp not detected f1= 3 f4= 3
+co04:22:41hg: HG failed
+hk04:22:44 24 19 20 27.7 4.51-99-99
+co04:22:46hgfw2: HG FW#2 at step  0
+co04:24:48hg: Lamp not on... hg test terminated F1= 3 F4= 96
+co04:24:48hg: Lamp not detected f1= 3 f4= 96
+co04:24:49fr: Running fr from B00540 line -200
+hk04:24:51 23 19 20 27.7 4.51-99-99
+co04:26:07fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:26:11 24 19 20 27.7 4.51-99-99
+co04:26:13hgfw2: HG FW#2 at step  0
+co04:28:15hg: Lamp not on... hg test terminated F1= 3 F4= 97
+co04:28:15hg: Lamp not detected f1= 3 f4= 97
+co04:28:15hg: HG failed
+hk04:28:18 24 19 20 27.7 4.51-99-99
+co04:28:20hgfw2: HG FW#2 at step  0
+co04:30:21hg: Lamp not on... hg test terminated F1= 2 F4= 110
+co04:30:21hg: Lamp not detected f1= 2 f4= 110
+co04:30:23fr: Running fr from B00540 line -200
+hk04:30:25 23 19 20 27.7 4.51-99-99
+co04:31:40fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:31:44 24 19 20 27.7 4.51-99-99
+co04:31:46hgfw2: HG FW#2 at step  0
+co04:33:48hg: Lamp not on... hg test terminated F1= 4 F4= 113
+co04:33:48hg: Lamp not detected f1= 4 f4= 113
+co04:33:48hg: HG failed
+hk04:33:51 24 19 20 27.1 4.41-99-99
+co04:33:53hgfw2: HG FW#2 at step  0
+co04:35:55hg: Lamp not on... hg test terminated F1= 6 F4= 111
+co04:35:55hg: Lamp not detected f1= 6 f4= 111
+co04:35:56fr: Running fr from B00540 line -200
+hk04:35:58 24 19 20 27.1 4.41-99-99
+co04:37:14fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:37:18 24 19 20 27.7 4.51-99-99
+co04:37:20hgfw2: HG FW#2 at step  0
+co04:39:22hg: Lamp not on... hg test terminated F1= 4 F4= 122
+co04:39:22hg: Lamp not detected f1= 4 f4= 122
+co04:39:22hg: HG failed
+hk04:39:25 24 19 20 28.4 4.62-99-99
+co04:39:27hgfw2: HG FW#2 at step  0
+hk04:41:31 24 19 20 27.7 4.51-99-99
+hgscan 0narrow 302warm= 204:41:31SEP 14/18 15 18 17 18 42 114 186 268 329 365 379 348 270 176 104 61 46 33 34 28 27 30 33 42 62 130 195 306 380 394 361 369 282 209 146 44 18 17 14 17
+hg04:42:35 .9973 158.2586 158 773 24-1
+co04:42:36sum: Running sum from B00540 line -200
+co04:42:37ozsum: Running ozsum from B00540 line -200
+co04:42:37slsum: Running slsum from B00540 line -200
+co04:42:39hgsum: Running hgsum from B00540 line -200
+co04:42:40re: Running re from B00540 line -200
+co04:43:24re: Zenith ZEROING FAILURE !!
+co04:44:04re: Azimuth discrepancy = -15
+hk04:44:32 24 20 21 27.1 4.67-99-99
+co04:44:37hgfw2: HG FW#2 at step  0
+co04:46:36hg: Lamp not on... hg test terminated F1= 3 F4= 3
+co04:46:36hg: Lamp not detected f1= 3 f4= 3
+co04:46:37fr: Running fr from B00540 line -200
+hk04:46:40 24 20 21 27.1 4.67-99-99
+co04:47:55fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:47:59 24 20 21 27.7 4.79-99-99
+co04:48:01hgfw2: HG FW#2 at step  0
+co04:50:03hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co04:50:03hg: Lamp not detected f1= 4 f4= 3
+co04:50:03hg: HG failed
+hk04:50:06 24 20 21 27.7 4.79-99-99
+co04:50:08hgfw2: HG FW#2 at step  0
+co04:52:10hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co04:52:10hg: Lamp not detected f1= 5 f4= 4
+co04:52:11fr: Running fr from B00540 line -200
+hk04:52:13 24 20 21 27.1 4.67-99-99
+co04:53:29fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:53:33 24 20 21 27.1 4.67-99-99
+co04:53:35hgfw2: HG FW#2 at step  0
+co04:55:36hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co04:55:36hg: Lamp not detected f1= 5 f4= 4
+co04:55:36hg: HG failed
+hk04:55:39 24 20 21 27.1 4.67-99-99
+co04:55:41hgfw2: HG FW#2 at step  0
+co04:57:43hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co04:57:43hg: Lamp not detected f1= 4 f4= 5
+co04:57:44fr: Running fr from B00540 line -200
+hk04:57:47 24 20 21 26.5 4.56-99-99
+co04:59:02fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk04:59:06 24 20 21 27.1 4.67-99-99
+co04:59:08hgfw2: HG FW#2 at step  0
+co05:01:10hg: Lamp not on... hg test terminated F1= 2 F4= 3
+co05:01:10hg: Lamp not detected f1= 2 f4= 3
+co05:01:10hg: HG failed
+hk05:01:13 24 20 21 26.5 4.56-99-99
+co05:01:15hgfw2: HG FW#2 at step  0
+co05:03:17hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co05:03:17hg: Lamp not detected f1= 4 f4= 5
+co05:03:18fr: Running fr from B00540 line -200
+hk05:03:20 24 20 21 26.5 4.56-99-99
+co05:04:35fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:04:40 24 20 21 27.1 4.67-99-99
+co05:04:41hgfw2: HG FW#2 at step  0
+co05:06:43hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co05:06:43hg: Lamp not detected f1= 3 f4= 4
+co05:06:43hg: HG failed
+hk05:06:46 24 20 21 26.5 4.56-99-99
+co05:06:48hgfw2: HG FW#2 at step  0
+co05:08:50hg: Lamp not on... hg test terminated F1= 4 F4= 101
+co05:08:50hg: Lamp not detected f1= 4 f4= 101
+co05:08:51fr: Running fr from B00540 line -200
+hk05:08:54 25 20 22 27.1 4.67-99-99
+co05:10:10fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:10:15 24 20 22 26.5 4.56-99-99
+co05:10:17hgfw2: HG FW#2 at step  0
+co05:12:19hg: Lamp not on... hg test terminated F1= 1 F4= 89
+co05:12:19hg: Lamp not detected f1= 1 f4= 89
+co05:12:20hg: HG failed
+hk05:12:23 25 20 22 26.5 4.56-99-99
+co05:12:25hgfw2: HG FW#2 at step  0
+co05:14:27hg: Lamp not on... hg test terminated F1= 4 F4= 110
+co05:14:27hg: Lamp not detected f1= 4 f4= 110
+co05:14:28fr: Running fr from B00540 line -200
+hk05:14:30 25 20 22 26.5 4.56-99-99
+co05:15:47fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:15:51 25 21 22 25.8 4.72-99-99
+co05:15:53hgfw2: HG FW#2 at step  0
+co05:17:55hg: Lamp not on... hg test terminated F1= 4 F4= 110
+co05:17:55hg: Lamp not detected f1= 4 f4= 110
+co05:17:55hg: HG failed
+hk05:17:58 25 21 22 25.2 4.6-99-99
+co05:18:00hgfw2: HG FW#2 at step  0
+co05:20:02hg: Lamp not on... hg test terminated F1= 6 F4= 112
+co05:20:02hg: Lamp not detected f1= 6 f4= 112
+co05:20:03fr: Running fr from B00540 line -200
+hk05:20:06 25 21 22 25.8 4.72-99-99
+co05:21:21fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:21:25 26 21 22 25.8 4.72-99-99
+co05:21:27hgfw2: HG FW#2 at step  0
+co05:23:29hg: Lamp not on... hg test terminated F1= 4 F4= 152
+co05:23:29hg: Lamp not detected f1= 4 f4= 152
+co05:23:29hg: HG failed
+hk05:23:32 25 21 22 25.8 4.72-99-99
+co05:23:34hgfw2: HG FW#2 at step  0
+hk05:25:38 26 21 22 25.8 4.72-99-99
+hgscan 0narrow 302warm= 205:25:38SEP 14/18 15 19 12 24 32 113 180 298 364 384 416 375 306 206 141 69 52 42 33 28 34 33 39 62 70 131 209 306 379 432 408 360 276 190 115 46 21 17 17 16
+hg05:26:42 .9988 159.2893 159 848 26 0
+co05:26:43sum: Running sum from B00540 line -200
+co05:26:44ozsum: Running ozsum from B00540 line -200
+co05:26:44slsum: Running slsum from B00540 line -200
+co05:26:46hgsum: Running hgsum from B00540 line -200
+co05:26:47re: Running re from B00540 line -200
+co05:27:31re: Zenith ZEROING FAILURE !!
+co05:28:13re: Azimuth discrepancy = -22
+hk05:28:42 25 21 23 25.8 4.72-99-99
+co05:28:47hgfw2: HG FW#2 at step  0
+co05:30:46hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co05:30:46hg: Lamp not detected f1= 3 f4= 2
+co05:30:47fr: Running fr from B00540 line -200
+hk05:30:50 25 21 23 25.2 4.6-99-99
+co05:32:05fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:32:09 26 21 23 25.2 4.6-99-99
+co05:32:11hgfw2: HG FW#2 at step  0
+co05:34:13hg: Lamp not on... hg test terminated F1= 4 F4= 3
+co05:34:13hg: Lamp not detected f1= 4 f4= 3
+co05:34:13hg: HG failed
+hk05:34:16 26 21 23 25.2 4.6-99-99
+co05:34:18hgfw2: HG FW#2 at step  0
+co05:36:20hg: Lamp not on... hg test terminated F1= 3 F4= 4
+co05:36:20hg: Lamp not detected f1= 3 f4= 4
+co05:36:21fr: Running fr from B00540 line -200
+hk05:36:23 26 22 23 25.2 4.87-99-99
+co05:37:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:37:43 26 22 23 25.8 5-99-99
+co05:37:44hgfw2: HG FW#2 at step  0
+co05:39:46hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co05:39:46hg: Lamp not detected f1= 5 f4= 3
+co05:39:46hg: HG failed
+hk05:39:49 27 22 23 25.2 4.87-99-99
+co05:39:51hgfw2: HG FW#2 at step  0
+co05:41:53hg: Lamp not on... hg test terminated F1= 4 F4= 4
+co05:41:53hg: Lamp not detected f1= 4 f4= 4
+co05:41:54fr: Running fr from B00540 line -200
+hk05:41:57 26 22 23 24.5 4.75-99-99
+co05:43:12fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:43:16 26 22 23 25.2 4.87-99-99
+co05:43:18hgfw2: HG FW#2 at step  0
+co05:45:20hg: Lamp not on... hg test terminated F1= 2 F4= 5
+co05:45:20hg: Lamp not detected f1= 2 f4= 5
+co05:45:20hg: HG failed
+hk05:45:23 26 22 23 25.2 4.87-99-99
+co05:45:25hgfw2: HG FW#2 at step  0
+co05:47:26hg: Lamp not on... hg test terminated F1= 5 F4= 3
+co05:47:26hg: Lamp not detected f1= 5 f4= 3
+co05:47:28fr: Running fr from B00540 line -200
+hk05:47:30 27 22 23 25.2 4.87-99-99
+co05:48:45fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:48:50 27 22 23 24.5 4.75-99-99
+co05:48:52hgfw2: HG FW#2 at step  0
+co05:50:53hg: Lamp not on... hg test terminated F1= 6 F4= 5
+co05:50:53hg: Lamp not detected f1= 6 f4= 5
+co05:50:53hg: HG failed
+hk05:50:56 26 22 23 24.5 4.75-99-99
+co05:50:58hgfw2: HG FW#2 at step  0
+co05:53:00hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co05:53:00hg: Lamp not detected f1= 4 f4= 5
+co05:53:01fr: Running fr from B00540 line -200
+hk05:53:04 27 23 24 24.5 5.03-99-99
+co05:54:19fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:54:23 27 23 24 24.5 5.03-99-99
+co05:54:25hgfw2: HG FW#2 at step  0
+co05:56:27hg: Lamp not on... hg test terminated F1= 5 F4= 68
+co05:56:27hg: Lamp not detected f1= 5 f4= 68
+co05:56:27hg: HG failed
+hk05:56:30 27 23 24 24.5 5.03-99-99
+co05:56:32hgfw2: HG FW#2 at step  0
+co05:58:33hg: Lamp not on... hg test terminated F1= 5 F4= 56
+co05:58:33hg: Lamp not detected f1= 5 f4= 56
+co05:58:35fr: Running fr from B00540 line -200
+hk05:58:37 27 23 24 24.5 5.03-99-99
+co05:59:52fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk05:59:57 27 23 24 24.5 5.03-99-99
+co05:59:59hgfw2: HG FW#2 at step  0
+co06:02:01hg: Lamp not on... hg test terminated F1= 5 F4= 97
+co06:02:01hg: Lamp not detected f1= 5 f4= 97
+co06:02:01hg: HG failed
+hk06:02:03 27 23 24 24.5 5.03-99-99
+co06:02:05hgfw2: HG FW#2 at step  0
+co06:04:07hg: Lamp not on... hg test terminated F1= 5 F4= 70
+co06:04:07hg: Lamp not detected f1= 5 f4= 70
+co06:04:08fr: Running fr from B00540 line -200
+hk06:04:11 28 23 24 23.9 4.9-99-99
+co06:05:26fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:05:30 28 23 24 24.5 5.03-99-99
+co06:05:32hgfw2: HG FW#2 at step  0
+co06:07:34hg: Lamp not on... hg test terminated F1= 5 F4= 94
+co06:07:34hg: Lamp not detected f1= 5 f4= 94
+co06:07:34hg: HG failed
+hk06:07:37 27 23 25 24.5 5.03-99-99
+co06:07:39hgfw2: HG FW#2 at step  0
+co06:09:41hg: Lamp not on... hg test terminated F1= 2 F4= 67
+co06:09:41hg: Lamp not detected f1= 2 f4= 67
+co06:09:42fr: Running fr from B00540 line -200
+hk06:09:44 28 23 25 23.9 4.9-99-99
+co06:10:59fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:11:04 28 23 25 24.5 5.03-99-99
+co06:11:06hgfw2: HG FW#2 at step  0
+co06:13:08hg: Lamp not on... hg test terminated F1= 6 F4= 99
+co06:13:08hg: Lamp not detected f1= 6 f4= 99
+co06:13:08hg: HG failed
+hk06:13:10 28 24 25 23.9 5.18-99-99
+co06:13:12hgfw2: HG FW#2 at step  0
+hk06:15:17 29 24 25 23.2 5.04-99-99
+hgscan 0narrow 302warm= 206:15:17SEP 14/18 30 24 23 26 55 159 211 301 407 444 454 420 308 212 104 78 64 43 36 39 37 42 48 66 80 132 216 338 423 467 434 421 290 196 148 42 23 21 24 28
+hg06:16:20 .9968 158.605 159 921 29 0
+co06:16:21sum: Running sum from B00540 line -200
+co06:16:22ozsum: Running ozsum from B00540 line -200
+co06:16:23slsum: Running slsum from B00540 line -200
+co06:16:25hgsum: Running hgsum from B00540 line -200
+co06:16:26re: Running re from B00540 line -200
+co06:17:10re: Zenith ZEROING FAILURE !!
+co06:17:54re: Azimuth discrepancy = -31
+hk06:18:25 28 24 25 23.9 5.18-99-99
+co06:18:31hgfw2: HG FW#2 at step  0
+co06:20:29hg: Lamp not on... hg test terminated F1= 5 F4= 4
+co06:20:29hg: Lamp not detected f1= 5 f4= 4
+co06:20:31fr: Running fr from B00540 line -200
+hk06:20:33 29 24 25 23.9 5.18-99-99
+co06:21:49fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:21:53 29 24 25 24.5 5.32-99-99
+co06:21:55hgfw2: HG FW#2 at step  0
+co06:23:57hg: Lamp not on... hg test terminated F1= 5 F4= 6
+co06:23:57hg: Lamp not detected f1= 5 f4= 6
+co06:23:57hg: HG failed
+hk06:24:00 29 24 25 23.9 5.18-99-99
+co06:24:02hgfw2: HG FW#2 at step  0
+co06:26:04hg: Lamp not on... hg test terminated F1= 6 F4= 6
+co06:26:04hg: Lamp not detected f1= 6 f4= 6
+co06:26:05fr: Running fr from B00540 line -200
+hk06:26:07 29 24 25 23.9 5.18-99-99
+co06:27:22fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:27:27 29 24 25 23.9 5.18-99-99
+co06:27:28hgfw2: HG FW#2 at step  0
+co06:29:30hg: Lamp not on... hg test terminated F1= 6 F4= 7
+co06:29:30hg: Lamp not detected f1= 6 f4= 7
+co06:29:30hg: HG failed
+hk06:29:33 29 24 25 23.9 5.18-99-99
+co06:29:35hgfw2: HG FW#2 at step  0
+co06:31:37hg: Lamp not on... hg test terminated F1= 9 F4= 6
+co06:31:37hg: Lamp not detected f1= 9 f4= 6
+co06:31:38fr: Running fr from B00540 line -200
+hk06:31:40 29 24 25 23.9 5.18-99-99
+co06:32:56fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk06:33:00 30 24 25 23.9 5.18-99-99
+co06:33:02hgfw2: HG FW#2 at step  0
+co06:35:04hg: Lamp not on... hg test terminated F1= 4 F4= 5
+co06:35:04hg: Lamp not detected f1= 4 f4= 5
+co06:35:04hg: HG failed
+hk06:35:07 30 24 25 24.5 5.32-99-99
+co06:35:09hgfw2: HG FW#2 at step  0
+co06:36:24hg: HOME key pressed
+co06:36:25hg: Going to menu
+co06:37:18b1: Running b1 from menu line -200
+co06:39:10b1: Running b1 from menu line -200
+co06:39:17b2: Running b2 from menu line -200
+co06:39:24b0: Running b0 from menu line -200
+co06:39:29b1: Running b1 from menu line -200
+co06:39:35b0: Running b0 from menu line -200
+co06:40:37b1: Running b1 from menu line -200
+co06:40:43b0: Running b0 from menu line -200
+co06:46:54b1: Running b1 from menu line -200
+co06:47:22b0: Running b0 from menu line -200
+co06:51:17b1: Running b1 from menu line -200
+co06:51:43b1: Running b1 from menu line -200
+co06:52:07b0: Running b0 from menu line -200
+co06:53:09b1: Running b1 from menu line -200
+co06:53:23b0: Running b0 from menu line -200
+co07:03:52sr: Running sr from menu line -200
+co07:05:10sr: Azimuth discrepancy = -91
+co07:07:43sr: Azimuth Steps per revolution measured =  14676
+co07:07:56sr: Updating SR constant from  14650 to  14676
+co07:09:10sr: Running sr from menu line -200
+co07:10:28sr: Azimuth discrepancy =  6
+co07:12:58sr: Azimuth Steps per revolution measured =  14667
+co07:16:39si: Running si from menu line -200
+co07:17:41ze: Running ze from menu line -200
+co07:18:19ze: Zenith discrepancy = -384
+co07:18:24si: Running si from menu line -200
+co07:21:58si: New SI, HC =  3, NC =  1505  Old = -2 ,  1485
+co07:22:17azzesi: Running azzesi from menu line -200
+co07:22:19az: Running az from menu line -200
+co07:23:08az: Azimuth discrepancy =  8
+co07:23:40ze: Running ze from menu line -200
+co07:24:12ze: Zenith discrepancy = -13
+co07:24:12si: Running si from menu line -200
+co07:25:47ze: Running ze from menu line -200
+co07:26:19ze: Zenith discrepancy =  7
+co07:26:35si: Running si from menu line -200
+co07:27:57si: New SI, HC =  13, NC =  1495  Old =  3 ,  1505
+co07:28:03ze: Running ze from menu line -200
+co07:28:33ze: Zenith discrepancy =  5
+co07:28:39ze: Running ze from menu line -200
+co07:28:41ze: Zenith ZEROING FAILURE !!
+co07:28:41ze: Turning AZ 30 degrees and repeating ZE.
+co07:29:01ze: Zenith discrepancy =  5
+co07:30:01bye: Running bye from menu line -200
+co07:30:06by: Running by from menu line -200
+co07:30:07by: Illegal command (by) in schedule , ignoring
+co07:33:14start:  PROGRAM start :  SEP 14/18 at 07:33:11
+hk07:33:14 30 23 24 31.6 6.49-99-99
+co07:33:55azzesi: Running azzesi from menu line -200
+co07:33:58az: Running az from menu line -200
+co07:34:48az: Azimuth discrepancy = -6472
+co07:35:20ze: Running ze from menu line -200
+co07:35:22ze: Zenith ZEROING FAILURE !!
+co07:35:22ze: Turning AZ 30 degrees and repeating ZE.
+co07:35:42ze: Zenith discrepancy = -16
+co07:35:42si: Running si from menu line -200
+co07:37:58si: New SI, HC =  0, NC =  1470  Old =  13 ,  1495
+co07:38:14zesi: Running zesi from menu line -200
+co07:38:20ze: Running ze from menu line -200
+co07:38:51ze: Zenith discrepancy = -12
+co07:38:51si: Running si from menu line -200
+co07:39:37zezeze: Running zezeze from menu line -200
+co07:39:39ze: Running ze from menu line -200
+co07:40:10ze: Zenith discrepancy =  0
+co07:40:12ze: Zenith ZEROING FAILURE !!
+co07:40:12ze: Turning AZ 30 degrees and repeating ZE.
+co07:40:32ze: Zenith discrepancy =  12
+co07:40:34ze: Zenith ZEROING FAILURE !!
+co07:40:34ze: Turning AZ 30 degrees and repeating ZE.
+co07:40:47ze: Zenith discrepancy =  0
+co07:41:05ic: Running ic from menu line -200
+co07:41:27const: constants
+co07:41:27main: version 4.1007/04/2015 15:00:00
+co07:41:27skc: 
+co07:41:27autohg:  1 
+co07:41:27hifw2:  0 
+co07:41:27attn:  25000  80000 
+co07:41:27lowds:  1 
+co07:41:27cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256001302112July 12/04EXTRAS1002500080000110006-28-2017@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf17917zsfvaldcf15317uvres140918Thessaloniki40.634-22.95610003.71470014676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co07:41:27main: All constants saved
+co07:41:38ic: Running ic from menu line -200
+co07:41:45const: constants
+co07:41:45main: version 4.1007/04/2015 15:00:00
+co07:41:45skc: 
+co07:41:45autohg:  1 
+co07:41:45hifw2:  0 
+co07:41:45attn:  25000  80000 
+co07:41:45lowds:  1 
+co07:41:45cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256001302112July 12/04EXTRAS1002500080000110006-28-2017@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf17917zsfvaldcf15317uvres140918Thessaloniki40.634-22.95610003.71470014676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co07:41:45main: All constants saved
+co07:42:03op: Running op from menu line -200
+co07:42:04op: Command file op not found --- continuing
+co07:42:09om: Running om from menu line -200
+co07:42:10om: Command file om not found --- continuing
+co07:42:15tm: Running tm from menu line -200
+co07:42:16tm: Command file tm not found --- continuing
+co07:42:26cf: Running cf from menu line -200
+co07:44:20const: constants
+co07:44:20main: version 4.1007/04/2015 15:00:00
+co07:44:20skc: 
+co07:44:20autohg:  1 
+co07:44:20hifw2:  0 
+co07:44:20attn:  25000  80000 
+co07:44:20lowds:  1 
+co07:44:20cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256000502112July 12/04EXTRAS1002500080000110009-14-2018@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\ICF25718zsfvaldcf15317uvres140918Thessaloniki40.634-22.95610003.71470014676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co07:44:20main: All constants saved
+co07:44:32ze: Running ze from menu line -200
+co07:44:34ze: Zenith ZEROING FAILURE !!
+co07:44:34ze: Turning AZ 30 degrees and repeating ZE.
+co07:44:53ze: Zenith discrepancy =  80
+co07:45:11ze: Running ze from menu line -200
+co07:45:30ze: Zenith discrepancy = -326
+co07:45:42ze: Running ze from menu line -200
+co07:45:52ze: Zenith discrepancy = -1
+co07:46:01si: Running si from menu line -200
+co07:48:19ze: Running ze from menu line -200
+co07:48:51ze: Zenith discrepancy =  1
+co07:49:19cf: Running cf from menu line -200
+co07:50:29const: constants
+co07:50:29main: version 4.1007/04/2015 15:00:00
+co07:50:29skc: 
+co07:50:29autohg:  1 
+co07:50:29hifw2:  0 
+co07:50:29attn:  25000  80000 
+co07:50:29lowds:  1 
+co07:50:29cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256001302112July 12/04EXTRAS1002500080000110009-14-2018@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\ICF17917zsfvaldcf15317uvres140918Thessaloniki40.634-22.95610003.71470014676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co07:50:29main: All constants saved
+co07:50:39zz: Running zz from menu line -200
+co07:50:39zz: Command file zz not found --- continuing
+co07:50:58ze: Running ze from menu line -200
+co07:51:12ze: Zenith discrepancy = -80
+co07:51:47ze: Running ze from menu line -200
+co07:51:48ze: Zenith ZEROING FAILURE !!
+co07:51:48ze: Turning AZ 30 degrees and repeating ZE.
+co07:52:08ze: Zenith discrepancy =  10
+co07:53:49pz: Running pz from menu line -200
+co07:54:02pz: Pointing to zenith.
+co07:55:29sl: HOME key pressed
+co07:57:00b0: Running b0 from menu line -200
+co07:57:07cf: Running cf from menu line -200
+co07:57:35const: constants
+co07:57:35main: version 4.1007/04/2015 15:00:00
+co07:57:35skc: 
+co07:57:35autohg:  1 
+co07:57:35hifw2:  0 
+co07:57:35attn:  25000  80000 
+co07:57:35lowds:  1 
+co07:57:35cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.30256000802112July 12/04EXTRAS1002500080000110009-14-2018@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf25718zsfvaldcf15317uvres140918Thessaloniki40.634-22.95610003.71470014676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co07:57:35main: All constants saved
+co07:57:43ze: Running ze from menu line -200
+co07:58:02ze: Zenith discrepancy = -434
+co07:58:07ze: Running ze from menu line -200
+co07:58:19ze: Zenith discrepancy =  0
+co07:58:27si: Running si from menu line -200
+co07:59:43si: New SI, HC = -40, NC =  1470  Old =  0 ,  1470
+co07:59:52ze: Running ze from menu line -200
+co08:00:23ze: Zenith discrepancy = -1
+co08:00:32si: Running si from menu line -200
+co08:03:03si: New SI, HC = -40, NC =  1470  Old = -40 ,  1470
+hk08:03:21 31 24 25 28.4 6.16-99-99
+co08:03:36hgfw2: HG FW#2 at step  0
+co08:04:37hg: DEL key pressed
+hk08:04:43 31 26 25 31 7.52-99-99
+hgscan 0narrow 302warm= 1.25508:04:43SEP 14/18 94 97 100 121 783 1948 3209 4763 5689 6088 6087 5162 4037 2740 1235 894 600 425 362 309 302 416 415 626 934 1216 2679 4107 5249 6476 6597 6167 5308 3656 2210 969 137 110 94 91
+hg08:05:46 .9938 155.488 155 12563 31-4
+hgscan 0narrow 302warm= 1.25508:05:46SEP 14/18 89 89 117 119 426 1472 3005 4284 5804 6566 7038 6362 5088 3421 1956 1198 873 586 441 410 385 436 554 879 1189 1930 3533 4954 6439 7134 6847 6129 4423 3244 1801 464 118 109 107 89
+hg08:06:50 .9991 159.685 160 14172 31 1
+co08:08:13skc: Starting schedule B00540
+co08:08:13b0: Running b0 from B00540 line -50.45
+co08:08:13uz: Running uz from B00540 line -50.45
+hk08:08:16 32 26 26 32.9 7.99-99-99
+co08:17:28td: Running td from B00540 line -50.45
+co08:18:40td: Time correction  71.1 seconds
+hk08:18:58 32 27 27 27.1 6.96-99-99
+dsa128 499.350620 7212 201 229894 411977 867142 1032766 937442rat 5648.789 3466.453 490.711-741.5625
+dsa128 499.990620 7261 197 231394 414378 872338 1038684 943363rat 5647.899 3467.742 490.25-738.5078
+dsa128 500.640620 7384 213 232860 417331 874970 1042261 945923rat 5637.242 3452.828 492.6485-741.4844
+dsa128 501.280620 7367 193 233350 417592 875771 1041175 945247rat 5624.321 3446.031 484.1953-739.625
+dsa128 501.920620 7388 218 233648 417338 875360 1039477 944127rat 5613.032 3442.305 479.3516-737.2578
+summary08:20:38SEP 14/18 46.432 1.445 32ds 2 5634 3455 487-740 8001 4469 .7 298.3 16 12 6 2 20 11 .5 1.6
+co08:22:15b1: Running b1 from B00540 line -50.45
+co08:22:16td: Running td from B00540 line -50.45
+co08:22:19td: Time correction  3.1 seconds
+co08:22:19ss: Running ss from B00540 line -50.45
+hk08:22:22 32 27 27 25.8 6.63-99-99
+hk08:27:38 33 27 27 23.9 6.13-99-99
+co08:27:50hgfw2: HG FW#2 at step  0
+hk08:27:57 32 27 27 23.9 6.13-99-99
+hgscan 0narrow 302warm= 506.581708:27:57SEP 14/18 107 101 99 106 352 1304 2259 3504 4887 5745 6180 5933 4746 3416 1809 1096 774 541 408 319 318 364 472 728 967 1485 3007 4415 5528 6271 5871 5171 4150 2837 1616 543 106 103 97 95
+hg08:29:01 .9985 160.3446 160 12451 32 1
+co08:29:02b0: Running b0 from B00540 line -45.42
+co08:29:03uz: Running uz from B00540 line -45.42
+hk08:29:05 32 27 27 23.2 5.96-99-99
+co08:38:43td: Running td from B00540 line -45.42
+co08:38:44td: Time correction -.2 seconds
+hk08:39:01 33 28 28 21 5.69-99-99
+dsa128 519.410620 10237 253 287612 501361 1024652 1205725 1081272rat 5405.875 3323.633 452.3594-788.9766
+dsa128 520.050620 10391 236 287777 500691 1026457 1204692 1081903rat 5400.555 3326.36 440.9141-782.0938
+dsa128 520.690620 10193 251 288179 500689 1024442 1201907 1078601rat 5385.391 3316.758 439.6485-785.0391
+dsa128 521.33010620 10368 236 290122 503102 1030888 1208254 1084110rat 5380.883 3320.078 435.6328-785.5625
+dsa128 521.980620 10493 265 292060 505718 1033739 1211531 1087767rat 5364.907 3309.977 435.6875-782.4844
+summary08:40:41SEP 14/18 43.9 1.383 33ds 2 5388 3319 441-785 7899 4433 1.2 303.9 16 6 7 3 22 6 .3 1.1
+co08:42:18b1: Running b1 from B00540 line -45.42
+co08:42:18ss: Running ss from B00540 line -45.42
+hk08:42:22 34 28 28 20.3 5.51-99-99
+co08:47:29td: Running td from B00540 line -45.42
+co08:47:30td: Time correction -.1 seconds
+hk08:47:34 34 29 29 19.7 5.64-99-99
+dsa128 527.950620 10203 281 301464 514128 1051254 1224728 1105640rat 5283.289 3291.172 411.4766-756.6875
+dsa128 528.590620 10135 283 304083 518100 1057781 1231453 1113429rat 5271.438 3282.781 408.7969-749.4688
+dsa128 529.240620 10146 280 305588 518890 1060768 1234398 1113761rat 5261.203 3287.258 407.1094-758.7813
+dsa128 529.880620 10324 287 305784 520961 1063985 1235976 1117517rat 5265.547 3276.266 399.6328-749.0235
+dsa128 530.520620 10351 284 307311 521918 1064759 1237757 1118018rat 5250.805 3275.063 403.0781-753.3438
+summary08:49:14SEP 14/18 42.918 1.361 34ds 2 5266 3283 406-753 7678 4360 1.8 292.8 12 7 5 4 19 11 .6 2.3
+hk08:50:54 35 29 29 19 5.45-99-99
+dsa128 531.290620 10448 296 308985 522858 1066054 1238698 1119554rat 5229.75 3269.969 400.7578-751.7344
+dsa128 531.930620 10499 292 310076 525607 1071475 1243188 1123172rat 5231.938 3263.969 394.6875-753.2266
+dsa128 532.570620 10588 298 312415 528102 1077949 1250462 1128778rat 5226.102 3269.914 394.1797-757.0156
+dsa128 533.210620 10524 297 312485 528791 1077056 1250224 1127302rat 5225.532 3264.086 397.4375-761.7188
+dsa128 533.860620 10699 304 312917 529323 1078297 1250504 1128003rat 5221.203 3261.078 393.4531-759.7578
+summary08:52:34SEP 14/18 42.552 1.353 35ds 2 5227 3266 396-757 7648 4354 1.6 293.1 4 4 3 4 11 6 .4 1.8
+co08:54:11td: Running td from B00540 line -45.42
+co08:54:11td: Time correction  .1 seconds
+hk08:54:29 35 29 29 18.4 5.27-99-99
+zsa0 534.80620 1707 315 42095 72079 143788 162601 143001rat 5838.481 3507.168 514.7422-613.9961
+zsa0 535.440620 1692 298 42228 72297 144370 163175 143123rat 5838.762 3508.801 512.4297-625.6133
+zsa0 536.080620 1718 311 42485 72509 144227 163406 143295rat 5819.375 3502.629 523.0039-626.6016
+zsa0 536.720620 1710 312 42589 72568 144797 164368 143936rat 5834.418 3524.789 531.4297-632.7656
+zsa0 537.360620 1755 305 42922 73191 145537 164662 144337rat 5807.59 3495.012 516.9414-628.3985
+zsa0 5380620 1786 322 42978 73357 145821 164579 144768rat 5800.953 3483.461 506.2657-613.2149
+zsa0 538.640620 1780 316 43275 73544 146185 165208 145062rat 5787.016 3488.813 512.0235-621.004
+summary08:56:43SEP 14/18 42.111 1.344 35zs 0 5818 3502 517-623 7812 4302 8.2 290 20 14 8 7 34 20 .9 4.2
+co08:58:58td: Running td from B00540 line -45.42
+co08:58:58td: Time correction  0 seconds
+hk08:59:08 35 29 29 17.7 5.08-99-99
+dsa128 539.520620 11135 331 324999 546044 1108197 1279554 1154747rat 5167.68 3233.016 376.7656-755.8203
+dsa128 540.160620 11188 327 327063 547608 1111528 1284060 1158163rat 5156.43 3236.719 379.375-758.2578
+dsa128 540.80620 11369 342 330612 553902 1122620 1296227 1170076rat 5152.664 3229.461 377.5938-754.6485
+dsa128 541.450620 11399 343 332578 556008 1126646 1299400 1172528rat 5139.016 3224.57 372.9219-755.9453
+dsa128 542.090620 11570 341 333778 558194 1128692 1303364 1173460rat 5137.657 3221.43 378.75-766.0235
+summary09:00:48SEP 14/18 41.692 1.335 35ds 2 5151 3229 377-758 7577 4329 1.9 291.6 13 6 3 5 13 6 .3 1.4
+hk09:02:28 35 30 29 17.7 5.37-99-99
+dsa128 542.850620 11561 338 335623 559396 1133097 1307342 1178392rat 5128.539 3226.555 375.375-760.5469
+dsa128 543.50620 11723 333 337969 563339 1138666 1314002 1184450rat 5121.625 3218.93 376.5235-760.2578
+dsa128 544.140620 11759 349 340179 568442 1147901 1325237 1192712rat 5132.524 3218.203 378.9531-767.3594
+dsa128 544.780620 11872 360 342438 571111 1152824 1330523 1198318rat 5122.93 3216.406 378.1016-763.8906
+dsa128 545.430620 11786 362 343839 571875 1155138 1331245 1200023rat 5108.11 3213.367 371.6875-759.7422
+summary09:04:08SEP 14/18 41.362 1.329 35ds 2 5123 3219 376-762 7562 4327 1.7 292.4 9 5 3 3 18 6 .2 1.1
+co09:15:17b0: Running b0 from B00540 line -40.34
+co09:15:17uz: Running uz from B00540 line -40.34
+hk09:15:19 36 30 30 16.5 4.98-99-99
+co09:26:19td: Running td from B00540 line -40.34
+co09:26:21td: Time correction  1.6 seconds
+hk09:26:38 36 30 30 15.8 4.78-99-99
+dsa128 567.020620 14124 454 381344 620695 1237505 1417652 1270323rat 4960.563 3149.711 352.4297-783.586
+dsa128 567.660620 14342 448 384483 625870 1250287 1428490 1280781rat 4959.852 3148.031 340.7656-780.961
+dsa128 568.30620 14262 458 384747 626715 1250579 1430321 1280767rat 4963.399 3148.32 345.75-786.6719
+dsa128 568.940620 14260 472 385362 627215 1250640 1430560 1281650rat 4957.883 3145.992 346.4688-784.1328
+dsa128 569.590620 14192 497 387681 629712 1256946 1436203 1287272rat 4950.297 3146.836 341.8281-782.0625
+summary09:28:18SEP 14/18 39.314 1.289 36ds 2 4958 3148 345-783 7466 4307 .9 296.7 5 2 5 2 10 4 .2 .8
+co09:29:55b1: Running b1 from B00540 line -40.34
+co09:29:55td: Running td from B00540 line -40.34
+co09:29:56td: Time correction  0 seconds
+co09:29:56ss: Running ss from B00540 line -40.34
+hk09:29:59 36 30 30 15.8 4.78-99-99
+hk09:35:09 36 31 30 15.2 4.84-99-99
+co09:35:21hgfw2: HG FW#2 at step  0
+hk09:35:28 36 31 30 15.2 4.84-99-99
+hgscan 0narrow 302warm= 68.7700109:35:28SEP 14/18 151 170 142 164 234 1087 2548 3743 4797 5387 5569 5216 4112 2952 1825 912 688 471 384 350 352 369 452 714 907 1687 2969 4145 5250 5723 5559 5058 3831 2592 1304 473 154 153 152 149
+hg09:36:32 .9995 159.6899 160 11292 36 1
+co09:36:33b2: Running b2 from B00540 line -40.34
+co09:36:33td: Running td from B00540 line -40.34
+co09:36:34td: Time correction -.1 seconds
+hk09:36:50 37 31 30 14.5 4.63-99-99
+dsa128 577.220620 14873 560 388949 629211 1251346 1429338 1276472rat 4918.235 3130.844 341.2735-798.375
+dsa128 577.860620 14929 600 391030 632148 1257743 1435328 1282352rat 4914.172 3129.445 337.2578-796.625
+dsa128 578.50620 14803 505 391170 631866 1255749 1432728 1279167rat 4904.18 3123.164 336.3203-799.4297
+dsa128 579.140620 15116 535 391853 632829 1259310 1436922 1283667rat 4910.735 3130.281 337.0156-796.6563
+dsa128 579.790620 15120 556 395052 636922 1266076 1444965 1291504rat 4900.602 3127.258 338.2188-794.5235
+summary09:38:30SEP 14/18 38.647 1.277 37ds 2 4910 3128 338-797 7460 4314 0 301.3 7 3 2 2 10 3 .1 .6
+hk09:41:35 37 31 31 13.9 4.43-99-99
+sla 0 581.890620 58872 574 390482 424773 445783 397337 311624rat .4765625-346.9844-531.9219-1124.774
+sla 0 582.520620 58890 590 391098 425401 446442 397025 312078rat-9.921875-356.9805-541.9258-1114.953
+sla 0 583.150620 58746 550 391012 426079 446836 397092 312554rat-8.226563-363.2305-545.0235-1108.871
+sla 0 583.780620 59002 667 391499 425800 446868 397926 312200rat-4.441407-351.1797-536.2383-1123.457
+sla 0 584.410620 59002 549 391503 425843 446481 397790 312299rat-6.003907-353.0391-533.7696-1120.211
+sla 0 585.050620 58827 640 391751 425279 446858 397730 313114rat-9.441406-347.9219-538.2696-1108.359
+sla 0 585.680620 59008 597 391590 426999 446615 398446 312337rat .2851563-357.7695-527.8868-1127.078
+summary09:43:46SEP 14/18 84.177 7.761 37sl 0-5-354-536-1118 3573 1815 391276.5 312315.1 4 6 6 8 28 13 446.9 460.7
+co09:46:00td: Running td from B00540 line -40.34
+co09:46:01td: Time correction  0 seconds
+hk09:46:29 36 31 31 13.9 4.43-99-99
+zsa0 586.810620 2497 588 52519 86325 168184 188522 164082rat 5531.352 3372.086 476.6211-662.2305
+zsa0 587.450620 2490 569 52822 86131 168654 188645 164749rat 5507.762 3384.289 467.1992-647.254
+zsa0 588.090620 2507 610 52699 86351 169150 189251 164659rat 5534.543 3388.297 468.5039-663.8516
+zsa0 588.740620 2616 610 52854 86288 169081 188856 164421rat 5512.461 3382.336 461.125-661.0274
+zsa0 589.380620 2503 608 53201 86394 168977 189707 164661rat 5503.25 3396.606 483.5274-674.3321
+zsa0 590.020620 2538 577 53176 87326 169942 190022 165357rat 5510.746 3355.981 465.7578-663.0235
+zsa0 590.660620 2526 587 53213 86958 170107 190467 165428rat 5518.539 3385.027 471.7891-671.4297
+summary09:48:44SEP 14/18 38.106 1.268 36zs 0 5517 3381 471-663 7640 4273 7.3 298.4 12 13 8 9 31 20 1.4 4.6
+co09:50:59td: Running td from B00540 line -40.34
+co09:50:59td: Time correction -.1 seconds
+hk09:51:09 37 31 31 13.9 4.43-99-99
+dsa128 591.530620 15626 586 405347 649423 1286205 1462429 1305987rat 4849.469 3100.313 323.5625-796.8203
+dsa128 592.180620 15617 640 402757 645525 1277780 1453705 1297007rat 4850.766 3099.883 326.0781-800.8516
+dsa128 592.820620 15567 643 401864 643188 1275864 1450500 1295304rat 4851.117 3106.313 322.9844-796.5391
+dsa128 593.460620 15588 631 400256 643065 1273368 1447438 1292491rat 4859.032 3097.445 322.211-796.7656
+dsa128 594.110620 15484 665 400126 641340 1270464 1444093 1288979rat 4850.789 3099.32 322.2031-798.3906
+summary09:52:49SEP 14/18 37.926 1.265 37ds 2 4852 3101 323-798 7405 4295 .3 299.7 4 3 2 2 6 4 .4 .8
+co10:23:48b0: Running b0 from B00540 line  34.68
+co10:23:49uz: Running uz from B00540 line  34.68
+hk10:23:51 38 32 31 12.6 4.24-99-99
+co11:03:11b0: Running b0 from B00540 line  37.7
+co11:03:12uz: Running uz from B00540 line  37.7
+hk11:03:14 38 32 32 11.9 4.02-99-99
+co11:21:18b1: Running b1 from B00540 line  37.7
+co11:21:18td: Running td from B00540 line  37.7
+co11:21:22td: Time correction  3.4 seconds
+co11:21:22ss: Running ss from B00540 line  37.7
+hk11:21:25 39 32 32 11.3 3.8-99-99
+co11:26:49az: Running az from B00540 line  39.59
+co11:28:04az: Azimuth discrepancy = -17
+co11:28:53b0: Running b0 from B00540 line  39.59
+co11:28:53uz: Running uz from B00540 line  39.59
+hk11:28:56 39 33 32 11.3 4.01-99-99
+co11:46:16b1: Running b1 from B00540 line  39.59
+co11:46:17td: Running td from B00540 line  39.59
+co11:46:21td: Time correction  3 seconds
+co11:46:21ss: Running ss from B00540 line  39.59
+hk11:46:24 38 32 32 10.6 3.58-99-99
+hk11:51:46 39 32 32 10.6 3.58-99-99
+co11:51:59hgfw2: HG FW#2 at step  0
+hk11:52:06 38 32 32 10.6 3.58-99-99
+hgscan 0narrow 302warm= 643.211711:52:06SEP 14/18 226 228 229 240 784 1980 3198 4484 5326 5676 5680 4723 3928 2547 1368 992 761 542 521 405 416 469 528 733 927 1345 2517 3785 5011 5894 5834 5533 4717 3315 2058 769 249 225 231 209
+hg11:53:09 .9947 155.7797 156 11574 38-3
+hgscan 0narrow 302warm= 643.211711:53:10SEP 14/18 235 224 249 241 295 1147 2366 3320 4639 5597 5927 5833 4742 3532 2060 1124 897 688 497 444 449 491 563 891 1110 1921 3365 4574 5811 6033 5817 5133 3586 2640 1627 424 223 219 219 232
+hg11:54:13 .9968 161.689 162 11960 38 3
+hgscan 0narrow 302warm= 643.211711:54:13SEP 14/18 243 209 280 241 650 1868 2797 4239 5466 5987 6111 5291 4039 2748 1361 1039 764 538 487 440 433 480 536 740 1005 1275 2407 3685 5071 6039 6115 5795 4663 3030 1673 437 230 239 261 240
+hg11:55:16 .9961 157.0237 157 12150 38-2
+hgscan 0narrow 302warm= 643.211711:55:16SEP 14/18 221 254 252 221 430 1604 2932 4272 5390 5882 6272 5758 4525 3034 1631 1072 830 541 472 434 445 463 558 848 1097 1641 3028 4394 5562 6349 6078 5568 3861 2335 1199 437 232 248 224 254
+hg11:56:20 .9995 159.5765 160 12621 38 1
+co11:56:21nt: Running nt from B00540 line  39.59
+hk11:56:23 39 33 32 11.3 4.01-99-99
+co12:00:32td: Running td from B00540 line  39.59
+co12:00:33td: Time correction  .1 seconds
+co12:00:33b2: Running b2 from B00540 line  39.59
+hk12:00:38 38 33 32 10.6 3.78-99-99
+dsa128 721.010620 11361 885 300730 519395 1061661 1243173 1118295rat 5357.625 3309.594 431.8672-780.0156
+dsa128 721.650620 11267 903 298159 515167 1053441 1235766 1112515rat 5367.188 3317.953 439.4219-776.6641
+dsa128 722.290620 11036 891 295184 510770 1045963 1226033 1103668rat 5374 3319.164 435.2735-777.1953
+dsa128 722.930620 10892 886 293140 506442 1037889 1218676 1096144rat 5376.571 3329.102 442.711-780.9766
+dsa128 723.580620 10896 897 293562 508344 1040920 1221731 1100058rat 5380.43 3323.125 440.5547-776.586
+summary12:02:17SEP 14/18 43.408 1.372 38ds 2 5371 3320 438-778 7862 4424 1 304.3 9 7 4 2 10 6 .4 1.3
+hk12:05:34 38 33 32 10.6 3.78-99-99
+sla 0 725.880620 59102 883 390200 424877 445597 397246 311348rat .6523438-350.7149-532.1133-1130.078
+sla 0 726.520620 59234 902 391172 424868 446381 396734 311815rat-16-356.3203-545.5938-1117.852
+sla 0 727.150620 59223 932 391677 425262 445570 396771 311738rat-21.27735-360.0274-537.1915-1119.438
+sla 0 727.780620 59117 911 391524 424857 445910 397191 311710rat-14.89063-351.1367-535.8594-1124.438
+sla 0 728.410620 59510 886 391032 425255 446900 397172 312174rat-9.566406-355.4727-545.8477-1117.594
+sla 0 729.040620 59062 902 391105 425617 446486 397208 312384rat-9.984375-358.836-541.3672-1115.094
+sla 0 729.670620 59295 890 391781 425622 447286 397951 312564rat-9.351562-350.6328-541.0196-1120.774
+summary12:07:46SEP 14/18 63.741 2.231 38sl 0-11-355-540-1121 3575 1820 391213 311961.9 7 4 5 5 21 10 535.8 432.7
+co12:10:00td: Running td from B00540 line  39.59
+co12:10:01td: Time correction  .1 seconds
+hk12:10:29 39 33 33 10.6 3.78-99-99
+zsa0 730.80620 2147 922 37514 65831 131486 151289 132668rat 6073.797 3605.481 590.4297-634.9688
+zsa0 731.450620 2138 902 37641 65706 131869 151519 133241rat 6063.617 3619.781 584.2383-622.629
+zsa0 732.090620 2129 862 37485 65773 131590 151085 132621rat 6065.926 3601.16 580.7618-630.3438
+zsa0 732.730620 2138 906 37357 65070 130774 150591 132118rat 6070.742 3635.879 593.9024-632.8477
+zsa0 733.370620 2120 910 37084 65085 130326 150191 131431rat 6092.114 3623.34 597.3086-644.0703
+zsa0 734.010620 2126 909 36605 64664 129292 148986 130736rat 6114.61 3616.574 596.9258-631.9883
+zsa0 734.650620 2103 892 36351 64332 128674 148115 129810rat 6118.332 3612.883 592.1446-637.3906
+summary12:12:43SEP 14/18 44.654 1.401 39zs 0 6086 3616 591-633 8113 4398 7 299.7 23 12 6 7 38 14 1.1 2.8
+co12:14:59b0: Running b0 from B00540 line  44.57
+co12:14:59uz: Running uz from B00540 line  44.57
+hk12:15:02 39 33 33 10.6 3.78-99-99
+co12:22:39b1: Running b1 from B00540 line  44.57
+co12:22:39td: Running td from B00540 line  44.57
+co12:22:40td: Time correction  0 seconds
+hk12:22:57 39 33 32 10.6 3.78-99-99
+dsa128 743.330620 8847 914 251083 450357 940217 1121550 1015983rat 5639.914 3446.235 498.961-759.8516
+dsa128 743.980620 8815 913 247578 444478 928867 1109408 1006092rat 5651.203 3454.305 503.9297-755.0625
+dsa128 744.620620 8834 921 248041 445464 933008 1114036 1009510rat 5660.625 3462.578 502.4063-758.961
+dsa128 745.260620 8793 908 249179 447280 936515 1119074 1013922rat 5659.438 3464.141 505.5703-760.0703
+dsa128 745.90620 8856 890 248001 446381 934470 1117664 1014045rat 5672.399 3466.031 509.0938-754.3438
+summary12:24:37SEP 14/18 46.175 1.439 39ds 2 5657 3459 504-758 8081 4495 .6 305 12 8 4 3 11 8 .4 1.4
+hk12:26:17 39 33 32 10.6 3.78-99-99
+dsa128 746.670620 8779 922 247247 446022 933476 1117617 1013916rat 5684.758 3468.805 513.3516-755.1094
+dsa128 747.310620 8707 892 245119 441813 926770 1108518 1006073rat 5683.453 3472.375 508.1797-753.6328
+dsa128 747.950620 8697 942 246004 443678 931885 1115121 1012388rat 5693.86 3480.102 509.9844-752.6797
+dsa128 748.60620 8648 939 245560 444833 933632 1117259 1014168rat 5709.141 3476.469 509.8438-753.7813
+dsa128 749.240620 8571 927 245183 444009 933030 1117072 1014403rat 5713.039 3482.649 511.4141-752.5078
+summary12:27:57SEP 14/18 46.62 1.45 39ds 2 5697 3476 511-754 8108 4502 .7 304.1 14 6 2 1 12 4 .3 .3
+co12:29:34td: Running td from B00540 line  44.57
+co12:29:34td: Time correction  .1 seconds
+hk12:29:39 38 33 32 10.6 3.78-99-99
+dsa128 750.030620 8576 920 243062 442076 930342 1114755 1012647rat 5741.883 3492.735 515.0782-749.9688
+dsa128 750.670620 8424 923 239326 435817 916423 1099451 998506rat 5746.258 3492.492 519.9063-751.1719
+dsa128 751.310620 8475 930 240803 439145 925130 1109987 1009229rat 5761.133 3501.235 520.1953-746.5391
+dsa128 751.950620 8449 927 241814 441417 930201 1116930 1014822rat 5768.914 3505.406 523.25-750.3594
+dsa128 752.60620 8330 933 238738 436125 919129 1105637 1004385rat 5778.055 3512.008 530.711-751.3438
+summary12:31:18SEP 14/18 47.075 1.463 38ds 2 5759 3501 522-750 8159 4515 .9 304.1 15 8 6 2 17 7 .2 .8
+co12:32:55td: Running td from B00540 line  44.57
+co12:32:56td: Time correction  .1 seconds
+hk12:33:14 39 33 32 10.6 3.78-99-99
+zsa0 753.550620 1924 927 31500 57373 116835 136109 120044rat 6390.606 3748.879 645.1211-609.8906
+zsa0 754.190620 1927 938 31345 57240 116077 135429 119341rat 6391.914 3737.637 651.7735-613.75
+zsa0 754.830620 1911 921 31328 57139 115902 135410 119393rat 6391.848 3744.07 657.6993-611.1406
+zsa0 755.470620 1925 940 31056 56909 115549 135058 119202rat 6421.606 3751.336 659.7696-606.8281
+zsa0 756.110620 1910 924 30860 56609 115075 134742 118414rat 6437.895 3763.695 667.4649-625.6172
+zsa0 756.750620 1879 941 30619 55911 114153 133418 118002rat 6431.59 3775.988 659.5352-597.629
+zsa0 757.390620 1875 960 30322 55584 113412 132286 116715rat 6440.055 3765.395 650.8321-608.4766
+summary12:35:28SEP 14/18 47.65 1.478 39zs 0 6415 3755 656-610 8369 4465 6.7 299.4 23 14 7 8 35 15 .6 2.6
+co12:37:43td: Running td from B00540 line  44.57
+co12:37:43td: Time correction  .1 seconds
+hk12:37:54 39 33 32 10 3.55-99-99
+dsa128 758.270620 7616 947 220084 407787 865627 1046371 953060rat 5870.297 3549.555 546-744.1797
+dsa128 758.920620 7654 960 217991 404564 860094 1040281 946949rat 5884.883 3557.547 548.0469-747.125
+dsa128 759.560620 7614 947 216632 401907 855796 1035295 942929rat 5888.578 3563.703 548.2578-745.1094
+dsa128 760.20620 7433 938 214063 398539 848908 1029143 937542rat 5912.078 3572.742 557.0156-744.5235
+dsa128 760.840620 7410 931 213473 397866 849527 1029018 938809rat 5922.25 3578.813 552.8281-738.2656
+summary12:39:33SEP 14/18 48.226 1.495 39ds 2 5896 3564 550-744 8276 4554 .6 305.5 21 12 4 3 16 7 .3 .9
+co12:41:10ss: Running ss from B00540 line  44.57
+hk12:41:13 38 33 32 10 3.55-99-99
+co12:49:28b0: Running b0 from B00540 line  49.66
+co12:49:28uz: Running uz from B00540 line  49.66
+hk12:49:30 39 33 32 10.6 3.78-99-99
+co12:58:49b1: Running b1 from B00540 line  49.66
+co12:58:50td: Running td from B00540 line  49.66
+co12:58:50td: Time correction  .1 seconds
+hk12:59:08 39 33 32 10.6 3.78-99-99
+dsa128 779.520620 5544 947 169948 332143 727474 900000 829337rat 6264.75 3737.406 626.8672-707.6406
+dsa128 780.160620 5451 953 167549 327929 719698 890191 820860rat 6276.25 3743.367 625.0703-704.9922
+dsa128 780.80620 5526 944 166438 327283 717700 890670 821547rat 6305.782 3753.211 639.3203-704.211
+dsa128 781.450620 5428 947 165340 325352 715215 888282 818286rat 6320.297 3765.664 641.9844-710.6563
+dsa128 782.090620 5341 987 163667 322734 709747 881750 813874rat 6330.821 3767.305 642.5781-702.2969
+summary13:00:48SEP 14/18 51.369 1.593 39ds 2 6300 3753 635-706 8559 4636 .8 302 28 13 9 3 28 11 .3 1.4
+hk13:02:27 38 33 32 10 3.55-99-99
+co13:02:39hgfw2: HG FW#2 at step  0
+hk13:03:55 39 33 32 10.6 3.78-99-99
+hgscan 0narrow 302warm= 140.608313:03:55SEP 14/18 245 239 270 311 552 1344 2521 3796 5104 5565 5930 5732 4794 3493 1835 1074 773 539 483 424 421 487 525 826 999 1406 2673 4188 5461 5947 5742 5167 3904 2719 1689 590 248 242 250 234
+hg13:04:59 .999 159.7909 160 11877 39 1
+co13:05:00td: Running td from B00540 line  49.66
+co13:05:01td: Time correction  .2 seconds
+co13:05:01b2: Running b2 from B00540 line  49.66
+co13:05:01td: Time correction  .1 seconds
+hk13:05:16 39 32 32 10 3.37-99-99
+dsa128 785.660620 5311 933 152178 308313 677495 846644 777935rat 6454.461 3778.195 663.875-725.6641
+dsa128 786.30620 5209 900 151147 306678 673534 843492 775210rat 6464.266 3783.031 672.4844-725.3203
+dsa128 786.940620 5175 937 149315 303260 667523 836894 768863rat 6481.641 3796.352 676.7266-727.4531
+dsa128 787.580620 5199 955 150073 305846 673293 844991 775795rat 6500.367 3800.672 680.7969-731.1875
+dsa128 788.220620 5035 922 147927 302709 665337 835757 769634rat 6511.071 3794.969 683.7031-718.2969
+summary13:06:56SEP 14/18 52.32 1.627 39ds 2 6482 3791 676-726 8804 4686 2.5 305 24 10 8 5 25 12 .6 2.3
+hk13:10:03 39 32 32 10 3.37-99-99
+sla 0 790.350620 59383 959 391916 425179 446563 396694 311803rat-26.875-361.4492-548.5586-1119.246
+sla 0 790.980620 59384 941 392190 425766 445854 397382 312002rat-22.32422-359.8985-533.875-1124.02
+sla 0 791.610620 59444 911 392189 426569 446570 396797 312105rat-28.8125-374.6875-547.4258-1115.977
+sla 0 792.240620 59551 933 392266 425853 446986 396719 311758rat-30.55078-368.1602-552.4415-1120.066
+sla 0 792.870620 59534 946 393172 427055 446769 397285 311880rat-34.42578-374.3164-544.0156-1124.684
+sla 0 793.50620 59738 940 392931 426564 447216 397390 311980rat-30.55469-368.0664-547.2618-1124.422
+sla 0 794.140620 59579 937 392603 426788 447275 397744 312672rat-22.94141-366.457-543.9102-1118.594
+summary13:12:14SEP 14/18 58.031 1.873 39sl 0-28-368-545-1121 3559 1811 392466.7 312028.6 4 6 6 3 11 8 460.7 295.6
+hk13:14:56 38 33 32 9.399999 3.32-99-99
+zsa0 795.260620 1475 920 19638 39426 82177 99514 88023rat 7149.168 4037.945 817.3243-596.4649
+zsa0 795.90620 1453 912 19534 39074 81699 99145 87345rat 7155.535 4060.992 826.6094-614.1094
+zsa0 796.540620 1437 931 19268 38921 81388 98438 87375rat 7190.231 4048.309 812.1016-581.2266
+zsa0 797.180620 1458 910 19302 38748 81228 97938 86998rat 7155.758 4044.277 798.1758-577.7422
+zsa0 797.820620 1453 954 19137 38584 80884 97670 86576rat 7191.383 4054.219 805.2266-587.3516
+zsa0 798.460620 1463 920 18924 38335 80140 97042 86232rat 7207.535 4052.289 817.2422-576.3086
+zsa0 799.10620 1444 953 18731 38074 79902 96766 85733rat 7248.395 4072.563 818.1328-589.5196
+summary13:17:10SEP 14/18 53.946 1.689 38zs 0 7185 4053 814-589 9070 4647 6 299.4 36 11 9 13 45 24 1 4.8
+hk13:19:36 39 33 32 10 3.55-99-99
+dsa128 799.990620 4248 937 130228 277162 621779 795981 736882rat 6805.649 3935.727 752.8125-707.4453
+dsa128 800.630620 4281 926 128294 274207 617453 790423 731574rat 6837.196 3949.867 751.75-709.0781
+dsa128 801.270620 4190 915 127569 273443 615998 789045 731074rat 6850.766 3952.25 753.4844-705.211
+dsa128 801.910620 4167 908 126592 271926 613545 786485 728763rat 6867.25 3960.539 755.9219-705.5235
+dsa128 802.560620 4250 909 127095 272764 617011 792600 735720rat 6881.25 3979.641 764.5625-698.6328
+summary13:21:16SEP 14/18 54.607 1.715 39ds 2 6848 3956 756-705 9105 4777 2.4 305.1 29 16 5 4 21 9 .2 .9
+co13:22:53b0: Running b0 from B00540 line  54.58
+co13:22:54b1: Running b1 from B00540 line  54.58
+co13:22:54uz: Running uz from B00540 line  54.58
+hk13:22:57 38 32 32 10 3.37-99-99
+co13:30:50td: Running td from B00540 line  54.58
+co13:30:50td: Time correction  .1 seconds
+hk13:31:09 38 32 32 9.399999 3.15-99-99
+dsa128 811.530620 3451 946 107468 238365 552283 720817 675652rat 7155.641 4124.375 820.9922-664.6719
+dsa128 812.170620 3409 970 106043 235177 544798 711105 667035rat 7151.524 4121.414 820.1328-662.2344
+dsa128 812.820620 3254 953 101594 225233 523866 685227 643466rat 7171.102 4143.977 827.6172-657.9922
+dsa128 813.460620 3254 933 100194 223559 519799 682246 640940rat 7208.782 4155.11 841.7578-656.9688
+dsa128 814.10620 3156 942 98490 220092 513678 675463 634450rat 7236.891 4177.453 848.8125-658.625
+summary13:32:48SEP 14/18 56.509 1.799 38ds 2 7185 4144 832-660 9297 4851 1.2 303.3 37 23 13 3 30 14 .4 1.3
+hk13:34:29 38 32 32 9.399999 3.15-99-99
+dsa128 814.870620 3142 919 98023 220186 514142 676157 635115rat 7256.985 4177.07 848.0156-659.7578
+dsa128 815.520620 3172 933 97754 219786 514378 677053 636566rat 7272.313 4189.18 850.9844-656.4141
+dsa128 816.160620 3151 963 97565 219609 515191 679112 639168rat 7292.289 4204.657 856.6328-652.7031
+dsa128 816.80620 3133 972 96306 218807 512508 677073 636549rat 7333.196 4205.5 865.4297-658.4531
+dsa128 817.440620 3107 941 94536 215032 505861 668058 629099rat 7350.094 4219.508 862.3828-652.1719
+summary13:36:09SEP 14/18 57.069 1.825 38ds 2 7301 4199 857-656 9400 4886 .9 304.7 40 16 7 3 36 9 .3 0
+co13:37:46ka: Running ka from B00540 line  54.58
+hk13:37:49 38 32 32 10 3.37-99-99
+hk13:38:22 38 32 31 10 3.37-99-99
+um140918Thessaloniki 40.634-22.956 4.23pr10000 818.911640 1803 44742 95648 209897 263087 236490rat 7780.117 4405.176 967.3086-524.7852
+hk13:41:01 38 32 32 10 3.37-99-99
+um140918Thessaloniki 40.634-22.956 4.19pr10000 820.221640 1782 224337 242428 169630 149527 84451rat-1862.941-2179.348-580.5665-2583.02
+um140918Thessaloniki 40.634-22.956 4.19pr10000 821.561640 1781 42645 91671 202697 255198 230812rat 7862.028 4459.114 986.9336-497.7969
+hk13:43:40 37 32 32 10 3.37-99-99
+um140918Thessaloniki 40.634-22.956 4.17pr10000 822.871640 1804 220203 238558 167786 148285 83949rat-1816.121-2144.235-568.625-2571.777
+um140918Thessaloniki 40.634-22.956 4.17pr10000 824.211640 1774 41320 89440 199427 251245 228022rat 7938.129 4501.051 990.4961-481.1602
+hk13:46:19 37 32 32 9.399999 3.15-99-99
+um140918Thessaloniki 40.634-22.956 4.17pr10000 825.521640 1779 215106 234844 165688 146273 83229rat-1773.156-2135.223-573.3516-2549.274
+um140918Thessaloniki 40.634-22.956 4.17pr10000 826.861640 1755 39525 86601 194198 244868 223876rat 8025.231 4530.672 994.3047-448.8321
+hk13:48:59 38 32 32 9.399999 3.15-99-99
+um140918Thessaloniki 40.634-22.956 4.21pr10000 828.171640 1770 213288 231602 164371 144880 82279rat-1780.004-2117.652-581.0313-2559.395
+um140918Thessaloniki 40.634-22.956 4.21pr10000 829.521640 1730 38235 84941 190847 243354 221841rat 8144.418 4587.086 1042.816-463.1563
+hk13:51:38 38 32 32 10 3.37-99-99
+um140918Thessaloniki 40.634-22.956 4.21pr10000 830.831640 1708 211598 228814 162395 143059 81291rat-1800.168-2119.465-583.2969-2555.863
+co13:51:39b0: Running b0 from B00540 line  59.53
+co13:51:40uz: Running uz from B00540 line  59.53
+hk13:51:42 38 32 32 9.399999 3.15-99-99
+co14:00:30b1: Running b1 from B00540 line  59.53
+co14:00:31td: Running td from B00540 line  59.53
+co14:00:31td: Time correction  0 seconds
+hk14:00:50 38 31 31 10.6 3.4-99-99
+dsa64 841.290620 2773 854 101988 267438 663086 926415 891182rat 8322.434 4627.602 1078-600.875
+dsa64 841.930620 2724 886 100154 263572 656131 918201 882429rat 8358.321 4648.86 1083.484-606.5781
+dsa64 842.570620 2772 870 100863 266813 667646 935321 898487rat 8404.484 4674.703 1087.484-610.0625
+dsa64 843.210620 2722 881 100180 266082 663615 932553 897065rat 8416.984 4670.828 1099.836-605.1094
+dsa64 843.860620 2727 878 98505 262835 659801 926612 892312rat 8457.152 4692.907 1095.274-601.6485
+summary14:02:34SEP 14/18 61.614 2.08 38ds 1 8392 4663 1089-605 10327 5147 1.9 304.9 52 25 9 4 55 24 .5 2.2
+co14:04:11b0: Running b0 from B00540 line  61.6
+co14:04:12kd: Running kd from B00540 line  61.6
+hk14:04:15 38 31 31 10 3.19-99-99
+hk14:04:48 38 31 31 10.6 3.4-99-99
+um140918Thessaloniki 40.634-22.956 4.19pr10000 845.331640 1723 30415 72609 166339 218990 200520rat 8727.672 4820.957 1183.949-443.8008
+hk14:07:27 37 31 31 10 3.19-99-99
+um140918Thessaloniki 40.634-22.956 4.15pr10000 846.641640 1850 187245 205060 148169 131749 75204rat-1625.156-2001.242-542.5547-2541.031
+um140918Thessaloniki 40.634-22.956 4.15pr10000 847.981640 1868 28479 68531 159600 210926 194709rat 8889.008 4921.567 1202.762-406.9805
+hk14:10:06 37 31 31 10 3.19-99-99
+um140918Thessaloniki 40.634-22.956 4.13pr10000 849.291640 2076 180279 199605 145592 130028 74195rat-1518.539-1943.41-524.0782-2549.133
+um140918Thessaloniki 40.634-22.956 4.13pr10000 850.631640 1759 27326 66029 154339 205733 189154rat 8955.618 4973.223 1240.078-424.5078
+hk14:12:45 37 31 31 10.6 3.4-99-99
+um140918Thessaloniki 40.634-22.956 4.15pr10000 851.941640 1651 173750 191995 139606 124439 71065rat-1546.012-1961.266-531.3321-2536.07
+um140918Thessaloniki 40.634-22.956 4.15pr10000 853.291640 1643 25320 62254 146778 196679 181413rat 9094.035 5032.809 1262.621-410.2188
+hk14:15:24 36 31 31 10 3.19-99-99
+um140918Thessaloniki 40.634-22.956 4.11pr10000 854.61640 1614 170296 187113 136399 121407 69035rat-1564.074-1954.977-536.9453-2553.781
+co14:18:01uz: Running uz from B00540 line  61.6
+hk14:18:04 37 31 31 10 3.19-99-99
+co14:28:51b0: Running b0 from B00540 line  64.6
+co14:28:51b1: Running b1 from B00540 line  64.6
+co14:28:52uz: Running uz from B00540 line  64.6
+hk14:28:54 37 30 30 10 3.02-99-99
+co14:39:54td: Running td from B00540 line  64.6
+co14:39:54td: Time correction  0 seconds
+co14:39:55kd: Running kd from B00540 line  64.6
+hk14:39:57 35 30 29 10 3.02-99-99
+hk14:40:32 36 30 29 10 3.02-99-99
+um140918Thessaloniki 40.634-22.956 4.07pr10000 881.071640 1539 14290 40991 104358 151391 143028rat 10636.91 5752.778 1615.524-303.6445
+hk14:43:11 35 30 30 9.399999 2.83-99-99
+um140918Thessaloniki 40.634-22.956 4.05pr10000 882.381640 1665 126072 145091 111793 102361 59007rat-992.1406-1588.945-412.6367-2500.672
+um140918Thessaloniki 40.634-22.956 4.05pr10000 883.721640 1419 13340 38416 98717 144891 137676rat 10741.93 5843.989 1666.867-276.7539
+hk14:45:50 35 30 30 10 3.02-99-99
+um140918Thessaloniki 40.634-22.956 4.05pr10000 885.031640 1422 123495 140196 108295 98440 57038rat-1071.586-1607.274-443.9688-2471.656
+um140918Thessaloniki 40.634-22.956 4.05pr10000 886.381640 1369 12332 36023 94181 138872 132393rat 10920.85 5943.309 1687.203-262.2266
+hk14:48:29 35 30 30 10 3.02-99-99
+um140918Thessaloniki 40.634-22.956 4.05pr10000 887.691640 1411 118033 135970 105415 96496 55940rat-960.3438-1560.559-413.1289-2469.918
+co14:48:30b0: Running b0 from B00540 line  69.54
+co14:48:31b1: Running b1 from B00540 line  69.54
+co14:48:31uz: Running uz from B00540 line  69.54
+hk14:48:34 35 30 30 10 3.02-99-99
+hk14:56:44 35 30 29 10 3.02-99-99
+co14:57:06hgfw2: HG FW#2 at step  0
+hk14:57:13 35 29 29 9.399999 2.68-99-99
+hgscan 0narrow 302warm= 756.496714:57:13SEP 14/18 175 178 182 192 429 1564 3105 4599 5555 5953 5904 5269 4277 2928 1357 986 719 509 438 397 421 460 499 727 954 1238 2644 3891 5204 6040 5995 5520 4664 3159 2022 797 188 180 180 174
+hg14:58:16 .9973 156.8715 157 11944 35-2
+hgscan 0narrow 302warm= 756.496714:58:16SEP 14/18 161 177 177 173 832 1838 2808 3811 5308 5899 6019 5285 3907 2749 1500 989 759 502 443 418 408 443 496 741 972 1326 2690 4153 5474 5974 5923 5467 4642 3214 1587 409 177 175 186 163
+hg14:59:20 .9982 157.5736 158 11993 35-1
+co14:59:21td: Running td from B00540 line  69.54
+co14:59:21td: Time correction  .1 seconds
+hk14:59:34 35 29 29 10 2.87-99-99
+dsa0 900.030620 671 618 1584 5383 16549 29959 31638rat 12686.98 6574.117 2026.078-383.4649
+dsa0 900.670620 739 655 12764 60707 205788 382221 409691rat 12883.56 6745.934 2089.305-322.9531
+dsa0 901.310620 730 632 13310 64146 218741 407924 437474rat 12957.74 6780.875 2104.25-324.1016
+dsa0 901.960620 671 614 4595 20766 69361 129717 139015rat 12945.01 6733.524 2105.574-333.1875
+dsa0 902.60620 730 700 8961 43993 151108 285569 308034rat 13220.32 6860.703 2149.445-307.3516
+summary15:01:18SEP 14/18 72.27101 3.186 35ds 0 12939 6739 2095-334 14008 6260 1.1 303.7 191 105 45 29 118 36 .8 1.9
+co15:02:55ka: Running ka from B00540 line  69.54
+hk15:02:58 35 29 29 10 2.87-99-99
+hk15:03:31 35 29 29 9.399999 2.68-99-99
+um140918Thessaloniki 40.634-22.956 4.01pr10000 904.061640 1239 7490 24127 66818 106588 103867rat 12201.85 6586.469 2038.422-165.9883
+hk15:06:11 35 29 29 9.399999 2.68-99-99
+um140918Thessaloniki 40.634-22.956 4pr10000 905.371640 1212 87555 104332 85376 80436 46948rat-446.3203-1196.285-286.1524-2440.551
+um140918Thessaloniki 40.634-22.956 4pr10000 906.721640 1278 6804 22047 62320 100301 98773rat 12467.88 6739.141 2080.707-119.7891
+hk15:08:50 35 29 29 9.399999 2.68-99-99
+um140918Thessaloniki 40.634-22.956 4pr10000 908.031640 1168 83888 100519 82578 77608 45560rat-415.4531-1189.871-297.0274-2414.621
+um140918Thessaloniki 40.634-22.956 4pr10000 909.371640 1259 6197 20414 58349 95900 94457rat 12759.65 6893.715 2174.801-118.9766
+hk15:11:29 35 29 29 10 2.87-99-99
+um140918Thessaloniki 40.634-22.956 4.01pr10000 910.681640 1091 79154 95612 79433 75143 44204rat-301.4766-1111.094-267.9922-2403.66
+um140918Thessaloniki 40.634-22.956 4.01pr10000 912.021640 1112 5697 18972 54534 90681 89973rat 12842.21 6958.227 2223.879-86.66406
+hk15:14:08 34 29 29 10 2.87-99-99
+um140918Thessaloniki 40.634-22.956 3.98pr10000 913.331640 1128 75674 91302 76261 72243 42412rat-274.9141-1080.856-261.418-2414.602
+co15:14:09b0: Running b0 from B00540 line  74.55
+co15:14:10b1: Running b1 from B00540 line  74.55
+co15:14:10uz: Running uz from B00540 line  74.55
+hk15:14:12 35 29 29 10 2.87-99-99
+hk15:23:18 34 29 29 9.399999 2.68-99-99
+co15:23:40hgfw2: HG FW#2 at step  0
+hk15:23:47 34 29 29 9.399999 2.68-99-99
+hgscan 0narrow 302warm= 167.176715:23:47SEP 14/18 163 155 160 161 320 1414 2477 3694 4925 5426 5762 5379 4367 3093 1817 1085 819 602 403 361 394 428 602 863 1115 2064 3230 4395 5403 5683 5424 4934 3643 2349 1281 315 178 155 157 139
+hg15:24:50 .9986 160.7623 161 11445 34 2
+hgscan 0narrow 302warm= 167.176715:24:50SEP 14/18 164 159 164 157 346 1421 2478 3893 4949 5378 5716 5486 4389 2995 1698 1043 705 481 386 370 370 379 488 672 961 1563 2795 4240 5295 5813 5435 5010 3543 2429 1342 434 170 157 143 146
+hg15:25:54 .9992 159.9297 160 11529 34 1
+co15:25:54td: Running td from B00540 line  74.55
+co15:25:55td: Time correction  .2 seconds
+co15:25:55ka: Running ka from B00540 line  74.55
+hk15:25:58 34 28 28 10 2.71-99-99
+hk15:26:38 34 28 28 10 2.71-99-99
+um140918Thessaloniki 40.634-22.956 3.98pr10000 927.181640 1038 3512 11818 35638 64657 65893rat 14036.24 7665.211 2624.766 32.9961
+hk15:29:18 34 28 28 9.399999 2.54-99-99
+um140918Thessaloniki 40.634-22.956 3.96pr10000 928.491640 1095 52787 65717 58548 56730 33857rat 249.4922-699.2422-162.2149-2352.086
+um140918Thessaloniki 40.634-22.956 3.96pr10000 929.831640 1027 3359 10505 32271 59687 60950rat 13940.15 7871.516 2715.289 41.94532
+hk15:31:57 34 28 29 10 2.71-99-99
+um140918Thessaloniki 40.634-22.956 3.98pr10000 931.141640 992 48390 61081 54813 53642 32216rat 386.7188-622.7813-118.0586-2321.301
+um140918Thessaloniki 40.634-22.956 3.98pr10000 932.481640 958 3038 9535 29327 55072 57082rat 14086.17 7954.742 2784.074 107.875
+hk15:34:36 34 28 29 9.399999 2.54-99-99
+um140918Thessaloniki 40.634-22.956 3.94pr10000 933.791640 992 45572 57555 52775 51305 30673rat 455.7774-557.25-147.6094-2344.164
+um140918Thessaloniki 40.634-22.956 3.94pr10000 935.141640 944 2787 8521 26788 51581 53447rat 14322.9 8204.531 2900.43 106.6367
+hk15:37:15 33 28 29 10 2.71-99-99
+um140918Thessaloniki 40.634-22.956 3.92pr10000 936.451640 942 41237 53022 49580 49058 29542rat 702.9649-390.957-68.6836-2309.813
+um140918Thessaloniki 40.634-22.956 3.92pr10000 937.791640 921 2677 7918 24493 47978 50286rat 14216.28 8233.149 2982.192 158.9414
+hk15:39:55 33 28 29 10 2.71-99-99
+um140918Thessaloniki 40.634-22.956 3.92pr10000 939.11640 996 38813 49881 46965 46693 28127rat 754.5938-339.9727-47.57813-2314.727
+um140918Thessaloniki 40.634-22.956 3.92pr10000 940.451640 1010 2526 7074 22014 43737 46197rat 14435.02 8435.211 3063.785 194.1211
+hk15:42:34 34 28 28 9.399999 2.54-99-99
+um140918Thessaloniki 40.634-22.956 3.94pr10000 941.761640 1047 35088 45828 43619 43781 26547rat 918.3008-251.6289-5.929688-2294.235
+co15:42:35b0: Running b0 from B00540 line  79.66001
+co15:42:35b1: Running b1 from B00540 line  79.66001
+co15:42:36uz: Running uz from B00540 line  79.66001
+hk15:42:38 33 28 28 10 2.71-99-99
+hk15:55:38 32 27 28 10 2.57-99-99
+co15:55:41ds: DS intensity too low ( 111/cy), skipping.
+co15:55:55zs: ZS intensity too low ( 337/cy), skipping.
+co15:55:55td: Running td from B00540 line  79.66001
+co15:55:56td: Time correction  .2 seconds
+co15:55:56ka: Running ka from B00540 line  79.66001
+hk15:55:59 33 27 28 9.399999 2.4-99-99
+hk15:56:25 33 27 27 10 2.57-99-99
+um140918Thessaloniki 40.634-22.956 3.9pr10000 956.961640 995 1907 3802 10706 23289 25677rat 13815.49 8953.996 3588.367 392.9258
+hk15:59:05 33 27 27 9.399999 2.4-99-99
+um140918Thessaloniki 40.634-22.956 3.88pr10000 958.271640 1020 18505 25134 27449 28597 17714rat 1911.559 536.1641 162.9649-2229.82
+um140918Thessaloniki 40.634-22.956 3.88pr10000 959.621640 896 1659 3222 9289 20456 22874rat 14021.81 9201.965 3653.535 457.2071
+hk16:01:44 32 27 27 9.399999 2.4-99-99
+um140918Thessaloniki 40.634-22.956 3.86pr10000 960.931640 923 15652 22014 24418 26133 16431rat 2268.824 729.6094 284.9766-2158.547
+um140918Thessaloniki 40.634-22.956 3.86pr10000 962.271640 863 1558 2990 8033 17867 20051rat 13820.91 8983.463 3729.902 477.2696
+hk16:04:23 32 27 28 10 2.57-99-99
+um140918Thessaloniki 40.634-22.956 3.84pr10000 963.581640 816 13848 19538 22056 23838 15087rat 2406.121 852.7734 328.8906-2125.199
+um140918Thessaloniki 40.634-22.956 3.84pr10000 964.921640 811 1494 2712 6949 15534 17648rat 13270.84 8845.621 3779.192 535.1563
+hk16:07:02 32 27 27 10 2.57-99-99
+um140918Thessaloniki 40.634-22.956 3.86pr10000 966.231640 808 12137 16975 19562 21431 13735rat 2536.344 1012.102 391.5899-2076.774
+um140918Thessaloniki 40.634-22.956 3.86pr10000 967.571640 803 1477 2471 6093 13430 15268rat 12661.34 8746.387 3757.852 542.6368
+hk16:09:41 32 27 27 10 2.57-99-99
+um140918Thessaloniki 40.634-22.956 3.86pr10000 968.881640 777 10588 14851 17588 19395 12479rat 2716.91 1170.043 422.4063-2064.906
+co16:09:42b0: Running b0 from B00540 line  84.58999
+co16:09:43b1: Running b1 from B00540 line  84.58999
+co16:09:43uz: Running uz from B00540 line  84.58999
+hk16:09:45 32 27 27 10 2.57-99-99
+hk16:22:12 32 27 27 10 2.57-99-99
+co16:22:34hgfw2: HG FW#2 at step  0
+hk16:22:40 31 27 27 9.399999 2.4-99-99
+hgscan 0narrow 302warm= 815.391716:22:40SEP 14/18 150 117 129 146 329 1144 2308 3697 5047 5371 5599 5002 3858 2519 1231 794 564 425 338 288 271 339 378 565 790 1130 2318 3613 4787 5644 5492 5046 4214 3021 1710 560 130 151 137 123
+hg16:23:44 .9982 157.6664 158 11243 31-1
+co16:23:45td: Running td from B00540 line  84.58999
+co16:23:46td: Time correction  .2 seconds
+co16:23:46ka: Running ka from B00540 line  84.58999
+hk16:23:49 32 27 27 10 2.57-99-99
+hk16:24:29 31 26 26 10 2.43-99-99
+um140918Thessaloniki 40.634-22.956 3.8pr10000 985.021640 672 1125 1465 2687 4528 5200rat 9236.778 6824.842 2798.295 651.5469
+hk16:27:08 32 26 26 10 2.43-99-99
+um140918Thessaloniki 40.634-22.956 3.82pr10000 986.331640 661 3583 4731 6366 7690 5397rat 3746.508 2327.764 885.3555-1762.668
+um140918Thessaloniki 40.634-22.956 3.82pr10000 987.671640 643 989 1456 2271 3785 4238rat 9515.584 5825.885 2834.512 537.2774
+hk16:29:47 32 26 26 10 2.43-99-99
+um140918Thessaloniki 40.634-22.956 3.82pr10000 988.981640 640 2971 3986 5286 6418 4473rat 3876.674 2327.246 925.9414-1830.203
+um140918Thessaloniki 40.634-22.956 3.82pr10000 990.321640 601 862 1262 2017 3201 3503rat 9917.576 5902.42 2618.067 429.5821
+hk16:32:26 31 26 26 10 2.43-99-99
+um140918Thessaloniki 40.634-22.956 3.76pr10000 991.631640 629 2573 3267 4240 5277 3906rat 3722.031 2416.037 1076.002-1564.184
+um140918Thessaloniki 40.634-22.956 3.76pr10000 992.971640 607 868 1113 1776 2713 2912rat 9004.453 6149.174 2536.049 345.9453
+hk16:35:05 31 26 26 9.399999 2.27-99-99
+um140918Thessaloniki 40.634-22.956 3.78pr10000 994.281640 623 2167 2663 3444 4171 3110rat 3549.649 2359.625 975.3984-1589.346
+co16:35:06b0: Running b0 from B00540 line  89.56
+co16:35:07b1: Running b1 from B00540 line  89.56
+co16:35:07uf: Running uf from B00540 line  89.56
+hk16:35:10 31 26 26 10 2.43-99-99
+co16:43:30ui: Running ui from B00540 line  89.56
+hk16:43:33 31 25 26 10 2.3-99-99
+co16:43:55hgfw2: HG FW#2 at step  0
+hk16:44:02 30 25 25 10 2.3-99-99
+hgscan 0narrow 302warm= 188.528316:44:02SEP 14/18 110 99 108 111 502 1395 2385 3578 4484 4811 4985 4682 3800 2644 1257 717 547 330 294 280 263 295 317 516 719 1155 2526 3553 4464 5112 4886 4573 3551 2617 1724 679 167 97 137 95
+hg16:45:05 .9979 158.1384 158 10097 30-1
+co16:45:06td: Running td from B00540 line  89.56
+co16:45:07td: Time correction  .1 seconds
+co16:45:07b2: Running b2 from B00540 line  89.56
+co16:45:08td: Time correction  .1 seconds
+hk16:45:19 31 25 25 9.399999 2.15-99-99
+co16:45:22ds: DS intensity too low ( 16/cy), skipping.
+co16:45:37zs: ZS intensity too low ( 23/cy), skipping.
+hk16:50:09 31 25 25 10 2.3-99-99
+sla 0 1010.460620 57548 254 384043 417450 437521 389023 304384rat-7.132813-354.707-538.1875-1124.981
+sla 0 1011.090620 57926 282 384095 417232 438039 389003 305287rat-7.949219-352.6445-543.6563-1111.836
+sla 0 1011.720620 57780 278 384847 417468 437808 389105 304876rat-15.41406-353.9844-540.1719-1118.887
+sla 0 1012.350620 58009 251 384628 417727 438017 389183 305422rat-12.02734-355.8203-541.3672-1111.832
+sla 0 1012.980620 58082 254 385268 418561 438453 389354 305312rat-17.40625-362.6719-543.8243-1115.359
+sla 0 1013.610620 58061 262 385129 418939 438255 389233 305372rat-17.18359-368.0274-543.2031-1113.152
+sla 0 1014.240620 57817 276 384846 418062 438471 389913 305680rat-6.261719-351.1172-537.711-1116.453
+summary16:52:20SEP 14/18 64.788 2.314 31sl 0-12-357-541-1116 3560 1811 384693.7 305190.5 5 6 3 5 17 10 487 432.7
+co16:54:34ka: Running ka from B00540 line  89.56
+hk16:54:37 30 25 26 9.399999 2.15-99-99
+hk16:55:18 30 25 26 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1015.831640 528 527 555 563 647 631rat 14077.44 6399.237 5294.993-671.7969
+hk16:57:57 30 25 26 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1017.141640 496 566 614 626 649 577rat 3334.138 1085.494 687.6816-2806.769
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1018.481640 519 501 534 551 573 570rat 10645.91 5520.43 2252.641-292.9365
+hk17:00:36 30 25 26 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1019.791640 487 542 536 549 550 553rat 527.9815 1048.847 49.68946 157.332
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1021.131640 503 479 499 501 531 527rat 7793.548 7812.748 7835.548-714.169
+hk17:03:15 30 25 25 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1022.441640 483 520 511 522 524 527rat 384.0215 1613.66 197.3926 261.9873
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1023.781640 487 486 473 502 488 503rat-61.80005-42.6001-5164.479 5380.267
+hk17:05:54 30 25 25 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1025.091640 495 479 490 486 500 496rat 311.666 330.866 353.666-418.166
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1026.431640 476 470 471 457 494 489rat 5874.693 5893.892 5916.693-1457.992
+hk17:08:33 29 25 25 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.68pr10000 1027.741640 464 463 463 458 493 463rat 7948.009 7966.569 7988.609-8050.959
+um140918Thessaloniki 40.634-22.956 3.68pr10000 1029.081640 466 462 469 467 462 470rat-59.73999-41.17993-19.13989-43.20996
+hk17:11:12 29 25 25 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.68pr10000 1030.391640 460 462 457 455 466 482rat 1105.538 1124.098 1146.138 5599.506
+um140918Thessaloniki 40.634-22.956 3.68pr10000 1031.731640 455 458 457 463 444 470rat-59.73999-41.17993-2433.806 5101.469
+hk17:13:51 30 25 25 10 2.3-99-99
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1033.041640 447 446 447 461 459 437rat 4113.779 4132.979-689.2681-4220.28
+um140918Thessaloniki 40.634-22.956 3.72pr10000 1034.381640 448 436 453 441 447 442rat-61.80005-416.0662-19.80005-44.69995
+hk17:16:30 30 24 25 9.399999 2.03-99-99
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1035.691640 429 442 446 439 464 454rat 4239.449 3093.594 5420.883-1505.982
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1037.031640 433 430 447 458 436 440rat-61.80005-4887.647-7382.967 1790.047
+hk17:19:09 30 24 25 10 2.17-99-99
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1038.341640 447 427 442 425 447 443rat-61.80005-42.6001-19.80005-44.69995
+um140918Thessaloniki 40.634-22.956 3.7pr10000 1039.681640 432 441 432 435 409 438rat-2987.991-42.6001-19.80005 1120.579
+hk17:21:48 29 24 25 10 2.17-99-99
+um140918Thessaloniki 40.634-22.956 3.66pr10000 1040.991640 418 420 415 443 426 436rat 2354.926 2373.486-4967.641 3478.616
+um140918Thessaloniki 40.634-22.956 3.66pr10000 1042.331640 409 423 405 428 447 420rat 4276.817 9140.424 2991.16-5427.121
+hk17:24:27 29 24 24 9.399999 2.03-99-99
+um140918Thessaloniki 40.634-22.956 3.64pr10000 1043.641640 413 398 427 412 420 431rat 1775.007-3051.481 1815.607 4058.535
+um140918Thessaloniki 40.634-22.956 3.64pr10000 1044.981640 409 411 431 409 409 411rat-59.73999-6849.175-19.13989-43.20996
+hk17:27:05 29 24 24 10.6 2.31-99-99
+um140918Thessaloniki 40.634-22.956 3.68pr10000 1046.291640 390 413 420 406 413 409rat-59.74024-1195.116 1556.939-872.9512
+um140918Thessaloniki 40.634-22.956 3.68pr10000 1047.631640 395 417 404 380 409 408rat-2022.687 1877.676 4825.907-365.0571
+hk17:29:44 29 24 24 10 2.17-99-99
+um140918Thessaloniki 40.634-22.956 3.66pr10000 1048.941640 402 396 395 423 405 407rat-59.73999-41.17993-6625.1 330.2561
+co17:29:46az: Running az from B00540 line  100
+co17:30:57az: Azimuth discrepancy =  22
+co17:31:43ze: Running ze from B00540 line  100
+co17:32:23ze: Zenith discrepancy =  9
+ap17:32:24 28.44 23.12 23.44 1610.56 14.78 4.9-14.95 23.52 0 10.57 0 0 5.15-8.19 .06 0 27.81 23.12 23.44 1610.56 14.68 4.88-14.95 23.75 0 10.57 0 0 5.15-8.19 1.61 12.37
+hk17:32:43 28 24 24 10 2.17-99-99
+co17:32:46hgfw2: HG FW#2 at step  0
+hk17:34:50 29 24 24 10 2.17-99-99
+hgscan 0narrow 302warm= 217:34:50SEP 14/18 82 78 84 91 240 812 1568 2757 3692 4006 4127 3883 2943 2044 978 467 353 253 185 164 158 190 240 353 465 865 1564 2186 2586 2886 2794 2651 2157 1564 898 267 74 74 64 70
+hg17:35:53 .9996 158.9561 159 7013 29 0
+hk17:35:57 29 24 24 10.6 2.31-99-99
+rso3SEP 14/1817:44:28 29 56457 267 374704 406391 423715 375430 293862 775524 56365 278 375001 406758 423220 374972 293485 775676 1.0016 .9604 .9992 .9991 1.0012 1.0013 1.0013 .9998 .0008-.0344-.0526-.1065 .3415 .1729-.0727 0-.0354-.0526-.1065 .3408 .172-.0723
+hk17:44:30 29 24 24 9.399999 2.03-99-99
+hk17:55:15 28 24 24 10 2.17-99-99
+sla 0 1075.560620 37909 165 251143 272796 283893 251786 197218rat-46.47266-391.1172-544.7305-1111.328
+sla 0 1076.190620 37957 157 251388 273269 284487 251986 197199rat-47.27344-395.2266-550.4141-1115.195
+sla 0 1076.820620 37932 163 251420 273390 284169 252095 196818rat-45.92578-395.2774-543.6211-1125.574
+sla 0 1077.460620 37909 178 251673 272690 284435 251382 197128rat-62.7461-396.4649-560.1602-1106.348
+sla 0 1078.090620 37870 172 251323 272833 283776 252066 196997rat-44.74219-386.8477-538.0703-1121.141
+sla 0 1078.720620 37980 167 251514 272973 284224 251561 196810rat-56.86719-397.8867-553.7735-1116.481
+sla 0 1079.350620 38002 180 251203 272681 284698 251502 197218rat-52.46875-394.2344-562.1368-1106.457
+summary17:57:27SEP 14/18 73.372 3.376 28sl 0-51-394-550-1115 3516 1776 251380.6 197055.4 7 4 9 7 28 10 176.7 193.5
+co17:59:41b2: Running b2 from B00540 line  100
+co17:59:41w0: Running w0 from B00540 line  100
+co18:00:42ci: Running ci from B00540 line  100
+hk18:00:54 28 24 24 9.399999 2.03-99-99
+co18:05:36b0: Running b0 from B00540 line  100
+hk18:05:39 28 24 24 10 2.17-99-99
+co18:05:41hgfw2: HG FW#2 at step  0
+hk18:07:46 29 24 24 9.399999 2.03-99-99
+hgscan 0narrow 302warm= 218:07:46SEP 14/18 72 74 83 75 262 1181 2174 3591 4944 5516 5812 5506 4622 3241 1790 1072 764 441 367 290 296 370 472 743 1027 1682 3072 3978 4841 5409 5177 4711 3357 2136 1034 304 80 76 69 76
+hg18:08:49 .9983 161.0897 161 11221 29 2
+hgscan 0narrow 302warm= 218:08:49SEP 14/18 80 72 74 88 383 1323 2673 3866 4570 4944 5051 4475 3349 2244 1187 778 578 346 305 249 237 298 339 610 764 1040 2284 3310 4258 4970 4878 4517 3576 2369 1316 411 89 75 82 75
+hg18:09:53 .9982 157.2861 157 10021 29-2
+hgscan 0narrow 302warm= 218:09:53SEP 14/18 72 71 75 80 489 1333 2256 3385 4236 4731 4976 4498 3560 2595 1384 769 588 448 295 268 259 310 440 627 856 1294 2255 3340 4489 4914 4632 4151 3174 2211 1223 426 84 81 67 69
+hg18:10:56 .9989 159.0678 159 9890 29 0
+ed
+co22:23:37ed: Starting EndOfDay
+co22:23:38sum: Running sum from B00540 line -200
+co22:23:39ozsum: Running ozsum from B00540 line -200
+co22:23:40slsum: Running slsum from B00540 line -200
+co22:23:42hgsum: Running hgsum from B00540 line -200
