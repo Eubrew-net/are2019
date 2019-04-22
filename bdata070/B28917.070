@@ -1,0 +1,139 @@
+version=2dh161017A Coruna 43.33  8.41  3.56pr1000
+inst 0 -.4009 -1.0721 -1.9735 -3.417  0  .3365  2.35  1.1322  2950  2790  4.1E-08 162741688 0  5000  10000  15000  20000  25000 2972mkiv1 0  0  0  0  0  0  0  2579  0  240 -3  650  595  5252  176  2700  0  0  3469  75  .2  64  256  0 64 56 
+disp 2811.3  .0708562 -4.30371E-07  2850.82  .070478 -4.75487E-07  2887.92  .0698651 -4.986331E-07  2923.36  .06928 -5.28082E-07  2957.81  .0689105 -6.02449E-07  2767.25  .0722084 -4.94575E-07  4216.95  .106284 -6.45556E-07  4276.23  .105717 -7.13231E-07  4331.87  .104798 -7.479501E-07  4385.05  .10392 -7.92124E-07  4436.71  .103366 -9.03674E-07  4150.88  .108313 -7.41862E-07 
+zeni-.158066  .174348 -.036173  .774254 -.644936  .196861 -.996887  1.441229 -.328908 
+co00:20:57re: Zenith discrepancy = -1
+co00:22:18re: Azimuth discrepancy =  0
+co00:22:32re: Found diode at step -239 Moving filterwheel #3 to o3 position at  240
+hgscan 0narrow 302warm= 4.99366700:28:51OCT 16/17 67 68 73 153 1510 3694 6047 8378 10015 10629 11090 9709 7656 5605 3358 1923 1379 885 682 553 557 655 916 1345 1911 3205 5453 7656 9550 10984 10620 10004 8410 6050 3664 1639 204 67 61 62
+hg00:30:10 .994 160.1442 160 22074 23-2
+hgscan 0narrow 302warm= 4.99366700:30:10OCT 16/17 62 57 67 166 1398 3436 5668 7975 9821 10545 11066 9865 7833 5879 3516 1968 1418 876 658 558 544 668 880 1387 1976 3475 5635 7701 9653 10985 10395 9828 8364 5729 3483 1485 154 68 55 56
+hg00:31:28 .9948 161.0058 161 22051 23-1
+co00:31:30hl: HL is done on extended range Brewers only. Skipping.
+rso3OCT 16/1700:48:27 23 177149 17 1500078 1460824 1433976 1207747 912070 2581429 176671 15 1501187 1460416 1434791 1208548 912480 2582757 1.0027 1.1333 .9993 1.0003 .9994 .9993 .9995 .9995-.0941-.0826-7.460001E-02-.1219 .2961 .162-.0689-.0942-.0822-.0745-.122 .2964 .1625-.0692
+co03:57:51re: Zenith discrepancy = -1
+co03:59:43re: Azimuth discrepancy = -3
+co03:59:57re: Found diode at step -239 Moving filterwheel #3 to o3 position at  240
+dto3OCT 16/1704:10:52 20 0 887428.1 41.66 39.77 40.22 39.78 41.64 1 382034.9 40.76 38.62 38.11 47.87 34.73 37.62 39.39 41.2 42.97 39.44    40.614 1    40.069 3.5
+ap04:10:54 19.37-8.12 18.44 1610.56 14.87 5-15.05 23.52 0 11.23 0 0 5.08-8.03 .07 0 19.37-8.12 18.13 1610.56 14.87 4.98-15.05 23.63 0 10.57 0 0 5.08-8.03 1.68 10.82
+hgscan 0narrow 302warm= 4.99366904:16:23OCT 16/17 56 63 69 279 1886 4028 6376 8722 10196 10867 11141 9529 7415 5315 3074 1877 1341 828 662 543 532 626 830 1312 1866 2959 5163 7344 9498 11079 10874 10124 8887 6441 3996 1913 334 62 58 60
+hg04:17:41 .9916 158.9129 159 22220 20-3
+hgscan 0narrow 302warm= 4.99366904:17:41OCT 16/17 60 65 64 155 1441 3463 5681 8087 9778 10521 11072 10005 7914 5764 3532 2030 1456 984 693 542 576 669 965 1457 2067 3477 5726 7740 9760 10926 10517 9880 8110 5748 3513 1468 139 61 53 55
+hg04:19:00 .9947 161.1117 161 21998 20-1
+sla 0 264.370620 120560 5 1018263 990713 971981 818535 617888rat-1020.91-889.1602-789.711-1282.992
+sla 0 265.020620 120356 5 1018065 991339 972559 818092 617557rat-1022.457-894.4258-794.8086-1282.957
+sla 0 265.660620 120326 10 1019147 990982 972353 818538 617681rat-1024.813-890.3672-791.4141-1284.516
+sla 0 266.310620 120341 3 1017885 991744 972097 818085 617509rat-1021.695-896.3125-792.711-1283.258
+sla 0 266.960620 120314 8 1019135 989537 972129 818355 617325rat-1025.758-884.7852-791.3711-1286.078
+sla 0 267.610620 120102 4 1017003 991131 972188 819251 616996rat-1011.406-887.1446-786.75-1293.328
+sla 0 268.260620 119826 7 1018508 990212 971838 817518 617255rat-1027.559-892.4375-794.6016-1281.996
+summary04:26:18OCT 16/17 116.516 2.209 20sl 0-1022-891-792-1285 3090 1690 1018287 617458.7 5 4 3 4 17 8 706.6 316
+co04:32:34az: Azimuth discrepancy =  2
+co04:37:00hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co04:38:38fr: Micrometer #1 reference found at step 2398(+CAL)= 2560 Now set to o3 offset = 2579
+co04:44:03hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co04:45:53fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co04:51:18hg: No intensity detected. Check PMT.
+co04:51:18hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co04:53:07fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co04:58:33hg: No intensity detected. Check PMT.
+co04:58:33hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:00:22fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:05:48hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:07:37fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:13:02hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:14:52fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:20:17hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:22:07fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:27:32hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:29:21fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:34:47hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:36:36fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:42:02hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:43:51fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:49:16hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 1
+co05:51:06fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co05:56:31hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co05:58:20fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co06:03:46hg: Lamp not detected - resetting micrometer(s) f1= 1 f4= 0
+co06:05:36fr: Micrometer #1 reference found at step 2419(+CAL)= 2581 Now set to o3 offset = 2579
+co06:11:02hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co06:12:50fr: Micrometer #1 reference found at step 2415(+CAL)= 2577 Now set to o3 offset = 2579
+co06:18:15hg: No intensity detected. Check PMT.
+co06:18:15hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co06:20:06fr: Micrometer #1 reference found at step 2419(+CAL)= 2581 Now set to o3 offset = 2579
+co06:25:31hg: No intensity detected. Check PMT.
+co06:25:31hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co06:27:19fr: Micrometer #1 reference found at step 2415(+CAL)= 2577 Now set to o3 offset = 2579
+co06:32:45hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 1
+co06:34:34fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co06:39:59hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co06:41:49fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co06:47:14hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co06:49:03fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co06:54:29hg: Lamp not detected - resetting micrometer(s) f1= 1 f4= 0
+co06:56:18fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co07:01:44hg: Lamp not detected - resetting micrometer(s) f1= 1 f4= 0
+co07:03:33fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co07:08:58hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 1
+co07:10:48fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co07:16:14hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co08:27:58re: Zenith discrepancy = -1
+co08:28:34re: Azimuth discrepancy = -4540
+co08:28:49re: Found diode at step -239 Moving filterwheel #3 to o3 position at  240
+co08:34:35hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 1
+co08:36:23fr: Micrometer #1 reference found at step 2414(+CAL)= 2576 Now set to o3 offset = 2579
+co08:41:49hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co08:43:38fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co08:49:04hg: No intensity detected. Check PMT.
+co08:49:04hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co08:50:25fr: Micrometer #1 reference found at step 2416(+CAL)= 2578 Now set to o3 offset = 2579
+co08:56:49hg: No intensity detected. Check PMT.
+co08:56:49hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co08:58:38fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co09:04:04hg: No intensity detected. Check PMT.
+co09:04:04hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co09:05:53fr: Micrometer #1 reference found at step 2416(+CAL)= 2578 Now set to o3 offset = 2579
+co09:11:18hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co09:13:08fr: Micrometer #1 reference found at step 2418(+CAL)= 2580 Now set to o3 offset = 2579
+co09:18:34hg: No intensity detected. Check PMT.
+co09:18:34hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co09:20:24fr: Micrometer #1 reference found at step 2418(+CAL)= 2580 Now set to o3 offset = 2579
+co09:25:49hg: No intensity detected. Check PMT.
+co09:25:49hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co09:27:39fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co09:33:04hg: Lamp not detected - resetting micrometer(s) f1= 2 f4= 0
+co09:34:53fr: Micrometer #1 reference found at step 2416(+CAL)= 2578 Now set to o3 offset = 2579
+co09:40:19hg: No intensity detected. Check PMT.
+co09:40:19hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co09:42:08fr: Micrometer #1 reference found at step 2418(+CAL)= 2580 Now set to o3 offset = 2579
+co09:47:34hg: Lamp not detected - resetting micrometer(s) f1= 1 f4= 0
+co09:49:23fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co09:54:49hg: No intensity detected. Check PMT.
+co09:54:49hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co09:56:38fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co10:02:04hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 1
+co10:03:54fr: Micrometer #1 reference found at step 2417(+CAL)= 2579 Now set to o3 offset = 2579
+co10:09:20hg: No intensity detected. Check PMT.
+co10:09:20hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co10:11:08fr: Micrometer #1 reference found at step 2415(+CAL)= 2577 Now set to o3 offset = 2579
+co10:16:34hg: No intensity detected. Check PMT.
+co10:16:34hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co10:18:24fr: Micrometer #1 reference found at step 2418(+CAL)= 2580 Now set to o3 offset = 2579
+co10:23:49hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co10:25:38fr: Micrometer #1 reference found at step 2416(+CAL)= 2578 Now set to o3 offset = 2579
+co10:28:32hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+ap10:30:27 17.5-8.75 17.19 1610.56 14.87 5-15.05 23.52 0 7.96 0 0 5.08-8.03 .07 0 17.5-8.75 17.19 1599.62 14.87 4.98-14.95 23.75 0 7.31 0 0 5.08-7.99 1.68 10.62
+co10:32:17re: Zenith discrepancy = -2
+co10:33:00re: Azimuth discrepancy = -1
+co10:33:14re: Found diode at step -239 Moving filterwheel #3 to o3 position at  240
+co10:35:57fr: Micrometer #1 reference found at step 37(+CAL)= 199 Now set to o3 offset = 2579
+co10:41:23hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 0
+co10:43:13fr: Micrometer #1 reference found at step 2418(+CAL)= 2580 Now set to o3 offset = 2579
+co11:49:51re: Zenith discrepancy = -1
+co11:50:24re: Azimuth discrepancy = -4166
+co11:50:39re: Found diode at step -239 Moving filterwheel #3 to o3 position at  240
+co12:04:38re: Zenith discrepancy =  44
+co12:05:27re: Azimuth discrepancy = -6195
+co12:05:41re: Found diode at step -239 Moving filterwheel #3 to o3 position at  240
+co12:11:23hg: Lamp not detected - resetting micrometer(s) f1= 0 f4= 1
