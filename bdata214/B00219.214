@@ -1,0 +1,1118 @@
+version=2
+dh010119Sodankyla 67.3675 -26.633  2.428648pr990
+co22:24:23dh: day header
+co22:24:23main: version 4.1007/04/2015 15:00:00
+co22:24:23skc: SXFM
+co22:24:23autohg:  1 
+co22:24:23hifw2:  0 
+co22:24:23attn:  25000  80000 
+co22:24:23lowds:  1 
+co22:24:23cubdsp:  1 
+
+inst0.000000.081480.125710.077590.025130.00.34962.350001.165401430-2700.000000027028814169004721102471408218443261072972mkiii10000000000-3.00000770740802817825151.00106-8.190024692500.20002560002211July 26/2016EXTRAS1002500080000111215-52006-02-2018@
+disp32856.970.0771558-8.83645e-071.12593e-112896.790.0762945-8.84195e-071.12021e-112933.470.0754637-8.84476e-071.11453e-112968.640.0746305-8.84522e-071.10867e-113002.890.0737815-8.84339e-071.10256e-112824.110.0778374-8.83013e-071.13033e-114285.460.115734-1.32547e-061.68889e-114345.180.114442-1.32629e-061.68031e-114400.20.113196-1.32671e-061.67179e-114452.960.111946-1.32678e-061.66301e-114504.330.110672-1.32651e-061.65384e-114236.160.116756-1.32452e-061.69549e-11stèvc 27.1624692881690@
+zeni-0.006400-0.0196800.0165400.1522580.281884-0.060358-0.5096590.460001-0.042397oct17/00@
+op_st214C:\brew214\bdata\icf15318zsf14312dcf20916uvr15018010119Sodankyla67.3675-26.6339902.535944-425-1514633111110110110111skco3SXFM@
+uvr2865 6973.02870 7028.02875 7073.62880 7111.02885 7141.52890 7166.22895 7185.92900 7201.72905 7214.32910 7224.42915 7232.82920 7239.82925 7246.02930 7251.82935 7257.52940 7263.42945 7269.62950 7276.42955 7283.92960 7292.02965 7300.92970 7310.62975 7321.12980 7332.22985 7344.12990 7356.52995 7369.43000 7382.63005 7396.23010 7409.93015 7423.63020 7437.33025 7450.73030 7463.83035 7476.43040 7488.53045 7499.93050 7510.43055 7520.13060 7528.83065 7536.53070 7543.03075 7548.33080 7552.43085 7555.23090 7556.73095 7556.83100 7555.63105 7553.03110 7549.03115 7543.73120 7537.03125 7529.13130 7519.83135 7509.43140 7497.73145 7484.93150 7471.03155 7456.13160 7440.23165 7423.33170 7405.63175 7387.13180 7367.83185 7347.83190 7327.23195 7305.93200 7284.23205 7261.93210 7239.23215 7216.03220 7192.53225 7168.73230 7144.43235 7120.03240 7095.23245 7070.33250 7045.03255 7019.63260 6993.93265 6968.13270 6942.13275 6915.83280 6889.43285 6862.83290 6836.13295 6809.23300 6782.23305 6755.03310 6727.73315 6700.23320 6672.73325 6645.13330 6617.53335 6589.83340 6562.23345 6534.63350 6507.13355 6479.83360 6452.73365 6425.83370 6399.33375 6373.23380 6347.63385 6322.53390 6298.03395 6274.23400 6251.23405 6229.13410 6207.83415 6187.53420 6168.23425 6150.03430 6132.93435 6116.93440 6102.03445 6088.13450 6075.23455 6063.23460 6051.93465 6041.23470 6030.83475 6020.53480 6009.73485 5998.23490 5985.43495 5970.53500 5953.13505 5737.63510 5729.93515 5723.53520 5718.23525 5714.03530 5710.93535 5708.93540 5707.93545 5707.93550 5708.93555 5710.93560 5713.83565 5717.53570 5722.23575 5727.83580 5734.13585 5741.33590 5749.33595 5758.03600 5767.53605 5777.73610 5788.63615 5800.23620 5812.53625 5825.43630 5838.93635 5853.03640 5867.63645 5882.83650 5898.5@
+schedule-180pdtdhphgslaz-132fmfmfmfmfmfmhphgsl20-92pdtdapuvhphgsluv-90pdtdau0.0pdtdau90pdtduvhphgsluv93pdtdhphgsl100fmfmfmfmfmfmhphgsl20180SXFM@
+co22:24:25checkaz: Running checkaz from SXFM line -200
+co22:24:28po: Running po from SXFM line -200
+co22:24:30af: Running af from SXFM line -200
+co22:24:31af: Auto FR/HP/HG is now OFF
+co22:24:32re: Running re from SXFM line -200
+co22:25:58re: Zenith discrepancy = -2
+co22:26:01re: Azimuth discrepancy = -2
+co22:26:38re: Micrometer #1 discrepancy = -1
+co22:26:46re: Micrometer #2 discrepancy =  1
+co22:27:42az: Running az from SXFM line -200
+co22:28:41az: Azimuth discrepancy =  0
+co22:29:36w1: Running w1 from SXFM line -200
+co22:34:38fr: Running fr from SXFM line -200
+co22:36:29fr: Micrometer #1 discrepancy=  0 Now set to o3 offset =  0
+co22:38:21fr: Micrometer #2 discrepancy=  0 Now set to offset =  0
+hk22:38:28 12 14 12 3.3 .39-99 5
+hpscan22:38:40 0 47682 10 79706 20 112434 30 146310 40 180259 50 211473 60 226087 70 227283 80 227326 90 227081 100 227009 110 221440 120 193128 130 160107 140 126398 150 93164 160 60833
+hp22:39:40 .9924739 236935.2 82.2 12
+hk22:39:55 12 14 12 3.3 .39-99 5
+co22:39:57hgfw2: HG FW#2 at step  0
+hk22:42:04 12 14 12 3.3 .39-99 5
+hgscan 0wide 302warm= 222:42:04JAN 01/19 174 180 1181 4930 9263 13894 19098 24255 29098 31328 32257 30406 27100 22984 18531 13487 8479 3887 2507 1752 1723 2497 3907 8501 13898 19065 24038 28239 32218 34051 33287 31131 26078 20875 15472 10312 5650 1385 197 192
+hg22:43:26 .9994 288.7853 289 66308 12 1
+ap22:43:30 12.31 14.02 11.84 1304.27 9.94 4.44 10.07 20.23 .00 3.85 12.22 4.71 4.40 2.55 .00 .00 .04 .00 1.21 1.88 3.26 .39 1.93 2.13 12.41 14.03 11.75 1306.23 9.95 4.45 10.08 19.66 4.9 3.86 12.03 4.71 4.4 2.56 1.47 9.71 .42 9.49 2.76 2.55 3.26 .39 1.92 2.12
+hk22:44:10 12 14 12 3.3 .39-99 5
+dto3JAN 01/1922:55:15 12 0 1592896 28.07 26.92 28.79 28.37 28.23 1 554788.1 29.83 33.42 31.07 28.55 25.79 23.43 24.27 30.52 29.88 36.97    28.076 .7    29.372 4.1
+co22:55:16an: Running an from SXFM line -200
+co22:55:17an: Auto FR/HP/HG is now ON
+hk22:55:23 12 14 12 3.3 .39-99 5
+rso3JAN 01/1923:04:07 12 944787 5 1074750 1215458 1463614 1572282 1737808 2724653 943825 3 1073532 1215020 1462075 1571150 1738198 2723379 1.001 1.6667 1.0011 1.0004 1.0011 1.0007 .9998 1.0005 .1652 .1118 .0311 .0435 .0261 .0223-.0104 .1654 .1116 .0312 .0439 .025 .0214-.0099
+co23:04:09b2: Running b2 from SXFM line -200
+co23:04:10cj: Running cj from SXFM line -200
+hk23:04:25 12 15 12 3.3 .42-99 5
+co23:04:50cj: CJ scan started at 23:04:50
+co23:11:19cj: Still doing CJ
+co23:18:11cj: CJ scan finished at 23:18:11
+co23:18:17ru: Running ru from SXFM line -180
+co23:18:19ru: Giving SB time to complete motor movements.
+co23:21:06start:  PROGRAM start :  JAN 01/19 at 23:21:03
+co23:21:06ab_sk: Running ab_sk from main.asc
+co23:21:23ru: Running ru from SXFM line -180
+co23:21:24ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co23:21:25td: Running td from SXFM line -180
+co23:21:28td: Time correction  .1 seconds
+hk23:21:34 13 15 13 3.3 .42-99 5
+hpscan23:21:44 0 54814 10 85428 20 118246 30 151697 40 184936 50 214299 60 223492 70 224536 80 224205 90 224531 100 223914 110 213907 120 183729 130 150422 140 117710 150 85323 160 53318
+hp23:22:43 .9923965 233936.5 79.9 13
+hk23:22:57 13 14 13 3.3 .39-99 6
+co23:22:59hgfw2: HG FW#2 at step  0
+hk23:25:06 13 14 12 3.3 .39-99 5
+hgscan 0wide 302warm= 223:25:06JAN 01/19 190 202 1882 7207 13111 19897 26784 33673 40586 43270 44546 42074 37151 31745 25175 18542 11583 5449 3594 2433 2475 3678 5364 11659 18881 26024 32731 38480 43977 46563 45637 42830 35997 28691 21470 14342 7963 2216 225 199
+hg23:26:27 .9996 288.4751 288 91109 13 0
+hk23:31:33 13 14 12 3.3 .39-99 4
+sla 0 1411.890620 630320 2 718987 813116 978355 1051555 1161334rat 1687.606 1142.242 320.586 442.4219
+sla 0 1412.570620 630684 1 717921 811464 977289 1049404 1160816rat 1685.043 1142.137 316.3164 449.5508
+sla 0 1413.250620 629950 1 717693 810907 976434 1049623 1160806rat 1687.367 1146.094 321.1406 448.5821
+sla 0 1413.940620 630668 1 717520 811800 975937 1049277 1158581rat 1686.965 1139.758 321.9297 441.4766
+sla 0 1414.620620 630192 7 717461 811538 976287 1048980 1159156rat 1686.086 1139.938 319.0899 444.9532
+sla 0 1415.30620 630303 3 716618 810947 975933 1047805 1159874rat 1686.277 1138.168 315.6992 452.711
+sla 0 1415.980620 629926 1 716454 811041 975228 1048097 1159513rat 1688.524 1138.891 320.1524 450.086
+summary23:33:56JAN 01/19 112.708 2.541 13sl 0 1687 1141 319 447 256 221 717522 1160011 1 3 2 4 14 7 836.1 999.3
+co23:36:22az: Running az from SXFM line -180
+co23:37:21az: Azimuth discrepancy =  0
+co23:37:27skc: Waiting until ZA = -132 now -133.9
+co23:47:27skc: Waiting until ZA = -132 now -133.5
+co23:57:28skc: Waiting until ZA = -132 now -133
+co00:00:01skc: Waiting until ZA = -132 now -132.8
+co00:10:01skc: Waiting until ZA = -132 now -132.3
+co00:14:16ru: Running ru from SXFM line -132
+co00:14:17ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk00:14:22 12 14 11 3.3 .39-99 6
+co00:14:23fm: Lunar phase is less than a half 
+co00:14:23fm: No moon observations expected. Waiting until 00:25:23 to continue schedule
+co00:25:23fm: No moon observations expected. Waiting until 00:25:23 to continue schedule - aborting focused moon measurement
+hk00:25:29 12 14 12 3.3 .39-99 8
+co00:25:30fm: Lunar phase is less than a half 
+co00:25:30fm: No moon observations expected. Waiting until 00:36:30 to continue schedule
+co00:36:30fm: No moon observations expected. Waiting until 00:36:30 to continue schedule - aborting focused moon measurement
+hk00:36:36 12 14 12 3.3 .39-99 7
+co00:36:36fm: Lunar phase is less than a half 
+co00:36:37fm: No moon observations expected. Waiting until 00:47:36 to continue schedule
+co00:47:37fm: No moon observations expected. Waiting until 00:47:36 to continue schedule - aborting focused moon measurement
+hk00:47:43 12 14 12 3.3 .39-99 7
+co00:47:43fm: Lunar phase is less than a half 
+co00:47:44fm: No moon observations expected. Waiting until 00:58:43 to continue schedule
+co00:58:44fm: No moon observations expected. Waiting until 00:58:43 to continue schedule - aborting focused moon measurement
+hk00:58:49 12 14 12 3.3 .39-99 7
+co00:58:50fm: Lunar phase is less than a half 
+co00:58:50fm: No moon observations expected. Waiting until 01:09:50 to continue schedule
+co01:09:50fm: No moon observations expected. Waiting until 01:09:50 to continue schedule - aborting focused moon measurement
+hk01:09:56 12 14 12 3.3 .39-99 7
+co01:09:57fm: Lunar phase is less than a half 
+co01:09:57fm: No moon observations expected. Waiting until 01:20:57 to continue schedule
+co01:20:57fm: No moon observations expected. Waiting until 01:20:57 to continue schedule - aborting focused moon measurement
+hk01:21:04 12 14 12 3.3 .39-99 6
+hpscan01:21:14 0 55735 10 87295 20 120582 30 154126 40 187977 50 217488 60 227047 70 227370 80 228104 90 227608 100 227499 110 216543 120 186009 130 152011 140 119125 150 86471 160 54079
+hp01:22:14 .9925697 237384.2 79.7 12
+hk01:22:28 12 14 12 3.3 .39-99 7
+co01:22:30hgfw2: HG FW#2 at step  0
+hk01:24:37 12 14 12 3.3 .39-99 7
+hgscan 0wide 302warm= 201:24:38JAN 02/19 171 170 1368 5127 9371 14088 19305 24235 28942 30849 31544 29951 26252 22161 17824 12887 7953 3586 2406 1583 1636 2450 3643 8028 13226 18429 23360 27768 31688 33872 33113 31230 26517 21117 16013 10705 5923 1634 197 200
+hg01:25:59 .9995 287.9819 288 65416 12 0
+hk01:31:05 12 14 12 3.3 .39-99 6
+sla 0 91.420620 636527 1 723627 818988 985041 1058484 1170571rat 1688.367 1139.649 319.6055 448.6094
+sla 0 92.110620 634668 3 721539 817735 983827 1056890 1167721rat 1694.426 1139.715 318.3828 444.4219
+sla 0 92.790620 634769 2 722217 817259 982180 1056490 1167362rat 1688.586 1140.606 324.1485 444.7422
+sla 0 93.470620 634538 1 721528 817626 982241 1054990 1167837rat 1686.469 1132.285 317.5352 452.8907
+sla 0 94.150620 634443 1 721503 816249 982290 1053797 1165040rat 1681.582 1134.707 312.2774 447.211
+sla 0 94.830620 633269 2 720955 815099 981811 1053550 1165184rat 1683.899 1139.914 313.4063 448.8047
+sla 0 95.510620 633435 1 721366 815453 980254 1053284 1165151rat 1680.242 1136.859 319.3399 449.8086
+summary01:33:28JAN 02/19 102.004 4.48 12sl 0 1686 1138 318 448 252 217 721819.3 1166981 5 3 4 3 13 7 865.4 2023.5
+co01:35:53ru: Running ru from SXFM line -132
+co01:35:55ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk01:36:00 12 14 12 3.3 .39-99 6
+co01:36:00fm: Lunar phase is less than a half 
+co01:36:01fm: No moon observations expected. Waiting until 01:47:01 to continue schedule
+co01:47:01fm: No moon observations expected. Waiting until 01:47:01 to continue schedule - aborting focused moon measurement
+hk01:47:07 12 14 12 3.3 .39-99 7
+co01:47:07fm: Lunar phase is less than a half 
+co01:47:08fm: No moon observations expected. Waiting until 01:58:07 to continue schedule
+co01:58:08fm: No moon observations expected. Waiting until 01:58:07 to continue schedule - aborting focused moon measurement
+hk01:58:13 12 14 12 3.3 .39-99 6
+co01:58:14fm: Lunar phase is less than a half 
+co01:58:15fm: No moon observations expected. Waiting until 02:09:14 to continue schedule
+co02:09:15fm: No moon observations expected. Waiting until 02:09:14 to continue schedule - aborting focused moon measurement
+hk02:09:20 12 14 12 3.3 .39-99 6
+co02:09:21fm: Lunar phase is less than a half 
+co02:09:21fm: No moon observations expected. Waiting until 02:20:21 to continue schedule
+co02:20:21fm: No moon observations expected. Waiting until 02:20:21 to continue schedule - aborting focused moon measurement
+hk02:20:27 12 14 12 3.3 .39-99 7
+co02:20:27fm: Lunar phase is less than a half 
+co02:20:28fm: No moon observations expected. Waiting until 02:31:27 to continue schedule
+co02:31:28fm: No moon observations expected. Waiting until 02:31:27 to continue schedule - aborting focused moon measurement
+hk02:31:34 12 14 13 3.3 .39-99 8
+co02:31:34fm: Lunar phase is less than a half 
+co02:31:35fm: No moon observations expected. Waiting until 02:42:34 to continue schedule
+co02:42:35fm: No moon observations expected. Waiting until 02:42:34 to continue schedule - aborting focused moon measurement
+hk02:42:42 12 14 13 3.3 .39-99 7
+hpscan02:42:52 0 55846 10 87502 20 120461 30 154688 40 187896 50 217264 60 226375 70 226975 80 227088 90 227425 100 226390 110 216425 120 185647 130 152296 140 118980 150 86531 160 54055
+hp02:43:52 .9925023 236714.9 79.7 12
+hk02:44:06 12 14 13 3.3 .39-99 7
+co02:44:08hgfw2: HG FW#2 at step  0
+hk02:46:15 12 14 13 3.3 .39-99 7
+hgscan 0wide 302warm= 202:46:15JAN 02/19 168 190 1391 5085 9251 14135 18984 23864 28783 30373 31189 29545 26116 22231 17639 12851 7876 3620 2432 1642 1647 2439 3675 7957 13158 18637 23392 27580 31805 33777 33113 31357 26400 21357 15917 10658 5973 1649 198 202
+hg02:47:36 .9995 288.0105 288 64966 12 0
+hk02:52:42 12 14 13 3.3 .39-99 7
+sla 0 173.050620 634999 0 722413 817512 982591 1055365 1168072rat 1682.641 1134.488 317.5391 452.1992
+sla 0 173.730620 633139 1 721023 815811 981355 1054697 1164713rat 1688.316 1140.883 320.3086 442.1641
+sla 0 174.410620 632849 1 720825 814956 981509 1052928 1165991rat 1682.066 1138.055 312.1367 454.5352
+sla 0 175.10620 632566 1 720016 814906 981350 1054469 1165012rat 1693.539 1144.84 319.375 444.2657
+sla 0 175.780620 632569 1 719363 814988 980444 1051860 1164311rat 1686.5 1133.356 312.4375 452.6211
+sla 0 176.460620 632869 0 719688 813719 979495 1052561 1163323rat 1687.484 1143.227 319.7149 445.8516
+sla 0 177.140620 632320 2 719501 814130 979768 1052032 1162652rat 1686.395 1138.75 316.2383 445.5196
+summary02:55:05JAN 02/19 95.126 8.221 12sl 0 1687 1139 317 448 253 219 720404.1 1164868 4 4 3 5 19 10 1094.7 1842.7
+co02:57:31ru: Running ru from SXFM line -132
+co02:57:33ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk02:57:38 12 14 12 3.3 .39-99 7
+co02:57:38fm: Lunar phase is less than a half 
+co02:57:39fm: No moon observations expected. Waiting until 03:08:38 to continue schedule
+co03:08:39fm: No moon observations expected. Waiting until 03:08:38 to continue schedule - aborting focused moon measurement
+hk03:08:44 13 15 13 3.3 .42-99 7
+co03:08:45fm: Lunar phase is less than a half 
+co03:08:45fm: No moon observations expected. Waiting until 03:19:45 to continue schedule
+co03:19:45fm: No moon observations expected. Waiting until 03:19:45 to continue schedule - aborting focused moon measurement
+hk03:19:51 13 15 13 3.3 .42-99 7
+co03:19:51fm: Lunar phase is less than a half 
+co03:19:52fm: No moon observations expected. Waiting until 03:30:52 to continue schedule
+co03:30:52fm: No moon observations expected. Waiting until 03:30:52 to continue schedule - aborting focused moon measurement
+hk03:30:58 13 15 13 3.3 .42-99 7
+co03:30:58fm: Lunar phase is less than a half 
+co03:30:59fm: No moon observations expected. Waiting until 03:41:58 to continue schedule
+co03:41:59fm: No moon observations expected. Waiting until 03:41:58 to continue schedule - aborting focused moon measurement
+hk03:42:04 13 14 13 3.3 .39-99 6
+co03:42:05fm: Lunar phase is less than a half 
+co03:42:06fm: No moon observations expected. Waiting until 03:53:05 to continue schedule
+co03:53:06fm: No moon observations expected. Waiting until 03:53:05 to continue schedule - aborting focused moon measurement
+hk03:53:11 12 14 13 3.3 .39-99 6
+co03:53:12fm: Lunar phase is less than a half 
+co03:53:12fm: No moon observations expected. Waiting until 04:04:12 to continue schedule
+co04:04:12fm: No moon observations expected. Waiting until 04:04:12 to continue schedule - aborting focused moon measurement
+hk04:04:20 12 14 12 3.3 .39-99 6
+hpscan04:04:29 0 55673 10 87116 20 120230 30 154457 40 188292 50 216904 60 226739 70 227126 80 227512 90 227300 100 226610 110 216280 120 185729 130 152213 140 118842 150 86302 160 54086
+hp04:05:29 .9925899 236918.8 79.7 12
+hk04:05:43 12 14 12 3.3 .39-99 6
+co04:05:46hgfw2: HG FW#2 at step  0
+hk04:07:52 12 14 12 3.3 .39-99 6
+hgscan 0wide 302warm= 204:07:53JAN 02/19 164 181 1377 5093 9273 13902 19045 23751 28474 30333 31115 29398 25710 21904 17389 12631 7836 3592 2354 1587 1613 2407 3576 7833 13109 18388 23097 27589 31723 33656 32957 31258 26168 21181 15955 10704 5977 1631 192 202
+hg04:09:14 .9995 287.9175 288 64771 12 0
+hk04:14:20 12 14 12 3.3 .39-99 6
+sla 0 254.680620 636342 1 723330 818266 984573 1057797 1169740rat 1687.285 1140.652 318.832 448.3282
+sla 0 255.360620 635035 1 721717 817303 983235 1056268 1168171rat 1690.707 1139.43 318.4375 448.7735
+sla 0 256.040620 634386 3 722222 816467 981774 1056322 1166755rat 1687.852 1144.191 325.2735 443.1211
+sla 0 256.720620 634499 1 720973 815835 981486 1055222 1166134rat 1690.856 1142.977 321.9336 445.3907
+sla 0 257.410620 634101 3 721817 816010 981228 1054573 1166064rat 1682.945 1139.289 320.3711 447.8594
+sla 0 258.090620 633325 3 720280 815382 981026 1053232 1165741rat 1686.688 1137.024 315.6133 452.293
+sla 0 258.770620 632913 1 720854 815424 981257 1053690 1164824rat 1685.106 1138.731 316.5 446.8399
+summary04:16:43JAN 02/19 89.03 11.975 12sl 0 1687 1140 320 448 255 220 721599 1166776 3 3 3 3 10 6 974 1701.8
+co04:19:09ru: Running ru from SXFM line -132
+co04:19:10ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk04:19:15 12 14 12 3.3 .39-99 6
+co04:19:16fm: Lunar phase is less than a half 
+co04:19:16fm: No moon observations expected. Waiting until 04:30:16 to continue schedule
+co04:30:16fm: No moon observations expected. Waiting until 04:30:16 to continue schedule - aborting focused moon measurement
+hk04:30:22 12 14 12 3.3 .39-99 6
+co04:30:23fm: Lunar phase is less than a half 
+co04:30:23fm: No moon observations expected. Waiting until 04:41:23 to continue schedule
+co04:41:23fm: No moon observations expected. Waiting until 04:41:23 to continue schedule - aborting focused moon measurement
+hk04:41:29 12 14 13 3.3 .39-99 7
+co04:41:29fm: Lunar phase is less than a half 
+co04:41:30fm: No moon observations expected. Waiting until 04:52:29 to continue schedule
+co04:52:30fm: No moon observations expected. Waiting until 04:52:29 to continue schedule - aborting focused moon measurement
+hk04:52:36 12 14 12 3.3 .39-99 6
+co04:52:36fm: Lunar phase is less than a half 
+co04:52:37fm: No moon observations expected. Waiting until 05:03:36 to continue schedule
+co05:03:37fm: No moon observations expected. Waiting until 05:03:36 to continue schedule - aborting focused moon measurement
+hk05:03:42 12 14 11 3.3 .39-99 6
+co05:03:43fm: Lunar phase is less than a half 
+co05:03:43fm: No moon observations expected. Waiting until 05:14:43 to continue schedule
+co05:14:43fm: No moon observations expected. Waiting until 05:14:43 to continue schedule - aborting focused moon measurement
+hk05:14:49 12 14 11 3.3 .39-99 6
+co05:14:50fm: Lunar phase is less than a half 
+co05:14:50fm: No moon observations expected. Waiting until 05:25:50 to continue schedule
+co05:25:50fm: No moon observations expected. Waiting until 05:25:50 to continue schedule - aborting focused moon measurement
+hk05:25:57 12 14 11 3.3 .39-99 6
+hpscan05:26:07 0 55698 10 87119 20 120279 30 154580 40 187936 50 217119 60 226988 70 227270 80 227659 90 227390 100 227753 110 216392 120 186241 130 152518 140 118951 150 86498 160 54234
+hp05:27:07 .99245 237225.5 79.8 12
+hk05:27:21 12 14 12 3.3 .39-99 6
+co05:27:23hgfw2: HG FW#2 at step  0
+hk05:29:30 12 14 12 3.3 .39-99 7
+hgscan 0wide 302warm= 205:29:31JAN 02/19 156 181 1363 5125 9303 13988 19060 23716 28540 30328 31160 29659 25879 21991 17457 12728 7815 3578 2378 1636 1606 2442 3562 7956 13042 18482 23337 27641 31543 33647 33039 31155 26274 21270 15881 10610 5973 1672 203 195
+hg05:30:52 .9995 287.9743 288 64807 12 0
+hk05:35:58 12 14 12 3.3 .39-99 7
+sla 0 336.310620 636053 1 723493 818602 985850 1058527 1169290rat 1689.367 1141.918 316.1406 443.5235
+sla 0 336.990620 635213 1 722457 817177 983750 1056578 1169658rat 1687.484 1141.418 317.4102 453.1524
+sla 0 337.670620 634177 3 722762 816630 983281 1056138 1168208rat 1683.77 1142.531 317.6797 449.4649
+sla 0 338.350620 634306 4 722406 816187 981927 1055577 1166413rat 1683.582 1142.574 321.4453 444.9571
+sla 0 339.030620 633587 1 721272 815406 982525 1055772 1166833rat 1691.352 1147.633 319.5586 445.7422
+sla 0 339.710620 633851 2 720389 815542 981412 1054473 1166336rat 1691.27 1141.41 319.1133 449.3203
+sla 0 340.40620 633596 2 721072 815133 981546 1053755 1164415rat 1684.043 1140.59 315.4688 444.9961
+summary05:38:20JAN 02/19 85.344 8.785 12sl 0 1687 1143 318 447 256 223 721978.8 1167308 4 2 2 3 11 7 1071.7 1842.7
+co05:40:46ru: Running ru from SXFM line -132
+co05:40:48ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk05:40:53 12 14 12 3.3 .39-99 7
+co05:40:53fm: Lunar phase is less than a half 
+co05:40:54fm: No moon observations expected. Waiting until 05:51:53 to continue schedule
+co05:51:54fm: No moon observations expected. Waiting until 05:51:53 to continue schedule - aborting focused moon measurement
+hk05:52:00 12 14 12 3.3 .39-99 7
+co05:52:00fm: Lunar phase is less than a half 
+co05:52:01fm: No moon observations expected. Waiting until 06:03:00 to continue schedule
+co06:03:01fm: No moon observations expected. Waiting until 06:03:00 to continue schedule - aborting focused moon measurement
+hk06:03:06 12 15 13 3.3 .42-99 7
+co06:03:07fm: Lunar phase is less than a half 
+co06:03:07fm: No moon observations expected. Waiting until 06:14:07 to continue schedule
+co06:14:07fm: No moon observations expected. Waiting until 06:14:07 to continue schedule - aborting focused moon measurement
+hk06:14:13 13 15 13 3.3 .42-99 6
+co06:14:13fm: Lunar phase is less than a half 
+co06:14:14fm: No moon observations expected. Waiting until 06:25:13 to continue schedule
+co06:25:14fm: No moon observations expected. Waiting until 06:25:13 to continue schedule - aborting focused moon measurement
+hk06:25:20 13 14 13 3.3 .39-99 6
+co06:25:20fm: Lunar phase is less than a half 
+co06:25:21fm: No moon observations expected. Waiting until 06:36:20 to continue schedule
+co06:36:21fm: No moon observations expected. Waiting until 06:36:20 to continue schedule - aborting focused moon measurement
+hk06:36:26 12 14 12 3.3 .39-99 6
+co06:36:27fm: Lunar phase is less than a half 
+co06:36:27fm: No moon observations expected. Waiting until 06:47:27 to continue schedule
+co06:47:27fm: No moon observations expected. Waiting until 06:47:27 to continue schedule - aborting focused moon measurement
+hk06:47:35 12 14 13 3.3 .39-99 7
+hpscan06:47:45 0 56062 10 87374 20 120422 30 154508 40 187690 50 217473 60 226720 70 227329 80 227485 90 227280 100 226805 110 216012 120 186101 130 152033 140 118397 150 86199 160 53837
+hp06:48:45 .9924942 237017.3 79.7 12
+hk06:48:59 12 14 13 3.3 .39-99 7
+co06:49:01hgfw2: HG FW#2 at step  0
+hk06:51:08 12 14 13 3.3 .39-99 8
+hgscan 0wide 302warm= 206:51:08JAN 02/19 159 176 1387 5147 9230 13979 19051 23844 28627 30368 31273 29407 25772 21855 17511 12712 7689 3556 2342 1598 1607 2394 3551 7893 13024 18334 23176 27598 31576 33669 33128 31295 26497 21065 15885 10541 5943 1585 200 201
+hg06:52:29 .9995 287.8833 288 64942 12 0
+hk06:57:35 12 14 13 3.3 .39-99 8
+sla 0 417.930620 635217 1 723033 817354 984246 1057909 1169377rat 1689.578 1146.07 320.7813 446.4688
+sla 0 418.610620 634077 3 721278 817131 982768 1055647 1167525rat 1690.777 1137.738 317.9258 448.9297
+sla 0 419.30620 632726 2 720873 816172 981543 1053706 1166820rat 1685.059 1134.742 315.2695 454.418
+sla 0 419.980620 634611 0 721213 816195 981025 1052960 1164890rat 1679.813 1131.453 314.4688 450.1836
+sla 0 420.660620 633186 0 720323 815503 980035 1053723 1164173rat 1688.5 1138.438 322.1836 444.2032
+sla 0 421.340620 633615 1 719571 815528 980167 1051892 1163960rat 1685.379 1130.563 313.8399 451.1289
+sla 0 422.020620 632635 1 718918 814331 979899 1052338 1164092rat 1691.27 1138.953 316.9453 449.75
+summary06:59:58JAN 02/19 83.754 7.425 12sl 0 1687 1137 317 449 249 214 720744.1 1165834 4 5 3 3 13 8 1340.7 2072.2
+co07:02:24ru: Running ru from SXFM line -132
+co07:02:25ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk07:02:30 12 15 13 3.3 .42-99 7
+co07:02:31fm: Lunar phase is less than a half 
+co07:02:32fm: No moon observations expected. Waiting until 07:13:31 to continue schedule
+co07:13:32fm: No moon observations expected. Waiting until 07:13:31 to continue schedule - aborting focused moon measurement
+hk07:13:37 13 15 13 3.3 .42-99 8
+co07:13:38fm: Lunar phase is less than a half 
+co07:13:38fm: No moon observations expected. Waiting until 07:24:38 to continue schedule
+co07:24:38fm: No moon observations expected. Waiting until 07:24:38 to continue schedule - aborting focused moon measurement
+hk07:24:44 13 15 13 3.3 .42-99 7
+co07:24:44fm: Lunar phase is less than a half 
+co07:24:45fm: No moon observations expected. Waiting until 07:35:45 to continue schedule
+co07:35:45fm: No moon observations expected. Waiting until 07:35:45 to continue schedule - aborting focused moon measurement
+hk07:35:51 13 15 13 3.3 .42-99 6
+co07:35:51fm: Lunar phase is less than a half 
+co07:35:52fm: No moon observations expected. Waiting until 07:46:51 to continue schedule
+co07:46:52fm: No moon observations expected. Waiting until 07:46:51 to continue schedule - aborting focused moon measurement
+hk07:46:57 13 14 13 3.3 .39-99 7
+co07:46:58fm: Lunar phase is less than a half 
+co07:46:58fm: No moon observations expected. Waiting until 07:57:58 to continue schedule
+co07:57:58fm: No moon observations expected. Waiting until 07:57:58 to continue schedule - aborting focused moon measurement
+hk07:58:04 12 14 12 3.3 .39-99 5
+co07:58:05fm: Lunar phase is less than a half 
+co07:58:05fm: No moon observations expected. Waiting until 08:09:05 to continue schedule
+co08:09:05fm: No moon observations expected. Waiting until 08:09:05 to continue schedule - aborting focused moon measurement
+hk08:09:12 12 14 12 3.3 .39-99 6
+hpscan08:09:22 0 56048 10 87724 20 120299 30 154830 40 188082 50 217725 60 226562 70 227270 80 227356 90 227491 100 227212 110 216653 120 186023 130 152504 140 118869 150 86189 160 54030
+hp08:10:22 .9922881 237108.3 79.7 12
+hk08:10:36 12 14 11 3.3 .39-99 6
+co08:10:39hgfw2: HG FW#2 at step  0
+hk08:12:45 12 14 12 3.3 .39-99 6
+hgscan 0wide 302warm= 208:12:46JAN 02/19 179 183 1351 5103 9225 13914 18987 23941 28542 30265 31013 29371 25780 21797 17381 12706 7770 3539 2378 1587 1592 2432 3598 7892 13093 18256 23270 27464 31452 33445 32836 31119 26324 21158 15806 10607 5994 1657 218 182
+hg08:14:07 .9995 287.8915 288 64458 12 0
+hk08:19:13 12 14 11 3.3 .39-99 6
+sla 0 499.560620 635773 0 724950 819262 984415 1059310 1170245rat 1683.762 1141.633 325.9141 443.8789
+sla 0 500.240620 635292 2 723925 817388 984437 1056421 1168855rat 1677.859 1139.613 313.6485 450.7344
+sla 0 500.920620 635421 4 722852 817143 983219 1056239 1168078rat 1683.645 1140.168 318.3828 448.5469
+sla 0 501.610620 634844 2 721766 816473 982468 1055075 1166168rat 1685.379 1138.899 316.8672 446.1367
+sla 0 502.290620 634152 4 721130 817317 981946 1054744 1166624rat 1687.871 1132.918 317.8399 449.2813
+sla 0 502.970620 634772 1 722332 816042 982404 1054863 1166310rat 1681.012 1140.332 316.2656 447.5742
+sla 0 503.650620 634438 1 721335 815684 981687 1054637 1166371rat 1686.164 1141.32 318.5547 448.7696
+summary08:21:36JAN 02/19 84.622 8.133001 12sl 0 1684 1139 318 448 251 219 722612.9 1167522 3 3 4 2 9 5 1413.3 1611.4
+co08:24:02ru: Running ru from SXFM line -132
+co08:24:03ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk08:24:08 12 14 11 3.3 .39-99 7
+co08:24:09fm: Lunar phase is less than a half 
+co08:24:09fm: No moon observations expected. Waiting until 08:35:09 to continue schedule
+co08:35:09fm: No moon observations expected. Waiting until 08:35:09 to continue schedule - aborting focused moon measurement
+hk08:35:15 12 14 12 3.3 .39-99 7
+co08:35:15fm: Lunar phase is less than a half 
+co08:35:16fm: No moon observations expected. Waiting until 08:46:15 to continue schedule
+co08:46:16fm: No moon observations expected. Waiting until 08:46:15 to continue schedule - aborting focused moon measurement
+co08:46:20ru: Running ru from SXFM line -92
+co08:46:22ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co08:46:23td: Running td from SXFM line -92
+co08:46:26td: Time correction  .2 seconds
+ap08:46:29 12.22 14.21 12.03 1302.31 9.94 4.44 10.07 20.21 .00 2.52 13.45 5.94 4.40 2.55 .00 .00 .04 .01 1.22 1.91 3.26 .39 1.93 2.13 12.22 14.22 12.22 1304.27 9.95 4.45 10.09 19.66 4.82 2.62 13.46 6.04 4.41 2.56 1.46 9.75 .42 9.56 2.77 2.56 3.26 .39 1.95 2.14
+hk08:47:09 12 14 12 3.3 .39-99 6
+co08:48:07uv: UV standard  scan started
+co08:55:45uv: UV standard  scan finished, incident DUV =  .1530029 mW/m^2
+hk08:55:51 12 14 12 3.3 .39-99 6
+hpscan08:56:14 0 55239 10 86326 20 118979 30 153539 40 186694 50 216588 60 225840 70 226393 80 226490 90 226197 100 226099 110 215807 120 185204 130 151805 140 118305 150 86256 160 53946
+hp08:57:14 .9921644 236131.2 79.8 12
+hk08:57:29 12 14 12 3.3 .39-99 5
+co08:57:31hgfw2: HG FW#2 at step  0
+hk08:59:38 12 14 12 3.3 .39-99 5
+hgscan 0wide 302warm= 208:59:38JAN 02/19 182 187 1600 6007 10806 16399 22290 27751 33343 35562 36720 34443 30263 25832 20585 15105 9246 4225 2887 1967 1946 2902 4398 9403 15432 21497 27022 31995 36483 38850 37936 35849 30295 24220 18062 12087 6737 1873 204 200
+hg09:00:59 .9995 288.1672 288 75570 12 0
+hk09:06:05 12 14 11 3.3 .39-99 7
+sla 0 546.440620 634444 0 721421 817077 982983 1055326 1167411rat 1688.539 1136.676 315.5977 449.8399
+sla 0 547.120620 633360 4 721127 816340 981195 1054610 1166204rat 1687.32 1137.652 320.6719 448.2422
+sla 0 547.80620 633706 1 721170 816009 981237 1053810 1165530rat 1683.672 1136.07 317.0977 449.0391
+sla 0 548.480620 632445 2 720779 814415 979373 1054419 1164808rat 1688.652 1147.297 328.1367 443.6953
+sla 0 549.160620 632129 3 720088 814636 980439 1053329 1164669rat 1688.281 1141.492 318.6836 447.7696
+sla 0 549.850620 633687 4 720387 815529 980124 1052612 1165370rat 1683.418 1133.606 317.082 453.4961
+sla 0 550.530620 632347 1 719429 814268 979995 1053507 1163490rat 1693.074 1144.246 321.4492 442.4961
+summary09:08:28JAN 02/19 86.196 9.616999 12sl 0 1688 1140 320 448 255 218 720628.8 1165355 3 5 4 4 15 9 741.1 1303
+hk09:11:00 12 14 11 3.3 .39-99 5
+co09:11:40uv: UV standard  scan started
+co09:19:17uv: UV standard  scan finished, incident DUV =  .231583 mW/m^2
+co09:19:20skc: Waiting until ZA = -90 now -91
+co09:29:21skc: Waiting until ZA = -90 now -90.8
+co09:39:22skc: Waiting until ZA = -90 now -90.6
+co09:44:39ru: Running ru from SXFM line -90
+co09:44:41ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co09:44:42td: Running td from SXFM line -90
+co09:44:45td: Time correction  .2 seconds
+co09:44:46au: Running au from SXFM line -90
+hk09:44:53 12 14 11 3.3 .39-99 5
+hpscan09:45:16 0 55859 10 87564 20 120655 30 154611 40 188661 50 217714 60 227048 70 227624 80 227690 90 227959 100 227870 110 216910 120 186457 130 152958 140 118782 150 86511 160 54115
+hp09:46:16 .9922717 237535.5 79.8 12
+hk09:46:30 12 14 11 3.3 .39-99 5
+co09:46:32hgfw2: HG FW#2 at step  0
+hk09:48:39 12 14 11 3.3 .39-99 5
+hgscan 0wide 302warm= 209:48:40JAN 02/19 173 178 1422 5210 9318 14198 19218 24057 29092 30753 31636 29965 26356 22506 17787 12976 7986 3689 2412 1659 1656 2482 3720 8088 13303 18889 23826 28050 32123 34261 33707 31921 26742 21482 16227 10777 6025 1691 193 189
+hg09:50:01 .9995 288.0371 288 65897 12 0
+hk09:50:16 12 14 11 3.3 .39-99 6
+co09:50:21ds: DS intensity too low ( 1/cy), skipping.
+co09:50:35zs: ZS intensity too low ( 208/cy), skipping.
+co09:50:42zs: ZS intensity too low ( 199/cy), skipping.
+hk09:50:46 12 14 11 3.3 .39-99 6
+co09:50:54gi: 02 01 19  2.428648
+gia0 591.170610 37 0 97 313 1008 2491 3637
+gia0 591.540610 34 1 103 318 1058 2515 3633
+gia0 591.910610 36 1 96 317 1014 2492 3641
+gia0 592.290610 38 0 99 299 1037 2523 3705
+gia0 592.660610 40 1 101 306 1032 2452 3640
+hk09:52:56 12 14 12 3.3 .39-99 6
+fza0 593.681620 1 75 228 763 1904 2734
+co09:53:59fz: FZ intensity too low => STOP
+co09:54:14zs: ZS intensity too low ( 204/cy), skipping.
+hk09:54:19 12 14 11 3.3 .39-99 6
+co09:54:27gi: 02 01 19  2.428648
+gia0 594.710610 37 0 101 311 1068 2558 3661
+gia0 595.090610 42 1 98 326 1072 2568 3743
+gia0 595.460610 27 0 101 336 1041 2543 3700
+gia0 595.840610 41 1 97 326 1036 2528 3767
+gia0 596.210610 33 1 97 321 1074 2535 3715
+co09:56:25ux: Running ux from SXFM line -90
+hk09:56:30 12 14 11 3.3 .39-99 6
+co09:56:56ux: UV extended  scan started
+co10:05:29ux: UV extended  scan finished, incident DUV =  .449791 mW/m^2
+co10:05:31au: Running au from SXFM line -90
+hk10:05:37 12 14 11 3.3 .39-99 5
+hpscan10:06:00 0 56980 10 88651 20 121632 30 156062 40 189418 50 218594 60 226912 70 228005 80 227490 90 228239 100 227825 110 216219 120 185293 130 151682 140 118356 150 85549 160 53339
+hp10:07:01 .9924036 237585.9 79.4 12
+hk10:07:15 12 14 11 3.3 .39-99 6
+co10:07:17hgfw2: HG FW#2 at step  0
+hk10:09:24 12 14 11 3.3 .39-99 6
+hgscan 0wide 302warm= 210:09:25JAN 02/19 177 178 1377 5294 9646 14569 19900 25091 29915 31935 32859 31226 27328 23261 18489 13522 8282 3816 2519 1700 1710 2534 3831 8424 13708 19233 24103 28756 32895 34794 33980 32169 27024 21786 16256 10899 6060 1585 204 197
+hg10:10:46 .9995 288.2077 288 67653 12 0
+hk10:11:00 12 14 11 3.3 .39-99 6
+co10:11:05ds: DS intensity too low ( 1/cy), skipping.
+co10:11:19zs: ZS intensity too low ( 224/cy), skipping.
+co10:11:26zs: ZS intensity too low ( 202/cy), skipping.
+hk10:11:30 12 14 11 3.3 .39-99 6
+co10:11:38gi: 02 01 19  2.428648
+gia0 611.90610 36 0 106 323 1078 2666 3901
+gia0 612.280610 35 0 110 323 1083 2643 3888
+gia0 612.650610 35 1 103 321 1074 2649 3871
+gia0 613.020610 34 2 96 331 1052 2670 3856
+gia0 613.390610 42 0 114 348 1109 2661 3814
+hk10:13:40 12 14 11 3.3 .39-99 6
+fza0 614.411620 4 60 220 732 1741 2542
+co10:14:43fz: FZ intensity too low => STOP
+co10:14:59zs: ZS intensity too low ( 216/cy), skipping.
+hk10:15:03 12 14 11 3.3 .39-99 6
+co10:15:11gi: 02 01 19  2.428648
+gia0 615.450610 41 0 107 336 1104 2690 3826
+gia0 615.820610 35 1 108 341 1064 2667 3856
+gia0 616.20610 34 0 99 338 1095 2674 3861
+gia0 616.570610 31 1 94 358 1106 2660 3867
+gia0 616.940610 39 0 109 341 1073 2680 3868
+co10:17:08ux: Running ux from SXFM line -90
+hk10:17:14 12 14 11 3.3 .39-99 5
+co10:17:39ux: UV extended  scan started
+co10:26:12ux: UV extended  scan finished, incident DUV =  .4578166 mW/m^2
+co10:26:16ru: Running ru from SXFM line  0
+co10:26:18ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co10:26:19td: Running td from SXFM line  0
+co10:26:23td: Time correction  .2 seconds
+co10:26:23au: Running au from SXFM line  0
+hk10:26:30 12 14 11 3.3 .39-99 5
+hpscan10:26:53 0 54005 10 85311 20 118251 30 152575 40 186488 50 216458 60 227162 70 227975 80 228315 90 228389 100 227678 110 218735 120 188517 130 155581 140 121225 150 88359 160 56657
+hp10:27:54 .9923689 237893.3 80.5 12
+hk10:28:08 12 14 11 3.3 .39-99 5
+co10:28:10hgfw2: HG FW#2 at step  0
+hk10:30:17 12 14 11 3.3 .39-99 5
+hgscan 0wide 302warm= 210:30:17JAN 02/19 171 190 1403 5253 9626 14760 20088 25141 30106 32032 32794 31277 27413 23347 18388 13472 8221 3859 2536 1693 1712 2558 3863 8425 13740 19296 24279 28581 32873 34757 34020 32120 27149 21633 16067 10894 5990 1603 199 191
+hg10:31:39 .9995 288.1946 288 67551 12 0
+hk10:31:53 12 14 11 3.3 .39-99 6
+co10:31:58ds: DS intensity too low ( 1/cy), skipping.
+co10:32:12zs: ZS intensity too low ( 209/cy), skipping.
+co10:32:19zs: ZS intensity too low ( 206/cy), skipping.
+hk10:32:24 12 14 11 3.3 .39-99 6
+co10:32:31gi: 02 01 19  2.428648
+gia0 632.790610 38 0 103 320 1066 2593 3767
+gia0 633.160610 33 0 100 298 1064 2543 3782
+gia0 633.530610 39 0 105 318 1072 2643 3826
+gia0 633.910610 38 0 103 322 1066 2590 3719
+gia0 634.280610 32 0 110 337 1075 2547 3826
+hk10:34:33 12 14 11 3.3 .39-99 6
+fza0 635.31620 0 36 110 382 955 1424
+fza0 635.921620 1 70 225 743 1694 2428rat-2354.766-1643.047-1516.422-3057.719
+fza0 636.511620 1 56 184 646 1515 2219rat-1158.539-910.5547-1357.922-2864.68
+fza0 637.11620 1 49 150 496 1257 1889rat-1846.859-873.7188-376.3203-2508.024
+summary10:36:30JAN 02/19 89.809 12.032 12fz 0-1787-1142-1084-2810 7206 4177-5.1 65.3 600 434 618 279 935 543 2.6 12.9
+co10:37:40zs: ZS intensity too low ( 202/cy), skipping.
+hk10:37:45 12 14 11 3.3 .39-99 5
+co10:37:53gi: 02 01 19  2.428648
+gia0 638.140610 32 0 97 309 1086 2538 3674
+gia0 638.520610 31 1 103 321 1063 2576 3765
+gia0 638.890610 35 1 103 320 1039 2541 3657
+gia0 639.260610 34 1 92 305 1067 2516 3603
+gia0 639.640610 34 0 96 312 1049 2506 3699
+co10:39:50ux: Running ux from SXFM line  0
+hk10:39:56 12 14 11 3.3 .39-99 6
+co10:40:21ux: UV extended  scan started
+co10:48:54ux: UV extended  scan finished, incident DUV =  .4251451 mW/m^2
+co10:48:56au: Running au from SXFM line  0
+hk10:49:03 12 14 11 3.3 .39-99 5
+hpscan10:49:26 0 57032 10 88835 20 122037 30 155855 40 189914 50 218711 60 227437 70 227957 80 227707 90 228009 100 227529 110 215691 120 185202 130 151262 140 118074 150 85326 160 52990
+hp10:50:26 .9924561 237586 79.3 12
+co10:50:38ru: Running ru from SXFM line  90
+co10:50:39ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co10:50:40td: Running td from SXFM line  90
+co10:50:44td: Time correction  .2 seconds
+hk10:50:50 12 14 11 3.3 .39-99 5
+co10:51:29uv: UV standard  scan started
+co10:59:10uv: UV standard  scan finished, incident DUV =  .297266 mW/m^2
+hk10:59:17 12 14 11 3.3 .39-99 6
+hpscan10:59:40 0 52565 10 84198 20 116721 30 151170 40 184845 50 215437 60 226587 70 227847 80 227529 90 227794 100 227019 110 219235 120 189188 130 155938 140 122077 150 89600 160 57348
+hp11:00:41 .9923589 237362 80.8 12
+hk11:00:55 12 14 11 3.3 .39-99 6
+co11:00:57hgfw2: HG FW#2 at step  0
+hk11:03:04 12 14 12 3.3 .39-99 6
+hgscan 0wide 302warm= 211:03:05JAN 02/19 171 173 1433 5358 9598 14565 19710 24871 29734 31610 32522 30723 26969 22992 18286 13301 8207 3783 2515 1693 1684 2554 3829 8371 13830 19175 24361 28827 32803 34913 34389 32467 27191 21875 16275 10958 6084 1633 189 203
+hg11:04:26 .9995 288.1054 288 67435 12 0
+hk11:09:33 12 14 12 3.3 .39-99 7
+sla 0 669.890620 636272 2 723817 819138 985298 1057883 1169505rat 1684.676 1136.305 315.9219 447.0625
+sla 0 670.570620 634558 0 722564 818238 982789 1056424 1167968rat 1686.184 1135.024 321.1133 447.3321
+sla 0 671.260620 634711 4 722608 816828 981821 1055689 1167089rat 1682.816 1139.566 322.3945 447.0742
+sla 0 671.940620 633891 2 721115 817464 982113 1055527 1166092rat 1691.27 1135.434 320.3828 443.9414
+sla 0 672.620620 633783 0 721167 815873 981027 1054415 1165595rat 1686.254 1139.359 320.6094 446.7305
+sla 0 673.30620 634316 1 721332 816094 980809 1054667 1164477rat 1686.305 1139.223 322.6602 441.3789
+sla 0 673.980620 633275 3 720949 815526 980132 1054042 1165122rat 1686.016 1139.672 323.0938 446.4961
+summary11:11:56JAN 02/19 93.911 9.329001 12sl 0 1686 1138 321 446 260 220 721936 1166550 3 2 2 2 9 4 1094.7 1759.5
+hk11:14:28 12 14 12 3.3 .39-99 7
+co11:15:07uv: UV standard  scan started
+co11:22:47uv: UV standard  scan finished, incident DUV =  .23348 mW/m^2
+co11:22:51skc: Waiting until ZA =  93 now  91.1
+co11:32:52skc: Waiting until ZA =  93 now  91.3
+co11:42:52skc: Waiting until ZA =  93 now  91.6
+co11:52:53skc: Waiting until ZA =  93 now  92
+co12:02:54skc: Waiting until ZA =  93 now  92.4
+co12:12:55skc: Waiting until ZA =  93 now  92.8
+co12:17:14ru: Running ru from SXFM line  93
+co12:17:16ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co12:17:17td: Running td from SXFM line  93
+co12:17:21td: Time correction  .2 seconds
+hk12:17:26 12 14 11 3.3 .39-99 6
+hpscan12:17:50 0 55989 10 87548 20 120545 30 154914 40 188585 50 217993 60 227871 70 228107 80 228381 90 228223 100 227424 110 217219 120 186512 130 152809 140 119118 150 86584 160 54567
+hp12:18:50 .9923639 237947.7 79.7 12
+hk12:19:04 12 14 11 3.3 .39-99 6
+co12:19:07hgfw2: HG FW#2 at step  0
+hk12:21:13 12 14 11 3.3 .39-99 6
+hgscan 0wide 302warm= 212:21:14JAN 02/19 176 188 1545 5469 9906 14957 20313 25824 30815 32673 33392 31590 27747 23630 18993 13667 8428 3802 2546 1754 1717 2645 3863 8429 13935 19408 24453 28988 33015 35245 34431 32646 27471 21792 16369 11038 6180 1708 194 200
+hg12:22:35 .9995 288.0784 288 68637 12 0
+hk12:27:42 12 14 11 3.3 .39-99 6
+sla 0 748.040620 637393 2 725942 820833 987261 1060929 1172964rat 1684.539 1139.957 319.8828 447.4492
+sla 0 748.730620 636774 3 723478 819320 986311 1059010 1170486rat 1691.496 1140.066 316.0938 446.0625
+sla 0 749.410620 636260 7 723198 818751 986258 1057473 1170228rat 1686.746 1136.676 309.8633 451.5508
+sla 0 750.090620 636243 2 723518 818897 984555 1058510 1168673rat 1689.149 1140.246 321.918 441.2383
+sla 0 750.770620 635432 1 723345 818071 983759 1056470 1168704rat 1681.602 1136.117 316.918 449.961
+sla 0 751.450620 635473 1 723008 818156 982980 1056118 1168790rat 1682.176 1134.184 318.961 451.7696
+sla 0 752.130620 634556 3 722854 817908 981831 1057417 1167532rat 1688.602 1141.004 329.6367 441.4805
+summary12:30:05JAN 02/19 100.453 5.028 12sl 0 1686 1138 319 447 256 219 723620.5 1169625 4 3 6 4 17 8 1071.7 1787.6
+co12:32:33skc: Waiting until ZA =  100 now  93.7
+co12:42:34skc: Waiting until ZA =  100 now  94.2
+co12:52:34skc: Waiting until ZA =  100 now  94.7
+co13:02:35skc: Waiting until ZA =  100 now  95.3
+co13:12:36skc: Waiting until ZA =  100 now  95.9
+co13:22:37skc: Waiting until ZA =  100 now  96.5
+co13:32:37skc: Waiting until ZA =  100 now  97.2
+co13:42:38skc: Waiting until ZA =  100 now  97.9
+co13:52:39skc: Waiting until ZA =  100 now  98.6
+co14:02:39skc: Waiting until ZA =  100 now  99.3
+co14:11:05skc: Next schedule will be SXFM (now SXFM ZS= 100 ZS= 100)
+co14:11:06ru: Running ru from SXFM line  100
+co14:11:08ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk14:11:13 12 13 11 3.3 .37-99 4
+co14:11:14fm: Lunar phase is less than a half 
+co14:11:14fm: No moon observations expected. Waiting until 14:22:14 to continue schedule
+co14:22:14fm: No moon observations expected. Waiting until 14:22:14 to continue schedule - aborting focused moon measurement
+hk14:22:20 12 13 10 3.3 .37-99 4
+co14:22:21fm: Lunar phase is less than a half 
+co14:22:21fm: No moon observations expected. Waiting until 14:33:21 to continue schedule
+co14:33:21fm: No moon observations expected. Waiting until 14:33:21 to continue schedule - aborting focused moon measurement
+hk14:33:27 12 13 11 3.3 .37-99 4
+co14:33:28fm: Lunar phase is less than a half 
+co14:33:28fm: No moon observations expected. Waiting until 14:44:28 to continue schedule
+co14:44:28fm: No moon observations expected. Waiting until 14:44:28 to continue schedule - aborting focused moon measurement
+hk14:44:34 12 14 12 3.3 .39-99 5
+co14:44:35fm: Lunar phase is less than a half 
+co14:44:35fm: No moon observations expected. Waiting until 14:55:35 to continue schedule
+co14:55:35fm: No moon observations expected. Waiting until 14:55:35 to continue schedule - aborting focused moon measurement
+hk14:55:41 12 14 11 3.3 .39-99 5
+co14:55:42fm: Lunar phase is less than a half 
+co14:55:42fm: No moon observations expected. Waiting until 15:06:42 to continue schedule
+co15:06:42fm: No moon observations expected. Waiting until 15:06:42 to continue schedule - aborting focused moon measurement
+hk15:06:48 12 14 11 3.3 .39-99 5
+co15:06:48fm: Lunar phase is less than a half 
+co15:06:49fm: No moon observations expected. Waiting until 15:17:49 to continue schedule
+co15:17:49fm: No moon observations expected. Waiting until 15:17:49 to continue schedule - aborting focused moon measurement
+hk15:17:57 12 14 11 3.3 .39-99 4
+hpscan15:18:06 0 56573 10 88100 20 121078 30 155363 40 188980 50 218479 60 226975 70 227796 80 227608 90 228063 100 227483 110 216830 120 185669 130 151944 140 118585 150 85812 160 53605
+hp15:19:07 .9920985 237564.7 79.6 12
+hk15:19:21 12 14 11 3.3 .39-99 4
+co15:19:23hgfw2: HG FW#2 at step  0
+hk15:21:30 12 14 11 3.3 .39-99 4
+hgscan 0wide 302warm= 215:21:31JAN 02/19 175 190 1380 5271 9546 14632 19847 25124 30097 32024 32509 30754 27052 22997 18263 13454 8251 3753 2494 1699 1704 2529 3730 8368 13676 18904 23959 28423 32454 34487 33809 31877 26823 21588 16013 10768 5989 1617 214 191
+hg15:22:52 .9995 288.0795 288 66996 12 0
+hk15:27:59 12 14 11 3.3 .39-99 4
+sla 0 928.330620 637421 0 725383 821528 987505 1059792 1173334rat 1683.16 1131.426 314 453.6407
+sla 0 929.010620 636364 2 724786 819136 986246 1060280 1171896rat 1688.859 1146.402 321.7383 446.1055
+sla 0 929.690620 636274 1 724606 818857 984889 1057596 1170000rat 1678.649 1136.609 316.5586 450.1641
+sla 0 930.370620 635865 2 723655 818292 984175 1057179 1169640rat 1682.695 1137.906 318.0235 450.5508
+sla 0 931.050620 635488 2 722292 818079 983898 1056659 1168597rat 1688.844 1136.875 317.082 448.7461
+sla 0 931.730620 634915 0 722795 817416 983293 1055757 1167868rat 1681.953 1136.656 316.0078 449.7735
+sla 0 932.420620 635543 0 722724 817071 982475 1056230 1167231rat 1684.387 1140.52 321.707 445.336
+summary15:30:22JAN 02/19 117.16 2.162 12sl 0 1684 1138 318 449 247 215 723748.8 1169795 4 5 3 3 11 8 1182.4 2189.4
+co15:32:48ru: Running ru from SXFM line  100
+co15:32:50ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk15:32:55 12 14 11 3.3 .39-99 3
+co15:32:55fm: Lunar phase is less than a half 
+co15:32:56fm: No moon observations expected. Waiting until 15:43:56 to continue schedule
+co15:43:56fm: No moon observations expected. Waiting until 15:43:56 to continue schedule - aborting focused moon measurement
+hk15:44:02 12 14 11 3.3 .39-99 5
+co15:44:02fm: Lunar phase is less than a half 
+co15:44:03fm: No moon observations expected. Waiting until 15:55:03 to continue schedule
+co15:55:03fm: No moon observations expected. Waiting until 15:55:03 to continue schedule - aborting focused moon measurement
+hk15:55:09 12 14 11 3.3 .39-99 3
+co15:55:09fm: Lunar phase is less than a half 
+co15:55:10fm: No moon observations expected. Waiting until 16:06:10 to continue schedule
+co16:06:10fm: No moon observations expected. Waiting until 16:06:10 to continue schedule - aborting focused moon measurement
+hk16:06:16 12 14 11 3.3 .39-99 4
+co16:06:16fm: Lunar phase is less than a half 
+co16:06:17fm: No moon observations expected. Waiting until 16:17:17 to continue schedule
+co16:17:17fm: No moon observations expected. Waiting until 16:17:17 to continue schedule - aborting focused moon measurement
+hk16:17:23 12 14 11 3.1 .37-99 4
+co16:17:23fm: Lunar phase is less than a half 
+co16:17:24fm: No moon observations expected. Waiting until 16:28:24 to continue schedule
+co16:28:24fm: No moon observations expected. Waiting until 16:28:24 to continue schedule - aborting focused moon measurement
+hk16:28:30 12 14 11 3.3 .39-99 3
+co16:28:30fm: Lunar phase is less than a half 
+co16:28:31fm: No moon observations expected. Waiting until 16:39:31 to continue schedule
+co16:39:31fm: No moon observations expected. Waiting until 16:39:31 to continue schedule - aborting focused moon measurement
+hk16:39:39 12 13 10 3.3 .37-99 3
+hpscan16:39:48 0 56456 10 88181 20 121256 30 155451 40 189327 50 217769 60 227527 70 227546 80 228280 90 227710 100 227614 110 216774 120 186161 130 151965 140 118344 150 86437 160 53635
+hp16:40:49 .9923361 237612.4 79.6 12
+hk16:41:03 12 14 10 3.3 .39-99 4
+co16:41:05hgfw2: HG FW#2 at step  0
+hk16:43:12 12 13 10 3.3 .37-99 3
+hgscan 0wide 302warm= 216:43:13JAN 02/19 168 186 1388 5107 9375 13989 19101 23986 28779 30626 31241 29770 26164 22087 17804 12958 7954 3690 2422 1637 1650 2448 3743 8083 13295 18752 23605 28014 31850 34025 33453 31339 26629 21408 16008 10726 5926 1638 204 178
+hg16:44:34 .9996 288.0601 288 65266 12 0
+hk16:49:41 12 13 10 3.3 .37-99 3
+sla 0 1010.030620 637336 1 726385 821339 987027 1060438 1172987rat 1679.781 1135.172 318.8711 449.5938
+sla 0 1010.710620 636139 3 724331 819461 986264 1059164 1171877rat 1686.938 1139.953 316.961 450.7266
+sla 0 1011.390620 636911 2 723764 819043 984790 1057403 1170360rat 1682.977 1134.785 316.1953 452.3516
+sla 0 1012.070620 635498 3 723639 818296 984508 1057653 1168529rat 1684.805 1139.899 318.5274 444.2969
+sla 0 1012.750620 635755 3 723352 817966 984465 1055646 1168451rat 1678.082 1133.211 310.25 452.4688
+sla 0 1013.440620 636048 2 722093 818802 983283 1057211 1167771rat 1692.391 1135.297 322.1992 443.2578
+sla 0 1014.120620 634477 1 722334 818452 984032 1056668 1167113rat 1688.617 1134.887 316.5195 443.0352
+summary16:52:04JAN 02/19 123.758 1.785 12sl 0 1685 1136 317 448 251 216 723699.7 1169584 5 3 4 4 18 7 1430.8 2212.1
+co16:54:30ru: Running ru from SXFM line  100
+co16:54:32ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk16:54:37 12 14 11 3.1 .37-99 3
+co16:54:37fm: Lunar phase is less than a half 
+co16:54:38fm: No moon observations expected. Waiting until 17:05:38 to continue schedule
+co17:05:38fm: No moon observations expected. Waiting until 17:05:38 to continue schedule - aborting focused moon measurement
+hk17:05:44 12 14 11 3.1 .37-99 3
+co17:05:45fm: Lunar phase is less than a half 
+co17:05:45fm: No moon observations expected. Waiting until 17:16:45 to continue schedule
+co17:16:45fm: No moon observations expected. Waiting until 17:16:45 to continue schedule - aborting focused moon measurement
+hk17:16:51 12 14 11 3.3 .39-99 3
+co17:16:52fm: Lunar phase is less than a half 
+co17:16:52fm: No moon observations expected. Waiting until 17:27:52 to continue schedule
+co17:27:52fm: No moon observations expected. Waiting until 17:27:52 to continue schedule - aborting focused moon measurement
+hk17:27:58 12 14 12 3.1 .37-99 5
+co17:27:59fm: Lunar phase is less than a half 
+co17:27:59fm: No moon observations expected. Waiting until 17:38:59 to continue schedule
+co17:38:59fm: No moon observations expected. Waiting until 17:38:59 to continue schedule - aborting focused moon measurement
+hk17:39:05 12 14 12 3.3 .39-99 5
+co17:39:06fm: Lunar phase is less than a half 
+co17:39:06fm: No moon observations expected. Waiting until 17:50:06 to continue schedule
+co17:50:06fm: No moon observations expected. Waiting until 17:50:06 to continue schedule - aborting focused moon measurement
+hk17:50:12 12 14 12 3.3 .39-99 5
+co17:50:13fm: Lunar phase is less than a half 
+co17:50:13fm: No moon observations expected. Waiting until 18:01:13 to continue schedule
+co18:01:13fm: No moon observations expected. Waiting until 18:01:13 to continue schedule - aborting focused moon measurement
+hk18:01:21 12 14 12 3.3 .39-99 6
+hpscan18:01:30 0 56498 10 87810 20 120809 30 154803 40 188451 50 217803 60 227000 70 227296 80 227761 90 227471 100 227366 110 216217 120 185676 130 151449 140 118491 150 85706 160 53659
+hp18:02:31 .9924183 237303.6 79.6 12
+hk18:02:45 12 14 12 3.3 .39-99 5
+co18:02:47hgfw2: HG FW#2 at step  0
+hk18:04:54 12 14 12 3.3 .39-99 5
+hgscan 0wide 302warm= 218:04:55JAN 02/19 175 177 1406 5048 9236 13978 18925 23936 28625 30487 31292 29669 25884 22121 17665 12759 7817 3625 2382 1614 1604 2343 3694 8001 13286 18614 23428 27760 31881 33690 33262 31301 26347 21274 15690 10658 6002 1622 196 203
+hg18:06:16 .9995 288.062 288 64982 12 0
+hk18:11:23 12 14 11 3.3 .39-99 3
+sla 0 1091.720620 636614 1 724281 819802 984906 1058860 1170273rat 1685.953 1136.824 321.8047 445.8867
+sla 0 1092.410620 635315 3 722846 818189 983830 1056975 1167572rat 1686.789 1137.613 318.7266 443.4961
+sla 0 1093.090620 635556 2 722155 817065 982890 1056529 1167445rat 1689.125 1141.813 321.0977 444.8907
+sla 0 1093.770620 634571 1 722413 817019 983139 1056063 1167254rat 1685.582 1140.106 318.0039 446.1289
+sla 0 1094.450620 635092 1 722061 816620 981429 1055741 1165237rat 1686.375 1140.91 324.3906 439.7578
+sla 0 1095.140620 633918 0 722061 816809 981156 1055468 1166311rat 1685.219 1138.727 324.4727 445.0313
+sla 0 1095.820620 634800 1 721693 816271 981754 1055302 1165773rat 1686.777 1140.949 321.0664 443.6641
+summary18:13:46JAN 02/19 128.493 1.598 12sl 0 1687 1140 321 444 265 224 722501.5 1167124 1 2 3 2 7 4 865.4 1611.4
+co18:16:12ru: Running ru from SXFM line  100
+co18:16:14ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk18:16:19 12 14 11 3.3 .39-99 3
+co18:16:20fm: Lunar phase is less than a half 
+co18:16:20fm: No moon observations expected. Waiting until 18:27:20 to continue schedule
+co18:27:20fm: No moon observations expected. Waiting until 18:27:20 to continue schedule - aborting focused moon measurement
+hk18:27:26 12 14 11 3.3 .39-99 3
+co18:27:27fm: Lunar phase is less than a half 
+co18:27:27fm: No moon observations expected. Waiting until 18:38:27 to continue schedule
+co18:38:27fm: No moon observations expected. Waiting until 18:38:27 to continue schedule - aborting focused moon measurement
+hk18:38:33 12 14 11 3.3 .39-99 3
+co18:38:33fm: Lunar phase is less than a half 
+co18:38:34fm: No moon observations expected. Waiting until 18:49:34 to continue schedule
+co18:49:34fm: No moon observations expected. Waiting until 18:49:34 to continue schedule - aborting focused moon measurement
+hk18:49:40 12 14 11 3.1 .37-99 3
+co18:49:40fm: Lunar phase is less than a half 
+co18:49:41fm: No moon observations expected. Waiting until 19:00:41 to continue schedule
+co19:00:41fm: No moon observations expected. Waiting until 19:00:41 to continue schedule - aborting focused moon measurement
+hk19:00:47 12 14 11 3.3 .39-99 5
+co19:00:47fm: Lunar phase is less than a half 
+co19:00:48fm: No moon observations expected. Waiting until 19:11:48 to continue schedule
+co19:11:48fm: No moon observations expected. Waiting until 19:11:48 to continue schedule - aborting focused moon measurement
+hk19:11:54 12 14 12 3.3 .39-99 5
+co19:11:55fm: Lunar phase is less than a half 
+co19:11:55fm: No moon observations expected. Waiting until 19:22:55 to continue schedule
+co19:22:55fm: No moon observations expected. Waiting until 19:22:55 to continue schedule - aborting focused moon measurement
+hk19:23:03 12 14 12 3.3 .39-99 6
+hpscan19:23:12 0 56297 10 87912 20 120945 30 155177 40 188825 50 217530 60 226789 70 227633 80 227241 90 227482 100 226989 110 216173 120 185056 130 151854 140 118567 150 85766 160 53484
+hp19:24:13 .9925024 237065.2 79.5 12
+hk19:24:27 12 14 12 3.3 .39-99 6
+co19:24:29hgfw2: HG FW#2 at step  0
+hk19:26:36 12 14 12 3.3 .39-99 6
+hgscan 0wide 302warm= 219:26:37JAN 02/19 156 179 1382 5063 9225 13839 19003 23673 28541 30492 31125 29366 25848 22085 17592 12775 7868 3606 2404 1586 1639 2345 3571 8009 13122 18406 23285 27753 31589 33668 32855 31185 26353 21032 15782 10646 5994 1603 192 181
+hg19:27:58 .9995 288.0451 288 64793 12 0
+hk19:33:05 12 14 12 3.3 .39-99 6
+sla 0 1173.430620 634787 3 723641 818875 985638 1058430 1169075rat 1688.059 1140.031 316.6953 443.1133
+sla 0 1174.110620 635067 2 721604 817570 982460 1056063 1167326rat 1690.535 1137.109 321.0742 446.4102
+sla 0 1174.790620 633787 2 721455 816469 982051 1056027 1167467rat 1691.293 1142.934 322.7735 447.0977
+sla 0 1175.470620 633079 2 721673 816057 981417 1054450 1166293rat 1683.305 1138.508 318.9961 449.2539
+sla 0 1176.150620 633363 2 721022 814603 980090 1055546 1165677rat 1691.914 1151.035 329.6406 442.2696
+sla 0 1176.830620 633123 2 721221 816031 980954 1053467 1164670rat 1681.914 1134.492 316.9297 447.1875
+sla 0 1177.520620 633267 2 720225 815284 981060 1052272 1164948rat 1682.965 1133.496 311.3985 453.3125
+summary19:35:28JAN 02/19 130.499 1.532 12sl 0 1687 1140 320 447 257 220 721548.8 1166494 4 6 6 4 15 9 1048.1 1580.1
+co19:37:54ru: Running ru from SXFM line  100
+co19:37:56ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk19:38:01 12 14 11 3.3 .39-99 5
+co19:38:01fm: Lunar phase is less than a half 
+co19:38:02fm: No moon observations expected. Waiting until 19:49:01 to continue schedule
+co19:49:02fm: No moon observations expected. Waiting until 19:49:01 to continue schedule - aborting focused moon measurement
+hk19:49:08 12 14 12 3.1 .37-99 5
+co19:49:08fm: Lunar phase is less than a half 
+co19:49:09fm: No moon observations expected. Waiting until 20:00:08 to continue schedule
+co20:00:09fm: No moon observations expected. Waiting until 20:00:08 to continue schedule - aborting focused moon measurement
+hk20:00:15 12 14 12 3.3 .39-99 6
+co20:00:15fm: Lunar phase is less than a half 
+co20:00:16fm: No moon observations expected. Waiting until 20:11:16 to continue schedule
+co20:11:16fm: No moon observations expected. Waiting until 20:11:16 to continue schedule - aborting focused moon measurement
+hk20:11:22 12 14 12 3.3 .39-99 6
+co20:11:22fm: Lunar phase is less than a half 
+co20:11:23fm: No moon observations expected. Waiting until 20:22:23 to continue schedule
+co20:22:23fm: No moon observations expected. Waiting until 20:22:23 to continue schedule - aborting focused moon measurement
+hk20:22:29 12 14 11 3.3 .39-99 5
+co20:22:29fm: Lunar phase is less than a half 
+co20:22:30fm: No moon observations expected. Waiting until 20:33:29 to continue schedule
+co20:33:30fm: No moon observations expected. Waiting until 20:33:29 to continue schedule - aborting focused moon measurement
+hk20:33:36 12 14 11 3.3 .39-99 6
+co20:33:36fm: Lunar phase is less than a half 
+co20:33:37fm: No moon observations expected. Waiting until 20:44:36 to continue schedule
+co20:44:37fm: No moon observations expected. Waiting until 20:44:36 to continue schedule - aborting focused moon measurement
+hk20:44:44 12 14 11 3.3 .39-99 5
+hpscan20:44:54 0 56271 10 87914 20 120511 30 155209 40 189189 50 217647 60 227154 70 227278 80 227477 90 227314 100 226790 110 216135 120 185600 130 152114 140 118638 150 85977 160 53736
+hp20:45:55 .9923511 237092.2 79.5 12
+hk20:46:09 12 14 11 3.3 .39-99 6
+co20:46:11hgfw2: HG FW#2 at step  0
+hk20:48:18 12 14 11 3.3 .39-99 5
+hgscan 0wide 302warm= 220:48:19JAN 02/19 171 178 1395 5143 9182 13840 18863 23761 28467 30158 31123 29254 25707 22004 17463 12554 7781 3533 2372 1603 1592 2399 3663 8007 13075 18271 23330 27415 31371 33597 33068 31085 26259 21185 15610 10513 5952 1673 205 192
+hg20:49:40 .9994 287.9716 288 64720 12 0
+hk20:54:47 12 14 11 3.3 .39-99 5
+sla 0 1255.120620 636985 4 724673 819732 985522 1059471 1171384rat 1686.145 1139.781 321.5938 447.5586
+sla 0 1255.80620 635602 4 723490 818085 983504 1056694 1169568rat 1681.672 1136.996 319.0235 452.3125
+sla 0 1256.490620 636172 1 722874 817446 984142 1056661 1167763rat 1685.285 1140.309 315.9844 445.5586
+sla 0 1257.170620 634554 1 722938 816414 982385 1056031 1166951rat 1682.238 1143.254 321.2852 445.0938
+sla 0 1257.850620 634585 1 721978 816646 982236 1056478 1165885rat 1690.004 1143.875 323.8399 439.1328
+sla 0 1258.530620 634257 4 721235 816383 982133 1056156 1166638rat 1693.195 1143.949 322.9531 443.3789
+sla 0 1259.210620 634545 1 721772 816117 982003 1054316 1166184rat 1682.121 1137.613 315.7656 449.4063
+summary20:57:09JAN 02/19 129.347 1.569 12sl 0 1686 1141 320 446 258 222 722708.6 1167768 4 3 3 4 17 9 1161.1 2048
+co20:59:36ru: Running ru from SXFM line  100
+co20:59:37ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk20:59:42 12 14 11 3.3 .39-99 6
+co20:59:43fm: Lunar phase is less than a half 
+co20:59:44fm: No moon observations expected. Waiting until 21:10:43 to continue schedule
+co21:10:44fm: No moon observations expected. Waiting until 21:10:43 to continue schedule - aborting focused moon measurement
+hk21:10:49 12 14 11 3.1 .37-99 5
+co21:10:50fm: Lunar phase is less than a half 
+co21:10:51fm: No moon observations expected. Waiting until 21:21:50 to continue schedule
+co21:21:51fm: No moon observations expected. Waiting until 21:21:50 to continue schedule - aborting focused moon measurement
+hk21:21:56 12 14 12 3.1 .37-99 4
+co21:21:57fm: Lunar phase is less than a half 
+co21:21:58fm: No moon observations expected. Waiting until 21:32:57 to continue schedule
+co21:32:58fm: No moon observations expected. Waiting until 21:32:57 to continue schedule - aborting focused moon measurement
+hk21:33:03 12 14 11 3.1 .37-99 5
+co21:33:04fm: Lunar phase is less than a half 
+co21:33:05fm: No moon observations expected. Waiting until 21:44:04 to continue schedule
+co21:44:05fm: No moon observations expected. Waiting until 21:44:04 to continue schedule - aborting focused moon measurement
+hk21:44:10 12 14 10 3.3 .39-99 5
+co21:44:11fm: Lunar phase is less than a half 
+co21:44:12fm: No moon observations expected. Waiting until 21:55:11 to continue schedule
+co21:55:12fm: No moon observations expected. Waiting until 21:55:11 to continue schedule - aborting focused moon measurement
+hk21:55:17 12 13 10 3.3 .37-99 5
+co21:55:18fm: Lunar phase is less than a half 
+co21:55:18fm: No moon observations expected. Waiting until 22:06:18 to continue schedule
+co22:06:19fm: No moon observations expected. Waiting until 22:06:18 to continue schedule - aborting focused moon measurement
+hk22:06:26 11 13 9 3.3 .37-99 4
+hpscan22:06:36 0 56487 10 88074 20 120802 30 155087 40 188841 50 218626 60 227303 70 228508 80 228420 90 228114 100 227833 110 216662 120 186314 130 152143 140 118704 150 86057 160 53580
+hp22:07:36 .9924263 238002.2 79.6 11
+hk22:07:50 11 13 8 3.1 .35-99 4
+co22:07:53hgfw2: HG FW#2 at step  0
+hk22:09:59 11 13 9 3.3 .37-99 4
+hgscan 0wide 302warm= 222:10:00JAN 02/19 187 173 1380 5058 9142 13802 18855 23647 28334 30119 30966 29443 25835 21752 17285 12610 7719 3518 2368 1598 1596 2373 3601 7949 13063 18341 23207 27245 31513 33619 32771 30967 26264 21019 15657 10616 5854 1639 210 186
+hg22:11:22 .9995 287.9978 288 64585 11 0
+hk22:16:28 11 13 9 3.1 .35-99 5
+sla 0 1336.820620 638677 4 725562 821379 988077 1061541 1172985rat 1689.344 1139.59 318.8203 445.0117
+sla 0 1337.50620 637712 4 724414 820735 985528 1059435 1172068rat 1687.496 1134.215 321.4727 450.3672
+sla 0 1338.180620 636320 1 724330 819685 986285 1059142 1170455rat 1686.766 1138.652 316.8164 445.4453
+sla 0 1338.860620 636389 1 724230 819188 984314 1057746 1169869rat 1681.492 1135.453 319.8281 449.0899
+sla 0 1339.540620 636066 3 723292 818895 983582 1057294 1170476rat 1685.328 1135.145 321.2383 453.3008
+sla 0 1340.220620 635483 5 723097 818344 984752 1057119 1168504rat 1685.785 1137.387 315.211 446.5117
+sla 0 1340.90620 635861 3 722987 816908 984320 1055352 1167456rat 1679 1137.715 309.7149 449.9532
+summary22:18:51JAN 02/19 125.331 1.717 11sl 0 1685 1137 318 449 250 216 723987.5 1170259 4 2 4 3 12 8 893.8 1922.2ed
+co22:21:19b0: Running b0 from SXFM line -200
+co22:21:20o3: Running o3 from SXFM line -200
+co22:21:24af: Running af from SXFM line -200
+co22:21:24af: Auto FR/HP/HG is now OFF
+co22:21:25ozsum: Running ozsum from SXFM line -200
+co22:21:37aodsum: Running aodsum from SXFM line -200
+co22:21:47uvsum: Running uvsum from SXFM line -200
+co22:22:25fmsum: Running fmsum from SXFM line -200
+co22:22:38fzsum: Running fzsum from SXFM line -200
+co22:22:54slsum: Running slsum from SXFM line -200
+co22:23:09rl: Running rl from SXFM line -200
+co22:23:13rl:  2019  001  23 08 05   Reset Warm -> Tepid  from  2019  001  23 08 00   until  2019  001  23 08 00  . Counts: 1,0
+co22:23:14rl:  2019  001  23 08 07   Motor #11: appears stuck with a reference sensor activated. 
+co22:23:17rl:  2019  001  23 09 07   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.947081 Volts.
+co22:23:19rl:  2019  001  23 09 07   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.446614 Volts.
+co22:23:21rl:  2019  001  23 09 07   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.078480 Volts.
+co22:23:24rl:  2019  001  23 09 07   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.855545 Volts.
+co22:23:26rl:  2019  001  23 09 07   New value set for watermark SUPPLY.VOLTAGE.LOW[+5VSEC]: 4.408977 Volts.
+co22:23:29rl:  2019  001  23 09 07   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 2.558801 Volts.
+co22:23:31rl:  2019  001  23 09 12   New value set for watermark SUPPLY.VOLTAGE.LOW[+5VSEC]: 4.403600 Volts.
+co22:23:33rl:  2019  001  23 09 56   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.435861 Volts.
+co22:23:36rl:  2019  001  23 21 45   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.663937 Volts.
+co22:23:38rl:  2019  001  23 21 48   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.934861 Volts.
+co22:23:40rl:  2019  001  23 21 52   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.639988 Volts.
+co22:23:43rl:  2019  001  23 22 12   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.616035 Volts.
+co22:23:45rl:  2019  001  23 22 14   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.090702 Volts.
+co22:23:47rl:  2019  001  23 22 17   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 2.564178 Volts.
+co22:23:50rl:  2019  001  23 22 25   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.592083 Volts.
+co22:23:52rl:  2019  001  23 23 18   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.922641 Volts.
+co22:23:54rl:  2019  001  23 25 34   New value set for watermark LOOP.RUN.TIME: 768.000031 millisec.
+co22:23:56rl:  2019  001  23 32 39   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.910420 Volts.
+co22:23:59rl:  2019  001  23 32 41   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.102921 Volts.
+co22:24:01rl:  2019  001  23 32 41   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 2.569555 Volts.
+co22:24:03rl:  2019  001  23 33 14   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.430484 Volts.
+co22:24:06rl:  2019  001  23 44 58   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.898201 Volts.
+co22:24:08rl:  2019  001  23 54 03   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.568132 Volts.
+co22:24:11rl:  2019  001  23 54 53   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.115142 Volts.
+co22:24:13rl:  2019  001  23 54 57   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.544182 Volts.
+co22:24:14rl:  2019  002  23 15 04  PMT counter failure
+co22:24:16rl:  All log items reported.
+co22:24:19chk_cfg: Running chk_cfg from SXFM line -200
+co22:24:22chk_cfg: VERSION.FW[VERS]=2
+co22:24:23chk_cfg: VERSION.FW[REL]=2
+co22:24:24chk_cfg: MOTOR.MAX.ACC[10]=1600
+co22:24:25chk_cfg: MOTOR.MAX.ACC[9]=1600
+co22:24:27chk_cfg: MOTOR.MAX.VEL[10]=16
+co22:24:28chk_cfg: MOTOR.MAX.VEL[9]=16
+co22:24:29chk_cfg: MOTOR.MAX.JERK[10]=(symbol not found)
+co22:24:31chk_cfg: MOTOR.MAX.JERK[9]=(symbol not found)
+co22:24:32chk_cfg: MOTOR.MAX.POS[10]=1383
+co22:24:33chk_cfg: MOTOR.MAX.POS[9]=1381
+co22:24:35chk_cfg: MOTOR.MIN.POS[10]=-9148
+co22:24:36chk_cfg: MOTOR.MIN.POS[9]=-9188
+co22:24:37chk_cfg: MOTOR.SLOPE[10]=1
+co22:24:38chk_cfg: MOTOR.SLOPE[9]=1
+co22:24:39chk_cfg: MOTOR.REF.PLAY[10]=65436
+co22:24:41chk_cfg: MOTOR.REF.PLAY[9]=65436
+co22:24:42chk_cfg: MOTOR.MAX.SEARCH[10]=12500
+co22:24:43chk_cfg: MOTOR.MAX.SEARCH[9]=12500
+co22:24:45chk_cfg: MOTOR.INITIAL[10]=284
+co22:24:46chk_cfg: MOTOR.INITIAL[9]=284
+co22:24:47chk_cfg: MOTOR.ORIGIN[10]=-6646
+co22:24:48chk_cfg: MOTOR.ORIGIN[9]=-6697
+co22:24:50chk_cfg: MOTOR.SLOW.VEL[10]=1
+co22:24:51chk_cfg: MOTOR.SLOW.VEL[9]=1
+co22:24:52chk_cfg: MOTOR.RESET.POS[10]=-1440
+co22:24:53chk_cfg: MOTOR.RESET.POS[9]=-1440
+co22:24:56rtn_date: Running rtn_date from SXFM line -200
+vers22:24:57AB_SK.RTN10000 REM ************ ab_sk.rtn 02/12/2010 09:50:00 ************
+vers22:24:58AF.RTN10000 REM ************ af.rtn 02/12/2010 09:50:34 ************
+vers22:24:59AN.RTN10000 REM ************ an.rtn 02/12/2010 09:50:34 ************
+vers22:25:00AODSUM.RTN10000 REM ************ aodsum.rtn 02/12/2010 09:50:00 ************
+vers22:25:00AP.RTN10000 REM ************ ap.rtn 31/10/2017 09:50:00 ************
+vers22:25:01APSUM.RTN10000 REM ************ apsum.rtn 02/12/2010 09:50:00 ************
+vers22:25:02AP_2015.RTN10000 REM *************** ap routine 01/12/12 ******************
+vers22:25:03AP_OLD.RTN10000 REM *************** ap routine 28/06/99 ******************
+vers22:25:03AP_OLD~1.RTN10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
+vers22:25:04AP_PAVEL.RTN10000 REM *************** ap routine 28/06/99 ******************
+vers22:25:05AP_WRONG.RTN10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
+vers22:25:05AR.RTN10000 REM ************ ar.rtn 02/12/2010 09:50:00 ************
+vers22:25:06AS.RTN10000 REM ************ as.rtn 02/12/2010 09:50:00 ************
+vers22:25:07AU.RTN10000 REM ************ au.rtn 02/12/2010 09:50:00 ************
+vers22:25:08AUTO-OFF.RTN10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers22:25:08AUTO-ON.RTN10000 REM ************ auto-on.rtn 05/03/2011 19:47:08 ************
+vers22:25:09AUTO.RTN10000 REM ************ auto.rtn 03/08/2016 09:15:00 ************
+vers22:25:10AZ.RTN10000 REM ************ az.rtn 02/12/2010 09:50:00 ************
+vers22:25:11BP.RTN10000 REM ********************** bp routine 26/11/97 ********************
+vers22:25:11CA.RTN10000 REM ************ ca.rtn 09/04/2011 09:50:00 ************
+vers22:25:12CAL.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:13CALDS.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:14CALSC.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:14CALUV.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:15CB.RTN10000 REM ************ cb.rtn 02/12/2010 09:50:00 ************
+vers22:25:16CC.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:17CD.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:17CF.RTN10000 REM ************ cf.rtn 02/12/2010 09:50:00 ************
+vers22:25:18CHECKAZ.RTN10000 REM ************ checkaz.rtn 02/12/2010 09:50:00 ************
+vers22:25:19CHECKHG.RTN10000 REM ************ checkhg.rtn 02/12/2010 09:50:00 ************
+vers22:25:20CHK_CFG.RTN10000 REM ************ chk_cfg.rtn 31/01/2013 21:00:00 ************
+vers22:25:20CHK_COD.RTN10000 REM ************ chk_cod.rtn 08/11/2013 21:00:00 ************
+vers22:25:21CI.RTN10000 REM ************ ci.rtn 02/12/2010 09:50:00 ************
+vers22:25:22CJ.RTN10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
+vers22:25:23CJ_201~1.RTN10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
+vers22:25:23CL.RTN10000 REM this routine records a uvb scan  MKIII     *** cl routine 250595 ***
+vers22:25:24CL_OLD.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:25CM.RTN10000 REM ********************* ci routine 19/11/08 *******************
+vers22:25:25CN.RTN10000 REM ************ cn.rtn 02/12/2010 09:50:00 ************
+vers22:25:26COPYOF~1.RTN10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers22:25:27CR.RTN10000 REM ************ cr.rtn 02/12/2010 09:50:00 ************
+vers22:25:28CS.RTN10000 REM ************ cs.rtn 02/12/2010 09:50:00 ************
+vers22:25:28CU.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:25:29CX.RTN10000 REM ************ cx.rtn 02/12/2010 09:50:00 ************
+vers22:25:30CZ1.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:31CZ2.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:31CZ3.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:32CZ4.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:33CZ5.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:34CZ_(2)~1.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:34CZ_.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers22:25:35DA_LO.RTN10000 REM ************ da_lo.rtn 28/03/2011 16:01:18 ************
+vers22:25:36DB.RTN10000 REM ************ db.rtn 02/12/2010 09:50:00 ************
+vers22:25:37DD.RTN10000 REM this routine records a uvb scan  MKIII     *** cl routine 250595 ***
+vers22:25:37DI.RTN10000 REM ************ di.rtn 02/12/2010 09:50:00 ************
+vers22:25:38DIMDS-ON.RTN10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers22:25:39DIMDS-~1.RTN10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers22:25:40DK.RTN10000 REM ************ dk.rtn 05/02/2013 11:00:00 ************
+vers22:25:40DP.RTN10000 REM ************ dp.rtn 02/12/2010 09:50:00 ************
+vers22:25:41DQ.RTN10000 REM ****************** dq routine 21/01/12 **********************
+vers22:25:42DS.RTN10000 REM ************ ds.rtn 15/04/2015 11:45:00 ************
+vers22:25:43DSP.RTN10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers22:25:43DSP1.RTN10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
+vers22:25:44DSP1_2~1.RTN10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
+vers22:25:45DSP1_V~1.RTN10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
+vers22:25:45DSPN2.RTN10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers22:25:46DSP_VO~1.RTN10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers22:25:47DSSUM.RTN10000 REM ************ dssum.rtn 02/12/2010 09:50:00 ************
+vers22:25:48DS_180~1.RTN10000 REM ************ ds.rtn 15/04/2015 11:45:00 ************
+vers22:25:48DT.RTN10000 REM ************ dt.rtn 20/06/2014 09:50:00 ************
+vers22:25:49DUSUM.RTN10000 REM ************ dusum.rtn 02/12/2010 09:50:00 ************
+vers22:25:50DZ.RTN10000 REM ****************** dz routine 15/March/2011 **********************
+vers22:25:51ED.RTN10000 REM ************ ed.rtn 24/03/2011 19:47:10 ************
+vers22:25:51EG.RTN10000 REM ************ ec.rtn 12/05/2015 09:50:00 ************
+vers22:25:52ENDDAY.RTN10000 REM ************ endday.rtn 02/12/2010 09:50:00 ************
+vers22:25:53END_DAY.RTN10000 REM ************ end_day.rtn 10/05/2011 14:00:00 ************
+vers22:25:54FC.RTN10000 REM ************ fc.rtn 05/04/2013 09:50:00 ************
+vers22:25:54FI-NOR.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers22:25:55FI.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers22:25:56FI_201~1.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers22:25:57FI_SOD.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers22:25:57FI_SPE~1.RTN10000 REM ************ fi.rtn 11/11/2011 For Andover Filters 1-4 testing line 11019 chg for 1-5 postion to 10 cycles *
+vers22:25:58FL.RTN10000 REM ************ fl.rtn 02/12/2010 09:50:00 ************
+vers22:25:59FM.RTN10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
+vers22:26:00FMSUM.RTN10000 REM ************ fmsum.rtn 02/12/2010 09:50:00 ************
+vers22:26:00FM_OLD.RTN10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
+vers22:26:01FR--.RTN10000 REM ************ fr.rtn 02/12/2010 09:50:00 ************
+vers22:26:02FR.RTN10000 REM ****************** fr routine 12/08/98 *********************
+vers22:26:03FRNEW.RTN10000 REM ************ fr.rtn 09/04/2012 09:50:00 ************
+vers22:26:03FV-.RTN10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers22:26:04FV.RTN10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers22:26:05FW.RTN10000 REM ************ fw.rtn 02/12/2010 09:50:00 ************
+vers22:26:05FW3TEST.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers22:26:06FZ.RTN10000 REM ************ fz.rtn 02/12/2010 09:50:00 ************
+vers22:26:07FZSUM.RTN10000 REM ************ fzsum.rtn 02/12/2010 09:50:00 ************
+vers22:26:08G1.RTN10000 REM ************ g1.rtn 02/12/2010 09:50:00 ************
+vers22:26:08G5.RTN10000 REM ************ g5.rtn 02/12/2010 09:50:00 ************
+vers22:26:09GA.RTN10000 REM ************ ga.rtn 20/02/2015 09:50:00 ************
+vers22:26:10GI.RTN10000 REM ************ gi.rtn 02/12/2010 09:50:00 ************
+vers22:26:11GS.RTN10000 REM ************ gs.rtn 02/12/2010 09:50:00 ************
+vers22:26:11HG.RTN10000 REM ************ hg.rtn 29/03/2011 10:05:48 ************
+vers22:26:12HGN.RTN10000 REM ************ hgn.rtn 02/12/2010 09:50:00 ************
+vers22:26:13HGSUM.RTN10000 REM ************ hgsum.rtn 24/11/2013 09:50:00 ************
+vers22:26:14HL.RTN10000 REM ************ hl.rtn 24/06/2014 19:47:10 ************
+vers22:26:14HP.RTN10000 REM ************ hp.rtn 29/03/2011 09:33:00 ************
+vers22:26:15HS.RTN10000 REM ************ hs.rtn 26/09/2012 19:47:10 ************
+vers22:26:16HV.RTN10000 REM ************ hv.rtn 02/12/2010 09:50:00 ************
+vers22:26:17HVB.RTN10000 REM ************ hvb.rtn 19/07/2014 15:00:00 ************
+vers22:26:17HVSET.RTN10000 REM ************ hvset.rtn 02/12/2010 09:50:00 ************
+vers22:26:18IC.RTN10000 REM ************ ic.rtn 02/12/2010 09:50:00 ************
+vers22:26:19INIT.RTN10000 REM ************ init.rtn 02/12/2010 09:50:00 ************
+vers22:26:20JD.RTN10000 REM ************ jd.rtn 02/12/2010 09:50:00 ************
+vers22:26:20JG.RTN10000 REM ****************** jg routine 04/02/14 **********************
+vers22:26:21KA.RTN10000 REM ********************* ka routine 12/13/06 *******************
+vers22:26:22KB.RTN10000 REM ********************* kb routine 12/13/06 *******************
+vers22:26:22KC.RTN10000 REM ********************* kc routine 12/13/06 *******************
+vers22:26:23KD.RTN10000 REM ********************* kd routine 12/13/06 *******************
+vers22:26:24KE.RTN10000 REM ********************* ke routine 12/13/06 *******************
+vers22:26:25KF.RTN10000 REM ********************* kf routine 12/13/06 *******************
+vers22:26:25KG.RTN10000 REM ********************* kg routine 12/13/06 *******************
+vers22:26:26KH.RTN10000 REM ********************* kh routine 12/13/06 *******************
+vers22:26:27LF.RTN10000 REM ************ lf.rtn 02/12/2010 09:50:00 ************
+vers22:26:28LL.RTN10000 REM ********************** ll routine 29/07/10 ********************
+vers22:26:28LZ.RTN10000 REM ************ lz.rtn 02/12/2010 09:50:00 ************
+vers22:26:29MM.RTN10000 REM ********************* mm routine 03/09/10 *******************
+vers22:26:30NC.RTN10000 REM ************ nc.rtn 02/12/2010 09:50:00 ************
+vers22:26:31NEWINST.RTN10000 REM ************ newinst.rtn 02/12/2010 09:50:00 ************
+vers22:26:31NI_SOD.RTN10000 REM ************ ni.rtn 02/12/2010 09:50:00 ************
+vers22:26:32NOSUM.RTN10000 REM ************ nosum.rtn 02/12/2010 09:50:00 ************
+vers22:26:33NT.RTN10000 REM ******************* nt routine 26/11/03 ***********************
+vers22:26:34OZSUM.RTN10000 REM ************ ozsum.rtn 02/12/2010 09:50:00 ************
+vers22:26:34PB.RTN10000 REM ************ pb.rtn 02/12/2010 09:50:00 ************
+vers22:26:35PC.RTN10000 REM ************ pc.rtn 02/12/2010 09:50:00 ************
+vers22:26:36PO.RTN10000 REM ************ po.rtn 24/06/2014 09:50:00 ************
+vers22:26:37QL.RTN10000 REM ************ ql.rtn 07/04/2011 14:00:00 ************
+vers22:26:37RE-MB.RTN10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers22:26:38RE-MB_.RTN10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers22:26:39RE-SB.RTN10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
+vers22:26:40RE.RTN10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
+vers22:26:40REP.RTN10000 REM ************ rep.rtn 02/12/2010 09:50:00 ************
+vers22:26:41RE_MB_~1.RTN10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers22:26:42RL.RTN10000 REM ************ rl.rtn 21/04/2012 11:00:00 ************
+vers22:26:42RS.RTN10000 REM ************ rs.rtn 02/12/2010 09:50:00 ************
+vers22:26:43RU.RTN10000 REM ************ ru.rtn 04/08/2016 10:00:00 ************
+vers22:26:44SA.RTN10000 REM ************ sa.rtn 02/12/2010 09:50:00 ************
+vers22:26:45SAVEALL.RTN10000 REM ************ saveall.rtn 02/12/2010 09:50:00 ************
+vers22:26:45SAVEDH.RTN10000 REM ************ savedh.rtn 02/12/2010 09:50:00 ************
+vers22:26:46SC-FULL.RTN10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers22:26:47SC.RTN10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers22:26:48SC_OLD.RTN10000 REM ********************* sc routine June 9 /03 *********************
+vers22:26:48SC_X.RTN10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers22:26:49SD.RTN10000 REM ************ sd.rtn 02/12/2010 09:50:00 ************
+vers22:26:50SE.RTN10000 REM ************ se.rtn 02/12/2010 09:50:00 ************
+vers22:26:51SH.RTN10000 REM ************ sh.rtn 02/12/2010 09:50:00 ************
+vers22:26:51SI.RTN10000 REM ************ si.rtn 24/06/2014 19:47:08 ************
+vers22:26:52SIM.RTN10000 REM ************ sim.rtn 16/01/2014 09:50:00 ************
+vers22:26:53SI_NEW.RTN10000 REM ************ si.rtn 16/12/2010 19:47:08 ************
+vers22:26:54SK.RTN10000 REM ************ sk.rtn 02/12/2010 09:50:00 ************
+vers22:26:54SKC-NOR.RTN10000 REM ************ skc.rtn 05/03/2011 19:47:08 ************
+vers22:26:55SKC.RTN10000 REM ************ skc.rtn 03/02/2015 19:47:08 ************
+vers22:26:56SKC_41~1.RTN10000 REM ************ skc.rtn 10/04/2012 19:47:08 ************
+vers22:26:57SKC_NOAZ.RTN10000 REM ******************* skc routine 23/07/98 ********************
+vers22:26:57SL.RTN10000 REM ************ sl.rtn 24/06/2014 09:50:00 ************
+vers22:26:58SLSUM.RTN10000 REM ************ slsum.rtn 02/12/2010 09:50:00 ************
+vers22:26:59SQ.RTN10000 REM ****************** sq routine 21/01/12 **********************
+vers22:27:00SR.RTN10000 REM ************ sr.rtn 01/04/2011 12:00:00 ************
+vers22:27:00SS.RTN10000 REM ***************** ss routine 21/04/98 *********************
+vers22:27:01ST.RTN10000 REM ************ st.rtn 02/12/2010 09:50:00 ************
+vers22:27:02SUM.RTN10000 REM ************ sum.rtn 02/12/2010 09:50:00 ************
+vers22:27:03SW.RTN10000 REM ************ sw.rtn 13/12/2010 09:50:00 ************
+vers22:27:03TCSUM.RTN10000 REM ************ tcsum.rtn 02/12/2010 09:50:00 ************
+vers22:27:04TD.RTN10000 REM ************ td.rtn 10/03/2014 09:40:00 ************
+vers22:27:05TESTFW2.RTN10000 REM ************ testfw2.rtn 02/12/2010 09:50:00 ************
+vers22:27:06TF.RTN10000 REM ************ testfw2.rtn 06/12/2012 09:50:00 ************
+vers22:27:06TT.RTN10000 REM ************ tt.rtn 02/12/2010 09:50:00 ************
+vers22:27:07TU.RTN10000 REM ************ tu.rtn 02/12/2010 09:50:00 ************
+vers22:27:08U5.RTN10000 REM ************ u5.rtn 02/12/2010 09:50:00 ************
+vers22:27:08UB.RTN10000 REM ************ ub.rtn 02/12/2010 09:50:00 ************
+vers22:27:09UL.RTN10000 REM ************ ul.rtn 02/12/2010 09:50:00 ************
+vers22:27:10UM-.RTN10000 REM ********************* um routine 19/10/98 *******************
+vers22:27:11UM-NOR.RTN10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers22:27:11UM.RTN10000 REM ********************* um routine 17/06/15 *******************
+vers22:27:12UM_017.RTN10000 REM ********************* um routine 10/09/03 for #017 *******************
+vers22:27:13UM_201~1.RTN10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers22:27:14UM_201~2.RTN10000 REM ********************* um routine 17/06/15 *******************
+vers22:27:14UM_ORIG.RTN10000 REM ********************* um routine 10/09/03 for #017 *******************
+vers22:27:15UM_TK.RTN10000 REM ********************* um routine 17/06/15 *******************
+vers22:27:16UQ.RTN10000 REM ************ uq.rtn 02/12/2010 09:50:00 ************
+vers22:27:17UV-.RTN10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
+vers22:27:17UV-SPAIN.RTN10000 REM ******************* uv routine 12/09/05 ********************
+vers22:27:18UV.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers22:27:19UVSUM.RTN10000 REM ************ uvsum.rtn 02/12/2010 09:50:00 ************
+vers22:27:20UV_28~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
+vers22:27:20UV_5MI~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
+vers22:27:21UV_ALB~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
+vers22:27:22UV_BAC~1.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers22:27:23UV_EL1.RTN10000 REM ******************* uv routine 12/09/05 ********************
+vers22:27:23UV_EL_~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
+vers22:27:24UV_HUE~1.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers22:27:25UV_NOR.RTN10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
+vers22:27:25UV_SOD.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers22:27:26VE.RTN10000 REM ************ ve.rtn 23/04/2014 11:10:00 ************
+vers22:27:27W0.RTN10000 REM ************ w0.rtn 02/12/2010 09:50:00 ************
+vers22:27:28W1.RTN10000 REM ************ w1.rtn 02/12/2010 09:50:00 ************
+vers22:27:28W2.RTN10000 REM ************ w2.rtn 02/12/2010 09:50:00 ************
+vers22:27:29W3.RTN10000 REM ************ w3.rtn 02/12/2010 09:50:00 ************
+vers22:27:30W4.RTN10000 REM ************ w4.rtn 02/12/2010 09:50:00 ************
+vers22:27:31XL-COP~1.RTN10000 REM ************** xl routine 14/09/98 *****************
+vers22:27:31XL.RTN10000 REM ************ xl.rtn 29/05/2018 11:00:00 ************
+vers22:27:32XL_410.RTN10000 REM ************ xl.rtn 02/12/2010 09:50:00 ************
+vers22:27:33XX.RTN10000 REM ************** XX routine 01/06/15 *****************
+vers22:27:34ZB.RTN10000 REM ************ zb.rtn 02/12/2010 09:50:00 ************
+vers22:27:34ZC.RTN10000 REM ************ zc.rtn 02/12/2010 09:50:00 ************
+vers22:27:35ZE.RTN10000 REM ************ ze.rtn 02/12/2010 09:50:00 ************
+vers22:27:36ZF.RTN10000 REM ************ zf.rtn 01/04/2011 12:00:00 ************
+vers22:27:37ZL.RTN10000 REM ************ zl.rtn 02/12/2010 09:50:00 ************
+vers22:27:37ZLSUM.RTN10000 REM ************ zlsum.rtn 02/12/2010 09:50:00 ************
+vers22:27:38ZP.RTN10000 REM ************ zp.rtn 02/12/2010 09:50:00 ************
+vers22:27:39ZS.RTN10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
+vers22:27:40ZSSUM.RTN10000 REM ************ zssum.rtn 10/05/2011 09:50:00 ************
+vers22:27:40ZS_180~1.RTN10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
+vers22:27:41ZWSUM.RTN10000 REM ************ zwsum.rtn 10/05/2011 09:50:00 ************
+co22:27:42hgsum: Running hgsum from SXFM line -200

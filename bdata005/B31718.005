@@ -1,0 +1,209 @@
+version=2
+dh121118Thessaloniki 40.634 -22.956  3.49pr1000
+co22:12:19dh: day header
+co22:12:19main: version 4.1007/04/2015 15:00:00
+co22:12:19skc: 
+co22:12:19autohg:  1 
+co22:12:19hifw2:  0 
+co22:12:19attn:  25000  80000 
+co22:12:19lowds:  1 
+co22:12:19cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025020000000000426975.3025600172112July 12/04EXTRAS1002500080000110010-19-2018@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf25718zsfvaldcf15317uvres121118Thessaloniki40.634-22.95610003.491475-114676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co09:54:39menu: Brewer failed to respond 5 times
+co09:58:20start:  PROGRAM start :  NOV 13/18 at 09:58:17
+co09:58:20re: Running re from main.asc
+co10:02:27re: Zenith discrepancy = -862
+co10:02:31re: Azimuth tracker ZEROING FAILURE !!
+co10:03:53uz: Running uz from menu line -200
+hk10:04:14 21 16 18 48.1 6.54-99-99
+co10:05:29uz: DEL key pressed
+co10:10:13fr: Running fr from menu line -200
+hk10:10:16 21 16 18 49.4 6.72-99-99
+co10:11:16fr: Micrometer #1 reference found at step 1935 (+CAL)= 2094 Now set to o3 offset = 2502
+co11:18:17st: Running st from menu line -200
+co11:31:03uz: Running uz from menu line -200
+hk11:31:23 23 19 21 44.2 7.19-99-99
+co11:32:10uz: HOME key pressed
+co11:35:18uz: DEL key pressed
+co11:35:47fruz: Running fruz from menu line -200
+co11:35:53fr: Running fr from menu line -200
+hk11:35:55 24 20 21 44.8 7.74-99-99
+co11:39:36fr: Micrometer #1 reference found at step 619 (+CAL)= 778 Now set to o3 offset = 2502
+co11:39:38uz: Running uz from menu line -200
+hk11:39:41 24 19 21 44.2 7.19-99-99
+co11:40:59uz: DEL key pressed
+co11:41:01uz: DEL key pressed
+co11:49:13st: Running st from menu line -200
+co11:53:32uffr5: Running uffr5 from menu line -200
+co11:53:37uf: Running uf from menu line -200
+hk11:53:40 22 19 21 47.4 7.72-99-99
+co12:01:20fr: Running fr from menu line -200
+hk12:01:22 24 20 21 33.5 5.79-99-99
+co12:02:35fr: Micrometer #1 reference found at step 2241 (+CAL)= 2400 Now set to o3 offset = 2502
+co12:02:36uf: Running uf from menu line -200
+hk12:02:39 24 20 21 32.3 5.57-99-99
+co12:10:16fr: Running fr from menu line -200
+hk12:10:19 24 20 21 27.7 4.79-99-99
+co12:11:36fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co12:11:37uf: Running uf from menu line -200
+hk12:11:40 24 20 22 27.1 4.67-99-99
+co12:19:46fr: Running fr from menu line -200
+hk12:19:49 24 21 22 24.5 4.48-99-99
+co12:21:05fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co12:21:07uf: Running uf from menu line -200
+hk12:21:09 24 21 22 24.5 4.48-99-99
+co12:28:48fr: Running fr from menu line -200
+hk12:28:50 24 21 22 23.2 4.25-99-99
+co12:30:07fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co12:30:09uf: Running uf from menu line -200
+hk12:30:11 24 21 22 23.2 4.25-99-99
+co12:37:50fr: Running fr from menu line -200
+hk12:37:52 24 21 22 22.3 4.07-99-99
+co12:39:09fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co12:58:23skd: Running skd from menu line -200
+co12:58:27skd: HOME key pressed
+co12:58:28skd: HOME key pressed
+co12:59:43skc: Starting schedule b00530
+hk12:59:45 25 21 22 21 3.83-99-99
+co13:00:09hgfw2: HG FW#2 at step  0
+co13:01:49hg: Lamp not on... hg test terminated F1= 3 F4= 2
+co13:01:49hg: Lamp not detected f1= 3 f4= 2
+co13:01:49hg: HG failed
+hk13:01:52 25 21 22 20.3 3.72-99-99
+co13:01:54hgfw2: HG FW#2 at step  0
+co13:03:56hg: Lamp not on... hg test terminated F1= 6 F4= 3
+co13:03:56hg: Lamp not detected f1= 6 f4= 3
+co13:03:57fr: Running fr from b00530 line -200
+hk13:03:59 26 22 23 20.3 3.94-99-99
+co13:05:15fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+hk13:05:19 25 22 23 20.3 3.94-99-99
+co13:05:21hgfw2: HG FW#2 at step  0
+co13:06:26hg: HOME key pressed
+co13:06:27hg: Going to menu
+co13:10:00menu: Brewer failed to respond 5 times
+co13:11:24menu: COM error  57( 9312) at 13:11:24 during menu
+co13:11:24menu: COM error  57( 9312) at 13:11:24 during menu
+co13:11:25menu: COM error  57( 9312) at 13:11:25 during menu
+co13:11:35start:  PROGRAM start :  NOV 13/18 at 13:11:32
+co13:11:35re: Running re from main.asc
+co13:12:21re: Zenith discrepancy = -1
+co13:13:01re: Azimuth discrepancy = -5178
+hk13:15:09 26 21 22 24.5 4.48-99-99
+co13:15:21hgfw2: HG FW#2 at step  0
+co13:16:17hg: DEL key pressed
+hk13:16:23 25 21 21 23.2 4.25-99-99
+hgscan 0narrow 302warm= 1.12666713:16:23NOV 13/18 141 723 1915 3379 5110 6707 7285 7643 7345 5843 4176 2545 1251 826 545 373 315 269 178 136 142 149 232 255 294 391 602 835 1745 2906 4136 5048 5337 5124 4744 3673 2437 1397 530 88
+hg13:17:26 .9811 130.3819 130 7082 25-29
+hgscan 0narrow 302warm= 1.12666713:17:26NOV 13/18 68 77 80 87 602 1484 2547 3680 4714 5168 5380 4980 3929 2788 1625 852 559 370 279 230 236 267 372 566 817 1607 2929 4112 5179 5674 5447 5005 3970 2755 1622 631 86 80 71 74
+hg13:18:30 .9982 158.8022 159 11054 25 0
+co13:18:56uzfr4: Running uzfr4 from menu line -200
+co13:18:58uz: Running uz from menu line -200
+hk13:19:01 25 21 21 23.2 4.25-99-99
+co13:27:12fr: Running fr from menu line -200
+hk13:27:14 25 21 20 21.6 3.95-99-99
+co13:28:30fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co13:28:32uz: Running uz from menu line -200
+hk13:28:34 25 21 20 21.6 3.95-99-99
+co13:41:28fr: Running fr from menu line -200
+hk13:41:31 25 20 20 19.7 3.39-99-99
+co13:42:47fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co13:42:49uz: Running uz from menu line -200
+hk13:42:52 25 20 20 20.3 3.51-99-99
+co13:55:10fr: Running fr from menu line -200
+hk13:55:12 24 20 19 19.7 3.39-99-99
+co13:56:28fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co13:56:30uz: Running uz from menu line -200
+hk13:56:33 25 20 19 19.7 3.39-99-99
+co14:08:25fr: Running fr from menu line -200
+hk14:08:27 23 20 19 19.7 3.39-99-99
+co14:09:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co14:53:59pfpd: Running pfpd from menu line -200
+co14:55:40pdaphgssfruffruzfruzfrpd: Running pdaphgssfruffruzfruzfrpd from menu line -200
+ap14:55:47 21.25 16.88 16.56 1610.56 14.78 4.95-14.95 23.52 0 19.72 0 0 5.15-8.23 .06 0 20.31 16.88 16.56 1610.56 14.78 4.93-14.95 23.75 0 19.07 0 0 5.15-8.23 1.61 12.37
+hk14:56:06 21 18 17 19 2.92-99-99
+co14:56:29hgfw2: HG FW#2 at step  0
+hk14:58:12 22 18 17 18.4 2.82-99-99
+hgscan 0narrow 302warm= 214:58:12NOV 13/18 51 59 51 74 411 1127 1928 2817 3566 3940 4067 3814 2957 2110 1239 607 442 281 198 172 185 202 291 424 647 1312 2224 3276 4190 4475 4353 4046 3253 2214 1279 501 82 66 59 54
+hg14:59:16 .9983 158.6335 159 8542 22 0
+co14:59:16ss: Running ss from menu line -200
+hk14:59:20 21 18 17 18.4 2.82-99-99
+co15:04:26fr: Running fr from menu line -200
+hk15:04:28 22 17 17 18.4 2.66-99-99
+co15:05:43fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co15:05:45uf: Running uf from menu line -200
+hk15:05:47 21 17 17 18.4 2.66-99-99
+co15:13:55fr: Running fr from menu line -200
+hk15:13:57 21 17 17 18.4 2.66-99-99
+co15:15:14fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co15:15:15uz: Running uz from menu line -200
+hk15:15:18 21 17 17 18.4 2.66-99-99
+co15:26:19fr: Running fr from menu line -200
+hk15:26:22 21 17 16 18.4 2.66-99-99
+co15:27:38fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co15:27:40uz: Running uz from menu line -200
+hk15:27:42 20 16 16 19 2.59-99-99
+co15:37:41fr: Running fr from menu line -200
+hk15:37:43 20 16 16 18.4 2.5-99-99
+co15:38:59fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2502
+co15:41:37skc: Starting schedule b00565
+hk15:41:39 19 16 16 18.4 2.5-99-99
+co15:42:03hgfw2: HG FW#2 at step  0
+hk15:43:45 20 16 16 18.4 2.5-99-99
+hgscan 0narrow 302warm= 215:43:45NOV 13/18 46 47 54 54 374 907 1593 2397 3001 3249 3384 3160 2518 1707 937 505 334 217 161 146 162 171 212 372 485 1030 1889 2751 3493 3829 3611 3409 2774 1917 1126 430 77 61 57 53
+hg15:44:49 .9983 158.3943 158 7213 20-1
+co15:44:50b1: Running b1 from b00565 line -200
+co15:44:50kd: Running kd from b00565 line -200
+hk15:44:53 20 16 16 18.4 2.5-99-99
+hk15:45:33 20 16 16 18.4 2.5-99-99
+um131118Thessaloniki 40.634-22.956 3.09pr10000 946.091640 83 78 67 74 76 73rat-41.19995-28.3999-13.19995-29.80005
+hk15:48:12 20 16 16 18.4 2.5-99-99
+um131118Thessaloniki 40.634-22.956 3.07pr10000 947.41640 69 85 70 75 76 76rat-3631.42 1806.347 656.2681-29.79981
+um131118Thessaloniki 40.634-22.956 3.07pr10000 948.741640 66 79 68 63 80 63rat 280.647 4816.647 4831.847-4874.847
+hk15:50:51 19 16 16 18.4 2.5-99-99
+um131118Thessaloniki 40.634-22.956 3.03pr10000 950.051640 72 68 72 70 69 82rat-39.13989-26.97998-12.5398 3355.456
+um131118Thessaloniki 40.634-22.956 3.03pr10000 951.381640 80 65 67 78 77 69rat-39.13989-26.97998-12.5398-28.31006
+hk15:53:30 20 16 16 17.7 2.41-99-99
+um131118Thessaloniki 40.634-22.956 3.07pr10000 952.691640 66 72 69 68 67 76rat-1206.479-28.3999-13.19995 3353.966
+um131118Thessaloniki 40.634-22.956 3.07pr10000 954.041640 67 75 79 67 75 67rat-41.2002-1789.313 2401.466-2444.466
+hk15:56:09 19 16 16 18.4 2.5-99-99
+um131118Thessaloniki 40.634-22.956 3.03pr10000 955.351640 65 64 75 67 71 72rat 1126.138-2245.468 1152.739 641.1582
+co15:58:46uz: Running uz from b00565 line -200
+hk15:58:48 20 16 16 17.7 2.41-99-99
+co16:10:59ze: Running ze from b00565 line  100
+co16:11:50ze: Zenith discrepancy =  0
+ap16:11:51 18.75 15 14.69 1621.5 14.87 4.95-14.95 23.52 0 19.07 0 0 5.15-8.23 .06 0 18.75 15 14.69 1610.56 14.78 4.93-14.95 23.75 198.9 17.76 0 0 5.15-8.23 1.61 12.37
+hk16:12:11 19 16 15 17.7 2.41-99-99
+rso3NOV 13/1816:20:41 19 173815 54 1145906 1244544 1315211 1165188 914316 2347029 173680 42 1146036 1244138 1314150 1165956 914398 2347361 1.0008 1.2857 .9999 1.0003 1.0008 .9993 .9999 .9999 .0072-.0286-.0526-.1053 .3442 .1767-.0745 .0075-.0282-.052-.1056 .3452 .1772-.0749
+hk16:20:43 20 16 15 17.7 2.41-99-99
+hk16:31:32 19 16 16 17.1 2.33-99-99
+sla 0 991.850620 115895 27 764594 829606 877039 778570 611151rat 41.64844-310.4922-544.7618-1105.106
+sla 0 992.480620 116151 23 765354 829974 878115 777724 610785rat 32.3711-317.3203-555.1016-1102.899
+sla 0 993.110620 115859 26 764654 831627 878171 778308 610446rat 39.80469-322.8672-552.0391-1108.715
+sla 0 993.740620 116217 27 765151 830678 877698 777685 610532rat 33.32422-321.3399-553.2071-1104.516
+sla 0 994.370620 115714 24 764959 831852 877930 778083 610679rat 36.73047-325.3711-552.1016-1105.723
+sla 0 9950620 115791 25 765338 831592 877827 779059 611079rat 40.10938-318.3828-545.9844-1108.418
+sla 0 995.650620 116031 26 765825 831404 878268 778629 611232rat 34.8125-319.832-550.6993-1104.848
+summary16:33:44NOV 13/18 64.81301 2.316 19sl 0 37-319-551-1106 3575 1836 765125 610843.5 4 5 4 2 10 4 387 223.5
+hk16:36:02 19 16 16 17.1 2.33-99-99
+co16:36:04hgfw2: HG FW#2 at step  0
+hk16:38:08 19 16 16 17.1 2.33-99-99
+hgscan 0narrow 302warm= 216:38:08NOV 13/18 102 127 150 161 1154 3291 5672 8636 11288 12516 13100 12695 10354 7545 4625 2576 1831 1217 790 746 703 788 1170 1837 2632 4664 7559 10203 12554 13159 12504 11247 8663 5770 3307 1168 157 140 133 107
+hg16:39:12 .9965 160.7954 161 26259 19 2
+hgscan 0narrow 302warm= 216:39:12NOV 13/18 114 145 155 215 1469 3764 6321 9268 11584 12569 13159 12224 9711 6989 4075 2399 1658 1009 751 660 664 753 1019 1638 2311 4030 6962 9695 12031 13003 12512 11502 9117 6224 3747 1445 203 143 147 100
+hg16:40:15 .9973 159.0914 159 26162 19 0
+co16:40:16b2: Running b2 from b00565 line  100
+co16:40:17w1: Running w1 from b00565 line  100
+co16:45:17ci: Running ci from b00565 line  100
+hk16:45:30 19 16 16 16.5 2.24-99-99
+co16:50:12b0: Running b0 from b00565 line  100
+ed
+co22:12:28ed: Starting EndOfDay
+co22:12:28sum: Running sum from b00565 line -200
+co22:12:29ozsum: Running ozsum from b00565 line -200
+co22:12:29slsum: Running slsum from b00565 line -200
+co22:12:30hgsum: Running hgsum from b00565 line -200

@@ -1,0 +1,256 @@
+version=2
+dh290119Thessaloniki 40.634 -22.956  3.56pr1000
+co22:41:21dh: day header
+co22:41:21main: version 4.1007/04/2015 15:00:00
+co22:41:21skc: 
+co22:41:21autohg:  1 
+co22:41:21hifw2:  0 
+co22:41:21attn:  25000  80000 
+co22:41:21lowds:  1 
+co22:41:21cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025360000000000426975.3025600172112July 12/04EXTRAS1002500080000110012-27-2018@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf25718zsfvaldcf15317uvres290119Thessaloniki40.634-22.95610003.561455-114676111110110020001menuo3@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+co06:48:31tt: Running tt from menu line -200
+co06:53:54hg1: Running hg1 from menu line -200
+hk06:53:58 22 18 19 22.6 3.46-99-99
+co06:54:02hgfw2: HG FW#2 at step  0
+co06:56:02hg: Lamp not on... hg test terminated F1= 2 F4= 118
+co06:56:05hg: Lamp not on... hg test terminated F1= 2 F4= 108
+co06:56:05hg: Lamp not detected f1= 2 f4= 108
+co07:01:16hg1: Running hg1 from menu line -200
+hk07:01:21 22 18 19 22.6 3.46-99-99
+co07:01:25hgfw2: HG FW#2 at step  0
+co07:01:40hg: DEL key pressed
+co07:01:44hg: Lamp not on... hg test terminated F1= 1 F4= 83
+co07:01:48hg: Lamp not on... hg test terminated F1= 0 F4= 84
+co07:01:48hg: Lamp not detected f1= 0 f4= 84
+co07:01:58fr: Running fr from menu line -200
+hk07:02:00 22 18 19 22.6 3.46-99-99
+co07:03:33fr: Micrometer #1 reference found at step 4173 (+CAL)= 4332 Now set to o3 offset = 2536
+co07:03:41hg1: Running hg1 from menu line -200
+hk07:03:49 22 18 19 22.6 3.46-99-99
+co07:03:53hgfw2: HG FW#2 at step  0
+hk07:05:55 22 18 19 22.3 3.41-99-99
+hgscan 0narrow 302warm= 207:05:55JAN 30/19 75 69 81 83 289 1138 2398 3818 5424 6312 6626 6808 6003 4624 3159 1747 937 689 420 332 351 412 658 936 1652 3283 4863 6358 7310 7178 6748 5736 4273 2714 1225 286 101 90 96 78
+hg07:06:59 .9912 164.924 165 13804 22 6
+hgscan 0narrow 302warm= 207:06:59JAN 30/19 80 89 86 134 854 2113 3765 5488 6855 7520 7828 7470 5979 4233 2644 1344 894 573 424 354 358 430 595 901 1292 2574 4426 6154 7800 8307 7957 7347 5849 4004 2335 892 139 120 92 85
+hg07:08:03 .9998 159.5634 160 16135 22 1
+co07:13:02hhhg: Running hhhg from menu line -200
+co07:13:03hh: Running hh from menu line -200
+co07:13:10hh: HOME key pressed
+hk07:13:12 22 18 19 22.6 3.46-99-99
+hk07:13:14 22 18 19 23.2 3.56-99-99
+co07:13:50hh: HOME key pressed
+co07:14:25hh: Going to menu
+co07:14:49hg1: Running hg1 from menu line -200
+hk07:14:53 22 18 19 23.2 3.56-99-99
+co07:14:57hgfw2: HG FW#2 at step  0
+co07:15:11hg: DEL key pressed
+hk07:15:19 23 18 19 22.3 3.41-99-99
+hgscan 0narrow 302warm= .296666707:15:19JAN 30/19 65 72 70 132 692 1649 2856 4102 5144 5601 5860 5411 4319 3102 1771 917 626 417 312 296 282 318 437 669 1002 1882 3642 5101 6396 7174 7009 6480 5335 3626 2157 830 139 95 90 82
+hg07:16:24 .9993 158.5335 159 13034 23 0
+co07:18:08b1w1hhhg: Running b1w1hhhg from menu line -200
+co07:18:14b1: Running b1 from menu line -200
+co07:18:14w1: Running w1 from menu line -200
+co07:20:03hh: Running hh from menu line -200
+hk07:20:10 22 18 19 22.3 3.41-99-99
+hk07:20:12 22 18 19 22.6 3.46-99-99
+hk07:42:01 23 18 19 22.6 3.46-99-99
+co07:42:04hgfw2: HG FW#2 at step  0
+hk07:42:10 23 18 19 22.3 3.41-99-99
+hgscan 0narrow 302warm= 23.83507:42:10JAN 30/19 107 161 133 201 1330 3389 5664 8495 10740 11682 12216 11371 9143 6603 4096 2212 1535 956 715 609 605 697 891 1493 2167 3930 6598 9150 11265 12241 11689 10607 8410 5652 3315 1328 190 126 140 107
+hg07:43:13 .9998 159.8126 160 24457 23 1
+co07:45:52co: Running co from menu line -200
+co07:46:42user: hh runs with speed 120. The speed of the previous was 200
+co07:46:52b1w0hhhg: Running b1w0hhhg from menu line -200
+co07:46:57b1: Running b1 from menu line -200
+co07:46:58w0: Running w0 from menu line -200
+co07:47:58hh: Running hh from menu line -200
+hk07:48:05 22 18 19 22.3 3.41-99-99
+hk07:48:07 23 18 19 22.3 3.41-99-99
+hk08:09:16 23 19 20 22.3 3.62-99-99
+co08:09:19hgfw2: HG FW#2 at step  0
+hk08:09:26 23 19 20 21.6 3.52-99-99
+hgscan 0narrow 302warm= 22.3666708:09:26JAN 30/19 123 136 420 1883 4091 6659 9449 11294 11912 12363 11099 8745 6162 3446 2000 1438 873 689 653 416 432 559 707 857 1414 1999 3382 5972 8729 11174 12410 11864 11152 9396 6659 4194 1896 371 149 113
+hg08:10:28 .9881 146.6449 147 22273 23-12
+hgscan 0narrow 302warm= 22.3666708:10:28JAN 30/19 112 105 135 243 1556 3638 6115 8892 11053 11754 12402 11484 8991 6548 4079 2234 1560 976 707 637 661 758 960 1515 2129 3902 6554 9028 11393 12342 11899 10874 8941 6163 3721 1532 244 113 130 105
+hg08:11:31 .9999 159.0326 159 24744 23 0
+co08:13:39co: Running co from menu line -200
+co08:14:30user: HH.RTN - speed 120 results in loss of micrometer steps
+co08:25:59fr: Running fr from menu line -200
+hk08:26:02 24 19 20 22.3 3.62-99-99
+co08:27:07fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2536
+co08:27:24st: Running st from menu line -200
+co08:27:38fr: Running fr from menu line -200
+hk08:27:41 24 19 20 22.3 3.62-99-99
+co08:31:05fr: Micrometer #1 reference found at step 2469 (+CAL)= 2628 Now set to o3 offset = 2536
+co08:31:13fr: Running fr from menu line -200
+hk08:31:15 24 19 20 22.3 3.62-99-99
+co08:32:20fr: Micrometer #1 reference found at step 2259 (+CAL)= 2418 Now set to o3 offset = 2536
+co08:37:10fr: Running fr from menu line -200
+hk08:37:12 24 19 20 22.3 3.62-99-99
+co08:40:30fr: Micrometer #1 reference found at step 2495 (+CAL)= 2654 Now set to o3 offset = 2536
+co08:40:53fr: Running fr from menu line -200
+hk08:40:54 23 19 20 22.3 3.62-99-99
+co08:41:59fr: Micrometer #1 reference found at step 2259 (+CAL)= 2418 Now set to o3 offset = 2536
+co08:43:15start:  PROGRAM start :  JAN 30/19 at 08:43:11
+hk08:43:15 23 19 20 21.6 3.52-99-99
+co08:43:19tt: Running tt from menu line -200
+co08:43:38hg1: Running hg1 from menu line -200
+hk08:43:46 23 19 20 22.3 3.62-99-99
+co08:43:50hgfw2: HG FW#2 at step  0
+co08:44:06hg: DEL key pressed
+hk08:44:12 24 19 20 22.3 3.62-99-99
+hgscan 0narrow 302warm= .32508:44:12JAN 30/19 53 52 55 58 54 63 59 68 72 151 745 1692 2880 4216 5172 5546 5856 5405 4229 2966 3040 4434 5762 6564 6379 6074 5087 3600 2200 942 171 87 84 85 74 80 76 76 74 73
+hg08:45:16 0 221 221 1687 24 62
+hgscan 0narrow 302warm= .32508:45:16JAN 30/19 92 92 119 352 1419 3032 4876 6936 8201 8695 9055 7919 6116 4220 2388 1383 959 600 465 423 414 501 610 996 1449 2371 4500 6697 8615 9883 9600 9151 7688 5503 3436 1639 336 153 105 103
+hg08:46:19 .9973 156.6216 157 18938 24-2
+hgscan 0narrow 302warm= .32508:46:19JAN 30/19 97 95 101 182 1102 2392 4074 5699 6821 7340 7562 6904 5364 3678 2227 1162 821 520 365 323 331 379 479 767 1143 2127 3691 5390 6787 7538 7325 6723 5582 3834 2350 980 174 81 90 83
+hg08:47:23 .9991 157.9646 158 15100 24-1
+co08:49:41fr: Running fr from menu line -200
+hk08:49:44 24 19 21 22.3 3.62-99-99
+co08:53:18fr: Micrometer #1 reference found at step 2436 (+CAL)= 2595 Now set to o3 offset = 2536
+co08:54:21hgfr: Running hgfr from menu line -200
+hk08:54:26 24 19 21 22.6 3.67-99-99
+co08:54:30hgfw2: HG FW#2 at step  0
+co08:56:30hg: Lamp not on... hg test terminated F1= 2 F4= 371
+co08:56:34hg: Lamp not on... hg test terminated F1= 3 F4= 388
+co08:56:34hg: Lamp not detected f1= 3 f4= 388
+co08:56:35fr: Running fr from menu line -200
+hk08:56:37 24 19 21 22.3 3.62-99-99
+co08:57:53fr: Micrometer #1 reference found at step 2259 (+CAL)= 2418 Now set to o3 offset = 2536
+co09:02:08st: Running st from menu line -200
+co09:02:14fr: Running fr from menu line -200
+hk09:02:16 24 19 21 22.3 3.62-99-99
+co09:03:35fr: Micrometer #1 reference found at step 2411 (+CAL)= 2570 Now set to o3 offset = 2536
+co09:04:10st: Running st from menu line -200
+co09:04:19fr: Running fr from menu line -200
+hk09:04:22 24 19 21 22.6 3.67-99-99
+co09:05:39fr: Micrometer #1 reference found at step 2437 (+CAL)= 2596 Now set to o3 offset = 2536
+co09:08:13st: Running st from menu line -200
+co09:08:20fr: Running fr from menu line -200
+hk09:08:22 24 19 21 22.3 3.62-99-99
+co09:11:05fr: Micrometer #1 reference found at step 2309 (+CAL)= 2468 Now set to o3 offset = 2536
+co09:11:13st: Running st from menu line -200
+co09:11:19fr: Running fr from menu line -200
+hk09:11:21 24 19 21 22.3 3.62-99-99
+co09:13:08fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:14:48st: Running st from menu line -200
+co09:14:54fr: Running fr from menu line -200
+hk09:14:57 24 20 21 22.3 3.84-99-99
+co09:16:46fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:19:38st: Running st from menu line -200
+co09:19:45fr: Running fr from menu line -200
+hk09:19:48 23 19 21 22.3 3.62-99-99
+co09:23:00fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:23:07st: Running st from menu line -200
+co09:23:20fr: Running fr from menu line -200
+hk09:23:22 24 20 21 22.6 3.9-99-99
+co09:24:59fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:25:20st: Running st from menu line -200
+co09:25:27fr: Running fr from menu line -200
+hk09:25:29 23 20 21 22.3 3.84-99-99
+co09:29:30fr: Micrometer #1 reference found at step 2469 (+CAL)= 2628 Now set to o3 offset = 2536
+co09:29:40fr: Running fr from menu line -200
+hk09:29:42 24 20 21 22.6 3.9-99-99
+co09:30:57fr: Micrometer #1 reference found at step 2269 (+CAL)= 2428 Now set to o3 offset = 2536
+co09:31:29tt: Running tt from menu line -200
+co09:32:22tt: COM error  15( 9315) at 09:32:22 during tt
+co09:32:24tt: COM error  15( 9315) at 09:32:24 during tt
+co09:32:25tt: COM error  15( 9315) at 09:32:25 during tt
+co09:32:26tt: COM error  15( 9315) at 09:32:26 during tt
+co09:32:28tt: COM error  15( 9315) at 09:32:28 during tt
+co09:32:29tt: COM error  15( 9315) at 09:32:29 during tt
+co09:32:29tt: Brewer failed to respond 5 times
+co09:32:35start:  PROGRAM start :  JAN 30/19 at 09:32:34
+co09:32:35pd: COM error  15( 9315) at 09:32:35 during pd
+co09:32:37pd: COM error  15( 9315) at 09:32:37 during pd
+co09:32:37re: Running re from main.asc
+co09:32:38re: COM error  15( 9315) at 09:32:38 during re
+co09:32:47re: COM error  15( 9315) at 09:32:47 during re
+co09:33:24re: Zenith discrepancy = -1
+co09:34:26re: Azimuth discrepancy = -8007
+co09:37:58fr: Running fr from menu line -200
+hk09:38:01 24 20 21 22.3 3.84-99-99
+co09:39:26fr: Micrometer #1 reference found at step 2411 (+CAL)= 2570 Now set to o3 offset = 2536
+co09:40:33hg1: Running hg1 from menu line -200
+hk09:40:41 24 20 21 22.3 3.84-99-99
+co09:40:45hgfw2: HG FW#2 at step  0
+hk09:42:47 25 20 21 22.3 3.84-99-99
+hgscan 0narrow 302warm= 209:42:47JAN 30/19 67 73 74 78 84 330 1242 2337 3663 5008 5793 6127 6203 5315 4018 2669 1471 842 558 364 389 556 814 1404 2713 4209 5549 6544 6501 6291 5390 3996 2570 1316 351 83 88 80 66 74
+hg09:43:50 .9939 174.8009 175 12084 25 16
+hgscan 0narrow 302warm= 209:43:50JAN 30/19 78 78 87 158 934 2200 3705 5264 6594 7053 7296 6727 5331 3730 2316 1175 779 504 369 345 319 394 521 837 1144 2331 3874 5624 7044 7772 7516 7046 5650 3949 2440 972 171 107 88 86
+hg09:44:54 .9996 158.5028 159 15068 25 0
+co09:45:19fr: Running fr from menu line -200
+hk09:45:21 24 20 21 22.3 3.84-99-99
+co09:47:11fr: Micrometer #1 reference found at step 2343 (+CAL)= 2502 Now set to o3 offset = 2536
+co09:50:10fr: Running fr from menu line -200
+hk09:50:13 24 20 21 22.3 3.84-99-99
+co09:52:28fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:53:21st: Running st from menu line -200
+co09:55:19fr: Running fr from menu line -200
+hk09:55:22 24 20 22 22.6 3.9-99-99
+co09:56:39fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:56:47st: Running st from menu line -200
+co09:56:53fr: Running fr from menu line -200
+hk09:56:55 25 20 22 22.6 3.9-99-99
+co09:58:14fr: Micrometer #1 reference found at step 2377 (+CAL)= 2536 Now set to o3 offset = 2536
+co09:58:21st: Running st from menu line -200
+co09:58:28fr: Running fr from menu line -200
+hk09:58:31 24 20 22 22.6 3.9-99-99
+co10:01:51fr: Micrometer #1 reference found at step 2469 (+CAL)= 2628 Now set to o3 offset = 2536
+co10:01:59fr: Running fr from menu line -200
+hk10:02:01 25 20 22 22.3 3.84-99-99
+co10:03:20fr: Micrometer #1 reference found at step 2259 (+CAL)= 2418 Now set to o3 offset = 2536
+co10:03:27fr: Running fr from menu line -200
+hk10:03:29 25 20 22 22.6 3.9-99-99
+co10:06:42fr: Micrometer #1 reference found at step 2495 (+CAL)= 2654 Now set to o3 offset = 2536
+co10:07:13hg1: Running hg1 from menu line -200
+hk10:07:21 24 20 22 22.6 3.9-99-99
+co10:07:25hgfw2: HG FW#2 at step  0
+co10:09:25hg: Lamp not on... hg test terminated F1= 2 F4= 381
+co10:09:28hg: Lamp not on... hg test terminated F1= 3 F4= 360
+co10:09:28hg: Lamp not detected f1= 3 f4= 360
+co10:09:56fr: Running fr from menu line -200
+hk10:09:59 24 20 22 22.6 3.9-99-99
+co10:11:14fr: Micrometer #1 reference found at step 2309 (+CAL)= 2468 Now set to o3 offset = 2536
+co10:11:24hg1: Running hg1 from menu line -200
+hk10:11:32 25 20 22 22.3 3.84-99-99
+co10:11:37hgfw2: HG FW#2 at step  0
+hk10:13:39 24 20 22 22.3 3.84-99-99
+hgscan 0narrow 302warm= 210:13:39JAN 30/19 83 85 89 98 164 947 2267 3747 5512 6948 7517 7821 7157 5704 4083 2429 1241 876 549 405 406 547 848 1256 2403 4142 5980 7451 8229 7911 7413 5903 4126 2461 1045 162 117 95 87 87
+hg10:14:42 .984 168.4634 168 15428 24 9
+hgscan 0narrow 302warm= 210:14:42JAN 30/19 87 99 100 155 931 2361 4066 6075 7648 8310 8709 8221 6657 4834 3031 1549 1051 662 472 409 425 465 643 1041 1510 2967 4893 6771 8568 9144 8813 8158 6383 4263 2502 965 150 120 110 112
+hg10:15:46 .9998 159.7992 160 17853 24 1
+co10:19:13hgslrsdt: Running hgslrsdt from menu line -200
+hk10:19:20 25 21 22 22.6 4.13-99-99
+co10:19:24hgfw2: HG FW#2 at step  0
+hk10:21:26 25 21 22 22.3 4.07-99-99
+hgscan 0narrow 302warm= 210:21:26JAN 30/19 97 98 93 173 1006 2446 4044 6128 7610 8180 8451 7839 6259 4428 2678 1381 969 587 427 394 395 467 613 981 1387 2641 4610 6538 8288 8948 8635 7992 6528 4410 2625 1046 168 98 104 111
+hg10:22:30 .9997 158.8864 159 17399 25 0
+hk10:27:33 26 21 22 22.3 4.07-99-99
+sla 0 627.860620 117305 72 774750 840230 886019 786030 616657rat 10.9375-334.7735-552.4766-1118.379
+sla 0 628.490620 118058 73 775189 841958 888445 786041 618017rat 8.460938-343.9102-564.6719-1108.66
+sla 0 629.130620 118027 69 777014 842378 888627 787134 617968rat 4.179688-339.9375-559.3828-1115.207
+sla 0 629.760620 117896 72 776577 842961 889652 787068 619148rat 6.316407-343.4024-564.9219-1106.375
+sla 0 630.390620 118044 70 777697 843608 889723 788924 620201rat 10.40234-336.3125-554.7578-1109.356
+sla 0 631.020620 118374 65 778288 844212 890340 788617 620086rat 5.269532-341.2617-559.6016-1108.414
+sla 0 631.650620 118157 67 778372 844111 890225 789616 619754rat 10.4375-335.0703-553.375-1116.449
+summary10:29:45JAN 30/19 82.004 6.253 26sl 0 8-339-558-1112 3566 1830 776841 618833 3 4 5 5 16 9 1448.2 1303
+hk10:32:01 26 21 22 22.3 4.07-99-99
+rso3JAN 30/1910:35:40 26 177783 108 1168912 1267654 1338959 1186072 930861 2388298 177778 98 1168707 1266721 1337480 1185415 931080 2388764 1 1.102 1.0002 1.0007 1.0011 1.0005 .9998 .9998 .0063-.0289-.0527-.1052 .3431 .1763-.0744 .0062-.0288-.0524-.1049 .3418 .1757-.0742
+hk10:35:43 26 21 23 22.3 4.07-99-99
+co15:37:08hgb2w1ci: Running hgb2w1ci from menu line -200
+hk15:37:13 27 22 23 22.3 4.31-99-99
+co15:37:17hgfw2: HG FW#2 at step  0
+hk15:39:19 27 22 23 22.3 4.31-99-99
+hgscan 0narrow 302warm= 215:39:19JAN 30/19 150 116 163 211 1296 3265 5607 8355 10568 11450 12024 11200 9090 6625 4174 2219 1572 976 740 633 654 761 1041 1596 2301 4095 6786 9454 11802 12804 12191 11361 8958 6044 3618 1455 222 140 138 133
+hg15:40:22 .9999 159.7642 160 24828 27 1
+co15:40:23b2: Running b2 from menu line -200
+co15:40:24w1: Running w1 from menu line -200
+co15:45:24ci: Running ci from menu line -200
+hk15:45:37 27 22 23 22.3 4.31-99-99
