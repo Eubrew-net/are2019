@@ -1,0 +1,92 @@
+\include{cal_tempcoeff_xxx}
+
+\section{Absolute Temperature Coefficients} \label{sec:TC}
+%% general text
+Temperature coefficients are determined using the standard lamp test.
+For every slit, the raw counts corrected for zero temperature coefficients are used in a linear regression against temperature  with the slopes representing the instrument's temperature coefficients. From this we obtain the corrected \emph{R6} and \emph{R5} ratios to analyze the new temperature coefficients' performance.
+
+%% Instrument text
+
+% no changes
+The original temperature coefficients performed well without any significant temperature dependence (temperature range from \textbf{\tempmin$^\circ$\,C} to \textbf{\tempmax$^\circ$\,C}, see Figure \ref{fig:TEMP_COMP_TEMP}). In any case, the observed temperature dependence was lower than 5 units / 10$^\circ$\,C. No changes are suggested.
+
+The data collected during the campaign (temperature ranging from \textbf{\tempmin$^\circ$\,C} to \textbf{\tempmax$^\circ$\,C}) revealed good original temperature coefficients performing, without any significant temperature dependence (see Figure \ref{fig:TEMP_OLD_VS_NEW}). In order to introduce in the analysis temperatures lower than $20^\circ$C we add data from year 2011, founding similar results. No changes are suggested.
+\vspace{1.5cm}
+
+
+%% possible changes
+%%040
+We considered data collected from the new standard lamp in order to analyze the instrument temperature dependence (temperature ranging from \textbf{\tempmin$^\circ$\,C} to \textbf{\tempmax$^\circ$\,C}). The actual temperature coefficients, taken from bfiles instrument constant section, performed well, showing no significant temperature dependence (Figure \ref{fig:TEMP_OLD_VS_NEW}). To check the temperature coefficients proposed in the Arosa 2008 intercomparison campaign we compared the original and the Arosa 2008 temperature coefficients for the period from 15 June 2009 to 01 April 2010. Results are shown in Figure \ref{fig:TEMP_OLD_VS_NEW_1}. We found better performance with the original coefficients than with the RBCCE 2008 temperature coefficients proposal, although in both cases the results obtained are acceptable. We adopt the current temperature coefficients on final configuration (see Table \ref{tab:table_TC}).
+
+\vspace{3cm}
+
+
+%%072
+The data collected during the campaign, covering a temperature range from \textbf{\tempmin$^\circ$\,C} to \textbf{\tempmax$^\circ$\,C}), reveals good original temperature coefficients performing, with a small temperature dependence (Figures \ref{fig:TEMP_OLD_VS_NEW} and \ref{fig:TEMP_day}). In order to introduce in the analysis temperatures lower than $10^\circ$C we add data from day 02510 to 18010 (Figures \ref{fig:TEMP_OLD_VS_NEW_1} and \ref{fig:TEMP_day_1}). This provides an improvement on the results obtained from just considering campaign data. We can't detect any appreciable temperature dependence in ozone ratio.
+
+The results obtained are summarized in Table \ref{tab:table_TC}. The temperature coefficients calculated are very similar to the current set. No changes are suggested.
+
+%%156
+The data collected during the campaign, covering a temperature range from \textbf{\tempmin$^\circ$\,C} to \textbf{\tempmax$^\circ$\,C}, shows a good performance of the original temperature coefficients, with a small temperature dependence (Figures \ref{fig:TEMP_OLD_VS_NEW} and \ref{fig:TEMP_day}). We compared the original temperature coefficients with those proposed in Arosa 2008 (see data labelled as TC NEW in Figures \ref{fig:TEMP_OLD_VS_NEW} and \ref{fig:TEMP_OLD_VS_NEW_1}), for temporal ranges comprising just the campaign data as well as the whole 2010 year data (Figures \ref{fig:TEMP_OLD_VS_NEW_1} and \ref{fig:TEMP_day_1}). We found better results with the original set, especially when considering just the data collected during the campaign.\\
+The results obtained are summarized in Table \ref{tab:table_TC}. No improvement in  the temperature dependence was detected, and therefore no changes are suggested.
+
+\vspace{2.5cm}
+\begin{table}[hbp!] \centering
+	\caption{Temperature Coefficients. Calculated coefficients are normalized to slit\#2}
+	\label{tab:table_TC}
+	\rowcolors{8}{}{gray!35}
+	\include{table_TC_xxx}
+\end{table}
+
+% ---uno---
+\begin{figure}[htbp!]
+\begin{center}   
+     \includegraphics{./xxx_figures/xxx_figures_TEMP_OLD_VS_NEW.eps}
+     \caption{Temperature coefficients performance. Red circles represent standard lamp R6 ratio calculated from raw counts without temperature correction (temperature coefficients null). Black crosses and green circles represent standard lamp R6 ratio corrected with original temperature coefficients and corrected with calculated temperature coefficients respectively}
+	   \label{fig:TEMP_OLD_VS_NEW}
+\end{center}
+\end{figure}
+
+% ---uno---
+%\begin{figure}[htbp!]
+%\begin{center}   
+%     \includegraphics{./xxx_figures/xxx_figures_TEMP_day_new.eps}
+%     \caption{Campaign days. Raw counts regression ratios for ozone slits and ozone ratio (\texttt{MS9}) against temperature. The calculated slopes normalized to slit\#2 are the \emph{temperature coefficients}}
+%	   \label{fig:TEMP_day}
+%\end{center}
+%\end{figure}
+
+% ---dos---
+\begin{figure}[htbp!]
+\begin{center}   
+     \includegraphics{./xxx_figures/xxx_figures_TEMP_OLD_VS_NEW_1.eps}
+     \caption{Temperature coefficients performance. Red circles represent standard lamp R6 ratio calculated from raw counts without temperature correction (temperature coefficients null). Black crosses and green circles represent standard lamp R6 ratio corrected with original temperature coefficients and corrected with calculated temperature coefficients respectively}
+	   \label{fig:TEMP_OLD_VS_NEW_1}
+\end{center}
+\end{figure}
+
+% ---dos---
+%\begin{figure}[htbp!]
+%\begin{center}   
+%     \includegraphics{./xxx_figures/xxx_figures_TEMP_day_new_1.eps}
+%     \caption{Raw counts regression ratios for ozone slits and ozone ratio (\texttt{MS9}) against temperature. The calculated slopes normalized to slit\#2 are the \emph{temperature coefficients}}
+%	   \label{fig:TEMP_day_1}
+%\end{center}
+%\end{figure}
+
+\begin{figure}[htbp!]
+\begin{center}   
+     \includegraphics{./xxx_figures/xxx_figures_TEMP_COMP_DATE.eps}
+     \caption{ Standard lamp R6 (\texttt{MS9}) ratio as a function of time. We plotted R6 ratio recalculated with the original (black) and the new (green) temperature coefficients}
+	   \label{fig:TEMP_comp_DATE}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp!]
+\begin{center}   
+     \includegraphics{./xxx_figures/xxx_figures_TEMP_COMP_TEMP.eps}
+     \caption{ Standard lamp R6 (\texttt{MS9}) ratio as a function of temperature. We plotted R6 ratio recalculated with the original (black) and the new (green) temperature coefficients}
+	   \label{fig:TEMP_COMP_TEMP}
+\end{center}
+\end{figure}
+

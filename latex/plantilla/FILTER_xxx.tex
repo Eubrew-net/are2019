@@ -1,0 +1,106 @@
+\include{cal_filter_xxx}
+\section{Attenuation Filter Characterization} \label{sec:FI}
+
+\subsection{Attenuation Filter Correction} \label{subsec:FIC}
+%% general text
+Neutral density filters were characterized using the \texttt{FI.RTN} routine developed by Volodya Savastiouk. From this test we can derive the wavelength dependence of filter's attenuation, $Af({\lambda _i},j)$.
+
+Filter's spectral dependence affects the ozone calculation since it is assumed in brewer software that the attenuation is wavelength-neutral. We can estimate the correction factor needed for this non-linearity by multiplying the attenuation of every filter and every wavelength by the ozone weighting coefficients
+
+\[F{C_j} = \sum\limits_{i = 1}^4 {{w_i}} Af({\lambda _i},j)\]
+
+Using this factor we can correct the ozone readings for this filter effect, in a similar way as it is defined for the ozone correction by the standard lamp ratio change, but only for the filters affected
+
+\[O^{j}_{3,corr} = O^{j}_{3,uncorr} + \frac{FC_j}{\alpha \times m}\]
+
+Since the correction factor applied to ozone is inversely proportional to the airmass, \emph{m}, it will be important for high attenuation filter used at low airmass conditions.
+
+However, even if we get a large number of tests, most of the time the determined correction factors are not statistically significant. Based on this calculations we evaluate the potential effect on the ozone measurements, testing the estimated filter correction factor comparing the ozone results with the reference instrument (Section \ref{sec:ETC}).
+
+With respect to filter's attenuation values, the brewer control software uses the nominal values [5000, 10000, 15000, 20000, 25000] as a basis for selecting the proper neutral density filter to achieve an optimal signal to noise ratio, adjusting the light level entering the spectrometer. If the real attenuation is different from nominal values it can produce oscillations in filterwheel\#2 (filter up produces too low intensity and filter down produces too much, so that the filterwheel\#2 is continuously oscillating between two positions). This behavior can be adapted internally by modifying the brewer software.
+
+\vspace{.25cm}
+\begin{Verbatim}[frame=lines,fontsize=\footnotesize,fontfamily=courier,fontshape=it,xleftmargin=1cm,xrightmargin=1cm]
+ % IOS description of the fi test output in fioavg.\#\#\# file
+ % (created by V. Savastiouk)
+ %
+ % date Te AF  CY  N  Slit0 std Slit1 std Slit2 std Slit3 std Slit4 std Slit5 std
+ % 28003 9  1   1  3  49815 +37 59776 +0  60031 +0  60318 +0  59622 +0  58465 +0
+ %          2   3  3   4520 +17  4514 +13  4504 +5   4492 +7   4482 +5   4474 +16
+ %          3   8  3   9386 +16  9338 +24  9296 +3   9245 +7   9211 +6   9186 +22
+ %          4  30  3  16396 +24 16262 +17 16105 +17 15976 +7  15863 +11 15752 +7
+ %          5 100  3  24598 +55 24357 +9  24155 +18 24003 +9  23873 +9  23736 +13
+ %          6 250  3  25996 +54 25764 +0  25553 +13 25411 +0  25251 +0  25103 +13
+ %
+ % Te - temperature,
+ % AF - FW2 position,
+ % CY-number of cycles for that AF
+ % N - number of repetition
+ % Slit0-6 are the values for the attenuations, except for AF=1
+\end{Verbatim}
+\clearpage
+
+\subsection{Attenuation Filter correction results} \label{subsec:FIR}
+During the calibration period a total of \textbf{\NFI}\ tests were performed (we included also the Arenosillo 2009 tests) and the attenuation was calculated for every filter and every slit. The filter's spectral shape are shown in Figure \ref{fig:FI_wavelength}, whereas the Filter correction, median, mean value and 95\% confidence intervals are shown in Table \ref{tab:filter_correction}.
+
+%%No change
+In the case of Brewer \textbf{\brwname}\ attenuation is quite linear, resulting in a uniform correction for all the filters (Table \ref{tab:filter_correction}). No correction is needed.
+
+In the case of Brewer \textbf{\brwname}\ we did not obtain significative results for any neutral density filter, except for filter\#4, which was never used during the campaign (Table \ref{tab:filter_correction}). No correction is suggested.
+
+% Change
+In the case of Brewer \textbf{\brwname}, filter attenuation is not linear with significative corrections for filter \#3, the most used during the campaign (around 60\% of the observations). The ETC correction deduced from the analysis of FIOAVG file varied from around -10 to -5. We applied a correction factor of -10, improving the comparison with the reference instrument \brwref.
+
+\vspace{.5cm}
+\begin{table}[hbp!] \centering
+	\caption{ETC correction due to Filter non-linearity. Median value, mean values and, 95\% confidence intervals are calculated using bootstrap technique}
+	\label{tab:filter_correction}
+	\include{table_filter_correction_xxx}
+\end{table}
+
+\vspace{.5cm}
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics{../xxx_figures/xxx_figures_FI_wavelength.eps}
+           \caption{Spectral dependence of the neutral filters (filter attenuation / mean value of the filter ratio)}
+	         \label{fig:FI_wavelength}
+\end{center}
+\end{figure}
+\vspace{.5cm}
+
+%% Intensity test
+% No change
+Calculated mean attenuation values for every filter are compared with operational values (see Table \ref{tab:filter_table} and Figure \ref{fig:FIOSTATS}), updating them (\texttt{ICF} file) when necessary. Individual values for every wavelength and every filter should be used for aerosol optical depth calculations. In the case of Brewer \brwname\ the calculated mean attenuation values for every filter are similar to the operational values (relative percentage differences on the order of 5\%), on the one hand, whereas the observed transitions between successive filters are quite smooth in terms of attenuation (relative percentage differences lower than 10\% when changing filter), on the other hand. No change is suggested.
+
+% Change
+Calculated mean attenuation values for every filter are compared with operational values (see Figure \ref{fig:FIOSTATS}), updating them (\texttt{ICF} file) when necessary. Individual values for every wavelength and every filter should be used for aerosol optical depth calculations. In the case of Brewer \brwname\ the calculated mean attenuations (Table \ref{tab:filter_table}) are quite different to the operational (different from nominal) values, especially for Filters \#1 and \#4. In addition, we observe in Figure \ref{fig:FIOSTATS} notable differences between successive filters. We updated the attenuations in icf file provided.
+
+Calculated mean attenuation values for every filter are compared with operational values (see Figure \ref{fig:FIOSTATS}), updating them (\texttt{ICF} file) when necessary. Individual values for every wavelength and every filter should be used for aerosol optical depth calculations. The calculated mean attenuation values for every filter (Table \ref{tab:filter_table}) are quite different to the operational attenuations (nominal values). In addition to that, differences greater than 10\% are observed when changing filter. We update attenuations in icf file provided.
+
+
+\vspace{.5cm}
+\begin{table}[hbp!] \centering
+	\caption{Filter attenuation by wavelength}
+	\label{tab:filter_table}
+	\rowcolors{8}{}{gray!35}
+	\include{table_filter_xxx}
+\end{table}
+
+\vspace{.5cm}
+\begin{figure}[hbtp!]
+\begin{center}
+
+\IfFileExists{./xxx_figures/xxx_figures_FIOSTATS_2.eps}
+{% if
+\includegraphics{../xxx_figures/xxx_figures_FIOSTATS_2.eps}
+         \caption{Notched box-plot for the calculated attenuation relative differences of neutral density filters with respect to operational values. We show for each subplot relative differences corresponding to correlative filters (color box-plots). Solid lines and boxes mark the median, upper and lower quartiles. The point whose distance from the upper or lower quartile is 1 times larger than the interquartile range is defined as outlier}
+         \label{fig:FIOSTATS}
+}
+{% else
+\includegraphics{../xxx_figures/xxx_figures_FIOSTATS_1.eps}
+         \caption{Notched box-plot for the calculated attenuation relative differences of neutral density filters with respect to operational values. We show for each subplot relative differences corresponding to correlative filters (color box-plots). Solid lines and boxes mark the median, upper and lower quartiles. The point whose distance from the upper or lower quartile is 1 times larger than the interquartile range is defined as outlier}
+         \label{fig:FIOSTATS}
+}
+
+\end{center}
+\end{figure}
