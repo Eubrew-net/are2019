@@ -407,6 +407,64 @@ printfiles_report(gcf,Cal.dir_figs);
 
 close all
 
+
+%% STRAY LIGHT
+close all
+osc_range=2;
+% etc estimaton using the full range 
+[ETC0,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
+                                                                10,osc_range,0.05,finaldays);
+straylight_{n_inst}=straylight_model(o3c_NEW,A1_new,ETC_NEW(1).NEW,Cal);
+save(Cal.file_save,'-APPEND','straylight_'); 
+latexcmd(fullfile(['>',Cal.file_latex],['cal_etc_',brw_str{n_inst}]),...
+    '\SLETC',round(straylight_{n_inst}.coeff.R(3)),...
+    '\SLexp',round(straylight_{n_inst}.coeff.R(2)*100)/100,... 
+    '\SLcoeff',round(straylight_{n_inst}.coeff.R(1)*10)/10); 
+
+
+%recalculation  
+a=straylight_{n_inst}.coeff.R(1);
+b=straylight_{n_inst}.coeff.R(2);
+%etc=straylight_{n_inst}.coeff.R(3);
+etc=ETC_NEW(1).NEW
+o3=inst2(:,6);
+m =inst2(:,3);
+o3r= o3 -  a/A1_new*(m.*o3/1000).^b./m/10;
+%o3r1= o3 -  a/A1_new*(m.*o3r).^b./m/10;
+
+inst2(:,10)=o3r;
+[x,r,rp,ra,dat,ox,osc_stray]=ratio_min_ozone(...
+        inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+        5,brw_str{n_inst},brw_str{n_inst},'plot_flag',0);
+    
+    
+o3r1= o3 -  a/A1_new*(m.*o3r/1000).^b./m/10;
+inst2(:,10)=o3r1;
+[x,r,rp,ra,dat,ox,osc_stray2]=ratio_min_ozone(...
+        inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+        5,brw_str{n_inst},brw_str{n_inst},'plot_flag',0);
+
+% Stray light correction plot
+f=figure;
+set(f,'tag','RATIO_ERRORBAR_stray');
+h=plot_smooth_(osc_smooth_inisl,osc_smooth_fin,osc_stray2);
+legend(h,'Config. initial (SL corrected)','Final Configuration','Stray Light corrected ');
+set(gca,'YLim',[-4 2]);
+title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
+
+% Difference iter#1 to iter#2
+f=figure;
+set(f,'tag','RATIO_ERRORBAR_stray_corr');
+h=plot_smooth_(osc_smooth_fin,osc_stray,osc_stray2);
+legend(h,'Config.final','Stray Light corrected Iter #1','Stray Light corrected Iter #2');
+set(gca,'YLim',[-4 2]);
+title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
+
+
+
+
+
+
 %% Final days table
 % m_etc_(lo que sea) son los datos filtrados por Tsync, OSC y sza !!! -> salida de ETC_calibration
 % En ste caso se usa summary, así que la configuración original será 10, y la final 6
