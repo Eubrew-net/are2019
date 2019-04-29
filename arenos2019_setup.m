@@ -95,22 +95,10 @@ Cal.n_ref=[find(Cal.brw==185),find(Cal.brw==185)];
 Cal.brw_name(Cal.brewer_ref)
 
 % for each brewer, 1 if no changes in maintenance, 0 otherwise
-
-
 % check
 % {Cal.brw_name,Cal.brw,Cal.sl_c,Cal.brw_str}
 
-% Brewer configuration files
 
-%%
-for inst=find(Cal.brw==185)
-   [icf_n,icf_text,icf_raw]=xlsread(fullfile(Cal.path_root,'bfiles',Cal.brw_str{inst},['icf',Cal.brw_str{inst},'.xls']),...
-                                   ['icf.',Cal.brw_str{inst}],'','basic');
-   cfg=icf_n(2:end-1,3:end); save('config.cfg', 'cfg', '-ASCII','-double');
-   tmp_file=sprintf('config%s.cfg',Cal.brw_str{inst});
-   copyfile('config.cfg',fullfile(pwd,'bfiles',Cal.brw_str{inst},tmp_file));
-   delete('config.cfg');
-end
 
 %% initial setup
 
@@ -131,30 +119,81 @@ end
     '..\163\ICF17016.163' ,   '..\163\ICF15017.163'  ,'0270',  '0270'; % ->to updated from arosa
     '..\166\icf15215.166' ,   '..\166\ICF15215.166'  ,'1952',  '1975'; %
     '..\172\ICF15115.172' ,   '..\172\ICF15117.172'  ,'0444',  '0444'; %
-    '..\185\icf12017.185' ,  '..\185\icf12217.185'   ,'0335',  '0335'; % new temperature coeff
+    '..\185\icf12017.185' ,   '..\185\icf12217.185'   ,'0335',  '0335'; % new temperature coeff
     '..\186\ICF14915.186' ,   '..\186\ICF14915.186'  ,'0317',  '0317'; % 
     '..\202\ICF15215.202' ,   '..\202\ICF15017.202'  ,'0283',  '0270'; %
     '..\214\ICF15015.214' ,   '..\214\ICF15017.214'  ,'0234',  '0216'; % 
     '..\228\ICF22416.228' ,   '..\228\ICF15017.228'  ,'0242',  '0242'; %
     };
-%%
 
+%% Brewer configuration files from configuration tables
+icf_op=cell(1,length(Cal.n_brw));  %old, operative
+icf_a=cell(1,length(Cal.n_brw));   %new, alternative
 
-for inst=1:Cal.n_brw
+events_n=cell(1,length(Cal.n_brw)); events_raw=cell(1,length(Cal.n_brw));
+events_text=cell(1,length(Cal.n_brw)); incidences_text=cell(1,length(Cal.n_brw));
+warning('off', 'MATLAB:xlsread:Mode');
+for iz=1:Cal.n_brw
+ try   
+    if iz==find(Cal.brw==185) %reference
+       icf_op{iz}=xlsread(fullfile(Cal.path_root,'configs',['icf',Cal.brw_str{iz},'.xls']),...
+                         ['icf.',Cal.brw_str{iz}],'','basic');      
+       icf_a{iz}=xlsread(fullfile(Cal.path_root,'configs',['icf',Cal.brw_str{iz},'.xls']),...
+                         ['icf_a.',Cal.brw_str{iz}],'','basic');                     
+       [events_n{iz},events_text{iz},events_raw{iz}]=xlsread(fullfile(Cal.path_root,'configs',['icf',Cal.brw_str{iz},'.xls']),...
+                                                             ['Eventos.',Cal.brw_str{iz}],'','basic');
+       [inc_n{iz},incidences_text{iz},incidences_raw{iz}]=xlsread(fullfile(Cal.path_root,'configs',['icf',Cal.brw_str{iz},'.xls']),...
+                                                             ['Incidencias.',Cal.brw_str{iz}],'','basic');
+    else % not reference. Go to bfiles
+      if exist(fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},['icf',Cal.brw_str{iz},'.xls']),'file')
+         icf_op{iz}=xlsread(fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},['icf',Cal.brw_str{iz},'.xls']),...
+                           ['icf.',Cal.brw_str{iz}],'','basic');
+         [events_n{iz},events_text{iz},events_raw{iz}]=xlsread(fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},['icf',Cal.brw_str{iz},'.xls']),...
+                                                               ['Eventos.',Cal.brw_str{iz}],'','basic');
+        %  icf_a{iz}=xlsread(fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},['icf',Cal.brw_str{iz},'.xls']),...
+        %                    ['icf_a.',Cal.brw_str{iz}],'','basic');                               
+         [inc_n{iz},incidences_text{iz}]=xlsread(fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},['icf',Cal.brw_str{iz},'.xls']),...
+                                                 ['Incidencias.',Cal.brw_str{iz}],'','basic');         
+      else
+          continue
+      end
+    end   
     
-   [fpath,ffile,fext]=fileparts(brw_config_files{inst,2});
-   disp(ffile)
-  if strcmpi(fext,'.cfg') 
-    
-   [icf_n,icf_text,icf_raw]=xlsread(fullfile(Cal.path_root,'bfiles',Cal.brw_str{inst},['icf',Cal.brw_str{inst},'.xls']),...
-                                   ['icf.',Cal.brw_str{inst}],'','basic');
-   cfg=icf_n(2:end-1,3:end); save('config.cfg', 'cfg', '-ASCII','-double');
-   tmp_file=sprintf('config%s.cfg',Cal.brw_str{inst});
-   copyfile('config.cfg',fullfile(pwd,'bfiles',Cal.brw_str{inst},tmp_file));
-   delete('config.cfg');
+    if size(icf_op{iz},1)==54  % ??
+       cfg=icf_op{iz}(2:end-1,3:end); 
+       save('config.cfg', 'cfg', '-ASCII','-double');
+    else
+       cfg=icf_op{iz}(1:end-1,3:end); 
+       save('config.cfg', 'cfg', '-ASCII','-double');
+    end
+    tmp_file=sprintf('config%s.cfg',Cal.brw_str{iz});       
+    copyfile('config.cfg',fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},tmp_file));
+    delete('config.cfg');
+  
+  if iz==find(Cal.brw==185) %reference  
+     if size(icf_a{iz},1)==54 %??
+        cfg=icf_a{iz}(2:end-1,3:end);
+        save('config_a.cfg', 'cfg', '-ASCII','-double');
+     else
+        cfg=icf_a{iz}(1:end-1,3:end);
+        save('config_a.cfg', 'cfg', '-ASCII','-double');
+     end             
+     tmp_file=sprintf('config%s_a.cfg',Cal.brw_str{iz});
+     copyfile('config_a.cfg',fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},tmp_file));
+     delete('config_a.cfg');
+   end
+ 
+  catch exception
+        fprintf('%s Brewer%s\n',exception.message,Cal.brw_name{iz}); 
+        icf_op{iz}=[]; icf_a{iz}=[]; events_n{iz}=[]; events_raw{iz}=[];
+        events_text{iz}=[]; incidences_text{iz}=[];
   end
+  Cal.events{iz}=events_n{iz}(:,2:end);
+  Cal.events_n{iz}=events_n{iz};
+  Cal.events_text{iz}=events_text{iz};
+  Cal.events_raw{iz}=events_raw{iz};
+  Cal.incidences_text{iz}=incidences_text{iz};
 end
-
 %%
 Cal.ETC_C={
           [0,0,0,0,0,0]         %005
@@ -184,7 +223,7 @@ Cal.ETC_C={
 % Brewer configuration files
 pa=repmat(cellstr([Cal.path_root,filesep(),'bfiles']),Cal.n_brw,2);
 pa=cellfun(@fullfile,pa,[mmcellstr(sprintf('%03d|',Cal.brw)),mmcellstr(sprintf('%03d|',Cal.brw))],'UniformOutput',0);
-brw_config_files(:,1:2)=cellfun(@fullfile,pa,brw_config_files(:,1:2),'UniformOutput',0);
+brw_config_files(:,1:2)=cellfun(@fullfile,pa,upper(brw_config_files(:,1:2)),'UniformOutput',0);
 if isunix
    brw_config_files=strrep(brw_config_files,'\',filesep());
 %   brw_config_files=cellfun(@upper,brw_config_files,'UniformOutput',0);
@@ -215,7 +254,7 @@ for i=1:Cal.n_brw
 %         fecha=char(config(54:end)')
 %         disp(Cal.brw_config_files{i,2});
     else
-       disp('ERROR'); 
+       disp('->ERROR'); 
        disp(jj);
        disp(Cal.brw_config_files{i,jj});
     end
