@@ -38,7 +38,7 @@ close all
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
                      'control_flag',1,'residual_limit',35,...
-                     'hg_time',15,'one_flag',0);
+                     'hg_time',15,'one_flag',1);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
@@ -71,7 +71,7 @@ end
 
 idx=1; cal_step_error={};
 for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
-     cal_step_error{t}=round(mean([abs(cal_step{t}(1)-cal_step{t}(2)),abs(cal_step{t}(3)-cal_step{t}(1))]));
+     cal_step_error{t}=round(mean([abs(cal_step{t}(2)-cal_step{t}(3)),abs(cal_step{t}(2)-cal_step{t}(4))]));
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthSC',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\numSC',tags{idx}],size(sc_avg{t},1),...
                                       ['\CALCSTEP',tags{idx}],round(cal_step{t}(1)),...
@@ -100,7 +100,8 @@ for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
        ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',1);%
     catch
        warning(sprintf('Error en %s. DSP: %s',Cal.brw_name{Cal.n_inst},ldsp{jj}));
-       res{jj}=NaN*ones(9,7,2); detail{jj}=NaN*ones(6,6,9,2); QUAD_DETAIL{jj}=NaN;
+       res{jj}=NaN*ones(15,9,2); detail{jj}=NaN*ones(7,6,15,2); QUAD_DETAIL{jj}=NaN;
+       %res{jj}=NaN*ones(9,7,2); detail{jj}=NaN*ones(6,6,9,2); QUAD_DETAIL{jj}=NaN;
     end
 end
 % Para salvar los datos de cada brewer
