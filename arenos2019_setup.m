@@ -42,47 +42,48 @@ Cal.Date=Date;
 % blind-days=arrival: (to) maintenance or, if no changes, campaign end)
 % final-days=((maintenance or, if no changes, arrival): campaign end
 Cal.calibration_days={
-   day0:dayend,day0:dayend   ,149:157 %day0:dayend       %005  
+   day0:dayend,day0:dayend   ,day0:dayend       %005  
    day0:dayend,day0:dayend   ,day0:dayend       %017 
-   day0:dayend,day0:153      ,156:dayend       %033  <-Calc Step
-   day0:dayend,day0:154      ,155:158          %053  change SL/Hg lamps
-   day0:dayend, day0:dayend  ,day0:dayend       %070  
-   day0:dayend, 150:dayend   ,150:dayend       %075  
-   day0:dayend, 151:dayend   ,152:dayend        %082  
-   152:dayend,149:155        ,152:dayend        %102  
-   day0:152   ,152:155       ,155:dayend        %117  
-   day0:dayend,day0:155      ,156:dayend        %126 %day155 CAL 296-->286
-   day0:152   ,152:152       ,153:dayend        %150  
-   day0:dayend,day0:153      ,154:dayend       %151  %see sl
+   day0:dayend,day0:dayend   ,day0:dayend       %033  
+   day0:dayend,day0:dayend   ,day0:dayend       %070  
+   day0:dayend,day0:dayend   ,day0:dayend       %075  
+   day0:dayend,day0:dayend  ,day0:dayend        %117  
+   day0:dayend,day0:dayend  ,day0:dayend        %126 
+   day0:dayend,day0:dayend  ,day0:dayend        %150  
+   day0:dayend,day0:dayend  ,day0:dayend        %151 
    day0:dayend,day0:dayend   ,day0:dayend       %158 
    day0:dayend,day0:dayend   ,day0:dayend       %163  
-   day0:151   ,152:154       ,154:dayend        %166  
+   day0:dayend,day0:dayend  ,day0:dayend        %166  
    day0:dayend,day0:dayend   ,day0:dayend       %172  
+   day0:dayend,day0:dayend   ,day0:dayend       %174 
    day0:dayend,day0:dayend   ,day0:dayend       %185  
-   day0:dayend,day0:155      ,156:dayend        %186  
-   day0:dayend,day0:dayend   ,152:dayend       %202  
-   day0:dayend,day0:dayend   ,day0:dayend       %214
-   day0:dayend,day0:dayend   ,150:dayend       %228
+   day0:dayend,day0:dayend   ,day0:dayend       %186  
+   day0:dayend,day0:dayend   ,day0:dayend       %201
+   day0:dayend,day0:dayend   ,day0:dayend       %202
+   day0:dayend,day0:dayend   ,day0:dayend       %228
+   day0:dayend,day0:dayend   ,day0:dayend       %230
+   day0:dayend,day0:dayend   ,day0:dayend       %300
+
                                  };
 
 Cal.blind_days=Cal.calibration_days(:,2);
 Cal.final_days=Cal.calibration_days(:,3);
 
 %% CALIBRATION INFO
-Cal.brw       = [005,017,033,053,070,075,082,102,117,126,150,151,158,163,166,172,185,186,202,214,228];
-Cal.brwM      = [2  ,2  ,2  ,2  ,4  ,4  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ];
-Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,1  ,1  ,1  ,1  ];
-Cal.sl_c_blind= [0  ,1  ,1  ,1  ,0  ,0  ,0  ,1  ,0  ,0  ,1  ,1  ,0  ,1  ,1  ,0  ,0  ,0  ,1  ,1  ,0  ];
-Cal.no_maint   =[1  ,1  ,1  ,0  ,0  ,0  ,1  ,0  ,1  ,0  ,1  ,0  ,1  ,1  ,0  ,1  ,1  ,0  ,1  ,1  ,1  ];
+Cal.brw       = [005,017,033,070,075,117,126,150,151,158,163,166,172,174,185,186,201,202,228,230,300];
+Cal.brwM      = [2  ,2  ,2  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ];
+Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ];
+Cal.sl_c_blind= [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ];
+Cal.no_maint   =[0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ];
 Cal.plt       = {'o','+','*','h','x','s','d','v','>','<','p','+','x','p','*','x','s','d','v','>','<'};
 
 
 Cal.n_brw=length(Cal.brw);
-Cal.brw_name={'TSK#005','IOS#017','SCO#033','DNK#053','MAD#070','UM#075','DNK#082','POR#102','MUR#117','UM#126',...
-              'ARE#150','COR#151','K&Z#158','WRC#163','ZAR#166','UM#172','IZO#185','MAD#186',...
-              'DNK#202','SDK#214','DNK#228'
+Cal.brw_name={'TSK#005','IOS#017','SCO#033','MAD#070','UM#075','MUR#117','UM#126','ARE#150','COR#151','K&Z#158',...
+              'WRC#163','ZAR#166','UM#172','JAP#174','IZO#185','MAD#186','TAM#201','DNK#202','DNK#228','K&Z#230',...
+              'CAN#300'
              };
-Cal.brw_str=mmcellstr(sprintf('%03d|',Cal.brw));
+Cal.brw_str=mmcellstr(sprintf('%03d|',Cal.brw))';
 
 Cal.Tsync=3.5;
 
@@ -96,7 +97,7 @@ Cal.brw_name(Cal.brewer_ref)
 
 % for each brewer, 1 if no changes in maintenance, 0 otherwise
 % check
-% {Cal.brw_name,Cal.brw,Cal.sl_c,Cal.brw_str}
+% [Cal.brw_name;num2cell(Cal.brw);num2cell(Cal.sl_c);Cal.brw_str]'
 
 
 
@@ -105,12 +106,9 @@ Cal.brw_name(Cal.brewer_ref)
   brw_config_files={
     '..\005\ICF14815.005' ,   '..\005\ICF15117.005'  ,'1857',  '1838'; % 
     '..\017\ICF15315.017' ,   '..\017\ICF15315.017'  ,'2170',  '2097'; % 
-    '..\033\config033.cfg' ,  '..\033\ICF15617.033'  ,'2329',  '2325'; % 
-    '..\053\ICF15316.053' ,   '..\053\ICF15517.053'  ,'1845',  '1850'; % 
+    '..\033\ICF15617.033' ,  '..\033\ICF15617.033'   ,'2329',  '2325'; % 
     '..\070\ICF15617.070' ,   '..\070\ICF15617.070'  ,'1700',  '1700'; %
     '..\075\ICF14615.075' ,   '..\075\ICF15017.075'  ,'1769',  '1714'; %   New TC and DT
-    '..\082\ICF15316.082' ,   '..\082\ICF15017.082'  ,'1615',  '1666'; %
-    '..\102\ICF25107.102' ,   '..\102\ICF15517.102'  ,'2350',  '2713'; %
     '..\117\icf14915.117' ,   '..\117\ICF14915.117'  ,'1536',  '1612'; % 
     '..\126\icf15215.126' ,   '..\126\ICF15517.126'  ,'2093',  '2075'; % 
     '..\150\Icf14915.150' ,   '..\150\ICF15617.150'  ,'0322',  '0325'; % 
@@ -119,13 +117,18 @@ Cal.brw_name(Cal.brewer_ref)
     '..\163\ICF17016.163' ,   '..\163\ICF15017.163'  ,'0270',  '0270'; % ->to updated from arosa
     '..\166\icf15215.166' ,   '..\166\ICF15215.166'  ,'1952',  '1975'; %
     '..\172\ICF15115.172' ,   '..\172\ICF15117.172'  ,'0444',  '0444'; %
+    '..\174\ICF15115.174' ,   '..\174\ICF15117.174'  ,'0444',  '0444'; %
     '..\185\icf12017.185' ,   '..\185\icf12217.185'   ,'0335',  '0335'; % new temperature coeff
     '..\186\ICF14915.186' ,   '..\186\ICF14915.186'  ,'0317',  '0317'; % 
+    '..\201\ICF15215.201' ,   '..\201\ICF15017.201'  ,'0283',  '0270'; %
     '..\202\ICF15215.202' ,   '..\202\ICF15017.202'  ,'0283',  '0270'; %
-    '..\214\ICF15015.214' ,   '..\214\ICF15017.214'  ,'0234',  '0216'; % 
     '..\228\ICF22416.228' ,   '..\228\ICF15017.228'  ,'0242',  '0242'; %
+    '..\230\ICF15215.230' ,   '..\230\ICF15017.202'  ,'0283',  '0270'; %
+    '..\300\ICF22416.300' ,   '..\300\ICF15017.300'  ,'0242',  '0242'; 
     };
 
+%
+[Cal.brw_name;num2cell(Cal.brw);num2cell(Cal.brwM);num2cell(Cal.sl_c);Cal.brw_str;brw_config_files']'
 %% Brewer configuration files from configuration tables
 icf_op=cell(1,length(Cal.n_brw));  %old, operative
 icf_a=cell(1,length(Cal.n_brw));   %new, alternative
