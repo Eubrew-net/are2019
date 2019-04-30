@@ -1,5 +1,5 @@
-% options_pub.outputDir=fullfile(pwd,'latex','xxx','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_xxxa2.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','070','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_070a2.m'),options_pub);
 
 %% Brewer Setup
 clear all;
@@ -7,7 +7,7 @@ clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==xxx);
+Cal.n_inst=find(Cal.brw==070);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -97,9 +97,9 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
-                        %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
+                        'date_range',datenum(Cal.Date.cal_year-1,12,1));
                         %this year data
+                       %'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
                         
                        
 
@@ -111,14 +111,16 @@ disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.new(7,[1 3
  %%
 tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],...
         {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4)
-temperature{Cal.n_inst}.regression_table=tc_reg_table;
-%%
+temperature{Cal.n_inst}.regression_table=tc_reg_table; 
+
+    
+%
 tc_coeff_table=makeHtml_Table(NTC{2})
-temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
+temperature{Cal.n_inst}.coeff_table=tc_coeff_table; 
 
 %%  Check changes
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
-                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
+                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-4,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
 
 Forigx=Forig; Fn=Fnew;
 
@@ -219,7 +221,7 @@ tabla_regress={};
 
 %% Filter attenuation
 [ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},...
-                             'date_range',datenum(Cal.Date.cal_year-4,1,1),...
+                             'date_range',datenum(Cal.Date.cal_year-4,2,15),...
                              'outlier_flag',1,'plot_flag',0,'config',config_orig(17:22));
                              
 filter{Cal.n_inst}.ETC_FILTER_CORRECTION=ETC_FILTER_CORRECTION;

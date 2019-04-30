@@ -1,5 +1,5 @@
-% options_pub.outputDir=fullfile(pwd,'latex','xxx','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_xxxa2.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','075','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_075a2.m'),options_pub);
 
 %% Brewer Setup
 clear all;
@@ -7,7 +7,7 @@ clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==xxx);
+Cal.n_inst=find(Cal.brw==075);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -263,7 +263,7 @@ fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g'
 filter{Cal.n_inst}.mean_table=fi_mean_table;
 %
 %fprintf('\nFI''s analyzed: %d\n',NFI);
-fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'})
+filter{Cal.n_inst}.fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'})
 filter{Cal.n_inst}.etc_table=fi_etc_table;
 
 
