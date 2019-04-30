@@ -78,23 +78,23 @@ else
 end
 
 %% SL summary from bfiles temperature
-figure; set(gcf,'Tag','DailySL');
-hl1=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(2,:),[],TC{Cal.n_inst}(3,:),'*k');
-set(hl1,'LineWidth',2);
-ylabel('SL double ratio MS9');
-title(sprintf('Daily means for sl ozone ratio & temperature. Brewer %s\r\n (from bfile sl summaries)',Cal.brw_name{Cal.n_inst}));
-set(gca,'XTickLabels',datestr(get(gca,'XTick'),2));  grid;
-ax(1)=gca; set(ax(1),'Position',[0.1  0.12  0.75  0.72]);% [left bottom width height]
-xtickangle(gca,30);
-ax(2)=axes('Position',get(ax(1),'Position'),...
-   'XAxisLocation','top',...
-   'YAxisLocation','right',...
-   'Color','none','FontSize',10,...
-   'XColor','k','YColor','b'); set(ax,'box','off');
-hold on; hl2=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(7,:),[],TC{Cal.n_inst}(8,:),'*b');
-set(hl2,'LineWidth',2);  set(gca,'XTicklabels',[],'YLim',[0 45]);
-ylb=ylabel('Temperature','Rotation',-90); pos=get(ylb,'Position'); pos(1)=pos(1)+3;
-set(ylb,'Position',pos);
+% figure; set(gcf,'Tag','DailySL');
+% hl1=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(2,:),[],TC{Cal.n_inst}(3,:),'*k');
+% set(hl1,'LineWidth',2);
+% ylabel('SL double ratio MS9');
+% title(sprintf('Daily means for sl ozone ratio & temperature. Brewer %s\r\n (from bfile sl summaries)',Cal.brw_name{Cal.n_inst}));
+% set(gca,'XTickLabels',datestr(get(gca,'XTick'),2));  grid;
+% ax(1)=gca; set(ax(1),'Position',[0.1  0.12  0.75  0.72]);% [left bottom width height]
+% xtickangle(gca,30);
+% ax(2)=axes('Position',get(ax(1),'Position'),...
+%    'XAxisLocation','top',...
+%    'YAxisLocation','right',...
+%    'Color','none','FontSize',10,...
+%    'XColor','k','YColor','b'); set(ax,'box','off');
+% hold on; hl2=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(7,:),[],TC{Cal.n_inst}(8,:),'*b');
+% set(hl2,'LineWidth',2);  set(gca,'XTicklabels',[],'YLim',[0 45]);
+% ylb=ylabel('Temperature','Rotation',-90); pos=get(ylb,'Position'); pos(1)=pos(1)+3;
+% set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
                                   'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
@@ -104,11 +104,12 @@ disp(sprintf(' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.orig(7,[1 
 disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.new(7,[1 3 2 4])));
 
  %%
- makeHtmlTable([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],...
-        {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4);
+ tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],...
+        {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4)
 
 %%
- makeHtmlTable(NTC{2});
+ tc_coeff_table=makeHtmlTable(NTC{2})
+ 
 
 %%  Check changes
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
@@ -253,17 +254,17 @@ matrix2latex_ctable([num2cell(media_fi);num2cell(fix(mean(media_fi)))],fullfile(
                  
 %%
 fprintf('\nFI''s analyzed: %d\n',NFI);
-displaytable([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g',label_1);
+fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g',label_1)
 
 %%
 fprintf('\nFI''s analyzed: %d\n',NFI);
-displaytable(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'});
+fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'});
 
 %%
- figure(max(findobj('tag','FI_wavelength')));
+ figure(maxf(findobj('tag','FI_wavelength')));
  printfiles_report(gcf,Cal.dir_figs,'Width',13.5);
     
- figure(max(findobj('tag','FI_STATS')));
+ figure(maxf(findobj('tag','FI_STATS')));
  printfiles_report(gcf,Cal.dir_figs,'Width',13,'Height',16);
        
  ix=sort(findobj('-regexp','Tag','FIOS*\w+'));
