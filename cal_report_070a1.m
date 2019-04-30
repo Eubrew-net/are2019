@@ -49,7 +49,7 @@ save(Cal.file_save,'-Append','Cal');
 
 %% configuration files
 try
-[config_ref,TCref,DTref,ETCref,A1ref,ATref,leg]=read_icf(Cal.brw_config_files{Cal.n_ref(2),2});
+[config_ref,TCref,DTref,ETCref,A1ref,ATref,leg]=read_icf(Cal.brw_config_files{Cal.n_ref(1),2});
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
 
