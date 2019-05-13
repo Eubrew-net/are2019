@@ -1,756 +1,0 @@
-version=2
-dh030119Sodankyla 67.3675 -26.633  2.375pr990
-co22:24:31dh: day header
-co22:24:31main: version 4.1007/04/2015 15:00:00
-co22:24:31skc: sx
-co22:24:31autohg:  1 
-co22:24:31hifw2:  0 
-co22:24:31attn:  25000  80000 
-co22:24:31lowds:  1 
-co22:24:31cubdsp:  1 
-
-inst0.000000.081480.125710.077590.025130.00.34962.350001.165401430-2700.000000027028814169004721102471408218443261072972mkiii10000000000-3.00000770740802817825151.00106-8.190024692500.20002560002211July 26/2016EXTRAS1002500080000111215-52006-02-2018@
-disp32856.970.0771558-8.83645e-071.12593e-112896.790.0762945-8.84195e-071.12021e-112933.470.0754637-8.84476e-071.11453e-112968.640.0746305-8.84522e-071.10867e-113002.890.0737815-8.84339e-071.10256e-112824.110.0778374-8.83013e-071.13033e-114285.460.115734-1.32547e-061.68889e-114345.180.114442-1.32629e-061.68031e-114400.20.113196-1.32671e-061.67179e-114452.960.111946-1.32678e-061.66301e-114504.330.110672-1.32651e-061.65384e-114236.160.116756-1.32452e-061.69549e-11stèvc 27.1624692881690@
-zeni-0.006400-0.0196800.0165400.1522580.281884-0.060358-0.5096590.460001-0.042397oct17/00@
-op_st214C:\brew214\bdata\icf15318zsf14312dcf20916uvr15018030119Sodankyla67.3675-26.6339902.375-425-1514633111110110110111skco3sx@
-uvr2865 6973.02870 7028.02875 7073.62880 7111.02885 7141.52890 7166.22895 7185.92900 7201.72905 7214.32910 7224.42915 7232.82920 7239.82925 7246.02930 7251.82935 7257.52940 7263.42945 7269.62950 7276.42955 7283.92960 7292.02965 7300.92970 7310.62975 7321.12980 7332.22985 7344.12990 7356.52995 7369.43000 7382.63005 7396.23010 7409.93015 7423.63020 7437.33025 7450.73030 7463.83035 7476.43040 7488.53045 7499.93050 7510.43055 7520.13060 7528.83065 7536.53070 7543.03075 7548.33080 7552.43085 7555.23090 7556.73095 7556.83100 7555.63105 7553.03110 7549.03115 7543.73120 7537.03125 7529.13130 7519.83135 7509.43140 7497.73145 7484.93150 7471.03155 7456.13160 7440.23165 7423.33170 7405.63175 7387.13180 7367.83185 7347.83190 7327.23195 7305.93200 7284.23205 7261.93210 7239.23215 7216.03220 7192.53225 7168.73230 7144.43235 7120.03240 7095.23245 7070.33250 7045.03255 7019.63260 6993.93265 6968.13270 6942.13275 6915.83280 6889.43285 6862.83290 6836.13295 6809.23300 6782.23305 6755.03310 6727.73315 6700.23320 6672.73325 6645.13330 6617.53335 6589.83340 6562.23345 6534.63350 6507.13355 6479.83360 6452.73365 6425.83370 6399.33375 6373.23380 6347.63385 6322.53390 6298.03395 6274.23400 6251.23405 6229.13410 6207.83415 6187.53420 6168.23425 6150.03430 6132.93435 6116.93440 6102.03445 6088.13450 6075.23455 6063.23460 6051.93465 6041.23470 6030.83475 6020.53480 6009.73485 5998.23490 5985.43495 5970.53500 5953.13505 5737.63510 5729.93515 5723.53520 5718.23525 5714.03530 5710.93535 5708.93540 5707.93545 5707.93550 5708.93555 5710.93560 5713.83565 5717.53570 5722.23575 5727.83580 5734.13585 5741.33590 5749.33595 5758.03600 5767.53605 5777.73610 5788.63615 5800.23620 5812.53625 5825.43630 5838.93635 5853.03640 5867.63645 5882.83650 5898.5@
-schedule-180pdtdhphgslaz-92pdtdapuvhphgsluv-90pdtdau0.0pdtdau90pdtduvhphgsluv93pdtdhphgsl180sx@
-co22:24:34checkaz: Running checkaz from sx line -200
-co22:24:36po: Running po from sx line -200
-co22:24:39af: Running af from sx line -200
-co22:24:40af: Auto FR/HP/HG is now OFF
-co22:24:41re: Running re from sx line -200
-co22:26:06re: Zenith discrepancy = -2
-co22:26:10re: Azimuth discrepancy = -3309
-co22:26:47re: Micrometer #1 discrepancy = -1
-co22:26:54re: Micrometer #2 discrepancy = -1
-co22:27:51az: Running az from sx line -200
-co22:28:50az: Azimuth discrepancy =  4
-co22:29:45w1: Running w1 from sx line -200
-co22:34:47fr: Running fr from sx line -200
-co22:36:38fr: Micrometer #1 discrepancy=  0 Now set to o3 offset =  0
-co22:38:30fr: Micrometer #2 discrepancy=  0 Now set to offset =  0
-hk22:38:37 13 15 14 3.3 .42-99 7
-hpscan22:38:49 0 49007 10 80997 20 113594 30 147295 40 181466 50 212273 60 225511 70 226651 80 226926 90 226478 100 226216 110 219956 120 191555 130 158190 140 124655 150 91319 160 59440
-hp22:39:50 .9923789 236329.8 81.7 13
-hk22:40:04 13 15 13 3.3 .42-99 7
-co22:40:06hgfw2: HG FW#2 at step  0
-hk22:42:13 13 15 13 3.3 .42-99 6
-hgscan 0wide 302warm= 222:42:14JAN 03/19 184 170 1253 5271 9594 14568 20244 25762 30805 33005 34001 32426 28499 24408 19625 14366 9167 4212 2740 1916 1871 2691 4219 9197 14857 20603 25782 30245 34358 36250 35434 33179 27921 22086 16419 10821 6027 1520 211 179
-hg22:43:37 .9993 288.8983 289 70251 13 1
-ap22:43:41 13.07 14.78 13.45 1304.27 9.94 4.44 10.07 20.23 .00 6.61 13.36 6.90 4.40 2.55 .00 .00 .04 .01 1.21 1.90 3.27 .41 1.94 2.13 13.08 14.79 13.55 1304.27 9.95 4.44 10.08 19.66 4.86 6.9 13.46 6.9 4.41 2.56 1.47 9.71 .42 9.49 2.76 2.55 3.42 .43 1.93 2.13
-hk22:44:23 13 15 13 3.3 .42-99 7
-dto3JAN 03/1922:55:29 13 0 1586284 27.73 28.92 27.71 28.32 28.53 1 553006.1 29.76 25.88 41.27 36.66 31.31 34.57 30.51 27.7 36.97 38.86    28.244 .5    33.349 5.1
-co22:55:31an: Running an from sx line -200
-co22:55:32an: Auto FR/HP/HG is now ON
-hk22:55:38 13 15 14 3.3 .42-99 7
-rso3JAN 03/1923:04:24 13 938861 2 1070112 1211270 1456954 1566138 1732146 2713004 939463 3 1069573 1211664 1456319 1564877 1731101 2711819 .9994 .6667 1.0005 .9997 1.0004 1.0008 1.0006 1.0004 .1654 .1116 .0314 .0438 .0254 .0215-.01 .1653 .1111 .0312 .0438 .025 .021-9.600001E-03
-co23:04:26ga: Running ga from sx line -200
-hk23:04:32 13 15 14 3.4 .44-99 7
-co23:09:51ga: GA scan started at 23:09:51
-co23:12:19ga: Still doing GA
-co23:14:34ga: Still doing GA
-co23:16:49ga: Still doing GA
-co23:19:04ga: Still doing GA
-co23:21:19ga: Still doing GA
-co23:23:34ga: Still doing GA
-co23:25:49ga: Still doing GA
-co23:28:05ga: Still doing GA
-co23:30:20ga: Still doing GA
-co23:32:35ga: Still doing GA
-co23:34:51ga: Still doing GA
-co23:37:06ga: Still doing GA
-co23:39:21ga: Still doing GA
-co23:41:37ga: Still doing GA
-co23:43:52ga: Still doing GA
-co23:46:07ga: Still doing GA
-co23:48:22ga: Still doing GA
-co23:50:38ga: Still doing GA
-co23:52:53ga: Still doing GA
-co23:54:34ga: GA scan finished at 23:54:34
-co23:54:39ru: Running ru from sx line -180
-co23:54:41ru: Giving SB time to complete motor movements.
-co23:57:28start:  PROGRAM start :  JAN 03/19 at 23:57:25
-co23:57:28ab_sk: Running ab_sk from main.asc
-co23:57:45ru: Running ru from sx line -180
-co23:57:46ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
-co23:57:47td: Running td from sx line -180
-co23:57:50td: Time correction  .1 seconds
-hk00:00:04 14 15 15 3.4 .44-99 8
-hpscan00:00:14 0 55873 10 87176 20 119423 30 152950 40 185751 50 214368 60 223135 70 223399 80 223486 90 223115 100 223111 110 211750 120 181919 130 148418 140 115458 150 83418 160 51861
-hp00:01:13 .9922767 232949.3 79.3 14
-hk00:01:28 14 16 15 3.4 .47-99 8
-co00:01:30hgfw2: HG FW#2 at step  0
-hk00:03:37 14 15 15 3.4 .44-99 8
-hgscan 0wide 302warm= 200:03:37JAN 04/19 179 202 1842 6692 12000 18269 24667 31207 37453 39800 40896 38791 33960 29060 23215 17118 10569 4892 3265 2252 2238 3234 4963 10581 17381 24179 30307 35713 40921 43593 42427 40119 33755 27150 20293 13381 7660 2151 209 209
-hg00:04:57 .9995 288.2676 288 84489 14 0
-hk00:10:03 14 16 15 3.4 .47-99 8
-sla 0 10.40620 627327 1 714177 807986 971618 1044273 1154805rat 1686.375 1139.309 320.3047 448.1367
-sla 0 11.080620 626391 0 713005 806166 969654 1043320 1152933rat 1689.57 1145.231 325.2383 444.9571
-sla 0 11.760620 625826 4 711855 806575 969754 1042779 1152286rat 1694.395 1140.672 322.4727 444.7617
-sla 0 12.440620 625555 2 711539 805786 969215 1041056 1152467rat 1689 1137.649 317.5781 452.8203
-sla 0 13.120620 625423 2 711177 805305 968962 1041492 1152247rat 1693.098 1142.156 320.6055 450.1055
-sla 0 13.80620 624858 3 711207 805062 968910 1041368 1151045rat 1692.395 1142.969 320.3164 445.9649
-sla 0 14.490620 624721 1 711385 805025 968764 1041134 1151556rat 1690.277 1142.156 319.9727 448.9649
-summary00:12:26JAN 04/19 122.891 1.826 14sl 0 1691 1141 321 448 257 219 712049.3 1152477 3 3 2 3 11 6 1117.3 1182.4
-co00:14:52az: Running az from sx line -180
-co00:15:03az: Azimuth discrepancy =  1
-co00:15:10skc: Waiting until ZA = -92 now -131.9
-co00:25:11skc: Waiting until ZA = -92 now -131.3
-co00:35:11skc: Waiting until ZA = -92 now -130.6
-co00:45:12skc: Waiting until ZA = -92 now -129.9
-co00:55:12skc: Waiting until ZA = -92 now -129.2
-co01:05:13skc: Waiting until ZA = -92 now -128.5
-co01:15:14skc: Waiting until ZA = -92 now -127.7
-co01:25:14skc: Waiting until ZA = -92 now -126.9
-co01:35:15skc: Waiting until ZA = -92 now -126.1
-co01:45:16skc: Waiting until ZA = -92 now -125.3
-co01:55:16skc: Waiting until ZA = -92 now -124.4
-co02:05:17skc: Waiting until ZA = -92 now -123.5
-co02:15:18skc: Waiting until ZA = -92 now -122.6
-co02:25:18skc: Waiting until ZA = -92 now -121.7
-co02:35:19skc: Waiting until ZA = -92 now -120.8
-co02:45:20skc: Waiting until ZA = -92 now -119.8
-co02:55:20skc: Waiting until ZA = -92 now -118.9
-co03:05:21skc: Waiting until ZA = -92 now -117.9
-co03:15:22skc: Waiting until ZA = -92 now -117
-co03:25:22skc: Waiting until ZA = -92 now -116
-co03:35:23skc: Waiting until ZA = -92 now -115.1
-co03:45:23skc: Waiting until ZA = -92 now -114.1
-co03:55:24skc: Waiting until ZA = -92 now -113.1
-co04:05:25skc: Waiting until ZA = -92 now -112.2
-co04:15:25skc: Waiting until ZA = -92 now -111.2
-co04:25:26skc: Waiting until ZA = -92 now -110.3
-co04:35:27skc: Waiting until ZA = -92 now -109.3
-co04:45:27skc: Waiting until ZA = -92 now -108.4
-co04:55:28skc: Waiting until ZA = -92 now -107.5
-co05:05:28skc: Waiting until ZA = -92 now -106.6
-co05:15:29skc: Waiting until ZA = -92 now -105.7
-co05:25:30skc: Waiting until ZA = -92 now -104.8
-co05:35:30skc: Waiting until ZA = -92 now -103.9
-co05:45:31skc: Waiting until ZA = -92 now -103
-co05:55:32skc: Waiting until ZA = -92 now -102.2
-co06:05:33skc: Waiting until ZA = -92 now -101.4
-co06:15:33skc: Waiting until ZA = -92 now -100.6
-co06:25:34skc: Waiting until ZA = -92 now -99.8
-co06:35:35skc: Waiting until ZA = -92 now -99.1
-co06:45:36skc: Waiting until ZA = -92 now -98.3
-co06:55:37skc: Waiting until ZA = -92 now -97.6
-co07:05:37skc: Waiting until ZA = -92 now -96.9
-co07:15:38skc: Waiting until ZA = -92 now -96.3
-co07:25:39skc: Waiting until ZA = -92 now -95.7
-co07:35:40skc: Waiting until ZA = -92 now -95.1
-co07:45:40skc: Waiting until ZA = -92 now -94.5
-co07:55:41skc: Waiting until ZA = -92 now -94
-co08:05:41skc: Waiting until ZA = -92 now -93.5
-co08:15:42skc: Waiting until ZA = -92 now -93
-co08:25:42skc: Waiting until ZA = -92 now -92.6
-co08:35:43skc: Waiting until ZA = -92 now -92.2
-co08:38:31ru: Running ru from sx line -92
-co08:38:32ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
-co08:38:33td: Running td from sx line -92
-co08:38:36td: Time correction  .2 seconds
-ap08:38:39 13.74 15.26 14.88 1304.27 9.94 4.44 10.07 20.23 .00 8.99 13.64 9.75 4.40 2.55 .00 .00 .04 .01 1.22 1.93 3.42 .43 1.93 2.13 13.74 15.17 14.79 1304.27 9.95 4.44 10.09 19.66 4.98 9.08 13.74 9.75 4.41 2.56 1.47 9.689999 .42 9.28 2.72 2.52 3.42 .43 1.93 2.16
-hk08:39:18 14 15 15 3.4 .44-99 10
-co08:40:15uv: UV standard  scan started
-co08:47:52uv: UV standard  scan finished, incident DUV =  .1411448 mW/m^2
-hk08:47:58 14 15 15 3.4 .44-99 10
-hpscan08:48:21 0 52440 10 83967 20 116719 30 150615 40 184638 50 214368 60 225173 70 226098 80 226533 90 226322 100 226235 110 217581 120 187454 130 154320 140 121203 150 88566 160 56458
-hp08:49:21 .9923382 235954.8 80.6 14
-hk08:49:36 14 15 15 3.4 .44-99 10
-co08:49:38hgfw2: HG FW#2 at step  0
-hk08:51:45 14 15 15 3.4 .44-99 10
-hgscan 0wide 302warm= 208:51:45JAN 04/19 168 187 1615 5691 10018 15317 20702 26111 31259 33065 33925 31818 28068 23840 19014 13752 8399 3892 2610 1741 1760 2584 3868 8540 13996 19711 24811 29357 33773 35949 35084 33519 28177 22399 16885 11341 6494 1815 193 198
-hg08:53:06 .9995 287.8721 288 69874 14 0
-hk08:58:12 14 16 15 3.4 .47-99 10
-sla 0 538.550620 630575 1 717354 811305 976624 1049005 1160350rat 1686.918 1141.301 317.6055 449.3946
-sla 0 539.230620 628624 2 715242 810738 974396 1046304 1158341rat 1688.461 1132.914 316.2735 453.1328
-sla 0 539.910620 628958 1 715725 809335 973219 1046321 1157520rat 1685.543 1140.66 321.7266 449.8946
-sla 0 540.590620 627207 1 714726 809275 972356 1046117 1156341rat 1690.852 1140.117 324.7969 446.2071
-sla 0 541.280620 627610 1 713881 807171 971950 1044963 1155646rat 1691.156 1146.723 321.7266 448.4492
-sla 0 541.960620 626747 2 713021 807321 971547 1042921 1154194rat 1687.77 1137.188 314.8633 451.5391
-sla 0 542.640620 626731 1 713628 807258 970603 1043951 1154786rat 1688.406 1141.93 323.586 449.4258
-summary09:00:35JAN 04/19 88.555 11.749 14sl 0 1688 1140 320 450 249 216 714796.7 1156740 2 4 4 2 8 6 1448.2 2143.3
-hk09:03:07 14 16 15 3.4 .47-99 10
-co09:03:46uv: UV standard  scan started
-co09:11:23uv: UV standard  scan finished, incident DUV =  .2335277 mW/m^2
-co09:11:26skc: Waiting until ZA = -90 now -91
-co09:21:27skc: Waiting until ZA = -90 now -90.8
-co09:31:27skc: Waiting until ZA = -90 now -90.6
-co09:32:47ru: Running ru from sx line -90
-co09:32:48ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
-co09:32:49td: Running td from sx line -90
-co09:32:53td: Time correction  .2 seconds
-co09:32:54au: Running au from sx line -90
-hk09:33:00 14 15 15 3.4 .44-99 10
-hpscan09:33:23 0 56275 10 87746 20 120050 30 154703 40 187507 50 216988 60 225445 70 225950 80 225685 90 226016 100 226057 110 214136 120 184272 130 150468 140 117499 150 85000 160 52854
-hp09:34:23 .9921568 235623.6 79.5 14
-hk09:34:37 14 16 15 3.4 .47-99 9
-co09:34:40hgfw2: HG FW#2 at step  0
-hk09:36:47 14 15 15 3.4 .44-99 9
-hgscan 0wide 302warm= 209:36:47JAN 04/19 185 178 1597 5615 10066 15088 20814 25955 30993 32887 33697 31818 27808 23583 18953 13833 8452 3878 2591 1757 1731 2604 3892 8487 13942 19698 24835 29681 34030 36108 35315 33478 28362 22736 17046 11369 6429 1895 198 195
-hg09:38:08 .9995 287.8387 288 69805 14 0
-hk09:38:22 14 15 15 3.4 .44-99 9
-co09:38:27ds: DS intensity too low ( 2/cy), skipping.
-co09:38:41zs: ZS intensity too low ( 304/cy), skipping.
-co09:38:48zs: ZS intensity too low ( 293/cy), skipping.
-hk09:38:53 14 15 15 3.4 .44-99 9
-co09:39:01gi: 04 01 19  2.535944
-gia0 579.280610 36 0 100 320 1028 2469 3511
-gia0 579.650610 44 1 107 319 1019 2417 3467
-gia0 580.030610 36 2 106 336 1012 2460 3568
-gia0 580.40610 40 0 99 312 1029 2482 3526
-gia0 580.770610 37 0 96 321 1016 2464 3587
-hk09:41:03 14 15 15 3.4 .44-99 9
-fza0 581.791620 0 52 167 547 1262 1815
-fza0 582.411620 1 101 322 1035 2460 3559rat-1889.734-853.8906-730.7969-2760.485
-fza0 5831620 0 112 333 1041 2496 3571rat-2734.86-1052.609-662.9531-2862.735
-fza0 583.61620 1 103 323 1006 2313 3332rat-2654.485-1462.375-1038.578-2802.547
-summary09:43:00JAN 04/19 89.793 12.035 14fz 0-2426-1123-811-2809 6561 4057-5.8 62.4 467 310 200 51 336 206 1.5 4.9
-co09:44:10zs: ZS intensity too low ( 297/cy), skipping.
-hk09:44:14 14 15 15 3.4 .44-99 9
-co09:44:22gi: 04 01 19  2.535944
-gia0 584.640610 41 0 109 314 1017 2480 3600
-gia0 585.010610 39 1 113 324 1051 2518 3560
-gia0 585.380610 32 0 109 320 1049 2517 3659
-gia0 585.760610 40 1 104 330 1044 2514 3645
-gia0 586.130610 41 0 104 327 1079 2521 3578
-co09:46:20ux: Running ux from sx line -90
-hk09:46:26 14 15 15 3.4 .44-99 9
-co09:46:51ux: UV extended  scan started
-co09:55:23ux: UV extended  scan finished, incident DUV =  .432915 mW/m^2
-co09:55:25au: Running au from sx line -90
-hk09:55:31 14 15 15 3.4 .44-99 9
-hpscan09:55:55 0 57394 10 88605 20 121401 30 155354 40 188802 50 217156 60 225123 70 225713 80 226358 90 225963 100 225927 110 214191 120 183228 130 149991 140 116764 150 84235 160 52416
-hp09:56:55 .9922842 235665 79.2 14
-hk09:57:09 14 16 15 3.4 .47-99 9
-co09:57:12hgfw2: HG FW#2 at step  0
-hk09:59:18 14 15 15 3.4 .44-99 9
-hgscan 0wide 302warm= 209:59:19JAN 04/19 164 190 1483 5465 9802 14840 20148 25410 30502 32491 33322 31511 27642 23513 18565 13582 8444 3804 2539 1739 1729 2525 3854 8368 13841 19306 24341 28987 32975 35304 34572 32840 27666 22175 16587 11050 6281 1763 204 199
-hg10:00:40 .9995 287.9952 288 68626 14 0
-hk10:00:54 14 16 15 3.4 .47-99 10
-co10:00:59ds: DS intensity too low ( 2/cy), skipping.
-co10:01:13zs: ZS intensity too low ( 383/cy), skipping.
-co10:01:20zs: ZS intensity too low ( 375/cy), skipping.
-hk10:01:25 14 15 15 3.4 .44-99 10
-co10:01:33gi: 04 01 19  2.535944
-gia0 601.810610 38 0 107 324 1094 2707 3877
-gia0 602.190610 35 1 109 326 1100 2590 3810
-gia0 602.560610 37 0 104 323 1097 2659 3859
-gia0 602.930610 39 0 112 321 1054 2642 3778
-gia0 603.310610 36 0 105 334 1095 2632 3902
-hk10:03:35 14 15 15 3.4 .44-99 10
-fza0 604.321620 0 86 243 747 1817 2679
-fza0 604.941620 0 129 384 1290 3009 4333rat-1589.609-587.1719-1268.313-3014.078
-fza0 605.531620 0 101 324 1026 2503 3622rat 583.3125-580.1719-776.25-3055.18
-fza0 606.131620 1 90 259 877 2121 3129rat 4022.891 3194.133-975.3047-2729.383
-summary10:05:31JAN 04/19 89.629 12.062 14fz 0 1006 676-1007-2933 10391 6165-15.5 112.3 2830 2181 248 177 2351 1870 13.4 44.3
-co10:06:42zs: ZS intensity too low ( 289/cy), skipping.
-hk10:06:47 14 15 15 3.4 .44-99 10
-co10:06:54gi: 04 01 19  2.535944
-gia0 607.170610 37 0 118 339 1092 2642 3810
-gia0 607.550610 41 0 110 343 1106 2670 3829
-gia0 607.920610 41 0 118 338 1118 2616 3816
-gia0 608.290610 39 0 113 350 1138 2678 3833
-gia0 608.660610 37 0 109 327 1114 2688 3841
-co10:08:52ux: Running ux from sx line -90
-hk10:08:58 14 16 15 3.4 .47-99 10
-co10:09:23ux: UV extended  scan started
-co10:17:56ux: UV extended  scan finished, incident DUV =  .4450537 mW/m^2
-co10:17:58au: Running au from sx line -90
-hk10:18:05 14 15 15 3.4 .44-99 10
-hpscan10:18:28 0 53775 10 85196 20 118070 30 151589 40 184812 50 214642 60 225041 70 226048 80 226009 90 225885 100 225873 110 216903 120 186364 130 153358 140 120068 150 88116 160 55819
-hp10:19:28 .9923439 235576.6 80.4 14
-co10:19:39ru: Running ru from sx line  0
-co10:19:41ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
-co10:19:42td: Running td from sx line  0
-co10:19:46td: Time correction  .2 seconds
-co10:19:47au: Running au from sx line  0
-hk10:19:53 14 15 15 3.4 .44-99 10
-hpscan10:20:03 0 53234 10 84879 20 117398 30 151287 40 184400 50 214445 60 224995 70 225475 80 225697 90 225514 100 225511 110 216910 120 187147 130 153527 140 120682 150 88032 160 56575
-hp10:21:03 .9920978 235295.8 80.5 14
-hk10:21:18 14 16 15 3.4 .47-99 10
-co10:21:20hgfw2: HG FW#2 at step  0
-hk10:23:27 14 16 15 3.4 .47-99 10
-hgscan 0wide 302warm= 210:23:28JAN 04/19 159 171 1717 5978 10586 16190 22121 27650 33116 35199 36293 34244 30092 25331 20244 14929 9108 4230 2771 1862 1854 2846 4189 9317 15126 21334 26937 31707 36458 38673 38062 36199 30468 24623 18267 12364 6970 1962 203 189
-hg10:24:49 .9995 287.9231 288 74966 14 0
-hk10:25:03 14 15 15 3.6 .46-99 10
-co10:25:08ds: DS intensity too low ( 1/cy), skipping.
-co10:25:22zs: ZS intensity too low ( 389/cy), skipping.
-co10:25:29zs: ZS intensity too low ( 359/cy), skipping.
-hk10:25:34 14 15 15 3.6 .46-99 10
-co10:25:41gi: 04 01 19  2.535944
-gia0 625.960610 42 0 108 348 1083 2639 3850
-gia0 626.330610 37 3 113 329 1104 2705 3811
-gia0 626.710610 43 0 107 356 1089 2736 3898
-gia0 627.080610 31 0 103 348 1116 2733 3900
-gia0 627.450610 45 0 115 333 1120 2737 3896
-hk10:27:43 14 15 15 3.6 .46-99 10
-fza0 628.471620 0 57 168 549 1312 1911
-co10:28:47fz: FZ intensity too low => STOP
-co10:29:02zs: ZS intensity too low ( 339/cy), skipping.
-hk10:29:07 14 16 15 3.4 .47-99 10
-co10:29:15gi: 04 01 19  2.535944
-gia0 629.510610 45 0 122 341 1126 2738 3929
-gia0 629.880610 41 0 114 344 1128 2697 3917
-gia0 630.260610 48 0 112 329 1126 2711 3934
-gia0 630.630610 38 2 104 346 1146 2717 3913
-gia0 6310610 42 0 122 342 1142 2764 3927
-co10:31:12ux: Running ux from sx line  0
-hk10:31:18 14 16 15 3.4 .47-99 10
-co10:31:43ux: UV extended  scan started
-co10:40:16ux: UV extended  scan finished, incident DUV =  .4529837 mW/m^2
-co10:40:18au: Running au from sx line  0
-hk10:40:25 14 16 15 3.4 .47-99 10
-hpscan10:40:48 0 56517 10 87957 20 120585 30 154276 40 187941 50 216488 60 225189 70 225756 80 225950 90 225716 100 225071 110 214246 120 183981 130 150485 140 117257 150 85307 160 53128
-hp10:41:48 .9924779 235356.5 79.4 14
-hk10:42:03 14 16 15 3.4 .47-99 11
-co10:42:05hgfw2: HG FW#2 at step  0
-hk10:44:12 14 15 15 3.6 .46-99 11
-hgscan 0wide 302warm= 210:44:12JAN 04/19 170 180 1601 5644 10138 15146 20584 25871 31180 32768 33695 31742 27968 23623 18752 13668 8399 3796 2521 1714 1722 2560 3872 8372 13819 19558 24585 29022 33717 35749 35208 33081 27895 22477 16988 11258 6437 1844 201 194
-hg10:45:33 .9995 287.8197 288 69444 14 0
-hk10:45:47 14 16 15 3.6 .49-99 10
-co10:45:52ds: DS intensity too low ( 1/cy), skipping.
-co10:46:06zs: ZS intensity too low ( 327/cy), skipping.
-co10:46:13zs: ZS intensity too low ( 315/cy), skipping.
-hk10:46:18 14 15 15 3.6 .46-99 10
-co10:46:26gi: 04 01 19  2.535944
-gia0 646.70610 41 1 112 354 1103 2647 3829
-gia0 647.070610 36 0 111 329 1129 2641 3827
-gia0 647.440610 44 0 105 338 1119 2640 3873
-gia0 647.820610 40 0 111 324 1106 2599 3824
-gia0 648.190610 41 0 113 329 1108 2698 3893
-hk10:48:28 14 16 15 3.4 .47-99 10
-fza0 649.211620 1 77 241 781 1852 2640
-co10:49:31fz: FZ intensity too low => STOP
-co10:49:46zs: ZS intensity too low ( 291/cy), skipping.
-hk10:49:51 14 16 15 3.6 .49-99 10
-co10:49:59gi: 04 01 19  2.535944
-gia0 650.240610 39 0 102 334 1087 2626 3813
-gia0 650.620610 37 0 112 324 1108 2618 3722
-gia0 650.990610 45 0 114 318 1114 2597 3739
-gia0 651.360610 37 0 116 324 1096 2574 3789
-gia0 651.740610 41 0 112 337 1064 2526 3702
-co10:51:56ux: Running ux from sx line  0
-hk10:52:02 14 16 15 3.6 .49-99 10
-co10:52:27ux: UV extended  scan started
-co11:00:59ux: UV extended  scan finished, incident DUV =  .4226496 mW/m^2
-co11:01:01au: Running au from sx line  0
-hk11:01:08 14 16 15 3.4 .47-99 10
-hpscan11:01:31 0 53198 10 84855 20 117169 30 151248 40 184291 50 214382 60 224771 70 225866 80 225984 90 225549 100 225388 110 216612 120 187122 130 154303 140 120651 150 88261 160 56336
-hp11:02:31 .9924514 235317.8 80.5 14
-hk11:02:46 14 16 15 3.6 .49-99 10
-co11:02:48hgfw2: HG FW#2 at step  0
-hk11:04:54 14 15 15 3.6 .46-99 10
-hgscan 0wide 302warm= 211:04:55JAN 04/19 179 179 1626 5610 9926 15031 20465 25778 30600 32663 33498 31177 27507 23232 18380 13462 8106 3727 2550 1649 1653 2510 3800 8189 13511 18911 24162 28692 32881 35200 34340 32715 27563 22260 16553 11189 6378 1852 188 193
-hg11:06:16 .9995 287.6738 288 68698 14 0
-co11:06:21ru: Running ru from sx line  90
-co11:06:22ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
-co11:06:23td: Running td from sx line  90
-co11:06:27td: Time correction  .2 seconds
-hk11:06:33 14 16 15 3.4 .47-99 10
-co11:07:13uv: UV standard  scan started
-co11:14:52uv: UV standard  scan finished, incident DUV =  .2979118 mW/m^2
-hk11:14:58 14 15 15 3.4 .44-99 10
-hpscan11:15:22 0 54741 10 85793 20 118953 30 152157 40 186268 50 215315 60 224993 70 225671 80 225300 90 225801 100 225621 110 215014 120 184556 130 151662 140 118501 150 86304 160 54523
-hp11:16:22 .9922382 235267.4 79.9 14
-hk11:16:36 14 16 15 3.4 .47-99 10
-co11:16:38hgfw2: HG FW#2 at step  0
-hk11:18:45 14 16 15 3.6 .49-99 10
-hgscan 0wide 302warm= 211:18:46JAN 04/19 177 183 1720 5880 10481 15839 21639 26968 32259 33745 34942 32801 28646 24381 19337 14032 8498 3894 2661 1753 1753 2671 3861 8542 14273 20029 25386 29729 34311 36671 36055 34346 28806 23413 17572 11789 6730 1984 204 192
-hg11:20:07 .9996 287.5822 288 71613 14 0
-hk11:25:14 14 16 15 3.4 .47-99 10
-sla 0 685.570620 628826 1 715959 810884 974653 1047668 1158524rat 1689.836 1137.918 320.8985 448.0352
-sla 0 686.250620 628142 0 714303 807996 973493 1044534 1155924rat 1686.719 1140.367 312.8477 451.3438
-sla 0 686.930620 627836 0 714161 808544 972978 1045071 1155482rat 1689.887 1139.656 317.4922 447.3516
-sla 0 687.620620 627389 4 713220 807621 971975 1044597 1154724rat 1693.695 1142.695 320.0586 446.4375
-sla 0 688.30620 626205 1 713208 807185 970280 1043938 1153461rat 1690.953 1142.274 325.0078 444.3594
-sla 0 688.980620 626630 1 712711 807204 970479 1042903 1154787rat 1689.613 1137.754 319.6797 453.9102
-sla 0 689.660620 626864 4 712801 806076 969968 1043489 1152208rat 1691.57 1146.457 324.5235 441.418
-summary11:27:36JAN 04/19 93.066 10.148 14sl 0 1690 1141 320 448 258 220 713766.1 1155016 2 3 4 4 15 9 1139.4 1973.5
-hk11:30:08 14 16 15 3.4 .47-99 10
-co11:30:48uv: UV standard  scan started
-co11:38:27uv: UV standard  scan finished, incident DUV =  .2206909 mW/m^2
-co11:38:31skc: Waiting until ZA =  93 now  91.3
-co11:48:32skc: Waiting until ZA =  93 now  91.6
-co11:58:32skc: Waiting until ZA =  93 now  92
-co12:08:33skc: Waiting until ZA =  93 now  92.3
-co12:18:34skc: Waiting until ZA =  93 now  92.8
-co12:22:25skc: Next schedule will be sx (now sx ZS= 93 ZS= 93)
-co12:22:26ru: Running ru from sx line  93
-co12:22:28ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
-co12:22:29td: Running td from sx line  93
-co12:22:33td: Time correction  .2 seconds
-hk12:22:38 14 15 14 3.4 .44-99 9
-hpscan12:23:01 0 55419 10 86422 20 119615 30 153500 40 186761 50 216102 60 225521 70 226127 80 226222 90 226598 100 225954 110 215682 120 185251 130 152120 140 118721 150 86738 160 54382
-hp12:24:02 .9923756 235896.2 79.8 14
-hk12:24:16 14 15 14 3.4 .44-99 8
-co12:24:18hgfw2: HG FW#2 at step  0
-hk12:26:25 14 15 14 3.4 .44-99 8
-hgscan 0wide 302warm= 212:26:25JAN 04/19 175 180 1794 5854 10369 15624 21187 26390 31774 33437 34301 31941 28185 23944 18912 13615 8278 3890 2626 1723 1725 2642 3934 8449 13993 19739 25042 29734 34200 36559 35907 33960 28773 23246 17484 11750 6752 2050 214 214
-hg12:27:46 .9995 287.5141 288 70860 14 0
-hk12:32:53 14 15 14 3.4 .44-99 8
-sla 0 753.230620 631845 0 718815 813955 977933 1051962 1162895rat 1690.461 1139.395 324.1758 446.6446
-sla 0 753.910620 631285 2 717591 812363 976367 1049890 1160675rat 1689.207 1139.274 322.5195 446.8907
-sla 0 754.590620 630254 1 717145 811420 976050 1048675 1159747rat 1686.797 1139.274 318.8086 448.4649
-sla 0 755.270620 629565 2 716626 811059 975257 1047948 1158367rat 1686.914 1138.152 319.336 446.2383
-sla 0 755.950620 629130 1 716321 810299 974733 1047087 1157737rat 1685.125 1138.641 318.0586 447.4688
-sla 0 756.630620 629332 0 716159 809150 974106 1047177 1158208rat 1686.504 1145.313 321.3086 448.9102
-sla 0 757.310620 629622 0 716059 809559 973272 1045475 1157299rat 1679.883 1135.828 317.875 452.6485
-summary12:35:16JAN 04/19 97.253 6.637 14sl 0 1686 1139 320 448 252 217 716959.5 1159275 3 3 2 2 10 5 974 1973.5
-co12:37:43skc: Waiting until end of local day.
-co12:47:44skc: Waiting until end of local day.
-co12:57:45skc: Waiting until end of local day.
-co13:07:45skc: Waiting until end of local day.
-co13:17:46skc: Waiting until end of local day.
-co13:27:47skc: Waiting until end of local day.
-co13:37:47skc: Waiting until end of local day.
-co13:47:48skc: Waiting until end of local day.
-co13:57:49skc: Waiting until end of local day.
-co14:07:50skc: Waiting until end of local day.
-co14:17:50skc: Waiting until end of local day.
-co14:27:51skc: Waiting until end of local day.
-co14:37:52skc: Waiting until end of local day.
-co14:47:52skc: Waiting until end of local day.
-co14:57:53skc: Waiting until end of local day.
-co15:07:54skc: Waiting until end of local day.
-co15:17:54skc: Waiting until end of local day.
-co15:27:55skc: Waiting until end of local day.
-co15:37:56skc: Waiting until end of local day.
-co15:47:57skc: Waiting until end of local day.
-co15:57:57skc: Waiting until end of local day.
-co16:07:58skc: Waiting until end of local day.
-co16:17:59skc: Waiting until end of local day.
-co16:27:59skc: Waiting until end of local day.
-co16:38:00skc: Waiting until end of local day.
-co16:48:01skc: Waiting until end of local day.
-co16:58:01skc: Waiting until end of local day.
-co17:08:02skc: Waiting until end of local day.
-co17:18:03skc: Waiting until end of local day.
-co17:28:03skc: Waiting until end of local day.
-co17:38:04skc: Waiting until end of local day.
-co17:48:05skc: Waiting until end of local day.
-co17:58:05skc: Waiting until end of local day.
-co18:08:06skc: Waiting until end of local day.
-co18:18:07skc: Waiting until end of local day.
-co18:28:08skc: Waiting until end of local day.
-co18:38:08skc: Waiting until end of local day.
-co18:48:09skc: Waiting until end of local day.
-co18:58:10skc: Waiting until end of local day.
-co19:08:10skc: Waiting until end of local day.
-co19:18:11skc: Waiting until end of local day.
-co19:28:12skc: Waiting until end of local day.
-co19:38:12skc: Waiting until end of local day.
-co19:48:13skc: Waiting until end of local day.
-co19:58:14skc: Waiting until end of local day.
-co20:08:15skc: Waiting until end of local day.
-co20:18:15skc: Waiting until end of local day.
-co20:28:16skc: Waiting until end of local day.
-co20:38:17skc: Waiting until end of local day.
-co20:48:17skc: Waiting until end of local day.
-co20:58:18skc: Waiting until end of local day.
-co21:08:19skc: Waiting until end of local day.
-co21:18:20skc: Waiting until end of local day.
-co21:28:20skc: Waiting until end of local day.
-co21:38:21skc: Waiting until end of local day.
-co21:48:22skc: Waiting until end of local day.
-co21:58:22skc: Waiting until end of local day.
-co22:08:23skc: Waiting until end of local day.
-co22:18:24skc: Waiting until end of local day.ed
-co22:18:32b0: Running b0 from sx line -200
-co22:18:33o3: Running o3 from sx line -200
-co22:18:36af: Running af from sx line -200
-co22:18:37af: Auto FR/HP/HG is now OFF
-co22:18:38ozsum: Running ozsum from sx line -200
-co22:18:45aodsum: Running aodsum from sx line -200
-co22:18:51uvsum: Running uvsum from sx line -200
-co22:19:34fmsum: Running fmsum from sx line -200
-co22:19:42fzsum: Running fzsum from sx line -200
-co22:19:51slsum: Running slsum from sx line -200
-co22:20:00rl: Running rl from sx line -200
-co22:20:04rl:  2019  003  22 34 26   Reset Warm -> Tepid  from  2019  003  22 34 20   until  2019  003  22 34 21  . Counts: 1,0
-co22:20:06rl:  2019  003  22 34 27   Motor #11: appears stuck with a reference sensor activated. 
-co22:20:08rl:  2019  003  22 35 27   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.947081 Volts.
-co22:20:11rl:  2019  003  22 35 27   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.446614 Volts.
-co22:20:13rl:  2019  003  22 35 27   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.078480 Volts.
-co22:20:15rl:  2019  003  22 35 27   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.855545 Volts.
-co22:20:18rl:  2019  003  22 35 27   New value set for watermark SUPPLY.VOLTAGE.LOW[+5VSEC]: 4.408977 Volts.
-co22:20:20rl:  2019  003  22 35 27   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 2.558801 Volts.
-co22:20:23rl:  2019  003  22 35 44   New value set for watermark SUPPLY.VOLTAGE.LOW[+5VSEC]: 4.403600 Volts.
-co22:20:25rl:  2019  003  22 48 05   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.663937 Volts.
-co22:20:27rl:  2019  003  22 48 09   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.934861 Volts.
-co22:20:30rl:  2019  003  22 48 09   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.441237 Volts.
-co22:20:32rl:  2019  003  22 48 12   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.639988 Volts.
-co22:20:34rl:  2019  003  22 48 14   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.616035 Volts.
-co22:20:37rl:  2019  003  22 48 36   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.090702 Volts.
-co22:20:39rl:  2019  003  22 48 40   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 2.564178 Volts.
-co22:20:41rl:  2019  003  22 48 41   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.592083 Volts.
-co22:20:44rl:  2019  003  22 48 47   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.435861 Volts.
-co22:20:46rl:  2019  003  22 48 51   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.102921 Volts.
-co22:20:48rl:  2019  003  22 48 54   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.922641 Volts.
-co22:20:51rl:  2019  003  22 54 06   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 2.569555 Volts.
-co22:20:53rl:  2019  003  22 54 08   New value set for watermark LOOP.RUN.TIME: 699.000025 millisec.
-co22:20:55rl:  2019  003  22 59 04   New value set for watermark LOOP.RUN.TIME: 700.000000 millisec.
-co22:20:57rl:  2019  003  22 59 11   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.910420 Volts.
-co22:20:59rl:  2019  003  22 59 16   New value set for watermark SUPPLY.VOLTAGE.LOW[+12V]: 9.898201 Volts.
-co22:21:02rl:  2019  003  22 59 25   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.430484 Volts.
-co22:21:04rl:  2019  003  22 59 58   New value set for watermark LOOP.RUN.TIME: 714.000034 millisec.
-co22:21:06rl:  2019  003  23 00 15   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 10.115142 Volts.
-co22:21:07rl:  2019  003  23 27 59  PMT counter failure
-co22:21:10rl:  2019  003  23 49 46   New value set for watermark SUPPLY.VOLTAGE.LOW[+24V]: 19.568132 Volts.
-co22:21:12rl:  2019  003  23 56 11   New value set for watermark LOOP.RUN.TIME: 716.999960 millisec.
-co22:21:14rl:  2019  005  00 03 47   New value set for watermark LOOP.RUN.TIME: 741.999960 millisec.
-co22:21:16rl:  2019  004  09 56 42   New value set for watermark SUPPLY.VOLTAGE.LOW[+5V]: 4.419730 Volts.
-co22:21:18rl:  2019  004  12 26 34   New value set for watermark LOOP.RUN.TIME: 791.999960 millisec.
-co22:21:19rl:  All log items reported.
-co22:21:23chk_cfg: Running chk_cfg from sx line -200
-co22:21:25chk_cfg: VERSION.FW[VERS]=2
-co22:21:27chk_cfg: VERSION.FW[REL]=2
-co22:21:28chk_cfg: MOTOR.MAX.ACC[10]=1600
-co22:21:29chk_cfg: MOTOR.MAX.ACC[9]=1600
-co22:21:30chk_cfg: MOTOR.MAX.VEL[10]=16
-co22:21:31chk_cfg: MOTOR.MAX.VEL[9]=16
-co22:21:33chk_cfg: MOTOR.MAX.JERK[10]=(symbol not found)
-co22:21:34chk_cfg: MOTOR.MAX.JERK[9]=(symbol not found)
-co22:21:35chk_cfg: MOTOR.MAX.POS[10]=1383
-co22:21:37chk_cfg: MOTOR.MAX.POS[9]=1381
-co22:21:38chk_cfg: MOTOR.MIN.POS[10]=-9148
-co22:21:39chk_cfg: MOTOR.MIN.POS[9]=-9188
-co22:21:40chk_cfg: MOTOR.SLOPE[10]=1
-co22:21:42chk_cfg: MOTOR.SLOPE[9]=1
-co22:21:43chk_cfg: MOTOR.REF.PLAY[10]=65436
-co22:21:44chk_cfg: MOTOR.REF.PLAY[9]=65436
-co22:21:45chk_cfg: MOTOR.MAX.SEARCH[10]=12500
-co22:21:47chk_cfg: MOTOR.MAX.SEARCH[9]=12500
-co22:21:48chk_cfg: MOTOR.INITIAL[10]=284
-co22:21:49chk_cfg: MOTOR.INITIAL[9]=284
-co22:21:51chk_cfg: MOTOR.ORIGIN[10]=-6646
-co22:21:52chk_cfg: MOTOR.ORIGIN[9]=-6697
-co22:21:53chk_cfg: MOTOR.SLOW.VEL[10]=1
-co22:21:54chk_cfg: MOTOR.SLOW.VEL[9]=1
-co22:21:56chk_cfg: MOTOR.RESET.POS[10]=-1440
-co22:21:57chk_cfg: MOTOR.RESET.POS[9]=-1440
-co22:22:00rtn_date: Running rtn_date from sx line -200
-vers22:22:01AB_SK.RTN10000 REM ************ ab_sk.rtn 02/12/2010 09:50:00 ************
-vers22:22:01AF.RTN10000 REM ************ af.rtn 02/12/2010 09:50:34 ************
-vers22:22:02AN.RTN10000 REM ************ an.rtn 02/12/2010 09:50:34 ************
-vers22:22:03AODSUM.RTN10000 REM ************ aodsum.rtn 02/12/2010 09:50:00 ************
-vers22:22:04AP.RTN10000 REM ************ ap.rtn 31/10/2017 09:50:00 ************
-vers22:22:04APSUM.RTN10000 REM ************ apsum.rtn 02/12/2010 09:50:00 ************
-vers22:22:05AP_2015.RTN10000 REM *************** ap routine 01/12/12 ******************
-vers22:22:06AP_OLD.RTN10000 REM *************** ap routine 28/06/99 ******************
-vers22:22:07AP_OLD~1.RTN10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
-vers22:22:07AP_PAVEL.RTN10000 REM *************** ap routine 28/06/99 ******************
-vers22:22:08AP_WRONG.RTN10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
-vers22:22:09AR.RTN10000 REM ************ ar.rtn 02/12/2010 09:50:00 ************
-vers22:22:10AS.RTN10000 REM ************ as.rtn 02/12/2010 09:50:00 ************
-vers22:22:10AU.RTN10000 REM ************ au.rtn 02/12/2010 09:50:00 ************
-vers22:22:11AUTO-OFF.RTN10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
-vers22:22:12AUTO-ON.RTN10000 REM ************ auto-on.rtn 05/03/2011 19:47:08 ************
-vers22:22:13AUTO.RTN10000 REM ************ auto.rtn 03/08/2016 09:15:00 ************
-vers22:22:13AZ.RTN10000 REM ************ az.rtn 02/12/2010 09:50:00 ************
-vers22:22:14BP.RTN10000 REM ********************** bp routine 26/11/97 ********************
-vers22:22:15CA.RTN10000 REM ************ ca.rtn 09/04/2011 09:50:00 ************
-vers22:22:16CAL.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:16CALDS.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:17CALSC.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:18CALUV.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:19CB.RTN10000 REM ************ cb.rtn 02/12/2010 09:50:00 ************
-vers22:22:19CC.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:20CD.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:21CF.RTN10000 REM ************ cf.rtn 02/12/2010 09:50:00 ************
-vers22:22:21CHECKAZ.RTN10000 REM ************ checkaz.rtn 02/12/2010 09:50:00 ************
-vers22:22:22CHECKHG.RTN10000 REM ************ checkhg.rtn 02/12/2010 09:50:00 ************
-vers22:22:23CHK_CFG.RTN10000 REM ************ chk_cfg.rtn 31/01/2013 21:00:00 ************
-vers22:22:24CHK_COD.RTN10000 REM ************ chk_cod.rtn 08/11/2013 21:00:00 ************
-vers22:22:24CI.RTN10000 REM ************ ci.rtn 02/12/2010 09:50:00 ************
-vers22:22:25CJ.RTN10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
-vers22:22:26CJ_201~1.RTN10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
-vers22:22:27CL.RTN10000 REM this routine records a uvb scan  MKIII     *** cl routine 250595 ***
-vers22:22:27CL_OLD.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:28CM.RTN10000 REM ********************* ci routine 19/11/08 *******************
-vers22:22:29CN.RTN10000 REM ************ cn.rtn 02/12/2010 09:50:00 ************
-vers22:22:30COPYOF~1.RTN10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
-vers22:22:30CR.RTN10000 REM ************ cr.rtn 02/12/2010 09:50:00 ************
-vers22:22:31CS.RTN10000 REM ************ cs.rtn 02/12/2010 09:50:00 ************
-vers22:22:32CU.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:22:33CX.RTN10000 REM ************ cx.rtn 02/12/2010 09:50:00 ************
-vers22:22:33CZ1.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:34CZ2.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:35CZ3.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:35CZ4.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:36CZ5.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:37CZ_(2)~1.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:38CZ_.RTN10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
-vers22:22:38DA_LO.RTN10000 REM ************ da_lo.rtn 28/03/2011 16:01:18 ************
-vers22:22:39DB.RTN10000 REM ************ db.rtn 02/12/2010 09:50:00 ************
-vers22:22:40DD.RTN10000 REM this routine records a uvb scan  MKIII     *** cl routine 250595 ***
-vers22:22:41DI.RTN10000 REM ************ di.rtn 02/12/2010 09:50:00 ************
-vers22:22:41DIMDS-ON.RTN10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
-vers22:22:42DIMDS-~1.RTN10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
-vers22:22:43DK.RTN10000 REM ************ dk.rtn 05/02/2013 11:00:00 ************
-vers22:22:44DP.RTN10000 REM ************ dp.rtn 02/12/2010 09:50:00 ************
-vers22:22:44DQ.RTN10000 REM ****************** dq routine 21/01/12 **********************
-vers22:22:45DS.RTN10000 REM ************ ds.rtn 15/04/2015 11:45:00 ************
-vers22:22:46DSP.RTN10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
-vers22:22:47DSP1.RTN10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
-vers22:22:47DSP1_2~1.RTN10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
-vers22:22:48DSP1_V~1.RTN10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
-vers22:22:49DSPN2.RTN10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
-vers22:22:50DSP_VO~1.RTN10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
-vers22:22:50DSSUM.RTN10000 REM ************ dssum.rtn 02/12/2010 09:50:00 ************
-vers22:22:51DS_180~1.RTN10000 REM ************ ds.rtn 15/04/2015 11:45:00 ************
-vers22:22:52DT.RTN10000 REM ************ dt.rtn 20/06/2014 09:50:00 ************
-vers22:22:53DUSUM.RTN10000 REM ************ dusum.rtn 02/12/2010 09:50:00 ************
-vers22:22:53DZ.RTN10000 REM ****************** dz routine 15/March/2011 **********************
-vers22:22:54ED.RTN10000 REM ************ ed.rtn 24/03/2011 19:47:10 ************
-vers22:22:55EG.RTN10000 REM ************ ec.rtn 12/05/2015 09:50:00 ************
-vers22:22:55ENDDAY.RTN10000 REM ************ endday.rtn 02/12/2010 09:50:00 ************
-vers22:22:56END_DAY.RTN10000 REM ************ end_day.rtn 10/05/2011 14:00:00 ************
-vers22:22:57FC.RTN10000 REM ************ fc.rtn 05/04/2013 09:50:00 ************
-vers22:22:58FI-NOR.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
-vers22:22:58FI.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
-vers22:22:59FI_201~1.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
-vers22:23:00FI_SOD.RTN10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
-vers22:23:01FI_SPE~1.RTN10000 REM ************ fi.rtn 11/11/2011 For Andover Filters 1-4 testing line 11019 chg for 1-5 postion to 10 cycles *
-vers22:23:01FL.RTN10000 REM ************ fl.rtn 02/12/2010 09:50:00 ************
-vers22:23:02FM.RTN10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
-vers22:23:03FMSUM.RTN10000 REM ************ fmsum.rtn 02/12/2010 09:50:00 ************
-vers22:23:04FM_OLD.RTN10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
-vers22:23:04FR--.RTN10000 REM ************ fr.rtn 02/12/2010 09:50:00 ************
-vers22:23:05FR.RTN10000 REM ****************** fr routine 12/08/98 *********************
-vers22:23:06FRNEW.RTN10000 REM ************ fr.rtn 09/04/2012 09:50:00 ************
-vers22:23:07FV-.RTN10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
-vers22:23:07FV.RTN10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
-vers22:23:08FW.RTN10000 REM ************ fw.rtn 02/12/2010 09:50:00 ************
-vers22:23:09FW3TEST.RTN10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
-vers22:23:09FZ.RTN10000 REM ************ fz.rtn 02/12/2010 09:50:00 ************
-vers22:23:10FZSUM.RTN10000 REM ************ fzsum.rtn 02/12/2010 09:50:00 ************
-vers22:23:11G1.RTN10000 REM ************ g1.rtn 02/12/2010 09:50:00 ************
-vers22:23:12G5.RTN10000 REM ************ g5.rtn 02/12/2010 09:50:00 ************
-vers22:23:12GA.RTN10000 REM ************ ga.rtn 20/02/2015 09:50:00 ************
-vers22:23:13GI.RTN10000 REM ************ gi.rtn 02/12/2010 09:50:00 ************
-vers22:23:14GS.RTN10000 REM ************ gs.rtn 02/12/2010 09:50:00 ************
-vers22:23:15HG.RTN10000 REM ************ hg.rtn 29/03/2011 10:05:48 ************
-vers22:23:15HGN.RTN10000 REM ************ hgn.rtn 02/12/2010 09:50:00 ************
-vers22:23:16HGSUM.RTN10000 REM ************ hgsum.rtn 24/11/2013 09:50:00 ************
-vers22:23:17HL.RTN10000 REM ************ hl.rtn 24/06/2014 19:47:10 ************
-vers22:23:18HP.RTN10000 REM ************ hp.rtn 29/03/2011 09:33:00 ************
-vers22:23:18HS.RTN10000 REM ************ hs.rtn 26/09/2012 19:47:10 ************
-vers22:23:19HV.RTN10000 REM ************ hv.rtn 02/12/2010 09:50:00 ************
-vers22:23:20HVB.RTN10000 REM ************ hvb.rtn 19/07/2014 15:00:00 ************
-vers22:23:21HVSET.RTN10000 REM ************ hvset.rtn 02/12/2010 09:50:00 ************
-vers22:23:21IC.RTN10000 REM ************ ic.rtn 02/12/2010 09:50:00 ************
-vers22:23:22INIT.RTN10000 REM ************ init.rtn 02/12/2010 09:50:00 ************
-vers22:23:23JD.RTN10000 REM ************ jd.rtn 02/12/2010 09:50:00 ************
-vers22:23:23JG.RTN10000 REM ****************** jg routine 04/02/14 **********************
-vers22:23:24KA.RTN10000 REM ********************* ka routine 12/13/06 *******************
-vers22:23:25KB.RTN10000 REM ********************* kb routine 12/13/06 *******************
-vers22:23:26KC.RTN10000 REM ********************* kc routine 12/13/06 *******************
-vers22:23:26KD.RTN10000 REM ********************* kd routine 12/13/06 *******************
-vers22:23:27KE.RTN10000 REM ********************* ke routine 12/13/06 *******************
-vers22:23:28KF.RTN10000 REM ********************* kf routine 12/13/06 *******************
-vers22:23:29KG.RTN10000 REM ********************* kg routine 12/13/06 *******************
-vers22:23:29KH.RTN10000 REM ********************* kh routine 12/13/06 *******************
-vers22:23:30LF.RTN10000 REM ************ lf.rtn 02/12/2010 09:50:00 ************
-vers22:23:31LL.RTN10000 REM ********************** ll routine 29/07/10 ********************
-vers22:23:32LZ.RTN10000 REM ************ lz.rtn 02/12/2010 09:50:00 ************
-vers22:23:32MM.RTN10000 REM ********************* mm routine 03/09/10 *******************
-vers22:23:33NC.RTN10000 REM ************ nc.rtn 02/12/2010 09:50:00 ************
-vers22:23:34NEWINST.RTN10000 REM ************ newinst.rtn 02/12/2010 09:50:00 ************
-vers22:23:35NI_SOD.RTN10000 REM ************ ni.rtn 02/12/2010 09:50:00 ************
-vers22:23:35NOSUM.RTN10000 REM ************ nosum.rtn 02/12/2010 09:50:00 ************
-vers22:23:36NT.RTN10000 REM ******************* nt routine 26/11/03 ***********************
-vers22:23:37OZSUM.RTN10000 REM ************ ozsum.rtn 02/12/2010 09:50:00 ************
-vers22:23:38PB.RTN10000 REM ************ pb.rtn 02/12/2010 09:50:00 ************
-vers22:23:38PC.RTN10000 REM ************ pc.rtn 02/12/2010 09:50:00 ************
-vers22:23:39PO.RTN10000 REM ************ po.rtn 24/06/2014 09:50:00 ************
-vers22:23:40QL.RTN10000 REM ************ ql.rtn 07/04/2011 14:00:00 ************
-vers22:23:41RE-MB.RTN10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
-vers22:23:41RE-MB_.RTN10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
-vers22:23:42RE-SB.RTN10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
-vers22:23:43RE.RTN10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
-vers22:23:43REP.RTN10000 REM ************ rep.rtn 02/12/2010 09:50:00 ************
-vers22:23:44RE_MB_~1.RTN10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
-vers22:23:45RL.RTN10000 REM ************ rl.rtn 21/04/2012 11:00:00 ************
-vers22:23:46RS.RTN10000 REM ************ rs.rtn 02/12/2010 09:50:00 ************
-vers22:23:46RU.RTN10000 REM ************ ru.rtn 04/08/2016 10:00:00 ************
-vers22:23:47SA.RTN10000 REM ************ sa.rtn 02/12/2010 09:50:00 ************
-vers22:23:48SAVEALL.RTN10000 REM ************ saveall.rtn 02/12/2010 09:50:00 ************
-vers22:23:49SAVEDH.RTN10000 REM ************ savedh.rtn 02/12/2010 09:50:00 ************
-vers22:23:49SC-FULL.RTN10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
-vers22:23:50SC.RTN10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
-vers22:23:51SC_OLD.RTN10000 REM ********************* sc routine June 9 /03 *********************
-vers22:23:52SC_X.RTN10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
-vers22:23:52SD.RTN10000 REM ************ sd.rtn 02/12/2010 09:50:00 ************
-vers22:23:53SE.RTN10000 REM ************ se.rtn 02/12/2010 09:50:00 ************
-vers22:23:54SH.RTN10000 REM ************ sh.rtn 02/12/2010 09:50:00 ************
-vers22:23:55SI.RTN10000 REM ************ si.rtn 24/06/2014 19:47:08 ************
-vers22:23:55SIM.RTN10000 REM ************ sim.rtn 16/01/2014 09:50:00 ************
-vers22:23:56SI_NEW.RTN10000 REM ************ si.rtn 16/12/2010 19:47:08 ************
-vers22:23:57SK.RTN10000 REM ************ sk.rtn 02/12/2010 09:50:00 ************
-vers22:23:58SKC-NOR.RTN10000 REM ************ skc.rtn 05/03/2011 19:47:08 ************
-vers22:23:58SKC.RTN10000 REM ************ skc.rtn 03/02/2015 19:47:08 ************
-vers22:23:59SKC_41~1.RTN10000 REM ************ skc.rtn 10/04/2012 19:47:08 ************
-vers22:24:00SKC_NOAZ.RTN10000 REM ******************* skc routine 23/07/98 ********************
-vers22:24:00SL.RTN10000 REM ************ sl.rtn 24/06/2014 09:50:00 ************
-vers22:24:01SLSUM.RTN10000 REM ************ slsum.rtn 02/12/2010 09:50:00 ************
-vers22:24:02SQ.RTN10000 REM ****************** sq routine 21/01/12 **********************
-vers22:24:03SR.RTN10000 REM ************ sr.rtn 01/04/2011 12:00:00 ************
-vers22:24:03SS.RTN10000 REM ***************** ss routine 21/04/98 *********************
-vers22:24:04ST.RTN10000 REM ************ st.rtn 02/12/2010 09:50:00 ************
-vers22:24:05SUM.RTN10000 REM ************ sum.rtn 02/12/2010 09:50:00 ************
-vers22:24:06SW.RTN10000 REM ************ sw.rtn 13/12/2010 09:50:00 ************
-vers22:24:06TCSUM.RTN10000 REM ************ tcsum.rtn 02/12/2010 09:50:00 ************
-vers22:24:07TD.RTN10000 REM ************ td.rtn 10/03/2014 09:40:00 ************
-vers22:24:08TESTFW2.RTN10000 REM ************ testfw2.rtn 02/12/2010 09:50:00 ************
-vers22:24:09TF.RTN10000 REM ************ testfw2.rtn 06/12/2012 09:50:00 ************
-vers22:24:09TT.RTN10000 REM ************ tt.rtn 02/12/2010 09:50:00 ************
-vers22:24:10TU.RTN10000 REM ************ tu.rtn 02/12/2010 09:50:00 ************
-vers22:24:11U5.RTN10000 REM ************ u5.rtn 02/12/2010 09:50:00 ************
-vers22:24:12UB.RTN10000 REM ************ ub.rtn 02/12/2010 09:50:00 ************
-vers22:24:12UL.RTN10000 REM ************ ul.rtn 02/12/2010 09:50:00 ************
-vers22:24:13UM-.RTN10000 REM ********************* um routine 19/10/98 *******************
-vers22:24:14UM-NOR.RTN10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
-vers22:24:15UM.RTN10000 REM ********************* um routine 17/06/15 *******************
-vers22:24:15UM_017.RTN10000 REM ********************* um routine 10/09/03 for #017 *******************
-vers22:24:16UM_201~1.RTN10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
-vers22:24:17UM_201~2.RTN10000 REM ********************* um routine 17/06/15 *******************
-vers22:24:17UM_ORIG.RTN10000 REM ********************* um routine 10/09/03 for #017 *******************
-vers22:24:18UM_TK.RTN10000 REM ********************* um routine 17/06/15 *******************
-vers22:24:19UQ.RTN10000 REM ************ uq.rtn 02/12/2010 09:50:00 ************
-vers22:24:20UV-.RTN10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
-vers22:24:20UV-SPAIN.RTN10000 REM ******************* uv routine 12/09/05 ********************
-vers22:24:21UV.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
-vers22:24:22UVSUM.RTN10000 REM ************ uvsum.rtn 02/12/2010 09:50:00 ************
-vers22:24:23UV_28~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
-vers22:24:23UV_5MI~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
-vers22:24:24UV_ALB~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
-vers22:24:25UV_BAC~1.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
-vers22:24:26UV_EL1.RTN10000 REM ******************* uv routine 12/09/05 ********************
-vers22:24:26UV_EL_~1.RTN10000 REM ******************* uv routine 12/09/05 ********************
-vers22:24:27UV_HUE~1.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
-vers22:24:28UV_NOR.RTN10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
-vers22:24:29UV_SOD.RTN10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
-vers22:24:29VE.RTN10000 REM ************ ve.rtn 23/04/2014 11:10:00 ************
-vers22:24:30W0.RTN10000 REM ************ w0.rtn 02/12/2010 09:50:00 ************
-vers22:24:31W1.RTN10000 REM ************ w1.rtn 02/12/2010 09:50:00 ************
-vers22:24:32W2.RTN10000 REM ************ w2.rtn 02/12/2010 09:50:00 ************
-vers22:24:32W3.RTN10000 REM ************ w3.rtn 02/12/2010 09:50:00 ************
-vers22:24:33W4.RTN10000 REM ************ w4.rtn 02/12/2010 09:50:00 ************
-vers22:24:34XL-COP~1.RTN10000 REM ************** xl routine 14/09/98 *****************
-vers22:24:35XL.RTN10000 REM ************ xl.rtn 29/05/2018 11:00:00 ************
-vers22:24:35XL_410.RTN10000 REM ************ xl.rtn 02/12/2010 09:50:00 ************
-vers22:24:36XX.RTN10000 REM ************** XX routine 01/06/15 *****************
-vers22:24:37ZB.RTN10000 REM ************ zb.rtn 02/12/2010 09:50:00 ************
-vers22:24:37ZC.RTN10000 REM ************ zc.rtn 02/12/2010 09:50:00 ************
-vers22:24:38ZE.RTN10000 REM ************ ze.rtn 02/12/2010 09:50:00 ************
-vers22:24:39ZF.RTN10000 REM ************ zf.rtn 01/04/2011 12:00:00 ************
-vers22:24:40ZL.RTN10000 REM ************ zl.rtn 02/12/2010 09:50:00 ************
-vers22:24:40ZLSUM.RTN10000 REM ************ zlsum.rtn 02/12/2010 09:50:00 ************
-vers22:24:41ZP.RTN10000 REM ************ zp.rtn 02/12/2010 09:50:00 ************
-vers22:24:42ZS.RTN10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
-vers22:24:43ZSSUM.RTN10000 REM ************ zssum.rtn 10/05/2011 09:50:00 ************
-vers22:24:43ZS_180~1.RTN10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
-vers22:24:44ZWSUM.RTN10000 REM ************ zwsum.rtn 10/05/2011 09:50:00 ************
-co22:24:45hgsum: Running hgsum from sx line -200
