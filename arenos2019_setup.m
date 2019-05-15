@@ -6,7 +6,7 @@ if ispc
 else isunix
  Cal.path_root=fullfile('~',cell2mat(regexpi(pwd,'^[A-Z]:', 'match')),'CODE','campaigns','are2019');
   if ismac
-   Cal.path_root=fullfile('/Users/aredondas/','CODE','rbcce.aemet.es','campaigns','are2019');
+   Cal.path_root=fullfile('~','CODE','rbcce.aemet.es','campaigns','are2019');
   else
    Cal.path_root=fullfile('~',cell2mat(regexpi(pwd,'^[A-Z]:', 'match')),'CODE','campaigns','are2019');
   end
@@ -14,7 +14,7 @@ end
 addpath(genpath(fullfile(Cal.path_root,'matlab')));
 Cal.file_save='arenos_2019.mat';
 Cal.campaign='Arenosillo, Huelva (Spain), Jun 27th -- June 05th, 2019';
-startup
+%startup
 
 %% Station
 Station.OSC=680;
@@ -58,7 +58,7 @@ Cal.calibration_days={
    day0:dayend,day0:dayend   ,day0:dayend       %174 
    day0:dayend,day0:dayend   ,day0:dayend       %185  
    day0:dayend,day0:dayend   ,day0:dayend       %186  
-   day0:dayend,day0:dayend   ,day0:dayend       %201
+   day0:dayend,day0:dayend   ,day0:dayend       %190
    day0:dayend,day0:dayend   ,day0:dayend       %202
    day0:dayend,day0:dayend   ,day0:dayend       %228
    day0:dayend,day0:dayend   ,day0:dayend       %230
@@ -70,7 +70,7 @@ Cal.blind_days=Cal.calibration_days(:,2);
 Cal.final_days=Cal.calibration_days(:,3);
 
 %% CALIBRATION INFO
-Cal.brw       = [005,017,033,070,075,117,126,150,151,158,163,166,172,174,185,186,201,202,228,230,300];
+Cal.brw       = [005,017,033,070,075,117,126,150,151,158,163,166,172,174,185,186,190,201,202,228,230];
 Cal.brwM      = [2  ,2  ,2  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ];
 Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ];
 Cal.sl_c_blind= [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ];
@@ -80,8 +80,7 @@ Cal.plt       = {'o','+','*','h','x','s','d','v','>','<','p','+','x','p','*','x'
 
 Cal.n_brw=length(Cal.brw);
 Cal.brw_name={'TSK#005','IOS#017','SCO#033','MAD#070','UM#075','MUR#117','UM#126','ARE#150','COR#151','K&Z#158',...
-              'WRC#163','ZAR#166','UM#172','JAP#174','IZO#185','MAD#186','TAM#201','DNK#202','DNK#228','K&Z#230',...
-              'CAN#300'
+              'WRC#163','ZAR#166','UM#172','JAP#174','IZO#185','MAD#186','CAN#190','TAM#201','DNK#202','DNK#228','K&Z#230',...
              };
 Cal.brw_str=mmcellstr(sprintf('%03d|',Cal.brw))';
 
@@ -120,7 +119,7 @@ Cal.brw_name(Cal.brewer_ref)
     '..\174\ICF15115.174' ,   '..\174\ICF15117.174'  ,'0444',  '0444'; %
     '..\185\config185.cfg',   '..\185\config185_a.cfg'   ,'0335',  '0335'; % new temperature coeff
     '..\186\ICF14915.186' ,   '..\186\ICF14915.186'  ,'0317',  '0317'; % 
-    '..\190\ICF22416.190' ,   '..\190\ICF15017.190'  ,'0242',  '0242'; 
+    '..\190\ICF11419.190' ,   '..\190\ICF11419.190'  ,'0410',  '0410'; 
     '..\201\ICF15215.201' ,   '..\201\ICF15017.201'  ,'0283',  '0270'; %
     '..\202\ICF15215.202' ,   '..\202\ICF15017.202'  ,'0283',  '0270'; %
     '..\228\ICF22416.228' ,   '..\228\ICF15017.228'  ,'0242',  '0242'; %
