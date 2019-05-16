@@ -1,0 +1,46 @@
+version=2
+dh040519Thessaloniki 40.634 -22.956 3.15pr1000
+co10:14:59dh: day header
+co10:14:59main: version 4.1007/04/2015 15:00:00
+co10:14:59skc: B005116
+co10:14:59autohg:  1 
+co10:14:59hifw2:  0 
+co10:14:59attn:  25000  80000 
+co10:14:59lowds:  1 
+co10:14:59cubdsp:  0 
+
+inst0-0.64-1.40-2.06-3.550.33365942.441.106517303032003.8E-0815970163705000100001500020000250002816mkii2000000025920000000000426975.3025600172112July 12/04EXTRAS1002500080000110002-04-2019@
+disp2747.240.0734743-4.9324e-072787.890.072944-5.26743e-072826.010.0722188-5.4304e-072862.40.0713929-5.33509e-0728980.070614-5.33912e-072702.570.074581-5.1358e-074120.860.110211-7.39861e-074181.830.109416-7.90115e-074239.010.108328-8.1456e-074293.610.107089-8.00263e-0743470.105921-8.00869e-074053.850.111871-7.7037e-07SatJun 24/1742691591635@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060February 10 1997@
+op_st005c:\bdata.005\icf03519zsfvaldcf15317uvres040519Thessaloniki40.634-22.95610003.151445-114676111110110020001skco3B005116@
+uvrtemp 30.982900          2194.1692905          2235.4372910          2281.5592915          2322.552920          2361.3292925          2396.9982930          2434.32935          2469.7062940          2501.1912945          2531.6072950          2564.6492955          2593.5022960          2623.1312965          2648.5232970          2674.6412975          2698.4312980          2718.2222985          2733.7082990          27502995          2762.9213000          2770.343005          2778.8943010          2789.9983015          2796.7753020          2793.0733025          2793.9153030          2797.8543035          2798.6313040          2792.6053045          2785.1383050          2774.0763055          2765.8783060          2752.2553065          2735.2663070          2719.023075          2704.8383080          2686.493085          2663.0423090          2638.483095          2608.4173100          2573.1073105          2536.773110          2493.2423115          2448.3263120          2403.9843125          2354.1593130          2305.0533135          2254.0653140          2198.6633145          2142.1073150          2080.9933155          2021.1963160          1957.3573165          1889.1263170          1819.1123175          1746.5143180          1676.7663185          1606.1693190          1529.323195          1455.9753200          1381.943205          1307.8423210          1231.4033215          1157.0373220          1080.6063225          1009.0653230          937.16533235          868.12083240          800.13123245          735.21173250          675.0983255          616.97383260          561.39343265          508.8763270          459.93513275          414.6623280          371.50473285          330.92783290          291.8653295          255.70163300          222.1145@
+schedule-110.00pdtdazzehgsl-92.09ufhgb1ufhgtdzssl-85.72ufhgb1ufhgzs-80.75uzb1sshgtddsb2dssl-75.76uzb1sshgtddszsds-70.75uzb1sshgtddszsds-63.50uzb1sshg-60.75uzb1sshgtddsb2dssl-55.74uzb1sshgtddstdnt-50.73uzb1sshgtddszsds-45.70uzb1sshgtddszsds-40.64uzb1sshgtddsb2dssl-35.56uzb1sshgtddsb1ufhgtddszsds-30.38uzb1sshgtddstdntb1ufhgtddszsdsb1sshgtdds0.00ufb1sshgtddsb1ufhgtddszsdsb1sshgtdds29.64uzb1sshgtddsb1ufhgtddszsds34.45uzb1sshgtddsb1sshgtdds39.37uzb1sshgtddsb2dssl44.32uzb1sshgtddszsds49.28uzb1sshgtddszsds54.27uzb1sshgtddszsds62.00uzhgtdds64.25uzhgtddskcumds69.24uzhgtddskcumds74.24uzhgtddskcumds79.26uzhgtddstdkdum84.28ufhgtdkeumtdkeumb1ufhgzs100.00zeaprsdtslhgb2w1cib0180.00B005117@
+co10:14:59start:  PROGRAM start :  MAY 04/19 at 10:14:53
+co10:14:59re: Running re from main.asc
+co10:16:04re: Zenith discrepancy = -2114
+co10:16:51re: Azimuth discrepancy = -5912
+co10:17:51ab_sk: Running ab_sk from main.asc
+co10:18:06skc: reading schedule B005116-SKC line 13000
+hk10:18:09 19 16 16 11.9 1.62-99-99
+co10:18:13hgfw2: HG FW#2 at step  0
+co10:20:13hg: Lamp not on... hg test terminated F1= 0 F4= 115
+co10:20:17hg: Lamp not on... hg test terminated F1= 0 F4= 122
+co10:20:17hg: Lamp not detected f1= 0 f4= 122
+co10:20:18fr: Running fr from B005116 line -200
+hk10:20:20 20 16 17 11.9 1.62-99-99
+co10:22:32fr: Micrometer #1 reference found at step 5182 (+CAL)= 5341 Now set to o3 offset = 2592
+hk10:22:36 20 16 17 12.6 1.71-99-99
+co10:22:38hgfw2: HG FW#2 at step  0
+hk10:24:43 20 16 17 11.3 1.54-99-99
+hgscan 0narrow 302warm= 210:24:43MAY 04/19 129 124 128 346 1955 4184 6826 9812 12050 13093 13685 12552 9947 7235 4330 2615 1821 1145 889 749 741 910 1159 1824 2675 4366 7309 10075 12490 13759 13086 11908 9817 6738 4148 1817 325 189 133 134
+hg10:25:46 .9997 159.0747 159 27444 20 0
+co10:25:48skc: reading schedule B005116-SKC line 13000
+co10:25:48ru: Running ru from B005116 line  0
+co10:25:53start:  PROGRAM start :  MAY 04/19 at 10:25:50
+hk10:25:53 20 16 17 11.9 1.62-99-99
+co10:25:54ab_sk: Running ab_sk from main.asc
+co10:26:10skc: reading schedule B005116-SKC line 13000
+co10:26:10ru: Running ru from B005116 line  0
+co10:26:10ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co10:26:10uf: Running uf from B005116 line  0
+hk10:26:13 20 16 17 13.2 1.8-99-99
