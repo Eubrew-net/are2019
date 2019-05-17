@@ -7,7 +7,7 @@ clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==070);
+Cal.n_inst=find(Cal.brw==174);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
