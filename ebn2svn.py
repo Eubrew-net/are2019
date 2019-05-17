@@ -4,16 +4,29 @@
 # ------------------------------------------------------------------------
 # ebn2sv: download data from Eubrewnet and commit it to an SVN repo
 #
-# 20190516 JLS
+# 20190517 JLS
 # ------------------------------------------------------------------------
 
 
-import pycurl
+# ------------------------------------------------------------------------
+from __future__ import print_function
 import argparse
 import datetime
 import os
 import zipfile
-import pysvn
+import sys
+
+try:
+    import pycurl
+    pycurlAvail=True
+except:
+    pycurlAvail=False
+
+try:
+    import pysvn
+    pysvnAvail=True
+except:
+    pysvnAvail=False
 
 
 # ------------------------------------------------------------------------
@@ -21,7 +34,9 @@ def getEBN(args):
     """
     Download B files from Eubrewnet using Bentor's data/get/Files function
 
-    20190516 JLS
+    Will either use pycurl or the curl command available in the system
+
+    20190517 JLS
     """
 
     #myURL='http://www.eubrewnet.org/eubrewnet/data/get/AllFiles?'
@@ -30,26 +45,35 @@ def getEBN(args):
     myURL+='&date='+args.iniDate
     myURL+='&enddate='+args.endDate
 
-    print "Getting data with "+myURL
 
-    try: 
-        with open(args.tempFile, 'wb') as myFile:
-            curlHandle = pycurl.Curl()
+    if args.pycurl: # pycurl was successfully imported
+        print("Getting data with pycurl and "+myURL)
+        try: 
+            with open(args.tempFile, 'wb') as myFile:
+                curlHandle = pycurl.Curl()
 
-            curlHandle.setopt(curlHandle.WRITEDATA, myFile)
+                curlHandle.setopt(curlHandle.WRITEDATA, myFile)
 
-            # lib curl options. for a complete list (inc proxy settings)
-            # see https://curl.haxx.se/libcurl/c/curl_easy_setopt.html
-            curlHandle.setopt(curlHandle.URL, myURL)
-            curlHandle.setopt(curlHandle.USERNAME, args.ebnUser)
-            curlHandle.setopt(curlHandle.PASSWORD, args.ebnPass)
+                # lib curl options. for a complete list (inc proxy settings)
+                # see https://curl.haxx.se/libcurl/c/curl_easy_setopt.html
+                curlHandle.setopt(curlHandle.URL, myURL)
+                curlHandle.setopt(curlHandle.USERNAME, args.ebnUser)
+                curlHandle.setopt(curlHandle.PASSWORD, args.ebnPass)
 
-            curlHandle.perform()
+                curlHandle.perform()
 
-            curlHandle.close()
+                curlHandle.close()
 
-    except Exception as err: # something went wrong
-        return err
+        except Exception as err: # something went wrong
+            return err
+
+    else: # pycurl was not imported, use system's curl with the most basic call method: os.system
+        myCurl="curl -u "+args.ebnUser+":"+args.ebnPass+" '"+myURL+"' >"+args.tempFile
+        print("Getting data with "+myCurl)
+        try:
+            os.system(myCurl)
+        except Exception as err:
+            return err
 
 
 # ------------------------------------------------------------------------
@@ -63,7 +87,7 @@ def unzipData(args):
 
     myDir=args.myBrewer_svnDir
 
-    print "Copying files to "+myDir
+    print("Copying files to "+myDir)
 
     if not os.path.isdir(myDir):
         return "Dir "+myDir+" does not exist!"
@@ -72,44 +96,66 @@ def unzipData(args):
         with zipfile.ZipFile(args.tempFile, 'r') as zipHandle:
             zipHandle.extractall(myDir)
 
-    except BadZipFile:
+    except:
         with open(args.tempFile, 'r') as myFile:
             return myFile.read()
 
 
 # ------------------------------------------------------------------------
 def _svn_login(realm, username, may_save):
-    # i'm not completely sure how this works...
+    # i'm not completely sure how this works... for more information, see
+    # https://tools.ietf.org/doc/python-svn/pysvn_prog_guide.html 
     svnUser="brewersync"
     svnPass="redbrewer"
     return True, svnUser, svnPass, False
 
 def commitSVN(args):
     """
-    Commit the downloaded data using pysvn, see
+    Commit the downloaded data using pysvn or the svn command available in the system
 
-    https://tools.ietf.org/doc/python-svn/pysvn_prog_guide.html
-    
-    I don't completely understand how everything works :-S
-
-    20190516 JLS
+    20190517 JLS
     """
-
-    print "Committing files, please wait"
 
     commitMsg="ebn2svn added B files for Brewer "+args.myBrewer_str
 
-    svnHandle=pysvn.Client()
-    svnHandle.callback_get_login=_svn_login # i'm not completely sure how this works...
-    
-    try:
-        svnHandle.add(args.myBrewer_svnDir, force=True)
-        svnHandle.checkin(args.myBrewer_svnDir,commitMsg)
-    except Exception as err:
-        return err
+    if args.pysvn: # pysvn was successfully imported
+        print("Adding and committing files with pysvn, please wait")
 
-    # update the whole repo after the commit (to avoid problems with the logs, at least)
-    svnHandle.update(args.svnDir)
+        svnHandle=pysvn.Client()
+        svnHandle.callback_get_login=_svn_login # i'm not completely sure how this works...
+    
+        try:
+            svnHandle.add(args.myBrewer_svnDir, force=True)
+            svnHandle.checkin(args.myBrewer_svnDir,commitMsg)
+        except Exception as err:
+            return err
+
+        # update the whole repo after the commit (to avoid problems with the logs, at least)
+        svnHandle.update(args.svnDir)
+
+    else: # no pysvn, call the svn command available in the system
+        myAdd="svn add --force "+args.myBrewer_svnDir
+        myCommit="svn commit -m '"+commitMsg+\
+                "' --username brewersync --password redbrewer "+args.myBrewer_svnDir
+        myUpdate="svn update "+args.svnDir
+
+        print("Adding files with "+myAdd)
+        try:
+            os.system(myAdd)
+        except Exception as err:
+            return err
+
+        print("Committing files with "+myCommit)
+        try:
+            os.system(myCommit)
+        except Exception as err:
+            return err
+
+        print("Updating repository with "+myUpdate)
+        try:
+            os.system(myUpdate)
+        except Exception as err:
+            return err
 
 
 # ------------------------------------------------------------------------
@@ -129,23 +175,23 @@ def main(args):
         args.myBrewer_str='{:03d}'.format(myBrewer) # quite nice that you can directly add to args!
         args.myBrewer_svnDir=os.path.join(args.svnDir,"bdata"+args.myBrewer_str)
         
-        print "=== Working on Brewer #"+args.myBrewer_str
+        print("=== Working on Brewer #"+args.myBrewer_str)
 
         # 1) download a zip file with the data
         error=None
         error=getEBN(args)
 
         if error: # this will not catch errors messages issued by EBN
-            print "Error! "+error
-            quit() # this should be an error exit
+            print("Error! "+error)
+            sys.exit(1)
 
         # 2) unzip the data
         error=None
         error=unzipData(args)
     
         if error: # this will show the messages issued by EBN
-            print "Error! "+error
-            quit()
+            print("Error! "+error)
+            sys.exit(1)
         else:
             os.remove(args.tempFile)
 
@@ -154,11 +200,11 @@ def main(args):
         error=commitSVN(args)
 
         if error:
-            print "Error! "+error
-            quit()
+            print("Error! "+error)
+            sys.exit(1)
 
     # all done!
-    print "=== All done!"
+    print("=== All done!")
 
 
 # ------------------------------------------------------------------------
@@ -201,6 +247,10 @@ if __name__ == "__main__":
             default="tempEBNdownload.zip", type=str)
 
     args = parser.parse_args()
+
+    # add vars for import checks
+    args.pycurl=pycurlAvail
+    args.pysvn=pysvnAvail
 
     # call the driver
     main(args)
