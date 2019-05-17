@@ -3,7 +3,7 @@
 
 %% Brewer Evaluation
 clear all;
-file_setup='arenos2015_setup';
+file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
 Cal.n_inst=find(Cal.brw==xxx);
@@ -131,6 +131,17 @@ figure(double(findobj('tag','RSAVG')));
 printfiles_report(gcf,Cal.dir_figs,'Width',12.5,'Height',17);
 
 close all;
+%% files for analisys
+%%
+
+ftypes={'CZ','CI','CJ','FV','HS','HL'};
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+for i=1:length(ftypes),s{i}=dir(fullfile(Cal.path_root,['bdata',br],[ftypes{i},'*.',br]));end
+%ficheros disponibles
+[ftypes;s]
+
+
+
 
 %% CZ REPORT
 br=sprintf('%03d',Cal.brw(Cal.n_inst));
