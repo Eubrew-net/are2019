@@ -68,7 +68,7 @@ def getEBN(args):
             return err
 
     else: # pycurl was not imported, use system's curl with the most basic call method: os.system
-        myCurl="curl -u "+args.ebnUser+":"+args.ebnPass+' "'+myURL+'" >'+args.tempFile
+        myCurl="curl -# -u "+args.ebnUser+":"+args.ebnPass+' "'+myURL+'" >'+args.tempFile
         print("Getting data with "+myCurl)
         try:
             os.system(myCurl)
@@ -119,7 +119,7 @@ def commitSVN(args):
     commitMsg="ebn2svn added B files for Brewer "+args.myBrewer_str
 
     if args.pysvn: # pysvn was successfully imported
-        print("Adding and committing files with pysvn, please wait")
+        print("Adding, committing, and updating with pysvn, please wait")
 
         svnHandle=pysvn.Client()
         svnHandle.callback_get_login=_svn_login # i'm not completely sure how this works...
