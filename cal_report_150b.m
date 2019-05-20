@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','201','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_201b.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','150','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_150b.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==201);
+Cal.n_inst=find(Cal.brw==150);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -90,7 +90,7 @@ CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
-%ldsp=ldsp(end-3:end)
+ldsp=ldsp(end-3:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
 %    if jj==length(ldsp),confign=2; else confign=1; end
