@@ -142,7 +142,7 @@ ans =
     {'..\163\ICF17016&#8230;'}    {'..\163\ICF15017&#8230;'}    {'0270'}    {'0270'}
     {'..\166\icf15215&#8230;'}    {'..\166\ICF15215&#8230;'}    {'1952'}    {'1975'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
-    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
     {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0335'}    {'0335'}
     {'..\186\ICF14915&#8230;'}    {'..\186\ICF14915&#8230;'}    {'0317'}    {'0317'}
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
@@ -198,7 +198,6 @@ Requested sheet: 'Incidencias.075' not found.
      2
 
 ~/CODE/campaigns/are2019/bfiles/230/../230/ICF15017.202
-Warning: Directory already exists. 
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
@@ -215,7 +214,7 @@ cal_step={}; sc_avg={}; sc_raw={}; Args={};
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[1 159]),<span class="keyword">...</span>
                      <span class="string">'CSN_orig'</span>,config_orig(14),<span class="string">'OSC'</span>,Station.OSC,<span class="keyword">...</span>
                      <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,35,<span class="keyword">...</span>
-                     <span class="string">'hg_time'</span>,15,<span class="string">'one_flag'</span>,1);
+                     <span class="string">'hg_time'</span>,30,<span class="string">'one_flag'</span>,1);
 </pre><pre class="codeoutput">174
 warning Date error in file
 
@@ -268,7 +267,7 @@ ans =
     -1    12    30     0     0     0
 
 OK-&gt;B13319.174
-</pre><img vspace="5" hspace="5" src="cal_report_174b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_18.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
+</pre><img vspace="5" hspace="5" src="cal_report_174b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_24.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),<span class="keyword">...</span>
                      <span class="string">'CSN_orig'</span>,config_def(14),<span class="string">'OSC'</span>,Station.OSC,<span class="keyword">...</span>
                      <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,15,<span class="keyword">...</span>
@@ -478,7 +477,7 @@ close all
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
                      'control_flag',1,'residual_limit',35,...
-                     'hg_time',15,'one_flag',1);
+                     'hg_time',30,'one_flag',1);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
