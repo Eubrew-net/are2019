@@ -68,7 +68,7 @@ def getEBN(args):
             return err
 
     else: # pycurl was not imported, use system's curl with the most basic call method: os.system
-        myCurl="curl -u "+args.ebnUser+":"+args.ebnPass+" '"+myURL+"' >"+args.tempFile
+        myCurl="curl -u "+args.ebnUser+":"+args.ebnPass+' "'+myURL+'" >'+args.tempFile
         print("Getting data with "+myCurl)
         try:
             os.system(myCurl)
