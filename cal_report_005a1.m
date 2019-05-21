@@ -68,11 +68,13 @@ end
 %% Historical review AVG info
 % all period
 close all;
+load(Cal.file_save,'avg_report');
+
 [sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
                                       'date_range',[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],...
                                       'SL_REF',[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],...
                                       'DT_REF',[DTorig,DTdef],...
-                                      'outlier_flag',{'sl','','','','','',''});
+                                      'outlier_flag',{'sl','dt','','','','',''});
 try
     
     if ~isempty(sl_data)
@@ -105,7 +107,7 @@ try
               [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
 
     avg_report{Cal.n_inst}.RseisAVG=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG=RcincoAVG;
-    avg_report{Cal.n_inst}.DTorig  =DTorig;    avg_report{Cal.n_inst}.DTAVG    =DTAVG;
+    avg_report{Cal.n_inst}.DTorig  =DTorig;    avg_report{Cal.n_inst}.DTAVG    =str2double(DTAVG);
     
 catch exception
       fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
