@@ -78,6 +78,7 @@ for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
                                       ['\calsteperror',tags{idx}],cal_step_error{t});
      idx=idx+1;
 end
+load(Cal.file_save,'sunscan');
 sunscan{Cal.n_inst}.cal_step=cal_step;
 sunscan{Cal.n_inst}.cal_step_error=cal_step_error;
 sunscan{Cal.n_inst}.sc_avg=sc_avg; sunscan{Cal.n_inst}.sc_raw=sc_raw;
