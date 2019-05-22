@@ -1,6 +1,6 @@
 import os
 
-myBrewer="202"
+myBrewer="201"
 myCampaign="~/CODE/campaigns/are2019"
 myAVGs=["SLOAVG", "DTOAVG", "RSOAVG", "APOAVG", "HGOAVG", "H2OAVG", "OPAVG"]
 
