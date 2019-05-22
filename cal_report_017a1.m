@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','070','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_070a1.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','017','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_017a1.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==070);
+Cal.n_inst=find(Cal.brw==017);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -40,8 +40,8 @@ latexcmd(fullfile(Cal.file_latex,['cal_setup_',Cal.brw_str{Cal.n_inst}]),...
                     '\BLINDINI',Date.BLIND_DAYS(1),'\BLINDEND',Date.BLIND_DAYS(end),...
                     '\FINALINI',Date.FINAL_DAYS(1),'\FINALEND',Date.FINAL_DAYS(end),...
                     '\caldays',length(Date.FINAL_DAYS),'\Tsync',Cal.Tsync,...
-                    '\brwname',Cal.brw_name(Cal.n_inst),'\brwref',Cal.brw_name(Cal.n_ref(1)),...
-                    '\BRWSTATION',Station.name,'\STATIONOSC',Station.OSC,...%  '\DCFFILE',Cal.DCFFILE,'\LFFILE',Cal.LFFILE,...
+                    '\brwname',Cal.brw_name(Cal.n_inst),'\brwref',Cal.brw_name(Cal.n_ref(2)),...
+                    '\BRWSTATION',Station.name,'\STATIONOSC',Station.OSC,...%'\DCFFILE',Cal.FCal.DCFFILE,'\LFFILE',Cal.FCal.LFFILE,...
                     '\campaign',Cal.campaign);
 
 Cal.Date=Date;
@@ -49,7 +49,7 @@ save(Cal.file_save,'-Append','Cal');
 
 %% configuration files
 try
-[config_ref,TCref,DTref,ETCref,A1ref,ATref,leg]=read_icf(Cal.brw_config_files{Cal.n_ref(1),2});
+[config_ref,TCref,DTref,ETCref,A1ref,ATref,leg]=read_icf(Cal.brw_config_files{Cal.n_ref(2),2});
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
 
@@ -72,7 +72,7 @@ close all;
                                       'date_range',[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],...
                                       'SL_REF',[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],...
                                       'DT_REF',[DTorig,DTdef],...
-                                      'outlier_flag',{'','','','ap','','',''}); % change to filter outliers
+                                      'outlier_flag',{'sl','','','','','',''});
 try
     
     if ~isempty(sl_data)
@@ -131,6 +131,17 @@ figure(double(findobj('tag','RSAVG')));
 printfiles_report(gcf,Cal.dir_figs,'Width',12.5,'Height',17);
 
 close all;
+%% files for analisys
+%%
+
+ftypes={'CZ','CI','CJ','FV','HS','HL'};
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+for i=1:length(ftypes),s{i}=dir(fullfile(Cal.path_root,['bdata',br],[ftypes{i},'*.',br]));end
+%ficheros disponibles
+[ftypes;s]
+
+
+
 
 %% CZ REPORT
 br=sprintf('%03d',Cal.brw(Cal.n_inst));
@@ -192,7 +203,7 @@ close all
 close all; br=sprintf('%03d',Cal.brw(Cal.n_inst));
 try
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,['bdata',br],['CI*.',br]),...
-                           fullfile(Cal.path_root,['bdata',br],'CI18711.070'),...
+                           fullfile(Cal.path_root,['bdata',br],'CI18711.017'),...
                           'depuracion',1,'outlier_flag',0,...
                           'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
 catch exception

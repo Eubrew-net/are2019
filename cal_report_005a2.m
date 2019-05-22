@@ -21,6 +21,10 @@ catch exception
       save(Cal.file_save);
 end
 
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
+
 %% configuration files
 close all;
 
