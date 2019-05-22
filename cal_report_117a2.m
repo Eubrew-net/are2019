@@ -21,6 +21,9 @@ catch exception
       save(Cal.file_save);
 end
 
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
 %% configuration files
 close all;
 
@@ -97,22 +100,28 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                                  'date_range',datenum(Cal.Date.cal_year-1,10,1));
-% figure(max(findobj('Tag','TEMP_OLD_VS_NEW'))); set(gca,'YLim',[1750 1920]);
+                       'date_range',datenum(Cal.Date.cal_year-1,10,1));   % two years before calibration
+                        %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
+                        %this year data
+                        
+                       
+
+% figure(maxf(findobj('Tag','TEMP_OLD_VS_NEW'))); set(gca,'YLim',[1750 1920]);
 
 disp(sprintf(' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.orig(7,[1 3 2 4])));
 disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.new(7,[1 3 2 4])));
 
  %%
- makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],...
+tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],...
         {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4)
-
+temperature{Cal.n_inst}.regression_table=tc_reg_table;
 %%
- makeHtml_Table(NTC{2});
+tc_coeff_table=makeHtml_Table(NTC{2})
+temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
 
 %%  Check changes
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
-                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,0,Cal.calibration_days{Cal.n_inst,1}(1)));
+                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
 
 Forigx=Forig; Fn=Fnew;
 
@@ -253,11 +262,15 @@ matrix2latex_ctable([num2cell(media_fi);num2cell(fix(mean(media_fi)))],fullfile(
                  
 %%
 fprintf('\nFI''s analyzed: %d\n',NFI);
-display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g',label_1)
+fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g',label_1)
+filter{Cal.n_inst}.mean_table=fi_mean_table;
+%
+%fprintf('\nFI''s analyzed: %d\n',NFI);
+fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'})
+filter{Cal.n_inst}.etc_table=fi_etc_table;
 
-%%
-fprintf('\nFI''s analyzed: %d\n',NFI);
-display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'})
+
+save(Cal.file_save,'-APPEND','filter');
 
 %%
  figure(maxf(findobj('tag','FI_wavelength')));
