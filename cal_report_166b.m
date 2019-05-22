@@ -78,7 +78,7 @@ for t=d_p % Siempre el pen�ltimo y �ltimo procesados (si hay m�s de uno)
                                       ['\calsteperror',tags{idx}],cal_step_error{t});
      idx=idx+1;
 end
-sunscan{Cal.n_inst}.cal_step=cal_step;
+load(Cal.file_save,'sunscan');sunscan{Cal.n_inst}.cal_step=cal_step;
 sunscan{Cal.n_inst}.cal_step_error=cal_step_error;
 sunscan{Cal.n_inst}.sc_avg=sc_avg; sunscan{Cal.n_inst}.sc_raw=sc_raw;
 sunscan{Cal.n_inst}.info=Args;
@@ -104,7 +104,7 @@ for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
        %res{jj}=NaN*ones(9,7,2); detail{jj}=NaN*ones(6,6,9,2); QUAD_DETAIL{jj}=NaN;
     end
 end
-% Para salvar los datos de cada brewer
+load(Cal.file_save,'dsp_summary');
 dates=sscanf(cell2str(cat(2,ldsp')),'%03d_%03d_%03d,',[3,Inf]);
 dates=datejul(dates(2:3,:)');dates=dates(:,1);
 dsp_summary{Cal.n_inst}.info=cellstr(datestr(dates))';
