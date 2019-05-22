@@ -66,7 +66,7 @@ catch exception
 end
 
 %% Historical review AVG info
-% all period
+load(Cal.file_save,'avg_report');
 close all;
 load(Cal.file_save,'avg_report');
 

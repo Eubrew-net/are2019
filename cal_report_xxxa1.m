@@ -66,7 +66,8 @@ catch exception
 end
 
 %% Historical review AVG info
-% all period
+load(Cal.file_save,'avg_report');
+
 close all;
 [sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
                                       'date_range',[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],...

@@ -21,6 +21,10 @@ catch exception
       save(Cal.file_save);
 end
 
+
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
 %% configuration files
 close all;
 
@@ -259,6 +263,11 @@ fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g'
 %%
 fprintf('\nFI''s analyzed: %d\n',NFI);
 fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'})
+
+
+filter{Cal.n_inst}.mean_table=fi_mean_table                      
+filter{Cal.n_inst}.etc_table=fi_etc_table;
+
 
 %%
  figure(maxf(findobj('tag','FI_wavelength')));
