@@ -1,8 +1,8 @@
 import os
 
-myBrewer="075"
+myBrewer="150"
 myCampaign="~/CODE/campaigns/are2019"
-myAVGs=["SLOAVG", "DTOAVG", "RSOAVG", "APOAVG", "HGOAVG", "H2OAVG", "OPAVG"]
+myAVGs=["SLOAVG", "DTOAVG", "RSOAVG", "APOAVG", "HGOAVG", "H2OAVG", "OPAVG", "FIOAVG"]
 
 # download, unzip, and svn add all files
 for myFile in myAVGs:
