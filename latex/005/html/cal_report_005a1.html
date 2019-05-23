@@ -1,0 +1,664 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>cal_report_005a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-05-23"><meta name="DC.source" content="cal_report_005a1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Evaluation</a></li><li><a href="#3">Brewer setup</a></li><li><a href="#4">configuration files</a></li><li><a href="#8">Historical review AVG info</a></li><li><a href="#11">CZ REPORT</a></li><li><a href="#13">HL Report</a></li><li><a href="#15">HS Report</a></li><li><a href="#17">CI REPORT</a></li><li><a href="#19">FV REPORT</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','005','html'); options_pub.showCode=true;</span>
+<span class="comment">% publish(fullfile(pwd,'cal_report_005a1.m'),options_pub);</span>
+</pre><h2 id="2">Brewer Evaluation</h2><pre class="codeinput">clear <span class="string">all</span>;
+file_setup=<span class="string">'arenos2019_setup'</span>;
+
+eval(file_setup);     <span class="comment">% configuracion por defecto</span>
+Cal.n_inst=find(Cal.brw==005);
+Cal.file_latex=fullfile(<span class="string">'.'</span>,<span class="string">'latex'</span>,Cal.brw_str{Cal.n_inst});
+Cal.dir_figs=fullfile(<span class="string">'latex'</span>,filesep(),Cal.brw_str{Cal.n_inst},<span class="keyword">...</span>
+                              filesep(),[Cal.brw_str{Cal.n_inst},<span class="string">'_figures'</span>],filesep());
+mkdir(Cal.dir_figs);
+<span class="keyword">try</span>
+      save(Cal.file_save,<span class="string">'-Append'</span>,<span class="string">'Cal'</span>); <span class="comment">%sobreescribimos la configuracion guardada.</span>
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s\n Initializing data for Brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+      save(Cal.file_save);
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">
+ans =
+
+  logical
+
+   1
+
+
+ans =
+
+  1&times;1 cell array
+
+    {'IZO#185'}
+
+
+ans =
+
+  20&times;9 cell array
+
+  Columns 1 through 5
+
+    {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
+    {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
+    {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
+    {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
+    {'UM#075' }    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
+    {'UM#126' }    {[126]}    {[4]}    {[0]}    {'126'}
+    {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
+    {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
+    {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
+    {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
+    {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
+    {'UM#172' }    {[172]}    {[3]}    {[0]}    {'172'}
+    {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
+    {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
+    {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
+    {'CAN#190'}    {[190]}    {[3]}    {[0]}    {'190'}
+    {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
+    {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
+    {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+
+  Columns 6 through 9
+
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF15315&#8230;'}    {'..\017\ICF15315&#8230;'}    {'2170'}    {'2097'}
+    {'..\033\ICF15617&#8230;'}    {'..\033\ICF15617&#8230;'}    {'2325'}    {'2325'}
+    {'..\070\ICF15617&#8230;'}    {'..\070\ICF15617&#8230;'}    {'1707'}    {'1707'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
+    {'..\117\icf14915&#8230;'}    {'..\117\ICF14915&#8230;'}    {'1536'}    {'1612'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF15517&#8230;'}    {'1710'}    {'1710'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0325'}
+    {'..\151\ICF15317&#8230;'}    {'..\151\ICF15317&#8230;'}    {'1832'}    {'1832'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
+    {'..\163\ICF20118&#8230;'}    {'..\163\ICF20118&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\icf15215&#8230;'}    {'..\166\ICF15215&#8230;'}    {'1952'}    {'1975'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0335'}    {'0335'}
+    {'..\186\ICF14915&#8230;'}    {'..\186\ICF14915&#8230;'}    {'0317'}    {'0317'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF15017&#8230;'}    {'0242'}    {'0242'}
+
+XLSREAD unable to read sheet 'Eventos.075'.
+File does not contain recognized Excel data.  Try saving as Excel 98. BrewerUM#075
+-&gt;ERROR
+     1
+
+~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185.CFG
+-&gt;ERROR
+     2
+
+~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG
+</pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
+Station.name=<span class="string">''</span>;
+Station.lat=67;
+Station.long=50;
+Station.meanozo=350;
+
+Date.CALC_DAYS=Cal.calibration_days{Cal.n_inst,1};
+<span class="keyword">if</span> ~isempty(Cal.calibration_days{Cal.n_inst,2})
+   Date.BLIND_DAYS=Cal.calibration_days{Cal.n_inst,2};
+<span class="keyword">else</span>
+   Date.BLIND_DAYS=[NaN,NaN];
+<span class="keyword">end</span>
+Date.FINAL_DAYS=Cal.calibration_days{Cal.n_inst,3};
+
+latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_setup_'</span>,Cal.brw_str{Cal.n_inst}]),<span class="keyword">...</span>
+                    <span class="string">'\CALINI'</span>,Date.CALC_DAYS(1),<span class="string">'\CALEND'</span>,Date.CALC_DAYS(end),<span class="keyword">...</span>
+                    <span class="string">'\calyear'</span>,Date.cal_year,<span class="string">'\calyearold'</span>,Date.cal_year-2,<span class="keyword">...</span>
+                    <span class="string">'\slrefOLD'</span>,Cal.SL_OLD_REF(Cal.n_inst),<span class="string">'\slrefNEW'</span>,Cal.SL_NEW_REF(Cal.n_inst),<span class="keyword">...</span>
+                    <span class="string">'\BLINDINI'</span>,Date.BLIND_DAYS(1),<span class="string">'\BLINDEND'</span>,Date.BLIND_DAYS(end),<span class="keyword">...</span>
+                    <span class="string">'\FINALINI'</span>,Date.FINAL_DAYS(1),<span class="string">'\FINALEND'</span>,Date.FINAL_DAYS(end),<span class="keyword">...</span>
+                    <span class="string">'\caldays'</span>,length(Date.FINAL_DAYS),<span class="string">'\Tsync'</span>,Cal.Tsync,<span class="keyword">...</span>
+                    <span class="string">'\brwname'</span>,Cal.brw_name(Cal.n_inst),<span class="string">'\brwref'</span>,Cal.brw_name(Cal.n_ref(2)),<span class="keyword">...</span>
+                    <span class="string">'\BRWSTATION'</span>,Station.name,<span class="string">'\STATIONOSC'</span>,Station.OSC,<span class="keyword">...</span><span class="comment">%'\DCFFILE',Cal.FCal.DCFFILE,'\LFFILE',Cal.FCal.LFFILE,...</span>
+                    <span class="string">'\campaign'</span>,Cal.campaign);
+
+Cal.Date=Date;
+save(Cal.file_save,<span class="string">'-Append'</span>,<span class="string">'Cal'</span>);
+</pre><h2 id="4">configuration files</h2><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeinput">[config_ref,TCref,DTref,ETCref,A1ref,ATref,leg]=read_icf(Cal.brw_config_files{Cal.n_ref(2),2});
+[config_def,TCdef,DTdef,ETCdef,A1def,ATdef,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
+[config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
+
+latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_config_'</span>,Cal.brw_str{Cal.n_inst}]),<span class="keyword">...</span>
+                     DTref,<span class="string">'\ETCref'</span>,ETCref(1),<span class="string">'\Aref'</span>,A1ref(1),<span class="keyword">...</span>
+                     DTdef,<span class="string">'\ETCdef'</span>,ETCdef(1),<span class="string">'\Adef'</span>,A1def(1),<span class="keyword">...</span>
+                     DTorig,<span class="string">'\ETCorig'</span>,ETCorig(1),<span class="string">'\Aorig'</span>,A1orig(1));
+</pre><pre class="codeinput">makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
+</pre><pre class="codeinput"><span class="keyword">catch</span> exception
+      fprintf(<span class="string">'%s, brewer: %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+      DTorig=NaN; DTdef=NaN;
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">Unable to read file '/home/jlopezs/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG'. No such file or directory., brewer: TSK#005
+</pre><h2 id="8">Historical review AVG info</h2><pre class="codeinput">load(Cal.file_save,<span class="string">'avg_report'</span>);
+close <span class="string">all</span>;
+load(Cal.file_save,<span class="string">'avg_report'</span>);
+
+[sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),<span class="keyword">...</span>
+                                      <span class="string">'date_range'</span>,[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],<span class="keyword">...</span>
+                                      <span class="string">'SL_REF'</span>,[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],<span class="keyword">...</span>
+                                      <span class="string">'DT_REF'</span>,[DTorig,DTdef],<span class="keyword">...</span>
+                                      <span class="string">'outlier_flag'</span>,{<span class="string">'sl'</span>,<span class="string">'dt'</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>});
+<span class="keyword">try</span>
+
+    <span class="keyword">if</span> ~isempty(sl_data)
+       day_ini=find(sl_data(:,2)==Cal.Date.cal_year &amp; sl_data(:,3)&gt;=Cal.Date.FINAL_DAYS(1));
+       day_last=find(sl_data(:,2)==Cal.Date.cal_year &amp; sl_data(:,3)&lt;=Cal.Date.FINAL_DAYS(end));
+       <span class="keyword">if</span> isempty(day_ini)
+            disp(datestr(sl_data(end,1)))
+            RseisAVG=round(nanmean(sl_data(:,12)))
+            RcincoAVG=round(nanmean(sl_data(:,11)))
+       <span class="keyword">else</span>
+           RseisAVG=round(nanmean(sl_data(day_ini(1):day_last(end),12)))
+           RcincoAVG=round(nanmean(sl_data(day_ini(1):day_last(end),11)))
+       <span class="keyword">end</span>
+
+
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> ~isempty(dt_data)
+       day_ini=find(dt_data(:,2)==Cal.Date.cal_year &amp; dt_data(:,3)&gt;=Cal.Date.FINAL_DAYS(1));
+       day_last=find(dt_data(:,2)==Cal.Date.cal_year &amp; dt_data(:,3)&lt;=Cal.Date.FINAL_DAYS(end));
+
+       <span class="keyword">if</span> isempty(day_ini)
+              DTAVG=sprintf(<span class="string">'%g'</span>,10^-9*(round(nanmean(dt_data(:,4)))))
+        <span class="keyword">else</span>
+             DTAVG=sprintf(<span class="string">'%g'</span>,10^-9*round(nanmean(dt_data(day_ini(1):day_last(end),4))));
+       <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_status_'</span>,Cal.brw_str{Cal.n_inst}]),RseisAVG,RcincoAVG,DTAVG);
+    format <span class="string">short</span> <span class="string">g</span>;
+    tableform({<span class="string">'SLR6  orig'</span>,   <span class="string">'Calc. AVG'</span>,<span class="string">'SLR5  orig'</span>,<span class="string">'Calculated'</span>,<span class="string">'DT  orig'</span>,<span class="string">'Calculated'</span>},<span class="keyword">...</span>
+              [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
+
+    avg_report{Cal.n_inst}.RseisAVG=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG=RcincoAVG;
+    avg_report{Cal.n_inst}.DTorig  =DTorig;    avg_report{Cal.n_inst}.DTAVG    =str2double(DTAVG);
+
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+
+avg_report{Cal.n_inst}.sl_data=sl_data; avg_report{Cal.n_inst}.dt_data=dt_data;
+avg_report{Cal.n_inst}.rs_data=rs_data; avg_report{Cal.n_inst}.ap_data=ap_data;
+avg_report{Cal.n_inst}.hg_data=hg_data; avg_report{Cal.n_inst}.op_data=op_data;
+<span class="keyword">if</span> exist(<span class="string">'Args'</span>,<span class="string">'var'</span>)
+   avg_report{Cal.n_inst}.Args=Args;
+<span class="keyword">else</span> disp(<span class="string">'No se est&#65533;n guardando los inputs de la funci&#65533;n!!'</span>)
+<span class="keyword">end</span>
+save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'avg_report'</span>);
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'path_to_file'    defaults to .
+--------------------------------------
+07-May-2019
+
+RseisAVG =
+
+        1841
+
+
+RcincoAVG =
+
+        3589
+
+
+DTAVG =
+
+    '3.7e-08'
+
+
+  Columns 1 through 5
+
+    'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
+    [      1838]    [     1841]    [       NaN]    [      3589]    [     NaN]
+
+  Column 6
+
+    'Calculated'
+    [   3.7e-08]
+
+
+</pre><img vspace="5" hspace="5" src="cal_report_005a1_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_10.png" alt=""> <pre class="codeinput">ix=sort(double(findobj(<span class="string">'Type'</span>,<span class="string">'figure'</span>)));
+printfiles_report(ix',Cal.dir_figs);
+
+ix=sort([double(findobj(<span class="string">'tag'</span>,<span class="string">'SLAVG_F5'</span>)) double(findobj(<span class="string">'tag'</span>,<span class="string">'HGOAVG'</span>))])';
+printfiles_report(ix',Cal.dir_figs,<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
+
+figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'RSAVG'</span>)));
+printfiles_report(gcf,Cal.dir_figs,<span class="string">'Width'</span>,12.5,<span class="string">'Height'</span>,17);
+
+close <span class="string">all</span>;
+</pre><pre class="codeinput">ftypes={<span class="string">'CZ'</span>,<span class="string">'CI'</span>,<span class="string">'CJ'</span>,<span class="string">'FV'</span>,<span class="string">'HS'</span>,<span class="string">'HL'</span>};
+br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
+<span class="keyword">for</span> i=1:length(ftypes),s{i}=dir(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[ftypes{i},<span class="string">'*.'</span>,br]));<span class="keyword">end</span>
+<span class="comment">%ficheros disponibles</span>
+[ftypes;s]
+</pre><pre class="codeoutput">
+ans =
+
+  2&times;6 cell array
+
+  Columns 1 through 4
+
+    {'CZ'      }    {'CI'        }    {'CJ'      }    {'FV'        }
+    {0&times;1 struct}    {708&times;1 struct}    {0&times;1 struct}    {116&times;1 struct}
+
+  Columns 5 through 6
+
+    {'HS'      }    {'HL'      }
+    {6&times;1 struct}    {0&times;1 struct}
+
+</pre><h2 id="11">CZ REPORT</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
+<span class="keyword">try</span>
+    analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CZ*.'</span>,br]),<span class="keyword">...</span>
+                             <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,Cal.Date.cal_month-1,1));
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">No CZ Files
+</pre><pre class="codeinput"><span class="keyword">try</span>
+    figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
+<span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 1.5]);</span>
+    printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs));
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+close <span class="string">all</span>
+</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer TSK#005
+</pre><h2 id="13">HL Report</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
+<span class="keyword">try</span>
+    analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'HL*.'</span>,br]),<span class="keyword">...</span>
+                              <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">No CZ Files
+</pre><pre class="codeinput"><span class="keyword">try</span>
+    figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
+<span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 1.5]);</span>
+    printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'HL'</span>});
+<span class="keyword">catch</span> exception
+    fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+close <span class="string">all</span>
+</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer TSK#005
+</pre><h2 id="15">HS Report</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
+<span class="keyword">try</span>
+    analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'HS*.'</span>,br]))<span class="comment">%,...</span>
+                             <span class="comment">% 'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));</span>
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'date_range'    defaults to []
+   'plot_flag'    defaults to 1
+--------------------------------------
+
+ans =
+
+  1&times;3 cell array
+
+    {10&times;7 double}    {0&times;0 double}    {0&times;0 double}
+
+</pre><img vspace="5" hspace="5" src="cal_report_005a1_11.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
+    figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
+<span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 8.5]);</span>
+    printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'HS'</span>});
+<span class="keyword">catch</span> exception
+    fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+close <span class="string">all</span>
+</pre><h2 id="17">CI REPORT</h2><pre class="codeinput">close <span class="string">all</span>; br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
+<span class="keyword">try</span>
+    [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CI*.'</span>,br]),<span class="keyword">...</span>
+                           <span class="string">'CI36418.005'</span>,<span class="keyword">...</span>
+                          <span class="string">'depuracion'</span>,1,<span class="string">'outlier_flag'</span>,1,<span class="keyword">...</span>
+                          <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,1));
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">ERROR CI04219.005 Unable to perform assignment because the left and right sides have a different number of elements.
+ERROR CI08119.005 Unable to perform assignment because the left and right sides have a different number of elements.
+ERROR CI08319.005 Unable to perform assignment because the left and right sides have a different number of elements.
+--------- Validation OK --------------
+List of arguments given default values:
+               None                   
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_005a1_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a1_14.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
+    figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'CI_Report'</span>)));
+    printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+close <span class="string">all</span>
+</pre><h2 id="19">FV REPORT</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
+<span class="keyword">try</span>
+    [azimut zenit]=analyze_FV(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'FV*.'</span>,br]),<span class="keyword">...</span>
+                         <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),<span class="keyword">...</span>
+                         <span class="string">'plot_flag'</span>,0);
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">No FV's
+</pre><pre class="codeinput"><span class="keyword">try</span>
+    figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'FV_Report'</span>)));
+    printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+close <span class="string">all</span>
+</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer TSK#005
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% options_pub.outputDir=fullfile(pwd,'latex','005','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_005a1.m'),options_pub);
+
+%% Brewer Evaluation
+clear all;
+file_setup='arenos2019_setup';
+
+eval(file_setup);     % configuracion por defecto
+Cal.n_inst=find(Cal.brw==005);
+Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
+Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
+                              filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
+mkdir(Cal.dir_figs);
+try
+      save(Cal.file_save,'-Append','Cal'); %sobreescribimos la configuracion guardada.
+catch exception
+      fprintf('Error: %s\n Initializing data for Brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+      save(Cal.file_save);
+end
+
+%% Brewer setup
+Station.OSC=680;
+Station.name='';
+Station.lat=67;
+Station.long=50;
+Station.meanozo=350;
+
+Date.CALC_DAYS=Cal.calibration_days{Cal.n_inst,1};
+if ~isempty(Cal.calibration_days{Cal.n_inst,2})
+   Date.BLIND_DAYS=Cal.calibration_days{Cal.n_inst,2};
+else
+   Date.BLIND_DAYS=[NaN,NaN];
+end
+Date.FINAL_DAYS=Cal.calibration_days{Cal.n_inst,3};
+
+latexcmd(fullfile(Cal.file_latex,['cal_setup_',Cal.brw_str{Cal.n_inst}]),...
+                    '\CALINI',Date.CALC_DAYS(1),'\CALEND',Date.CALC_DAYS(end),...
+                    '\calyear',Date.cal_year,'\calyearold',Date.cal_year-2,...
+                    '\slrefOLD',Cal.SL_OLD_REF(Cal.n_inst),'\slrefNEW',Cal.SL_NEW_REF(Cal.n_inst),...
+                    '\BLINDINI',Date.BLIND_DAYS(1),'\BLINDEND',Date.BLIND_DAYS(end),...
+                    '\FINALINI',Date.FINAL_DAYS(1),'\FINALEND',Date.FINAL_DAYS(end),...
+                    '\caldays',length(Date.FINAL_DAYS),'\Tsync',Cal.Tsync,...
+                    '\brwname',Cal.brw_name(Cal.n_inst),'\brwref',Cal.brw_name(Cal.n_ref(2)),...
+                    '\BRWSTATION',Station.name,'\STATIONOSC',Station.OSC,...%'\DCFFILE',Cal.FCal.DCFFILE,'\LFFILE',Cal.FCal.LFFILE,...
+                    '\campaign',Cal.campaign);
+
+Cal.Date=Date;
+save(Cal.file_save,'-Append','Cal');
+
+%% configuration files
+try
+[config_ref,TCref,DTref,ETCref,A1ref,ATref,leg]=read_icf(Cal.brw_config_files{Cal.n_ref(2),2});
+[config_def,TCdef,DTdef,ETCdef,A1def,ATdef,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
+[config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig,leg]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
+
+latexcmd(fullfile(Cal.file_latex,['cal_config_',Cal.brw_str{Cal.n_inst}]),...
+                     DTref,'\ETCref',ETCref(1),'\Aref',A1ref(1),...
+                     DTdef,'\ETCdef',ETCdef(1),'\Adef',A1def(1),...
+                     DTorig,'\ETCorig',ETCorig(1),'\Aorig',A1orig(1));
+%%
+makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
+
+catch exception
+      fprintf('%s, brewer: %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+      DTorig=NaN; DTdef=NaN;
+end
+
+%% Historical review AVG info
+load(Cal.file_save,'avg_report');
+close all;
+load(Cal.file_save,'avg_report');
+
+[sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
+                                      'date_range',[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],...
+                                      'SL_REF',[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],...
+                                      'DT_REF',[DTorig,DTdef],...
+                                      'outlier_flag',{'sl','dt','','','','',''});
+try
+    
+    if ~isempty(sl_data)
+       day_ini=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       if isempty(day_ini)
+            disp(datestr(sl_data(end,1)))
+            RseisAVG=round(nanmean(sl_data(:,12)))
+            RcincoAVG=round(nanmean(sl_data(:,11)))
+       else
+           RseisAVG=round(nanmean(sl_data(day_ini(1):day_last(end),12)))
+           RcincoAVG=round(nanmean(sl_data(day_ini(1):day_last(end),11)))
+       end
+       
+
+    end
+    if ~isempty(dt_data)
+       day_ini=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       
+       if isempty(day_ini)
+              DTAVG=sprintf('%g',10^-9*(round(nanmean(dt_data(:,4)))))          
+        else
+             DTAVG=sprintf('%g',10^-9*round(nanmean(dt_data(day_ini(1):day_last(end),4))));
+       end
+    end
+    latexcmd(fullfile(Cal.file_latex,['cal_status_',Cal.brw_str{Cal.n_inst}]),RseisAVG,RcincoAVG,DTAVG);
+    format short g;
+    tableform({'SLR6  orig',   'Calc. AVG','SLR5  orig','Calculated','DT  orig','Calculated'},...
+              [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
+
+    avg_report{Cal.n_inst}.RseisAVG=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG=RcincoAVG;
+    avg_report{Cal.n_inst}.DTorig  =DTorig;    avg_report{Cal.n_inst}.DTAVG    =str2double(DTAVG);
+    
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+    
+avg_report{Cal.n_inst}.sl_data=sl_data; avg_report{Cal.n_inst}.dt_data=dt_data;
+avg_report{Cal.n_inst}.rs_data=rs_data; avg_report{Cal.n_inst}.ap_data=ap_data;
+avg_report{Cal.n_inst}.hg_data=hg_data; avg_report{Cal.n_inst}.op_data=op_data;
+if exist('Args','var')
+   avg_report{Cal.n_inst}.Args=Args;
+else disp('No se est�n guardando los inputs de la funci�n!!')
+end
+save(Cal.file_save,'-APPEND','avg_report');
+
+%%
+ix=sort(double(findobj('Type','figure')));
+printfiles_report(ix',Cal.dir_figs);
+
+ix=sort([double(findobj('tag','SLAVG_F5')) double(findobj('tag','HGOAVG'))])';
+printfiles_report(ix',Cal.dir_figs,'LockAxes',0,'no_export');
+
+figure(double(findobj('tag','RSAVG')));
+printfiles_report(gcf,Cal.dir_figs,'Width',12.5,'Height',17);
+
+close all;
+
+%%
+
+ftypes={'CZ','CI','CJ','FV','HS','HL'};
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+for i=1:length(ftypes),s{i}=dir(fullfile(Cal.path_root,['bdata',br],[ftypes{i},'*.',br]));end
+%ficheros disponibles
+[ftypes;s]
+
+
+%% CZ REPORT
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+try
+    analyzeCZ(fullfile(Cal.path_root,['bdata',br],['CZ*.',br]),...
+                             'date_range',datenum(Cal.Date.cal_year,Cal.Date.cal_month-1,1));
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
+end
+
+%%
+try
+    figure(max(double(findobj('tag','CZ_Report'))));
+%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 1.5]);
+    printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs));
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+close all
+
+%% HL Report
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+try
+    analyzeCZ(fullfile(Cal.path_root,['bdata',br],['HL*.',br]),...
+                              'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
+end
+%%
+try
+    figure(max(double(findobj('tag','CZ_Report'))));
+%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 1.5]);
+    printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'HL'});
+catch exception
+    fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+close all
+
+%% HS Report
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+try
+    analyzeCZ(fullfile(Cal.path_root,['bdata',br],['HS*.',br]))%,...
+                             % 'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
+end
+
+%%
+try
+    figure(max(double(findobj('tag','CZ_Report'))));
+%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 8.5]);
+    printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'HS'});
+catch exception
+    fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+close all
+
+%% CI REPORT
+close all; br=sprintf('%03d',Cal.brw(Cal.n_inst));
+try
+    [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,['bdata',br],['CI*.',br]),...
+                           'CI36418.005',...
+                          'depuracion',1,'outlier_flag',1,...
+                          'date_range',datenum(Cal.Date.cal_year,1,1));
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
+end
+
+%%
+try
+    figure(double(findobj('tag','CI_Report')));
+    printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),'LockAxes',0,'no_export');
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+close all
+
+%% FV REPORT
+br=sprintf('%03d',Cal.brw(Cal.n_inst));
+try
+    [azimut zenit]=analyze_FV(fullfile(Cal.path_root,['bdata',br],['FV*.',br]),...
+                         'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
+                         'plot_flag',0);
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
+end
+
+%%
+try
+    figure(double(findobj('tag','FV_Report')));
+    printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),'LockAxes',0,'no_export');
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+close all
+
+##### SOURCE END #####
+--></body></html>
