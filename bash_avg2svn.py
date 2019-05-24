@@ -1,12 +1,14 @@
 import os
 
-myBrewer="150"
-myCampaign="~/CODE/campaigns/are2019"
+myBrewers=["005","033","070","075","117","150","151","185","186","201","202","228"]
+
+myCampaign="~/CODE/rbcce.aemet.es/campaigns/are2019"
+
 myAVGs=["SLOAVG", "DTOAVG", "RSOAVG", "APOAVG", "HGOAVG", "H2OAVG", "OPAVG", "FIOAVG"]
 
 # download, unzip, and svn add all files
-for myFile in myAVGs:
-
+for myBrewer in myBrewers: 
+  for myFile in myAVGs:
     # get
     myCmd="curl -# -u ibero:nesia 'http://www.eubrewnet.org/eubrewnet/data/get/Files?brewerid="+\
             myBrewer+"&type="+myFile+"&date=2019-05-17' > tempEBNdata.zip"
@@ -21,11 +23,11 @@ for myFile in myAVGs:
           "/"+myFile+"."+myBrewer
     os.system(myCmd)
 
-# now do the svn commit
-myCmd="svn commit -m 'Added AVG files for Brewer "+myBrewer+\
+  # now do the svn commit
+  myCmd="svn commit -m 'Added AVG files for Brewer "+myBrewer+\
       "' --username brewersync --password redbrewer "+\
       myCampaign+"/bdata"+myBrewer
-os.system(myCmd)
+  os.system(myCmd)
 
 # and update
 myCmd="svn update "+myCampaign
