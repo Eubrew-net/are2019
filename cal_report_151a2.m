@@ -21,6 +21,9 @@ catch exception
       save(Cal.file_save);
 end
 
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
 %% configuration files
 close all;
 
@@ -97,7 +100,7 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
+                       'date_range',datenum(Cal.Date.cal_year-1,7,15));   % two years before calibration
                         %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
                         %this year data
                         
@@ -146,6 +149,9 @@ lg=legend('Old temperature coeff','New temperature coeff','Location','best');
 set(lg,'HandleVisibility','Off'); set(findobj(lg,'Type','text'),'FontSize',7,'HandleVisibility','Off');    
 title(['R6 Temperature dependence Brewer#', Cal.brw_str{Cal.n_inst}]);
 ylabel('Standard Lamp R6 ratio'); xlabel('Temperature'); set(gca,'Box','On');
+
+plot(mn(:,1),mn(:,2),'k.',mt(:,1),mt(:,2),'g.')
+robust_line
 
 %%
 % ix=sort(findobj('tag','TEMP_COEF_DESC'));
