@@ -1,5 +1,5 @@
-% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_228a2.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','202','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_202a2.m'),options_pub);
 
 %% Brewer Setup
 clear all;
@@ -7,7 +7,7 @@ clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==228);
+Cal.n_inst=find(Cal.brw==202);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -21,10 +21,8 @@ catch exception
       save(Cal.file_save);
 end
 
-
 load(Cal.file_save,'temperature');
 load(Cal.file_save,'filter');
-
 
 %% configuration files
 close all;
@@ -130,8 +128,8 @@ Forigx=Forig; Fn=Fnew;
 figure;  set(gcf,'Tag','TEMP_COMP_DATE');
 plot(Forigx(:,1),Forigx(:,2),'b.','MarkerSize',6); 
 ylabel('Temperature','Color','b'); ax(1)=gca; set(ax(1),'YAxisLocation','right','XTicklabels',{' '}); 
-[mn,sn]=grpstats(Forigx(:,[1,end,2]),{year(Forigx(:,1)),fix(Forigx(:,1)/7)*7},{'mean','sem'});
-[mt,st]=grpstats(Fn(:,[1,end]),{year(Fn(:,1)),fix(Fn(:,1)/7)*7},{'mean','sem'}); 
+[mn,sn]=grpstats(Forigx(:,[1,end,2]),{year(Forigx(:,1)),fix(Forigx(:,1))},{'mean','sem'});
+[mt,st]=grpstats(Fn(:,[1,end]),{year(Fn(:,1)),fix(Fn(:,1))},{'mean','sem'}); 
 ax(2) = axes('YAxisLocation','left','Color','none'); 
 hold all; errorbar(mn(:,1),mn(:,2),sn(:,2),'Color','k','Marker','s');
 errorbar(mt(:,1),mt(:,2),st(:,2),'Color','g','Marker','s');
@@ -151,10 +149,6 @@ lg=legend('Old temperature coeff','New temperature coeff','Location','best');
 set(lg,'HandleVisibility','Off'); set(findobj(lg,'Type','text'),'FontSize',7,'HandleVisibility','Off');    
 title(['R6 Temperature dependence Brewer#', Cal.brw_str{Cal.n_inst}]);
 ylabel('Standard Lamp R6 ratio'); xlabel('Temperature'); set(gca,'Box','On');
-plot(mn(:,1),mn(:,2),'k.',mt(:,1),mt(:,2),'g.')
-robust_line
-
-
 
 %%
 % ix=sort(findobj('tag','TEMP_COEF_DESC'));
@@ -278,7 +272,7 @@ filter{Cal.n_inst}.etc_table=fi_etc_table;
 
 save(Cal.file_save,'-APPEND','filter');
 
-%
+%%
  figure(maxf(findobj('tag','FI_wavelength')));
  printfiles_report(gcf,Cal.dir_figs,'Width',13.5);
     
@@ -289,5 +283,5 @@ save(Cal.file_save,'-APPEND','filter');
  for ff=ix
      printfiles_report(ff',Cal.dir_figs,'Width',17,'Height',9);
  end
-%%
+
 close all
