@@ -1,5 +1,5 @@
-% options_pub.outputDir=fullfile(pwd,'latex','166','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_166a2.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','186','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_186a2.m'),options_pub);
 
 %% Brewer Setup
 clear all;
@@ -7,7 +7,7 @@ clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==166);
+Cal.n_inst=find(Cal.brw==186);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -100,12 +100,11 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year-2,7,15),'intensity_flag',1);   % two years before calibration
+                       'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
                         %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
                         %this year data
                         
-   %0        2.529       4.6343        5.875        6.557
-                     
+                       
 
 % figure(maxf(findobj('Tag','TEMP_OLD_VS_NEW'))); set(gca,'YLim',[1750 1920]);
 
@@ -150,8 +149,6 @@ lg=legend('Old temperature coeff','New temperature coeff','Location','best');
 set(lg,'HandleVisibility','Off'); set(findobj(lg,'Type','text'),'FontSize',7,'HandleVisibility','Off');    
 title(['R6 Temperature dependence Brewer#', Cal.brw_str{Cal.n_inst}]);
 ylabel('Standard Lamp R6 ratio'); xlabel('Temperature'); set(gca,'Box','On');
-plot(mn(:,1),mn(:,2),'k.',mt(:,1),mt(:,2),'g.')
-robust_line
 
 %%
 % ix=sort(findobj('tag','TEMP_COEF_DESC'));
@@ -225,7 +222,7 @@ tabla_regress={};
 
 %% Filter attenuation
 [ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},...
-                             'date_range',datenum(Cal.Date.cal_year-4,1,1),...
+                             'date_range',datenum(Cal.Date.cal_year-2,7,15),...
                              'outlier_flag',1,'plot_flag',0,'config',config_orig(17:22));
                              
 filter{Cal.n_inst}.ETC_FILTER_CORRECTION=ETC_FILTER_CORRECTION;
