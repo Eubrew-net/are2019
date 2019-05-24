@@ -21,6 +21,10 @@ catch exception
       save(Cal.file_save);
 end
 
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
+
 %% configuration files
 close all;
 
@@ -97,7 +101,7 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
+                       'date_range',datenum(Cal.Date.cal_year-2,7,15),'temp_flag',[5,40]);   % two years before calibration
                         %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
                         %this year data
                         

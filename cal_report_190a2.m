@@ -21,6 +21,10 @@ catch exception
       save(Cal.file_save);
 end
 
+
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
 %% configuration files
 close all;
 
@@ -97,11 +101,16 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year-2,7,15),'temp_flag',[10,40]);   % two years before calibration
+                       'date_range',datenum(Cal.Date.cal_year-2,7,15),'temp_flag',[10,40],'intensity_flag',1);   % two years before calibration
                         %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
                         %this year data
                         
-                       
+%% Ceros work better                       
+NTC{2}
+ NTC{2}=zeros(5,1)
+close all 
+[NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
+                       'N_TC',NTC{2},'date_range',datenum(Cal.Date.cal_year-2,7,15),'temp_flag',[10,40],'intensity_flag',1);   % two years before calibration
 
 % figure(maxf(findobj('Tag','TEMP_OLD_VS_NEW'))); set(gca,'YLim',[1750 1920]);
 
@@ -119,6 +128,7 @@ temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
 %%  Check changes
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
                                 'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
+                            
 
 Forigx=Forig; Fn=Fnew;
 
