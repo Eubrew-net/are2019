@@ -104,12 +104,11 @@ array2table(cs(:,[1,3,4,5,6]),'VariableNames',str2var({'Brw','cal','ci1','ci2','
 
 
 %%
-label={'Brw','Date','Calc_step','Calc_step_C1','Calc_step_C2','Calc_Step_set'};
-label2={'Date_c','Calc_step_c','Calc_step_C1_c','Calc_step_C2_c','Calc_Step_set_c'};
-lx=[label,label2];
-t_sc_=array2table(cs,'Variablenames',lx,'Rownames',Cal.brw_str)
-
-%%
+% label={'Brw','Date','Calc_step','Calc_step_C1','Calc_step_C2','Calc_Step_set'};
+% label2={'Date_c','Calc_step_c','Calc_step_C1_c','Calc_step_C2_c','Calc_Step_set_c'};
+% lx=[label,label2];
+% t_sc_=array2table(cs,'Variablenames',lx,'Rownames',Cal.brw_str)
+%
 %t_sc_after=array2table(cat(1,cal_step{:,2}),'Variablenames',{'Date','Calc_step','Calc_step_C1','Calc_step_C2','Calc_Step_set'},'Rownames',Cal.brw_str)
 
 

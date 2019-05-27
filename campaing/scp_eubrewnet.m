@@ -1,16 +1,8 @@
 %url='"http://rbcce.aemet.es/eubrewnet/data/get/SCP?brewerid=XXX&date=2015-01-03&enddate=2017-07-18&format=text"';
 mean_slope=[]; mean_step=[];
 std_slope=[];  std_step=[];
-mean_p_slope=[]; mean_p_step=[];
-std_p_slope=[];  std_p_step=[];
-Cal.brw_str={'157','183','185'}
-Cal.n_brw=3;
-Cal.brw_name={'B157','B183','B185'}
-
 for ii=1:Cal.n_brw
-    url='"http://rbcce.aemet.es/eubrewnet/data/get/SCP?brewerid=XXX&date=2016-01-03&enddate=2016-12-18&format=text"';
-    % url='"http://rbcce.aemet.es/eubrewnet/data/get/CZ?brewerid=XXX&date=2016-01-03&enddate=2016-12-18&format=text"';
-    
+    url='"http://rbcce.aemet.es/eubrewnet/data/get/SCP?brewerid=XXX&date=2017-01-03&enddate=2017-07-18&format=text"';
     url=strrep(url,'XXX',Cal.brw_str{ii})
     try
         [a,b]=system(['curl -s --user brewer:redbrewer ',url]);
@@ -93,26 +85,13 @@ for ii=1:Cal.n_brw
             ylabel(' % MS9 relative')
             title(['Ozone Ratio MS9 - MS9(calc step) ',Cal.brw_name{ii}])
             
-            pr=polyfic(steps,yr,2);
+            pr=polyfic(steps,y,2);
             [mean_p_slope(ii),std_p_slope(ii),outliers_p,outliers_p_index]=outliers_bp(pr(2,:),2)
             
             data_sc_huelva{ii}=y1;
             
-            %%
-            %% max error is the max slope of the envelope
-            ms=nanstd(yr,1,2);
-            mx=nanmean(yr,2);
-            x=sign(steps).*ms';
-            p1=polyfit(steps',mx+2*x',3);
-            p2=polyfit(steps',mx-2*x',3);
-            plot(steps,mx+2*x','Linewidth',2)
-            plot(steps,mx-2*x','Linewidth',2)
-            %disp('x');
-            max(abs([p1(end-1),p2(end-1)]))
-            std_p_slope(ii)=mean(abs([p1(end-1),p2(end-1)]))
         end
-    catch
-        disp("ERROR")
+        catch
         disp(Cal.brw_name{ii})
         mean_slope(ii)=NaN;
         std_slope(ii)=NaN;
@@ -122,11 +101,9 @@ for ii=1:Cal.n_brw
     
 end
 
-
-%%
 figure
-confplot(1:Cal.n_brw,mean_slope,std_slope)
-set(gca,'Xtick',1:Cal.n_brw,'XtickLabel',Cal.brw_str,'Xlim',[0 Cal.n_brw+1])
+confplot(1:21,mean_slope,std_slope)
+set(gca,'Xtick',1:21,'XtickLabel',Cal.brw_str,'Xlim',[0 22])
 grid
 title(['Ozone Ratio:  MS9 slope  '])
 xlabel('Brw #')
@@ -134,8 +111,8 @@ ylabel('MS9 step Slope ')
 print -clipboard -dbitmap
 
 figure
-errorbar(1:Cal.n_brw,mean_step,se_step)
-set(gca,'Xtick',1:Cal.n_brw,'XtickLabel',Cal.brw_str,'Xlim',[0 Cal.n_brw+1])
+errorbar(1:21,mean_step,se_step)
+set(gca,'Xtick',1:21,'XtickLabel',Cal.brw_str,'Xlim',[0 22])
 grid
 title(['Ozone Ratio:  MS9 - MS9(calc step) '])
 xlabel('Brw #')
