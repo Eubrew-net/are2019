@@ -1,11 +1,7 @@
 % AOD config table
 %fieldnames(table2struct(t))
 % t=readtable('aod_config_template.csv')
-
-
-
-
-
+% fields=fieldnames(table2struct(t))
 fields=[
     {'Brw'         }
     {'ANO'         }
@@ -49,28 +45,43 @@ run(fullfile('..',file_setup))%  configuracion por defecto
 cfgtable = cell2table(cell(0,35), 'VariableNames', fields);
 Cal.n_inst=find(Cal.brw==185)
 
-%empty table
+% Calibration date
+year_=Cal.Date.cal_year;
+% Julian day since calibration is valid
+dayj=Cal.Date.day0
 
-cfgtable{1:6,1}=Cal.brw(Cal.n_inst)
+
+
+try
+    cfgtable=readtable(sprintf('Table_AOD_%03d_%02d_%03d.csv',Cal.brw(Cal.n_inst),year_,dayj))
+catch
+     disp(Cal.brw_name(Cal.n_inst))
+     disp('Calibration do not exist creating a new empty one');
+     cfgtable{1:6,1}=Cal.brw(Cal.n_inst);
+end
+
+
 
 %%filter
 f=load(fullfile('..',Cal.file_save),'filter');
 media=f.filter{Cal.n_inst}.media_fi';
-cfgtable{1:6,22:26}=media'
+%cfgtable{1:6,22:26}=media'
 disp('media')
 
-filter_by_year=[repmat([Cal.brw(Cal.n_inst),0,0,365,1],6,1),media'];
-filter_by_year(:,5)=1:6
-filter_by_year(:,2)=2019
+filter_by_year=[repmat([Cal.brw(Cal.n_inst),0,dayj,365,1],6,1),media'];
+filter_by_year(:,5)=1:6 ;
+filter_by_year(:,2)=year_;
 
-table_filter=array2table(filter_by_year,'VariableNames',{'BRW','YEAR','DAY0','DAYEND','SLIT','AT_FL1','AT_FL2','AT_FL3','AT_FL4','AT_FL5'});
-writetable(table_filter,sprintf('Filter_spectral_%03d_%04d.csv',Cal.brw(Cal.n_inst),2019))
+table_filter=array2table(filter_by_year,'VariableNames',fields([1:5,22:26]));
+cfgtable(:,[1:5,22:26])=table_filter
+%writetable(table_filter,sprintf('Filter_spectral_%03d_%04d.csv',Cal.brw(Cal.n_inst),2019))
 
 
 
 %% dispersion
 disp(Cal.brw_str(Cal.n_inst))
-date_range=datenum(2019,5,1);
+% date to find the calibration
+date_range=datenum(year_,5,1)
 dsppath=fullfile(Cal.path_root,'dsp');
 dsp_quad{Cal.n_inst}=[];
 dsp_cubic{Cal.n_inst}=[];
@@ -94,25 +105,29 @@ SO2absorption=[];
 Cal.n_inst;
 
 %[config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
-aaa=size(dsp_salida{1,Cal.n_inst})
+aaa=size(dsp_salida{Cal.n_inst},2)
 table_aod=[];
 if aaa(1,1)>0
     for j=1:size(aaa,2) % number of dispersion
           try
               % BRW YEAR DIA0 DIAF SLIT	CALSTEP	WAVEL	FWHM RAYLEIGH	O3_ABS	SO2_ABS	NO2_ABS
-           dia=dsp_salida{1,i}{j}.day;
-           ano=dsp_salida{1,i}{1}.year;
-           aa=size(dsp_salida{1,i}{1,1}.salida.CUBIC)
-           m=dsp_salida{1,i}{1,1}.salida.CUBIC(1,aa(1,2)-1);
-           Rayleigh=[Rayleigh;[brewer(1,i),ano,dia,m{1,1}.raycoeff]]
-           O3absorption=[O3absorption;[brewer(1,i),ano,dia,m{1,1}.o3coeff]];
-           SO2absorption=[SO2absorption;[brewer(1,i),ano,dia,m{1,1}.so2coeff]];
+           dia=dsp_salida{Cal.n_inst}{j}.day
+           dia=dayj
+           ano=dsp_salida{Cal.n_inst}{1}.year
+           ano=year_
+           
+           aa=size(dsp_salida{Cal.n_inst}{1,1}.salida.CUBIC)
+           m=dsp_salida{Cal.n_inst}{1,1}.salida.CUBIC(1,aa(1,2)-1);
+           Rayleigh=[Rayleigh;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.raycoeff]];
+           O3absorption=[O3absorption;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.o3coeff]];
+           SO2absorption=[SO2absorption;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.so2coeff]];
            ms=[m{1}.thiswl',m{1}.fwhmwl',round(-log(m{1}.raycoeff')*10^4),m{1}.o3coeff',m{1}.so2coeff'];
-           ms=[repmat([Cal.brw(i),ano+2000,dia,365,1,m{1}.ozone_pos-m{1}.cal_ozonepos],6,1),ms];
+           ms=[repmat([Cal.brw(Cal.n_inst),ano+2000,dia,365,1,m{1}.ozone_pos-m{1}.cal_ozonepos],6,1),ms];
            ms(:,5)=1:6;
-           t=array2table(ms,'VariableNames',{'BRW' 'YEAR' 'DAY0' 'DAYEND' 'SLIT'	'CALSTEP'	'WAVEL'	'FWHM' 'RAYLEIGH'	'O3_ABS'	'SO2_ABS'});
+           t=array2table(ms,'VariableNames',fields([1:8,15:17]));
            table_aod=[table_aod;t];
-           writetable(t,sprintf('Table_DSP_%03d_%02d_%03d.csv',Cal.brw(i),ano,dia));
+           cfgtable(:,[1:8,15:17])=table_aod;
+           writetable(cfgtable,sprintf('Table_AOD_%03d_%02d_%03d.csv',Cal.brw(Cal.n_inst),ano,dia));
            catch
                 disp(Cal.brw_name(Cal.n_inst))
                 disp('Error')
@@ -120,12 +135,3 @@ if aaa(1,1)>0
     end   
 end
 
-try
-    t1=readtable(sprintf('Filter_spectral_%03d.csv',Cal.brw(i)));
-    tf=t1(t1.YEAR==2018,:);
-    table_aod=[t,tf(:,6:end)]  % elegimos el último
-    writetable(table_aod,sprintf('Table_AOD_%03d.csv',Cal.brw(i)));
-catch
-      disp(Cal.brw_name(Cal.n_inst))
-     disp('Error');
-end
