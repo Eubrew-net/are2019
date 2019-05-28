@@ -2,11 +2,15 @@
 %fieldnames(table2struct(t))
 % t=readtable('aod_config_template.csv')
 % fields=fieldnames(table2struct(t))
+
+
+
+
 fields=[
-    {'Brw'         }
-    {'ANO'         }
-    {'DIAJ0'       }
-    {'DIAJ'        }
+    {'BRW'         }
+    {'YEAR'        }
+    {'DAY0'        }
+    {'DAYEND'      }
     {'SLIT'        }
     {'CALSTEP'     }
     {'WAVEL'       }
@@ -39,19 +43,23 @@ fields=[
     {'AOD_EX2'     }
     {'AOD_EX3'     }];
 
+
+%% Setup de la campaña
 addpath(genpath('../matlab'));
 file_setup='arenos2019_setup.m';
 run(fullfile('..',file_setup))%  configuracion por defecto
 cfgtable = cell2table(cell(0,35), 'VariableNames', fields);
+
+%% Setup del equipo
 Cal.n_inst=find(Cal.brw==185)
 
+%% Choose day and date of validity of the calibraton
 % Calibration date
 year_=Cal.Date.cal_year;
 % Julian day since calibration is valid
 dayj=Cal.Date.day0
-
-
-
+dayj=100
+%% load previous files
 try
     cfgtable=readtable(sprintf('Table_AOD_%03d_%02d_%03d.csv',Cal.brw(Cal.n_inst),year_,dayj))
 catch
@@ -60,25 +68,30 @@ catch
      cfgtable{1:6,1}=Cal.brw(Cal.n_inst);
 end
 
+%% Temperture dependence from Cal_report_a2
+t=load(fullfile('..',Cal.file_save),'temperature');
+t=t.temperature{Cal.n_inst};
+t=ajuste{2}.new;
+fields(19:20)'
+cfgtable{2:6,[19:20]}=t(1:5,1:2);
 
 
-%%filter
+%% filter attenuation form Cal_report_a2
+% Average filter repsonse from FIOAVG
+% TODO: save period of the analysis (average)
 f=load(fullfile('..',Cal.file_save),'filter');
+
 media=f.filter{Cal.n_inst}.media_fi';
-%cfgtable{1:6,22:26}=media'
-disp('media')
 
 filter_by_year=[repmat([Cal.brw(Cal.n_inst),0,dayj,365,1],6,1),media'];
 filter_by_year(:,5)=1:6 ;
 filter_by_year(:,2)=year_;
-
 table_filter=array2table(filter_by_year,'VariableNames',fields([1:5,22:26]));
-cfgtable(:,[1:5,22:26])=table_filter
-%writetable(table_filter,sprintf('Filter_spectral_%03d_%04d.csv',Cal.brw(Cal.n_inst),2019))
+cfgtable(:,[1:5,22:26])=table_filter;
 
 
 
-%% dispersion
+%% Waveleng calibration from Cal_report_b
 disp(Cal.brw_str(Cal.n_inst))
 % date to find the calibration
 date_range=datenum(year_,5,1)
@@ -118,10 +131,10 @@ if aaa(1,1)>0
            
            aa=size(dsp_salida{Cal.n_inst}{1,1}.salida.CUBIC)
            m=dsp_salida{Cal.n_inst}{1,1}.salida.CUBIC(1,aa(1,2)-1);
-           Rayleigh=[Rayleigh;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.raycoeff]];
+           Rayleigh=[Rayleigh;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.braycoeff]];
            O3absorption=[O3absorption;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.o3coeff]];
            SO2absorption=[SO2absorption;[Cal.brw(Cal.n_inst),ano,dia,m{1,1}.so2coeff]];
-           ms=[m{1}.thiswl',m{1}.fwhmwl',round(-log(m{1}.raycoeff')*10^4),m{1}.o3coeff',m{1}.so2coeff'];
+           ms=[m{1}.thiswl',m{1}.fwhmwl'/2,m{1}.braycoeff',m{1}.o3coeff',m{1}.so2coeff'];
            ms=[repmat([Cal.brw(Cal.n_inst),ano+2000,dia,365,1,m{1}.ozone_pos-m{1}.cal_ozonepos],6,1),ms];
            ms(:,5)=1:6;
            t=array2table(ms,'VariableNames',fields([1:8,15:17]));
