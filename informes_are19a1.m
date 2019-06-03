@@ -43,8 +43,8 @@ for in=1
             web{ixn,in}= [sprintf('\r\nhttps://www.iberonesia.net/svn/aro2013/html/%03d/html/cal_report_%03da1.html\r\n',[Cal.brw(ixn),Cal.brw(ixn)])];
             disp(['OK ',Cal.brw_str{ixn},' ',info(in)]);
             % logx(ixn,in)=1;
-            ss=load(fullfile(Cal.file_save),'sunscan');
-            Cal.brw(cellfun(@isempty,ss.sunscan))
+            ss=load(fullfile(Cal.file_save),'avg_report');
+            Cal.brw(cellfun(@isempty,ss.avg_report))
         catch
             close all;
             disp(['ERROR',Cal.brw_str{ixn},' ',info(in)])
