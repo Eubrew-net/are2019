@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','161','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_161a1.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','166','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_166a1.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==161);
+Cal.n_inst=find(Cal.brw==166);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -204,7 +204,7 @@ close all
 close all; br=sprintf('%03d',Cal.brw(Cal.n_inst));
 try
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,['bdata',br],['CI*.',br]),...
-                           fullfile(Cal.path_root,['bdata',br],'CI18711.161'),...
+                           fullfile(Cal.path_root,['bdata',br],'ICF15717.166'),...
                           'depuracion',1,'outlier_flag',0,...
                           'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
 catch exception
