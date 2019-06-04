@@ -36,6 +36,7 @@ config_temp.final_days=Cal.Date.FINAL_DAYS(1);
 
 NTC={}; tabla_regress={}; ajuste={}; Args={};
 
+
 %% Temperature dependence.  During campaign
 [sl_rw,tc]=readb_sl_rawl(fullfile('.','bfiles',['B*.',Cal.brw_str{Cal.n_inst}]));% cambio nombres para poder seguir
 
@@ -171,7 +172,7 @@ close all
 %% Latex stuff
 
 % Temperature Range
-% Para que funcione asignamos la salida Fr en la llamada a la funciÿn
+% Para que funcione asignamos la salida Fr en la llamada a la funciï¿½n
 % temp_coeff_raw donde se calculen los TC's (en este caso en {})
 tmp=Fr(:,2);
 latexcmd(fullfile(Cal.file_latex,['cal_tempcoeff_',Cal.brw_str{Cal.n_inst}]),...
@@ -182,7 +183,7 @@ temperature{Cal.n_inst}.NTC=NTC;
 temperature{Cal.n_inst}.ajuste=ajuste;
 if exist('Args','var')
 temperature{Cal.n_inst}.info=Args;
-else warning('No se estÿn guardando los inputs de la funciÿn!!')
+else warning('No se estï¿½n guardando los inputs de la funciï¿½n!!')
 end
 save(Cal.file_save,'-APPEND','temperature');
 
