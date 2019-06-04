@@ -48,6 +48,7 @@ close all
                      'hg_time',5,'one_flag',1);
 
 %%
+try
 ix=sort(findobj('tag','SC_INDIVIDUAL')); figure(ix); set(get(gca,'title'),'FontSize',8);
 printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'FontSize',.9,'Width',8.5,'Height',7);
 
@@ -59,7 +60,9 @@ else
     Width=13; Height=8;
 end
 printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',Width,'Height',Height);
-
+catch
+    disp('No sun_scan');
+end
 close all
 
 %% Definicion de variables: SC
