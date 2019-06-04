@@ -45,6 +45,8 @@ for in=1
             % logx(ixn,in)=1;
             ss=load(fullfile(Cal.file_save),'sunscan');
             Cal.brw(cellfun(@isempty,ss.sunscan))
+            ss=load(fullfile(Cal.file_save),'dsp_summary');
+            Cal.brw(cellfun(@isempty,ss.dsp_summary))
         catch
             close all;
             disp(['ERROR',Cal.brw_str{ixn},' ',info(in)])
