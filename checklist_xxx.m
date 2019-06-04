@@ -51,6 +51,14 @@ Cal.Date=Date;
 %7 Calibration days
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [5 5],{Date.BLIND_DAYS(1),Date.BLIND_DAYS(end)});
+
+if Date.BLIND_DAYS(end)+1<Date.FINAL_DAYS(1)
+   mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [6 5],{Date.BLIND_DAYS(end)+1,Date.FINAL_DAYS(1)-1});
+else
+    mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [6 5],{'NA','NA'});
+end
             
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [7 5],{Date.FINAL_DAYS(1),Date.FINAL_DAYS(end)});
@@ -70,15 +78,37 @@ load(Cal.file_save,'avg_report')
 
 avg=avg_report{Cal.n_inst}
 
+%% RS AVG
+% 13
+% 13, 7  Check avg.rs_data for all slits
+
+[m,s]=grpstats(avg.rs_data,avg.rs_data(:,2));
+ctrl=m(end,5:end)+s(end,5:end)*3>1.003 | m(end,5:end)-s(end,5:end)*3<0.997;
+if sum(ctrl)==0
+    msg='All slits below threshold limit (0.003)';
+else
+    slitname=[0,2,3,4,5,6];
+    msg=sprintf('%.0f,' , slitname(1,find(ctrl)));
+    msg = msg(1:end - 1);
+    msg=sprintf('Slits out of limits: %s',msg);
+end
+
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [13 7],{msg});
 %% DT AVG
 % 14
-% 14, 5 DTAVG
-% 14, 9 DTorig
+% 14, 5  DTAVG
+% 14, 8  DTAVG-DTorig
+% 14, 9  DTorig
+% 14, 10 DTAVG
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                [14 5],avg.DTAVG*10^9);
+                [14 5],str2double(avg.DTAVG)*10^9);
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [14 10],str2double(avg.DTAVG)*10^9);
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [14 9],avg.DTorig*10^9);
-            
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [14 8],str2double(avg.DTAVG)*10^9-avg.DTorig*10^9); 
 [m,s]=grpstats(avg.dt_data,avg.dt_data(:,2));            
 dt_std=sprintf('dt_low=%.1f +/- %.2f %c dt_high=%.1f +/- %.2f',m(end,4),s(end,4),char(10),m(end,5),s(end,5))            
             
@@ -89,8 +119,15 @@ mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%0
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [15 5],avg.RseisAVG);
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [15 10],avg.RseisAVG);
+
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [15 6],Cal.SL_OLD_REF(Cal.n_inst));
-            
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [15 9],Cal.SL_OLD_REF(Cal.n_inst));
+
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [15 8],avg.RseisAVG-Cal.SL_OLD_REF(Cal.n_inst));
 % R6 temp 16
 % 
 [b,bi]=regress(avg.sl_data(:,12),[ones(size(avg.sl_data(:,5))),avg.sl_data(:,5)]);            
@@ -103,9 +140,8 @@ mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%0
 % SL_R5 17
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [17 5],avg.RcincoAVG);
-%mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-%                [17 6],Cal.SL_OLD_REF(Cal.n_inst));
-            
+mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                [17 10],avg.RcincoAVG);
 % R5 temp 18
 % 
 [b,bi]=regress(avg.sl_data(:,11),[ones(size(avg.sl_data(:,5))),avg.sl_data(:,5)]);            
@@ -113,5 +149,5 @@ sl_temp=sprintf('R5 =%.1f [%.2f,%.2f] + T  %.1f  [%.2f,%.2f]',b(1),bi(1,1),bi(1,
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [18 5],round(b(2),2));
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                [18 6],{sl_temp});
+                [18 7],{sl_temp});
 
