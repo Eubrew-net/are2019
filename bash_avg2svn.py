@@ -6,11 +6,21 @@ myCampaign="~/CODE/rbcce.aemet.es/campaigns/are2019"
 
 myAVGs=["SLOAVG", "DTOAVG", "RSOAVG", "APOAVG", "HGOAVG", "H2OAVG", "OPAVG", "FIOAVG"]
 
+# get users and passwords
+with open('ebn2svn_user.txt', 'r') as myFile:
+    myString=myFile.read()
+
+    ebnUser=myString.split(",")[0].strip()
+    ebnPass=myString.split(",")[1].strip()
+    svnUser=myString.split(",")[2].strip()
+    svnPass=myString.split(",")[3].strip()
+
 # download, unzip, and svn add all files
 for myBrewer in myBrewers: 
   for myFile in myAVGs:
     # get
-    myCmd="curl -# -u ibero:nesia 'http://www.eubrewnet.org/eubrewnet/data/get/Files?brewerid="+\
+    myCmd="curl -# -u "+ebnUser+":"+ebnPass+\
+            " 'http://www.eubrewnet.org/eubrewnet/data/get/Files?brewerid="+\
             myBrewer+"&type="+myFile+"&date=2019-05-17' > tempEBNdata.zip"
     os.system(myCmd)
 
@@ -25,7 +35,7 @@ for myBrewer in myBrewers:
 
   # now do the svn commit
   myCmd="svn commit -m 'Added AVG files for Brewer "+myBrewer+\
-      "' --username brewersync --password redbrewer "+\
+      "' --username "+svnUser+" --password "+svnPass+" "+\
       myCampaign+"/bdata"+myBrewer
   os.system(myCmd)
 
