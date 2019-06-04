@@ -259,10 +259,10 @@ if __name__ == "__main__":
         with open('ebn2svn_user.txt', 'r') as myFile:
             myString=myFile.read()
 
-        args.ebnUser=myString.split(",")[0]
-        args.ebnPass=myString.split(",")[1]
-        args.svnUser=myString.split(",")[2]
-        args.svnPass=myString.split(",")[3]
+        args.ebnUser=myString.split(",")[0].strip()
+        args.ebnPass=myString.split(",")[1].strip()
+        args.svnUser=myString.split(",")[2].strip()
+        args.svnPass=myString.split(",")[3].strip()
     except:
         print("Failed loading usernames and passwords from file 'ebn2svn_user.txt' with format 'EBN_user,EBN_pass,SVN_user,SVN_pass'")
         sys.exit(1)
