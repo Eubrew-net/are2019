@@ -5,6 +5,8 @@
 # ebn2sv: download data from Eubrewnet and commit it to an SVN repo
 #
 # 20190517 JLS
+# 20190624 JLS: now reads usernames and passwords from ebn2_user.txt: must
+#+              contain a single line with ebnUser,ebnPass,svnUser,svnPass
 # ------------------------------------------------------------------------
 
 
@@ -17,16 +19,17 @@ import zipfile
 import sys
 
 try:
-    import pycurl
+    import pycurly
     pycurlAvail=True
 except:
     pycurlAvail=False
 
 try:
-    import pysvn
+    import pysvny
     pysvnAvail=True
 except:
     pysvnAvail=False
+
 
 
 # ------------------------------------------------------------------------
@@ -68,7 +71,7 @@ def getEBN(args):
             return err
 
     else: # pycurl was not imported, use system's curl with the most basic call method: os.system
-        myCurl="curl -# -u "+args.ebnUser+":"+args.ebnPass+' "'+myURL+'" >'+args.tempFile
+        myCurl="curl -u "+args.ebnUser+":"+args.ebnPass+" '"+myURL+"' >"+args.tempFile
         print("Getting data with "+myCurl)
         try:
             os.system(myCurl)
@@ -102,12 +105,10 @@ def unzipData(args):
 
 
 # ------------------------------------------------------------------------
-def _svn_login(realm, username, may_save):
+def _svn_login(realm, username, may_save, args):
     # i'm not completely sure how this works... for more information, see
     # https://tools.ietf.org/doc/python-svn/pysvn_prog_guide.html 
-    svnUser="brewersync"
-    svnPass="redbrewer"
-    return True, svnUser, svnPass, False
+    return True, args.svnUser, args.svnPass, False
 
 def commitSVN(args):
     """
@@ -119,7 +120,7 @@ def commitSVN(args):
     commitMsg="ebn2svn added B files for Brewer "+args.myBrewer_str
 
     if args.pysvn: # pysvn was successfully imported
-        print("Adding, committing, and updating with pysvn, please wait")
+        print("Adding and committing files with pysvn, please wait")
 
         svnHandle=pysvn.Client()
         svnHandle.callback_get_login=_svn_login # i'm not completely sure how this works...
@@ -136,7 +137,8 @@ def commitSVN(args):
     else: # no pysvn, call the svn command available in the system
         myAdd="svn add --force "+args.myBrewer_svnDir
         myCommit="svn commit -m '"+commitMsg+\
-                "' --username brewersync --password redbrewer "+args.myBrewer_svnDir
+                "' --username "+args.svnUser+" --password "+args.svnPass+" "+\
+                args.myBrewer_svnDir
         myUpdate="svn update "+args.svnDir
 
         print("Adding files with "+myAdd)
@@ -222,13 +224,13 @@ if __name__ == "__main__":
     parser.add_argument("-b", "--brewer", dest="brewerId",\
             help="Brewer ID(s)", nargs='+', type=int, required=True)
 
-    parser.add_argument("-u", "--user", dest="ebnUser",\
-            help="Eubrewnet's user name, uses the 'ibero' account by default",\
-            default="ibero", type=str)
+    #parser.add_argument("-u", "--user", dest="ebnUser",\
+    #        help="Eubrewnet's user name, uses the 'ibero' account by default",\
+    #        default="ibero", type=str)
 
-    parser.add_argument("-p", "--password", dest="ebnPass",\
-            help="Eubrewnet's password, uses the 'ibero' account by default",\
-            default="nesia", type=str)
+    #parser.add_argument("-p", "--password", dest="ebnPass",\
+    #        help="Eubrewnet's password, uses the 'ibero' account by default",\
+    #        required=True, type=str)
 
     parser.add_argument("-s", "--startDate", dest="iniDate",\
             help="Start date in YYYY-MM-DD format, two weeks ago from today by default",\
@@ -251,6 +253,20 @@ if __name__ == "__main__":
     # add vars for import checks
     args.pycurl=pycurlAvail
     args.pysvn=pysvnAvail
+
+    # read users and password from a file
+    try:
+        with open('ebn2svn_user.txt', 'r') as myFile:
+            myString=myFile.read()
+
+        args.ebnUser=myString.split(",")[0]
+        args.ebnPass=myString.split(",")[1]
+        args.svnUser=myString.split(",")[2]
+        args.svnPass=myString.split(",")[3]
+    except:
+        print("Failed loading usernames and passwords from file 'ebn2svn_user.txt' with format 'EBN_user,EBN_pass,SVN_user,SVN_pass'")
+        sys.exit(1)
+
 
     # call the driver
     main(args)
