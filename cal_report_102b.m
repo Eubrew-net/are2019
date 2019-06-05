@@ -48,6 +48,7 @@ close all
                      'hg_time',5,'one_flag',1);
 
 %%
+try
 ix=sort(findobj('tag','SC_INDIVIDUAL')); figure(ix); set(get(gca,'title'),'FontSize',8);
 printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'FontSize',.9,'Width',8.5,'Height',7);
 
@@ -61,6 +62,9 @@ end
 printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',Width,'Height',Height);
 
 close all
+catch
+    disp('No sunscan')
+end
 
 %% Definicion de variables: SC
 if length(cal_step)>1
@@ -91,7 +95,7 @@ CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
-ldsp=ldsp(end-3:end)
+%ldsp=ldsp(end-3:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
 %    if jj==length(ldsp),confign=2; else confign=1; end
