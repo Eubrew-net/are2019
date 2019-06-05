@@ -19,7 +19,7 @@ import zipfile
 import sys
 
 try:
-    import pycurly
+    import pycurl
     pycurlAvail=True
 except:
     pycurlAvail=False
@@ -123,7 +123,7 @@ def commitSVN(args):
         print("Adding and committing files with pysvn, please wait")
 
         svnHandle=pysvn.Client()
-        svnHandle.callback_get_login=_svn_login # i'm not completely sure how this works...
+        svnHandle.callback_get_login=_svn_login(realm, username, may_save, args) # i'm not completely sure how this works...
     
         try:
             svnHandle.add(args.myBrewer_svnDir, force=True)
