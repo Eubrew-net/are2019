@@ -25,7 +25,7 @@ except:
     pycurlAvail=False
 
 try:
-    import pysvny
+    import pysvn
     pysvnAvail=True
 except:
     pysvnAvail=False
@@ -105,7 +105,7 @@ def unzipData(args):
 
 
 # ------------------------------------------------------------------------
-def _svn_login(realm, username, may_save, args):
+def _svn_login(realm, username, may_save):
     # i'm not completely sure how this works... for more information, see
     # https://tools.ietf.org/doc/python-svn/pysvn_prog_guide.html 
     return True, args.svnUser, args.svnPass, False
@@ -123,7 +123,7 @@ def commitSVN(args):
         print("Adding and committing files with pysvn, please wait")
 
         svnHandle=pysvn.Client()
-        svnHandle.callback_get_login=_svn_login(realm, username, may_save, args) # i'm not completely sure how this works...
+        svnHandle.callback_get_login=_svn_login # i'm not completely sure how this works...
     
         try:
             svnHandle.add(args.myBrewer_svnDir, force=True)
