@@ -94,17 +94,66 @@ title(Cal.brw_str(i))
 t_range=range(t);
 t_int=num2str(round([t(1),t(end)]));
 
+% Columns: Y=3, N=4, V1=5, V2=6
+% Temperature Coeff & Filter section
 
+% Temperature Section:
+% SL temperature dep Linear 38 Eval
+
+% SL temperature dep (campaign) 39 V1
+% SL temperature dep (campaign) 39 V2
+% SL temperature dep (campaign) 39 Eval
+
+% SL temperature range (of campaign?) 40 V1 (min)
+% SL temperature range (of campaign?) 40 V2 (max)
+% SL temperature range (of campaign?) 40 Eval: Not needed
+
+% SL temperature dep (historic) 42 V1
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                 [42 5],slope_old);
+                 [42 5],slope_old*10);
+% SL temperature dep (historic) 42 V2 (is always 5)
+SL_temp_dep_limit=5.0
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                 [43 5],t_range);
-mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                 [43 6],cellstr(t_int));
+                 [42 6],slope_old_limit);
+% SL temperature dep (historic) 42 Eval
+if slope_old*10 < slope_old_limit
+     mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                     [42 3],'Y');
+     mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                     [42 4],'');
+else
+     mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                     [42 3],'');
+     mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                     [42 4],'N');
+end
              
+% temperature range 43 V1 (min).
+ mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                 [43 5],t_range.min);
+% temperature range 43 V2 (max).
+ mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                 [43 6],t_range.max);
+% temperature range 43 Eval: Not needed
+
+% New TC 44 V1: No idea if it is needed or not.             
+% New TC 44 V2:          
  new_tc=num2str(table2array(temperature{Cal.n_inst}.coeff_table));            
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [44 6],cellstr(new_tc));
+             
+% New TC 44 Eval: No idea of how to evaluate this.   
+
+% Filters Section
+
+% Filter attenuation (FI) 47 Eval
+
+% Filter linearity (FI) 48 Eval
+
+% Filter Ozone Correction 49 Eval
+
+% Filter Ozone Correction 49 Commentary
+
  disp(Cal.brw_str(i))
 catch
  disp('Error');   
