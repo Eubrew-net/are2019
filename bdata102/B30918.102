@@ -1,0 +1,601 @@
+version=2dh051118ENA-ARM-GRW 39.092  28.026 2.84pr1017.49
+co16:12:56dh: day header
+co16:12:56main: version 4.1024/06/2014 01:00:00
+co16:12:56skc: gr1mk2
+co16:12:56autohg:  1 
+co16:12:56hifw2:  0 
+co16:12:56attn:  25000  80000 
+co16:12:56lowds:  1 cubdsp:  0 
+inst0-.21-1.1-1.7-2.10.34512.351.1539474075.00000003029576179305000100001500020000250002816mkii10000000238000000000003469750.4025600362112Sep 8 2007EXTRAS1002500080000110004-26-2018@
+disp2793.60.0735629-5.47212e-072834.170.0727555-5.50061e-072871.540.0719768-5.52591e-072907.470.0711941-5.54931e-072942.510.0703956-5.57118e-072760.260.0741995-5.44796e-074190.40.110344-8.20818e-074251.250.109133-8.25091e-074307.310.107965-8.28887e-074361.20.106791-8.32397e-074413.770.105593-8.35678e-074140.390.111299-8.17194e-07SunSep 09/0734692951793@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060Dec. 6  1996@
+op_st102d:\bdata\icf15517zsfvaldcf25207uvr15517051118ENA-ARM-GRW39.09228.0261017.492.84555-114673111110111010100skco3gr1mk2@
+uvr2865  2579.6842870  2647.2302875  2714.2882880  2780.7632885  2846.5472890  2911.5232895  2975.5642900  3038.5382905  3100.3092910  3160.7382915  3219.6882920  3277.0222925  3332.6082930  3386.3202935  3438.0382940  3487.6532945  3535.0662950  3580.1862955  3622.9382960  3663.2562965  3701.0872970  3736.3912975  3769.1402980  3799.3152985  3826.9082990  3851.9202995  3874.3603000  3894.2413005  3911.5833010  3926.4053015  3938.7303020  3948.5773025  3955.9633030  3960.9003035  3963.3933040  3963.4373045  3961.0193050  3956.1143055  3948.6833060  3938.6753065  3926.0253070  3910.6523075  3892.4633080  3871.3503085  3847.1903090  3819.8523095  3789.1933100  3755.0623105  3717.3053110  3675.7653115  3630.2883120  3580.7283125  3526.9483130  3468.8293135  3406.2753140  3339.2163145  3267.6183150  3191.4843155  3110.8613160  3025.8463165  2936.5903170  2843.3003175  2746.2403180  2645.7343185  2542.1653190  2435.9693195  2327.6373200  2217.7043205  2106.7423210  1995.3533215  1884.1583220  1773.7853225  1664.8583230  1557.9833235  1453.7393240  1352.6663245  1255.2543250  1161.936@
+schedule-180pdpotdk1-96l1-86m1-74n173m185l195k1180gr1mk2@
+co16:12:56start:  PROGRAM start :  NOV 05/18 at 16:12:53
+co16:12:56re: Running re from main.asc
+co16:15:14re: Zenith discrepancy = -2031
+co16:16:26re: Azimuth discrepancy = -9205
+co16:17:27ab_sk: Running ab_sk from main.asc
+hk16:17:46 21 21 19-99-99-99-99
+co16:17:51hgfw2: HG FW#2 at step  0
+hk16:19:54 20 21 19-99-99-99-99
+hgscan 0wide 302warm= 216:19:54NOV 05/18 337 503 2163 4183 6367 9045 11540 13729 15642 16363 16804 15948 13863 11765 9709 7454 5083 2621 1715 1249 1250 1749 2698 5287 7922 10462 12783 15465 17891 19176 18758 18304 16478 13974 10998 7840 5258 5632 563 379
+hg16:21:15 .9995 292.0826 292 35980 20-3
+hgscan 0wide 302warm= 216:21:15NOV 05/18 388 419 2574 6258 7310 10613 14217 16953 19441 20638 21264 20952 18446 15491 13052 10294 7217 4195 2385 1778 1765 2407 4303 7406 10580 13448 16248 19442 21939 22419 21940 21012 18272 15430 11626 14700 9666 4899 1555 652
+hg16:22:37 .9966 293.9933 294 43683 20-1
+co16:22:39n1: Running n1 from gr1mk2 line -74
+co16:22:40td: Running td from gr1mk2 line -74
+co16:22:46td: Time correction  5.8 seconds
+hk16:22:49 20 21 19-99-99-99-99
+co16:22:51hgfw2: HG FW#2 at step  0
+hk16:24:57 20 21 19-99-99-99-99
+hgscan 0wide 302warm= 216:24:57NOV 05/18 393 421 2030 4991 8011 11822 15997 19179 22280 23372 24047 24116 21335 17959 15214 11932 8599 5105 2838 2101 2107 2812 5143 8681 12140 15211 18321 21521 24463 24576 24045 22655 19749 16332 12259 8344 5159 2052 430 422
+hg16:26:19 .9991 296.3948 296 48623 20 1
+co16:26:20b2: Running b2 from gr1mk2 line -74
+hk16:26:36 20 21 19-99-99-99-99
+co16:26:40ds: DS intensity too low ( 69/cy), skipping.
+hk16:26:57 20 21 19-99-99-99-99
+zsa0 987.270620 297 49 1031 4016 13387 26061 24947rat 14199.47 8139.824 2890.274-198.2227
+zsa0 987.930620 286 54 950 3883 13345 26403 25634rat 14653.46 8349.551 2961.555-136.7227
+zsa0 988.580620 289 53 943 3900 13200 26400 25445rat 14682.3 8328.844 3008.543-168.4492
+zsa0 989.240620 269 56 850 3611 12265 24379 23415rat 14830.64 8324.336 2982.75-183.7383
+zsa0 989.90620 260 36 843 3580 12629 25139 24468rat 14897.28 8474.965 2985.383-125.7461
+zsa0 990.550620 264 46 848 3531 12240 24471 23701rat 14805.29 8428.899 3006.277-147.2031
+zsa0 991.210620 252 45 785 3268 11668 23606 22913rat 14998.22 8611.844 3058.113-137.7383
+summary16:29:14NOV 05/18 68.194 2.64 20zs 0 14724 8380 2985-157 15226 7154-17.2 407.6 260 147 52 27 209 90 3.1 8.899999
+hk16:31:57 20 21 19-99-99-99-99
+sla 0 992.260620 124687 44 141165 158097 179249 177805 132214rat 972.6446 482.8008-47.29688-1300.258
+sla 0 992.910620 124824 60 141668 158039 178823 177928 131972rat 960.2539 487.4649-33.89453-1311.399
+sla 0 993.550620 124720 53 141797 157827 179025 177822 132239rat 953.6406 490.6953-41.42578-1299.926
+sla 0 994.190620 125282 46 141850 157809 178846 177808 132219rat 951.625 490.8282-37.40625-1300.184
+sla 0 994.830620 125105 46 141698 157949 178984 177751 132256rat 954.8984 485.5586-42.17188-1297.559
+sla 0 995.480620 124912 58 141664 157904 179248 177738 132179rat 955.6953 486.5196-48.92969-1299.879
+sla 0 996.120620 124799 49 141763 158201 178829 178180 131978rat 963.4375 489.1367-27.875-1317.281
+summary16:34:11NOV 05/18 74.691 3.637 20sl 0 959 488-40-1304 5131 2724 141657.9 132151 7 3 7 8 27 10 226.9 111.7
+hk16:36:31 20 21 19-99-99-99-99
+co16:37:08uv: UV standard  scan started
+co16:43:07uv: UV standard  scan finished, incident DUV =  5.102335 mW/m^2
+hk16:43:27 20 21 19-99-99-99-99
+co16:43:31ds: DS intensity too low ( 51/cy), skipping.
+hk16:43:37 20 21 19-99-99-99-99
+co16:43:41ds: DS intensity too low ( 46/cy), skipping.
+hk16:43:44 20 21 19-99-99-99-99
+co16:44:14uv: UV standard  scan started
+co16:50:13uv: UV standard  scan finished, incident DUV =  5.509534 mW/m^2
+hk16:50:33 20 21 19-99-99-99-99
+co16:50:38ds: DS intensity too low ( 38/cy), skipping.
+hk16:50:54 20 21 19-99-99-99-99
+zsa0 1011.230620 130 51 346 1391 4876 10888 10957rat 15618.07 9049.321 3502.805 19.57031
+zsa0 1011.890620 144 47 340 1331 4708 10595 10528rat 15530.19 9117.305 3535.578-35.6836
+zsa0 1012.540620 146 59 328 1267 4563 10125 10246rat 15698.16 9179.109 3481.219 43.90625
+zsa0 1013.20620 139 46 312 1242 4469 10063 10012rat 15725.67 9201.266 3538.844-30.17188
+zsa0 1013.850620 137 45 310 1142 4282 9828 9887rat 15639.35 9473.844 3622.766 18.11719
+zsa0 1014.510620 140 62 308 1175 4181 9577 9721rat 15841.79 9290.289 3624.785 57.2461
+zsa0 1015.160620 134 46 307 1080 4016 9418 9420rat 15518.95 9544.266 3719.035-7.078125
+summary16:53:11NOV 05/18 71.636 3.086 20zs 0 15653 9265 3575 9 15623 7462-32.6 402 114 184 84 35 99 154 8.100001 16.2
+hk16:55:33 20 21 19-99-99-99-99
+co16:55:58uv: UV standard  scan started
+co17:01:57uv: UV standard  scan finished, incident DUV =  3.608669 mW/m^2
+hk17:02:17 20 20 19-99-99-99-99
+co17:02:21ds: DS intensity too low ( 13/cy), skipping.
+co17:02:22m1: Running m1 from gr1mk2 line  73
+co17:02:22td: Running td from gr1mk2 line  73
+co17:02:23td: Time correction  .1 seconds
+hk17:02:26 20 21 19-99-99-99-99
+co17:02:36hgfw2: HG FW#2 at step  0
+hk17:04:33 20 20 19-99-99-99-99
+hgscan 0wide 302warm= 217:04:33NOV 05/18 367 389 1604 3636 5802 8374 11372 13642 15696 16556 16954 16840 14952 12653 10533 8267 5884 3389 1875 1399 1441 1926 3561 6288 8819 11399 13858 16635 19052 19448 19123 18313 16140 13561 10296 7054 4552 1999 440 383
+hg17:05:55 .9993 295.116 295 36402 20 0
+hk17:06:11 20 21 18-99-99-99-99
+co17:06:15ds: DS intensity too low ( 12/cy), skipping.
+co17:06:30zs: ZS intensity too low ( 340/cy), skipping.
+hk17:06:34 20 20 19-99-99-99-99
+co17:06:58uv: UV standard  scan started
+co17:12:57uv: UV standard  scan finished, incident DUV =  2.070798 mW/m^2
+hk17:13:17 20 20 19-99-99-99-99
+co17:13:22ds: DS intensity too low ( 13/cy), skipping.
+co17:13:37zs: ZS intensity too low ( 214/cy), skipping.
+hk17:13:49 20 21 19-99-99-99-99
+co17:13:53ds: DS intensity too low ( 14/cy), skipping.
+hk17:13:57 20 20 19-99-99-99-99
+co17:14:27uv: UV standard  scan started
+co17:20:25uv: UV standard  scan finished, incident DUV =  1.684959 mW/m^2
+hk17:20:45 19 20 19-99-99-99-99
+co17:20:50ds: DS intensity too low ( 10/cy), skipping.
+co17:21:05zs: ZS intensity too low ( 137/cy), skipping.
+hk17:21:17 20 20 19-99-99-99-99
+co17:21:22ds: DS intensity too low ( 10/cy), skipping.
+hk17:21:25 19 20 18-99-99-99-99
+co17:21:55uv: UV standard  scan started
+co17:27:55uv: UV standard  scan finished, incident DUV =  1.125652 mW/m^2
+hk17:28:15 19 20 18-99-99-99-99
+co17:28:19ds: DS intensity too low ( 6/cy), skipping.
+co17:28:34zs: ZS intensity too low ( 83/cy), skipping.
+hk17:28:38 20 20 18-99-99-99-99
+co17:29:02uv: UV standard  scan started
+co17:35:02uv: UV standard  scan finished, incident DUV =  .7012131 mW/m^2
+hk17:35:22 19 20 18-99-99-99-99
+co17:35:26ds: DS intensity too low ( 5/cy), skipping.
+co17:35:42zs: ZS intensity too low ( 47/cy), skipping.
+hk17:35:54 19 20 18-99-99-99-99
+co17:35:59ds: DS intensity too low ( 5/cy), skipping.
+hk17:36:02 19 20 18-99-99-99-99
+co17:36:32uv: UV standard  scan started
+co17:42:32uv: UV standard  scan finished, incident DUV =  .3915091 mW/m^2
+hk17:42:52 19 20 18-99-99-99-99
+co17:42:56ds: DS intensity too low ( 4/cy), skipping.
+co17:43:12zs: ZS intensity too low ( 23/cy), skipping.
+hk17:43:24 19 20 18-99-99-99-99
+co17:43:29ds: DS intensity too low ( 3/cy), skipping.
+hk17:43:32 19 20 18-99-99-99-99
+co17:44:03uv: UV standard  scan started
+co17:50:02uv: UV standard  scan finished, incident DUV =  .1847343 mW/m^2
+hk17:50:22 19 20 18-99-99-99-99
+co17:50:26ds: DS intensity too low ( 4/cy), skipping.
+co17:50:42zs: ZS intensity too low ( 13/cy), skipping.
+hk17:50:45 19 19 18-99-99-99-99
+co17:51:10uv: UV standard  scan started
+co17:57:09uv: UV standard  scan finished, incident DUV =  8.807584E-02 mW/m^2
+co17:57:09m1: Running m1 from gr1mk2 line  73
+co17:57:10td: Running td from gr1mk2 line  73
+co17:57:10td: Time correction  .1 seconds
+hk17:57:13 19 20 18-99-99-99-99
+co17:57:36hgfw2: HG FW#2 at step  0
+hk17:59:21 19 19 18-99-99-99-99
+hgscan 0wide 302warm= 217:59:21NOV 05/18 311 350 1379 3129 4930 7139 9561 11384 13318 14004 14307 14287 12582 10677 8884 6995 4959 2849 1580 1179 1217 1642 2965 5248 7639 9699 12035 14238 16251 16842 16493 15918 14019 11850 9038 6283 4073 1817 396 365
+hg18:00:43 .9993 294.8692 295 31149 19 0
+hk18:00:58 19 19 18-99-99-99-99
+co18:01:03ds: DS intensity too low ( 3/cy), skipping.
+co18:01:18zs: ZS intensity too low ( 4/cy), skipping.
+hk18:01:21 19 20 18-99-99-99-99
+co18:01:46uv: UV standard  scan started
+co18:07:46uv: UV standard  scan finished, incident DUV =  2.130786E-02 mW/m^2
+hk18:08:06 19 19 18-99-99-99-99
+co18:08:11ds: DS intensity too low ( 4/cy), skipping.
+co18:08:26zs: ZS intensity too low ( 3/cy), skipping.
+hk18:08:39 19 20 18-99-99-99-99
+co18:08:44ds: DS intensity too low ( 4/cy), skipping.
+hk18:08:47 19 19 18-99-99-99-99
+co18:09:18uv: UV standard  scan started
+co18:15:17uv: UV standard  scan finished, incident DUV = -1.834819E-02 mW/m^2
+hk18:15:37 19 19 18-99-99-99-99
+co18:15:42ds: DS intensity too low ( 3/cy), skipping.
+co18:15:42l1: Running l1 from gr1mk2 line  85
+co18:15:43td: Running td from gr1mk2 line  85
+co18:15:44td: Time correction  0 seconds
+hk18:15:46 19 19 18-99-99-99-99
+co18:15:56hgfw2: HG FW#2 at step  0
+hk18:17:54 19 19 18-99-99-99-99
+hgscan 0wide 302warm= 218:17:54NOV 05/18 318 363 1407 3109 4883 7154 9508 11379 13170 13873 14111 14260 12468 10584 8898 7054 4897 2767 1514 1161 1222 1589 2918 5133 7459 9634 11721 14059 16198 16636 16314 15896 13843 11847 9124 6244 4019 1856 397 359
+hg18:19:15 .9992 294.7145 295 30747 19 0
+hk18:19:20 19 20 18-99-99-99-99
+co18:19:57uv: UV standard  scan started
+co18:25:56uv: UV standard  scan finished, incident DUV = -3.320144E-02 mW/m^2
+hk18:25:59 19 20 18-99-99-99-99
+co18:26:16uv: UV standard  scan started
+co18:32:14uv: UV standard  scan finished, incident DUV = -9.242473E-03 mW/m^2
+co18:32:14w1: Running w1 from gr1mk2 line  85
+hk18:37:20 19 20 18-99-99-99-99
+co18:37:37uv: UV standard  scan started
+co18:43:36uv: UV standard  scan finished, incident DUV = -6.822843E-03 mW/m^2
+co18:43:36w1: Running w1 from gr1mk2 line  85
+hk18:48:40 19 19 18-99-99-99-99
+co18:48:57uv: UV standard  scan started
+co18:54:56uv: UV standard  scan finished, incident DUV =  2.50903E-03 mW/m^2
+co18:54:56w1: Running w1 from gr1mk2 line  85
+co18:59:56td: Running td from gr1mk2 line  85
+co18:59:57td: Time correction  .1 seconds
+hk19:00:00 19 19 18-99-99-99-99
+co19:00:17uv: UV standard  scan started
+co19:06:16uv: UV standard  scan finished, incident DUV = -1.800704E-02 mW/m^2
+co19:06:16w1: Running w1 from gr1mk2 line  85
+co19:11:17k1: Running k1 from gr1mk2 line  95
+co19:11:18td: Running td from gr1mk2 line  95
+co19:11:18td: Time correction  0 seconds
+hk19:11:21 18 19 18-99-99-99-99
+co19:11:44hgfw2: HG FW#2 at step  0
+hk19:13:29 18 19 18-99-99-99-99
+hgscan 0wide 302warm= 2.00333319:13:29NOV 05/18 321 345 1677 2940 6731 6794 8550 10265 12153 12826 13257 13093 11391 9799 8301 6505 4523 2455 1420 1059 1074 1435 2601 4808 7128 9041 10837 12789 14927 15558 15182 14674 12641 10772 8630 5983 3816 3886 400 386
+hg19:14:52 .9985 294.158 294 28815 18-1
+co19:14:53b2: Running b2 from gr1mk2 line  95
+co19:14:54w1: Running w1 from gr1mk2 line  95
+hk19:20:07 18 19 18-99-99-99-99
+sla 0 1160.440620 125001 42 142058 158491 178808 178258 132484rat 959.6484 486.0196-24.24219-1301.652
+sla 0 1161.080620 125336 41 142016 158553 178964 178041 132440rat 955.6094 478.9961-33.36328-1297.781
+sla 0 1161.720620 124786 34 141651 158506 179170 178236 132432rat 971.5664 485.043-33.60547-1302.758
+sla 0 1162.360620 124874 41 142249 158567 179184 178164 132355rat 951.4766 481.625-35.71094-1303.59
+sla 0 1163.010620 124876 50 141788 158336 179578 178134 132499rat 964.9453 487.2696-46.04297-1298.184
+sla 0 1163.650620 125172 39 142143 158340 179529 178410 132822rat 960.7266 493.8828-38.08985-1294.231
+sla 0 1164.290620 125329 35 142028 158708 179492 178470 132610rat 965.6953 485.211-35.72656-1302.629
+summary19:22:21NOV 05/18 106.337 3.421 18sl 0 961 485-35-1300 5122 2713 141990.4 132520.3 7 5 7 3 13 6 212.7 162.9
+co19:24:39fm: Lunar phase is less than a half 
+co19:24:39fm: No moon observations expected. Waiting until 19:35:38 to continue schedule
+co19:35:39fm: No moon observations expected. Waiting until 19:35:38 to continue schedule - aborting focused moon measurement
+co19:35:42fm: Lunar phase is less than a half 
+co19:35:42fm: No moon observations expected. Waiting until 19:46:42 to continue schedule
+co19:46:42fm: No moon observations expected. Waiting until 19:46:42 to continue schedule - aborting focused moon measurement
+co19:46:46fm: Lunar phase is less than a half 
+co19:46:46fm: No moon observations expected. Waiting until 19:57:45 to continue schedule
+co19:57:46fm: No moon observations expected. Waiting until 19:57:45 to continue schedule - aborting focused moon measurement
+co19:57:49fm: Lunar phase is less than a half 
+co19:57:49fm: No moon observations expected. Waiting until 20:08:49 to continue schedule
+co20:08:49fm: No moon observations expected. Waiting until 20:08:49 to continue schedule - aborting focused moon measurement
+co20:08:53fm: Lunar phase is less than a half 
+co20:08:53fm: No moon observations expected. Waiting until 20:19:52 to continue schedule
+co20:19:53fm: No moon observations expected. Waiting until 20:19:52 to continue schedule - aborting focused moon measurement
+co20:19:56td: Running td from gr1mk2 line  95
+co20:19:57td: Time correction  .2 seconds
+co20:19:58fm: Lunar phase is less than a half 
+co20:19:58fm: No moon observations expected. Waiting until 20:30:57 to continue schedule
+co20:30:58fm: No moon observations expected. Waiting until 20:30:57 to continue schedule - aborting focused moon measurement
+co20:31:01fm: Lunar phase is less than a half 
+co20:31:01fm: No moon observations expected. Waiting until 20:42:01 to continue schedule
+co20:42:01fm: No moon observations expected. Waiting until 20:42:01 to continue schedule - aborting focused moon measurement
+co20:42:04fm: Lunar phase is less than a half 
+co20:42:04fm: No moon observations expected. Waiting until 20:53:04 to continue schedule
+co20:53:04fm: No moon observations expected. Waiting until 20:53:04 to continue schedule - aborting focused moon measurement
+co20:53:08fm: Lunar phase is less than a half 
+co20:53:08fm: No moon observations expected. Waiting until 21:04:07 to continue schedule
+co21:04:08fm: No moon observations expected. Waiting until 21:04:07 to continue schedule - aborting focused moon measurement
+co21:04:11fm: Lunar phase is less than a half 
+co21:04:11fm: No moon observations expected. Waiting until 21:15:11 to continue schedule
+co21:15:11fm: No moon observations expected. Waiting until 21:15:11 to continue schedule - aborting focused moon measurement
+co21:15:15k1: Running k1 from gr1mk2 line  95
+co21:15:15td: Running td from gr1mk2 line  95
+co21:15:16td: Time correction  .1 seconds
+hk21:15:19 18 19 18-99-99-99-99
+co21:15:21hgfw2: HG FW#2 at step  0
+hk21:17:27 18 19 18-99-99-99-99
+hgscan 0wide 302warm= 221:17:27NOV 05/18 329 344 1287 2933 4696 6982 8995 10877 12787 13534 13920 13974 12483 10512 8965 7180 5042 2872 1528 1196 1195 1570 2968 5398 7740 9842 11743 13864 15968 16326 16085 15337 13260 11088 8795 6002 3741 1630 404 407
+hg21:18:49 .9992 295.8016 296 30246 18 1
+co21:18:50w1: Running w1 from gr1mk2 line  95
+co21:23:51fm: Lunar phase is less than a half 
+co21:23:51fm: No moon observations expected. Waiting until 21:34:51 to continue schedule
+co21:34:51fm: No moon observations expected. Waiting until 21:34:51 to continue schedule - aborting focused moon measurement
+co21:34:55fm: Lunar phase is less than a half 
+co21:34:55fm: No moon observations expected. Waiting until 21:45:54 to continue schedule
+co21:45:55fm: No moon observations expected. Waiting until 21:45:54 to continue schedule - aborting focused moon measurement
+co21:45:58fm: Lunar phase is less than a half 
+co21:45:58fm: No moon observations expected. Waiting until 21:56:58 to continue schedule
+co21:56:58fm: No moon observations expected. Waiting until 21:56:58 to continue schedule - aborting focused moon measurement
+co21:57:02fm: Lunar phase is less than a half 
+co21:57:02fm: No moon observations expected. Waiting until 22:08:01 to continue schedule
+co22:08:02fm: No moon observations expected. Waiting until 22:08:01 to continue schedule - aborting focused moon measurement
+co22:08:05fm: Lunar phase is less than a half 
+co22:08:05fm: No moon observations expected. Waiting until 22:19:05 to continue schedule
+co22:19:05fm: No moon observations expected. Waiting until 22:19:05 to continue schedule - aborting focused moon measurement
+co22:19:09td: Running td from gr1mk2 line  95
+co22:19:09td: Time correction  0 seconds
+co22:19:10fm: Lunar phase is less than a half 
+co22:19:10fm: No moon observations expected. Waiting until 22:30:09 to continue schedule
+co22:30:10fm: No moon observations expected. Waiting until 22:30:09 to continue schedule - aborting focused moon measurement
+co22:30:13fm: Lunar phase is less than a half 
+co22:30:13fm: No moon observations expected. Waiting until 22:41:13 to continue schedule
+co22:41:13fm: No moon observations expected. Waiting until 22:41:13 to continue schedule - aborting focused moon measurement
+co22:41:17fm: Lunar phase is less than a half 
+co22:41:17fm: No moon observations expected. Waiting until 22:52:16 to continue schedule
+co22:52:17fm: No moon observations expected. Waiting until 22:52:16 to continue schedule - aborting focused moon measurement
+co22:52:20fm: Lunar phase is less than a half 
+co22:52:20fm: No moon observations expected. Waiting until 23:03:20 to continue schedule
+co23:03:20fm: No moon observations expected. Waiting until 23:03:20 to continue schedule - aborting focused moon measurement
+co23:03:24fm: Lunar phase is less than a half 
+co23:03:24fm: No moon observations expected. Waiting until 23:14:23 to continue schedule
+co23:14:24fm: No moon observations expected. Waiting until 23:14:23 to continue schedule - aborting focused moon measurement
+co23:14:28k1: Running k1 from gr1mk2 line  95
+co23:14:28td: Running td from gr1mk2 line  95
+co23:14:29td: Time correction  0 seconds
+hk23:14:31 18 20 18-99-99-99-99
+co23:14:34hgfw2: HG FW#2 at step  0
+hk23:16:39 18 19 18-99-99-99-99
+hgscan 0wide 302warm= 223:16:39NOV 05/18 315 357 1768 4086 7029 7033 8906 10699 12592 13492 13669 13476 11851 10244 8626 6778 4751 2578 1487 1114 1091 1498 2722 5005 7302 9378 11284 13291 15613 16043 15652 15040 13161 11082 8903 6199 3843 1843 414 372
+hg23:18:01 .9984 294.358 294 29712 18-1
+co23:18:02b2: Running b2 from gr1mk2 line  95
+co23:18:03w1: Running w1 from gr1mk2 line  95
+hk23:23:16 18 19 18-99-99-99-99
+sla 0 1403.580620 125363 40 142431 158466 179704 178306 132432rat 949.3672 487.8711-44.88672-1304.516
+sla 0 1404.220620 125730 36 142154 158550 179775 178623 132602rat 965.5821 493.3047-38.85156-1306.649
+sla 0 1404.860620 125230 36 142195 158803 180196 178808 132723rat 968.8321 490.8555-44.55469-1307.184
+sla 0 1405.510620 125622 36 142180 158654 179843 178737 132837rat 967.5742 493.2305-37.72266-1301.719
+sla 0 1406.150620 125843 36 142219 158873 180321 178570 133233rat 962.293 483.1289-53.39063-1284.66
+sla 0 1406.790620 125660 38 142634 158552 179711 178967 132859rat 959.2969 501.6524-28.90235-1306.629
+sla 0 1407.440620 125674 37 142533 158700 180055 179104 133168rat 965.7227 500.9258-33.90625-1299.828
+summary23:25:30NOV 05/18 143.3 1.244 18sl 0 963 493-40-1302 5128 2726 142335.1 132836.3 7 7 8 8 26 15 193.5 287.6
+co23:27:47fm: Lunar phase is less than a half 
+co23:27:47fm: No moon observations expected. Waiting until 23:38:47 to continue schedule
+co23:38:47fm: No moon observations expected. Waiting until 23:38:47 to continue schedule - aborting focused moon measurement
+co23:38:51fm: Lunar phase is less than a half 
+co23:38:51fm: No moon observations expected. Waiting until 23:49:50 to continue schedule
+co23:49:51fm: No moon observations expected. Waiting until 23:49:50 to continue schedule - aborting focused moon measurement
+co23:49:54fm: Lunar phase is less than a half 
+co23:49:54fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:49:58fm: Lunar phase is less than a half 
+co23:49:58fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:01fm: Lunar phase is less than a half 
+co23:50:01fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:04td: Running td from gr1mk2 line  95
+co23:50:05td: Time correction  .2 seconds
+co23:50:06fm: Lunar phase is less than a half 
+co23:50:06fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:09fm: Lunar phase is less than a half 
+co23:50:09fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:13fm: Lunar phase is less than a half 
+co23:50:13fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:16fm: Lunar phase is less than a half 
+co23:50:16fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:19fm: Lunar phase is less than a half 
+co23:50:19fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:50:23k1: Running k1 from gr1mk2 line  95
+co23:50:23td: Running td from gr1mk2 line  95
+co23:50:24td: Time correction  0 seconds
+hk23:50:27 19 20 18-99-99-99-99
+co23:50:29hgfw2: HG FW#2 at step  0
+hk23:52:35 19 20 19-99-99-99-99
+hgscan 0wide 302warm= 2.00333323:52:35NOV 05/18 355 416 1436 3314 5272 7907 9994 12027 14444 15220 15682 15793 13888 11810 10099 8141 5776 3219 1771 1336 1316 1724 3289 6024 8616 10970 12996 15450 17705 17984 17577 16820 14494 12089 9547 6552 4034 1793 407 388
+hg23:53:56 .9992 296.0869 296 33666 19 1
+co23:53:58w1: Running w1 from gr1mk2 line  95
+co23:53:59fm: Lunar phase is less than a half 
+co23:53:59fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:02fm: Lunar phase is less than a half 
+co23:54:02fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:06fm: Lunar phase is less than a half 
+co23:54:06fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:09fm: Lunar phase is less than a half 
+co23:54:09fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:12fm: Lunar phase is less than a half 
+co23:54:12fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:16td: Running td from gr1mk2 line  95
+co23:54:17td: Time correction  .1 seconds
+co23:54:17fm: Lunar phase is less than a half 
+co23:54:17fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:20fm: Lunar phase is less than a half 
+co23:54:20fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:24fm: Lunar phase is less than a half 
+co23:54:24fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:27fm: Lunar phase is less than a half 
+co23:54:27fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:31fm: Lunar phase is less than a half 
+co23:54:31fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:54:34k1: Running k1 from gr1mk2 line  95
+co23:54:35td: Running td from gr1mk2 line  95
+co23:54:35td: Time correction  0 seconds
+hk23:54:38 19 20 18-99-99-99-99
+co23:54:41hgfw2: HG FW#2 at step  0
+hk23:56:46 19 20 18-99-99-99-99
+hgscan 0wide 302warm= 223:56:46NOV 05/18 379 462 2173 4741 7648 11173 14053 16827 19628 20832 21297 21077 18228 15646 13167 10464 7375 4072 2309 1696 1674 2339 4020 7422 10633 13731 16127 19023 21880 22406 21832 20908 18141 15059 12001 8133 5090 2364 447 396
+hg23:58:08 .9992 295.2926 295 43703 19 0
+co23:58:09b2: Running b2 from gr1mk2 line  95
+co00:00:01w1: Running w1 from gr1mk2 line  95
+hk00:05:14 19 20 18-99-99-99-99
+sla 0 5.540620 125513 36 142098 158350 179407 178220 132638rat 955.7422 487.4571-40.3711-1296.004
+sla 0 6.190620 125314 37 142354 158487 179610 178793 132480rat 961.9062 497.6992-31.30078-1315.215
+sla 0 6.830620 125524 27 142071 158493 180442 178658 132818rat 967.2305 494.2032-54.76563-1300.734
+sla 0 7.470620 125270 34 142278 158604 179562 178786 132707rat 964.0586 494.3047-30.29688-1307.57
+sla 0 8.110620 125357 43 142054 158936 180013 178715 132853rat 969.25 483.4766-42.98438-1301.109
+sla 0 8.760620 125679 45 142481 158781 179759 178972 132682rat 962.4453 494.0078-30.55469-1313.016
+sla 0 9.3999990620 125421 38 142326 158801 179970 178592 132703rat 957.8594 484.1563-44.95313-1302.984
+summary00:07:28NOV 06/18 145.445 1.212 19sl 0 963 491-39-1305 5139 2729 142237.4 132697.3 5 6 9 7 23 14 162.9 118.5
+co00:09:45fm: Lunar phase is less than a half 
+co00:09:45fm: No moon observations expected. Waiting until 00:20:44 to continue schedule
+co00:20:45fm: No moon observations expected. Waiting until 00:20:44 to continue schedule - aborting focused moon measurement
+co00:20:48fm: Lunar phase is less than a half 
+co00:20:48fm: No moon observations expected. Waiting until 00:31:48 to continue schedule
+co00:31:48fm: No moon observations expected. Waiting until 00:31:48 to continue schedule - aborting focused moon measurement
+co00:31:52fm: Lunar phase is less than a half 
+co00:31:52fm: No moon observations expected. Waiting until 00:42:51 to continue schedule
+co00:42:52fm: No moon observations expected. Waiting until 00:42:51 to continue schedule - aborting focused moon measurement
+co00:42:55fm: Lunar phase is less than a half 
+co00:42:55fm: No moon observations expected. Waiting until 00:53:55 to continue schedule
+co00:53:55fm: No moon observations expected. Waiting until 00:53:55 to continue schedule - aborting focused moon measurement
+co00:53:59fm: Lunar phase is less than a half 
+co00:53:59fm: No moon observations expected. Waiting until 01:04:58 to continue schedule
+co01:04:59fm: No moon observations expected. Waiting until 01:04:58 to continue schedule - aborting focused moon measurement
+co01:05:02td: Running td from gr1mk2 line  95
+co01:05:03td: Time correction  .2 seconds
+co01:05:03fm: Lunar phase is less than a half 
+co01:05:03fm: No moon observations expected. Waiting until 01:16:03 to continue schedule
+co01:16:03fm: No moon observations expected. Waiting until 01:16:03 to continue schedule - aborting focused moon measurement
+co01:16:07fm: Lunar phase is less than a half 
+co01:16:07fm: No moon observations expected. Waiting until 01:27:06 to continue schedule
+co01:27:07fm: No moon observations expected. Waiting until 01:27:06 to continue schedule - aborting focused moon measurement
+co01:27:10fm: Lunar phase is less than a half 
+co01:27:10fm: No moon observations expected. Waiting until 01:38:10 to continue schedule
+co01:38:10fm: No moon observations expected. Waiting until 01:38:10 to continue schedule - aborting focused moon measuremented
+co01:38:13o3: Running o3 from gr1mk2 line -200
+co01:38:16af: Running af from gr1mk2 line -200
+co01:38:16af: Auto FR/HP/HG is now OFF
+co01:38:16ozsum: Running ozsum from gr1mk2 line -200
+co01:38:17aodsum: Running aodsum from gr1mk2 line -200
+co01:38:19uvsum: Running uvsum from gr1mk2 line -200
+co01:38:21fmsum: Running fmsum from gr1mk2 line -200
+co01:38:23fzsum: Running fzsum from gr1mk2 line -200
+co01:38:25slsum: Running slsum from gr1mk2 line -200
+co01:38:25rtn_date: Running rtn_date from gr1mk2 line -200
+vers01:38:25ab_sk.rtn10000 REM ************ ab_sk.rtn 02/12/2010 09:50:00 ************
+vers01:38:25af.rtn10000 REM ************ af.rtn 02/12/2010 09:50:34 ************
+vers01:38:25an.rtn10000 REM ************ an.rtn 02/12/2010 09:50:34 ************
+vers01:38:25aodsum.rtn10000 REM ************ aodsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:25ap.rtn10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
+vers01:38:25apsum.rtn10000 REM ************ apsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:25ar.rtn10000 REM ************ ar.rtn 02/12/2010 09:50:00 ************
+vers01:38:25as.rtn10000 REM ************ as.rtn 02/12/2010 09:50:00 ************
+vers01:38:25au.rtn10000 REM ************ au.rtn 02/12/2010 09:50:00 ************
+vers01:38:25auto-off.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers01:38:25auto-on.rtn10000 REM ************ auto-on.rtn 05/03/2011 19:47:08 ************
+vers01:38:26az.rtn10000 REM ************ az.rtn 02/12/2010 09:50:00 ************
+vers01:38:26bp.rtn10000 REM ********************** bp routine 26/11/97 ********************
+vers01:38:26ca.rtn10000 REM ************ ca.rtn 09/04/2011 09:50:00 ************
+vers01:38:26cal.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26calds.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26calsc.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26caluv.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26cb.rtn10000 REM ************ cb.rtn 02/12/2010 09:50:00 ************
+vers01:38:26cc.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26cd.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26cf.rtn10000 REM ************ cf.rtn 02/12/2010 09:50:00 ************
+vers01:38:26checkaz.rtn10000 REM ************ checkaz.rtn 02/12/2010 09:50:00 ************
+vers01:38:26checkhg.rtn10000 REM ************ checkhg.rtn 02/12/2010 09:50:00 ************
+vers01:38:26chk_cfg.rtn10000 REM ************ chk_cfg.rtn 31/01/2013 21:00:00 ************
+vers01:38:26chk_cod.rtn10000 REM ************ chk_cod.rtn 08/11/2013 21:00:00 ************
+vers01:38:26ci.rtn10000 REM ************ ci.rtn 02/12/2010 09:50:00 ************
+vers01:38:26cj.rtn10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
+vers01:38:26ck.rtn10000 rem Call Eubrewnet.bat
+vers01:38:26cl.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26cm.rtn10000 REM ********************* ci routine 19/11/08 *******************
+vers01:38:26cn.rtn10000 REM ************ cn.rtn 02/12/2010 09:50:00 ************
+vers01:38:26copyof~1.rtn10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers01:38:26cr.rtn10000 REM ************ cr.rtn 02/12/2010 09:50:00 ************
+vers01:38:26crv.rtn10000 REM *************** cr routine 23/09/98 *****************
+vers01:38:26cs.rtn10000 REM ************ cs.rtn 02/12/2010 09:50:00 ************
+vers01:38:26cu.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26cx.rtn10000 REM ************ cx.rtn 02/12/2010 09:50:00 ************
+vers01:38:26cz.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers01:38:26cz_.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers01:38:26da_lo.rtn10000 REM ************ da_lo.rtn 28/03/2011 16:01:18 ************
+vers01:38:26db.rtn10000 REM ************ db.rtn 02/12/2010 09:50:00 ************
+vers01:38:26di.rtn10000 REM ************ di.rtn 02/12/2010 09:50:00 ************
+vers01:38:26dimds-on.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers01:38:26dimds-~1.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers01:38:26dk.rtn10000 REM ************ dk.rtn 05/02/2013 11:00:00 ************
+vers01:38:26dp.rtn10000 REM ************ dp.rtn 02/12/2010 09:50:00 ************
+vers01:38:26dq.rtn10000 REM ****************** dq routine 21/01/12 **********************
+vers01:38:26ds.rtn10000 REM ************ ds.rtn 06/07/2012 09:50:00 ************
+vers01:38:26dsp.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers01:38:26dsp1.rtn10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
+vers01:38:26dspn2.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers01:38:26dssum.rtn10000 REM ************ dssum.rtn 02/12/2010 09:50:00 ************
+vers01:38:26dt.rtn10000 REM ************ dt.rtn 20/06/2014 09:50:00 ************
+vers01:38:26dusum.rtn10000 REM ************ dusum.rtn 02/12/2010 09:50:00 ************
+vers01:38:26dz.rtn10000 REM ****************** dz routine 15/March/2011 **********************
+vers01:38:26ed.rtn10000 REM ************ ed.rtn 24/03/2011 19:47:10 ************
+vers01:38:26endday.rtn10000 REM ************ endday.rtn 02/12/2010 09:50:00 ************
+vers01:38:26end_day.rtn10000 REM ************ end_day.rtn 10/05/2011 14:00:00 ************
+vers01:38:26fc.rtn10000 REM ************ fc.rtn 05/04/2013 09:50:00 ************
+vers01:38:26fi.rtn10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fi-nor.rtn10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fi_spe~1.rtn10000 REM ************ fi.rtn 11/11/2011 For Andover Filters 1-4 testing line 11019 chg for 1-5 postion to 10 cycles *
+vers01:38:26fl.rtn10000 REM ************ fl.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fm.rtn10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
+vers01:38:26fmsum.rtn10000 REM ************ fmsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fr.rtn10000 REM ************ fr.rtn 09/04/2012 09:50:00 ************
+vers01:38:26fr--.rtn10000 REM ************ fr.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fv.rtn10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fv-.rtn10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fw.rtn10000 REM ************ fw.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fw3test.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers01:38:26fz.rtn10000 REM ************ fz.rtn 02/12/2010 09:50:00 ************
+vers01:38:26fzsum.rtn10000 REM ************ fzsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:26g1.rtn10000 REM ************ g1.rtn 02/12/2010 09:50:00 ************
+vers01:38:26g5.rtn10000 REM ************ g5.rtn 02/12/2010 09:50:00 ************
+vers01:38:26ga.rtn10000 REM ************ ga.rtn 02/12/2010 09:50:00 ************
+vers01:38:26gi.rtn10000 REM ************ gi.rtn 02/12/2010 09:50:00 ************
+vers01:38:26gs.rtn10000 REM ************ gs.rtn 02/12/2010 09:50:00 ************
+vers01:38:26hg.rtn10000 REM ************ hg.rtn 29/03/2011 10:05:48 ************
+vers01:38:27hgn.rtn10000 REM ************ hgn.rtn 02/12/2010 09:50:00 ************
+vers01:38:27hgsum.rtn10000 REM ************ hgsum.rtn 24/11/2013 09:50:00 ************
+vers01:38:27hl.rtn10000 REM ************ hl.rtn 24/06/2014 19:47:10 ************
+vers01:38:27hp.rtn10000 REM ************ hp.rtn 29/03/2011 09:33:00 ************
+vers01:38:27hs.rtn10000 REM ************ hs.rtn 26/09/2012 19:47:10 ************
+vers01:38:27hv.rtn10000 REM ************ hv.rtn 02/12/2010 09:50:00 ************
+vers01:38:27hvb.rtn10000 REM ************ hvb.rtn 19/07/2014 15:00:00 ************
+vers01:38:27hvset.rtn10000 REM ************ hvset.rtn 02/12/2010 09:50:00 ************
+vers01:38:27ic.rtn10000 REM ************ ic.rtn 02/12/2010 09:50:00 ************
+vers01:38:27init.rtn10000 REM ************ init.rtn 02/12/2010 09:50:00 ************
+vers01:38:27jd.rtn10000 REM ************ jd.rtn 02/12/2010 09:50:00 ************
+vers01:38:27k1.rtn10000 REM ******************** k1 routine 20/10/95 ********************
+vers01:38:27k2.rtn10000 REM ******************** k2 routine 20/10/95 ********************
+vers01:38:27ka.rtn10000 REM ********************* ka routine 12/13/06 *******************
+vers01:38:27kb.rtn10000 REM ********************* kb routine 12/13/06 *******************
+vers01:38:27kc.rtn10000 REM ********************* kc routine 12/13/06 *******************
+vers01:38:27kd.rtn10000 REM ********************* kd routine 12/13/06 *******************
+vers01:38:27ke.rtn10000 REM ********************* ke routine 12/13/06 *******************
+vers01:38:27kf.rtn10000 REM ********************* kf routine 12/13/06 *******************
+vers01:38:27kg.rtn10000 REM ********************* kg routine 12/13/06 *******************
+vers01:38:27kh.rtn10000 REM ********************* kh routine 12/13/06 *******************
+vers01:38:27l1.rtn10000 REM ******************** l1 routine 20/10/95 ********************
+vers01:38:27l2.rtn10000 REM ******************** l2 routine 20/10/95 ********************
+vers01:38:27lf.rtn10000 REM ************ lf.rtn 02/12/2010 09:50:00 ************
+vers01:38:27ll.rtn10000 REM ********************** ll routine 29/07/10 ********************
+vers01:38:27lz.rtn10000 REM ************ lz.rtn 02/12/2010 09:50:00 ************
+vers01:38:27m1.rtn10000 REM ******************** m1 routine 20/10/95 ********************
+vers01:38:27m2.rtn10000 REM ******************** m2 routine 20/10/95 ********************
+vers01:38:27mm.rtn10000 REM ********************* mm routine 03/09/10 *******************
+vers01:38:27n1.rtn10000 REM ******************** n1 routine 20/10/95 ********************
+vers01:38:27n2.rtn10000 REM ******************** n2 routine 20/10/95 ********************
+vers01:38:27nc.rtn10000 REM ************ nc.rtn 02/12/2010 09:50:00 ************
+vers01:38:27newinst.rtn10000 REM ************ newinst.rtn 02/12/2010 09:50:00 ************
+vers01:38:27ni.rtn10000 REM ************ ni.rtn 02/12/2010 09:50:00 ************
+vers01:38:27nosum.rtn10000 REM ************ nosum.rtn 02/12/2010 09:50:00 ************
+vers01:38:27ozsum.rtn10000 REM ************ ozsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:27pb.rtn10000 REM ************ pb.rtn 02/12/2010 09:50:00 ************
+vers01:38:27pc.rtn10000 REM ************ pc.rtn 02/12/2010 09:50:00 ************
+vers01:38:27po.rtn10000 REM ************ po.rtn 24/06/2014 09:50:00 ************
+vers01:38:27ql.rtn10000 REM ************ ql.rtn 07/04/2011 14:00:00 ************
+vers01:38:27re.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers01:38:27re-mb.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers01:38:27re-mb_.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers01:38:27re-sb.rtn10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
+vers01:38:27rep.rtn10000 REM ************ rep.rtn 02/12/2010 09:50:00 ************
+vers01:38:27re_mb_~1.rtn10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers01:38:27rl.rtn10000 REM ************ rl.rtn 21/04/2012 11:00:00 ************
+vers01:38:27rs.rtn10000 REM ************ rs.rtn 02/12/2010 09:50:00 ************
+vers01:38:27sa.rtn10000 REM ************ sa.rtn 02/12/2010 09:50:00 ************
+vers01:38:27saveall.rtn10000 REM ************ saveall.rtn 02/12/2010 09:50:00 ************
+vers01:38:27savedh.rtn10000 REM ************ savedh.rtn 02/12/2010 09:50:00 ************
+vers01:38:27sc.rtn10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers01:38:27sc-full.rtn10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers01:38:27sd.rtn10000 REM ************ sd.rtn 02/12/2010 09:50:00 ************
+vers01:38:27se.rtn10000 REM ************ se.rtn 02/12/2010 09:50:00 ************
+vers01:38:27sh.rtn10000 REM ************ sh.rtn 02/12/2010 09:50:00 ************
+vers01:38:27si.rtn10000 REM ************ si.rtn 24/06/2014 19:47:08 ************
+vers01:38:27sim.rtn10000 REM ************ sim.rtn 16/01/2014 09:50:00 ************
+vers01:38:28si_new.rtn10000 REM ************ si.rtn 16/12/2010 19:47:08 ************
+vers01:38:28sk.rtn10000 REM ************ sk.rtn 02/12/2010 09:50:00 ************
+vers01:38:28skc.rtn10000 REM ************ skc.rtn 10/04/2012 19:47:08 ************
+vers01:38:28skc-nor.rtn10000 REM ************ skc.rtn 05/03/2011 19:47:08 ************
+vers01:38:28skc_noaz.rtn10000 REM ******************* skc routine 23/07/98 ********************
+vers01:38:28sl.rtn10000 REM ************ sl.rtn 24/06/2014 09:50:00 ************
+vers01:38:28slsum.rtn10000 REM ************ slsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:28sq.rtn10000 REM ****************** sq routine 21/01/12 **********************
+vers01:38:28sr.rtn10000 REM ************ sr.rtn 01/04/2011 12:00:00 ************
+vers01:38:28st.rtn10000 REM ************ st.rtn 02/12/2010 09:50:00 ************
+vers01:38:28sum.rtn10000 REM ************ sum.rtn 02/12/2010 09:50:00 ************
+vers01:38:28sw.rtn10000 REM ************ sw.rtn 13/12/2010 09:50:00 ************
+vers01:38:28tcsum.rtn10000 REM ************ tcsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:28td.rtn10000 REM ************ td.rtn 10/03/2014 09:40:00 ************
+vers01:38:28testfw2.rtn10000 REM ************ testfw2.rtn 02/12/2010 09:50:00 ************
+vers01:38:28tf.rtn10000 REM ************ testfw2.rtn 06/12/2012 09:50:00 ************
+vers01:38:28tt.rtn10000 REM ************ tt.rtn 02/12/2010 09:50:00 ************
+vers01:38:28tu.rtn10000 REM ************ tu.rtn 02/12/2010 09:50:00 ************
+vers01:38:28u5.rtn10000 REM ************ u5.rtn 02/12/2010 09:50:00 ************
+vers01:38:28ub.rtn10000 REM ************ ub.rtn 02/12/2010 09:50:00 ************
+vers01:38:28ul.rtn10000 REM ************ ul.rtn 02/12/2010 09:50:00 ************
+vers01:38:28um.rtn10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers01:38:28um-.rtn10000 REM ********************* um routine 19/10/98 *******************
+vers01:38:28um-nor.rtn10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers01:38:28um_017.rtn10000 REM ********************* um routine 10/09/03 for #017 *******************
+vers01:38:28um_orig.rtn10000 REM ********************* um routine 10/09/03 for #017 *******************
+vers01:38:28uq.rtn10000 REM ************ uq.rtn 02/12/2010 09:50:00 ************
+vers01:38:28uv.rtn10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers01:38:28uv-.rtn10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
+vers01:38:28uv-spain.rtn10000 REM ******************* uv routine 12/09/05 ********************
+vers01:38:28uvsum.rtn10000 REM ************ uvsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:28uv_nor.rtn10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
+vers01:38:28ve.rtn10000 REM ************ ve.rtn 23/04/2014 11:10:00 ************
+vers01:38:28w0.rtn10000 REM ************ w0.rtn 02/12/2010 09:50:00 ************
+vers01:38:28w1.rtn10000 REM ************ w1.rtn 02/12/2010 09:50:00 ************
+vers01:38:28w2.rtn10000 REM ************ w2.rtn 02/12/2010 09:50:00 ************
+vers01:38:28w3.rtn10000 REM ************ w3.rtn 02/12/2010 09:50:00 ************
+vers01:38:28w4.rtn10000 REM ************ w4.rtn 02/12/2010 09:50:00 ************
+vers01:38:28xl.rtn10000 REM ************ xl.rtn 02/12/2010 09:50:00 ************
+vers01:38:28zb.rtn10000 REM ************ zb.rtn 02/12/2010 09:50:00 ************
+vers01:38:28zc.rtn10000 REM ************ zc.rtn 02/12/2010 09:50:00 ************
+vers01:38:28ze.rtn10000 REM ************ ze.rtn 02/12/2010 09:50:00 ************
+vers01:38:28zf.rtn10000 REM ************ zf.rtn 01/04/2011 12:00:00 ************
+vers01:38:28zl.rtn10000 REM ************ zl.rtn 02/12/2010 09:50:00 ************
+vers01:38:28zlsum.rtn10000 REM ************ zlsum.rtn 02/12/2010 09:50:00 ************
+vers01:38:28zp.rtn10000 REM ************ zp.rtn 02/12/2010 09:50:00 ************
+vers01:38:28zs.rtn10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
+vers01:38:28zssum.rtn10000 REM ************ zssum.rtn 10/05/2011 09:50:00 ************
+vers01:38:28zwsum.rtn10000 REM ************ zwsum.rtn 10/05/2011 09:50:00 ************
+co01:38:28hgsum: Running hgsum from gr1mk2 line -200

@@ -1,0 +1,832 @@
+version=2dh040219ENA-ARM-GRW 39.092  28.026  2.8pr1017.49
+co02:08:01dh: day header
+co02:08:01main: version 4.1024/06/2014 01:00:00
+co02:08:01skc: gr1mk2
+co02:08:01autohg:  1 
+co02:08:01hifw2:  0 
+co02:08:01attn:  25000  80000 
+co02:08:01lowds:  1 cubdsp:  0 
+inst0-.21-1.1-1.7-2.10.34512.351.1539474075.00000003029576179305000100001500020000250002816mkii10000000238000000000003469750.4025600362112Sep 8 2007EXTRAS1002500080000110004-26-2018@
+disp2793.60.0735629-5.47212e-072834.170.0727555-5.50061e-072871.540.0719768-5.52591e-072907.470.0711941-5.54931e-072942.510.0703956-5.57118e-072760.260.0741995-5.44796e-074190.40.110344-8.20818e-074251.250.109133-8.25091e-074307.310.107965-8.28887e-074361.20.106791-8.32397e-074413.770.105593-8.35678e-074140.390.111299-8.17194e-07SunSep 09/0734692951793@
+zeni-0.006400-0.0196800.0165400.1707700.280530-0.061260-0.4913600.456260-0.045060Dec. 6  1996@
+op_st102d:\bdata\icf15517zsfvaldcf25207uvr15517040219ENA-ARM-GRW39.09228.0261017.492.89657514673111110111010100skco3gr1mk2@
+uvr2865  2579.6842870  2647.2302875  2714.2882880  2780.7632885  2846.5472890  2911.5232895  2975.5642900  3038.5382905  3100.3092910  3160.7382915  3219.6882920  3277.0222925  3332.6082930  3386.3202935  3438.0382940  3487.6532945  3535.0662950  3580.1862955  3622.9382960  3663.2562965  3701.0872970  3736.3912975  3769.1402980  3799.3152985  3826.9082990  3851.9202995  3874.3603000  3894.2413005  3911.5833010  3926.4053015  3938.7303020  3948.5773025  3955.9633030  3960.9003035  3963.3933040  3963.4373045  3961.0193050  3956.1143055  3948.6833060  3938.6753065  3926.0253070  3910.6523075  3892.4633080  3871.3503085  3847.1903090  3819.8523095  3789.1933100  3755.0623105  3717.3053110  3675.7653115  3630.2883120  3580.7283125  3526.9483130  3468.8293135  3406.2753140  3339.2163145  3267.6183150  3191.4843155  3110.8613160  3025.8463165  2936.5903170  2843.3003175  2746.2403180  2645.7343185  2542.1653190  2435.9693195  2327.6373200  2217.7043205  2106.7423210  1995.3533215  1884.1583220  1773.7853225  1664.8583230  1557.9833235  1453.7393240  1352.6663245  1255.2543250  1161.936@
+schedule-180pdpotdk1-96l1-86m1-74n173m185l195k1180gr1mk2@
+co02:08:01checkaz: Running checkaz from gr1mk2 line -200
+co02:08:02po: Running po from gr1mk2 line -200
+co02:08:03af: Running af from gr1mk2 line -200
+co02:08:03af: Auto FR/HP/HG is now OFF
+co02:08:03re: Running re from gr1mk2 line -200
+co02:12:02re: Brewer failed to respond 5 times
+co02:12:06start:  PROGRAM start :  FEB 04/19 at 02:12:04
+co02:12:06re: Running re from main.asc
+co02:16:05re: Brewer failed to respond 5 times
+co13:02:53start:  PROGRAM start :  FEB 04/19 at 13:02:51
+co13:02:53re: Running re from main.asc
+co13:06:52re: Brewer failed to respond 5 times
+co13:22:20start:  PROGRAM start :  FEB 04/19 at 13:22:18
+co13:22:20re: Running re from main.asc
+co13:23:36re: Zenith discrepancy = -3
+co13:25:03re: Azimuth discrepancy = -11222
+co13:26:04ab_sk: Running ab_sk from main.asc
+hk13:26:23 18 19 17-99-99-99-99
+co13:26:28hgfw2: HG FW#2 at step  0
+hk13:28:31 18 19 17-99-99-99-99
+hgscan 0wide 302warm= 213:28:31FEB 04/19 312 325 1174 2834 4409 6612 8900 10705 12434 13214 13596 13611 12133 10259 8609 6803 4810 2870 1527 1187 1173 1563 2960 5136 7320 9293 11423 13702 15404 15695 15529 14839 12890 10849 8012 10292 6790 1502 1115 353
+hg13:29:52 .9965 294.8671 295 29291 18 0
+co13:29:55n1: Running n1 from gr1mk2 line -74
+co13:29:55td: Running td from gr1mk2 line -74
+co13:29:56td: Time correction  .2 seconds
+hk13:29:59 18 19 17-99-99-99-99
+co13:30:01hgfw2: HG FW#2 at step  0
+hk13:32:06 18 19 17-99-99-99-99
+hgscan 0wide 302warm= 213:32:06FEB 04/19 372 414 2147 5747 9914 10114 13617 16482 18978 20124 20628 20462 18267 15510 12762 10071 7215 4272 2329 1768 1765 2345 4323 7291 10195 12898 15611 18541 20953 21003 20582 19490 16914 14261 10494 7185 8733 4258 1339 616
+hg13:33:28 .9987 295.2196 295 41631 18 0
+co13:33:29b2: Running b2 from gr1mk2 line -74
+hk13:33:48 18 19 17-99-99-99-99
+co13:33:58ds: DS intensity too low ( 166/cy), skipping.
+hk13:34:22 18 19 17-99-99-99-99
+zsa0 814.680620 8338 42 19563 41616 103614 149449 131881rat 8822.906 5540.985 1585.727-552.4805
+zsa0 815.340620 8383 27 19789 42087 104872 151287 133541rat 8823.328 5544.196 1586.266-551.1993
+zsa0 815.990620 8118 28 19250 40495 101211 146140 128604rat 8792.746 5561.086 1590.121-564.4649
+zsa0 816.650620 7728 32 18130 38354 95863 137744 121107rat 8796.449 5539.754 1568.641-568.2735
+zsa0 817.30620 8854 30 20784 44159 110325 159296 140509rat 8835.418 5560.317 1590.477-554.4688
+zsa0 817.960620 8215 31 19339 40966 102278 147571 130237rat 8815.75 5553.5 1586.965-551.9688
+zsa0 818.610620 7710 27 18276 38895 97493 141536 125107rat 8878.91 5596.817 1613.539-545.043
+summary13:36:38FEB 04/19 55.702 1.762 18zs 0 8824 5557 1589-555 10601 5706 3.8 313.1 29 20 13 8 14 16 .9 2.8
+hk13:39:22 18 19 17-99-99-99-99
+sla 0 819.680620 127450 34 143953 159414 180098 179248 134019rat 925.9805 484.8282-31.45703-1275.527
+sla 0 820.320620 127657 36 143406 159464 179610 179063 134110rat 938.0859 478.9688-24.10938-1268.086
+sla 0 820.970620 127553 31 143856 159774 180384 178992 134087rat 922.668 468.75-44.60547-1267.07
+sla 0 821.610620 127869 35 143870 159745 180537 178927 134086rat 920.6758 467.961-49.90625-1265.535
+sla 0 822.250620 127538 31 144233 159926 180337 179139 134200rat 914.8359 468.1797-39.88672-1266.981
+sla 0 822.90620 127491 34 144029 159680 180381 179355 134220rat 926.2774 480.1641-35.69922-1271.606
+sla 0 823.540620 127453 30 143770 159314 179805 178906 134557rat 923.1641 479.2188-32.67969-1249.703
+summary13:41:36FEB 04/19 58.435 1.894 18sl 0 925 475-37-1266 4977 2647 143873.9 134182.7 7 7 9 8 28 15 252.9 181
+hk13:43:56 18 19 17-99-99-99-99
+co13:44:33uv: UV standard  scan started
+co13:50:32uv: UV standard  scan finished, incident DUV =  36.6705 mW/m^2
+hk13:50:51 18 19 18-99-99-99-99
+co13:51:02ds: DS intensity too low ( 115/cy), skipping.
+hk13:51:08 18 19 17-99-99-99-99
+co13:51:19ds: DS intensity too low ( 123/cy), skipping.
+hk13:51:23 18 19 18-99-99-99-99
+co13:51:51uv: UV standard  scan started
+co13:57:50uv: UV standard  scan finished, incident DUV =  32.06241 mW/m^2
+hk13:58:09 18 19 17-99-99-99-99
+co13:58:20ds: DS intensity too low ( 362/cy), skipping.
+hk13:58:43 18 19 17-99-99-99-99
+zsa0 839.040620 5213 35 12514 27448 69820 102017 90777rat 9103.039 5687.352 1640.492-515.6407
+zsa0 839.690620 8327 31 20445 44322 112538 164906 146537rat 9058.16 5695.352 1654.945-522.3008
+zsa0 840.350620 7395 39 17737 38501 96594 140180 123883rat 8969.778 5600.117 1612.082-545.9649
+zsa0 8410620 6516 30 15811 34429 86880 126741 112296rat 9028.844 5646.399 1634.191-534.5156
+zsa0 841.660620 5735 40 14017 30651 77435 113520 100996rat 9075.789 5673.043 1655.383-516.5
+zsa0 842.310620 5615 39 13555 29793 75570 110923 97859rat 9120.699 5695.664 1660.672-553.1016
+zsa0 842.970620 5522 37 13423 29411 74946 109750 97640rat 9116.453 5705.293 1650.414-516.5313
+summary14:01:00FEB 04/19 55.285 1.744 18zs 0 9068 5672 1644-529 10761 5750 4.2 323.3 54 37 17 16 60 29 1 4.9
+hk14:03:21 19 19 18-99-99-99-99
+co14:03:45uv: UV standard  scan started
+co14:09:45uv: UV standard  scan finished, incident DUV =  32.43437 mW/m^2
+hk14:10:04 18 19 17-99-99-99-99
+co14:10:15ds: DS intensity too low ( 138/cy), skipping.
+hk14:10:21 18 19 18-99-99-99-99
+co14:10:32ds: DS intensity too low ( 134/cy), skipping.
+hk14:10:35 18 19 17-99-99-99-99
+co14:11:03uv: UV standard  scan started
+co14:17:02uv: UV standard  scan finished, incident DUV =  30.84719 mW/m^2
+co14:17:02n1: Running n1 from gr1mk2 line -74
+co14:17:03td: Running td from gr1mk2 line -74
+co14:17:03td: Time correction  0 seconds
+hk14:17:06 18 19 17-99-99-99-99
+co14:17:29hgfw2: HG FW#2 at step  0
+hk14:19:14 18 19 17-99-99-99-99
+hgscan 0wide 302warm= 214:19:14FEB 04/19 312 339 1247 3032 4832 6997 9648 11684 13510 14323 14830 14848 13120 11134 9230 7297 5378 3224 1682 1279 1291 1719 3324 5626 7900 10196 12391 14766 16839 17030 16684 16018 14033 11764 8706 5983 3830 1606 350 358
+hg14:20:36 .9992 295.9112 296 31860 18 1
+hk14:20:55 18 19 17-99-99-99-99
+co14:21:06ds: DS intensity too low ( 93/cy), skipping.
+hk14:21:29 18 19 17-99-99-99-99
+zsa0 861.810620 4870 30 12339 27608 70704 104587 93027rat 9271.215 5769.856 1694.004-517.3633
+zsa0 862.470620 4416 36 10909 24685 62853 93120 82482rat 9304.016 5751.735 1700.629-535.4649
+zsa0 863.120620 4390 33 11018 24961 63797 94149 83304rat 9307.496 5750.821 1683.535-540.125
+zsa0 863.780620 4756 28 11858 27208 69569 102926 91537rat 9373.996 5763.387 1694.664-517.9297
+zsa0 864.430620 4696 35 11726 26813 68689 102218 90569rat 9394.977 5797.778 1720.152-534.1993
+zsa0 865.090620 4655 35 11824 26963 69396 103233 91557rat 9401.75 5816.539 1718.617-529.9805
+zsa0 865.740620 4992 35 12670 29063 74691 111467 99038rat 9435.004 5824.496 1732.844-522.2344
+summary14:23:46FEB 04/19 55.423 1.75 18zs 0 9355 5782 1706-528 11046 5827 4.6 335.6 61 31 18 9 65 24 1 3.9
+hk14:26:08 18 19 18-99-99-99-99
+co14:26:32uv: UV standard  scan started
+co14:32:31uv: UV standard  scan finished, incident DUV =  38.91177 mW/m^2
+hk14:32:50 18 19 18-99-99-99-99
+co14:33:01ds: DS intensity too low ( 150/cy), skipping.
+hk14:33:07 19 19 18-99-99-99-99
+co14:33:18ds: DS intensity too low ( 152/cy), skipping.
+hk14:33:21 18 19 18-99-99-99-99
+co14:33:50uv: UV standard  scan started
+co14:39:49uv: UV standard  scan finished, incident DUV =  35.58387 mW/m^2
+hk14:40:08 18 19 18-99-99-99-99
+co14:40:19ds: DS intensity too low ( 148/cy), skipping.
+hk14:40:42 18 19 17-99-99-99-99
+zsa0 881.020620 4431 34 11608 27394 71197 107224 95608rat 9646.996 5912.66 1772.309-506.6641
+zsa0 881.680620 4189 28 10882 25964 68042 102208 90953rat 9717.566 5936.5 1760.777-515.3164
+zsa0 882.330620 3580 41 9420 22573 59166 89221 79638rat 9759.59 5955.446 1777.586-501.9922
+zsa0 882.990620 4050 41 10792 25991 68128 102780 91957rat 9782.742 5957.91 1779.863-491.875
+zsa0 883.640620 4684 45 12413 29607 78107 118360 105780rat 9788.875 6006.36 1799.797-496.8438
+zsa0 884.30620 5367 28 14208 33731 88767 134338 120133rat 9747.414 5989.055 1794.348-494.2969
+zsa0 884.950620 3950 35 10467 25269 66397 100738 90131rat 9826.434 5992.344 1804.348-491.7813
+summary14:42:59FEB 04/19 55.935 1.772 18zs 0 9753 5964 1784-500 11352 5922 3.8 348 58 34 16 9 43 21 1.1 3.3
+hk14:45:20 18 19 17-99-99-99-99
+co14:45:44uv: UV standard  scan started
+co14:51:44uv: UV standard  scan finished, incident DUV =  34.03658 mW/m^2
+hk14:52:03 18 19 17-99-99-99-99
+co14:52:14ds: DS intensity too low ( 173/cy), skipping.
+hk14:52:20 18 19 17-99-99-99-99
+co14:52:31ds: DS intensity too low ( 166/cy), skipping.
+hk14:52:34 18 19 17-99-99-99-99
+co14:53:02uv: UV standard  scan started
+co14:59:01uv: UV standard  scan finished, incident DUV =  34.93135 mW/m^2
+co14:59:01n1: Running n1 from gr1mk2 line -74
+co14:59:02td: Running td from gr1mk2 line -74
+co14:59:02td: Time correction  .1 seconds
+hk14:59:05 18 19 17-99-99-99-99
+co14:59:28hgfw2: HG FW#2 at step  0
+hk15:01:13 18 19 18-99-99-99-99
+hgscan 0wide 302warm= 215:01:13FEB 04/19 297 339 1344 2986 4584 6751 8997 10765 12533 13326 13709 13383 11954 10059 8483 6708 4765 2679 1508 1123 1120 1505 2814 5042 7281 9258 11244 13485 15516 15817 15643 15049 13236 11166 8698 5888 3796 1738 1250 364
+hg15:02:35 .9993 294.9393 295 29526 18 0
+hk15:02:54 18 19 17-99-99-99-99
+co15:03:05ds: DS intensity too low ( 220/cy), skipping.
+hk15:03:28 18 19 17-99-99-99-99
+zsa0 903.80620 4335 32 11849 29407 78475 120622 108438rat 10069.84 6116.918 1861.586-471.1719
+zsa0 904.450620 3607 29 9986 24585 65641 100272 89539rat 10008.94 6090.77 1833.863-500.2461
+zsa0 905.110620 3667 31 10045 24894 65747 100728 89785rat 10003.82 6056.453 1846.645-508.0782
+zsa0 905.770620 3768 30 10478 26042 68959 106140 94941rat 10047.53 6088.137 1866.984-492.8828
+zsa0 906.420620 4063 37 11166 28108 75264 116142 104585rat 10165.31 6149.149 1878.641-463.8672
+zsa0 907.080620 4229 32 11519 28963 77639 119625 107454rat 10156.71 6146.946 1872.047-474.7188
+zsa0 907.730620 3759 31 10362 25812 68729 105976 94537rat 10089.68 6120.125 1874.816-504.7149
+summary15:05:45FEB 04/19 56.995 1.822 18zs 0 10077 6110 1862-488 11639 6008 2.8 354.3 65 34 16 18 42 20 1 2.9
+hk15:08:07 18 19 17-99-99-99-99
+co15:08:31uv: UV standard  scan started
+co15:14:30uv: UV standard  scan finished, incident DUV =  23.7659 mW/m^2
+hk15:14:49 18 19 17-99-99-99-99
+co15:15:01ds: DS intensity too low ( 112/cy), skipping.
+hk15:15:07 18 19 17-99-99-99-99
+co15:15:18ds: DS intensity too low ( 106/cy), skipping.
+hk15:15:21 18 19 17-99-99-99-99
+co15:15:49uv: UV standard  scan started
+co15:21:49uv: UV standard  scan finished, incident DUV =  24.06408 mW/m^2
+hk15:22:08 18 19 17-99-99-99-99
+co15:22:19ds: DS intensity too low ( 134/cy), skipping.
+hk15:22:42 18 19 17-99-99-99-99
+zsa0 923.020620 2837 39 8266 21848 59740 93975 85389rat 10555.07 6323.36 1961.609-424.461
+zsa0 923.680620 2809 39 8262 21747 59709 93966 84793rat 10556.76 6343.117 1963.453-454.5469
+zsa0 924.330620 2569 30 7441 19921 54634 86380 78219rat 10642.24 6356.805 1983.199-439.293
+zsa0 924.990620 2475 34 7381 19589 53639 85316 76925rat 10625.75 6376.664 2009.336-457.9805
+zsa0 925.640620 2733 32 8024 21430 59152 93404 84512rat 10654.73 6379.813 1977.926-442.8321
+zsa0 926.30620 2730 35 8131 21658 59318 94040 85207rat 10627.99 6363.782 1995.367-436.7539
+zsa0 926.960620 2656 29 7790 20734 56289 88906 80224rat 10567.35 6308.086 1978.813-454.6094
+summary15:24:59FEB 04/19 58.253 1.884 18zs 0 10604 6350 1981-444 12026 6115 2.2 361.6 43 27 17 12 58 31 1.2 4.8
+hk15:27:21 18 19 17-99-99-99-99
+co15:27:45uv: UV standard  scan started
+co15:33:44uv: UV standard  scan finished, incident DUV =  24.82338 mW/m^2
+hk15:34:03 18 19 17-99-99-99-99
+co15:34:14ds: DS intensity too low ( 71/cy), skipping.
+hk15:34:20 18 19 17-99-99-99-99
+co15:34:31ds: DS intensity too low ( 68/cy), skipping.
+hk15:34:34 18 19 17-99-99-99-99
+co15:35:03uv: UV standard  scan started
+co15:41:02uv: UV standard  scan finished, incident DUV =  15.74481 mW/m^2
+co15:41:02n1: Running n1 from gr1mk2 line -74
+co15:41:02td: Running td from gr1mk2 line -74
+co15:41:03td: Time correction  0 seconds
+hk15:41:06 18 19 17-99-99-99-99
+co15:41:29hgfw2: HG FW#2 at step  0
+hk15:43:14 18 19 17-99-99-99-99
+hgscan 0wide 302warm= 2.00333315:43:14FEB 04/19 290 365 1285 2801 6487 6583 8553 10261 11879 12620 12912 12790 11343 9628 8055 6402 4537 2492 1393 1086 1076 1439 2668 4792 6928 8840 10816 12852 14686 15194 14942 14349 12542 10668 8287 10462 6974 1691 1299 584
+hg15:44:35 .9919 293.6366 294 28106 18-1
+hk15:44:54 18 19 17-99-99-99-99
+co15:45:05ds: DS intensity too low ( 56/cy), skipping.
+hk15:45:29 18 19 17-99-99-99-99
+zsa0 945.80620 1359 37 4273 12388 35930 59415 55017rat 11442.37 6797.77 2178.035-341.9141
+zsa0 946.450620 1135 36 3594 10447 30115 49586 45696rat 11413.01 6753.153 2159.227-362.7188
+zsa0 947.110620 1186 36 3807 11276 32369 53698 49230rat 11507.18 6767.016 2191.84-385.2578
+zsa0 947.760620 1324 28 3989 11677 33751 56352 51818rat 11504.25 6822.317 2219.449-372.1953
+zsa0 948.420620 1338 35 4356 13022 38242 64106 59241rat 11686.97 6910.52 2237.328-350.711
+zsa0 949.080620 1778 29 5722 17520 51583 86646 80346rat 11801.24 6928.942 2246.606-335.8789
+zsa0 949.730620 1471 31 4788 14445 42181 71049 65423rat 11717.29 6905.461 2258.195-366.2735
+summary15:47:45FEB 04/19 60.143 1.989 18zs 0 11582 6841 2213-359 12731 6345-1.1 381 151 73 37 17 139 45 1 5.6
+hk15:50:07 18 19 17-99-99-99-99
+co15:50:31uv: UV standard  scan started
+co15:56:31uv: UV standard  scan finished, incident DUV =  15.9172 mW/m^2
+hk15:56:50 18 19 17-99-99-99-99
+co15:57:01ds: DS intensity too low ( 67/cy), skipping.
+hk15:57:07 18 19 17-99-99-99-99
+co15:57:18ds: DS intensity too low ( 65/cy), skipping.
+hk15:57:21 18 19 17-99-99-99-99
+co15:57:50uv: UV standard  scan started
+co16:03:48uv: UV standard  scan finished, incident DUV =  11.78254 mW/m^2
+hk16:04:07 18 19 17-99-99-99-99
+co16:04:18ds: DS intensity too low ( 83/cy), skipping.
+hk16:04:34 18 19 17-99-99-99-99
+zsa0 964.90620 1105 34 3934 13249 40310 70578 66024rat 12550.93 7253.637 2426.781-297.5391
+zsa0 965.560620 1125 34 3736 12402 37690 65544 61065rat 12455.14 7219.305 2397.102-315.2774
+zsa0 966.210620 912 29 3336 11153 33851 58731 54709rat 12467.9 7202.516 2386.57-315.9063
+zsa0 966.870620 711 28 2584 8681 26052 45387 42151rat 12465.29 7172.321 2404.293-329.0078
+zsa0 967.520620 796 31 2736 9203 27675 48193 44907rat 12479.94 7180.016 2402.567-314.4766
+zsa0 968.180620 673 36 2160 7139 22102 38645 36172rat 12568.89 7329.235 2420.731-294.9649
+zsa0 968.830620 831 26 2765 9468 28905 50736 47607rat 12649.87 7278.168 2436.797-284.1563
+summary16:06:51FEB 04/19 62.034 2.108 18zs 0 12520 7234 2411-307 13503 6551-2 393.6 73 57 18 16 32 34 2.1 4.7
+hk16:09:13 18 19 17-99-99-99-99
+co16:09:37uv: UV standard  scan started
+co16:15:37uv: UV standard  scan finished, incident DUV =  9.665564 mW/m^2
+hk16:15:56 18 19 17-99-99-99-99
+co16:16:07ds: DS intensity too low ( 60/cy), skipping.
+hk16:16:13 18 19 17-99-99-99-99
+co16:16:24ds: DS intensity too low ( 59/cy), skipping.
+hk16:16:27 18 19 17-99-99-99-99
+co16:16:56uv: UV standard  scan started
+co16:22:56uv: UV standard  scan finished, incident DUV =  7.818848 mW/m^2
+co16:22:56n1: Running n1 from gr1mk2 line -74
+co16:22:56td: Running td from gr1mk2 line -74
+co16:22:57td: Time correction  0 seconds
+hk16:23:00 18 19 16-99-99-99-99
+co16:23:23hgfw2: HG FW#2 at step  0
+hk16:25:08 17 18 16-99-99-99-99
+hgscan 0wide 302warm= 216:25:08FEB 04/19 319 323 1357 2571 4059 5951 7887 9556 11077 11837 12170 12269 10801 9184 7726 6139 4413 2596 1360 1017 1056 1362 2688 4732 6704 8481 10293 12200 14022 14329 14044 13564 11739 9886 7576 5179 3353 3219 369 341
+hg16:26:30 .9992 295.4386 295 26499 17 0
+hk16:26:49 17 19 16-99-99-99-99
+co16:27:00ds: DS intensity too low ( 19/cy), skipping.
+hk16:27:16 18 19 16-99-99-99-99
+zsa0 987.590620 198 26 649 2485 8187 15475 14929rat 13915.21 7956.078 2761.602-163.5313
+zsa0 988.250620 232 39 849 3335 11008 20755 20029rat 14049.86 7958.34 2751.695-162.207
+zsa0 988.90620 172 31 640 2358 7700 14672 14189rat 13780.53 7962.321 2798.309-152.9375
+zsa0 989.560620 207 35 711 2877 9513 18240 17465rat 14273.83 8040.586 2824.926-196.2149
+zsa0 990.220620 217 33 773 3019 10110 19566 18913rat 14186.91 8131.852 2864.652-154.9414
+zsa0 990.870620 188 24 731 2630 9061 17635 16933rat 13934.97 8272.985 2887.777-183.9453
+zsa0 991.530620 236 30 861 3601 12034 23315 22597rat 14446.7 8118.282 2867.988-143.3008
+summary16:29:33FEB 04/19 64.606 2.299 18zs 0 14084 8063 2822-165 14613 6933-9 419.6 232 119 54 19 235 108 6.1 12.9
+hk16:31:55 18 18 16-99-99-99-99
+co16:32:19uv: UV standard  scan started
+co16:38:18uv: UV standard  scan finished, incident DUV =  7.2986 mW/m^2
+hk16:38:37 17 18 16-99-99-99-99
+co16:38:48ds: DS intensity too low ( 29/cy), skipping.
+hk16:38:55 17 18 16-99-99-99-99
+co16:39:06ds: DS intensity too low ( 23/cy), skipping.
+hk16:39:09 17 18 16-99-99-99-99
+co16:39:38uv: UV standard  scan started
+co16:45:37uv: UV standard  scan finished, incident DUV =  5.202591 mW/m^2
+hk16:45:56 17 18 16-99-99-99-99
+co16:46:08ds: DS intensity too low ( 46/cy), skipping.
+hk16:46:24 17 18 16-99-99-99-99
+zsa0 1006.730620 254 32 857 3664 13397 27473 27057rat 15193.59 8759.918 3115.711-73.19141
+zsa0 1007.380620 241 35 868 3867 13627 28004 27455rat 15234.5 8609.926 3125.375-92.95703
+zsa0 1008.040620 251 35 889 3869 13999 28557 27875rat 15211.47 8692.758 3093.156-111.9844
+zsa0 1008.690620 225 35 836 3658 13140 27475 26680rat 15321.65 8770.539 3200.902-134.5742
+zsa0 1009.350620 228 31 808 3621 13106 27244 26791rat 15417.66 8774.176 3174.75-79.75
+zsa0 1010.010620 193 28 703 3142 11275 23812 23579rat 15443.54 8806.68 3243.707-49.57813
+zsa0 1010.660620 223 29 775 3598 12716 26752 26577rat 15515.52 8720.696 3226.664-35.35938
+summary16:48:41FEB 04/19 67.018 2.517 17zs 0 15334 8734 3169-82 15598 7289-17 438 127 66 58 34 104 81 3.9 10.8
+hk16:51:03 17 18 16-99-99-99-99
+co16:51:27uv: UV standard  scan started
+co16:57:26uv: UV standard  scan finished, incident DUV =  3.725565 mW/m^2
+hk16:57:46 17 18 16-99-99-99-99
+co16:57:56ds: DS intensity too low ( 19/cy), skipping.
+hk16:58:03 17 18 16-99-99-99-99
+co16:58:14ds: DS intensity too low ( 13/cy), skipping.
+hk16:58:17 17 18 16-99-99-99-99
+co16:58:46uv: UV standard  scan started
+co17:04:45uv: UV standard  scan finished, incident DUV =  2.775977 mW/m^2
+co17:04:45n1: Running n1 from gr1mk2 line -74
+co17:04:46td: Running td from gr1mk2 line -74
+co17:04:47td: Time correction  0 seconds
+hk17:04:49 17 18 16-99-99-99-99
+co17:05:13hgfw2: HG FW#2 at step  0
+hk17:06:57 17 17 16-99-99-99-99
+hgscan 0wide 302warm= 217:06:57FEB 04/19 287 320 1349 2394 3773 5573 7350 8844 10517 11168 11425 11469 10115 8633 7236 5725 4128 2353 1272 991 966 1310 2488 4403 6246 7971 9688 11565 13295 13547 13306 12758 11005 9288 7191 9182 5902 1426 1088 330
+hg17:08:19 .996 294.6299 295 24972 17 0
+hk17:08:37 17 18 16-99-99-99-99
+co17:08:48ds: DS intensity too low ( 45/cy), skipping.
+hk17:09:05 17 18 16-99-99-99-99
+zsa0 1029.40620 146 31 422 1992 7936 19022 19467rat 16836.92 9837.302 3797.512 93.84766
+zsa0 1030.060620 134 39 402 1897 7653 18397 18817rat 17012.33 9924.344 3813.145 91.48828
+zsa0 1030.710620 145 31 406 1971 7619 18363 18854rat 16864.93 9730.615 3821.848 108.043
+zsa0 1031.370620 134 22 366 1790 7136 17339 17772rat 16992.18 9886.346 3854.551 100.5
+zsa0 1032.020620 136 24 388 1802 7252 17780 18295rat 16855.51 9970.615 3894.266 117.4414
+zsa0 1032.680620 122 29 343 1606 6654 16144 16884rat 17075.9 10070.31 3851.324 188.2617
+zsa0 1033.330620 114 28 300 1396 5335 13328 13790rat 16865.41 9853.682 3980.731 141.5508
+summary17:11:21FEB 04/19 70.13 2.873 17zs 0 16929 9896 3859 120 16545 7762-33.5 456 95 108 63 35 111 95 4 11.8
+hk17:13:43 17 18 16-99-99-99-99
+co17:14:07uv: UV standard  scan started
+co17:20:06uv: UV standard  scan finished, incident DUV =  2.706208 mW/m^2
+hk17:20:26 17 18 16-99-99-99-99
+co17:20:37ds: DS intensity too low ( 12/cy), skipping.
+hk17:20:43 17 18 16-99-99-99-99
+co17:20:54ds: DS intensity too low ( 14/cy), skipping.
+hk17:20:58 17 18 16-99-99-99-99
+co17:21:27uv: UV standard  scan started
+co17:27:26uv: UV standard  scan finished, incident DUV =  2.51281 mW/m^2
+hk17:27:46 17 18 16-99-99-99-99
+co17:27:57ds: DS intensity too low ( 10/cy), skipping.
+co17:28:12zs: ZS intensity too low ( 393/cy), skipping.
+hk17:28:15 17 18 16-99-99-99-99
+co17:28:39uv: UV standard  scan started
+co17:34:39uv: UV standard  scan finished, incident DUV =  1.957141 mW/m^2
+co17:34:39m1: Running m1 from gr1mk2 line  73
+co17:34:40td: Running td from gr1mk2 line  73
+co17:34:41td: Time correction  .1 seconds
+hk17:34:43 17 18 16-99-99-99-99
+co17:35:07hgfw2: HG FW#2 at step  0
+hk17:36:51 17 18 16-99-99-99-99
+hgscan 0wide 302warm= 217:36:51FEB 04/19 271 303 1343 2361 5414 5518 7341 8789 10180 10823 11225 11138 9997 8408 7145 5622 4084 2315 1233 956 967 1288 2448 4271 6136 7892 9470 11247 12965 13174 13039 12339 10816 9058 7087 8926 5848 3081 1040 554
+hg17:38:12 .9926 294.096 294 24399 17-1
+hk17:38:30 16 18 16-99-99-99-99
+co17:38:41ds: DS intensity too low ( 6/cy), skipping.
+co17:38:56zs: ZS intensity too low ( 304/cy), skipping.
+hk17:38:59 17 18 16-99-99-99-99
+co17:39:24uv: UV standard  scan started
+co17:45:22uv: UV standard  scan finished, incident DUV =  .9043286 mW/m^2
+hk17:45:43 17 18 16-99-99-99-99
+co17:45:54ds: DS intensity too low ( 4/cy), skipping.
+co17:46:09zs: ZS intensity too low ( 179/cy), skipping.
+hk17:46:22 17 18 16-99-99-99-99
+co17:46:33ds: DS intensity too low ( 6/cy), skipping.
+hk17:46:36 17 18 16-99-99-99-99
+co17:47:06uv: UV standard  scan started
+co17:53:05uv: UV standard  scan finished, incident DUV =  .7387644 mW/m^2
+hk17:53:25 16 18 16-99-99-99-99
+co17:53:36ds: DS intensity too low ( 3/cy), skipping.
+co17:53:51zs: ZS intensity too low ( 104/cy), skipping.
+hk17:54:05 16 18 16-99-99-99-99
+co17:54:16ds: DS intensity too low ( 4/cy), skipping.
+hk17:54:19 17 18 16-99-99-99-99
+co17:54:48uv: UV standard  scan started
+co18:00:48uv: UV standard  scan finished, incident DUV =  .4970097 mW/m^2
+hk18:01:08 17 18 16-99-99-99-99
+co18:01:19ds: DS intensity too low ( 3/cy), skipping.
+co18:01:34zs: ZS intensity too low ( 79/cy), skipping.
+hk18:01:37 16 17 16-99-99-99-99
+co18:02:02uv: UV standard  scan started
+co18:08:00uv: UV standard  scan finished, incident DUV =  .355057 mW/m^2
+hk18:08:21 16 18 16-99-99-99-99
+co18:08:32ds: DS intensity too low ( 2/cy), skipping.
+co18:08:47zs: ZS intensity too low ( 40/cy), skipping.
+hk18:09:01 17 17 16-99-99-99-99
+co18:09:12ds: DS intensity too low ( 3/cy), skipping.
+hk18:09:15 16 18 16-99-99-99-99
+co18:09:45uv: UV standard  scan started
+co18:15:43uv: UV standard  scan finished, incident DUV =  .1647196 mW/m^2
+hk18:16:04 16 17 16-99-99-99-99
+co18:16:15ds: DS intensity too low ( 4/cy), skipping.
+co18:16:30zs: ZS intensity too low ( 16/cy), skipping.
+hk18:16:44 16 18 16-99-99-99-99
+co18:16:55ds: DS intensity too low ( 3/cy), skipping.
+hk18:16:58 16 18 16-99-99-99-99
+co18:17:28uv: UV standard  scan started
+co18:23:27uv: UV standard  scan finished, incident DUV =  7.268131E-02 mW/m^2
+hk18:23:48 16 17 16-99-99-99-99
+co18:23:59ds: DS intensity too low ( 2/cy), skipping.
+co18:24:14zs: ZS intensity too low ( 6/cy), skipping.
+hk18:24:18 16 17 16-99-99-99-99
+co18:24:42uv: UV standard  scan started
+co18:30:41uv: UV standard  scan finished, incident DUV =  1.670608E-02 mW/m^2
+co18:30:41m1: Running m1 from gr1mk2 line  73
+co18:30:41td: Running td from gr1mk2 line  73
+co18:30:42td: Time correction  0 seconds
+hk18:30:45 16 18 16-99-99-99-99
+co18:31:08hgfw2: HG FW#2 at step  0
+hk18:32:52 16 18 16-99-99-99-99
+hgscan 0wide 302warm= 218:32:52FEB 04/19 272 295 1151 2953 5189 5239 6951 8361 9846 10597 10903 11027 9848 8394 7072 5712 4100 2324 1219 966 969 1270 2457 4317 6155 7689 9332 11084 12629 12743 12586 11857 10297 8721 6712 8528 5452 2663 945 519
+hg18:34:14 .9925 295.0347 295 23646 16 0
+hk18:34:31 17 18 16-99-99-99-99
+co18:34:42ds: DS intensity too low ( 2/cy), skipping.
+co18:34:57zs: ZS intensity too low ( 3/cy), skipping.
+hk18:35:00 16 17 16-99-99-99-99
+co18:35:24uv: UV standard  scan started
+co18:41:24uv: UV standard  scan finished, incident DUV =  8.675692E-03 mW/m^2
+hk18:41:45 16 18 16-99-99-99-99
+co18:41:56ds: DS intensity too low ( 2/cy), skipping.
+co18:42:11zs: ZS intensity too low ( 2/cy), skipping.
+hk18:42:25 17 18 16-99-99-99-99
+co18:42:36ds: DS intensity too low ( 24/cy), skipping.
+hk18:42:40 17 17 16-99-99-99-99
+co18:43:10uv: UV standard  scan started
+co18:49:09uv: UV standard  scan finished, incident DUV =  1.618797E-03 mW/m^2
+co18:49:09l1: Running l1 from gr1mk2 line  85
+co18:49:10td: Running td from gr1mk2 line  85
+co18:49:10td: Time correction  0 seconds
+hk18:49:13 16 18 16-99-99-99-99
+co18:49:36hgfw2: HG FW#2 at step  0
+hk18:51:21 16 18 16-99-99-99-99
+hgscan 0wide 302warm= 218:51:21FEB 04/19 277 298 1189 3010 3552 5416 7056 8459 10091 10801 11101 11108 9940 8438 7233 5778 4132 2410 1258 952 966 2276 2553 4443 6266 7945 9386 11375 12954 13025 12747 12123 10500 8865 6894 8565 5563 1157 902 351
+hg18:52:43 .9961 295.3813 295 24126 16 0
+co18:52:44b2: Running b2 from gr1mk2 line  85
+hk18:52:48 16 17 16-99-99-99-99
+co18:53:25uv: UV standard  scan started
+co18:59:24uv: UV standard  scan finished, incident DUV =  3.234428E-03 mW/m^2
+hk18:59:56 16 18 16-99-99-99-99
+sla 0 1140.250620 127549 31 143884 159725 180748 179274 134498rat 932.0859 479.9375-45.33203-1259.797
+sla 0 1140.890620 127956 31 143879 160212 180863 179523 134868rat 938.293 472.7071-42.0586-1253.875
+sla 0 1141.530620 127785 35 144075 159794 180576 179558 134345rat 933.2305 484.9727-34.27344-1271.695
+sla 0 1142.180620 127737 30 144053 159814 181049 179257 134560rat 926.5469 477.0821-53.01172-1257.363
+sla 0 1142.820620 127916 35 143946 160392 180705 179538 134266rat 936.6562 468.1914-37.87891-1273.774
+sla 0 1143.460620 128075 31 144403 160216 180696 179618 134218rat 924.7578 474.918-35.71485-1277.246
+sla 0 1144.110620 127781 39 144121 159829 180677 179504 134425rat 930.5547 482.7227-38.02735-1267.828
+summary19:02:10FEB 04/19 90.683 11.902 16sl 0 932 477-41-1266 4983 2650 144051.6 134454.3 5 6 7 9 28 14 181 219.9
+hk19:04:30 16 18 16-99-99-99-99
+co19:05:08uv: UV standard  scan started
+co19:11:07uv: UV standard  scan finished, incident DUV = -1.218128E-02 mW/m^2
+co19:11:07w1: Running w1 from gr1mk2 line  85
+hk19:16:11 16 18 16-99-99-99-99
+co19:16:28uv: UV standard  scan started
+co19:22:27uv: UV standard  scan finished, incident DUV = -4.038174E-03 mW/m^2
+co19:22:27w1: Running w1 from gr1mk2 line  85
+hk19:27:31 16 18 16-99-99-99-99
+co19:27:48uv: UV standard  scan started
+co19:33:48uv: UV standard  scan finished, incident DUV =  6.545335E-04 mW/m^2
+co19:33:48w1: Running w1 from gr1mk2 line  85
+co19:38:48td: Running td from gr1mk2 line  85
+co19:38:49td: Time correction  0 seconds
+hk19:38:52 17 18 16-99-99-99-99
+co19:39:09uv: UV standard  scan started
+co19:45:08uv: UV standard  scan finished, incident DUV =  1.565059E-02 mW/m^2
+co19:45:09k1: Running k1 from gr1mk2 line  95
+co19:45:09td: Running td from gr1mk2 line  95
+co19:45:10td: Time correction  .1 seconds
+hk19:45:13 16 18 16-99-99-99-99
+co19:45:36hgfw2: HG FW#2 at step  0
+hk19:47:21 16 18 16-99-99-99-99
+hgscan 0wide 302warm= 219:47:21FEB 04/19 310 316 1304 2523 4160 6218 8216 9845 11700 12649 13025 13399 11763 10086 8584 6968 4922 2970 1493 1172 1194 1547 3186 5312 7432 9400 11161 13388 15219 15256 15034 14132 12119 10269 7880 5268 3253 1310 361 337
+hg19:48:42 .999 297.043 297 28281 16 2
+hgscan 0wide 302warm= 219:48:42FEB 04/19 351 384 2214 5192 8805 9087 11482 13914 16012 16896 17411 17043 14972 12760 10753 8526 5932 3394 1862 1355 1399 1895 3356 6121 8665 11138 13317 15802 18144 18555 18073 17325 14898 12637 9998 12511 8124 4286 423 620
+hg19:50:03 .9921 293.5113 294 35966 16-1
+co19:50:05w1: Running w1 from gr1mk2 line  95
+co19:55:07fm: Lunar phase is less than a half 
+co19:55:07fm: No moon observations expected. Waiting until 20:06:07 to continue schedule
+co20:06:07fm: No moon observations expected. Waiting until 20:06:07 to continue schedule - aborting focused moon measurement
+co20:06:11fm: Lunar phase is less than a half 
+co20:06:11fm: No moon observations expected. Waiting until 20:17:10 to continue schedule
+co20:17:11fm: No moon observations expected. Waiting until 20:17:10 to continue schedule - aborting focused moon measurement
+co20:17:14fm: Lunar phase is less than a half 
+co20:17:14fm: No moon observations expected. Waiting until 20:28:13 to continue schedule
+co20:28:14fm: No moon observations expected. Waiting until 20:28:13 to continue schedule - aborting focused moon measurement
+co20:28:17fm: Lunar phase is less than a half 
+co20:28:17fm: No moon observations expected. Waiting until 20:39:17 to continue schedule
+co20:39:17fm: No moon observations expected. Waiting until 20:39:17 to continue schedule - aborting focused moon measurement
+co20:39:21fm: Lunar phase is less than a half 
+co20:39:21fm: No moon observations expected. Waiting until 20:50:20 to continue schedule
+co20:50:21fm: No moon observations expected. Waiting until 20:50:20 to continue schedule - aborting focused moon measurement
+co20:50:24td: Running td from gr1mk2 line  95
+co20:50:25td: Time correction  0 seconds
+co20:50:25fm: Lunar phase is less than a half 
+co20:50:25fm: No moon observations expected. Waiting until 21:01:25 to continue schedule
+co21:01:25fm: No moon observations expected. Waiting until 21:01:25 to continue schedule - aborting focused moon measurement
+co21:01:29fm: Lunar phase is less than a half 
+co21:01:29fm: No moon observations expected. Waiting until 21:12:28 to continue schedule
+co21:12:29fm: No moon observations expected. Waiting until 21:12:28 to continue schedule - aborting focused moon measurement
+co21:12:32fm: Lunar phase is less than a half 
+co21:12:32fm: No moon observations expected. Waiting until 21:23:32 to continue schedule
+co21:23:33fm: No moon observations expected. Waiting until 21:23:32 to continue schedule - aborting focused moon measurement
+co21:23:36fm: Lunar phase is less than a half 
+co21:23:36fm: No moon observations expected. Waiting until 21:34:35 to continue schedule
+co21:34:36fm: No moon observations expected. Waiting until 21:34:35 to continue schedule - aborting focused moon measurement
+co21:34:39fm: Lunar phase is less than a half 
+co21:34:39fm: No moon observations expected. Waiting until 21:45:39 to continue schedule
+co21:45:39fm: No moon observations expected. Waiting until 21:45:39 to continue schedule - aborting focused moon measurement
+co21:45:43k1: Running k1 from gr1mk2 line  95
+co21:45:43td: Running td from gr1mk2 line  95
+co21:45:44td: Time correction  .1 seconds
+hk21:45:47 15 16 15-99-99-99-99
+co21:45:49hgfw2: HG FW#2 at step  0
+hk21:47:55 15 16 15-99-99-99-99
+hgscan 0wide 302warm= 221:47:55FEB 04/19 274 295 1063 2321 3767 5448 7142 8597 10153 10698 11056 11018 9744 8304 7039 5630 4005 2312 1177 938 944 1274 2400 4317 6118 7782 9388 11100 12995 13266 12968 12398 10735 9058 7146 4864 3077 1376 338 362
+hg21:49:16 .9994 295.5542 296 24322 15 1
+co21:49:17b2: Running b2 from gr1mk2 line  95
+co21:49:18w1: Running w1 from gr1mk2 line  95
+hk21:54:31 15 16 15-99-99-99-99
+sla 0 1314.830620 127669 22 143990 159302 180391 178676 133966rat 915.9414 478.3867-50.69141-1262.016
+sla 0 1315.480620 127283 23 143987 159417 180375 179154 133911rat 927.6992 486.8985-38.64453-1275.469
+sla 0 1316.120620 127588 20 143968 159864 180627 178866 134571rat 921.2305 467.6602-51.75782-1246.992
+sla 0 1316.760620 127588 24 144170 159325 180201 179280 133985rat 925.2383 492.5-31.35938-1276.141
+sla 0 1317.40620 127910 33 144339 160027 180688 179083 133805rat 915.3828 468.5469-47.9375-1277.277
+sla 0 1318.050620 128014 26 144194 159517 180576 179065 133969rat 919.2852 482.0078-45.67188-1271.438
+sla 0 1318.690620 127829 20 144022 159880 180765 179616 134068rat 937.8633 485.4805-36.82813-1281.582
+summary21:56:45FEB 04/19 122.427 1.849 15sl 0 923 480-43-1270 4988 2661 144095.7 134039.3 8 9 8 12 42 24 136.8 246.7
+co21:59:02fm: Lunar phase is less than a half 
+co21:59:02fm: No moon observations expected. Waiting until 22:10:02 to continue schedule
+co22:10:02fm: No moon observations expected. Waiting until 22:10:02 to continue schedule - aborting focused moon measurement
+co22:10:06fm: Lunar phase is less than a half 
+co22:10:06fm: No moon observations expected. Waiting until 22:21:05 to continue schedule
+co22:21:06fm: No moon observations expected. Waiting until 22:21:05 to continue schedule - aborting focused moon measurement
+co22:21:09fm: Lunar phase is less than a half 
+co22:21:09fm: No moon observations expected. Waiting until 22:32:09 to continue schedule
+co22:32:09fm: No moon observations expected. Waiting until 22:32:09 to continue schedule - aborting focused moon measurement
+co22:32:13fm: Lunar phase is less than a half 
+co22:32:13fm: No moon observations expected. Waiting until 22:43:12 to continue schedule
+co22:43:13fm: No moon observations expected. Waiting until 22:43:12 to continue schedule - aborting focused moon measurement
+co22:43:16fm: Lunar phase is less than a half 
+co22:43:16fm: No moon observations expected. Waiting until 22:54:16 to continue schedule
+co22:54:16fm: No moon observations expected. Waiting until 22:54:16 to continue schedule - aborting focused moon measurement
+co22:54:19td: Running td from gr1mk2 line  95
+co22:54:20td: Time correction  .1 seconds
+co22:54:21fm: Lunar phase is less than a half 
+co22:54:21fm: No moon observations expected. Waiting until 23:05:20 to continue schedule
+co23:05:21fm: No moon observations expected. Waiting until 23:05:20 to continue schedule - aborting focused moon measurement
+co23:05:24fm: Lunar phase is less than a half 
+co23:05:24fm: No moon observations expected. Waiting until 23:16:24 to continue schedule
+co23:16:24fm: No moon observations expected. Waiting until 23:16:24 to continue schedule - aborting focused moon measurement
+co23:16:28fm: Lunar phase is less than a half 
+co23:16:28fm: No moon observations expected. Waiting until 23:27:27 to continue schedule
+co23:27:28fm: No moon observations expected. Waiting until 23:27:27 to continue schedule - aborting focused moon measurement
+co23:27:31fm: Lunar phase is less than a half 
+co23:27:31fm: No moon observations expected. Waiting until 23:38:31 to continue schedule
+co23:38:31fm: No moon observations expected. Waiting until 23:38:31 to continue schedule - aborting focused moon measurement
+co23:38:35fm: Lunar phase is less than a half 
+co23:38:35fm: No moon observations expected. Waiting until 23:49:34 to continue schedule
+co23:49:35fm: No moon observations expected. Waiting until 23:49:34 to continue schedule - aborting focused moon measurement
+co23:49:38k1: Running k1 from gr1mk2 line  95
+co23:49:39td: Running td from gr1mk2 line  95
+co23:49:39td: Time correction  0 seconds
+hk23:49:42 14 16 15-99-99-99-99
+co23:49:45hgfw2: HG FW#2 at step  0
+hk23:51:50 14 16 14-99-99-99-99
+hgscan 0wide 302warm= 223:51:50FEB 04/19 295 317 1203 2547 4043 5865 7577 9086 10513 11069 11362 11271 9889 8467 7180 5662 3931 2138 1234 919 945 1254 2274 4160 6081 7912 9474 11303 13158 13563 13277 12811 11212 9524 7539 5217 6321 3363 379 568
+hg23:53:12 .9995 293.8616 294 24925 14-1
+co23:53:14w1: Running w1 from gr1mk2 line  95
+co23:53:15fm: Lunar phase is less than a half 
+co23:53:15fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:18fm: Lunar phase is less than a half 
+co23:53:18fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:21fm: Lunar phase is less than a half 
+co23:53:21fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:25fm: Lunar phase is less than a half 
+co23:53:25fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:28fm: Lunar phase is less than a half 
+co23:53:28fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:32td: Running td from gr1mk2 line  95
+co23:53:32td: Time correction  0 seconds
+co23:53:33fm: Lunar phase is less than a half 
+co23:53:33fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:36fm: Lunar phase is less than a half 
+co23:53:36fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:40fm: Lunar phase is less than a half 
+co23:53:40fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:43fm: Lunar phase is less than a half 
+co23:53:43fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:46fm: Lunar phase is less than a half 
+co23:53:46fm: Lunar phase is less than a half  - aborting focused moon measurement
+co23:53:50k1: Running k1 from gr1mk2 line  95
+co23:53:50td: Running td from gr1mk2 line  95
+co23:53:51td: Time correction  .1 seconds
+hk23:53:54 15 16 15-99-99-99-99
+co23:53:57hgfw2: HG FW#2 at step  0
+hk23:56:02 14 16 15-99-99-99-99
+hgscan 0wide 302warm= 223:56:02FEB 04/19 356 391 1595 4908 5682 8490 11204 13309 15446 16539 16785 16717 14685 12363 10423 8304 5962 3377 1827 1392 1366 1855 3424 6085 8535 10798 12899 15408 17577 17701 17311 16506 14370 11959 9133 6330 3938 1721 406 618
+hg23:57:23 .9992 295.6261 296 34486 14 1
+co23:57:25b2: Running b2 from gr1mk2 line  95
+co00:00:01w1: Running w1 from gr1mk2 line  95
+hk00:05:14 14 16 15-99-99-99-99
+sla 0 5.550620 127766 28 144146 159585 180667 179666 134371rat 937.0664 496.2657-32.64844-1272.617
+sla 0 6.190620 127896 23 143923 160009 180831 179447 134112rat 938.4688 479.3516-41.92969-1275.664
+sla 0 6.830620 128003 22 144430 159829 180407 179074 134240rat 914.0469 475.1797-40.76172-1262.418
+sla 0 7.470620 128160 17 144494 160226 181008 179325 134294rat 918.1953 470.4571-49.16407-1266.734
+sla 0 8.120620 128411 25 144452 160407 181133 179168 134435rat 915.6875 461.7266-56.01172-1258.395
+sla 0 8.760620 128178 22 144173 159994 180940 179403 134070rat 929.8242 478.6914-45.63672-1275.949
+sla 0 9.3999990620 128154 18 144217 159795 180888 179532 134614rat 931.6094 487.2383-41.24219-1261.399
+summary00:07:28FEB 05/19 145.61 1.209 14sl 0 926 478-44-1268 4983 2655 144262.1 134305.1 10 11 7 7 31 17 209 185.3
+co00:09:45fm: Lunar phase is less than a half 
+co00:09:45fm: No moon observations expected. Waiting until 00:20:45 to continue schedule
+co00:20:45fm: No moon observations expected. Waiting until 00:20:45 to continue schedule - aborting focused moon measurement
+co00:20:49fm: Lunar phase is less than a half 
+co00:20:49fm: No moon observations expected. Waiting until 00:31:48 to continue schedule
+co00:31:49fm: No moon observations expected. Waiting until 00:31:48 to continue schedule - aborting focused moon measurement
+co00:31:52fm: Lunar phase is less than a half 
+co00:31:52fm: No moon observations expected. Waiting until 00:42:52 to continue schedule
+co00:42:52fm: No moon observations expected. Waiting until 00:42:52 to continue schedule - aborting focused moon measurement
+co00:42:56fm: Lunar phase is less than a half 
+co00:42:56fm: No moon observations expected. Waiting until 00:53:55 to continue schedule
+co00:53:56fm: No moon observations expected. Waiting until 00:53:55 to continue schedule - aborting focused moon measurement
+co00:53:59fm: Lunar phase is less than a half 
+co00:53:59fm: No moon observations expected. Waiting until 01:04:59 to continue schedule
+co01:04:59fm: No moon observations expected. Waiting until 01:04:59 to continue schedule - aborting focused moon measurement
+co01:05:03td: Running td from gr1mk2 line  95
+co01:05:03td: Time correction  0 seconds
+co01:05:04fm: Lunar phase is less than a half 
+co01:05:04fm: No moon observations expected. Waiting until 01:16:04 to continue schedule
+co01:16:04fm: No moon observations expected. Waiting until 01:16:04 to continue schedule - aborting focused moon measurement
+co01:16:07fm: Lunar phase is less than a half 
+co01:16:08fm: No moon observations expected. Waiting until 01:27:07 to continue schedule
+co01:27:08fm: No moon observations expected. Waiting until 01:27:07 to continue schedule - aborting focused moon measurement
+co01:27:11fm: Lunar phase is less than a half 
+co01:27:11fm: No moon observations expected. Waiting until 01:38:10 to continue schedule
+co01:38:11fm: No moon observations expected. Waiting until 01:38:10 to continue schedule - aborting focused moon measurement
+co01:38:14fm: Lunar phase is less than a half 
+co01:38:14fm: No moon observations expected. Waiting until 01:49:14 to continue schedule
+co01:49:15fm: No moon observations expected. Waiting until 01:49:14 to continue schedule - aborting focused moon measurement
+co01:49:18fm: Lunar phase is less than a half 
+co01:49:18fm: No moon observations expected. Waiting until 02:00:17 to continue schedule
+co02:00:18fm: No moon observations expected. Waiting until 02:00:17 to continue schedule - aborting focused moon measurement
+co02:00:21k1: Running k1 from gr1mk2 line  95
+co02:00:22td: Running td from gr1mk2 line  95
+co02:00:23td: Time correction  0 seconds
+hk02:00:25 14 15 14-99-99-99-99
+co02:00:28hgfw2: HG FW#2 at step  0
+hk02:02:33 14 16 14-99-99-99-99
+hgscan 0wide 302warm= 202:02:33FEB 05/19 295 324 1524 3470 5797 5831 7592 9062 10495 11065 11511 11367 9899 8416 7067 5631 3944 2200 1231 931 942 1266 2336 4180 6137 7881 9513 11275 13190 13515 13339 12944 11203 9473 7539 5205 6287 1616 367 573
+hg02:03:54 .9989 293.6924 294 25026 14-1
+co02:03:56w1: Running w1 from gr1mk2 line  95ed
+co02:08:56o3: Running o3 from gr1mk2 line -200
+co02:08:59af: Running af from gr1mk2 line -200
+co02:08:59af: Auto FR/HP/HG is now OFF
+co02:08:59ozsum: Running ozsum from gr1mk2 line -200
+co02:09:00aodsum: Running aodsum from gr1mk2 line -200
+co02:09:02uvsum: Running uvsum from gr1mk2 line -200
+co02:09:03fmsum: Running fmsum from gr1mk2 line -200
+co02:09:05fzsum: Running fzsum from gr1mk2 line -200
+co02:09:06slsum: Running slsum from gr1mk2 line -200
+co02:09:09rtn_date: Running rtn_date from gr1mk2 line -200
+vers02:09:09ab_sk.rtn10000 REM ************ ab_sk.rtn 02/12/2010 09:50:00 ************
+vers02:09:09af.rtn10000 REM ************ af.rtn 02/12/2010 09:50:34 ************
+vers02:09:09an.rtn10000 REM ************ an.rtn 02/12/2010 09:50:34 ************
+vers02:09:09aodsum.rtn10000 REM ************ aodsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:09ap.rtn10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
+vers02:09:09apsum.rtn10000 REM ************ apsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:09ar.rtn10000 REM ************ ar.rtn 02/12/2010 09:50:00 ************
+vers02:09:09as.rtn10000 REM ************ as.rtn 02/12/2010 09:50:00 ************
+vers02:09:09au.rtn10000 REM ************ au.rtn 02/12/2010 09:50:00 ************
+vers02:09:09auto-off.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers02:09:09auto-on.rtn10000 REM ************ auto-on.rtn 05/03/2011 19:47:08 ************
+vers02:09:09az.rtn10000 REM ************ az.rtn 02/12/2010 09:50:00 ************
+vers02:09:09bp.rtn10000 REM ********************** bp routine 26/11/97 ********************
+vers02:09:09ca.rtn10000 REM ************ ca.rtn 09/04/2011 09:50:00 ************
+vers02:09:09cal.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09calds.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09calsc.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09caluv.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09cb.rtn10000 REM ************ cb.rtn 02/12/2010 09:50:00 ************
+vers02:09:09cc.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09cd.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09cf.rtn10000 REM ************ cf.rtn 02/12/2010 09:50:00 ************
+vers02:09:09checkaz.rtn10000 REM ************ checkaz.rtn 02/12/2010 09:50:00 ************
+vers02:09:09checkhg.rtn10000 REM ************ checkhg.rtn 02/12/2010 09:50:00 ************
+vers02:09:09chk_cfg.rtn10000 REM ************ chk_cfg.rtn 31/01/2013 21:00:00 ************
+vers02:09:09chk_cod.rtn10000 REM ************ chk_cod.rtn 08/11/2013 21:00:00 ************
+vers02:09:09ci.rtn10000 REM ************ ci.rtn 02/12/2010 09:50:00 ************
+vers02:09:09cj.rtn10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
+vers02:09:09ck.rtn10000 rem Call Eubrewnet.bat
+vers02:09:09cl.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09cm.rtn10000 REM ********************* ci routine 19/11/08 *******************
+vers02:09:09cn.rtn10000 REM ************ cn.rtn 02/12/2010 09:50:00 ************
+vers02:09:09copyof~1.rtn10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers02:09:09cr.rtn10000 REM ************ cr.rtn 02/12/2010 09:50:00 ************
+vers02:09:09crv.rtn10000 REM *************** cr routine 23/09/98 *****************
+vers02:09:09cs.rtn10000 REM ************ cs.rtn 02/12/2010 09:50:00 ************
+vers02:09:09cu.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:09cx.rtn10000 REM ************ cx.rtn 02/12/2010 09:50:00 ************
+vers02:09:09cz.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers02:09:09cz_.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers02:09:09da_lo.rtn10000 REM ************ da_lo.rtn 28/03/2011 16:01:18 ************
+vers02:09:09db.rtn10000 REM ************ db.rtn 02/12/2010 09:50:00 ************
+vers02:09:09di.rtn10000 REM ************ di.rtn 02/12/2010 09:50:00 ************
+vers02:09:09dimds-on.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers02:09:09dimds-~1.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers02:09:09dk.rtn10000 REM ************ dk.rtn 05/02/2013 11:00:00 ************
+vers02:09:09dp.rtn10000 REM ************ dp.rtn 02/12/2010 09:50:00 ************
+vers02:09:09dq.rtn10000 REM ****************** dq routine 21/01/12 **********************
+vers02:09:09ds.rtn10000 REM ************ ds.rtn 06/07/2012 09:50:00 ************
+vers02:09:09dsp.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers02:09:09dsp1.rtn10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
+vers02:09:09dspn2.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers02:09:09dssum.rtn10000 REM ************ dssum.rtn 02/12/2010 09:50:00 ************
+vers02:09:09dt.rtn10000 REM ************ dt.rtn 20/06/2014 09:50:00 ************
+vers02:09:09dusum.rtn10000 REM ************ dusum.rtn 02/12/2010 09:50:00 ************
+vers02:09:09dz.rtn10000 REM ****************** dz routine 15/March/2011 **********************
+vers02:09:09ed.rtn10000 REM ************ ed.rtn 24/03/2011 19:47:10 ************
+vers02:09:10endday.rtn10000 REM ************ endday.rtn 02/12/2010 09:50:00 ************
+vers02:09:10end_day.rtn10000 REM ************ end_day.rtn 10/05/2011 14:00:00 ************
+vers02:09:10fc.rtn10000 REM ************ fc.rtn 05/04/2013 09:50:00 ************
+vers02:09:10fi.rtn10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fi-nor.rtn10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fi_spe~1.rtn10000 REM ************ fi.rtn 11/11/2011 For Andover Filters 1-4 testing line 11019 chg for 1-5 postion to 10 cycles *
+vers02:09:10fl.rtn10000 REM ************ fl.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fm.rtn10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
+vers02:09:10fmsum.rtn10000 REM ************ fmsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fr.rtn10000 REM ************ fr.rtn 09/04/2012 09:50:00 ************
+vers02:09:10fr--.rtn10000 REM ************ fr.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fv.rtn10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fv-.rtn10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fw.rtn10000 REM ************ fw.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fw3test.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:09:10fz.rtn10000 REM ************ fz.rtn 02/12/2010 09:50:00 ************
+vers02:09:10fzsum.rtn10000 REM ************ fzsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:10g1.rtn10000 REM ************ g1.rtn 02/12/2010 09:50:00 ************
+vers02:09:10g5.rtn10000 REM ************ g5.rtn 02/12/2010 09:50:00 ************
+vers02:09:10ga.rtn10000 REM ************ ga.rtn 02/12/2010 09:50:00 ************
+vers02:09:10gi.rtn10000 REM ************ gi.rtn 02/12/2010 09:50:00 ************
+vers02:09:10gs.rtn10000 REM ************ gs.rtn 02/12/2010 09:50:00 ************
+vers02:09:10hg.rtn10000 REM ************ hg.rtn 29/03/2011 10:05:48 ************
+vers02:09:10hgn.rtn10000 REM ************ hgn.rtn 02/12/2010 09:50:00 ************
+vers02:09:10hgsum.rtn10000 REM ************ hgsum.rtn 24/11/2013 09:50:00 ************
+vers02:09:10hl.rtn10000 REM ************ hl.rtn 24/06/2014 19:47:10 ************
+vers02:09:10hp.rtn10000 REM ************ hp.rtn 29/03/2011 09:33:00 ************
+vers02:09:10hs.rtn10000 REM ************ hs.rtn 26/09/2012 19:47:10 ************
+vers02:09:10hv.rtn10000 REM ************ hv.rtn 02/12/2010 09:50:00 ************
+vers02:09:10hvb.rtn10000 REM ************ hvb.rtn 19/07/2014 15:00:00 ************
+vers02:09:10hvset.rtn10000 REM ************ hvset.rtn 02/12/2010 09:50:00 ************
+vers02:09:10ic.rtn10000 REM ************ ic.rtn 02/12/2010 09:50:00 ************
+vers02:09:10init.rtn10000 REM ************ init.rtn 02/12/2010 09:50:00 ************
+vers02:09:10jd.rtn10000 REM ************ jd.rtn 02/12/2010 09:50:00 ************
+vers02:09:10k1.rtn10000 REM ******************** k1 routine 20/10/95 ********************
+vers02:09:10k2.rtn10000 REM ******************** k2 routine 20/10/95 ********************
+vers02:09:10ka.rtn10000 REM ********************* ka routine 12/13/06 *******************
+vers02:09:10kb.rtn10000 REM ********************* kb routine 12/13/06 *******************
+vers02:09:10kc.rtn10000 REM ********************* kc routine 12/13/06 *******************
+vers02:09:10kd.rtn10000 REM ********************* kd routine 12/13/06 *******************
+vers02:09:10ke.rtn10000 REM ********************* ke routine 12/13/06 *******************
+vers02:09:10kf.rtn10000 REM ********************* kf routine 12/13/06 *******************
+vers02:09:10kg.rtn10000 REM ********************* kg routine 12/13/06 *******************
+vers02:09:10kh.rtn10000 REM ********************* kh routine 12/13/06 *******************
+vers02:09:10l1.rtn10000 REM ******************** l1 routine 20/10/95 ********************
+vers02:09:10l2.rtn10000 REM ******************** l2 routine 20/10/95 ********************
+vers02:09:10lf.rtn10000 REM ************ lf.rtn 02/12/2010 09:50:00 ************
+vers02:09:10ll.rtn10000 REM ********************** ll routine 29/07/10 ********************
+vers02:09:10lz.rtn10000 REM ************ lz.rtn 02/12/2010 09:50:00 ************
+vers02:09:10m1.rtn10000 REM ******************** m1 routine 20/10/95 ********************
+vers02:09:10m2.rtn10000 REM ******************** m2 routine 20/10/95 ********************
+vers02:09:10mm.rtn10000 REM ********************* mm routine 03/09/10 *******************
+vers02:09:10n1.rtn10000 REM ******************** n1 routine 20/10/95 ********************
+vers02:09:10n2.rtn10000 REM ******************** n2 routine 20/10/95 ********************
+vers02:09:10nc.rtn10000 REM ************ nc.rtn 02/12/2010 09:50:00 ************
+vers02:09:10newinst.rtn10000 REM ************ newinst.rtn 02/12/2010 09:50:00 ************
+vers02:09:10ni.rtn10000 REM ************ ni.rtn 02/12/2010 09:50:00 ************
+vers02:09:11nosum.rtn10000 REM ************ nosum.rtn 02/12/2010 09:50:00 ************
+vers02:09:11ozsum.rtn10000 REM ************ ozsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:11pb.rtn10000 REM ************ pb.rtn 02/12/2010 09:50:00 ************
+vers02:09:11pc.rtn10000 REM ************ pc.rtn 02/12/2010 09:50:00 ************
+vers02:09:11po.rtn10000 REM ************ po.rtn 24/06/2014 09:50:00 ************
+vers02:09:11ql.rtn10000 REM ************ ql.rtn 07/04/2011 14:00:00 ************
+vers02:09:11re.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers02:09:11re-mb.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers02:09:11re-mb_.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers02:09:11re-sb.rtn10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
+vers02:09:11rep.rtn10000 REM ************ rep.rtn 02/12/2010 09:50:00 ************
+vers02:09:11re_mb_~1.rtn10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers02:09:11rl.rtn10000 REM ************ rl.rtn 21/04/2012 11:00:00 ************
+vers02:09:11rs.rtn10000 REM ************ rs.rtn 02/12/2010 09:50:00 ************
+vers02:09:11sa.rtn10000 REM ************ sa.rtn 02/12/2010 09:50:00 ************
+vers02:09:11saveall.rtn10000 REM ************ saveall.rtn 02/12/2010 09:50:00 ************
+vers02:09:11savedh.rtn10000 REM ************ savedh.rtn 02/12/2010 09:50:00 ************
+vers02:09:11sc.rtn10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers02:09:11sc-full.rtn10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers02:09:11sd.rtn10000 REM ************ sd.rtn 02/12/2010 09:50:00 ************
+vers02:09:11se.rtn10000 REM ************ se.rtn 02/12/2010 09:50:00 ************
+vers02:09:11sh.rtn10000 REM ************ sh.rtn 02/12/2010 09:50:00 ************
+vers02:09:11si.rtn10000 REM ************ si.rtn 24/06/2014 19:47:08 ************
+vers02:09:11sim.rtn10000 REM ************ sim.rtn 16/01/2014 09:50:00 ************
+vers02:09:11si_new.rtn10000 REM ************ si.rtn 16/12/2010 19:47:08 ************
+vers02:09:11sk.rtn10000 REM ************ sk.rtn 02/12/2010 09:50:00 ************
+vers02:09:11skc.rtn10000 REM ************ skc.rtn 10/04/2012 19:47:08 ************
+vers02:09:11skc-nor.rtn10000 REM ************ skc.rtn 05/03/2011 19:47:08 ************
+vers02:09:11skc_noaz.rtn10000 REM ******************* skc routine 23/07/98 ********************
+vers02:09:11sl.rtn10000 REM ************ sl.rtn 24/06/2014 09:50:00 ************
+vers02:09:11slsum.rtn10000 REM ************ slsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:11sq.rtn10000 REM ****************** sq routine 21/01/12 **********************
+vers02:09:11sr.rtn10000 REM ************ sr.rtn 01/04/2011 12:00:00 ************
+vers02:09:11st.rtn10000 REM ************ st.rtn 02/12/2010 09:50:00 ************
+vers02:09:11sum.rtn10000 REM ************ sum.rtn 02/12/2010 09:50:00 ************
+vers02:09:11sw.rtn10000 REM ************ sw.rtn 13/12/2010 09:50:00 ************
+vers02:09:11tcsum.rtn10000 REM ************ tcsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:11td.rtn10000 REM ************ td.rtn 10/03/2014 09:40:00 ************
+vers02:09:11testfw2.rtn10000 REM ************ testfw2.rtn 02/12/2010 09:50:00 ************
+vers02:09:11tf.rtn10000 REM ************ testfw2.rtn 06/12/2012 09:50:00 ************
+vers02:09:11tt.rtn10000 REM ************ tt.rtn 02/12/2010 09:50:00 ************
+vers02:09:11tu.rtn10000 REM ************ tu.rtn 02/12/2010 09:50:00 ************
+vers02:09:11u5.rtn10000 REM ************ u5.rtn 02/12/2010 09:50:00 ************
+vers02:09:11ub.rtn10000 REM ************ ub.rtn 02/12/2010 09:50:00 ************
+vers02:09:11ul.rtn10000 REM ************ ul.rtn 02/12/2010 09:50:00 ************
+vers02:09:11um.rtn10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers02:09:11um-.rtn10000 REM ********************* um routine 19/10/98 *******************
+vers02:09:11um-nor.rtn10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers02:09:11um_017.rtn10000 REM ********************* um routine 10/09/03 for #017 *******************
+vers02:09:11um_orig.rtn10000 REM ********************* um routine 10/09/03 for #017 *******************
+vers02:09:11uq.rtn10000 REM ************ uq.rtn 02/12/2010 09:50:00 ************
+vers02:09:11uv.rtn10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers02:09:11uv-.rtn10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
+vers02:09:11uv-spain.rtn10000 REM ******************* uv routine 12/09/05 ********************
+vers02:09:11uvsum.rtn10000 REM ************ uvsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:11uv_nor.rtn10000 REM ************ uv.rtn 02/12/2010 09:50:00 ************
+vers02:09:11ve.rtn10000 REM ************ ve.rtn 23/04/2014 11:10:00 ************
+vers02:09:11w0.rtn10000 REM ************ w0.rtn 02/12/2010 09:50:00 ************
+vers02:09:11w1.rtn10000 REM ************ w1.rtn 02/12/2010 09:50:00 ************
+vers02:09:11w2.rtn10000 REM ************ w2.rtn 02/12/2010 09:50:00 ************
+vers02:09:11w3.rtn10000 REM ************ w3.rtn 02/12/2010 09:50:00 ************
+vers02:09:11w4.rtn10000 REM ************ w4.rtn 02/12/2010 09:50:00 ************
+vers02:09:11xl.rtn10000 REM ************ xl.rtn 02/12/2010 09:50:00 ************
+vers02:09:11zb.rtn10000 REM ************ zb.rtn 02/12/2010 09:50:00 ************
+vers02:09:11zc.rtn10000 REM ************ zc.rtn 02/12/2010 09:50:00 ************
+vers02:09:11ze.rtn10000 REM ************ ze.rtn 02/12/2010 09:50:00 ************
+vers02:09:11zf.rtn10000 REM ************ zf.rtn 01/04/2011 12:00:00 ************
+vers02:09:11zl.rtn10000 REM ************ zl.rtn 02/12/2010 09:50:00 ************
+vers02:09:11zlsum.rtn10000 REM ************ zlsum.rtn 02/12/2010 09:50:00 ************
+vers02:09:12zp.rtn10000 REM ************ zp.rtn 02/12/2010 09:50:00 ************
+vers02:09:12zs.rtn10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
+vers02:09:12zssum.rtn10000 REM ************ zssum.rtn 10/05/2011 09:50:00 ************
+vers02:09:12zwsum.rtn10000 REM ************ zwsum.rtn 10/05/2011 09:50:00 ************
+co02:09:12hgsum: Running hgsum from gr1mk2 line -200
