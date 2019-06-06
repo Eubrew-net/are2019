@@ -142,7 +142,7 @@ end
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [44 6],cellstr(new_tc));
              
-% New TC 44 Eval: No idea of how to evaluate this.   
+% New TC 44 Eval: No idea
 
 % Filters Section
 
@@ -150,9 +150,10 @@ end
 
 % Filter linearity (FI) 48 Eval
 
-% Filter Ozone Correction 49 Eval
-
-% Filter Ozone Correction 49 Commentary
+% Filter Ozone Correction 49 V2
+ filt_o3_corr="["+num2str(filter{1,Cal.n_inst}.ETC_FILTER_COR)+"]";
+ mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                 [49 6],filt_o3_corr);
 
  disp(Cal.brw_str(i))
 catch
