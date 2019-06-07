@@ -110,7 +110,7 @@ try
 catch exception
       fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
 end
-    
+avg_report{Cal.n_inst}.brw_name=Cal.brw_name{Cal.n_inst};   
 avg_report{Cal.n_inst}.sl_data=sl_data; avg_report{Cal.n_inst}.dt_data=dt_data;
 avg_report{Cal.n_inst}.rs_data=rs_data; avg_report{Cal.n_inst}.ap_data=ap_data;
 avg_report{Cal.n_inst}.hg_data=hg_data; avg_report{Cal.n_inst}.op_data=op_data;
