@@ -100,13 +100,13 @@ t_int=num2str(round([t(1),t(end)]));
 % Temperature Section:
 % SL temperature dep Linear 38 Eval
 
-% SL temperature dep (campaign) 39 V1
-% SL temperature dep (campaign) 39 V2
-% SL temperature dep (campaign) 39 Eval
+% SL temperature dep (of campaign) 39 V1
+% SL temperature dep (of campaign) 39 V2
+% SL temperature dep (of campaign) 39 Eval
 
-% SL temperature range (of campaign?) 40 V1 (min)
-% SL temperature range (of campaign?) 40 V2 (max)
-% SL temperature range (of campaign?) 40 Eval: Not needed
+% SL temperature range (of campaign) 40 V1 (range)
+% SL temperature range (of campaign) 40 V2 (interval)
+% SL temperature range (of campaign) 40 Eval
 
 % SL temperature dep (historic) 42 V1
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
@@ -128,10 +128,10 @@ t_int=num2str(round([t(1),t(end)]));
 %                       [42 4],'N');
 %  end
              
-% temperature range 43 V1.
+% temperature range 43 V1(temperature range)
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [43 5],t_range);
-% temperature range 43 V2 (temperature interval)
+% temperature range 43 V2(temperature interval)
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [43 6],t_int);
 
