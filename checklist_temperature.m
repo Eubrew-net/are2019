@@ -112,7 +112,7 @@ t_int=num2str(round([t(1),t(end)]));
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [42 5],slope_old*10);
 % SL temperature dep (historic) 42 V2 (is always 5)
-%SL_temp_dep_limit=5.0
+%slope_old_limit=5.0
 % mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
 %                 [42 6],slope_old_limit);
 % SL temperature dep (historic) 42 Eval
@@ -128,13 +128,13 @@ t_int=num2str(round([t(1),t(end)]));
 %                       [42 4],'N');
 %  end
              
-% temperature range 43 V1 (min).
+% temperature range 43 V1.
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [43 5],t_range);
-% temperature range 43 V2 (max).
+% temperature range 43 V2 (temperature interval)
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [43 6],t_int);
-% temperature range 43 Eval: Not needed
+
 
 % New TC 44 V1: from icf            
 orig_tc=num2str(TCorig');            
@@ -157,8 +157,6 @@ v2_change=num2str(diff(round(100*(mean(filter{Cal.n_inst}.media_fi)-nominal) ./n
 
 
 % Filter Ozone Correction 49 V2
-% filt_o3_corr="["+num2str(filter{1,Cal.n_inst}.ETC_FILTER_COR)+"]";
-% esto da error ,usa los ejemplos de antes cellstr...
 filt_o3_corr=num2str(filter{1,Cal.n_inst}.ETC_FILTER_COR);
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [49 6],cellstr(filt_o3_corr));
