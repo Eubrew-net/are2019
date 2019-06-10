@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_070a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-06"><meta name="DC.source" content="cal_report_070a1.m"><style type="text/css">
+      --><title>cal_report_070a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-10"><meta name="DC.source" content="cal_report_070a1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -86,13 +86,6 @@ mkdir(Cal.dir_figs);
 </pre><pre class="codeoutput">
 ans =
 
-  logical
-
-   1
-
-
-ans =
-
   1&times;1 cell array
 
     {'IZO#185'}
@@ -108,16 +101,16 @@ ans =
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
     {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
-    {'UM#075' }    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
     {'POR#102'}    {[102]}    {[4]}    {[0]}    {'102'}
     {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
-    {'UM#126' }    {[126]}    {[4]}    {[0]}    {'126'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
     {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
     {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
     {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
     {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
     {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
-    {'UM#172' }    {[172]}    {[3]}    {[0]}    {'172'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
     {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
     {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
     {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
@@ -150,14 +143,6 @@ ans =
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
     {'..\228\ICF15017&#8230;'}    {'..\228\ICF15017&#8230;'}    {'0242'}    {'0242'}
 
--&gt;ERROR
-     1
-
-~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185.CFG
--&gt;ERROR
-     2
-
-~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG
 </pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
 Station.name=<span class="string">''</span>;
 Station.lat=67;
@@ -195,11 +180,71 @@ latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_config_'</span>,Cal.
                      DTdef,<span class="string">'\ETCdef'</span>,ETCdef(1),<span class="string">'\Adef'</span>,A1def(1),<span class="keyword">...</span>
                      DTorig,<span class="string">'\ETCorig'</span>,ETCorig(1),<span class="string">'\Aorig'</span>,A1orig(1));
 </pre><pre class="codeinput">makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
+</pre><pre class="codeoutput">
+ans =
+
+  52&times;2 table
+
+                           D__CODE_campaigns_are2019_bfiles_070____070_ICF15617_070    D__CODE_campaigns_are2019_bfiles_070____070_IOS15617_070
+                           ________________________________________________________    ________________________________________________________
+
+    ReleaseDate                                   7.3614e+05                                                  7.3614e+05                       
+    o3TempCoef1                                            0                                                           0                       
+    o3TempCoef2                                        -0.79                                                     -0.4009                       
+    o3TempCoef3                                        -1.62                                                     -1.0721                       
+    o3TempCoef4                                        -3.19                                                     -1.9735                       
+    o3TempCoef5                                        -5.27                                                      -3.417                       
+    MicrometerSteps_deg                                    0                                                           0                       
+    O3OnO3Ratio                                        0.338                                                      0.3365                       
+    SO2OnSO2Ratio                                       2.35                                                        2.35                       
+    O3OnSO2Ratio                                      1.1322                                                      1.1322                       
+    ETCOnO3Ratio                                        2933                                                        2950                       
+    ETCOnSO2Ratio                                       2730                                                        2790                       
+    DeadTime_sec_                                    4.1e-08                                                     4.1e-08                       
+    WLCalStepNumber                                      162                                                         162                       
+    SlitmaskMotorDelay                                    74                                                          74                       
+    UmkehrOffset                                        1688                                                        1688                       
+    NDFilter0                                              0                                                           0                       
+    NDFilter1                                           3810                                                        5000                       
+    NDFilter2                                           9310                                                       10000                       
+    NDFilter3                                          15090                                                       15000                       
+    NDFilter4                                          18815                                                       20000                       
+    NDFilter5                                          26950                                                       25000                       
+    ZenithSteps_rev                                     2972                                                        2972                       
+    BrewerType                                             0                                                           0                       
+    COMPort_                                               1                                                           1                       
+    o3TempCoefHg                                           0                                                           0                       
+    n2TempCoefHg                                           0                                                           0                       
+    n2TempCoef1                                            0                                                           0                       
+    n2TempCoef2                                            0                                                           0                       
+    n2TempCoef3                                            0                                                           0                       
+    n2TempCoef4                                            0                                                           0                       
+    n2TempCoef5                                            0                                                           0                       
+    O3Mic_1Offset                                       2579                                                        2579                       
+    Mic_2Offset                                            0                                                           0                       
+    O3FW_3Offset                                         240                                                         240                       
+    NO2AbsnCoeff                                          -3                                                          -3                       
+    NO2DsEtc                                             650                                                         650                       
+    NO2ZsEtc                                             595                                                         595                       
+    NO2Mic_1Offset                                      5252                                                        5252                       
+    NO2FW_3Offset                                        176                                                         176                       
+    NO2_O3ModeChange                                    2700                                                        2700                       
+    GratingSlope                                           0                                                           0                       
+    GratingIntercept                                       0                                                           0                       
+    MicrometerZero                                      3469                                                        3469                       
+    IrisOpenSteps                                         75                                                          75                       
+    BufferDelay_s_                                       0.2                                                         0.2                       
+    NO2FW_1Pos                                            64                                                          64                       
+    O3FW_1Pos                                            256                                                         256                       
+    FW_2Pos                                                0                                                           0                       
+    uvFW_2Pos                                             64                                                          64                       
+    ZenithOffset                                          56                                                          56                       
+    ZenithUVBPosition                                   2216                                                        2216                       
+
 </pre><pre class="codeinput"><span class="keyword">catch</span> exception
       fprintf(<span class="string">'%s, brewer: %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       DTorig=NaN; DTdef=NaN;
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Unable to read file '/home/jlopezs/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG'. No such file or directory., brewer: MAD#070
 </pre><h2 id="8">Historical review AVG info</h2><pre class="codeinput">load(Cal.file_save,<span class="string">'avg_report'</span>);
 close <span class="string">all</span>;
 [sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),<span class="keyword">...</span>
@@ -250,7 +295,7 @@ avg_report{Cal.n_inst}.rs_data=rs_data; avg_report{Cal.n_inst}.ap_data=ap_data;
 avg_report{Cal.n_inst}.hg_data=hg_data; avg_report{Cal.n_inst}.op_data=op_data;
 <span class="keyword">if</span> exist(<span class="string">'Args'</span>,<span class="string">'var'</span>)
    avg_report{Cal.n_inst}.Args=Args;
-<span class="keyword">else</span> disp(<span class="string">'No se est&#65533;n guardando los inputs de la funci&#65533;n!!'</span>)
+<span class="keyword">else</span> disp(<span class="string">'No se est&iuml;&iquest;&frac12;n guardando los inputs de la funci&iuml;&iquest;&frac12;n!!'</span>)
 <span class="keyword">end</span>
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'avg_report'</span>);
 </pre><pre class="codeoutput">--------- Validation OK --------------
@@ -277,7 +322,7 @@ DTAVG =
   Columns 1 through 5
 
     'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
-    [      1685]    [     1691]    [       NaN]    [      3091]    [     NaN]
+    [      1685]    [     1691]    [       NaN]    [      3091]    [ 4.1e-08]
 
   Column 6
 
@@ -501,7 +546,7 @@ avg_report{Cal.n_inst}.rs_data=rs_data; avg_report{Cal.n_inst}.ap_data=ap_data;
 avg_report{Cal.n_inst}.hg_data=hg_data; avg_report{Cal.n_inst}.op_data=op_data;
 if exist('Args','var')
    avg_report{Cal.n_inst}.Args=Args;
-else disp('No se est�n guardando los inputs de la funci�n!!')
+else disp('No se estï¿½n guardando los inputs de la funciï¿½n!!')
 end
 save(Cal.file_save,'-APPEND','avg_report');
 
