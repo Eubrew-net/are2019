@@ -83,7 +83,7 @@ avg=avg_report{Cal.n_inst}
 % 13, 7  Check avg.rs_data for all slits
 
 [m,s]=grpstats(avg.rs_data,avg.rs_data(:,2));
-ctrl=m(end,5:end)+s(end,5:end)*3>1.003 | m(end,5:end)-s(end,5:end)*3<0.997;
+ctrl=m(end,[4:9])+s(end,[4:9])*3>1.003 | m(end,[4:9])-s(end,[4:9])*3<0.997;
 if sum(ctrl)==0
     msg='All slits below threshold limit (0.003)';
 else
@@ -94,7 +94,7 @@ else
 end
 
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                [13 7],{msg});
+                [13 6],{msg});
 %% DT AVG
 % 14
 % 14, 5  DTAVG
@@ -113,7 +113,7 @@ mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%0
 dt_std=sprintf('dt_low=%.1f +/- %.2f %c dt_high=%.1f +/- %.2f',m(end,4),s(end,4),char(10),m(end,5),s(end,5))            
             
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                [14 7],{dt_std});
+                [14 6],{dt_std});
 %% SL AVG
 % SL_R6 15
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
@@ -135,7 +135,7 @@ sl_temp=sprintf('R6 =%.1f [%.2f,%.2f] + T  %.1f  [%.2f,%.2f]',b(1),bi(1,1),bi(1,
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [16 5],round(b(2),2));
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                [16 7],{sl_temp});
+                [16 6],{sl_temp});
 
 % SL_R5 17
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
@@ -149,5 +149,5 @@ sl_temp=sprintf('R5 =%.1f [%.2f,%.2f] + T  %.1f  [%.2f,%.2f]',b(1),bi(1,1),bi(1,
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                 [18 5],round(b(2),2));
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                [18 7],{sl_temp});
+                [18 6],{sl_temp});
 
