@@ -133,7 +133,7 @@ def plotEBN(args):
     print("Plotting")
     # plot
     try: 
-        plt.plot(args.ebnData[args.plotX], args.ebnData[args.plotY], \
+        plt.plot(args.ebnData[args.plotX], args.ebnData[args.plotY], '.', \
             label="B#"+args.myBrewer_str)
 
     except Exception as err:
