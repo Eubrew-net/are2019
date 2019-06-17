@@ -170,7 +170,7 @@ for iz=1:Cal.n_brw
        cfg=icf_op{iz}(1:end-1,3:end); 
        save('config.cfg', 'cfg', '-ASCII','-double');
     end
-    tmp_file=sprintf('config%s.cfg',Cal.brw_str{iz});       
+    tmp_file=upper(sprintf('config%s.cfg',Cal.brw_str{iz}));       
     copyfile('config.cfg',fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},tmp_file));
     delete('config.cfg');
   
@@ -182,7 +182,7 @@ for iz=1:Cal.n_brw
         cfg=icf_a{iz}(1:end-1,3:end);
         save('config_a.cfg', 'cfg', '-ASCII','-double');
      end             
-     tmp_file=sprintf('config%s_a.cfg',Cal.brw_str{iz});
+     tmp_file=upper(sprintf('config%s_a.cfg',Cal.brw_str{iz}));
      copyfile('config_a.cfg',fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},tmp_file));
      delete('config_a.cfg');
    end
