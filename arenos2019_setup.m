@@ -11,6 +11,12 @@ else isunix
    Cal.path_root=fullfile('~',cell2mat(regexpi(pwd,'^[A-Z]:', 'match')),'CODE','campaigns','are2019');
   end
 end
+
+if exist('servidor.txt')
+    Cal.path_root='/media/admin/Brewer/CODE/campaigns/are2019';
+end
+
+
 addpath(genpath(fullfile(Cal.path_root,'matlab')));
 Cal.file_save='arenos_2019.mat';
 Cal.campaign='Arenosillo, Huelva (Spain), Jun 27th -- June 05th, 2019';
