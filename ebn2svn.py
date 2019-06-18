@@ -124,7 +124,8 @@ def copyBfiles(args):
     myAdd="svn add "+myBfilesDir+"/"+myBfile
     commitMsg="ebn2svn added B file to bfiles for Brewer "+args.myBrewer_str
     myCommit="svn commit -m '"+commitMsg+\
-             "' --username "+args.svnUser+" --password "+args.svnPass
+             "' --username "+args.svnUser+" --password "+args.svnPass+" "+\
+             myBfilesDir+"/"+myBfile
     myUpdate="svn update "+args.svnDir
 
     print("Adding file with "+myAdd)
