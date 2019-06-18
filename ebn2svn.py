@@ -117,7 +117,7 @@ def copyBfiles(args):
     # this next line will only work in linux and macos
     myCp="cp "+myBfileWithDir+" "+myBfilesDir 
 
-    print("Copying B files with "+myCp)
+    print("Copying B file with "+myCp)
 
     os.system(myCp)
 
