@@ -105,6 +105,39 @@ def unzipData(args):
 
 
 # ------------------------------------------------------------------------
+def copyBfiles(args):
+    myDay=str(datetime.datetime.now().timetuple().tm_yday)
+    myYear=str(datetime.datetime.now().timetuple().tm_year)[2:]
+
+    myBfile="B"+myDay+myYear+"."+args.myBrewer_str
+    myBfileWithDir=os.path.join(args.myBrewer_svnDir,myBfile)
+
+    myBfilesDir=os.path.join(args.svnDir,"bfiles")
+
+    # this next line will only work in linux and macos
+    myCp="cp "+myBfileWithDir+" "+myBfilesDir 
+
+    print("Copying B files with "+myCp)
+
+    os.system(myCp)
+
+    myAdd="svn add "+myBfilesDir+"/"+myBfile
+    commitMsg="ebn2svn added B file to bfiles for Brewer "+args.myBrewer_str
+    myCommit="svn commit -m '"+commitMsg+\
+             "' --username "+args.svnUser+" --password "+args.svnPass
+    myUpdate="svn update "+args.svnDir
+
+    print("Adding file with "+myAdd)
+    os.system(myAdd)
+
+    print("Committing file with "+myCommit)
+    os.system(myCommit)
+
+    print("Updating repository with "+myUpdate)
+    os.system(myUpdate)
+
+
+# ------------------------------------------------------------------------
 def _svn_login(realm, username, may_save):
     # i'm not completely sure how this works... for more information, see
     # https://tools.ietf.org/doc/python-svn/pysvn_prog_guide.html 
@@ -184,7 +217,7 @@ def main(args):
         error=getEBN(args)
 
         if error: # this will not catch errors messages issued by EBN
-            print("Error! "+error)
+            print("Error! "+str(error))
             sys.exit(1)
 
         # 2) unzip the data
@@ -192,17 +225,22 @@ def main(args):
         error=unzipData(args)
     
         if error: # this will show the messages issued by EBN
-            print("Error! "+error)
+            print("Error! "+str(error))
             sys.exit(1)
         else:
             os.remove(args.tempFile)
 
-        # 3) commit to svn
+        # 3) copy b files from bdataXXX to bfiles
+        # this was coded in a hurry at are2019, is crappy, 
+        #+and will only work in linux and mac (i hope!)
+        copyBfiles(args)
+
+        # 4) commit to svn
         error=None
         error=commitSVN(args)
 
         if error:
-            print("Error! "+error)
+            print("Error! "+str(error))
             sys.exit(1)
 
     # all done!
