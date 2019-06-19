@@ -32,7 +32,7 @@ Station.meanozo=[];
 Cal.Station=Station;
 
 %%  configuration  date---> Default values
-day0=170;   Date.day0=day0;
+day0=168;   Date.day0=day0;
 dayend=190; Date.dayend=dayend;
 
 Date.cal_year=2019; Date.cal_month=06;
@@ -56,7 +56,7 @@ Cal.calibration_days={
    day0:dayend,day0:dayend   ,day0:dayend       %102  
    day0:dayend,day0:dayend  ,day0:dayend        %117  
    day0:dayend,day0:dayend  ,day0:dayend        %126 
-   165:dayend,165:dayend  ,  165:dayend        %150  
+   166:dayend, 168:169      ,170:dayend        %150  
    day0:dayend,day0:dayend  ,day0:dayend        %151 
    day0:dayend,day0:dayend   ,day0:dayend       %158 
    day0:dayend,day0:dayend   ,day0:dayend       %163  
@@ -81,7 +81,7 @@ Cal.brw       = [005,017,033,070,075,102,117,126,150,151,158,163,166,172,174,185
 Cal.brwM      = [2  ,2  ,2  ,4  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3    ];
 Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
 Cal.sl_c_blind= [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
-Cal.no_maint   =[0  ,0  ,0  ,0  ,0  ,0,  0  ,0  ,1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
+Cal.no_maint   =[0  ,0  ,0  ,0  ,0  ,0,  0  ,0  ,0  ,0  ,0  ,1  ,0  ,0  ,0  ,1  ,0  ,0  ,0  ,0  ,0    ];
 Cal.plt       = {'o','+','*','h','x','s','d','v','>','<','p','+','x','p','*','x','s','d','v','>','<'};
 
 

@@ -23,7 +23,7 @@ end
 
 load(Cal.file_save,'temperature');
 load(Cal.file_save,'filter');
-
+clear year;
 %% configuration files
 close all;
 
@@ -52,7 +52,7 @@ if ~isnan(sl_rw)
         {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4);
     
     %%
-    makeHtmlTable(NTC{1});
+    makeHtml_Table(NTC{1});
 else
     Fr=NaN*ones(1,9);
     ajuste{1}.orig=NaN*ones(7,4);
@@ -171,7 +171,7 @@ close all
 %% Latex stuff
 
 % Temperature Range
-% Para que funcione asignamos la salida Fr en la llamada a la funciÿn
+% Para que funcione asignamos la salida Fr en la llamada a la funciï¿½n
 % temp_coeff_raw donde se calculen los TC's (en este caso en {})
 tmp=Fr(:,2);
 latexcmd(fullfile(Cal.file_latex,['cal_tempcoeff_',Cal.brw_str{Cal.n_inst}]),...
@@ -182,7 +182,7 @@ temperature{Cal.n_inst}.NTC=NTC;
 temperature{Cal.n_inst}.ajuste=ajuste;
 if exist('Args','var')
 temperature{Cal.n_inst}.info=Args;
-else warning('No se estÿn guardando los inputs de la funciÿn!!')
+else warning('No se estï¿½n guardando los inputs de la funciï¿½n!!')
 end
 save(Cal.file_save,'-APPEND','temperature');
 
