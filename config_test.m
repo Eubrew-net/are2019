@@ -42,7 +42,7 @@ end
 
 %%  Brewer setup
 
-Cal.Date.day0=datenum(2019,5,1);
+Cal.Date.day0=datenum(2019,4,1);
 Cal.Date.dayend=now
 Date.CALC_DAYS=Cal.Date.day0:Cal.Date.dayend; Cal.Date=Date;
 
@@ -67,41 +67,25 @@ Cal.n_ref=Cal.n_ref;
     sl_cr{i}=ozone.sl_cr; % recalc. with 2? configuration
  end
 save(Cal.file_save);
-%load(Cal.file_save,'ozone_sum','config','ozone_ds','ozone_raw','ozone_raw0','sl','sl_cr')
+load(Cal.file_save,'ozone_sum','config','ozone_ds','ozone_raw','ozone_raw0','sl','sl_cr')
 
 %% Configs
 for i=nb'
     %% Operative
-    OP_config=Cal.brw_config_files{i,1};
-    try
-      [a b c]=fileparts(OP_config);
-      if ~strcmpi(strcat(b,c),sprintf('config%d.cfg',Cal.brw(i)))
-         fprintf(strcat(1,'\rCUIDADO!! Puede que las configuraciones cargadas no sean las esperadas\n',...
-                          '(Expected: %s, Loading: %s)\n'),...
-                 sprintf('config%d.cfg',Cal.brw(i)),strcat(b,c));
-      end
-      fprintf('\nBrewer %s: Operative Config.\n',Cal.brw_name{i});
-      events_cfg_op=getcfgs(Cal.Date.CALC_DAYS,OP_config);
-      displaytable(events_cfg_op.data(2:end,:),cellstr(datestr(events_cfg_op.data(1,:),1))',12,'.5g',events_cfg_op.legend(2:end));
-    catch exception
-      fprintf('%s, brewer: %s\n',exception.message,Cal.brw_str{i});
-    end
+    OP_config=Cal.brw_config_files{i,1}
+    
+    events_cfg_op=getcfgs(Cal.Date.CALC_DAYS,OP_config);
     %% Check
-    ALT_config=Cal.brw_config_files{i,2};
-    try
-       [a b c]=fileparts(ALT_config);
-       if ~strcmpi(strcat(b,c),sprintf('config%d_a.cfg',Cal.brw(i)))
-          fprintf(strcat(1,'\rCUIDADO!! Puede que las configuraciones cargadas no sean las esperadas\n',...
-                           '(Expected: %s, Loading: %s)\n'),...
-                  sprintf('config%d_a.cfg',Cal.brw(i)),strcat(b,c));
-       end
-       events_cfg_chk=getcfgs(Cal.Date.CALC_DAYS,ALT_config);
-       fprintf('\nBrewer %s: Second Config.\n',Cal.brw_name{i});
-       displaytable(events_cfg_chk.data(2:end,:),cellstr(datestr(events_cfg_chk.data(1,:),1))',12,'.5g',events_cfg_chk.legend(2:end));
-    catch exception
-       fprintf('%s, brewer: %s\n',exception.message,Cal.brw_str{i});
-    end
+    ALT_config=Cal.brw_config_files{i,2}
+    events_cfg_chk=getcfgs(Cal.Date.CALC_DAYS,ALT_config);
+    
+    
+    %%
+    makeHtml_Table([events_cfg_op.data,events_cfg_chk.data],[],cellstr(events_cfg_chk.legend),[{'RBCCE','IOS'}])
 end
+
+%%
+
 
 %% SL Report
 close all;
@@ -170,8 +154,31 @@ save(Cal.file_save,'-APPEND','A','ETC','F_corr','SL_B','SL_R','SL_corr_flag','cf
                              'summary_old','summary_orig_old','summary','summary_orig','t');
                          
                          
-                         
-                         
+%%
+
+for i=nb'
+figure
+
+subplot(3,3,1:2)
+plot(summary_old{i}(:,1),[summary_old{i}(:,6),summary{i}(:,6)]);
+datetick;grid;legend('R','IOS'); title(Cal.brw(i))
+subplot(3,3,3)
+boxplot(100*(summary_old{i}(:,6)-summary{i}(:,6))./summary_old{i}(:,6));
+grid
+%datetick;grid;legend('R','IOS'); title(Cal.brw(i))
+title('%diff');
+
+subplot(3,1,2)
+gscatter(summary_old{i}(:,3),summary_old{i}(:,6)-summary{i}(:,6),fix(summary_old{i}(:,4)/5)*5);
+xlabel('airmass');
+title('Difference DU vs airmass( temperature)')
+
+subplot(3,1,3)
+osc=summary_old{i}(:,3).*summary_old{i}(:,6);
+[g,m,n]=osc_group([300:300:2000],[100*((summary_old{i}(:,6)-summary{i}(:,6))./summary_old{i}(:,6)),osc]);
+boxplot(100*((summary_old{i}(:,6)-summary{i}(:,6))./summary_old{i}(:,6)),g,'Label',cellstr(num2str(round(m(:,2)))))
+xlabel('OSC')
+end                     
                          
 % Outliers? Los detectamos
 
