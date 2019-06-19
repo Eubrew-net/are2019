@@ -225,7 +225,7 @@ br=sprintf('%03d',Cal.brw(Cal.n_inst));
 try
     [azimut zenit]=analyze_FV(fullfile(Cal.path_root,['bdata',br],['FV*.',br]),...
                          'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
-                         'plot_flag',0);
+                         'plot_flag',1);
 catch exception
       fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
 end

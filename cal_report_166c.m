@@ -394,7 +394,7 @@ osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 save(Cal.file_save,'-APPEND','osc_smooth');
 
 %%
-figure(max(findobj('tag','CAL_2P_SCHIST')));
+figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'},'Width',14,'Height',8);
