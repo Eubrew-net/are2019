@@ -175,8 +175,10 @@ cal_step={}; sc_avg={}; sc_raw={}; Args={};
                      <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,15,<span class="keyword">...</span>
                      <span class="string">'hg_time'</span>,5,<span class="string">'one_flag'</span>,1);
 </pre><pre class="codeoutput">126
-OK-&gt;B17019.126
-</pre><img vspace="5" hspace="5" src="cal_report_126b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_08.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
+Unable to perform assignment because the size of the left side is 22-by-9 and the size of the right side is 1-by-9.
+./bdata126/B17019.126
+Unable to perform assignment because the size of the left side is 22-by-9 and the size of the right side is 1-by-9. (Bfile B17019.126) File/Line: readb_hg_measures/16
+</pre><pre class="codeinput"><span class="keyword">try</span>
 ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'FontSize'</span>,.9,<span class="string">'Width'</span>,8.5,<span class="string">'Height'</span>,7);
 
@@ -192,16 +194,7 @@ printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,
     disp(<span class="string">'No sun_scan'</span>);
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">
-naux =
-
-     1
-
-
-naux =
-
-     1
-
+</pre><pre class="codeoutput">No sun_scan
 </pre><h2 id="7">Definicion de variables: SC</h2><pre class="codeinput"><span class="keyword">if</span> length(cal_step)&gt;1
    d_p=[length(cal_step)-1 length(cal_step)];   tags={<span class="string">''</span>,<span class="string">'new'</span>};
 <span class="keyword">else</span>
@@ -660,7 +653,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.1 DU
 Ratio Ozone for So2(A3)=  1.1341, So2/O3(A2)=  2.7848
 O3 factor from Bass &amp; Paur to Daumont  =  0.9687 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
-</pre><img vspace="5" hspace="5" src="cal_report_126b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_13.png" alt=""> <pre class="codeoutput">
+</pre><img vspace="5" hspace="5" src="cal_report_126b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_05.png" alt=""> <pre class="codeoutput">
 datefile =
 
       735400
@@ -1078,7 +1071,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.2 DU
 Ratio Ozone for So2(A3)=  1.1519, So2/O3(A2)=  2.7474
 O3 factor from Bass &amp; Paur to Daumont  =  0.9720 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9960 
-</pre><img vspace="5" hspace="5" src="cal_report_126b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_18.png" alt=""> <pre class="codeoutput">
+</pre><img vspace="5" hspace="5" src="cal_report_126b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_10.png" alt=""> <pre class="codeoutput">
 datefile =
 
       736116
@@ -1500,7 +1493,7 @@ Ozone offset due to Rayleigh (Bodhaine): -2.8 DU
 Ratio Ozone for So2(A3)=  1.1383, So2/O3(A2)=  2.7843
 O3 factor from Bass &amp; Paur to Daumont  =  0.9695 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9940 
-</pre><img vspace="5" hspace="5" src="cal_report_126b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_23.png" alt=""> <pre class="codeoutput">
+</pre><img vspace="5" hspace="5" src="cal_report_126b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_15.png" alt=""> <pre class="codeoutput">
 datefile =
 
       736848
@@ -1920,7 +1913,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
 Ratio Ozone for So2(A3)=  1.1298, So2/O3(A2)=  2.8290
 O3 factor from Bass &amp; Paur to Daumont  =  0.9685 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
-</pre><img vspace="5" hspace="5" src="cal_report_126b_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_28.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="cal_report_126b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_126b_20.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
 load(Cal.file_save,<span class="string">'dsp_summary'</span>);
 dates=sscanf(cell2str(cat(2,ldsp')),<span class="string">'%03d_%03d_%03d,'</span>,[3,Inf]);
 dates=datejul(dates(2:3,:)');dates=dates(:,1);
