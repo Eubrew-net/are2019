@@ -1,5 +1,5 @@
 % options_pub.outputDir=fullfile(pwd,'latex','150','html'); options_pub.showCode=true;
-% Close all; publish(fullfile(pwd,'cal_report_150c.m'),options_pub);
+% close all; publish(fullfile(pwd,'cal_report_150c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
@@ -108,8 +108,8 @@ for ii=[Cal.n_ref,Cal.n_inst]
                                'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s Old constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
-                  nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
-                  nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
+                  nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)),...
+                  nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)));
 % new instrumental constants
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
                                'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
@@ -242,7 +242,7 @@ inst1=summary_orig_old{Cal.n_inst}(jday,:);
 % etiquetamos con _b, porque eso sera lo que usamos para plotear los individuales, con la configuraci�n sugerida
 close all
 blinddays=Cal.calibration_days{Cal.n_inst,2};
-
+blinddays=167:169
 jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
 inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
 
@@ -280,7 +280,7 @@ inst1_b(:,10)=o3r;
 % osc_smooth_sug=osc_smooth_inisl;
 
 %%
-figure(max(findobj('tag','CAL_2P_SCHIST')));
+figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'sug'},'Width',14,'Height',8);
@@ -409,59 +409,62 @@ close all
 
 
 %% STRAY LIGHT
-close all
-osc_range=2;
-% etc estimaton using the full range 
-[ETC0,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
-                                                                10,osc_range,0.05,finaldays);
-straylight_{n_inst}=straylight_model(o3c_NEW,A1_new,ETC_NEW(1).NEW,Cal);
-save(Cal.file_save,'-APPEND','straylight_'); 
-latexcmd(fullfile(['>',Cal.file_latex],['cal_etc_',brw_str{n_inst}]),...
-    '\SLETC',round(straylight_{n_inst}.coeff.R(3)),...
-    '\SLexp',round(straylight_{n_inst}.coeff.R(2)*100)/100,... 
-    '\SLcoeff',round(straylight_{n_inst}.coeff.R(1)*10)/10); 
-
-
-%recalculation  
-a=straylight_{n_inst}.coeff.R(1);
-b=straylight_{n_inst}.coeff.R(2);
-%etc=straylight_{n_inst}.coeff.R(3);
-etc=ETC_NEW(1).NEW
-o3=inst2(:,6);
-m =inst2(:,3);
-o3r= o3 -  a/A1_new*(m.*o3/1000).^b./m/10;
-%o3r1= o3 -  a/A1_new*(m.*o3r).^b./m/10;
-
-inst2(:,10)=o3r;
-[x,r,rp,ra,dat,ox,osc_stray]=ratio_min_ozone(...
+if Cal.brwM~=3 
+    close all
+    osc_range=2;
+    
+    
+    % etc estimaton using the full range
+    [ETC0,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
+        10,osc_range,0.05,finaldays);
+    straylight_{n_inst}=straylight_model(o3c_NEW,A1_new,ETC_NEW(1).NEW,Cal);
+    save(Cal.file_save,'-APPEND','straylight_');
+    latexcmd(fullfile(['>',Cal.file_latex],['cal_etc_',brw_str{n_inst}]),...
+        '\SLETC',round(straylight_{n_inst}.coeff.R(3)),...
+        '\SLexp',round(straylight_{n_inst}.coeff.R(2)*100)/100,...
+        '\SLcoeff',round(straylight_{n_inst}.coeff.R(1)*10)/10);
+    
+    
+    %recalculation
+    a=straylight_{n_inst}.coeff.R(1);
+    b=straylight_{n_inst}.coeff.R(2);
+    %etc=straylight_{n_inst}.coeff.R(3);
+    etc=ETC_NEW(1).NEW
+    o3=inst2(:,6);
+    m =inst2(:,3);
+    o3r= o3 -  a/A1_new*(m.*o3/1000).^b./m/10;
+    %o3r1= o3 -  a/A1_new*(m.*o3r).^b./m/10;
+    
+    inst2(:,10)=o3r;
+    [x,r,rp,ra,dat,ox,osc_stray]=ratio_min_ozone(...
         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
         5,brw_str{n_inst},brw_str{n_inst},'plot_flag',0);
     
     
-o3r1= o3 -  a/A1_new*(m.*o3r/1000).^b./m/10;
-inst2(:,10)=o3r1;
-[x,r,rp,ra,dat,ox,osc_stray2]=ratio_min_ozone(...
+    o3r1= o3 -  a/A1_new*(m.*o3r/1000).^b./m/10;
+    inst2(:,10)=o3r1;
+    [x,r,rp,ra,dat,ox,osc_stray2]=ratio_min_ozone(...
         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
         5,brw_str{n_inst},brw_str{n_inst},'plot_flag',0);
-
-% Stray light correction plot
-f=figure;
-set(f,'tag','RATIO_ERRORBAR_stray');
-h=plot_smooth_(osc_smooth_inisl,osc_smooth_fin,osc_stray2);
-legend(h,'Config. initial (SL corrected)','Final Configuration','Stray Light corrected ');
-set(gca,'YLim',[-4 2]);
-title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
-
-% Difference iter#1 to iter#2
-f=figure;
-set(f,'tag','RATIO_ERRORBAR_stray_corr');
-h=plot_smooth_(osc_smooth_fin,osc_stray,osc_stray2);
-legend(h,'Config.final','Stray Light corrected Iter #1','Stray Light corrected Iter #2');
-set(gca,'YLim',[-4 2]);
-title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
-
-
-
+    
+    % Stray light correction plot
+    f=figure;
+    set(f,'tag','RATIO_ERRORBAR_stray');
+    h=plot_smooth_(osc_smooth_inisl,osc_smooth_fin,osc_stray2);
+    legend(h,'Config. initial (SL corrected)','Final Configuration','Stray Light corrected ');
+    set(gca,'YLim',[-4 2]);
+    title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
+    
+    % Difference iter#1 to iter#2
+    f=figure;
+    set(f,'tag','RATIO_ERRORBAR_stray_corr');
+    h=plot_smooth_(osc_smooth_fin,osc_stray,osc_stray2);
+    legend(h,'Config.final','Stray Light corrected Iter #1','Stray Light corrected Iter #2');
+    set(gca,'YLim',[-4 2]);
+    title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
+    
+    
+end
 
 
 
@@ -490,6 +493,9 @@ disp(M);
 matrix2latex_ctable(M(2:end,2:end),fullfile(Cal.file_latex,['table_ETCdatafin_',Cal.brw_str{Cal.n_inst},'.tex']),...
                                    'rowlabels',M(2:end,1),...
                                    'columnlabels',label(2:end),'alignment','c','resize',0.9)
+                               
+ 
+
 
 % So2 calibration from icf file
 % Pendiente
@@ -500,11 +506,12 @@ TIME_SYNC=5;
 caption=strcat('Ozone Summary Report. Mean daily ozone, grouped by ozone slant path ranges,',...
                ' with original and final configuration (with an asterisk)');
 tags_={'osc$>$1500' '1500$>$osc$>$1000' '1000$>$osc$>$700' '700$>$osc$>$400' 'osc$<$400'};
-label_={'Day','osc range',['O3#',brw_str{n_ref}],'O3std','N',...
-                          ['O3#',brw_str{n_inst}],'O3 std','%diff',...
-                          ['(*)O3#',brw_str{n_inst}],'O3 std','(*)%diff'};
+label_={'Day','osc range',['O3#',Cal.brw_str{n_ref}],'O3std','N',...
+                          ['O3#',Cal.brw_str{n_inst}],'O3 std','%diff',...
+                          ['(*)O3#',Cal.brw_str{n_inst}],'O3 std','(*)%diff'};
 
-ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,summary_orig_old,summary_old,summary);
+%ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,summary_orig_old,summary_old,summary);
+ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,ETC_SUG,A1_old,summary_orig_old,summary_old,summary)
 dat=cat(2,num2cell(ozone_osc_sum(:,1)),tags_(ozone_osc_sum(:,end))',num2cell(ozone_osc_sum(:,2:end-1)));
 
 displaytable(dat,label_,12);
@@ -513,11 +520,13 @@ matrix2latex_longtable(dat,fullfile(Cal.file_latex,['table_summarydetailed_',brw
                                   'format',{'%.0f','%s','%.0f','%.1f','%.0f','%.0f','%.1f','%.1f','%.0f','%.1f','%.1f'},...
                                   'caption',caption);
                               
+                           
+                              
 %%
 [m,s,n,grpn]=grpstats(ozone_osc_sum,{ozone_osc_sum(:,1)},{'mean','std','numel','gname'});
 ozone_day_sum=round([m(:,1),m(:,2),s(:,2),m(:,4),m(:,8),s(:,8),100*(m(:,8)-m(:,2))./m(:,2)]*10)/10;
 
- makeHtmlTable(ozone_day_sum,[],cellstr(datestr(ozone_day_sum(:,1)+datenum(Cal.Date.cal_year,1,0))),...
+ makeHtml_Table(ozone_day_sum,[],cellstr(datestr(ozone_day_sum(:,1)+datenum(Cal.Date.cal_year,1,0))),...
         {'Day',['O3 #',brw_str{n_ref}],'O3 std','N obs',['O3 #',brw_str{n_inst}],...
          'O3 std',[' % ',brw_str{n_ref},'-',brw_str{n_inst},'/',brw_str{n_ref}]})
 
@@ -556,11 +565,13 @@ end
 % final days: final config.
 jday=findm(diaj(summary{Cal.n_inst}(:,1)),finaldays,0.5);% quiero mostrar la primera config. con sl
 inst2=summary{Cal.n_inst}(jday,:);
+f=[];
 for dd=1:length(finaldays)
 j=find(diajul(floor(inst2(:,1)))==finaldays(dd));
 j_=find(diajul(floor(ref(:,1)))==finaldays(dd));
 if (isempty(j) || length(j)<4), continue; end
-f=figure; set(f,'Tag',sprintf('%s%s','DayPlot_',num2str(finaldays(dd))));
+f(dd)=figure; 
+set(f,'Tag',sprintf('%s%s','DayPlot_',num2str(finaldays(dd))));
 plot(ref(j_,1),ref(j_,6),'g-s','MarkerSize',6,'MarkerFaceColor','g');
 hold on; plot(inst2(j,1),inst2(j,6),'b--d','MarkerSize',7,'MarkerFaceColor','b');
          plot(inst2(j,1),inst2(j,10),'r:.','MarkerSize',9);
@@ -572,10 +583,10 @@ datetick('x',15,'keepLimits','KeepTicks');
 set(gca,'YLim',[min(inst2(j,10))-8 max(inst2(j,10))+8])
 end
 
-figure(max(findobj('tag','_GlobalPlot_')));
+figure(maxf(findobj('tag','_GlobalPlot_')));
 printfiles_report(gcf,Cal.dir_figs,'Height',7,'Width',13);
 
-printfiles_report(min(findobj('-regexp','Tag','^DayPlot_')):max(findobj('-regexp','Tag','^DayPlot_')),...
+printfiles_report(double(f(1)):double(f(end)),...
                               Cal.dir_figs,'Width',14.5,'Height',7.5);
 graph2latex(Cal.file_latex,{'summaryplot','DayPlot_'},brw_str{n_inst},'scale',0.8);
 
