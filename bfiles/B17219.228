@@ -36,4 +36,37 @@ co01:04:32hg: Lamp not on... hg test terminated F1= 0 F4= 20
 co01:04:34hg: Lamp not detected f1= 0 f4= 20
 co01:04:41fr: Running fr from sc0621a line -200
 co01:06:22fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
-co01:08:13fr: Micrometer #2 discrepancy=-9 Now set to offset = 1
+co01:08:13fr: Micrometer #2 discrepancy=-9 Now set to offset = 1
+co01:09:57fr: Micrometer #1 discrepancy=-67 Now set to o3 offset =-66
+co01:11:49fr: Micrometer #2 discrepancy= 0 Now set to offset = 1
+co01:13:32fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
+co01:15:24fr: Micrometer #2 discrepancy= 2 Now set to offset = 1
+co01:17:08fr: Micrometer #1 discrepancy=-70 Now set to o3 offset =-66
+co01:18:59fr: Micrometer #2 discrepancy= 0 Now set to offset = 1
+co01:20:43fr: Micrometer #1 discrepancy=-63 Now set to o3 offset =-66
+co01:22:35fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:24:18fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:26:10fr: Micrometer #2 discrepancy= 2 Now set to offset = 1
+co01:27:54fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:29:45fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:31:29fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:33:21fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:35:05fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
+co01:36:57fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:38:40fr: Micrometer #1 discrepancy=-68 Now set to o3 offset =-66
+co01:40:32fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:42:15fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:44:07fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:45:51fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:47:43fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:49:27fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:51:19fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:53:02fr: Micrometer #1 discrepancy=-67 Now set to o3 offset =-66
+co01:54:54fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co01:56:38fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co01:58:30fr: Micrometer #2 discrepancy=-1 Now set to offset = 1
+co02:00:13fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
+co02:02:05fr: Micrometer #2 discrepancy= 3 Now set to offset = 1
+co02:03:49fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co02:05:41fr: Micrometer #2 discrepancy= 0 Now set to offset = 1
+co02:07:25fr: Micrometer #1 discrepancy=-67 Now set to o3 offset =-66
