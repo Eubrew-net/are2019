@@ -1853,4 +1853,14 @@ co23:31:07te: Running te from o30619a line  100.85
 hk23:31:10 24 25 24 7.3 1.67-99 22
 co23:31:12skc: Waiting until end of local day.
 co23:41:12skc: Waiting until end of local day.
-co23:51:12skc: Waiting until end of local day.
+co23:51:12skc: Waiting until end of local day.
+co00:00:00skc: Waiting until end of local day.
+co00:10:00skc: Waiting until end of local day.
+co00:20:00skc: Waiting until end of local day.
+ed
+co00:28:34ed: Starting EndOfDay
+co00:28:35ed: The moon is available for FM. Skipping some commands in ED
+co00:28:35o3: Running o3 from o30619a line -200
+co00:28:38af: Running af from o30619a line -200
+co00:28:38af: Auto FR/HP/HG is now OFF
+co00:28:38ozsum: Running ozsum from o30619a line -200
