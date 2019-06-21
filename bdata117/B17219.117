@@ -591,4 +591,20 @@ co14:16:21fr: Micrometer #1 reference found at step 6356(+CAL)= 6642 Now set t
 co14:16:43fr: Going to menu
 co14:16:58re: Running re from menu
 co14:18:16re: Zenith discrepancy =  0
-co14:19:37re: Azimuth discrepancy = -2
+co14:19:37re: Azimuth discrepancy = -2
+co14:19:54re: Found diode at step -242 Moving filterwheel #3 to o3 position at  242
+co14:21:04pdfrfr: Running pdfrfr from menu
+co14:21:09fr: Running fr from menu
+co14:24:29fr: Micrometer #1 reference found at step 5429(+CAL)= 5715 Now set to o3 offset = 5715
+co14:28:11fr: Micrometer #1 reference found at step 5429(+CAL)= 5715 Now set to o3 offset = 5715
+co14:28:48pdhg: Running pdhg from menu
+hk14:28:57 32 31 28-99-99-99-99
+co14:29:02hgfw2: HG FW#2 at step  0
+co14:31:59hg: DEL key pressed
+hk14:32:06 32 31 28-99-99-99-99
+hgscan 0wide 302warm= 3.02166714:32:06JUN 21/19 1844 12735 24930 36841 52990 67894 78952 89221 92731 91801 82636 71306 57360 45735 31609 17230 10140 7112 4330 3231 3201 4600 7345 10401 18797 33198 48378 61915 75679 88689 98304 100156 97112 87490 74866 58733 41497 26734 13593 2483
+hg14:33:28 .9985 269.884 270 171325 32-16
+hgscan 0wide 302warm= 3.02166714:33:28JUN 21/19 755 900 6155 19532 33549 50726 67466 82359 96423 103778 106329 100827 89170 75943 59841 47430 31237 15739 10495 7313 7232 10655 16108 32251 48458 61594 77793 92596 104017 110359 107718 100324 85007 70589 52242 35684 20519 7002 902 764
+hg14:34:49 .9998 286.4234 286 216688 32 0
+ap14:35:06 31.52 30.80 27.54 1687.14 14.97 5.12-14.94 23.86 .00 12.53 .00 .00 5.10-7.95 .01 .04 31.53 30.8 27.55 1709.02 14.48 5.08-14.95 24.1 0 12.53 0 0 5.1-7.95 .01 10.62
+co14:35:45pdslhg: Running pdslhg from menu
