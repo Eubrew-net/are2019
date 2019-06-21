@@ -576,4 +576,19 @@ co13:56:11si: Running si from menu
 co13:58:39si: New SI, HC = -8, NC =  380  Old = -8 ,  390
 co13:59:14skc: Starting schedule o30621a
 hk13:59:17 32 31 28-99-99-99-99
-co13:59:33hgfw2: HG FW#2 at step  0
+co13:59:33hgfw2: HG FW#2 at step  0
+co14:04:21hg: Lamp not on... hg test terminated F1= 6 F4= 113
+co14:04:21hg: Lamp not detected f1= 6 f4= 113
+co14:04:23fr: Running fr from o30621a
+co14:07:41fr: Micrometer #1 reference found at step 4489(+CAL)= 4775 Now set to o3 offset = 5715
+hk14:08:07 32 31 29-99-99-99-99
+co14:08:09hgfw2: HG FW#2 at step  0
+co14:13:11hg: Lamp not on... hg test terminated F1= 1 F4= 274
+co14:13:11hg: Lamp not detected f1= 1 f4= 274
+co14:13:12fr: Running fr from o30621a
+co14:13:38fr: HOME key pressed
+co14:16:21fr: Micrometer #1 reference found at step 6356(+CAL)= 6642 Now set to o3 offset = 5715
+co14:16:43fr: Going to menu
+co14:16:58re: Running re from menu
+co14:18:16re: Zenith discrepancy =  0
+co14:19:37re: Azimuth discrepancy = -2
