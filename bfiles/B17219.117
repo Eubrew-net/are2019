@@ -559,4 +559,21 @@ co09:49:55menu: Brewer failed to respond 5 times
 co10:16:39start:  PROGRAM start :  JUN 21/19 at 10:16:36
 co10:16:39re: Running re from main.asc
 co10:20:37re: Reset failed  11 times. Quitting and going to the menu.
-co10:22:51da_lo: Brewer failed to respond 5 times
+co10:22:51da_lo: Brewer failed to respond 5 times
+co13:41:21start:  PROGRAM start :  JUN 21/19 at 13:41:19
+co13:41:21re: Running re from main.asc
+co13:42:39re: Zenith discrepancy =  0
+co13:43:16re: Azimuth discrepancy = -4451
+co13:43:32re: Found diode at step -242 Moving filterwheel #3 to o3 position at  242
+co13:49:56pdzesrsi: Running pdzesrsi from menu
+co13:50:02ze: Running ze from menu
+co13:50:21ze: Zenith discrepancy =  0
+co13:50:21sr: Running sr from menu
+co13:52:38sr: Azimuth discrepancy =  2
+co13:55:35sr: Azimuth Steps per revolution measured =  14645
+co13:55:35sr: Updating SR constant from  14645 to  14645
+co13:56:11si: Running si from menu
+co13:58:39si: New SI, HC = -8, NC =  380  Old = -8 ,  390
+co13:59:14skc: Starting schedule o30621a
+hk13:59:17 32 31 28-99-99-99-99
+co13:59:33hgfw2: HG FW#2 at step  0
