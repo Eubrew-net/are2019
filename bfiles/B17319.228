@@ -298,4 +298,48 @@ co08:01:04fr: Micrometer #1 discrepancy=-67 Now set to o3 offset =-66
 co08:02:56fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
 co08:04:38fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
 co08:06:30fr: Micrometer #2 discrepancy= 2 Now set to offset = 1
-co08:08:13fr: Micrometer #1 discrepancy=-64 Now set to o3 offset =-66
+co08:08:13fr: Micrometer #1 discrepancy=-64 Now set to o3 offset =-66
+co08:10:05fr: Micrometer #2 discrepancy=-1 Now set to offset = 1
+co08:11:47fr: Micrometer #1 discrepancy=-68 Now set to o3 offset =-66
+co08:13:39fr: Micrometer #2 discrepancy= 3 Now set to offset = 1
+co08:15:21fr: Micrometer #1 discrepancy=-68 Now set to o3 offset =-66
+co08:17:13fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co08:18:55fr: Micrometer #1 discrepancy=-63 Now set to o3 offset =-66
+co08:20:47fr: Micrometer #2 discrepancy=-1 Now set to offset = 1
+co08:22:30fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co08:24:22fr: Micrometer #2 discrepancy= 3 Now set to offset = 1
+co08:26:04fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co08:27:56fr: Micrometer #2 discrepancy=-1 Now set to offset = 1
+co08:29:39fr: Micrometer #1 discrepancy=-66 Now set to o3 offset =-66
+co08:31:31fr: Micrometer #2 discrepancy= 3 Now set to offset = 1
+co08:33:13fr: Micrometer #1 discrepancy=-70 Now set to o3 offset =-66
+co08:35:05fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co08:36:47fr: Micrometer #1 discrepancy=-61 Now set to o3 offset =-66
+co08:38:39fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co08:40:22fr: Micrometer #1 discrepancy=-67 Now set to o3 offset =-66
+co08:42:14fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co08:43:56fr: Micrometer #1 discrepancy=-68 Now set to o3 offset =-66
+co08:45:48fr: Micrometer #2 discrepancy=-1 Now set to offset = 1
+co08:46:48fr: HOME key pressed
+co08:47:30fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
+co08:49:22fr: Micrometer #2 discrepancy= 3 Now set to offset = 1
+co08:51:04fr: Micrometer #1 discrepancy=-67 Now set to o3 offset =-66
+co08:52:56fr: Micrometer #2 discrepancy= 1 Now set to offset = 1
+co08:54:39fr: Micrometer #1 discrepancy=-65 Now set to o3 offset =-66
+co08:54:53start:  PROGRAM start :  JUN 22/19 at 08:54:51
+co08:54:53pd: COM error  57( 9312) at 08:54:53 during pd
+co08:54:54re: Running re from main.asc
+co08:56:08re: Zenith discrepancy =  0
+co08:56:13re: Azimuth discrepancy = -1
+co08:56:19ab_sk: Running ab_sk from main.asc
+co08:56:27ab_sk: HOME key pressed
+co08:56:36mm: Running mm from menu line -200
+co09:00:37hphgfrpd: Running hphgfrpd from menu line -200
+hk09:00:51 29 30 28 10.3 3.1-99 29
+hpscan09:01:26 0 500623 10 507056 20 506830 30 507380 40 507217 50 507217 60 498992 70 450555 80 377036 90 301787 100 226787 110 147225 120 67235 130 9323 140 1948 150 1663 160 1412
+hp09:03:06 .9956816 519734.6 33.9 29
+hpscan09:03:09 0 170416 10 244487 20 323982 30 400095 40 468675 50 507688 60 509677 70 509752 80 508769 90 508167 100 507107 110 488353 120 423472 130 347046 140 273122 150 195882 160 115724
+hp09:04:51 .9896347 529927.2 76 29
+hk09:05:33 29 30 27 10.1 3.05-99 29
+co09:05:39hgfw2: HG FW#2 at step  64
+hk09:08:04 29 30 28 10.1 3.06-99 30
