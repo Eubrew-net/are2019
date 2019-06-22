@@ -1754,4 +1754,26 @@ co10:32:33du: Running du from menu line -200
 co10:32:33dsp1: Running dsp1 from menu line -200
 co10:47:06dsp1: Still doing DSP
 co11:00:33dsp1: Still doing DSP
-co11:01:34dsp1: Too bright, ( 354667 at step  6622), restarting line  5 with ND 2
+co11:01:34dsp1: Too bright, ( 354667 at step  6622), restarting line  5 with ND 2
+co11:12:23dsp1: Still doing DSP
+hk11:12:41 34 34 31 3.2 1.21-99-99
+co11:13:04hgfw2: HG FW#2 at step  0
+hk11:13:13 34 33 31 2.6 .92-99-99
+hgscan 0wide 302warm= 671.073311:13:13JUN 18/19 842 3529 9526 18145 29373 40134 52952 63309 72313 76446 77571 74326 65692 56902 45736 34660 23587 15514 9783 6827 6654 9753 15237 23450 34646 45830 57153 65892 74605 78012 76865 73398 64809 53713 40930 29958 18750 10205 3778 870
+hg11:14:30 .9994 285.1987 285 155583 34-1
+co11:14:31checkhg: Running checkhg from menu line -200
+co11:14:31checkhg: Last HG had to adjust the micrometer by at least  1
+co11:20:11pdcn: Running pdcn from menu line -200
+co11:20:17cn: Running cn from menu line -200
+co11:20:17cn: Starting schedule o30622b
+co11:20:18skc: General file error in schedule o30622b
+co11:20:27dpcn: Running dpcn from menu line -200
+co11:20:32dp: Running dp from menu line -200
+co11:20:33dp: Doing dispersion with internal HG.
+hk11:20:36 35 34 31 2.6 .97-99-99
+co11:20:41hgfw2: HG FW#2 at step  0
+hk11:22:44 34 34 31 2.6 .97-99-99
+hgscan 0wide 302warm= 211:22:44JUN 18/19 749 2771 8021 15469 23411 31717 39220 46231 52761 55673 56580 54475 48140 41684 33789 25586 17508 11135 6779 4724 4675 6693 10970 17174 25686 34304 42880 49475 56040 58822 58078 55441 48680 40411 30935 22093 14125 7478 2607 718
+hg11:24:02 .9992 284.8668 285 115402 34-1
+co11:24:03dsp1: Running dsp1 from menu line -200
+co11:31:20dsp1: Still doing DSP
