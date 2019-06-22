@@ -38,7 +38,7 @@ close all
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
                      'control_flag',1,'residual_limit',35,...
-                     'hg_time',30,'one_flag',1);
+                     'hg_time',30,'one_flag',0);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
@@ -89,7 +89,7 @@ res={}; detail={}; DSP_QUAD={}; QUAD_SUM={}; QUAD_DETAIL={};
 CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
-ldsp=cellstr(cat(1,l.name));
+ldsp=cellstr(cat(1,l.name))
 %ldsp=ldsp(end-3:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
