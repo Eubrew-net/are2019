@@ -1314,4 +1314,16 @@ co21:24:46ci: Running ci from ozo0622a
 hk21:24:59 25 26 25-99-99-99-99
 hk21:34:16 25 26 25-99-99-99-99
 co21:34:19hgfw2: HG FW#2 at step  0
-hk21:39:23 25 26 25-99-99-99-99
+hk21:39:23 25 26 25-99-99-99-99
+hgscan 0wide 302warm= 4.98833321:39:23JUN 22/19 911 1115 9170 25973 44418 63312 84090 105820 123592 131844 135048 128301 112424 97027 78763 59481 39617 21803 15248 10055 10100 15359 21818 39402 59632 79212 97403 112183 128154 134943 131533 122813 106185 83661 63708 43372 24945 9594 1072 904
+hg21:40:45 .9998 286.6587 287 269991 25 1
+co21:40:46hs: Running hs from ozo0622a
+co21:40:47hs: Bad or missing hs.cfg file creating new defaults.
+hk21:41:06 25 26 25-99-99-99-99
+co21:45:59hs: HS scan started at 21:45:59
+co21:51:50td: Running td from ozo0622a
+co21:51:59td: Time correction  8.5 seconds
+co21:51:59hl: Running hl from ozo0622a
+co21:51:59hl: Bad or missing HL.cfg file creating new defaults.
+hk21:52:18 25 26 24-99-99-99-99
+co21:57:11hl: HL scan started at 21:57:11
