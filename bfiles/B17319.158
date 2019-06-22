@@ -756,3 +756,12 @@ hk14:08:19 33 34 35  8.71  3.29-99-99
 co14:08:19az: Running az
 co14:08:35az: Azimuth discrepancy = -7226
 hk14:08:52 33 34 35  8.70  3.25-99-99
+co14:08:52si: Running si
+co14:23:02si: New SI, HC = -14, NC = -50  Old = -14 , -25
+hk14:23:16 33 33 35  8.53  3.09-99-99
+co14:23:16ux: Running ux from ozo0622a line 23.4
+co14:24:06ux: UV extended scan started
+co14:30:21ux: UV extended scan finished, incident DUV = 185.849560753812 mW/m^2
+hk14:33:20 33 33 34  8.36  2.98-99-99
+hk14:38:56 33 33 34  8.36  3.05-99-99
+hk14:39:10 33 33 34  8.36  3.03-99-99
