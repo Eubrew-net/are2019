@@ -394,4 +394,9 @@ hg07:53:11 .9979 1018.662 1015 168648 24-2
 hgscan 64wide 296warm= 426.698407:53:12JUN 22/19 151 172 1240 13751 28369 43232 57390 71554 86179 94830 95499 91188 77767 62902 47746 33545 19209 5360 193 124 113 188 5189 19253 34050 48783 64599 79617 94028 99576 98945 89464 74356 59907 44995 30307 15191 1571 188 166
 hg07:54:51 .9982 1016.833 1017 195075 24 0
 co07:54:54dsp1: Running dsp1 from menu line -200
-co08:07:49dsp1: Still doing DSP
+co08:07:49dsp1: Still doing DSP
+co08:19:46dsp1: Still doing DSP
+co08:20:33dsp1: Too bright, ( 356683 at step  5930), restarting line  6 with ND 2
+co08:21:04dsp1: Too bright, ( 302565 at step  5990), restarting line  6 with ND 3
+co08:32:42dsp1: Still doing DSP
+co08:33:39dsp1: Too bright, ( 304502 at step  8100), restarting line  7 with ND 2
