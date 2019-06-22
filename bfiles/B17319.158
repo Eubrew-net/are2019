@@ -655,3 +655,22 @@ hk10:33:52 31 31 33 16.92  5.54-99-99
 co10:33:52ux: Running ux from ozo0622a line -34.93
 co10:34:35ux: UV extended scan started
 hk10:35:58 31 32 33 16.59  5.46-99-99
+co10:35:58fr: Running fr
+co10:38:01fr: Micrometer #1 discrepancy=4893 Now set to o3 offset =0
+co10:40:53fr: Micrometer #2 discrepancy=5339 Now set to offset=0
+hk10:42:34 32 31 32 15.59  5.06-99-99
+co10:42:34ux: Running ux from ozo0622a line -34.93
+hk10:42:42 31 31 32 15.59  5.08-99-99
+co10:42:42hp: Running hp from ozo0622a line -34.93
+co10:46:45ze: Zenith discrepancy = 0
+co10:46:51Az: Azimuth discrepancy = 0
+hk10:48:19 31 32 33 14.77  4.89-99-99
+co10:48:19ds: Running ds from ozo0622a line -34.93
+zsa0 649.660620 14 11 10 8 11 13 36rat     0.000     0.000     0.000    19.796
+co10:57:31ap: Running ap
+ap10:57:57 31.70 32.08 32.27 1339.94 11.98 5.00 -12.13 23.96 0.00 29.14 31.89 28.47 4.96 -4.98 0.00 0.00 0.00 0.01 1.37 2.37 13.62 4.62 1.97 31.70 32.18 32.37 1337.98 11.98 5.00 -12.13 23.96 0.00 29.14 32.27 28.66 4.96 -4.98 1.50 12.41 0.32 10.33 2.87 2.52 13.62 4.65 2.07
+hk11:01:28 31 29 28 40.00 11.59-99-99
+co11:01:28fr: Running fr
+co11:03:31fr: Micrometer #1 discrepancy=-1343 Now set to o3 offset =0
+co11:05:53fr: Micrometer #2 discrepancy=5339 Now set to offset=0
+hk11:09:36 30 31 30 27.28  8.58-99-99
