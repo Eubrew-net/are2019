@@ -865,4 +865,26 @@ co15:51:34hgfw2: HG FW#2 at step  0
 hk15:56:17 33 33 30-99-99-99-99
 hgscan 0wide 302warm= 4.98833315:56:17JUN 22/19 745 930 9473 23682 36096 50228 66726 83322 100657 106650 108723 101385 90337 76139 61006 44800 29027 15594 10264 6857 6944 10399 15684 29526 45574 62199 77357 92133 104187 111299 109901 103443 86335 68993 51473 37438 24876 10233 1002 812
 hg15:57:39 .9998 285.7648 286 220022 33 0
-co15:59:15ex: Running ex from menu
+co15:59:15ex: Running ex from menu
+co16:02:59start:  PROGRAM start :  JUN 22/19 at 16:02:55
+hk16:02:59 33 33 29-99-99-99-99
+co16:03:10pdazzesrsi: Running pdazzesrsi from menu
+co16:03:16az: Running az from menu
+co16:04:28az: Azimuth discrepancy = -4116
+co16:05:24ze: Running ze from menu
+co16:05:43ze: Zenith discrepancy =  0
+co16:05:43sr: Running sr from menu
+co16:08:05sr: Azimuth discrepancy = -1
+co16:11:01sr: Azimuth Steps per revolution measured =  14645
+co16:11:01sr: Updating SR constant from  14645 to  14645
+co16:11:26si: Running si from menu
+co16:14:09si: New SI, HC = -8, NC =  380  Old = -8 ,  380
+co16:14:43ex: Running ex from menu
+co16:15:10start:  PROGRAM start :  JUN 22/19 at 16:15:05
+hk16:15:10 33 33 30-99-99-99-99
+co16:15:22skc: Starting schedule ozo0622a
+co16:15:22td: Running td from ozo0622a
+co16:15:23td: Time correction  .2 seconds
+co16:15:23ux: Running ux from ozo0622a
+hk16:15:26 32 32 30-99-99-99-99
+co16:15:58ux: UV extended  scan started
