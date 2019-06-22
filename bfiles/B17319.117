@@ -546,4 +546,19 @@ co09:35:56du: Running du from menu
 co09:35:56dsp1: Running dsp1 from menu
 co10:05:45dsp1: Too bright, ( 310064 at step  6140), restarting line  6 with ND1
 co10:20:17dsp1: Too bright, ( 353767 at step  8250), restarting line  7 with ND1
-co10:20:44dsp1: Too bright, ( 326486 at step  8270), restarting line  7 with ND2
+co10:20:44dsp1: Too bright, ( 326486 at step  8270), restarting line  7 with ND2
+co10:46:30dsp1: Too bright, ( 323628 at step  9247), restarting line  9 with ND1
+co10:46:52dsp1: Too bright, ( 361429 at step  9267), restarting line  9 with ND2
+co10:47:23dsp1: Too bright, ( 304773 at step  9307), restarting line  9 with ND3
+hk10:50:46 34 33 31-99-99-99-99
+co10:51:11hgfw2: HG FW#2 at step  0
+hk10:51:19 34 33 31-99-99-99-99
+hgscan 0wide 302warm= 646.188410:51:19JUN 22/19 796 1541 10574 25279 39957 56463 73256 91365 108581 115045 117215 109332 96478 79959 64487 47618 29310 16187 11790 7732 7683 11965 16286 29848 48058 65168 81126 96981 110631 118666 116140 110757 92527 74694 56992 39789 26154 11302 1602 816
+hg10:52:41 .9999 285.2022 285 235881 34-1
+co10:52:42checkhg: Running checkhg from menu
+co10:52:42checkhg: Last HG had to adjust the micrometer by at least  1
+co10:58:23dpcn: Running dpcn from menu
+co10:58:29dp: Running dp from menu
+co10:58:29dp: Doing dispersion with internal HG.
+hk10:58:32 34 34 30-99-99-99-99
+co10:58:37hgfw2: HG FW#2 at step  0
