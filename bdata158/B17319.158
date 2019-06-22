@@ -730,4 +730,29 @@ co13:14:22hgfw2: HG FW#2 at step  0
 hk13:16:29 32 32 33 10.7 3.59-99 29
 hgscan 0wide 296warm= 213:16:29JUN 22/19 396 471 2149 23042 55274 83492 111184 138467 173447 192879 193580 183179 153648 124729 93847 64658 32395 3315 306 294 285 316 3355 32582 65857 94644 125329 155700 186531 196696 195929 176036 142204 114366 85846 57484 24713 2388 494 417
 hg13:18:02 .9987 1015.253 1015 390276 32 0
-co13:18:05dsp1: Running dsp1 from menu
+co13:18:05dsp1: Running dsp1 from menu
+hk13:42:27 32 33 34 9.7 3.44-99 31
+co13:42:28hgfw2: HG FW#2 at step  0
+hk13:42:35 32 33 34 9.7 3.44-99 31
+hgscan 0wide 296warm= 23.9066713:42:35JUN 22/19 372 465 1505 26699 56731 87226 114814 151293 182311 201720 202494 191391 162768 130779 96853 64161 31542 4264 291 280 280 306 4064 31353 64038 97288 130603 161451 191802 202492 202479 181406 150049 116982 87537 57935 27706 1646 454 377
+hg13:44:08 .9992 1015.093 1015 404986 32 0
+co13:45:07cn: Running cn from menu
+co13:45:07cn: Starting schedule 
+co13:45:22skc: Starting schedule jawohl
+co13:45:22td: Running td from jawohl
+co13:45:24td: Time correction  0 seconds
+co13:45:29ap: HOME key pressed
+co13:45:30ap: Going to menu
+co13:45:39ex: Running ex from menuhk13:46:00 32 35 34  9.56  3.81-99-99
+hk13:46:23 32 35 34  9.56  3.81-99-99
+co13:46:23ux: Running ux from ozo0622a line 15.02
+co13:47:19ux: UV extended scan started
+co13:53:34ux: UV extended scan finished, incident DUV = 214.657001021023 mW/m^2
+hk13:56:33 32 35 34  9.22  3.60-99-99
+co13:56:33hp: Running hp from ozo0622a line 15.02
+hk13:58:47 32 35 35  9.23  3.66-99-99
+co13:58:47si: Running si
+hk14:08:19 33 34 35  8.71  3.29-99-99
+co14:08:19az: Running az
+co14:08:35az: Azimuth discrepancy = -7226
+hk14:08:52 33 34 35  8.70  3.25-99-99
