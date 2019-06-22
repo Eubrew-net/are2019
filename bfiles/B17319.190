@@ -399,4 +399,21 @@ co08:19:46dsp1: Still doing DSP
 co08:20:33dsp1: Too bright, ( 356683 at step  5930), restarting line  6 with ND 2
 co08:21:04dsp1: Too bright, ( 302565 at step  5990), restarting line  6 with ND 3
 co08:32:42dsp1: Still doing DSP
-co08:33:39dsp1: Too bright, ( 304502 at step  8100), restarting line  7 with ND 2
+co08:33:39dsp1: Too bright, ( 304502 at step  8100), restarting line  7 with ND 2
+co08:45:17dsp1: Still doing DSP
+co08:55:21dsp1: Still doing DSP
+co08:55:52dsp1: Too bright, ( 319061 at step  9090), restarting line  9 with ND 2
+co08:57:48dsp1: Still doing DSP
+co08:59:38dsp1: Finished DSP on Cd via PORT Uin o3 mode.
+hk08:59:50 27 28 27 2.9 .78-99 28
+hpscan09:00:37 0 112276 10 163670 20 219000 30 276424 40 328073 50 372959 60 381814 70 383514 80 385081 90 384289 100 382196 110 359017 120 308508 130 254163 140 202467 150 150697 160 96673
+hp09:01:38 .99297 399172.3 78 27
+co09:02:11hgfw2: HG FW#2 at step  64
+hk09:04:20 28 28 28 2.9 .78-99 27
+hgscan 64wide 296warm= 117.45509:04:21JUN 22/19 158 168 1548 16984 35176 53447 70696 88058 105955 116981 118108 112669 95905 77571 59061 41386 23753 6725 234 144 116 208 6478 24165 41843 60012 79374 97655 115018 121437 120682 109254 90947 72863 55127 36901 18312 1860 194 153
+hg09:06:01 .9981 1016.752 1017 239545 28 0
+co09:06:04checkhg: Running checkhg from menu line -200
+co09:06:05checkhg: Last HG was OK
+co09:09:45dsp: Running dsp from menu line -200
+co09:09:57dsp: Doing dispersion test with Hg (internal lamp)
+hk09:10:03 28 28 28 2.9 .78-99 28
