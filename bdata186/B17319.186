@@ -645,4 +645,8 @@ hgscan 0wide 302warm= 4.99500109:42:25JUN 22/19 880 1414 9574 27661 4
 hg09:43:37 .9994 282.2437 282 297633 28-1
 co09:43:38du: Running du from menu
 co09:43:38du: Running du from menu
-co09:43:38dsp1: Running dsp1 from menu
+co09:43:38dsp1: Running dsp1 from menu
+co10:06:30dsp1: Too bright, ( 647758 at step  5897), restarting line  6 with ND1
+co10:06:50dsp1: Too bright, ( 433363 at step  5907), restarting line  6 with ND2
+co10:07:16dsp1: Too bright, ( 300826 at step  5937), restarting line  6 with ND3
+co10:18:40dsp1: Too bright, ( 385211 at step  8036), restarting line  7 with ND1
