@@ -689,4 +689,20 @@ hk11:30:42 30 32 32 23.38  7.86-99-99
 
 co11:38:46start:  PROGRAM start :  JUN 22/19 at 11:38:44
 co11:38:46ab_sk: Running ab_sk from main.asc
-co11:38:48ab_sk: HOME key pressed
+co11:38:48ab_sk: HOME key pressed
+co11:40:42dsp: Running dsp from menu
+co11:40:54dsp: Doing dispersion test with Cd (UV port)
+hk11:40:59 30 32 32 19.9 6.7-99 30
+hpscan11:41:30 0 88991 10 132514 20 180187 30 240223 40 286422 50 325677 60 338887 70 342282 80 342452 90 341730 100 340766 110 323019 120 281316 130 232280 140 186752 150 131032 160 79823
+hp11:42:17 .9932031 355306.1 79.9 30
+hk11:42:49 30 32 32 19.4 6.54-99 30
+co11:42:50hgfw2: HG FW#2 at step  0
+co11:43:10hg: DEL key pressed
+hk11:43:17 30 32 32 19.2 6.48-99 30
+hgscan 0wide 296warm= .348333311:43:17JUN 22/19 346 412 768 19377 46581 71926 94462 122114 147950 168990 170387 161346 134454 107879 81911 55457 29740 4479 281 267 247 283 4529 30492 57095 85129 112436 140680 170180 180055 179274 158461 132077 103304 78621 51681 22622 1108 449 369
+hg11:44:50 .999 1015.319 1015 350442 30 0
+co11:44:52du: Running du from menu
+co11:44:53du: Running du from menu
+co11:44:53dsp1: Running dsp1 from menu
+co12:09:03dsp1: Too bright, ( 597692 at step  5911), restarting line  6 with ND1
+co12:09:24dsp1: Too bright, ( 390824 at step  5921), restarting line  6 with ND2
