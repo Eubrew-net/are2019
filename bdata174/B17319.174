@@ -518,4 +518,10 @@ co09:41:01uv: UV extended  scan finished, incident DUV =  17.75841 mW/m^2
 hk09:41:07 29 29 27 7 2.01-99 29
 co09:41:23uv: UV extended  scan started
 co09:46:58uv: UV extended  scan finished, incident DUV =  17.92718 mW/m^2
-co09:46:59dsp1: Running dsp1 from menu line -200
+co09:46:59dsp1: Running dsp1 from menu line -200
+co09:59:17dsp1: Still doing DSP
+co09:59:50dsp1: Too bright, ( 751716 at step  5895), restarting line  5 with ND 2
+co10:00:13dsp1: Too bright, ( 372958 at step  5915), restarting line  5 with ND 4
+co10:11:54dsp1: Still doing DSP
+co10:12:43dsp1: Too bright, ( 318513 at step  8087), restarting line  6 with ND 1
+co10:24:23dsp1: Still doing DSP
