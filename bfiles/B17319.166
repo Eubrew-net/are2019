@@ -440,4 +440,14 @@ co08:45:00dsp1: Running dsp1 from menu
 co09:06:45dsp1: Too bright, ( 382123 at step  6112), restarting line  6 with ND1
 co09:07:12dsp1: Too bright, ( 306268 at step  6152), restarting line  6 with ND2
 co09:17:59dsp1: Too bright, ( 300096 at step  8208), restarting line  7 with ND1
-co09:18:20dsp1: Too bright, ( 314288 at step  8238), restarting line  7 with ND2
+co09:18:20dsp1: Too bright, ( 314288 at step  8238), restarting line  7 with ND2
+co09:37:36dsp1: Too bright, ( 316650 at step  9198), restarting line  9 with ND1
+co09:37:55dsp1: Too bright, ( 376557 at step  9228), restarting line  9 with ND2
+hk09:40:07 28 28 27 21.7 5.9-99 26
+co09:40:23hgfw2: HG FW#2 at step  0
+hk09:42:25 29 28 27 22.6 6.12-99 26
+hgscan 0wide 302warm= 577.306609:42:25JUN 22/19 852 1151 9462 28558 48494 71572 93917 117619 139071 149870 152538 143033 126202 106316 83956 61171 38531 20174 13766 8908 8818 13850 20519 39172 61954 85084 107978 127360 145350 154998 152002 142459 120631 96014 71719 49301 29455 9999 1194 922
+hg09:43:26 .9997 282.8757 283 307536 29 0
+co09:43:27checkhg: Running checkhg from menu
+co09:43:27checkhg: Last HG was OK
+co09:45:18ex: Running ex from menu
