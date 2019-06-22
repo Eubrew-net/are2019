@@ -416,4 +416,37 @@ co09:06:04checkhg: Running checkhg from menu line -200
 co09:06:05checkhg: Last HG was OK
 co09:09:45dsp: Running dsp from menu line -200
 co09:09:57dsp: Doing dispersion test with Hg (internal lamp)
-hk09:10:03 28 28 28 2.9 .78-99 28
+hk09:10:03 28 28 28 2.9 .78-99 28
+hpscan09:10:35 0 95528 10 146405 20 201392 30 256419 40 310100 50 359637 60 378854 70 381418 80 382698 90 382314 100 381510 110 368818 120 322614 130 268228 140 217885 150 166252 160 113215
+hp09:11:35 .9931111 397062.4 81.3 28
+co09:12:08hgfw2: HG FW#2 at step  64
+hk09:14:16 28 28 28 2.9 .78-99 27
+hgscan 64wide 296warm= 436.661709:14:16JUN 22/19 143 166 1513 15985 32837 50029 66573 82725 99208 109989 111019 105991 89974 73173 55798 39003 22249 6245 212 113 104 213 6084 22730 39674 56846 75055 92949 109684 115658 115053 104041 86733 69481 52589 35469 17750 1825 199 154
+hg09:15:57 .9981 1016.781 1017 226677 28 0
+co09:16:00lo: Running lo from menu line -200
+co09:16:01w2: Running w2 from menu line -200
+co09:26:03dsp1: Running dsp1 from menu line -200
+co09:30:38dsp1: Still doing DSP
+co09:31:17dsp1: Too bright, ( 314119 at step  1873), restarting line  2 with ND 1
+co09:38:59dsp1: Still doing DSP
+co09:51:21dsp1: Still doing DSP
+co09:52:11dsp1: Finished DSP on HG via PORT Iin o3 mode.
+hk09:52:23 29 29 28 2.9 .82-99 28
+hpscan09:52:53 0 86070 10 136826 20 190981 30 246280 40 298064 50 349136 60 376788 70 380157 80 382036 90 382391 100 381207 110 372938 120 330849 130 277327 140 225784 150 174424 160 121222
+hp09:53:53 .9938202 396281.5 83.3 29
+co09:54:26hgfw2: HG FW#2 at step  64
+hk09:56:35 29 29 28 2.9 .82-99 28
+hgscan 64wide 296warm= 159.748309:56:36JUN 22/19 145 185 1692 17644 36572 55707 73602 91720 110493 121746 122838 116765 99380 80776 61342 43042 24596 6924 222 117 118 223 6732 24641 43593 62066 81797 101584 119284 126143 125171 113694 94727 75557 57531 38462 19213 2019 215 167
+hg09:58:16 .9981 1016.827 1017 248981 29 0
+co09:58:19checkhg: Running checkhg from menu line -200
+co09:58:20checkhg: Last HG was OK
+co10:00:29ru: Running ru from menu line -200
+co10:00:31ru: Giving SB time to complete motor movements.
+co10:03:56start:  PROGRAM start :  JUN 22/19 at 10:03:16
+co10:03:56skc: Starting schedule o30622a
+co10:03:58td: Julian day = 173
+co10:04:00td: Time correction  .2 seconds
+co10:04:00td: Julian day = 173
+co10:04:03ua: UV timed  skipped  10.06667  10.5
+hk10:04:08 29 29 29 2.9 .83-99 28
+co10:04:57ux: UV extended  scan started
