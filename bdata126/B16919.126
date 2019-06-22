@@ -1739,3 +1739,16 @@ hgscan 0wide 302warm=222:05:11Jun 18/19 726 2206 7478 13630 21055 30
 hg22:06:41 0.999 286.236 286123926 26 0
 hk22:06:53 26 26 26  2.66  0.13-99-99
 co22:06:53fi: Running fi from sc0618b line 102.46
+
+co10:25:19start:  PROGRAM start :  JUN 18/19 at 10:25:14
+hk10:25:19 33 33 31 2.6 .92-99-99
+co10:28:50dsp: Running dsp from menu line -200
+co10:29:04dsp: Doing dispersion test with Cd (UV port)
+hk10:29:07 33 33 31 1.9 .69-99-99
+co10:29:12hgfw2: HG FW#2 at step  0
+hk10:31:15 34 33 31 2.6 .92-99-99
+hgscan 0wide 302warm= 210:31:15JUN 18/19 816 2832 10605 18468 28225 40796 53553 66623 76791 82319 83805 81226 74106 63948 53296 40577 28481 17097 11583 8309 8315 11470 16932 28209 40703 53960 65249 75760 83635 86685 85396 80268 69914 55850 43395 29806 19664 11574 3226 875
+hg10:32:32 .9992 287.0812 287 170490 34 1
+co10:32:33du: Running du from menu line -200
+co10:32:33du: Running du from menu line -200
+co10:32:33dsp1: Running dsp1 from menu line -200
