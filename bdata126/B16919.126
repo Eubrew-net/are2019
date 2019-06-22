@@ -1751,4 +1751,7 @@ hgscan 0wide 302warm= 210:31:15JUN 18/19 816 2832 10605 18468 28225 
 hg10:32:32 .9992 287.0812 287 170490 34 1
 co10:32:33du: Running du from menu line -200
 co10:32:33du: Running du from menu line -200
-co10:32:33dsp1: Running dsp1 from menu line -200
+co10:32:33dsp1: Running dsp1 from menu line -200
+co10:47:06dsp1: Still doing DSP
+co11:00:33dsp1: Still doing DSP
+co11:01:34dsp1: Too bright, ( 354667 at step  6622), restarting line  5 with ND 2
