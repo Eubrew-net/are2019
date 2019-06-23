@@ -197,7 +197,21 @@ for t=d_p % Siempre el pen�ltimo y �ltimo procesados (si hay m�s de uno)
      idx=idx+1;
  end
 %%
-multiplexer 74HC4051
+r=cell2mat(res');
+r=reshape(r,15,[],9,2); 
+% quad
+mq=median(squeeze(r(7,:,:,1)))
+% cubic
+mc=round(median(squeeze(r(7,:,:,2)))*10000)/10000
+figure;
+plot(dates,squeeze(r(7,:,2,1)),'r:o'); hold on
+plot(dates,squeeze(r(7,:,2,2)),'b:+')
+hline(mq(:,2),'r',sprintf(' %.4f ',mq));
+hline(mc(:,2),'b',sprintf(' %.4f ',mc));
+legend('quad','cubic')
+datetick;
+grid
+title(Cal.brw_name(Cal.n_inst))
 %% Eto para escribir resultados a hoja excel.
 %  for dsps=1:length(ldsp)
 %      legend1={'step',sprintf('ICF (%d, %d)',CSN_icf{dsps}(1),CSN_icf{dsps}(3)),'abs step','A1 Q','A1 S'};
