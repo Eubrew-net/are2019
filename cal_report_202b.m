@@ -38,14 +38,14 @@ close all
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
                      'control_flag',1,'residual_limit',50,'hg_limit',2.5,...
-                     'hg_time',60,'one_flag',1);
+                     'hg_time',60,'one_flag',0);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
                      'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                      'CSN_orig',config_def(14),'OSC',Station.OSC,...
-                     'control_flag',1,'residual_limit',15,...
-                     'hg_time',5,'one_flag',1);
+                     'control_flag',1,'residual_limit',35,...
+                     'hg_time',25,'one_flag',1);
 
 %%
 ix=sort(findobj('tag','SC_INDIVIDUAL')); figure(ix); set(get(gca,'title'),'FontSize',8);
@@ -70,7 +70,7 @@ else
 end
 
 idx=1; cal_step_error={};
-for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
+for t=d_p % Siempre el penï¿½ltimo y ï¿½ltimo procesados (si hay mï¿½s de uno)
      cal_step_error{t}=round(mean([abs(cal_step{t}(2)-cal_step{t}(3)),abs(cal_step{t}(2)-cal_step{t}(4))]));
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthSC',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\numSC',tags{idx}],size(sc_avg{t},1),...
@@ -90,7 +90,7 @@ CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
-ldsp=ldsp(end-3:end)
+ldsp=ldsp(end-3:end)%ldsp=ldsp(end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
 %    if jj==length(ldsp),confign=2; else confign=1; end
@@ -187,7 +187,7 @@ else
 end
 
 idx=1;
-for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
+for t=d_p % Siempre el penï¿½ltimo y ï¿½ltimo procesados (si hay mï¿½s de uno)
                % Solo vale para dos test's !!
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthDSP',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\Auno',tags{idx}],round(res{t}(end-1,2,1)*10000)/10000,...% O3
@@ -196,7 +196,22 @@ for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
                                       ['\UMKoffset',tags{idx}],fix(res{t}(end,1)));
      idx=idx+1;
  end
-
+%%
+r=cell2mat(res');
+r=reshape(r,15,[],9,2); 
+% quad
+mq=median(squeeze(r(7,:,:,1)))
+% cubic
+mc=round(median(squeeze(r(7,:,:,2)))*10000)/10000
+figure;
+plot(dates,squeeze(r(7,:,2,1)),'r:o'); hold on
+plot(dates,squeeze(r(7,:,2,2)),'b:+')
+hline(mq(:,2),'r',sprintf(' %.4f ',mq));
+hline(mc(:,2),'b',sprintf(' %.4f ',mc));
+legend('quad','cubic')
+datetick;
+grid
+title(Cal.brw_name(Cal.n_inst))
 %% Eto para escribir resultados a hoja excel.
 %  for dsps=1:length(ldsp)
 %      legend1={'step',sprintf('ICF (%d, %d)',CSN_icf{dsps}(1),CSN_icf{dsps}(3)),'abs step','A1 Q','A1 S'};

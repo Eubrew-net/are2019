@@ -38,7 +38,7 @@ close all
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
                      'control_flag',1,'residual_limit',35,...
-                     'hg_time',15,'one_flag',1);
+                     'hg_time',15,'one_flag',0);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
@@ -196,7 +196,8 @@ for t=d_p % Siempre el pen�ltimo y �ltimo procesados (si hay m�s de uno)
                                       ['\UMKoffset',tags{idx}],fix(res{t}(end,1)));
      idx=idx+1;
  end
-
+%%
+multiplexer 74HC4051
 %% Eto para escribir resultados a hoja excel.
 %  for dsps=1:length(ldsp)
 %      legend1={'step',sprintf('ICF (%d, %d)',CSN_icf{dsps}(1),CSN_icf{dsps}(3)),'abs step','A1 Q','A1 S'};
