@@ -68,33 +68,56 @@ Cal.Date=Date;
 % Cargamos variable sunscan
 load(Cal.file_save,'sunscan') 
 %At station
-sun=round(sunscan{Cal.n_inst,1}.cal_step{1,1}(1,2))
-error_inf=sunscan{Cal.n_inst,1}.cal_step{1,1}(1,3)
-error_sup=sunscan{Cal.n_inst,1}.cal_step{1,1}(1,4)
+sun=round(sunscan{1,Cal.n_inst}.cal_step{1,1}(1,2))
+error_inf=sunscan{1,Cal.n_inst}.cal_step{1,1}(1,3)
+error_sup=sunscan{1,Cal.n_inst}.cal_step{1,1}(1,4)
 % 
+if isnan(sun)==0
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [53 5],sun);
+end
+if isnan(error_inf)==0
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [53 7],sprintf('[%.3f - %.3f]',error_inf,error_sup);
+end
 %At campaign
-sun=round(sunscan{Cal.n_inst,1}.cal_step{1,2}(1,2))
-error_inf=sunscan{Cal.n_inst,1}.cal_step{1,2}(1,3)
-error_sup=sunscan{Cal.n_inst,1}.cal_step{1,2(1,4)
+sun=round(sunscan{1,Cal.n_inst}.cal_step{1,2}(1,2))
+error_inf=sunscan{1,Cal.n_inst}.cal_step{1,2}(1,3)
+error_sup=sunscan{1,Cal.n_inst}.cal_step{1,2(1,4)
 % 
+if isnan(sun)==0
  mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [54 5],sun);
+end
+if isnan(error_inf)==0
 mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
                  [54 7],sprintf('[%.3f - %.3f]',error_inf,error_sup);
-             
+end             
+
+if isempty(sunscan{1,Cal.n_inst}.sc_raw{1,1})~=1
+    %osc_min
+    osc=min(sunscan{1,Cal.n_inst}.sc_raw{1,1}(:,8))
+    L=find(sunscan{1,Cal.n_inst}.sc_raw{1,1}(:,8)==osc)
+    osc_min=osc*sunscan{1,Cal.n_inst}.sc_raw{1,1}(L,18)
+    mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+    [54 7],sprintf('[%.3f - %.3f]',osc_min);
+
+    %osc_max
+    osc=max(sunscan{1,Cal.n_inst}.sc_raw{1,1}(:,8))
+    L=find(sunscan{1,Cal.n_inst}.sc_raw{1,1}(:,8)==osc)
+    osc_max=osc*sunscan{1,Cal.n_inst}.sc_raw{1,1}(L,18)
+    mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+    [54 7],sprintf('[%.3f - %.3f]',osc_max);
+end
 
 %Dispersion.
 load(Cal.file_save,'dsp_summary') 
-
-dsp=dsp_summary{Cal.n_inst,end}.res{1,end}(end-1,2);
-dsp_quad=dsp(end-2,2,1)
-mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                 [61 5],dsp_quad);
-dsp_cubic=dsp(end-2,2,2)
-mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
-                 [61 3],dsp_cubic); 
+if isempty(dsp_summary{1,Cal.n_inst}.res{1,end}(end-1,2)~=1)
+    dsp=dsp_summary{1,Cal.n_inst}.res{1,end}(end-1,2);
+    mat2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                 [61 5],sprintf('Quadratic:%.4f'),dsp); 
+    dsp_cubic=dsp(end-2,2,2)
+    at2sheets_jls('1WBzxK6bPrkD6mKIzkG8BbhlQgx0zLpsvvSmhllwDCiw',sprintf('Brewer#%03d',Cal.brw(Cal.n_inst)),...
+                 [61 3],sprintf('Cubic:%.4f'),dsp_cubic);
+end
 disp('fin')             
