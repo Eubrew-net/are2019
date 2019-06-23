@@ -70,7 +70,7 @@ else
 end
 
 idx=1; cal_step_error={};
-for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
+for t=d_p % Siempre el penï¿½ltimo y ï¿½ltimo procesados (si hay mï¿½s de uno)
      cal_step_error{t}=round(mean([abs(cal_step{t}(2)-cal_step{t}(3)),abs(cal_step{t}(2)-cal_step{t}(4))]));
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthSC',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\numSC',tags{idx}],size(sc_avg{t},1),...
@@ -92,6 +92,7 @@ CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
 ldsp=ldsp(end-3:end)
+ldsp=ldsp(end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
 %    if jj==length(ldsp),confign=2; else confign=1; end
@@ -188,7 +189,7 @@ else
 end
 
 idx=1;
-for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
+for t=d_p % Siempre el penï¿½ltimo y ï¿½ltimo procesados (si hay mï¿½s de uno)
                % Solo vale para dos test's !!
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthDSP',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\Auno',tags{idx}],round(res{t}(end-1,2,1)*10000)/10000,...% O3
