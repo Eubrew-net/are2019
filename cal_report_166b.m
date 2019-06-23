@@ -92,8 +92,8 @@ l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
 ldsp=ldsp(end-3:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
-    %%
-%    if jj==length(ldsp),confign=2; else confign=1; end
+    %% new calc_step
+    if jj==length(ldsp),confign=2; else confign=1; end
     try
       [res{jj},detail{jj},DSP_QUAD{jj},QUAD_SUM{jj},QUAD_DETAIL{jj},...
        CUBIC_SUM{jj},CUBIC_DETAIL{jj},salida{jj},CSN_icf{jj},...
@@ -123,11 +123,14 @@ close all
 %% Tabla - resumen con resultados DSP y Umkehr
  QUAD_SUM_table={}; rows={}; tabla_QuadSum={}; format short g;
  if config_orig(14)~=config_def(14)
-    idx=1:length(res)+1; idx(end-1)=0; idx(end)=length(res);
+    idx=1:length(res)+1;
+    idx(end-1)=0;
+    idx(end)=length(res);
     for t=[1:length(res)-1,length(res)+1]
         tabla_QuadSum{t}=num2cell(round(res{idx(t)}(end-1,:,1)*10^4)/10^4);
     end
-    tabla_QuadSum{length(res)}=num2cell(round(res{length(res)}(res{length(res)}(:,1,1)==config_orig(14),:,1)*10^4)/10^4);
+    old_step=num2cell(round(res{length(res)}(res{length(res)}(:,1,1)==config_orig(14),:,1)*10^4)/10^4)
+    tabla_QuadSum{length(res)}=old_step(1,:)
     Q_SUM_table_RowLabels={'Current',dsp_summary{Cal.n_inst}.info{:},dsp_summary{Cal.n_inst}.info{end},'Final'};
  else
     for t=1:length(res)
