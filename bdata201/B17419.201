@@ -131,4 +131,20 @@ fv06:14:290az 68.94787 10 5596.2ze 78.599 0 6224.6
 hgscan 0wide 302warm= 31.9976606:15:46JUN 23/19 43 93 1618 6590 12026 17808 23994 30602 36757 40535 41416 39328 34205 28739 22565 16122 10274 5015 3199 2069 2078 3104 5104 10360 16463 22716 28804 34576 39787 42122 41162 37519 31223 24638 18282 12376 6844 1751 128 47
 hg06:17:01 .999 285.7652 286 83538 22 1
 co06:17:03an: Illegal command (an) in schedule sc0623a, ignoring
-dsa0 377.580620 43 24 322 3988 23893 85328 144508rat 21476.07 11429 4631.582 1436.219
+dsa0 377.580620 43 24 322 3988 23893 85328 144508rat 21476.07 11429 4631.582 1436.219
+co06:38:36re: Zenith discrepancy =  804
+co06:38:38re: Azimuth discrepancy =  0
+co06:38:44re: Micrometer #1 discrepancy = -365
+co06:38:50re: Micrometer #2 discrepancy =  422.0001
+hpscan06:39:34 0 20 10 21 20 20 30 20 40 20 50 23 60 26 70 19 80 22 90 20 100 20 110 21 120 18 130 18 140 19 150 21 160 23
+hp06:40:03 .4596091 23.31654 159.9 23
+co06:40:49fr: Micrometer #1 discrepancy= 0 Now set to o3 offset =-1
+co06:43:50fr: Micrometer #2 discrepancy=-502.0001 Now set to offset =-1
+co06:44:26fr: Micrometer #1 discrepancy=-1 Now set to o3 offset =-1
+co06:47:27fr: Micrometer #2 discrepancy=-503.0001 Now set to offset =-1
+co06:48:03fr: Micrometer #1 discrepancy=-1 Now set to o3 offset =-1
+co06:51:04fr: Micrometer #2 discrepancy=-504.0001 Now set to offset =-1
+co06:57:08fr: Micrometer #1 discrepancy=-1 Now set to o3 offset =-1
+co06:57:39fr: Micrometer #2 discrepancy=-450 Now set to offset =-1
+co06:59:15fr: Micrometer #1 discrepancy=-1 Now set to o3 offset =-1
+co06:59:45fr: Micrometer #2 discrepancy=-1 Now set to offset =-1
