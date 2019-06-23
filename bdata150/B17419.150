@@ -1827,4 +1827,22 @@ summary19:45:21JUN 23/19 89.475 12.053 25sl 0 2440 1543 575 555 66
 co19:47:55zs: ZS intensity too low ( 293/cy), skipping.
 co19:47:59zs: ZS intensity too low ( 307/cy), skipping.
 hk19:48:03 25 25 24 17.7 4.08-99-99
-co19:48:03skc: Waiting until ZA =  100.7 now  89.8
+co19:48:03skc: Waiting until ZA =  100.7 now  89.8
+hk19:58:05 25 25 24 18.4 4.22-99-99
+co19:58:05skc: Waiting until ZA =  100.7 now  92.1
+hk20:08:07 24 25 23 19 4.37-99-99
+co20:08:07skc: Waiting until ZA =  100.7 now  93.8
+hk20:18:09 24 24 23 18.4 3.99-99-99
+co20:18:09skc: Waiting until ZA =  100.7 now  95.4
+hk20:28:11 24 24 23 19 4.13-99-99
+co20:28:12skc: Waiting until ZA =  100.7 now  97
+hk20:38:13 24 24 23 18.4 3.99-99-99
+co20:38:14skc: Waiting until ZA =  100.7 now  98.6
+hk20:48:15 23 24 23 19 4.13-99-99
+co20:48:16skc: Waiting until ZA =  100.7 now  100.2
+co20:51:30ck: Running ck from o30623a line  100.72
+co20:51:31ck: Illegal command (ck) in schedule o30623a, ignoring
+co20:51:49hgfw2: HG FW#2 at step  64
+hk20:53:43 23 24 23 19 4.13-99-99
+hgscan 64wide 296warm= 417.666720:53:43JUN 23/19 116 146 1188 7922 16107 24294 32399 40406 49108 55574 56593 53926 46032 37904 29579 20848 11828 3799 125 57 54 102 3895 12238 22025 31345 40488 49543 58483 62428 62227 56216 47047 38158 29190 19849 10234 1698 159 144
+hg20:55:29 .9975 1030.465 1032 119021 23 1
