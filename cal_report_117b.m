@@ -211,7 +211,7 @@ figure;
 plot(dates,squeeze(r(7,:,2,1)),'r:o'); hold on
 plot(dates,squeeze(r(7,:,2,2)),'b:+')
 hline(mq(:,2),':r',sprintf(' %.4f ',mq));
-hline(mc(:,2),':b',sprintf(' %.4f ',mq));
+hline(mc(:,2),':b',sprintf(' %.4f ',mc));
 hline(q(2),'-r',sprintf(' %.4f ',q(2)));
 hline(c(2),'-b',sprintf(' %.4f ',c(2)));
 
