@@ -1503,4 +1503,207 @@ hg21:55:23 .9996 281.9675 282 324247 22-1
 co21:55:24fi: Running fi from ozo0622a
 hk22:00:27 22 23 22 18.6 3.82-99 21
 co23:28:06te: Running te from ozo0622a
-hk23:28:09 24 25 24 17 3.91-99 22
+hk23:28:09 24 25 24 17 3.91-99 22ed
+co00:29:00o3: Running o3 from ozo0622a
+co00:29:03af: Running af from ozo0622a
+co00:29:03af: Auto FR/HP/HG is now OFF
+co00:29:03ozsum: Running ozsum from ozo0622a
+co00:29:03aodsum: Running aodsum from ozo0622a
+co00:29:04uvsum: Running uvsum from ozo0622a
+co00:29:05nosum: Running nosum from ozo0622a
+co00:29:07zssum: Running zssum from ozo0622a
+co00:29:08fmsum: Running fmsum from ozo0622a
+co00:29:10fzsum: Running fzsum from ozo0622a
+co00:29:12slsum: Running slsum from ozo0622a
+co00:29:12rl: Running rl from ozo0622a
+co00:29:15rl:  2019  173  00 26 54   Reset Warm -> Tepid  from  2019  173  00 26 48   until  2019  173  00 26 49  . Counts: 1,0
+co00:29:16rl:  2019  173  00 27 22   Motor #10: appears stuck with a reference sensor activated. 
+co00:29:17rl:  2019  173  00 28 00   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 11.976866 Volts.
+co00:29:18rl:  2019  173  00 28 00   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.003095 Volts.
+co00:29:19rl:  2019  173  00 33 51   Motor #10: appears stuck with a reference sensor activated. 
+co00:29:21rl:  2019  173  00 39 53   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.014142 Volts.
+co00:29:22rl:  2019  173  00 39 55   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 11.991528 Volts.
+co00:29:23rl:  2019  173  00 41 59   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 12.006193 Volts.
+co00:29:24rl:  2019  173  00 41 59   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.025188 Volts.
+co00:29:26rl:  2019  173  00 42 03   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 12.020857 Volts.
+co00:29:27rl:  2019  173  00 42 06   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.036235 Volts.
+co00:29:28rl:  2019  173  00 47 36   New value set for watermark LOOP.RUN.TIME: 653.999996 millisec.
+co00:29:29rl:  2019  173  00 47 38   New value set for watermark LOOP.RUN.TIME: 714.000034 millisec.
+co00:29:31rl:  2019  173  00 59 54   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 12.035520 Volts.
+co00:29:32rl:  2019  173  01 02 40   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.047282 Volts.
+co00:29:33rl:  2019  173  01 46 32   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 12.050185 Volts.
+co00:29:34rl:  2019  173  03 10 05   New value set for watermark LOOP.RUN.TIME: 724.000025 millisec.
+co00:29:36rl:  2019  173  09 21 27   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.058329 Volts.
+co00:29:37rl:  2019  173  09 25 53   New value set for watermark SUPPLY.VOLTAGE.HIGH[-5VSEC]: 5.069376 Volts.
+co00:29:38rl:  2019  173  09 29 54   New value set for watermark SUPPLY.VOLTAGE.HIGH[-12V]: 12.064850 Volts.
+co00:29:39rl:  2019  173  13 10 37   New value set for watermark LOOP.RUN.TIME: 741.999960 millisec.
+co00:29:40rl:  All log items reported.
+co00:29:44chk_cfg: Running chk_cfg from ozo0622a
+co00:29:45chk_cfg: VERSION.FW[VERS]=2
+co00:29:45chk_cfg: VERSION.FW[REL]=2
+co00:29:45chk_cfg: MOTOR.MAX.ACC[10]=19
+co00:29:46chk_cfg: MOTOR.MAX.ACC[9]=1600
+co00:29:46chk_cfg: MOTOR.MAX.VEL[10]=32
+co00:29:47chk_cfg: MOTOR.MAX.VEL[9]=16
+co00:29:47chk_cfg: MOTOR.MAX.JERK[10]=(symbol not found)
+co00:29:48chk_cfg: MOTOR.MAX.JERK[9]=(symbol not found)
+co00:29:48chk_cfg: MOTOR.MAX.POS[10]=1370
+co00:29:49chk_cfg: MOTOR.MAX.POS[9]=0
+co00:29:49chk_cfg: MOTOR.MIN.POS[10]=-9558
+co00:29:50chk_cfg: MOTOR.MIN.POS[9]=0
+co00:29:50chk_cfg: MOTOR.SLOPE[10]=1
+co00:29:51chk_cfg: MOTOR.SLOPE[9]=1
+co00:29:51chk_cfg: MOTOR.REF.PLAY[10]=10
+co00:29:51chk_cfg: MOTOR.REF.PLAY[9]=65526
+co00:29:52chk_cfg: MOTOR.MAX.SEARCH[10]=12500
+co00:29:52chk_cfg: MOTOR.MAX.SEARCH[9]=12500
+co00:29:53chk_cfg: MOTOR.INITIAL[10]=286
+co00:29:53chk_cfg: MOTOR.INITIAL[9]=0
+co00:29:54chk_cfg: MOTOR.ORIGIN[10]=-6894
+co00:29:54chk_cfg: MOTOR.ORIGIN[9]=0
+co00:29:55chk_cfg: MOTOR.SLOW.VEL[10]=1
+co00:29:55chk_cfg: MOTOR.SLOW.VEL[9]=1
+co00:29:56chk_cfg: MOTOR.RESET.POS[10]=1440
+co00:29:56chk_cfg: MOTOR.RESET.POS[9]=-1440
+co00:29:59rtn_date: Running rtn_date from ozo0622a
+vers00:30:00ab_sk.rtn10000 REM ************ ab_sk.rtn 02/12/2010 09:50:00 ************
+vers00:30:00aodsum.rtn10000 REM ************ aodsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ap.rtn10000 REM *************** ap routine 28/06/99 ******************
+vers00:30:00apsum.rtn10000 REM ************ apsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ap_new.rtn10000 REM ************ ap.rtn 22/03/2013 09:50:00 ************
+vers00:30:00ar.rtn10000 REM ************ ar.rtn 02/12/2010 09:50:00 ************
+vers00:30:00as.rtn10000 REM ************ as.rtn 02/12/2010 09:50:00 ************
+vers00:30:00au.rtn10000 REM ************ au.rtn 02/12/2010 09:50:00 ************
+vers00:30:00auto-off.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers00:30:00auto-on.rtn10000 REM ************ auto-on.rtn 05/03/2011 19:47:08 ************
+vers00:30:00az.rtn10000 REM ************ az.rtn 02/12/2010 09:50:00 ************
+vers00:30:00bp.rtn10000 REM ********************** bp routine 26/11/97 ********************
+vers00:30:00ca.rtn10000 REM ************ ca.rtn 09/04/2011 09:50:00 ************
+vers00:30:00cal.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers00:30:00calds.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers00:30:00caluv.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers00:30:00cd.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers00:30:00cf.rtn10000 REM ************ cf.rtn 02/12/2010 09:50:00 ************
+vers00:30:00checkaz.rtn10000 REM ************ checkaz.rtn 02/12/2010 09:50:00 ************
+vers00:30:00checkhg.rtn10000 REM ************ checkhg.rtn 02/12/2010 09:50:00 ************
+vers00:30:00chk_cfg.rtn10000 REM ************ chk_cfg.rtn 31/01/2013 21:00:00 ************
+vers00:30:00chk_cod.rtn10000 REM ************ chk_cod.rtn 08/11/2013 21:00:00 ************
+vers00:30:00ci.rtn10000 REM ************ ci.rtn 02/12/2010 09:50:00 ************
+vers00:30:00cj.rtn10000 REM ************ cj.rtn 05/02/2013 11:00:00 ************
+vers00:30:00cl.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers00:30:00cn.rtn10000 REM ************ cn.rtn 02/12/2010 09:50:00 ************
+vers00:30:00cp.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers00:30:00cr.rtn10000 REM ************ cr.rtn 02/12/2010 09:50:00 ************
+vers00:30:00cs.rtn10000 REM ************ cs.rtn 02/12/2010 09:50:00 ************
+vers00:30:00cu.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers00:30:00cx.rtn10000 REM ************ cx.rtn 02/12/2010 09:50:00 ************
+vers00:30:00cz.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers00:30:00da_lo.rtn10000 REM ************ da_lo.rtn 28/03/2011 16:01:18 ************
+vers00:30:00db.rtn10000 REM ************ db.rtn 02/12/2010 09:50:00 ************
+vers00:30:00di.rtn10000 REM ************ di.rtn 02/12/2010 09:50:00 ************
+vers00:30:00dimds-on.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers00:30:00dimds-~1.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers00:30:00dk.rtn10000 REM ************ dk.rtn 05/02/2013 11:00:00 ************
+vers00:30:00dp.rtn10000 REM ************ dp.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ds.rtn10000 REM ************ ds.rtn 06/07/2012 09:50:00 ************
+vers00:30:00dsp.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers00:30:00dsp1.rtn10000 REM ************ dsp1.rtn 04/04/2012 19:47:08 ************
+vers00:30:00dssum.rtn10000 REM ************ dssum.rtn 02/12/2010 09:50:00 ************
+vers00:30:00dt.rtn10000 REM ************ dt.rtn 20/06/2014 09:50:00 ************
+vers00:30:00dusum.rtn10000 REM ************ dusum.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ed.rtn10000 REM ************ ed.rtn 24/03/2011 19:47:10 ************
+vers00:30:00endday.rtn10000 REM ************ endday.rtn 02/12/2010 09:50:00 ************
+vers00:30:00end_day.rtn10000 REM ************ end_day.rtn 10/05/2011 14:00:00 ************
+vers00:30:00fc.rtn10000 REM ************ fc.rtn 05/04/2013 09:50:00 ************
+vers00:30:00fi.rtn10000 REM ************ fi.rtn 02/12/2010 09:50:00 ************
+vers00:30:00fl.rtn10000 REM ************ fl.rtn 02/12/2010 09:50:00 ************
+vers00:30:00fm.rtn10000 REM ************ fm.rtn 01/02/2013 19:47:10 ************
+vers00:30:00fmsum.rtn10000 REM ************ fmsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:00fr.rtn10000 REM ****************** fr routine 12/08/98 *********************
+vers00:30:00fv.rtn10000 REM ************ fv.rtn 02/12/2010 09:50:00 ************
+vers00:30:00fw.rtn10000 REM ************ fw.rtn 02/12/2010 09:50:00 ************
+vers00:30:00fz.rtn10000 REM ************ fz.rtn 02/12/2010 09:50:00 ************
+vers00:30:00fzsum.rtn10000 REM ************ fzsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ga.rtn10000 REM ************ ga.rtn 02/12/2010 09:50:00 ************
+vers00:30:00gi.rtn10000 REM ************ gi.rtn 02/12/2010 09:50:00 ************
+vers00:30:00hg.rtn10000 REM ************ hg.rtn 29/03/2011 10:05:48 ************
+vers00:30:00hgn.rtn10000 REM ************ hgn.rtn 02/12/2010 09:50:00 ************
+vers00:30:00hgsum.rtn10000 REM ************ hgsum.rtn 24/11/2013 09:50:00 ************
+vers00:30:00hl.rtn10000 REM ************ hl.rtn 24/06/2014 19:47:10 ************
+vers00:30:00hp.rtn10000 REM ************ hp.rtn 29/03/2011 09:33:00 ************
+vers00:30:00hs.rtn10000 REM ************ hs.rtn 26/09/2012 19:47:10 ************
+vers00:30:00hs2.rtn10000 REM ************ hs.rtn 26/09/2012 19:47:10 ************
+vers00:30:00hv.rtn10000 REM ************ hv.rtn 02/12/2010 09:50:00 ************
+vers00:30:00hvset.rtn10000 REM ************ hvset.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ic.rtn10000 REM ************ ic.rtn 02/12/2010 09:50:00 ************
+vers00:30:00init.rtn10000 REM ************ init.rtn 02/12/2010 09:50:00 ************
+vers00:30:00jd.rtn10000 REM ************ jd.rtn 02/12/2010 09:50:00 ************
+vers00:30:00lf.rtn10000 REM ************ lf.rtn 02/12/2010 09:50:00 ************
+vers00:30:00ll.rtn10000 REM ********************** ll routine 29/07/10 ********************
+vers00:30:00lz.rtn10000 REM ************ lz.rtn 02/12/2010 09:50:00 ************
+vers00:30:00mm.rtn10000 REM ********************* mm routine 03/09/10 *******************
+vers00:30:00nc.rtn10000 REM ************ nc.rtn 02/12/2010 09:50:00 ************
+vers00:30:00newinst.rtn10000 REM ************ newinst.rtn 02/12/2010 09:50:00 ************
+vers00:30:01ni.rtn10000 REM ************ ni.rtn 02/12/2010 09:50:00 ************
+vers00:30:01nosum.rtn10000 REM ************ nosum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01ozsum.rtn10000 REM ************ ozsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01pb.rtn10000 REM ************ pb.rtn 02/12/2010 09:50:00 ************
+vers00:30:01pc.rtn10000 REM ************ pc.rtn 02/12/2010 09:50:00 ************
+vers00:30:01po.rtn10000 REM ************ po.rtn 24/06/2014 09:50:00 ************
+vers00:30:01ql.rtn10000 REM ************ ql.rtn 07/04/2011 14:00:00 ************
+vers00:30:01re.rtn10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
+vers00:30:01re-mb.rtn10000 REM ************ re-mb.rtn 21/04/2012 19:47:08 ************
+vers00:30:01re-sb.rtn10000 REM ************ re-sb.rtn 21/04/2012 19:47:08 ************
+vers00:30:01rep.rtn10000 REM ************ rep.rtn 02/12/2010 09:50:00 ************
+vers00:30:01re_mb_~1.rtn10000 REM ************ re_mb_no_cod.rtn 02/12/2010 09:50:00 ************
+vers00:30:01rl.rtn10000 REM ************ rl.rtn 21/04/2012 11:00:00 ************
+vers00:30:01rs.rtn10000 REM ************ rs.rtn 02/12/2010 09:50:00 ************
+vers00:30:01sa.rtn10000 REM ************ sa.rtn 02/12/2010 09:50:00 ************
+vers00:30:01saveall.rtn10000 REM ************ saveall.rtn 02/12/2010 09:50:00 ************
+vers00:30:01savedh.rtn10000 REM ************ savedh.rtn 02/12/2010 09:50:00 ************
+vers00:30:01sc.rtn10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers00:30:01sc-full.rtn10000 REM ************ sc.rtn 22/04/2014 18:00:00 ************
+vers00:30:01sd.rtn10000 REM ************ sd.rtn 02/12/2010 09:50:00 ************
+vers00:30:01se.rtn10000 REM ************ se.rtn 02/12/2010 09:50:00 ************
+vers00:30:01sh.rtn10000 REM ************ sh.rtn 02/12/2010 09:50:00 ************
+vers00:30:01si.rtn10000 REM ************ si.rtn 24/06/2014 19:47:08 ************
+vers00:30:01sim.rtn10000 REM ************ sim.rtn 16/01/2014 09:50:00 ************
+vers00:30:01sk.rtn10000 REM ************ sk.rtn 02/12/2010 09:50:00 ************
+vers00:30:01skc.rtn10000 REM ************ skc.rtn 10/04/2012 19:47:08 ************
+vers00:30:01sl.rtn10000 REM ************ sl.rtn 24/06/2014 09:50:00 ************
+vers00:30:01slsum.rtn10000 REM ************ slsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01sr.rtn10000 REM ************ sr.rtn 01/04/2011 12:00:00 ************
+vers00:30:01st.rtn10000 REM ************ st.rtn 02/12/2010 09:50:00 ************
+vers00:30:01sum.rtn10000 REM ************ sum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01sw.rtn10000 REM ************ sw.rtn 13/12/2010 09:50:00 ************
+vers00:30:01tcsum.rtn10000 REM ************ tcsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01td.rtn10000 REM ************ td.rtn 10/03/2014 09:40:00 ************
+vers00:30:01testfw2.rtn10000 REM **************** testfw2 routine 08/04/96 *******************
+vers00:30:01tf.rtn10000 REM ************ testfw2.rtn 06/12/2012 09:50:00 ************
+vers00:30:01tt.rtn10000 REM ************ tt.rtn 02/12/2010 09:50:00 ************
+vers00:30:01tu.rtn10000 REM ************ tu.rtn 02/12/2010 09:50:00 ************
+vers00:30:01ub.rtn10000 REM ************ ub.rtn 02/12/2010 09:50:00 ************
+vers00:30:01ul.rtn10000 REM ************ ul.rtn 02/12/2010 09:50:00 ************
+vers00:30:01um.rtn10000 REM ************ um.rtn 02/12/2010 09:50:00 ************
+vers00:30:01uq.rtn10000 REM ************ uq.rtn 02/12/2010 09:50:00 ************
+vers00:30:01uv.rtn10000 REM ************ uv.rtn 13/04/2014 20:00:00 ************
+vers00:30:01uvsum.rtn10000 REM ************ uvsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01u5.rtn10000 REM ************ u5.rtn 02/12/2010 09:50:00 ************
+vers00:30:01ve.rtn10000 REM ************ ve.rtn 23/04/2014 11:10:00 ************
+vers00:30:01w0.rtn10000 REM ************ w0.rtn 02/12/2010 09:50:00 ************
+vers00:30:01w1.rtn10000 REM ************ w1.rtn 02/12/2010 09:50:00 ************
+vers00:30:01w2.rtn10000 REM ************ w2.rtn 02/12/2010 09:50:00 ************
+vers00:30:01w3.rtn10000 REM ************ w3.rtn 02/12/2010 09:50:00 ************
+vers00:30:01w4.rtn10000 REM ************ w4.rtn 02/12/2010 09:50:00 ************
+vers00:30:01xl.rtn10000 REM ************ xl.rtn 02/12/2010 09:50:00 ************
+vers00:30:01zb.rtn10000 REM ************ zb.rtn 02/12/2010 09:50:00 ************
+vers00:30:01zc.rtn10000 REM ************ zc.rtn 02/12/2010 09:50:00 ************
+vers00:30:01ze.rtn10000 REM ************ ze.rtn 02/12/2010 09:50:00 ************
+vers00:30:01zf.rtn10000 REM ************ zf.rtn 01/04/2011 12:00:00 ************
+vers00:30:01zl.rtn10000 REM ************ zl.rtn 02/12/2010 09:50:00 ************
+vers00:30:01zlsum.rtn10000 REM ************ zlsum.rtn 02/12/2010 09:50:00 ************
+vers00:30:01zp.rtn10000 REM ************ zp.rtn 02/12/2010 09:50:00 ************
+vers00:30:01zs.rtn10000 REM ************ zs.rtn 06/07/2012 09:50:00 ************
+vers00:30:01zssum.rtn10000 REM ************ zssum.rtn 10/05/2011 09:50:00 ************
+vers00:30:01zwsum.rtn10000 REM ************ zwsum.rtn 10/05/2011 09:50:00 ************
+co00:30:01hgsum: Running hgsum from ozo0622a
