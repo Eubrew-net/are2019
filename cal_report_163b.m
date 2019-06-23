@@ -38,7 +38,7 @@ close all
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
                      'control_flag',0,'residual_limit',45,...
-                     'hg_time',35,'one_flag',1);
+                     'hg_time',35,'one_flag',0);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
@@ -90,7 +90,7 @@ CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
-ldsp=ldsp(end-3:end)
+ldsp=ldsp(end-2:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
 %    if jj==length(ldsp),confign=2; else confign=1; end
@@ -197,6 +197,29 @@ for t=d_p % Siempre el pen�ltimo y �ltimo procesados (si hay m�s de uno)
                                       ['\UMKoffset',tags{idx}],fix(res{t}(end,1)));
      idx=idx+1;
  end
+%%
+r=cell2mat(res');
+r=reshape(r,15,[],9,2); 
+% quad
+mq=round(median(squeeze(r(7,:,:,1)))*10000)/10000;
+% cubic
+mc=round(median(squeeze(r(7,:,:,2)))*10000)/10000;
+
+q=round((squeeze(r(7,end,:,1)))*10000)/10000;
+c=round((squeeze(r(7,end,:,2)))*10000)/10000;
+
+figure;
+plot(dates,squeeze(r(7,:,2,1)),'r:o'); hold on
+plot(dates,squeeze(r(7,:,2,2)),'b:+')
+hline(mq(:,2),':r',sprintf(' %.4f ',mq));
+hline(mc(:,2),':b',sprintf(' %.4f ',mq));
+hline(q(2),'-r',sprintf(' %.4f ',q(2)));
+hline(c(2),'-b',sprintf(' %.4f ',c(2)));
+
+legend('quad','cubic')
+datetick;
+grid
+title([Cal.brw_name(Cal.n_inst),sprintf('A1= %.4f / %.4f',[A1orig(1),A1def(1)])])
 
 %% Eto para escribir resultados a hoja excel.
 %  for dsps=1:length(ldsp)
