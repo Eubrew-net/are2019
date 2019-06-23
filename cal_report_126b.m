@@ -97,11 +97,11 @@ ldsp=cellstr(cat(1,l.name));
 ldsp=ldsp(end-3:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
-%    if jj==length(ldsp),confign=2; else confign=1; end
+    if jj==length(ldsp),confign=2; else confign=1; end
     try
       [res{jj},detail{jj},DSP_QUAD{jj},QUAD_SUM{jj},QUAD_DETAIL{jj},...
        CUBIC_SUM{jj},CUBIC_DETAIL{jj},salida{jj},CSN_icf{jj},...
-       ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',1);%
+       ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',confign);%
     catch
        warning(sprintf('Error en %s. DSP: %s',Cal.brw_name{Cal.n_inst},ldsp{jj}));
        res{jj}=NaN*ones(15,9,2); detail{jj}=NaN*ones(7,6,15,2); QUAD_DETAIL{jj}=NaN;
@@ -132,7 +132,12 @@ close all
         tabla_QuadSum{t}=num2cell(round(res{idx(t)}(end-1,:,1)*10^4)/10^4);
     end
     old_step=num2cell(round(res{length(res)}(res{length(res)}(:,1,1)==config_orig(14),:,1)*10^4)/10^4)
-    tabla_QuadSum{length(res)}=old_step(1,:);
+   if ~isempty(old_step) 
+      tabla_QuadSum{length(res)}=old_step(1,:);
+     else
+        disp('step too far') 
+        tabla_QuadSum{length(res)}= num2cell([config_orig(14),NaN*ones(1,8)]);
+     end
     Q_SUM_table_RowLabels={'Current',dsp_summary{Cal.n_inst}.info{:},dsp_summary{Cal.n_inst}.info{end},'Final'};
  else
     for t=1:length(res)
