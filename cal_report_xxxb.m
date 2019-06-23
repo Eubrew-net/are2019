@@ -70,7 +70,7 @@ else
 end
 
 idx=1; cal_step_error={};
-for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
+for t=d_p % Siempre el penï¿½ltimo y ï¿½ltimo procesados (si hay mï¿½s de uno)
      cal_step_error{t}=round(mean([abs(cal_step{t}(2)-cal_step{t}(3)),abs(cal_step{t}(2)-cal_step{t}(4))]));
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthSC',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\numSC',tags{idx}],size(sc_avg{t},1),...
@@ -188,7 +188,7 @@ else
 end
 
 idx=1;
-for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
+for t=d_p % Siempre el penï¿½ltimo y ï¿½ltimo procesados (si hay mï¿½s de uno)
                % Solo vale para dos test's !!
      latexcmd(fullfile(Cal.file_latex,['cal_wavelengthDSP',tags{idx},'_',Cal.brw_str{Cal.n_inst}]),...
                                       ['\Auno',tags{idx}],round(res{t}(end-1,2,1)*10000)/10000,...% O3
@@ -197,7 +197,23 @@ for t=d_p % Siempre el penúltimo y último procesados (si hay más de uno)
                                       ['\UMKoffset',tags{idx}],fix(res{t}(end,1)));
      idx=idx+1;
  end
+%
 
+r=cell2mat(res');
+r=reshape(r,15,[],9,2); 
+% quad
+mq=median(squeeze(r(7,:,:,1)))
+% cubic
+mc=round(median(squeeze(r(7,:,:,2)))*10000)/10000
+figure;
+plot(dates,squeeze(r(7,:,2,1)),'r:o'); hold on
+plot(dates,squeeze(r(7,:,2,2)),'b:+')
+hline(mq(:,2),'r',sprintf(' %.4f ',mq));
+hline(mc(:,2),'b',sprintf(' %.4f ',mc));
+legend('quad','cubic')
+datetick;
+grid
+title(Cal.brw_name(Cal.n_inst))
 %% Eto para escribir resultados a hoja excel.
 %  for dsps=1:length(ldsp)
 %      legend1={'step',sprintf('ICF (%d, %d)',CSN_icf{dsps}(1),CSN_icf{dsps}(3)),'abs step','A1 Q','A1 S'};
