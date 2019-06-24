@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_033a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-06"><meta name="DC.source" content="cal_report_033a1.m"><style type="text/css">
+      --><title>cal_report_033a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-21"><meta name="DC.source" content="cal_report_033a1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -108,16 +108,16 @@ ans =
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
     {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
-    {'UM#075' }    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
     {'POR#102'}    {[102]}    {[4]}    {[0]}    {'102'}
     {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
-    {'UM#126' }    {[126]}    {[4]}    {[0]}    {'126'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
     {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
     {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
     {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
     {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
     {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
-    {'UM#172' }    {[172]}    {[3]}    {[0]}    {'172'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
     {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
     {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
     {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
@@ -150,14 +150,6 @@ ans =
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
     {'..\228\ICF15017&#8230;'}    {'..\228\ICF15017&#8230;'}    {'0242'}    {'0242'}
 
--&gt;ERROR
-     1
-
-~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185.CFG
--&gt;ERROR
-     2
-
-~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG
 </pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
 Station.name=<span class="string">''</span>;
 Station.lat=67;
@@ -199,7 +191,7 @@ latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_config_'</span>,Cal.
       fprintf(<span class="string">'%s, brewer: %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       DTorig=NaN; DTdef=NaN;
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Unable to read file '/home/jlopezs/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG'. No such file or directory., brewer: SCO#033
+</pre><pre class="codeoutput">Index exceeds array bounds., brewer: SCO#033
 </pre><h2 id="8">Historical review AVG info</h2><pre class="codeinput">load(Cal.file_save,<span class="string">'avg_report'</span>);
 close <span class="string">all</span>;
 [sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),<span class="keyword">...</span>
@@ -257,32 +249,26 @@ save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'a
 List of arguments given default values:
    'path_to_file'    defaults to .
 --------------------------------------
-23-Apr-2019
 
 RseisAVG =
 
-        2331
+        2329
 
 
 RcincoAVG =
 
-        4354
-
-
-DTAVG =
-
-    '4.1e-08'
+        4351
 
 
   Columns 1 through 5
 
     'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
-    [      2325]    [     2331]    [       NaN]    [      4354]    [     NaN]
+    [      2325]    [     2329]    [       NaN]    [      4351]    [     NaN]
 
   Column 6
 
     'Calculated'
-    [   4.1e-08]
+    [     4e-08]
 
 
 </pre><img vspace="5" hspace="5" src="cal_report_033a1_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_10.png" alt=""> <pre class="codeinput">ix=sort(double(findobj(<span class="string">'Type'</span>,<span class="string">'figure'</span>)));
@@ -302,8 +288,12 @@ close <span class="string">all</span>;
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No CZ Files in date range
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeoutput">Error in plot: Value must be a 1x2 vector of numeric type in which the second element is larger than the first and may be Inf
+--------- Validation OK --------------
+List of arguments given default values:
+   'plot_flag'    defaults to 1
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_033a1_11.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
 <span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 1.5]);</span>
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs));
@@ -311,7 +301,6 @@ close <span class="string">all</span>;
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer SCO#033
 </pre><h2 id="12">HL Report</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'HL*.'</span>,br]),<span class="keyword">...</span>
@@ -336,8 +325,11 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No CZ Files in date range
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'plot_flag'    defaults to 1
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_033a1_12.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
 <span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 8.5]);</span>
     printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'HS'</span>});
@@ -345,25 +337,26 @@ close <span class="string">all</span>
     fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer SCO#033
 </pre><h2 id="16">CI REPORT</h2><pre class="codeinput">close <span class="string">all</span>; br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CI*.'</span>,br]),<span class="keyword">...</span>
-                           fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],<span class="string">'CI18711.033'</span>),<span class="keyword">...</span>
+                           <span class="string">'CI16919.033'</span>,<span class="keyword">...</span>
                           <span class="string">'depuracion'</span>,1,<span class="string">'outlier_flag'</span>,0,<span class="keyword">...</span>
-                          <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
+                          <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[168 180]));
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No CI Files in date range
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+               None                   
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_033a1_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_15.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'CI_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer SCO#033
 </pre><h2 id="18">FV REPORT</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     [azimut zenit]=analyze_FV(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'FV*.'</span>,br]),<span class="keyword">...</span>
@@ -372,15 +365,13 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No FV's
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><img vspace="5" hspace="5" src="cal_report_033a1_16.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'FV_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer SCO#033
 </pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 % options_pub.outputDir=fullfile(pwd,'latex','033','html'); options_pub.showCode=true;
@@ -577,9 +568,9 @@ close all
 close all; br=sprintf('%03d',Cal.brw(Cal.n_inst));
 try
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,['bdata',br],['CI*.',br]),...
-                           fullfile(Cal.path_root,['bdata',br],'CI18711.033'),...
+                           'CI16919.033',...
                           'depuracion',1,'outlier_flag',0,...
-                          'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
+                          'date_range',datenum(Cal.Date.cal_year,1,[168 180]));
 catch exception
       fprintf('Error: %s, brewer %s\n',exception.stack.name,Cal.brw_name{Cal.n_inst});
 end
