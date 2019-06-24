@@ -28,7 +28,7 @@ for i=1:Cal.n_brw
 
 disp(Cal.brw_str(Cal.n_inst))
 date_range=datenum(2017,5,1);
-dsppath=fullfile(Cal.path_root,'dsp');
+dsppath=fullfile(Cal.path_root,'DSP');
 
 dsp_quad{Cal.n_inst}=[];
 dsp_cubic{Cal.n_inst}=[];

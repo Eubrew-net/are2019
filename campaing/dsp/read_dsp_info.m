@@ -35,7 +35,7 @@ function [dsp_quad dsp_cubic salida]=read_dsp(dsp_dir,varargin)
 
 %% Validacion de argumentos de entrada
 arg = inputParser;   % Create instance of inputParser class.
-arg.FunctionName = 'read_dsp';
+arg.FunctionName = 'read_dsp_info';
 
 arg.addRequired('dsp_dir', @ischar);
 
@@ -79,9 +79,10 @@ idx=1;
 for brwi=1:Cal.n_brw
     
     if isempty(arg.Results.dsp)
-       l=dir(fullfile(dsp_dir,[Cal.brw_str{brwi},'*'])); ldsp=cellstr(cat(1,l.name));
+       l=dir(fullfile(dsp_dir,[Cal.brw_str{brwi},'*']));
+       ldsp=cellstr(cat(1,l.name));
     else
-       ldsp=cellstr(arg.Results.dsp);        
+       ldsp=cellstr(arg.Results.dsp);          
     end
     
     if ~isempty(arg.Results.date_range)
