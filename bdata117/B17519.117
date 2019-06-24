@@ -1228,4 +1228,23 @@ co18:57:29td: Running td from uv0624a
 co18:57:29td: Time correction  .1 seconds
 co18:57:29ua: Running ua from uv0624a
 hk18:57:33 31 30 28-99-99-99-99
-co19:00:00ua: UV timed  scan started
+co19:00:00ua: UV timed  scan started
+co19:08:16ua: UV timed  scan finished, incident DUV =  3.310735 mW/m^2
+co19:08:16af: Running af from uv0624a
+co19:08:16af: Auto FR/HP/HG is now OFF
+co19:08:16b1: Running b1 from uv0624a
+hk19:08:40 31 30 28-99-99-99-99
+co19:08:45ds: DS intensity too low ( 458/cy), skipping.
+hk19:08:47 31 30 28-99-99-99-99
+co19:08:56hgfw2: HG FW#2 at step  0
+hk19:13:24 31 30 28-99-99-99-99
+hgscan 0wide 302warm= 1005.14319:13:24JUN 24/19 787 856 7700 22121 36270 52650 68436 82790 99604 105472 108139 101542 89473 75203 61605 45430 30478 15836 10443 7364 7369 10495 16138 31272 46083 63334 76977 92368 104860 112005 109281 102582 85548 70925 55300 37206 22910 8721 886 810
+hg19:14:45 .9999 285.8093 286 220144 31 0
+co19:14:47an: Running an from uv0624a
+co19:14:47an: Auto FR/HP/HG is now ON
+hk19:15:02 30 30 28-99-99-99-99
+co19:15:06ds: DS intensity too low ( 107/cy), skipping.
+hk19:15:12 30 30 28-99-99-99-99
+co19:15:16ds: DS intensity too low ( 98/cy), skipping.
+hk19:15:22 30 30 28-99-99-99-99
+co19:15:27ds: DS intensity too low ( 89/cy), skipping.
