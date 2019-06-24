@@ -1900,4 +1900,10 @@ hk23:34:01 24 25 24 17.1 3.93-99-99
 co23:34:04skc: The next day will run schedule o30623a
 co23:34:05skc: Waiting until end of local day.
 co23:44:05skc: Waiting until end of local day.
-co23:54:06skc: Waiting until end of local day.
+co23:54:06skc: Waiting until end of local day.
+co24:04:07skc: Waiting until end of local day.
+co24:14:08skc: Waiting until end of local day.
+co24:24:09skc: Waiting until end of local day.
+ed
+co24:29:15ed: Starting EndOfDay
+co24:29:16ed: Running: |pd|o3|af|ozsum|aodsum|uvsum|fmsum|fzsum|slsum|rtn_date|hgsum|pf|pd|checkaz|po|pd|af|re|az|w1|fr|hp|hg|ap|dt|an|rs|sr|pf|ru
