@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;
-% close all; publish(fullfile(pwd,'cal_report_228c.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','186','html'); options_pub.showCode=true;
+% close all; publish(fullfile(pwd,'cal_report_186c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==228);
+Cal.n_inst=find(Cal.brw==186);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -246,7 +246,7 @@ blinddays=Cal.calibration_days{Cal.n_inst,2};
 jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
 inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
 
-if Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenance
+if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenance
     
     [x,r,rp,ra,dat,ox,osc_smooth_ini]=ratio_min_ozone(...
         inst1_b(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
@@ -604,7 +604,11 @@ if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintena
                                                                'Orientation','Horizontal');
          ylabel('Total Ozone (DU)'); grid;
          datetick('x',15,'keepLimits','KeepTicks');
+         try
          set(gca,'YLim',[min(inst1_b(j,10))-8 max(inst1_b(j,10))+8])
+         catch
+             disp('plot error');
+         end
    end
 end
 
