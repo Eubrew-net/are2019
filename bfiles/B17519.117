@@ -1247,4 +1247,26 @@ co19:15:06ds: DS intensity too low ( 107/cy), skipping.
 hk19:15:12 30 30 28-99-99-99-99
 co19:15:16ds: DS intensity too low ( 98/cy), skipping.
 hk19:15:22 30 30 28-99-99-99-99
-co19:15:27ds: DS intensity too low ( 89/cy), skipping.
+co19:15:27ds: DS intensity too low ( 89/cy), skipping.
+co19:27:00td: Running td from uv0624a
+co19:27:00td: Time correction -.9 seconds
+co19:27:00af: Running af from uv0624a
+co19:27:00af: Auto FR/HP/HG is now OFF
+co19:27:00b1: Running b1 from uv0624a
+hk19:27:08 30 30 27-99-99-99-99
+co19:27:12ds: DS intensity too low ( 10/cy), skipping.
+hk19:27:18 30 29 27-99-99-99-99
+fv19:28:230az 297.2783 20 10.4ze 86.945 28 11.8
+hk19:29:45 30 29 27-99-99-99-99
+co19:29:54hgfw2: HG FW#2 at step  0
+hk19:32:08 30 29 27-99-99-99-99
+hgscan 0wide 302warm= 166.8619:32:08JUN 24/19 804 876 8861 22658 36344 53112 69276 83979 99832 106418 109092 102238 90109 75036 60333 46631 30740 15994 10245 7277 7338 10388 16019 31706 47109 61387 76641 92065 106038 112124 109347 103089 86387 72271 55108 38058 23366 8699 927 808
+hg19:33:29 .9998 285.6091 286 221216 30 0
+co19:33:31an: Running an from uv0624a
+co19:33:31an: Auto FR/HP/HG is now ON
+co19:33:31b2: Running b2 from uv0624a
+hk19:33:46 30 29 27-99-99-99-99
+co19:33:51ds: DS intensity too low ( 8/cy), skipping.
+hk19:33:56 30 29 27-99-99-99-99
+co19:34:01ds: DS intensity too low ( 5/cy), skipping.
+hk19:38:33 29 29 27-99-99-99-99
