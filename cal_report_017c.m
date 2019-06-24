@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','005','html'); options_pub.showCode=true;
-% Close all; publish(fullfile(pwd,'cal_report_005c.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','017','html'); options_pub.showCode=true;
+% close all; publish(fullfile(pwd,'cal_report_017c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==005);
+Cal.n_inst=find(Cal.brw==017);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -108,8 +108,8 @@ for ii=[Cal.n_ref,Cal.n_inst]
                                'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s Old constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
-                  nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
-                  nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
+                  nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)),...
+                  nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)));
 % new instrumental constants
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
                                'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
@@ -291,7 +291,7 @@ legend(h,'Config. orig','Config. orig, SL corrected','Suggested');
 title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'sug'});
 
-%close all
+close all
 
 %% Blind days table
 % m_etc: [date, ref_new_slcorr, +sd, +n, ...
@@ -394,12 +394,12 @@ osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 save(Cal.file_save,'-APPEND','osc_smooth');
 
 %%
-figure(max(findobj('tag','CAL_2P_SCHIST')));
+figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'},'Width',14,'Height',8);
 
-figure(max(findobj('tag','RATIO_ERRORBAR')));
+figure(maxf(findobj('tag','RATIO_ERRORBAR')));
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'});
 
 figure(findobj('tag','RATIO_ERRORBAR_all'));
@@ -505,10 +505,11 @@ label_={'Day','osc range',['O3#',brw_str{n_ref}],'O3std','N',...
                           ['O3#',brw_str{n_inst}],'O3 std','%diff',...
                           ['(*)O3#',brw_str{n_inst}],'O3 std','(*)%diff'};
 
-ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,summary_orig_old,summary_old,summary);
+%ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,summary_orig_old,summary_old,summary);
+ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,ETC_SUG,A1_old,summary_orig_old,summary_old,summary);
 dat=cat(2,num2cell(ozone_osc_sum(:,1)),tags_(ozone_osc_sum(:,end))',num2cell(ozone_osc_sum(:,2:end-1)));
 
-displaytable(dat,label_,12);
+display_table(dat,label_,12);
 ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,ETC_SUG,A1_old,summary_orig_old,summary_old,summary)
 matrix2latex_longtable(dat,fullfile(Cal.file_latex,['table_summarydetailed_',brw_str{n_inst},'.tex']),...
                                   'size','tiny','columnlabels',label_,'alignment','c',...
@@ -519,7 +520,7 @@ matrix2latex_longtable(dat,fullfile(Cal.file_latex,['table_summarydetailed_',brw
 [m,s,n,grpn]=grpstats(ozone_osc_sum,{ozone_osc_sum(:,1)},{'mean','std','numel','gname'});
 ozone_day_sum=round([m(:,1),m(:,2),s(:,2),m(:,4),m(:,8),s(:,8),100*(m(:,8)-m(:,2))./m(:,2)]*10)/10;
 
- makeHtmlTable(ozone_day_sum,[],cellstr(datestr(ozone_day_sum(:,1)+datenum(Cal.Date.cal_year,1,0))),...
+ makeHtml_Table(ozone_day_sum,[],cellstr(datestr(ozone_day_sum(:,1)+datenum(Cal.Date.cal_year,1,0))),...
         {'Day',['O3 #',brw_str{n_ref}],'O3 std','N obs',['O3 #',brw_str{n_inst}],...
          'O3 std',[' % ',brw_str{n_ref},'-',brw_str{n_inst},'/',brw_str{n_ref}]})
 
@@ -558,11 +559,12 @@ end
 % final days: final config.
 jday=findm(diaj(summary{Cal.n_inst}(:,1)),finaldays,0.5);% quiero mostrar la primera config. con sl
 inst2=summary{Cal.n_inst}(jday,:);
+f=[];
 for dd=1:length(finaldays)
 j=find(diajul(floor(inst2(:,1)))==finaldays(dd));
 j_=find(diajul(floor(ref(:,1)))==finaldays(dd));
 if (isempty(j) || length(j)<4), continue; end
-f=figure; set(f,'Tag',sprintf('%s%s','DayPlot_',num2str(finaldays(dd))));
+f(dd)=figure; set(f,'Tag',sprintf('%s%s','DayPlot_',num2str(finaldays(dd))));
 plot(ref(j_,1),ref(j_,6),'g-s','MarkerSize',6,'MarkerFaceColor','g');
 hold on; plot(inst2(j,1),inst2(j,6),'b--d','MarkerSize',7,'MarkerFaceColor','b');
          plot(inst2(j,1),inst2(j,10),'r:.','MarkerSize',9);
@@ -573,14 +575,16 @@ ylabel('Total Ozone (DU)'); grid;
 datetick('x',15,'keepLimits','KeepTicks');
 set(gca,'YLim',[min(inst2(j,10))-8 max(inst2(j,10))+8])
 end
-
-figure(max(findobj('tag','_GlobalPlot_')));
+try
+figure(maxf(findobj('tag','_GlobalPlot_')));
 printfiles_report(gcf,Cal.dir_figs,'Height',7,'Width',13);
+%f=double(f);
 
-printfiles_report(min(findobj('-regexp','Tag','^DayPlot_')):max(findobj('-regexp','Tag','^DayPlot_')),...
-                              Cal.dir_figs,'Width',14.5,'Height',7.5);
+printfiles_report(double(minf(f):maxf(f)),Cal.dir_figs,'Width',14.5,'Height',7.5);
 graph2latex(Cal.file_latex,{'summaryplot','DayPlot_'},brw_str{n_inst},'scale',0.8);
-
+catch
+    disp('p');
+end
 %% detailed comparison
 % %save detailed_comparison o3_c
 % %load detailed_comparison

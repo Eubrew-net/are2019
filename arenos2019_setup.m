@@ -48,8 +48,8 @@ Cal.Date=Date;
 % blind-days=arrival: (to) maintenance or, if no changes, campaign end)
 % final-days=((maintenance or, if no changes, arrival): campaign end
 Cal.calibration_days={
-   day0:dayend,day0:dayend   ,day0:dayend       %005  
-   day0:dayend,day0:dayend   ,day0:dayend       %017 
+   day0:dayend, 168:171      , 172  :dayend     %005  
+   day0:dayend, 168:dayend   , 168:dayend       %017   -already removed on Bfile[168:179,172:dayend]
    day0:dayend,day0:dayend   ,day0:dayend       %033  
    day0:dayend,day0:dayend   ,day0:dayend       %070  
    day0:dayend,day0:dayend   ,day0:dayend       %075  
@@ -63,7 +63,7 @@ Cal.calibration_days={
    day0:dayend,day0:dayend  ,day0:dayend        %166  
    day0:dayend,day0:dayend   ,day0:dayend       %172  
    day0:dayend,day0:dayend   ,day0:dayend       %174 
-   166:dayend,166:dayend     ,166:dayend       %185  
+   167:dayend,167:dayend     ,167:dayend       %185  
    day0:dayend,day0:dayend   ,day0:dayend       %186  
    day0:dayend,day0:dayend   ,day0:dayend       %190
    day0:dayend,day0:dayend   ,day0:dayend       %202
@@ -80,8 +80,8 @@ Cal.final_days=Cal.calibration_days(:,3);
 Cal.brw       = [005,017,033,070,075,117,126,150,151,158,163,166,172,174,185,186,190,201,202,228];
 Cal.brwM      = [2  ,2  ,2  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3    ];
 Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
-Cal.sl_c_blind= [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
-Cal.no_maint   =[0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,0  ,0  ,0  ,1  ,0  ,0  ,0  ,0  ,0    ];
+Cal.sl_c_blind= [1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
+Cal.no_maint   =[0  ,1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,0  ,0  ,0  ,1  ,0  ,0  ,0  ,0  ,0    ];
 Cal.plt       = {'o','+','*','h','x','s','d','v','>','<','p','+','x','p','*','x','s','d','v','>'};
 
 
