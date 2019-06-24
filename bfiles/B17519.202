@@ -406,4 +406,26 @@ co10:28:04w2: Running w2 from menu line -200
 co10:38:11dsp1: Running dsp1 from menu line -200
 co10:43:46dsp1: Still doing DSP
 co10:44:32dsp1: Too bright, ( 312071 at step  1866), restarting line  2 with ND 1
-co10:54:43dsp1: Still doing DSP
+co10:54:43dsp1: Still doing DSP
+co11:10:21dsp1: Still doing DSP
+co11:10:44dsp1: Finished DSP on HG via PORT Iin o3 mode.
+hk11:10:57 30 30 27 12.9 3.91-99 27
+hpscan11:11:09 0 24024 10 36591 20 50256 30 64885 40 78790 50 89585 60 95702 70 96674 80 97009 90 96838 100 96006 110 90761 120 77324 130 62567 140 49414 150 37392 160 23621
+hp11:12:56 .9945542 100449.7 79.7 30
+co11:13:15hgfw2: HG FW#2 at step  0
+hk11:15:30 30 30 27 12.9 3.92-99 28
+hgscan 0wide 302warm= 101.963311:15:32JUN 24/19 247 1638 9313 22328 36846 55223 75756 93082 107404 115853 117766 110191 97928 84069 67702 47212 29324 17048 10839 7181 7228 10899 17103 29167 47055 67172 83509 97182 109647 117004 114932 105980 91593 74023 53334 35474 21112 9002 1530 252
+hg11:17:23 .9995 286.0292 286 234770 30 0
+co11:17:31checkhg: Running checkhg from menu line -200
+co11:17:36checkhg: Last HG was OK
+co11:54:37skc: Starting schedule o30624a
+co11:54:43td: Julian day = 175
+co11:54:52td: Time correction  1.1 seconds
+co11:54:54td: Julian day = 175
+hk11:55:10 30 30 27 13.3 4.01-99 28
+co12:00:00ua: UV timed  scan started
+co12:08:21ua: UV timed  scan finished, incident DUV =  237.447 mW/m^2
+co12:08:38td: Julian day = 175
+co12:08:47td: Time correction  1.1 seconds
+co12:08:49td: Julian day = 175
+co12:08:59ua: UV timed  skipped  12.13333  12.5
