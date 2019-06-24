@@ -1385,4 +1385,17 @@ co23:28:27skc: The next day will run schedule o30623a
 co23:28:27skc: Waiting until end of local day.
 co23:38:27skc: Waiting until end of local day.
 co23:48:28skc: Waiting until end of local day.
-co23:58:28skc: Waiting until end of local day.
+co23:58:28skc: Waiting until end of local day.
+co00:00:01skc: Waiting until end of local day.
+co00:10:01skc: Waiting until end of local day.
+co00:20:01skc: Waiting until end of local day.
+ed
+co00:29:13ed: Starting EndOfDay
+co00:29:13ed: Running: |pd|o3|af|ozsum|aodsum|uvsum|fmsum|fzsum|slsum|rl|cfg_out|rtn_date|hgsum|pf|pd|checkaz|po|pd|af|re|az|w1|fr|hp|hg|ap|dt|an|rs|sr|pf|ru
+co00:29:13o3: Running o3 from o30623a line -200
+co00:29:16af: Auto FR/HP/HG is now OFF
+co00:29:16ozsum: Running ozsum from o30623a line -200
+co00:29:17aodsum: Running aodsum from o30623a line -200
+co00:29:18uvsum: Running uvsum from o30623a line -200
+co00:29:20fmsum: Running fmsum from o30623a line -200
+co00:29:22fzsum: Running fzsum from o30623a line -200
