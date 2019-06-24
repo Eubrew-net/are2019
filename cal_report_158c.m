@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;
-% close all; publish(fullfile(pwd,'cal_report_228c.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','158','html'); options_pub.showCode=true;
+% close all; publish(fullfile(pwd,'cal_report_158c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==228);
+Cal.n_inst=find(Cal.brw==158);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
@@ -363,8 +363,8 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-osc_range=0.7;
-%A1_new=0.3431
+osc_range=1;
+A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 10,osc_range,0.03,finaldays);
 hidx=ismember(Cal.Date.CALC_DAYS,finaldays);
@@ -416,7 +416,7 @@ ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'},'Width',14,'Height',8);
 
-figure(maxf(findobj('tag','RATIO_ERRORBAR')));
+figure(sort(findobj('tag','RATIO_ERRORBAR')));
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'});
 
 figure(findobj('tag','RATIO_ERRORBAR_all'));
@@ -426,7 +426,7 @@ close all
 
 %%
 %% STRAY
-if Cal.brwM(Cal.n_inst)~=3
+if Cal.brw_M(Cal.n_inst)~=3
     
     close all
     
