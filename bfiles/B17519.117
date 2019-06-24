@@ -757,4 +757,26 @@ co12:08:16ua: UV timed  scan finished, incident DUV =  254.0409 mW/m^2
 co12:08:16af: Running af from uv0624a
 co12:08:16af: Auto FR/HP/HG is now OFF
 co12:08:16b1: Running b1 from uv0624a
-hk12:08:38 34 33 31-99-99-99-99
+hk12:08:38 34 33 31-99-99-99-99
+co14:09:49start:  PROGRAM start :  JUN 24/19 at 14:09:44
+hk14:09:49 35 34 31-99-99-99-99
+co14:09:50ab_sk: Running ab_sk from main.asc
+co14:10:06td: Running td from uv0624a
+co14:10:07td: Time correction  .4 seconds
+co14:10:07ua: Running ua from uv0624a
+co14:10:09af: Running af from uv0624a
+co14:10:09af: Auto FR/HP/HG is now OFF
+co14:10:09b1: Running b1 from uv0624a
+hk14:10:33 36 34 31-99-99-99-99
+co14:11:24ds: DS intensity too high ( 240182/cy) quitting.
+summary00:00:00JUN 24/19 25.752 1.109 36aode 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+hk14:11:27 35 34 31-99-99-99-99
+co14:11:40hgfw2: HG FW#2 at step  0
+hk14:15:16 35 34 31-99-99-99-99
+hgscan 0wide 302warm= 855.144914:15:16JUN 24/19 1013 1381 10763 29841 47669 69567 90452 114551 134712 143995 146882 137476 122756 105837 84198 63620 40335 22243 15032 9575 9522 15135 22223 39713 63697 84399 103880 121385 136113 146243 142403 133166 113209 89033 67015 46700 29395 10516 1274 977
+hg14:16:38 .9998 286.3949 286 293125 35 0
+co14:16:39an: Running an from uv0624a
+co14:16:39an: Auto FR/HP/HG is now ON
+co14:16:39b2: Running b2 from uv0624a
+hk14:17:01 35 34 32-99-99-99-99
+co14:17:24ds: Suppressed oscillation of filter wheel.
