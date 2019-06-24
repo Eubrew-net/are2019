@@ -352,10 +352,12 @@ jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
 inst2=summary{Cal.n_inst}(jday & jlim ,:);
 
 %%
-A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1); A1_new=unique(A1(~isnan(A1)))
-osc_range=.8;
+A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1); 
+A1_new=unique(A1(~isnan(A1)))
+osc_range=1;
+A1_new=0.3417
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
-                                                                5,osc_range,0.03,finaldays);
+                                                                10,osc_range,0.03,finaldays);
 tableform({'ETCorig','ETCnew 1p','ETCnew 2p','O3Abs (ICF)','O3Abs 2p','O3Abs dsp'},...
           [round([ETC.old(n_inst),ETC_NEW(1).NEW,ETC_NEW(1).TP(1), 10000*A.old(n_inst),ETC_NEW(1).TP(2),10000*A.new(Cal.n_inst)])
 %         solo el rango seleccionado
