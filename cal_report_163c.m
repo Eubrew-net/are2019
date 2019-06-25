@@ -80,6 +80,66 @@ matrix2latex_config([config_orig(2:end),config_def(2:end)],...
 
 %% DT analysis_
  DT_analysis(Cal,ozone_raw0,config,'plot_flag',0);
+%%
+%% Campaing AVG info
+
+load(Cal.file_save,'avg_report');
+close all;
+cal_range=([datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(1)),datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(end))])
+[sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
+                                      'date_range',cal_range,...
+                                      'SL_REF',[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],...
+                                      'DT_REF',[DTorig,DTdef],...
+                                      'outlier_flag',{'','','','','','',''});
+try
+    
+    if ~isempty(sl_data)
+       day_ini=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       if isempty(day_ini)
+            disp(datestr(sl_data(end,1)))
+            RseisAVG=round(nanmean(sl_data(:,12)))
+            RcincoAVG=round(nanmean(sl_data(:,11)))
+       else
+           RseisAVG=round(nanmean(sl_data(day_ini(1):day_last(end),12)))
+           RcincoAVG=round(nanmean(sl_data(day_ini(1):day_last(end),11)))
+       end
+       
+
+    end
+    if ~isempty(dt_data)
+       day_ini=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       
+       if isempty(day_ini)
+              DTAVG=sprintf('%g',10^-9*(round(nanmean(dt_data(:,4)))))          
+        else
+             DTAVG=sprintf('%g',10^-9*round(nanmean(dt_data(day_ini(1):day_last(end),4))));
+       end
+    end
+    %latexcmd(fullfile(Cal.file_latex,['cal_status_',Cal.brw_str{Cal.n_inst}]),RseisAVG,RcincoAVG,DTAVG);
+    %format short g;
+    tableform({'SLR6  orig',   'Calc. AVG','SLR5  orig','Calculated','DT  orig','Calculated'},...
+              [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
+
+    avg_report{Cal.n_inst}.RseisAVG_camp=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG_camp=RcincoAVG;
+    avg_report{Cal.n_inst}.DTorig_camp  =DTorig;    avg_report{Cal.n_inst}.DTAVG_avg    =DTAVG;
+    
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+    
+avg_report{Cal.n_inst}.sl_data_camp=sl_data;
+avg_report{Cal.n_inst}.dt_data_camp=dt_data;
+avg_report{Cal.n_inst}.rs_data_camp=rs_data;
+avg_report{Cal.n_inst}.ap_data_camp=ap_data;
+avg_report{Cal.n_inst}.hg_data_camp=hg_data;
+avg_report{Cal.n_inst}.op_data_camp=op_data;
+if exist('Args','var')
+   avg_report{Cal.n_inst}.Args=Args;
+else disp('No se est�n guardando los inputs de la funci�n!!')
+end
+save(Cal.file_save,'-APPEND','avg_report');
 
 %
 %figure(findobj('tag','DT_comp'));
@@ -355,7 +415,7 @@ save(Cal.file_save,'-APPEND','etc');
 %% Final Period
 close all
 finaldays=Cal.calibration_days{Cal.n_inst,3};
-
+finaldays=170:174
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
 jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
       diaj2(summary{Cal.n_inst}(:,1))<finaldays(end)); 
@@ -363,7 +423,7 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-%A1_new=0.3430
+A1_new=0.3405
 osc_range=1.5;
 %A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
