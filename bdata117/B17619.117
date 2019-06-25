@@ -1463,4 +1463,17 @@ hk19:36:57 30 30 28-99-99-99-99
 co19:37:03ds: DS intensity too low ( 6/cy), skipping.
 co19:37:26zs: ZS intensity too low ( 117/cy), skipping.
 hk19:37:34 30 30 28-99-99-99-99
-co19:37:35skc: Waiting until ZA =  91.3 now  88.2
+co19:37:35skc: Waiting until ZA =  91.3 now  88.2
+hk19:47:39 30 30 27-99-99-99-99
+co19:47:41skc: Waiting until ZA =  91.3 now  89.7
+co19:54:02skc: Next schedule will be uv0626a (now uv0625a ZS= 91.39 ZS= 91.39)
+co19:54:03ru: Running ru from uv0625a line  91.39
+co19:54:06ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co19:54:09ck: Running ck from uv0625a line  91.39
+co19:54:11ck: Illegal command (ck) in schedule uv0625a, ignoring
+hk19:54:18 30 29 27-99-99-99-99
+co19:54:36hgfw2: HG FW#2 at step  0
+hk19:56:32 29 29 27-99-99-99-99
+hgscan 0wide 302warm= 1148.32719:56:33JUN 25/19 754 1096 8339 20004 33419 47316 63417 79814 95446 101683 104354 98329 87100 74073 59181 45031 27566 14191 10308 7053 7129 10454 14333 28005 44992 60299 74935 86826 97973 102894 98868 92006 78392 61509 45670 32879 18864 7613 1053 699
+hg19:58:15 .9996 285.1982 287 207248 29 1
+hk19:58:52 29 29 27-99-99-99-99
