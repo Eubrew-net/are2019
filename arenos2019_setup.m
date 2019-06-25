@@ -68,7 +68,7 @@ Cal.calibration_days={
    day0:dayend,day0:dayend   ,day0:dayend       %190
    day0:dayend,day0:dayend   ,day0:dayend       %201
    day0:dayend, day0:dayend  ,day0:dayend       %202
-   day0:dayend, day0:172     ,173:dayend       %228
+   day0:dayend, day0:172     ,173:dayend       %228 No blind days!!
    %day0:dayend,day0:dayend   ,day0:dayend       %300
 
                                  };
