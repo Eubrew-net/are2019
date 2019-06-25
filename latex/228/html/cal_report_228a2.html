@@ -1,0 +1,754 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>cal_report_228a2</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-25"><meta name="DC.source" content="cal_report_228a2.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Setup</a></li><li><a href="#3">configuration files</a></li><li><a href="#4">Temperature dependence.  During campaign</a></li><li><a href="#9">Check previous results</a></li><li><a href="#10">SL summary from bfiles temperature</a></li><li><a href="#13">Check changes</a></li><li><a href="#15">Latex stuff</a></li><li><a href="#16">Filter attenuation</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;</span>
+<span class="comment">% publish(fullfile(pwd,'cal_report_228a2.m'),options_pub);</span>
+</pre><h2 id="2">Brewer Setup</h2><pre class="codeinput">clear <span class="string">all</span>;
+
+file_setup=<span class="string">'arenos2019_setup'</span>;
+
+eval(file_setup);     <span class="comment">% configuracion por defecto</span>
+Cal.n_inst=find(Cal.brw==228);
+Cal.file_latex=fullfile(<span class="string">'.'</span>,<span class="string">'latex'</span>,Cal.brw_str{Cal.n_inst});
+Cal.dir_figs=fullfile(<span class="string">'latex'</span>,filesep(),Cal.brw_str{Cal.n_inst},<span class="keyword">...</span>
+                              filesep(),[Cal.brw_str{Cal.n_inst},<span class="string">'_figures'</span>],filesep());
+mkdir(Cal.dir_figs);
+
+<span class="keyword">try</span>
+      save(Cal.file_save,<span class="string">'-Append'</span>,<span class="string">'Cal'</span>); <span class="comment">%sobreescribimos la configuracion guardada.</span>
+      load(Cal.file_save);
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s\n Initializing data for Brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+      save(Cal.file_save);
+<span class="keyword">end</span>
+
+
+load(Cal.file_save,<span class="string">'temperature'</span>);
+load(Cal.file_save,<span class="string">'filter'</span>);
+</pre><pre class="codeoutput">ans =
+  1&times;1 cell array
+    {'IZO#185'}
+ans =
+  20&times;9 cell array
+  Columns 1 through 5
+    {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
+    {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
+    {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
+    {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
+    {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
+    {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
+    {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
+    {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
+    {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
+    {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
+    {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
+    {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
+    {'CAN#190'}    {[190]}    {[3]}    {[0]}    {'190'}
+    {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
+    {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
+    {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+  Columns 6 through 9
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
+    {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
+    {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
+    {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
+    {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
+    {'..\163\ICF23318&#8230;'}    {'..\163\ICF23318&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
+    {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
+</pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>;
+
+[config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
+[config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
+
+config_temp.n_inst=Cal.n_inst;
+config_temp.brw_name=Cal.brw_name{Cal.n_inst};
+config_temp.final_days=Cal.Date.FINAL_DAYS(1);
+
+NTC={}; tabla_regress={}; ajuste={}; Args={};
+</pre><pre class="codeoutput">ans =
+    '22-Jun-2019'
+</pre><h2 id="4">Temperature dependence.  During campaign</h2><pre class="codeinput">[sl_rw,tc]=readb_sl_rawl(fullfile(<span class="string">'.'</span>,<span class="string">'bfiles'</span>,[<span class="string">'B*.'</span>,Cal.brw_str{Cal.n_inst}]));<span class="comment">% cambio nombres para poder seguir</span>
+
+<span class="keyword">if</span> ~isnan(sl_rw)
+</pre><pre class="codeinput">    [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,<span class="string">'outlier_flag'</span>,0,<span class="keyword">...</span>
+        <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])));
+
+    disp(sprintf(<span class="string">' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  '</span>,ajuste{1}.orig(7,[1 3 2 4])));
+    disp(sprintf(<span class="string">'  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  '</span>,ajuste{1}.new(7,[1 3 2 4])));
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'plots'    defaults to 1
+   'plot_flag'    defaults to 0
+   'intensity_flag'    defaults to 0
+   'temp_flag'    defaults to []
+   'TCB'    defaults to []
+   'N_TC'    defaults to []
+--------------------------------------
+ ORIG MS9:   305 +/- 1  1.2 +/- 0.04  
+  NEW MS9:   305 +/- 3  0.1 +/- 0.10  
+</pre><img vspace="5" hspace="5" src="cal_report_228a2_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_04.png" alt=""> <pre class="codeinput">    makeHtmlTable([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],<span class="keyword">...</span>
+        {<span class="string">'slit#2'</span>,<span class="string">'slit#3'</span>,<span class="string">'slit#4'</span>,<span class="string">'slit#5'</span>,<span class="string">'slit#6'</span>,<span class="string">'R5'</span>,<span class="string">'R6'</span>},{<span class="string">'a'</span>,<span class="string">'a SE'</span>,<span class="string">'b'</span>,<span class="string">'b SE'</span>},[],4);
+</pre><table border="1" cellpadding="4" cellspacing="0">
+<tr><td></td><td>a</td><td>a SE</td><td>b</td><td>b SE</td></tr>
+<tr><td>slit#2</td><td>6.165e+04</td><td>4.302</td><td>-7.715</td><td>0.1634</td></tr>
+<tr><td>slit#3</td><td>6.234e+04</td><td>4.759</td><td>-7.46</td><td>0.1807</td></tr>
+<tr><td>slit#4</td><td>6.319e+04</td><td>5.289</td><td>-7.479</td><td>0.2009</td></tr>
+<tr><td>slit#5</td><td>6.363e+04</td><td>5.663</td><td>-7.481</td><td>0.2151</td></tr>
+<tr><td>slit#6</td><td>6.408e+04</td><td>6.104</td><td>-7.466</td><td>0.2318</td></tr>
+<tr><td>R5</td><td>541.8</td><td>4.749</td><td>0.2061</td><td>0.1804</td></tr>
+<tr><td>R6</td><td>304.8</td><td>2.596</td><td>0.01306</td><td>0.09861</td></tr>
+</table><pre class="codeinput">    makeHtmlTable(NTC{1});
+</pre><table border="1" cellpadding="4" cellspacing="0">
+<tr><td>0</td><td>-0.25</td><td>-0.24</td><td>-0.23</td><td>-0.25</td></tr>
+</table><pre class="codeinput"><span class="keyword">else</span>
+    Fr=NaN*ones(1,9);
+    ajuste{1}.orig=NaN*ones(7,4);
+    ajuste{1}.cero=NaN*ones(7,4);
+    ajuste{1}.new=NaN*ones(7,4);
+
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">processing sl files: 100%    [..........] sl raw done
+</pre><h2 id="9">Check previous results</h2><pre class="codeinput"><span class="keyword">if</span> exist(<span class="string">'sl_raw'</span>,<span class="string">'var'</span>)
+    <span class="keyword">if</span> iscell(sl_raw) &amp;&amp; size(sl_raw,2)&gt;=Cal.n_inst
+        <span class="keyword">if</span> isempty(sl_raw{Cal.n_inst})
+           [sl_raw{Cal.n_inst},TC{Cal.n_inst}]=readb_sl_rawl(fullfile([<span class="string">'bdata'</span>,Cal.brw_str{Cal.n_inst}],<span class="keyword">...</span>
+                                                             [<span class="string">'B*.'</span>,Cal.brw_str{Cal.n_inst}]),<span class="string">'f_plot'</span>,1);
+           save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'sl_raw'</span>,<span class="string">'TC'</span>);
+        <span class="keyword">end</span>
+    <span class="keyword">else</span>
+        [sl_raw{Cal.n_inst},TC{Cal.n_inst}]=readb_sl_rawl(fullfile([<span class="string">'bdata'</span>,Cal.brw_str{Cal.n_inst}],<span class="keyword">...</span>
+                                                          [<span class="string">'B*.'</span>,Cal.brw_str{Cal.n_inst}]),<span class="string">'f_plot'</span>,1);
+        save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'sl_raw'</span>,<span class="string">'TC'</span>);
+    <span class="keyword">end</span>
+<span class="keyword">else</span>
+    [sl_raw{Cal.n_inst},TC{Cal.n_inst}]=readb_sl_rawl(fullfile([<span class="string">'bdata'</span>,Cal.brw_str{Cal.n_inst}],<span class="keyword">...</span>
+                                                      [<span class="string">'B*.'</span>,Cal.brw_str{Cal.n_inst}]),<span class="string">'f_plot'</span>,1);
+    save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'sl_raw'</span>,<span class="string">'TC'</span>);
+<span class="keyword">end</span>
+</pre><h2 id="10">SL summary from bfiles temperature</h2><p>figure; set(gcf,'Tag','DailySL'); hl1=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(2,:),[],TC{Cal.n_inst}(3,:),'*k'); set(hl1,'LineWidth',2); ylabel('SL double ratio MS9'); title(sprintf('Daily means for sl ozone ratio &amp; temperature. Brewer %s\r\n (from bfile sl summaries)',Cal.brw_name{Cal.n_inst})); set(gca,'XTickLabels',datestr(get(gca,'XTick'),2));  grid; ax(1)=gca; set(ax(1),'Position',[0.1  0.12  0.75  0.72]);% [left bottom width height] xtickangle(gca,30); ax(2)=axes('Position',get(ax(1),'Position'),...    'XAxisLocation','top',...    'YAxisLocation','right',...    'Color','none','FontSize',10,...    'XColor','k','YColor','b'); set(ax,'box','off'); hold on; hl2=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(7,:),[],TC{Cal.n_inst}(8,:),'*b'); set(hl2,'LineWidth',2);  set(gca,'XTicklabels',[],'YLim',[0 45]); ylb=ylabel('Temperature','Rotation',-90); pos=get(ylb,'Position'); pos(1)=pos(1)+3; set(ylb,'Position',pos);</p><pre class="codeinput">[NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},<span class="string">'outlier_flag'</span>,1,<span class="keyword">...</span>
+                       <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year-2,7,15));   <span class="comment">% two years before calibration</span>
+                        <span class="comment">%'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));</span>
+                        <span class="comment">%this year data</span>
+
+
+
+<span class="comment">% figure(maxf(findobj('Tag','TEMP_OLD_VS_NEW'))); set(gca,'YLim',[1750 1920]);</span>
+
+disp(sprintf(<span class="string">' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  '</span>,ajuste{2}.orig(7,[1 3 2 4])));
+disp(sprintf(<span class="string">'  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  '</span>,ajuste{2}.new(7,[1 3 2 4])));
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'plots'    defaults to 1
+   'plot_flag'    defaults to 0
+   'intensity_flag'    defaults to 0
+   'temp_flag'    defaults to []
+   'TCB'    defaults to []
+   'N_TC'    defaults to []
+--------------------------------------
+ ORIG MS9:   215 +/- 0  1.1 +/- 0.01  
+  NEW MS9:   215 +/- 0  0.1 +/- 0.02  
+</pre><img vspace="5" hspace="5" src="cal_report_228a2_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_09.png" alt=""> <pre class="codeinput">tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],<span class="keyword">...</span>
+        {<span class="string">'slit#2'</span>,<span class="string">'slit#3'</span>,<span class="string">'slit#4'</span>,<span class="string">'slit#5'</span>,<span class="string">'slit#6'</span>,<span class="string">'R5'</span>,<span class="string">'R6'</span>},{<span class="string">'a'</span>,<span class="string">'a SE'</span>,<span class="string">'b'</span>,<span class="string">'b SE'</span>},[],4)
+temperature{Cal.n_inst}.regression_table=tc_reg_table;
+</pre><pre class="codeoutput">tc_reg_table =
+  7&times;4 table
+                a         aSE          b          bSE   
+              ______    _______    _________    ________
+    slit_2     54603     1.1682      -20.854    0.066076
+    slit_3     55285     1.2393      -20.846    0.070103
+    slit_4     56075     1.3054      -21.142    0.073841
+    slit_5     56470     1.3422      -21.425    0.075923
+    slit_6     56923     1.3762      -21.512     0.07784
+    R5        412.61    0.71248    -0.023929    0.040278
+    R6        215.43    0.39537     -0.18406    0.022351
+</pre><pre class="codeinput">tc_coeff_table=makeHtml_Table(NTC{2})
+temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
+</pre><pre class="codeoutput">tc_coeff_table =
+  1&times;5 table
+    M1     M2       M3      M4      M5 
+    __    _____    ____    ____    ____
+    0     -0.01    0.29    0.57    0.66
+</pre><h2 id="13">Check changes</h2><pre class="codeinput">[NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},<span class="string">'outlier_flag'</span>,1,<span class="string">'plots'</span>,0,<span class="keyword">...</span>
+                                <span class="string">'N_TC'</span>,TCorig(1:5)',<span class="string">'date_range'</span>,datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
+
+Forigx=Forig; Fn=Fnew;
+
+figure;  set(gcf,<span class="string">'Tag'</span>,<span class="string">'TEMP_COMP_DATE'</span>);
+plot(Forigx(:,1),Forigx(:,2),<span class="string">'b.'</span>,<span class="string">'MarkerSize'</span>,6);
+ylabel(<span class="string">'Temperature'</span>,<span class="string">'Color'</span>,<span class="string">'b'</span>); ax(1)=gca; set(ax(1),<span class="string">'YAxisLocation'</span>,<span class="string">'right'</span>,<span class="string">'XTicklabels'</span>,{<span class="string">' '</span>});
+[mn,sn]=grpstats(Forigx(:,[1,end,2]),{year(Forigx(:,1)),fix(Forigx(:,1)/7)*7},{<span class="string">'mean'</span>,<span class="string">'sem'</span>});
+[mt,st]=grpstats(Fn(:,[1,end]),{year(Fn(:,1)),fix(Fn(:,1)/7)*7},{<span class="string">'mean'</span>,<span class="string">'sem'</span>});
+ax(2) = axes(<span class="string">'YAxisLocation'</span>,<span class="string">'left'</span>,<span class="string">'Color'</span>,<span class="string">'none'</span>);
+hold <span class="string">all</span>; errorbar(mn(:,1),mn(:,2),sn(:,2),<span class="string">'Color'</span>,<span class="string">'k'</span>,<span class="string">'Marker'</span>,<span class="string">'s'</span>);
+errorbar(mt(:,1),mt(:,2),st(:,2),<span class="string">'Color'</span>,<span class="string">'g'</span>,<span class="string">'Marker'</span>,<span class="string">'s'</span>);
+errorbar(mt(:,1),mt(:,2),st(:,2),<span class="string">'Color'</span>,<span class="string">'g'</span>,<span class="string">'Marker'</span>,<span class="string">'s'</span>);
+title([<span class="string">'R6 Temperature dependence Brewer#'</span>, Cal.brw_str{Cal.n_inst}]); ylabel(<span class="string">'Standard Lamp R6 ratio'</span>);
+datetick(<span class="string">'x'</span>,6,<span class="string">'KeepTicks'</span>,<span class="string">'KeepLimits'</span>); grid <span class="string">on</span>;
+lg=legend(ax(2),<span class="string">'Old temperature coeff'</span>,<span class="string">'New temperature coeff'</span>,<span class="string">'Location'</span>,<span class="string">'best'</span>);
+set(lg,<span class="string">'HandleVisibility'</span>,<span class="string">'Off'</span>);  set(findobj(lg,<span class="string">'Type'</span>,<span class="string">'text'</span>),<span class="string">'FontSize'</span>,7,<span class="string">'HandleVisibility'</span>,<span class="string">'Off'</span>);
+linkprop(ax,{<span class="string">'Position'</span>,<span class="string">'XTick'</span>});
+
+figure; set(gcf,<span class="string">'Tag'</span>,<span class="string">'TEMP_COMP_TEMP'</span>)
+[mn,sn]=grpstats(Forigx(:,[2,end]),Forigx(:,2),{<span class="string">'mean'</span>,<span class="string">'sem'</span>});
+[mt,st]=grpstats(Fn(:,[2,end]),Fn(:,2),{<span class="string">'mean'</span>,<span class="string">'sem'</span>});
+hold <span class="string">on</span>; errorbar(mn(:,1),mn(:,2),sn(:,2),<span class="string">'Color'</span>,<span class="string">'k'</span>,<span class="string">'Marker'</span>,<span class="string">'s'</span>);
+errorbar(mt(:,1),mt(:,2),st(:,2),<span class="string">'Color'</span>,<span class="string">'g'</span>,<span class="string">'Marker'</span>,<span class="string">'s'</span>); grid;
+lg=legend(<span class="string">'Old temperature coeff'</span>,<span class="string">'New temperature coeff'</span>,<span class="string">'Location'</span>,<span class="string">'best'</span>);
+set(lg,<span class="string">'HandleVisibility'</span>,<span class="string">'Off'</span>); set(findobj(lg,<span class="string">'Type'</span>,<span class="string">'text'</span>),<span class="string">'FontSize'</span>,7,<span class="string">'HandleVisibility'</span>,<span class="string">'Off'</span>);
+title([<span class="string">'R6 Temperature dependence Brewer#'</span>, Cal.brw_str{Cal.n_inst}]);
+ylabel(<span class="string">'Standard Lamp R6 ratio'</span>); xlabel(<span class="string">'Temperature'</span>); set(gca,<span class="string">'Box'</span>,<span class="string">'On'</span>);
+plot(mn(:,1),mn(:,2),<span class="string">'k.'</span>,mt(:,1),mt(:,2),<span class="string">'g.'</span>)
+robust_line
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'plot_flag'    defaults to 0
+   'intensity_flag'    defaults to 0
+   'temp_flag'    defaults to []
+   'TCB'    defaults to []
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_228a2_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_11.png" alt=""> <p>ix=sort(findobj('tag','TEMP_COEF_DESC')); printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',15,'Height',7,'LockAxes',0,'no_export');</p><pre class="codeinput"><span class="comment">% ix=sort(findobj('tag','TEMP_day_new'));</span>
+<span class="comment">% printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',14,'Height',9,'LockAxes',0,'no_export');</span>
+
+ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'TEMP_OLD_VS_NEW'</span>));
+printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'Width'</span>,12.5,<span class="string">'Height'</span>,6.5);
+
+ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'TEMP_COMP_DATE'</span>));
+printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'Width'</span>,12.5,<span class="string">'Height'</span>,7,<span class="string">'FontMode'</span>,<span class="string">'fixed'</span>,<span class="string">'FontSize'</span>,9,<span class="string">'axes'</span>,1);
+
+ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'TEMP_COMP_TEMP'</span>));
+printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'Width'</span>,12.5,<span class="string">'Height'</span>,6.5);
+
+close <span class="string">all</span>
+</pre><pre class="codeoutput">naux =
+     1
+figura =
+    '228_figures_TEMP_OLD_VS_NEW_1'
+naux =
+     2
+naux =
+     1
+naux =
+     1
+</pre><h2 id="15">Latex stuff</h2><pre class="codeinput"><span class="comment">% Temperature Range</span>
+<span class="comment">% Para que funcione asignamos la salida Fr en la llamada a la funci&yuml;n</span>
+<span class="comment">% temp_coeff_raw donde se calculen los TC's (en este caso en {})</span>
+tmp=Fr(:,2);
+latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_tempcoeff_'</span>,Cal.brw_str{Cal.n_inst}]),<span class="keyword">...</span>
+                                  <span class="string">'\tempmin'</span>,min(tmp),<span class="string">'\tempmax'</span>,max(tmp));
+clear <span class="string">tmp</span>;
+temperature{Cal.n_inst}.sl_raw=sl_raw{Cal.n_inst};
+temperature{Cal.n_inst}.NTC=NTC;
+temperature{Cal.n_inst}.ajuste=ajuste;
+<span class="keyword">if</span> exist(<span class="string">'Args'</span>,<span class="string">'var'</span>)
+temperature{Cal.n_inst}.info=Args;
+<span class="keyword">else</span> warning(<span class="string">'No se est&yuml;n guardando los inputs de la funci&yuml;n!!'</span>)
+<span class="keyword">end</span>
+save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'temperature'</span>);
+
+<span class="comment">% Tables</span>
+tc_table={};
+ <span class="keyword">for</span> t=1:length(NTC)
+    tc_table{t}=[round(config_orig(2:6)'*10^4)/10^4                             <span class="comment">%'Current'</span>
+                       NTC{1}                                                   <span class="comment">%'Calculated'</span>
+                 round(config_def(2:6)'*10^4)/10^4];                            <span class="comment">%'Final'</span>
+
+    <span class="keyword">if</span> t==1, t=[]; indx=1;  <span class="keyword">else</span> t=t-1; indx=indx+1;  <span class="keyword">end</span>
+       matrix2latex_ctable(tc_table{indx},<span class="keyword">...</span>
+                     fullfile(Cal.file_latex,[<span class="string">'table_TC'</span>,num2str(t),<span class="string">'_'</span>,Cal.brw_str{Cal.n_inst},<span class="string">'.tex'</span>]),<span class="keyword">...</span>
+                    <span class="string">'RowLabels'</span>,{<span class="string">'Current'</span>,<span class="string">'Calculated'</span>,<span class="string">'Final'</span>},<span class="keyword">...</span>
+                    <span class="string">'ColumnLabels'</span>,{<span class="string">'slit#2'</span>,<span class="string">'slit#3'</span>,<span class="string">'slit#4'</span>,<span class="string">'slit#5'</span>,<span class="string">'slit#6'</span>},<span class="keyword">...</span>
+                    <span class="string">'alignment'</span>, <span class="string">'c'</span>,<span class="string">'resize'</span>,0.8,<span class="string">'format'</span>,<span class="string">'%7.4f'</span>,<span class="string">'size'</span>,<span class="string">'footnotesize'</span>);
+ <span class="keyword">end</span>
+
+tabla_regress={};
+ <span class="keyword">for</span> tt=1:length(ajuste)
+
+     param=ajuste{tt};
+     <span class="keyword">if</span> isstruct(param)
+         param=param.new;
+     <span class="keyword">end</span>
+     absc=mmcellstr(sprintf(<span class="string">'%g +/- %g |'</span>,round(param([1:5 7],[1,3]))'));
+     slpe=mmcellstr(sprintf(<span class="string">'%3.1f +/- %3.2f |'</span>,param([1:5 7],[2,4])'));
+     tabla_regress{tt}=cat(2,absc,slpe);
+
+     <span class="keyword">if</span> tt==1, tt=[]; indx=1;  <span class="keyword">else</span> tt=tt-1; indx=indx+1;  <span class="keyword">end</span>
+        matrix2latex_ctable(tabla_regress{indx},<span class="keyword">...</span>
+                fullfile(Cal.file_latex,[<span class="string">'table_regress'</span>,num2str(tt),<span class="string">'_'</span>,Cal.brw_str{Cal.n_inst},<span class="string">'.tex'</span>]),<span class="keyword">...</span>
+               <span class="string">'RowLabels'</span>,{<span class="string">'slit\#2'</span>,<span class="string">'slit\#3'</span>,<span class="string">'slit\#4'</span>,<span class="string">'slit\#5'</span>,<span class="string">'slit\#6'</span>,<span class="string">'MS9'</span>},<span class="keyword">...</span>
+               <span class="string">'ColumnLabels'</span>,{<span class="string">'0 abscissa +/- standard error'</span>,<span class="string">'slope +/- standard error'</span>},<span class="keyword">...</span>
+               <span class="string">'alignment'</span>, <span class="string">'c'</span>,<span class="string">'resize'</span>,0.8,<span class="string">'size'</span>,<span class="string">'footnotesize'</span>);
+ <span class="keyword">end</span>
+</pre><h2 id="16">Filter attenuation</h2><pre class="codeinput">[ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},<span class="keyword">...</span>
+                             <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year-4,1,1),<span class="keyword">...</span>
+                             <span class="string">'outlier_flag'</span>,1,<span class="string">'plot_flag'</span>,0,<span class="string">'config'</span>,config_orig(17:22));
+
+filter{Cal.n_inst}.ETC_FILTER_CORRECTION=ETC_FILTER_CORRECTION;
+filter{Cal.n_inst}.media_fi=media_fi;
+filter{Cal.n_inst}.fi=fi;
+filter{Cal.n_inst}.ETC_FILTER_COR=round(ETC_FILTER_CORRECTION(2,:).*(sign(ETC_FILTER_CORRECTION(3,:))==sign(ETC_FILTER_CORRECTION(4,:))));
+filter{Cal.n_inst}.fi_avg=fi_avg;
+
+    o3f=filters_data(filter,Cal);
+
+save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'filter'</span>);
+
+NFI=size(fi,1);
+NFIcamp=length(find(ismember(fi_avg(:,1),datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}))==1));
+latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_filter_'</span>,Cal.brw_str{Cal.n_inst}]),<span class="string">'\NFI'</span>,NFI,<span class="string">'\NFIcamp'</span>,NFIcamp);
+
+label_2={<span class="string">'filter #1'</span>,<span class="string">'filter #2'</span>,<span class="string">'filter #3'</span>,<span class="string">'filter #4'</span>,<span class="string">'filter #5'</span>};
+ETC_FILTER_CORR2cell={};
+<span class="keyword">for</span> y=1:5
+    ETC_FILTER_CORR2cell{1,y}=round(ETC_FILTER_CORRECTION(1,y)*10)/10;
+    ETC_FILTER_CORR2cell{2,y}=round(ETC_FILTER_CORRECTION(2,y)*10)/10;
+    ETC_FILTER_CORR2cell{3,y}=sprintf(<span class="string">'%c%s %s%c'</span>,<span class="string">'['</span>,num2str(round(ETC_FILTER_CORRECTION(3,y)*10)/10),num2str(round(ETC_FILTER_CORRECTION(4,y)*10)/10),<span class="string">']'</span>);
+<span class="keyword">end</span>
+disp(ETC_FILTER_CORR2cell);
+matrix2latex_ctable(ETC_FILTER_CORR2cell,fullfile(Cal.file_latex,[<span class="string">'table_filter_correction_'</span>,Cal.brw_str{Cal.n_inst},<span class="string">'.tex'</span>]),<span class="keyword">...</span>
+                     <span class="string">'rowLabels'</span>,{<span class="string">'ETC Filt. Corr. (median)'</span>,<span class="string">'ETC Filt. Corr. (mean)'</span>,<span class="string">'ETC Filt. Corr. (mean 95\% CI) '</span>},<span class="keyword">...</span>
+                     <span class="string">'columnLabels'</span>,{<span class="string">'filter\#1'</span>,<span class="string">'filter\#2'</span>,<span class="string">'filter\#3'</span>,<span class="string">'filter\#4'</span>,<span class="string">'filter\#5'</span>},<span class="keyword">...</span>
+                     <span class="string">'alignment'</span>, <span class="string">'c'</span>,<span class="string">'resize'</span>,0.8);
+
+label_1={<span class="string">'slit #0'</span>,<span class="string">'slit #1'</span>,<span class="string">'slit #2'</span>,<span class="string">'slit #3'</span>,<span class="string">'slit #4'</span>,<span class="string">'slit #5'</span>,<span class="string">'mean'</span>};
+label_2={<span class="string">'filter #1'</span>,<span class="string">'filter #2'</span>,<span class="string">'filter #3'</span>,<span class="string">'filter #4'</span>,<span class="string">'filter #5'</span>};
+<span class="comment">% disp([num2cell(media_fi);num2cell(fix(mean(media_fi)))]);</span>
+matrix2latex_ctable([num2cell(media_fi);num2cell(fix(mean(media_fi)))],fullfile(Cal.file_latex,[<span class="string">'table_filter_'</span>,Cal.brw_str{Cal.n_inst},<span class="string">'.tex'</span>]),<span class="keyword">...</span>
+                     <span class="string">'rowLabels'</span>,{<span class="string">'slit\#0'</span>,<span class="string">'slit\#1'</span>,<span class="string">'slit\#2'</span>,<span class="string">'slit\#3'</span>,<span class="string">'slit\#4'</span>,<span class="string">'slit\#5'</span>,<span class="string">'mean'</span>},<span class="keyword">...</span>
+                     <span class="string">'columnLabels'</span>,{<span class="string">'filter\#1'</span>,<span class="string">'filter\#2'</span>,<span class="string">'filter\#3'</span>,<span class="string">'filter\#4'</span>,<span class="string">'filter\#5'</span>},<span class="keyword">...</span>
+                     <span class="string">'alignment'</span>, <span class="string">'c'</span>,<span class="string">'resize'</span>,0.72);
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'path_to_file'    defaults to .
+--------------------------------------
+  Columns 1 through 4
+    [          -3]    [       -12]    [         -15]    [        -12]
+    [         0.4]    [       0.1]    [       -13.6]    [      -14.7]
+    '[-15.5 16.6]'    '[-22 27.1]'    '[-47.3 17.2]'    '[-35.5 7.3]'
+  Column 5
+    [         -7]
+    [      -15.3]
+    '[-46.5 7.2]'
+</pre><img vspace="5" hspace="5" src="cal_report_228a2_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_17.png" alt=""> <pre class="codeinput">fprintf(<span class="string">'\nFI''s analyzed: %d\n'</span>,NFI);
+fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,<span class="string">'.5g'</span>,label_1)
+filter{Cal.n_inst}.mean_table=fi_mean_table;
+<span class="comment">%</span>
+<span class="comment">%fprintf('\nFI''s analyzed: %d\n',NFI);</span>
+fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,<span class="string">'.5g'</span>,{<span class="string">'ETC Filt. Corr. (median)'</span>,<span class="string">'ETC Filt. Corr. (mean)'</span>,<span class="string">'ETC Filt. Corr. (CI) '</span>,<span class="string">'ETC Filt. Corr.(CI)'</span>})
+filter{Cal.n_inst}.etc_table=fi_etc_table;
+
+
+save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'filter'</span>);
+
+<span class="comment">%</span>
+ figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'FI_wavelength'</span>)));
+ printfiles_report(gcf,Cal.dir_figs,<span class="string">'Width'</span>,13.5);
+
+ figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'FI_STATS'</span>)));
+ printfiles_report(gcf,Cal.dir_figs,<span class="string">'Width'</span>,13,<span class="string">'Height'</span>,16);
+
+ ix=sort(findobj(<span class="string">'-regexp'</span>,<span class="string">'Tag'</span>,<span class="string">'FIOS*\w+'</span>));
+ <span class="keyword">for</span> ff=ix
+     printfiles_report(ff',Cal.dir_figs,<span class="string">'Width'</span>,17,<span class="string">'Height'</span>,9);
+ <span class="keyword">end</span>
+</pre><pre class="codeoutput">
+FI's analyzed: 16
+fi_mean_table =
+  7&times;5 table
+              filter_1    filter_2    filter_3    filter_4    filter_5
+              ________    ________    ________    ________    ________
+    slit_0      4848       10834       19113       22707       26824  
+    slit_1      4829       10782       18932       22438       26517  
+    slit_2      4803       10730       18720       22132       26162  
+    slit_3      4785       10688       18545       21880       25856  
+    slit_4      4770       10646       18382       21642       25573  
+    slit_5      4757       10616       18240       21431       25314  
+    mean        4798       10716       18655       22038       26041  
+fi_etc_table =
+  4&times;5 table
+                             filter_1    filter_2    filter_3    filter_4    filter_5
+                             ________    ________    ________    ________    ________
+    ETCFilt_Corr__median_         -3          -12        -15         -12          -7 
+    ETCFilt_Corr__mean_       0.4494     0.099108    -13.554     -14.662     -15.341 
+    ETCFilt_Corr__CI_        -15.481      -22.002    -47.262     -35.519     -46.465 
+    ETCFilt_Corr__CI__1       16.553       27.113     17.227      7.3418       7.232 
+</pre><img vspace="5" hspace="5" src="cal_report_228a2_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228a2_21.png" alt=""> <pre class="codeinput">close <span class="string">all</span>
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;
+% publish(fullfile(pwd,'cal_report_228a2.m'),options_pub);
+
+%% Brewer Setup
+clear all;
+
+file_setup='arenos2019_setup';
+
+eval(file_setup);     % configuracion por defecto
+Cal.n_inst=find(Cal.brw==228);
+Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
+Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
+                              filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
+mkdir(Cal.dir_figs);
+
+try
+      save(Cal.file_save,'-Append','Cal'); %sobreescribimos la configuracion guardada.
+      load(Cal.file_save);
+catch exception
+      fprintf('Error: %s\n Initializing data for Brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+      save(Cal.file_save);
+end
+
+
+load(Cal.file_save,'temperature');
+load(Cal.file_save,'filter');
+
+
+%% configuration files
+close all;
+
+[config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
+[config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
+
+config_temp.n_inst=Cal.n_inst;
+config_temp.brw_name=Cal.brw_name{Cal.n_inst};
+config_temp.final_days=Cal.Date.FINAL_DAYS(1);
+
+NTC={}; tabla_regress={}; ajuste={}; Args={};
+
+%% Temperature dependence.  During campaign
+[sl_rw,tc]=readb_sl_rawl(fullfile('.','bfiles',['B*.',Cal.brw_str{Cal.n_inst}]));% cambio nombres para poder seguir
+
+if ~isnan(sl_rw)
+    
+    [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,'outlier_flag',0,...
+        'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])));
+    
+    disp(sprintf(' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{1}.orig(7,[1 3 2 4])));
+    disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{1}.new(7,[1 3 2 4])));
+    
+    %%
+    makeHtmlTable([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],...
+        {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4);
+    
+    %%
+    makeHtmlTable(NTC{1});
+else
+    Fr=NaN*ones(1,9);
+    ajuste{1}.orig=NaN*ones(7,4);
+    ajuste{1}.cero=NaN*ones(7,4);
+    ajuste{1}.new=NaN*ones(7,4);
+    
+end
+
+%% Check previous results
+if exist('sl_raw','var')
+    if iscell(sl_raw) && size(sl_raw,2)>=Cal.n_inst
+        if isempty(sl_raw{Cal.n_inst})
+           [sl_raw{Cal.n_inst},TC{Cal.n_inst}]=readb_sl_rawl(fullfile(['bdata',Cal.brw_str{Cal.n_inst}],...
+                                                             ['B*.',Cal.brw_str{Cal.n_inst}]),'f_plot',1);
+           save(Cal.file_save,'-APPEND','sl_raw','TC');
+        end
+    else
+        [sl_raw{Cal.n_inst},TC{Cal.n_inst}]=readb_sl_rawl(fullfile(['bdata',Cal.brw_str{Cal.n_inst}],...
+                                                          ['B*.',Cal.brw_str{Cal.n_inst}]),'f_plot',1);
+        save(Cal.file_save,'-APPEND','sl_raw','TC');
+    end
+else
+    [sl_raw{Cal.n_inst},TC{Cal.n_inst}]=readb_sl_rawl(fullfile(['bdata',Cal.brw_str{Cal.n_inst}],...
+                                                      ['B*.',Cal.brw_str{Cal.n_inst}]),'f_plot',1);
+    save(Cal.file_save,'-APPEND','sl_raw','TC');
+end
+
+%% SL summary from bfiles temperature
+% figure; set(gcf,'Tag','DailySL');
+% hl1=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(2,:),[],TC{Cal.n_inst}(3,:),'*k');
+% set(hl1,'LineWidth',2);
+% ylabel('SL double ratio MS9');
+% title(sprintf('Daily means for sl ozone ratio & temperature. Brewer %s\r\n (from bfile sl summaries)',Cal.brw_name{Cal.n_inst}));
+% set(gca,'XTickLabels',datestr(get(gca,'XTick'),2));  grid;
+% ax(1)=gca; set(ax(1),'Position',[0.1  0.12  0.75  0.72]);% [left bottom width height]
+% xtickangle(gca,30);
+% ax(2)=axes('Position',get(ax(1),'Position'),...
+%    'XAxisLocation','top',...
+%    'YAxisLocation','right',...
+%    'Color','none','FontSize',10,...
+%    'XColor','k','YColor','b'); set(ax,'box','off');
+% hold on; hl2=ploterr(TC{Cal.n_inst}(1,:),TC{Cal.n_inst}(7,:),[],TC{Cal.n_inst}(8,:),'*b');
+% set(hl2,'LineWidth',2);  set(gca,'XTicklabels',[],'YLim',[0 45]);
+% ylb=ylabel('Temperature','Rotation',-90); pos=get(ylb,'Position'); pos(1)=pos(1)+3;
+% set(ylb,'Position',pos);
+
+[NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
+                       'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
+                        %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
+                        %this year data
+                        
+                       
+
+% figure(maxf(findobj('Tag','TEMP_OLD_VS_NEW'))); set(gca,'YLim',[1750 1920]);
+
+disp(sprintf(' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.orig(7,[1 3 2 4])));
+disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{2}.new(7,[1 3 2 4])));
+
+ %%
+tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],...
+        {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4)
+temperature{Cal.n_inst}.regression_table=tc_reg_table;
+%%
+tc_coeff_table=makeHtml_Table(NTC{2})
+temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
+
+%%  Check changes
+[NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
+                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
+
+Forigx=Forig; Fn=Fnew;
+
+figure;  set(gcf,'Tag','TEMP_COMP_DATE');
+plot(Forigx(:,1),Forigx(:,2),'b.','MarkerSize',6); 
+ylabel('Temperature','Color','b'); ax(1)=gca; set(ax(1),'YAxisLocation','right','XTicklabels',{' '}); 
+[mn,sn]=grpstats(Forigx(:,[1,end,2]),{year(Forigx(:,1)),fix(Forigx(:,1)/7)*7},{'mean','sem'});
+[mt,st]=grpstats(Fn(:,[1,end]),{year(Fn(:,1)),fix(Fn(:,1)/7)*7},{'mean','sem'}); 
+ax(2) = axes('YAxisLocation','left','Color','none'); 
+hold all; errorbar(mn(:,1),mn(:,2),sn(:,2),'Color','k','Marker','s');
+errorbar(mt(:,1),mt(:,2),st(:,2),'Color','g','Marker','s');
+errorbar(mt(:,1),mt(:,2),st(:,2),'Color','g','Marker','s');
+title(['R6 Temperature dependence Brewer#', Cal.brw_str{Cal.n_inst}]); ylabel('Standard Lamp R6 ratio');
+datetick('x',6,'KeepTicks','KeepLimits'); grid on; 
+lg=legend(ax(2),'Old temperature coeff','New temperature coeff','Location','best'); 
+set(lg,'HandleVisibility','Off');  set(findobj(lg,'Type','text'),'FontSize',7,'HandleVisibility','Off');    
+linkprop(ax,{'Position','XTick'}); 
+
+figure; set(gcf,'Tag','TEMP_COMP_TEMP')
+[mn,sn]=grpstats(Forigx(:,[2,end]),Forigx(:,2),{'mean','sem'});
+[mt,st]=grpstats(Fn(:,[2,end]),Fn(:,2),{'mean','sem'});
+hold on; errorbar(mn(:,1),mn(:,2),sn(:,2),'Color','k','Marker','s');
+errorbar(mt(:,1),mt(:,2),st(:,2),'Color','g','Marker','s'); grid;
+lg=legend('Old temperature coeff','New temperature coeff','Location','best');
+set(lg,'HandleVisibility','Off'); set(findobj(lg,'Type','text'),'FontSize',7,'HandleVisibility','Off');    
+title(['R6 Temperature dependence Brewer#', Cal.brw_str{Cal.n_inst}]);
+ylabel('Standard Lamp R6 ratio'); xlabel('Temperature'); set(gca,'Box','On');
+plot(mn(:,1),mn(:,2),'k.',mt(:,1),mt(:,2),'g.')
+robust_line
+
+
+
+%%
+% ix=sort(findobj('tag','TEMP_COEF_DESC'));
+% printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',15,'Height',7,'LockAxes',0,'no_export');
+
+% ix=sort(findobj('tag','TEMP_day_new'));
+% printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',14,'Height',9,'LockAxes',0,'no_export');
+
+ix=sort(findobj('tag','TEMP_OLD_VS_NEW'));
+printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',12.5,'Height',6.5);
+
+ix=sort(findobj('tag','TEMP_COMP_DATE'));
+printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',12.5,'Height',7,'FontMode','fixed','FontSize',9,'axes',1);
+
+ix=sort(findobj('tag','TEMP_COMP_TEMP'));
+printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',12.5,'Height',6.5);
+
+close all
+
+%% Latex stuff
+
+% Temperature Range
+% Para que funcione asignamos la salida Fr en la llamada a la funciÿn
+% temp_coeff_raw donde se calculen los TC's (en este caso en {})
+tmp=Fr(:,2);
+latexcmd(fullfile(Cal.file_latex,['cal_tempcoeff_',Cal.brw_str{Cal.n_inst}]),...
+                                  '\tempmin',min(tmp),'\tempmax',max(tmp));
+clear tmp;
+temperature{Cal.n_inst}.sl_raw=sl_raw{Cal.n_inst};
+temperature{Cal.n_inst}.NTC=NTC;
+temperature{Cal.n_inst}.ajuste=ajuste;
+if exist('Args','var')
+temperature{Cal.n_inst}.info=Args;
+else warning('No se estÿn guardando los inputs de la funciÿn!!')
+end
+save(Cal.file_save,'-APPEND','temperature');
+
+% Tables
+tc_table={};
+ for t=1:length(NTC)
+    tc_table{t}=[round(config_orig(2:6)'*10^4)/10^4                             %'Current'
+                       NTC{1}                                                   %'Calculated'
+                 round(config_def(2:6)'*10^4)/10^4];                            %'Final'
+
+    if t==1, t=[]; indx=1;  else t=t-1; indx=indx+1;  end
+       matrix2latex_ctable(tc_table{indx},...
+                     fullfile(Cal.file_latex,['table_TC',num2str(t),'_',Cal.brw_str{Cal.n_inst},'.tex']),...
+                    'RowLabels',{'Current','Calculated','Final'},...
+                    'ColumnLabels',{'slit#2','slit#3','slit#4','slit#5','slit#6'},...
+                    'alignment', 'c','resize',0.8,'format','%7.4f','size','footnotesize');
+ end
+
+tabla_regress={};
+ for tt=1:length(ajuste)
+
+     param=ajuste{tt};
+     if isstruct(param)
+         param=param.new;
+     end
+     absc=mmcellstr(sprintf('%g +/- %g |',round(param([1:5 7],[1,3]))'));
+     slpe=mmcellstr(sprintf('%3.1f +/- %3.2f |',param([1:5 7],[2,4])'));
+     tabla_regress{tt}=cat(2,absc,slpe);
+
+     if tt==1, tt=[]; indx=1;  else tt=tt-1; indx=indx+1;  end
+        matrix2latex_ctable(tabla_regress{indx},...
+                fullfile(Cal.file_latex,['table_regress',num2str(tt),'_',Cal.brw_str{Cal.n_inst},'.tex']),...
+               'RowLabels',{'slit\#2','slit\#3','slit\#4','slit\#5','slit\#6','MS9'},...
+               'ColumnLabels',{'0 abscissa +/- standard error','slope +/- standard error'},...
+               'alignment', 'c','resize',0.8,'size','footnotesize');
+ end
+
+%% Filter attenuation
+[ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},...
+                             'date_range',datenum(Cal.Date.cal_year-4,1,1),...
+                             'outlier_flag',1,'plot_flag',0,'config',config_orig(17:22));
+                             
+filter{Cal.n_inst}.ETC_FILTER_CORRECTION=ETC_FILTER_CORRECTION;
+filter{Cal.n_inst}.media_fi=media_fi;
+filter{Cal.n_inst}.fi=fi;
+filter{Cal.n_inst}.ETC_FILTER_COR=round(ETC_FILTER_CORRECTION(2,:).*(sign(ETC_FILTER_CORRECTION(3,:))==sign(ETC_FILTER_CORRECTION(4,:))));                       
+filter{Cal.n_inst}.fi_avg=fi_avg;
+
+    o3f=filters_data(filter,Cal);
+
+save(Cal.file_save,'-APPEND','filter');
+
+NFI=size(fi,1); 
+NFIcamp=length(find(ismember(fi_avg(:,1),datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}))==1));
+latexcmd(fullfile(Cal.file_latex,['cal_filter_',Cal.brw_str{Cal.n_inst}]),'\NFI',NFI,'\NFIcamp',NFIcamp);
+
+label_2={'filter #1','filter #2','filter #3','filter #4','filter #5'};
+ETC_FILTER_CORR2cell={};
+for y=1:5
+    ETC_FILTER_CORR2cell{1,y}=round(ETC_FILTER_CORRECTION(1,y)*10)/10;
+    ETC_FILTER_CORR2cell{2,y}=round(ETC_FILTER_CORRECTION(2,y)*10)/10;
+    ETC_FILTER_CORR2cell{3,y}=sprintf('%c%s %s%c','[',num2str(round(ETC_FILTER_CORRECTION(3,y)*10)/10),num2str(round(ETC_FILTER_CORRECTION(4,y)*10)/10),']');
+end
+disp(ETC_FILTER_CORR2cell);
+matrix2latex_ctable(ETC_FILTER_CORR2cell,fullfile(Cal.file_latex,['table_filter_correction_',Cal.brw_str{Cal.n_inst},'.tex']),...
+                     'rowLabels',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (mean 95\% CI) '},...
+                     'columnLabels',{'filter\#1','filter\#2','filter\#3','filter\#4','filter\#5'},...
+                     'alignment', 'c','resize',0.8);
+   
+label_1={'slit #0','slit #1','slit #2','slit #3','slit #4','slit #5','mean'};
+label_2={'filter #1','filter #2','filter #3','filter #4','filter #5'};
+% disp([num2cell(media_fi);num2cell(fix(mean(media_fi)))]);
+matrix2latex_ctable([num2cell(media_fi);num2cell(fix(mean(media_fi)))],fullfile(Cal.file_latex,['table_filter_',Cal.brw_str{Cal.n_inst},'.tex']),...
+                     'rowLabels',{'slit\#0','slit\#1','slit\#2','slit\#3','slit\#4','slit\#5','mean'},...
+                     'columnLabels',{'filter\#1','filter\#2','filter\#3','filter\#4','filter\#5'},...
+                     'alignment', 'c','resize',0.72);
+                 
+%%
+fprintf('\nFI''s analyzed: %d\n',NFI);
+fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,'.5g',label_1)
+filter{Cal.n_inst}.mean_table=fi_mean_table;
+%
+%fprintf('\nFI''s analyzed: %d\n',NFI);
+fi_etc_table=display_table(ETC_FILTER_CORRECTION,label_2,10,'.5g',{'ETC Filt. Corr. (median)','ETC Filt. Corr. (mean)','ETC Filt. Corr. (CI) ','ETC Filt. Corr.(CI)'})
+filter{Cal.n_inst}.etc_table=fi_etc_table;
+
+
+save(Cal.file_save,'-APPEND','filter');
+
+%
+ figure(maxf(findobj('tag','FI_wavelength')));
+ printfiles_report(gcf,Cal.dir_figs,'Width',13.5);
+    
+ figure(maxf(findobj('tag','FI_STATS')));
+ printfiles_report(gcf,Cal.dir_figs,'Width',13,'Height',16);
+       
+ ix=sort(findobj('-regexp','Tag','FIOS*\w+'));
+ for ff=ix
+     printfiles_report(ff',Cal.dir_figs,'Width',17,'Height',9);
+ end
+%%
+close all
+
+##### SOURCE END #####
+--></body></html>
