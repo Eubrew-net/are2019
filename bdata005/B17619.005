@@ -1776,4 +1776,15 @@ co19:13:07ck: Illegal command (ck) in schedule uv0625b, ignoring
 ap19:13:08 26.56 20.94 22.19 1610.56 14.87 5.05-14.95 23.75 0 20.37 0 0 5.17-8.19 .06 0 26.25 20.94 22.19 1610.56 14.78 5.03-14.95 23.99 0 20.37 0 0 5.15-8.19 1.61 12.03
 co19:13:36skc: reading schedule uv0625b-SKC line 13000
 hk19:13:39 27 22 23 19.7 3.81-99-99
-co19:13:39skc: Waiting until ZA =  86.7 now  84.1
+co19:13:39skc: Waiting until ZA =  86.7 now  84.1
+hk19:23:42 27 21 23 19.7 3.6-99-99
+co19:23:42skc: Waiting until ZA =  86.7 now  85.9
+co19:28:28ru: Running ru from uv0625b line  86.73001
+co19:28:29ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co19:28:29td: Running td from uv0625b line  86.73001
+co19:28:32td: Time correction  2.6 seconds
+co19:28:33b1: Running b1 from uv0625b line  86.73001
+hk19:28:48 27 21 22 19.7 3.6-99-99
+co19:28:52ds: DS intensity too low ( 10/cy), skipping.
+co19:29:08zs: ZS intensity too low ( 58/cy), skipping.
+hk19:29:22 27 21 22 19 3.48-99-99
