@@ -416,4 +416,34 @@ co10:56:29td: Julian day = 176
 co10:56:32td: Time correction  .4 seconds
 co10:56:32td: Julian day = 176
 hk10:56:42 36 36 32 1.9 .8-99-99
-co11:00:00ua: UV timed  scan started
+co11:00:00ua: UV timed  scan started
+co11:07:49ua: UV timed  scan finished, incident DUV =  214.9084 mW/m^2
+co11:07:55ru: Running ru from o30625a line -23.94
+co11:07:58ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co11:08:02td: Julian day = 176
+co11:08:05td: Time correction  .4 seconds
+co11:08:06td: Julian day = 176
+co11:08:12ua: UV timed  skipped  11.13333  11.5
+hk11:08:16 36 36 32 1.9 .8-99-99
+co11:08:38ux: UV extended  scan started
+co11:14:54ux: UV extended  scan finished, incident DUV =  220.6995 mW/m^2
+co11:14:57af: Auto FR/HP/HG is now OFF
+co11:15:02b1: Running b1 from o30625a line -23.94
+hk11:15:25 37 36 32 28.4 11.78-99-99
+co11:15:46ds: Suppressed oscillation of filter wheel.
+dsa192 676.110620 658276 327 1048012 1396382 2485547 2595880 2179739rat 3316.75 2321.227-63.44532-1096.891
+co11:16:37ds: HOME key pressed
+co11:16:42ds: DS aborted
+co11:16:44ds: Going to menu
+co11:17:11skc: Starting schedule uv0625a
+co11:17:13ru: Running ru from uv0625a line -24.03
+co11:17:16ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co11:17:20td: Julian day = 176
+co11:17:23td: Time correction  .4 seconds
+co11:17:25td: Julian day = 176
+co11:17:31ua: UV timed  skipped  11.28333  11.5
+hk11:17:42 36 36 31 1.9 .8-99-99
+co11:17:55ds: Suppressed oscillation of filter wheel.
+dsa256 678.260620 95133 284 153908 208743 386504 408902 341187rat 3440.328 2405.719-18.875-1068.5
+dsa256 678.940620 95209 285 154571 209010 387705 409271 342767rat 3426.18 2404.492-28.36719-1052.008
+dsa256 679.610620 95567 290 154635 209760 388862 409899 343074rat 3431.836 2396.008-34.53906-1054.649
