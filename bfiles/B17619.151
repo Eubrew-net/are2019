@@ -399,4 +399,21 @@ summary10:23:40JUN 25/19 30.233 1.156 36ds 3 3697 2495 21-1078 714
 summary10:23:40JUN 25/19 29.985 1.153 36aode 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 co10:27:34td: Time correction  3 seconds
 co10:30:00ua: UV timed  scan started
-co10:36:22ua: UV timed  scan aborted
+co10:36:22ua: UV timed  scan aborted
+co10:52:42start:  PROGRAM start :  JUN 25/19 at 10:52:34
+hk10:52:42 36 36 32 1.9 .8-99-99
+co10:52:49ex: Running ex from menu line -200
+co10:53:57start:  PROGRAM start :  JUN 25/19 at 10:53:42
+hk10:53:57 36 36 31 1.9 .8-99-99
+co10:55:23skc: Starting schedule o30625a
+co10:55:24ru: Running ru from o30625a line -35.18
+co10:55:48start:  PROGRAM start :  JUN 25/19 at 10:55:33
+hk10:55:48 36 36 32 1.9 .8-99-99
+co10:55:50ab_sk: Running ab_sk from main.asc
+co10:56:23ru: Running ru from o30625a line -35.18
+co10:56:25ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co10:56:29td: Julian day = 176
+co10:56:32td: Time correction  .4 seconds
+co10:56:32td: Julian day = 176
+hk10:56:42 36 36 32 1.9 .8-99-99
+co11:00:00ua: UV timed  scan started
