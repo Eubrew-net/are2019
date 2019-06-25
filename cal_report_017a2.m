@@ -23,6 +23,7 @@ end
 
 load(Cal.file_save,'temperature');
 load(Cal.file_save,'filter');
+clear year;
 
 %% configuration files
 close all;

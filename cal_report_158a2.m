@@ -119,7 +119,8 @@ temperature{Cal.n_inst}.regression_table=tc_reg_table;
 tc_coeff_table=makeHtml_Table(NTC{2})
 temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
 
-%%  Check changes
+%  Check changes 
+ clear year;
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
                                 'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
 
@@ -171,7 +172,7 @@ close all
 %% Latex stuff
 
 % Temperature Range
-% Para que funcione asignamos la salida Fr en la llamada a la funciï¿½n
+% Para que funcione asignamos la salida Fr en la llamada a la funciÿn
 % temp_coeff_raw donde se calculen los TC's (en este caso en {})
 tmp=Fr(:,2);
 latexcmd(fullfile(Cal.file_latex,['cal_tempcoeff_',Cal.brw_str{Cal.n_inst}]),...
@@ -182,7 +183,7 @@ temperature{Cal.n_inst}.NTC=NTC;
 temperature{Cal.n_inst}.ajuste=ajuste;
 if exist('Args','var')
 temperature{Cal.n_inst}.info=Args;
-else warning('No se estï¿½n guardando los inputs de la funciï¿½n!!')
+else warning('No se estÿn guardando los inputs de la funciÿn!!')
 end
 save(Cal.file_save,'-APPEND','temperature');
 
