@@ -895,4 +895,43 @@ co13:37:39ds: HOME key pressed
 co13:37:41ds: DS aborted
 summary13:36:39JUN 25/19 19.889 1.063 30ds 0 5253 3905 939 484 3704 2613-6.9 288 3 12 13 5 13 2 .1 .6
 co13:37:41ds: Going to menu
-co13:37:52si: Running si from menu line -200
+co13:37:52si: Running si from menu line -200
+co13:41:03az: Running az from menu line -200
+co13:41:41az: Azimuth discrepancy = -616
+co13:42:49si: Running si from menu line -200
+co13:45:02si: New SI, HC = -3, NC =  5  Old = -3 ,  5
+co13:45:27skc: Starting schedule o30625a
+co13:45:28td: Julian day = 176
+co13:45:29td: Time correction  0 seconds
+co13:45:29td: Julian day = 176
+co13:45:31ua: UV timed  skipped  13.75  14
+hk13:45:34 30 31 30 22.4 7.16-99 34
+co13:45:58ux: UV extended  scan started
+co13:51:14ux: UV extended  scan finished, incident DUV =  290.9116 mW/m^2
+co13:51:14af: Auto FR/HP/HG is now OFF
+hk13:51:19 30 31 30 22.4 7.16-99 34
+hpscan13:51:39 0 66442 10 106162 20 147261 30 185014 40 223549 50 259898 60 279207 70 282666 80 283544 90 283847 100 282943 110 266888 120 233167 130 190627 140 155253 150 113197 160 69920
+hp13:52:34 .9959263 293063.9 81.4 30
+co13:52:41b1: Running b1 from o30625a line  15.01
+hk13:52:57 30 31 29 22.4 7.15-99 34
+co13:53:14ds: HOME key pressed
+co13:53:16ds: DS aborted
+co13:53:17ds: Going to menu
+co13:54:06mm: Running mm from menu line -200
+co13:55:12azcn: Running azcn from menu line -200
+co13:55:13az: Running az from menu line -200
+co13:56:13az: Azimuth discrepancy = -24
+co13:57:08cn: Running cn from menu line -200
+co13:57:08cn: Starting schedule o30625a
+co13:57:10td: Julian day = 176
+co13:57:10td: Time correction  .2 seconds
+co13:57:10td: Julian day = 176
+hk13:57:16 30 31 30 22.3 7.11-99 34
+co14:00:00ua: UV timed  scan started
+co14:07:57ua: UV timed  scan finished, incident DUV =  276.8437 mW/m^2
+co14:07:58td: Julian day = 176
+co14:07:59td: Time correction  0 seconds
+co14:07:59td: Julian day = 176
+co14:08:01ua: UV timed  skipped  14.13333  14.5
+hk14:08:04 30 31 30 22.3 7.11-99 34
+co14:08:20ux: UV extended  scan started
