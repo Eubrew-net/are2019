@@ -400,12 +400,12 @@ List of arguments given default values:
 --------------------------------------
   Columns 1 through 4
     [         -7]    [        -1]    [         -8]    [         3]
-    [       -3.1]    [       1.9]    [       -7.7]    [       1.8]
-    '[-15.1 5.6]'    '[-6.2 9.5]'    '[-14.8 0.4]'    '[-6.3 8.9]'
+    [       -3.1]    [       1.8]    [       -7.7]    [       1.8]
+    '[-14.9 5.5]'    '[-6.2 9.4]'    '[-14.8 0.3]'    '[-6.2 8.9]'
   Column 5
     [          0]
-    [       -0.9]
-    '[-12.6 9.5]'
+    [       -0.8]
+    '[-12.4 9.2]'
 </pre><img vspace="5" hspace="5" src="cal_report_005a2_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a2_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a2_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a2_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_005a2_16.png" alt=""> <pre class="codeinput">fprintf(<span class="string">'\nFI''s analyzed: %d\n'</span>,NFI);
 fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,<span class="string">'.5g'</span>,label_1)
 filter{Cal.n_inst}.mean_table=fi_mean_table;
@@ -434,9 +434,9 @@ fi_etc_table =
                              filter_1    filter_2    filter_3    filter_4    filter_5
                              ________    ________    ________    ________    ________
     ETCFilt_Corr__median_         -7          -1          -8           3            0
-    ETCFilt_Corr__mean_      -3.1347       1.871      -7.701      1.7929     -0.88107
-    ETCFilt_Corr__CI_        -15.074     -6.2273     -14.839      -6.287      -12.588
-    ETCFilt_Corr__CI__1       5.5505      9.4746     0.36147      8.8569       9.5269
+    ETCFilt_Corr__mean_        -3.14      1.8068     -7.6838      1.7894     -0.84952
+    ETCFilt_Corr__CI_        -14.871     -6.2364     -14.778     -6.2003      -12.418
+    ETCFilt_Corr__CI__1       5.5238      9.3636      0.2913      8.9355       9.1596
 </pre><pre class="codeinput"> figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'FI_wavelength'</span>)));
  printfiles_report(gcf,Cal.dir_figs,<span class="string">'Width'</span>,13.5);
 
