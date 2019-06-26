@@ -22,4 +22,29 @@ co00:46:14re: Azimuth discrepancy =  0
 co00:46:18az: Running az from uv0625a line -200
 co00:46:31az: Azimuth discrepancy =  0
 co00:46:36w1: Running w1 from uv0625a line -200
-co00:51:41fr: Running fr from uv0625a line -200
+co00:51:41fr: Running fr from uv0625a line -200
+co06:59:11start:  PROGRAM start :  JUN 26/19 at 06:59:07
+co06:59:11ab_sk: Running ab_sk from main.asc
+co06:59:14ab_sk: HOME key pressed
+co07:02:39fr: Running fr from menu line -200
+co07:03:47fr: Micrometer #1 discrepancy= 2 Now set to o3 offset = 0
+co07:04:45fr: Micrometer #2 discrepancy=-2 Now set to offset = 0
+co07:05:19hphg: Running hphg from menu line -200
+hk07:05:32 22 23 23 24.7 5.06-99 25
+hpscan07:05:41 0 380220 10 445900 20 508715 30 534602 40 538301 50 538330 60 539226 70 538044 80 517080 90 457012 100 387531 110 318015 120 246757 130 150245 140 72239 150 31722 160 24966
+hp07:06:57 .9946627 562138.8 53 22
+hpscan07:06:59 0 196907 10 282474 20 357648 30 406031 40 471367 50 528490 60 544035 70 544988 80 546061 90 545396 100 541791 110 507453 120 442562 130 371312 140 301518 150 228257 160 125191
+hp07:08:17 .9954694 560612.2 77.7 22
+hk07:08:30 22 24 23 24.7 5.36-99 25
+co07:08:33hgfw2: HG FW#2 at step  0
+hk07:10:53 23 24 24 24.7 5.37-99 25
+hgscan 0wide 302warm= 430.53507:10:54JUN 26/19 343 583 1131 4067 21288 42503 63914 86641 110453 132725 151607 155079 148603 132783 113428 91459 68956 46067 24361 16720 16789 24768 46859 68722 91957 115196 134320 150287 157114 153567 135873 111153 87681 63930 43316 19907 4309 1237 675 386
+hg07:12:23 .9971 269.5032 296 305174 23 13
+hgscan 0wide 302warm= 430.53507:12:24JUN 26/19 810 1373 8414 27549 49786 72068 95664 120075 144273 155982 158859 148946 131411 109986 87100 64501 41360 22415 15843 9435 9560 16183 22470 42406 63324 87197 110733 131002 148657 159343 156454 144822 118393 94611 71342 49064 26858 7719 1441 834
+hg07:13:54 .9995 282.5151 283 318202 23 0
+co07:15:41skc: Starting schedule uv0626a
+co07:15:43ru: Running ru from uv0626a line -70.82
+co07:15:46ru: Giving SB time to complete motor movements.
+co07:18:37start:  PROGRAM start :  JUN 26/19 at 07:18:32
+co07:18:37ab_sk: Running ab_sk from main.asc
+co07:18:58ru: Running ru from uv0626a line -70.82
