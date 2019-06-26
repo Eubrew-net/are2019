@@ -1885,4 +1885,11 @@ co23:31:12skc: Waiting until end of local day.
 co23:41:12skc: Waiting until end of local day.
 co23:51:12skc: Waiting until end of local day.
 co00:00:00skc: Waiting until end of local day.
-co00:10:00skc: Waiting until end of local day.
+co00:10:00skc: Waiting until end of local day.
+co00:20:00skc: Waiting until end of local day.
+ed
+co00:29:38ed: Starting EndOfDay
+co00:29:38sum: Running sum from uv0625b line -200
+co00:29:39ozsum: Running ozsum from uv0625b line -200
+co00:29:40slsum: Running slsum from uv0625b line -200
+co00:29:41hgsum: Running hgsum from uv0625b line -200
