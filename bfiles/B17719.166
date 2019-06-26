@@ -24,4 +24,36 @@ co00:49:56az: Running az from uv0626a line -200
 co00:50:08az: Azimuth discrepancy =  0
 co00:50:12w1: Running w1 from uv0626a line -200
 co00:55:17fr: Running fr from uv0626a line -200
-co00:56:24fr: Micrometer #1 discrepancy= 0 Now set to o3 offset = 0
+co00:56:24fr: Micrometer #1 discrepancy= 0 Now set to o3 offset = 0
+co06:58:55start:  PROGRAM start :  JUN 26/19 at 06:58:51
+co06:58:55ab_sk: Running ab_sk from main.asc
+co06:58:58ab_sk: HOME key pressed
+co07:01:10fr: Running fr from menu line -200
+co07:02:09fr: Micrometer #1 discrepancy= 0 Now set to o3 offset = 0
+co07:02:28hg1: Running hg1 from menu line -200
+hk07:02:42 22 23 23 19.3 3.96-99 25
+co07:02:46hgfw2: HG FW#2 at step  0
+hk07:05:09 22 23 23 19.3 3.96-99 26
+hgscan 0wide 302warm= 424.72507:05:10JUN 26/19 578 592 2638 11469 22073 33893 46658 58378 70882 80080 82515 80238 71100 60969 49293 36365 23846 12768 7365 5091 5122 7543 13326 25705 39743 53776 66938 79726 90433 94159 92193 84025 69464 55579 41240 27359 14676 3349 702 666
+hg07:06:27 .999 283.7613 288 176674 22 2
+hgscan 0wide 302warm= 424.72507:06:28JUN 26/19 655 761 5002 17316 31372 46754 62448 78010 93618 103191 106295 101366 90160 75130 59529 43081 27497 14111 8935 6095 6053 9077 14678 29246 45256 62463 79052 93813 107131 113824 111471 103448 86114 69492 52090 35154 20205 6009 845 751
+hg07:07:45 .9994 285.2565 287 220119 22 1
+co07:09:31skc: Starting schedule uv0626a
+co07:09:32ru: Running ru from uv0626a line -70.82
+co07:09:35ru: Giving SB time to complete motor movements.
+co07:12:26start:  PROGRAM start :  JUN 26/19 at 07:12:22
+co07:12:26ab_sk: Running ab_sk from main.asc
+co07:12:47ru: Running ru from uv0626a line -70.82
+co07:12:49ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co07:12:52td: Julian day = 177
+co07:12:56td: Time correction  .3 seconds
+co07:12:56td: Julian day = 177
+co07:13:01ua: UV timed  skipped  7.216667  7.5
+hk07:13:07 22 24 23 19.3 4.2-99 26
+co07:13:28ux: UV extended  scan started
+co07:18:45ux: UV extended  scan finished, incident DUV =  24.92065 mW/m^2
+co07:18:51af: Auto FR/HP/HG is now OFF
+co07:18:52b1: Running b1 from uv0626a line -70.82
+hk07:19:12 22 24 24 19.2 4.17-99 26
+dsa128 439.820620 12472 5 45735 151103 425453 664088 646458rat 10072.77 5492.625 1481.789-593.8985
+dsa128 440.530620 12958 8 47286 154948 434049 674509 655823rat 10005.29 5457.18 1465.234-596.8828
