@@ -55,7 +55,7 @@ Cal.calibration_days={
    day0:dayend,day0:dayend   ,day0:dayend       %075  
    %day0:dayend,day0:dayend   ,day0:dayend       %102  
    day0:dayend,day0:dayend  ,day0:dayend        %117  
-   day0:dayend,day0:dayend  ,day0:dayend        %126 
+   day0:dayend,day0:173  ,   174:dayend        %126 
    166:dayend, 168:169      ,170:dayend        %150  
    day0:dayend,day0:dayend  ,day0:dayend        %151 
    day0:dayend,day0:172   ,173:dayend       %158 
