@@ -113,4 +113,29 @@ co04:11:02skc: Waiting until ZA = -95.1 now -100.3
 hk04:21:06 28 25 25 70.3 16.15-99-99
 co04:21:07skc: Waiting until ZA = -95.1 now -98.7
 hk04:31:11 28 25 25 73.2 16.82-99-99
-co04:31:13skc: Waiting until ZA = -95.1 now -97.1
+co04:31:13skc: Waiting until ZA = -95.1 now -97.1
+hk04:41:16 27 25 25 73.2 16.82-99-99
+co04:41:18skc: Waiting until ZA = -95.1 now -95.5
+co04:43:21ru: Running ru from uv0625b line -95.07
+co04:43:36start:  PROGRAM start :  JUN 26/19 at 04:43:29
+hk04:43:36 27 25 25 73.2 16.82-99-99
+co04:43:37ab_sk: Running ab_sk from main.asc
+co04:44:00ru: Running ru from uv0625b line -95.07
+co04:44:02ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk04:44:08 27 25 25 73.2 16.82-99-99
+co04:44:11hgfw2: HG FW#2 at step  0
+hk04:46:24 27 24 25 68.4 14.85-99-99
+hgscan 0narrow 296warm= 286.158304:46:25JUN 26/19 80 87 98 123 131 1826 7979 14930 20926 23675 23881 22822 17224 10752 4699 743 136 148 101 98 114 103 150 141 973 5617 12064 19389 25057 26216 26212 22910 16280 9167 2580 151 135 119 113 84
+hg04:48:04 .999 914.4264 914 50097 27 0
+co04:48:08uf: Running uf from uv0625b line -95.07
+hk04:48:16 27 25 25 73.2 16.82-99-99
+co04:48:54uf: UV fast  scan started
+co04:52:20uf: UV fast  scan finished, incident DUV =  1.448314E-02 mW/m^2
+co04:52:23b1: Running b1 from uv0625b line -95.07
+hk04:52:30 27 24 25 91 19.75-99-99
+co04:52:53hgfw2: HG FW#2 at step  0
+hk04:57:33 27 24 25 72.6 15.76-99-99
+hgscan 0narrow 296warm= 11.2316704:57:34JUN 26/19 87 100 94 152 140 2779 10449 18805 26183 28580 28613 26975 20069 12639 5189 564 129 123 102 120 94 113 119 154 595 5392 12897 20282 27276 28524 28378 25983 18407 9954 2516 128 128 114 84 84
+hg04:59:14 .9986 915.0526 913 57137 27-1
+co04:59:19b2: Running b2 from uv0625b line -95.07
+co04:59:43zs: ZS intensity too low ( 16/cy), skipping.
