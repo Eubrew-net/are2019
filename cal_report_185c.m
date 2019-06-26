@@ -1,12 +1,12 @@
-% options_pub.outputDir=fullfile(pwd,'latex','163','html'); options_pub.showCode=true;
-% close all; publish(fullfile(pwd,'cal_report_163c.m'),options_pub);
+% options_pub.outputDir=fullfile(pwd,'latex','185','html'); options_pub.showCode=true;
+% close all; publish(fullfile(pwd,'cal_report_185c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
 file_setup='arenos2019_setup';
 
 eval(file_setup);     % configuracion por defecto
-Cal.n_inst=find(Cal.brw==163);
+Cal.n_inst=find(Cal.brw==185);
 Cal.file_latex=fullfile('.','latex',Cal.brw_str{Cal.n_inst});
 Cal.dir_figs=fullfile('latex',filesep(),Cal.brw_str{Cal.n_inst},...
                               filesep(),[Cal.brw_str{Cal.n_inst},'_figures'],filesep());
