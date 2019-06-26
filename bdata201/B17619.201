@@ -1724,4 +1724,93 @@ hk00:32:05 24 59 59 35.7 44.08-99 24
 co00:45:06fi: Still doing FI
 co01:01:17fi: Still doing FI
 co01:14:18fi: Still doing FI
-co01:30:29fi: Still doing FI
+co01:30:29fi: Still doing FI
+co01:43:31fi: Still doing FI
+co01:59:42fi: Still doing FI
+ed
+co01:59:43ed: Starting EndOfDay
+co01:59:43ed: Running: |pd|o3|af|ozsum|aodsum|uvsum|fmsum|fzsum|slsum|rl|cfg_out|rtn_date|hgsum|pf|pd|checkaz|po|pd|af|re|az|w1|fr|hp|hg|ap|dt|an|rs|b2|cj|pf|ru
+co01:59:44o3: Running o3 from uv0625a line -200
+co01:59:46af: Auto FR/HP/HG is now OFF
+co01:59:46ozsum: Running ozsum from uv0625a line -200
+co01:59:47aodsum: Running aodsum from uv0625a line -200
+co01:59:48uvsum: Running uvsum from uv0625a line -200
+co01:59:51fmsum: Running fmsum from uv0625a line -200
+co01:59:53fzsum: Running fzsum from uv0625a line -200
+co01:59:55slsum: Running slsum from uv0625a line -200
+co01:59:56SLOAVG: 17619  24  31  10  1847  1285  469  436  450  308  814316  243  146  62  47  118  51  464042
+co01:59:56rl: Running rl from uv0625a line -200
+co01:59:58rl:  1992  001  01 22 01   Reset No -> Tepid  from  1992  001  01 19 52   until  2012  001  01 21 56  . Counts: 1,0
+co01:59:59rl:  1992  001  01 22 02   New value set for watermark MOISTURE.HIGH: 5963.798046 .
+co02:00:00rl:  1992  001  01 22 02   Checksum bad in low level command. 
+co02:00:01rl:  1992  001  01 22 02   Motor #3: appears stuck with a reference sensor activated. 
+co02:00:02rl:  1992  001  01 22 02   Motor #11: appears stuck with a reference sensor activated. 
+co02:00:03rl:  1992  001  01 22 13   Motor 9: Move attempted outside of logical bounds 
+co02:00:05rl:  1992  001  01 22 14   Motor #9: appears stuck with a reference sensor activated. 
+co02:00:06rl:  1992  001  01 22 14   Motor 10: Move attempted outside of logical bounds 
+co02:00:07rl:  1992  001  01 22 14   Motor #10: appears stuck with a reference sensor activated. 
+co02:00:08rl:  1992  001  01 22 15   New value set for watermark SUPPLY.VOLTAGE.HIGH[+5V]: 5.500467 Volts.
+co02:00:09rl:  1992  001  01 25 33   Motor 2: Move attempted outside of logical bounds 
+co02:00:10rl:  1992  001  01 25 33   Motor #2: appears stuck with a reference sensor activated. 
+co02:00:11rl:  1992  001  01 44 54   Motor #2: appears stuck with a reference sensor activated. 
+co02:00:13rl:  1992  001  01 46 56   Reset Warm -> Warm  from  1992  001  01 46 52   until  1992  001  01 46 53  . Counts: 0,1
+co02:00:14rl:  1992  001  01 46 56   New value set for watermark MOISTURE.HIGH: 2282.213926 .
+co02:00:14rl:  All log items reported.
+co02:00:17cfg_out: Running cfg_out from uv0625a line -200
+co02:00:18cfg_out: Illegal command (cfg_out) in schedule uv0625a, ignoring
+co02:00:18rtn_date: Running rtn_date from uv0625a line -200
+vers02:00:18ab_sk.rtn10000 REM ************ ab_sk.rtn 02/12/2010 09:50:00 ************
+vers02:00:18af.rtn10000 REM ************ af.rtn 02/12/2010 09:50:34 ************
+vers02:00:18an.rtn10000 REM ************ an.rtn 02/12/2010 09:50:34 ************
+vers02:00:18aodsum.rtn10000 REM ************ aodsum.rtn 21/01/2019 14:50:00 ************
+vers02:00:18ap.rtn10000 REM ************ ap.rtn 21/01/2019 14:50:00 ************
+vers02:00:18apsum.rtn10000 REM ************ apsum.rtn 02/12/2010 09:50:00 ************
+vers02:00:18ar.rtn10000 REM ************ ar.rtn 02/12/2010 09:50:00 ************
+vers02:00:18as.rtn10000 REM ************ as.rtn 02/12/2010 09:50:00 ************
+vers02:00:18au.rtn10000 REM ************ au.rtn 02/12/2010 09:50:00 ************
+vers02:00:18auto.rtn10000 REM ************ auto.rtn 03/08/2016 09:15:00 ************
+vers02:00:18auto-off.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers02:00:18auto-on.rtn10000 REM ************ auto-on.rtn 05/03/2011 19:47:08 ************
+vers02:00:18az.rtn10000 REM ************ az.rtn 02/12/2010 09:50:00 ************
+vers02:00:18bp.rtn10000 REM ********************** bp routine 26/11/97 ********************
+vers02:00:18ca.rtn10000 REM ************ ca.rtn 09/04/2011 09:50:00 ************
+vers02:00:18cal.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:00:18calds.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:00:18caluv.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:00:18cb.rtn10000 REM ************ cb.rtn 02/12/2010 09:50:00 ************
+vers02:00:18cc.rtn10000 REM ************ cc.rtn 22/08/2015 11:00:00 ************
+vers02:00:18cd.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:00:18cf.rtn10000 REM ************ cf.rtn 02/12/2010 09:50:00 ************
+vers02:00:18checkaz.rtn10000 REM ************ checkaz.rtn 02/12/2010 09:50:00 ************
+vers02:00:18checkhg.rtn10000 REM ************ checkhg.rtn 02/12/2010 09:50:00 ************
+vers02:00:18chk_cfg.rtn10000 REM ************ chk_cfg.rtn 31/01/2013 21:00:00 ************
+vers02:00:18chk_cod.rtn10000 REM ************ chk_cod.rtn 08/11/2013 21:00:00 ************
+vers02:00:18ci.rtn10000 REM ************ ci.rtn 02/12/2010 09:50:00 ************
+vers02:00:18cj.rtn10000 REM ************ cj.rtn 28/07/2016 20:00:00 ************
+vers02:00:18cl.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:00:18cm.rtn10000 REM ********************* ci routine 19/11/08 *******************
+vers02:00:18cn.rtn10000 REM ************ cn.rtn 02/12/2010 09:50:00 ************
+vers02:00:18cr.rtn10000 REM ************ cr.rtn 02/12/2010 09:50:00 ************
+vers02:00:18crv.rtn10000 REM *************** cr routine 23/09/98 *****************
+vers02:00:18cs.rtn10000 REM ************ cs.rtn 02/12/2010 09:50:00 ************
+vers02:00:18cu.rtn10000 REM ************ cal.rtn 22/04/2012 09:50:00 ************
+vers02:00:18cx.rtn10000 REM ************ cx.rtn 02/12/2010 09:50:00 ************
+vers02:00:18cz.rtn10000 REM ************ cz.rtn 02/12/2010 09:50:00 ************
+vers02:00:18d1.rtn10000 REM ************ cal.rtn 17/04/2015 09:50:00 ************
+vers02:00:18da_lo.rtn10000 REM ************ da_lo.rtn 29/01/2019 07:15:00 ************
+vers02:00:18db.rtn10000 REM ************ db.rtn 02/12/2010 09:50:00 ************
+vers02:00:18di.rtn10000 REM ************ di.rtn 17/07/2016 09:50:00 ************
+vers02:00:18diag.rtn10000 REM ************ diag.rtn 02/12/2010 09:50:00 ************
+vers02:00:19dimds-on.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers02:00:19dimds-~1.rtn10000 REM ************ auto-off.rtn 05/03/2011 19:47:08 ************
+vers02:00:19dk.rtn10000 REM ************ dk.rtn 05/02/2013 11:00:00 ************
+vers02:00:19dp.rtn10000 REM ************ dp.rtn 02/12/2010 09:50:00 ************
+vers02:00:19ds.rtn10000 REM ************ ds.rtn 15/04/2015 11:45:00 ************
+vers02:00:19dsp.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers02:00:19dsp#.rtn10000 REM ************ dsp#.rtn 02/01/2019 11:25:00 ************
+vers02:00:19dsp1.rtn10000 REM ************ dsp1.rtn 02/01/2019 19:47:08 ************
+vers02:00:19dspn2.rtn10000 REM ************ dsp.rtn 28/04/2014 11:25:00 ************
+vers02:00:19dspt.rtn10000 REM **************** dsp routine 02/06/10 *****************
+vers02:00:19dssum.rtn10000 REM ************ dssum.rtn 15/08/2016 09:50:00 ************
+vers02:00:19dt.rtn10000 REM ************ dt.rtn 21/01/2019 14:50:00 ************
+vers02:00:19dusum.rtn10000 REM ************ dusum.rtn 21/01/2019 14:50:00 ************
