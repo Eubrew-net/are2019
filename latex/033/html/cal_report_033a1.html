@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_033a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-21"><meta name="DC.source" content="cal_report_033a1.m"><style type="text/css">
+      --><title>cal_report_033a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-26"><meta name="DC.source" content="cal_report_033a1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -83,33 +83,20 @@ mkdir(Cal.dir_figs);
       fprintf(<span class="string">'Error: %s\n Initializing data for Brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       save(Cal.file_save);
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">
-ans =
-
+</pre><pre class="codeoutput">ans =
   logical
-
    1
-
-
 ans =
-
   1&times;1 cell array
-
     {'IZO#185'}
-
-
 ans =
-
-  21&times;9 cell array
-
+  20&times;9 cell array
   Columns 1 through 5
-
     {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
     {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
     {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
-    {'POR#102'}    {[102]}    {[4]}    {[0]}    {'102'}
     {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
     {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
     {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
@@ -125,31 +112,27 @@ ans =
     {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
-
   Columns 6 through 9
-
     {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
-    {'..\017\ICF15315&#8230;'}    {'..\017\ICF15315&#8230;'}    {'2170'}    {'2097'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
     {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
-    {'..\102\ICF15517&#8230;'}    {'..\102\ICF15517&#8230;'}    {'2718'}    {'2718'}
     {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
-    {'..\126\icf15517&#8230;'}    {'..\126\ICF15517&#8230;'}    {'1710'}    {'1710'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
     {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF20118&#8230;'}    {'..\163\ICF20118&#8230;'}    {'0274'}    {'0274'}
-    {'..\166\ICF15217&#8230;'}    {'..\166\IOS15717&#8230;'}    {'1955'}    {'1955'}
+    {'..\163\ICF23318&#8230;'}    {'..\163\ICF23318&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
     {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
-    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0363'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
     {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF15017&#8230;'}    {'0242'}    {'0242'}
-
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
 Station.name=<span class="string">''</span>;
 Station.lat=67;
@@ -249,27 +232,17 @@ save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'a
 List of arguments given default values:
    'path_to_file'    defaults to .
 --------------------------------------
-
 RseisAVG =
-
-        2329
-
-
+        2324
 RcincoAVG =
-
-        4351
-
+        4341
 
   Columns 1 through 5
-
     'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
-    [      2325]    [     2329]    [       NaN]    [      4351]    [     NaN]
-
+    [      2325]    [     2324]    [       NaN]    [      4341]    [     NaN]
   Column 6
-
     'Calculated'
     [     4e-08]
-
 
 </pre><img vspace="5" hspace="5" src="cal_report_033a1_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_033a1_10.png" alt=""> <pre class="codeinput">ix=sort(double(findobj(<span class="string">'Type'</span>,<span class="string">'figure'</span>)));
 printfiles_report(ix',Cal.dir_figs);
@@ -340,7 +313,7 @@ close <span class="string">all</span>
 </pre><h2 id="16">CI REPORT</h2><pre class="codeinput">close <span class="string">all</span>; br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CI*.'</span>,br]),<span class="keyword">...</span>
-                           <span class="string">'CI16919.033'</span>,<span class="keyword">...</span>
+                           <span class="string">'CI16819.033'</span>,<span class="keyword">...</span>
                           <span class="string">'depuracion'</span>,1,<span class="string">'outlier_flag'</span>,0,<span class="keyword">...</span>
                           <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[168 180]));
 <span class="keyword">catch</span> exception
@@ -568,7 +541,7 @@ close all
 close all; br=sprintf('%03d',Cal.brw(Cal.n_inst));
 try
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,['bdata',br],['CI*.',br]),...
-                           'CI16919.033',...
+                           'CI16819.033',...
                           'depuracion',1,'outlier_flag',0,...
                           'date_range',datenum(Cal.Date.cal_year,1,[168 180]));
 catch exception
