@@ -119,4 +119,29 @@ hk04:56:06 27 27 25-99-99-99-99
 co04:56:32hgfw2: HG FW#2 at step  0
 hk04:58:20 27 27 25-99-99-99-99
 hgscan 0wide 302warm= 11.8604:58:21JUN 26/19 812 1013 9260 23771 37516 53039 70454 87117 103255 111486 113921 105655 93858 81498 65131 50843 31984 16453 10855 7542 7570 11240 16924 33341 52927 68321 86356 99822 113232 122735 120471 112166 95681 78419 58345 41451 26542 9655 1217 867
-hg05:00:00 .9998 286.045 286 236656 27 0
+hg05:00:00 .9998 286.045 286 236656 27 0
+co05:00:04b2: Running b2 from uv0625a line -95.07
+co05:00:31zs: ZS intensity too low ( 30/cy), skipping.
+co05:01:35zs: ZS intensity too low ( 22/cy), skipping.
+co05:01:47zs: ZS intensity too low ( 22/cy), skipping.
+hk05:01:54 27 27 25-99-99-99-99
+co05:01:55skc: Waiting until ZA = -87.3 now -92
+hk05:11:59 27 27 25-99-99-99-99
+co05:12:00skc: Waiting until ZA = -87.3 now -89.8
+hk05:22:05 27 27 25-99-99-99-99
+co05:22:06skc: Waiting until ZA = -87.3 now -88.2
+co05:27:50ru: Running ru from uv0625a line -87.24
+co05:27:53ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:27:57td: Julian day = 177
+co05:28:00td: Time correction  .5 seconds
+co05:28:01td: Julian day = 177
+hk05:28:11 27 27 24-99-99-99-99
+co05:30:00ua: UV timed  scan started
+co05:38:05ua: UV timed  scan finished, incident DUV =  .7516022 mW/m^2
+co05:38:12af: Auto FR/HP/HG is now OFF
+co05:38:13b1: Running b1 from uv0625a line -87.24
+hk05:38:41 27 27 25-99-99-99-99
+co05:38:47ds: DS intensity too low ( 5/cy), skipping.
+co05:39:10zs: ZS intensity too low ( 367/cy), skipping.
+hk05:39:18 27 27 25-99-99-99-99
+co05:39:35hgfw2: HG FW#2 at step  0
