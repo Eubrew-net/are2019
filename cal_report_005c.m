@@ -1,5 +1,5 @@
 % options_pub.outputDir=fullfile(pwd,'latex','005','html'); options_pub.showCode=true;
-% Close all; publish(fullfile(pwd,'cal_report_005c.m'),options_pub);
+% close all; publish(fullfile(pwd,'cal_report_005c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
