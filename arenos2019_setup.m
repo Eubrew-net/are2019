@@ -66,7 +66,7 @@ Cal.calibration_days={
    167:dayend,167:dayend     ,167:dayend       %185  
    day0:dayend,day0:dayend   ,day0:dayend       %186  
    day0:dayend,day0:dayend   ,day0:dayend       %190
-   day0:dayend,day0:dayend   ,day0:dayend       %201
+   day0:dayend,day0:175      ,176:dayend       %201
    day0:dayend, day0:dayend  ,day0:dayend       %202
    day0:dayend, day0:172     ,173:dayend       %228 No blind days!!
    %day0:dayend,day0:dayend   ,day0:dayend       %300
@@ -81,7 +81,7 @@ Cal.brw       = [005,017,033,070,075,117,126,150,151,158,163,166,172,174,185,186
 Cal.brwM      = [2  ,2  ,2  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3    ];
 Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
 Cal.sl_c_blind= [1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
-Cal.no_maint   =[0  ,1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,1  ,0  ,0  ,1  ,1  ,0  ,1  ,1  ,1  ,0    ];
+Cal.no_maint   =[0  ,1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,1  ,0  ,0  ,1  ,1  ,0  ,1  ,0  ,1  ,0    ];
 Cal.plt       = {'o','+','*','h','x','s','d','v','>','<','p','+','x','p','*','x','s','d','v','>'};
 
 
