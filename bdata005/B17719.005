@@ -164,4 +164,43 @@ co05:27:32td: Running td from uv0626b line -87.29
 co05:27:31td: Time correction -1.7 seconds
 co05:27:31ua: Running ua from uv0626b line -87.29
 hk05:27:35 23 19 19 19 3.1-99-99
-co05:30:00ua: UV timed  scan started
+co05:30:00ua: UV timed  scan started
+co05:33:50ua: UV timed  scan finished, incident DUV =  0 mW/m^2
+co05:33:50b1: Running b1 from uv0626b line -87.29
+hk05:34:12 23 19 19 19.7 3.2-99-99
+co05:34:16ds: DS intensity too low ( 3/cy), skipping.
+co05:34:32zs: ZS intensity too low ( 94/cy), skipping.
+hk05:34:35 23 19 19 19.7 3.2-99-99
+co05:34:51hgfw2: HG FW#2 at step  0
+hk05:38:58 23 19 19 19 3.1-99-99
+hgscan 0narrow 302warm= 505:38:58JUN 26/19 88 87 106 151 1128 2919 4776 6760 8486 9145 9593 8817 7005 5279 3054 1614 1171 743 551 475 464 562 738 1159 1566 3050 5291 7149 8897 9635 9260 8482 6769 4783 2873 1084 128 88 102 81
+hg05:40:17 .9998 159.266 159 19228 23 0
+hk05:40:32 23 19 19 19.7 3.2-99-99
+co05:40:37ds: DS intensity too low ( 3/cy), skipping.
+co05:40:52zs: ZS intensity too low ( 119/cy), skipping.
+hk05:41:06 23 19 19 19.7 3.2-99-99
+co05:41:10ds: DS intensity too low ( 4/cy), skipping.
+co05:41:26zs: ZS intensity too low ( 151/cy), skipping.
+hk05:41:39 23 19 19 19.7 3.2-99-99
+co05:41:44ds: DS intensity too low ( 6/cy), skipping.
+co05:41:59zs: ZS intensity too low ( 135/cy), skipping.
+hk05:42:13 23 19 19 19.7 3.2-99-99
+co05:42:17ds: DS intensity too low ( 4/cy), skipping.
+co05:42:33zs: ZS intensity too low ( 142/cy), skipping.
+hk05:42:46 23 19 19 19.7 3.2-99-99
+co05:42:51ds: DS intensity too low ( 4/cy), skipping.
+co05:43:06zs: ZS intensity too low ( 177/cy), skipping.
+co05:43:06ck: Running ck from uv0626b line -87.29
+co05:43:07ck: Illegal command (ck) in schedule uv0626b, ignoring
+ap05:43:08 22.81 18.13 18.75 1610.56 14.78 5.03-14.95 23.75 0 20.37 0 0 5.17-8.19 .06 0 22.5 17.81 18.75 1610.56 14.78 5-14.95 23.99 0 20.37 0 0 5.17-8.19 1.61 12.03
+co05:43:36skc: reading schedule uv0626b-SKC line 13000
+hk05:43:39 23 19 19 19.7 3.2-99-99
+co05:43:39skc: Waiting until ZA = -82.1 now -84.6
+hk05:53:42 23 19 19 19.7 3.2-99-99
+co05:53:42skc: Waiting until ZA = -82.1 now -82.8
+co05:57:31ru: Running ru from uv0626b line -82.03
+co05:57:31ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:57:31td: Running td from uv0626b line -82.03
+co05:57:31td: Time correction -.4 seconds
+co05:57:31ua: Running ua from uv0626b line -82.03
+hk05:57:35 23 19 19 20.3 3.31-99-99
