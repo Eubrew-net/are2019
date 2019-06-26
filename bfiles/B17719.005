@@ -155,4 +155,13 @@ hk05:08:52 23 19 20 19 3.1-99-99
 fv05:09:540az 59.64002-80 2.8ze 89.838 22 3.2
 co05:11:09skc: reading schedule uv0626b-SKC line 13000
 hk05:11:12 23 19 20 19 3.1-99-99
-co05:11:12skc: Waiting until ZA = -87.3 now -89.9
+co05:11:12skc: Waiting until ZA = -87.3 now -89.9
+hk05:21:15 23 19 20 19 3.1-99-99
+co05:21:15skc: Waiting until ZA = -87.3 now -88.4
+co05:27:31ru: Running ru from uv0626b line -87.29
+co05:27:32ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:27:32td: Running td from uv0626b line -87.29
+co05:27:31td: Time correction -1.7 seconds
+co05:27:31ua: Running ua from uv0626b line -87.29
+hk05:27:35 23 19 19 19 3.1-99-99
+co05:30:00ua: UV timed  scan started
