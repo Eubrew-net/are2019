@@ -6,7 +6,7 @@ if ispc
 else isunix
  Cal.path_root=fullfile('~',cell2mat(regexpi(pwd,'^[A-Z]:', 'match')),'CODE','campaigns','are2019');
   if ismac
-   Cal.path_root=fullfile('~','CODE','rbcce.aemet.es','campaigns','are2019');
+   Cal.path_root=fullfile('/Users/aredondas/','CODE','rbcce.aemet.es','campaigns','are2019');
   else
    Cal.path_root=fullfile('~',cell2mat(regexpi(pwd,'^[A-Z]:', 'match')),'CODE','campaigns','are2019');
   end
@@ -121,7 +121,7 @@ Cal.brw_name(Cal.brewer_ref)
     '..\150\ICF15617.150' ,   '..\150\ICF15617.150'  ,'0322',  '0322'; % 
     '..\151\ICF15317.151' ,   '..\151\IOS15317.151'  ,'1880',  '1880'; %   IOS
     '..\158\ICF21218.158' ,   '..\158\ICF21218.158'  ,'0558',  '0558'; % 
-    '..\163\ICF23318.163' ,   '..\163\ICF23318.163'  ,'0274',  '0274'; % ->to updated from arosa
+    '..\163\ICF21018.163' ,   '..\163\ICF17519.163'  ,'0274',  '0274'; % ->to updated from arosa
     '..\166\ICF15217.166' ,   '..\166\ICF17419.166'  ,'1955',  '1955'; %   IOS15717.166
     '..\172\ICF15117.172' ,   '..\172\ICF15117.172'  ,'0444',  '0444'; %
     '..\174\ICF20718.174' ,   '..\174\ICF20718.174'  ,'0605',  '0605'; %
