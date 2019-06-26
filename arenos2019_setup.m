@@ -51,7 +51,7 @@ Cal.calibration_days={
    day0:dayend, 168:171      , 172  :dayend     %005  
    day0:dayend, 168:dayend   , 168:dayend       %017   -already removed on Bfile[168:179,172:dayend]
    day0:dayend,168:172       , 173:dayend       %033  
-   day0:dayend,day0:dayend   ,day0:dayend       %070  
+   day0:dayend,168:172       ,day0:dayend       %070  
    day0:dayend,day0:dayend   ,day0:dayend       %075  
    %day0:dayend,day0:dayend   ,day0:dayend       %102  
    day0:dayend,day0:dayend  ,day0:dayend        %117  
