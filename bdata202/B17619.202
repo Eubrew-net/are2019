@@ -1242,4 +1242,17 @@ co22:51:51te: Running te from uv0625a line  91.39
 hk22:51:58 25 25 24 12.8 2.94-99 23
 co22:52:05skc: The next day will run schedule uv0625a
 co22:52:08skc: Waiting until end of local day.
-co23:02:10skc: Waiting until end of local day.
+co23:02:10skc: Waiting until end of local day.
+co23:12:12skc: Waiting until end of local day.
+co23:22:15skc: Waiting until end of local day.
+co23:32:18skc: Waiting until end of local day.
+co23:42:20skc: Waiting until end of local day.
+co23:52:23skc: Waiting until end of local day.
+co00:05:27start:  PROGRAM start :  JUN 26/19 at 00:05:19
+co00:05:27ab_sk: Running ab_sk from main.asc
+co00:06:37ck: Running ck from uv0626a line  91.37
+co00:06:38ck: Illegal command (ck) in schedule uv0626a, ignoring
+hk00:06:51 23 22 22 13.4 2.59-99 21
+hpscan00:07:01 0 22506 10 35729 20 49220 30 64697 40 78961 50 90523 60 97385 70 98507 80 99166 90 98946 100 98377 110 94356 120 80681 130 66650 140 52107 150 39481 160 26077
+hp00:08:42 .9943526 102666.3 81 23
+co00:09:01hgfw2: HG FW#2 at step  0
