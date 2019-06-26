@@ -43,4 +43,19 @@ co01:30:07b2: Running b2 from uv0625a line -200
 co01:30:10cj: Running cj from uv0625a line -200
 hk01:30:27 25 26 24-99-99-99-99
 co01:30:36cj: CJ scan started at 01:30:36
-co01:39:24cj: Still doing CJ
+co01:39:24cj: Still doing CJ
+co01:48:15cj: CJ scan finished at 01:48:15
+co01:48:23ru: Running ru from uv0625a line -200
+co01:48:41start:  PROGRAM start :  JUN 26/19 at 01:48:33
+hk01:48:41 25 26 25-99-99-99-99
+co01:48:43ab_sk: Running ab_sk from main.asc
+co01:49:04ru: Running ru from uv0625a line -119.07
+co01:49:07ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co01:49:09ck: Running ck from uv0625a line -119.07
+co01:49:10ck: Illegal command (ck) in schedule uv0625a, ignoring
+hk01:49:17 25 26 25-99-99-99-99
+co01:49:22hgfw2: HG FW#2 at step  0
+hk01:51:31 25 27 25-99-99-99-99
+hgscan 0wide 302warm= 111.31501:51:32JUN 26/19 1053 1251 10484 31989 49331 72991 93463 115760 137924 145827 150430 140875 125118 104967 85937 66565 43850 23370 15603 10783 10878 15773 23450 43366 66632 85709 104839 124318 139777 148656 144865 135851 114834 91692 71043 48242 31346 11316 1191 1007
+hg01:53:12 .9999 285.6588 286 299086 25 0
+hk01:53:47 25 26 25-99-99-99-99
