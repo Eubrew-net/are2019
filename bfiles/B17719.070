@@ -112,4 +112,26 @@ co04:15:15skc: Waiting until ZA = -95 now -99.6
 hk04:25:19 23-7 21-99-99-99-99
 co04:25:20skc: Waiting until ZA = -95 now -98
 hk04:35:23 22-7 21-99-99-99-99
-co04:35:25skc: Waiting until ZA = -95 now -96.4
+co04:35:25skc: Waiting until ZA = -95 now -96.4
+co04:44:01ru: Running ru from uv0626b line -94.96
+co04:44:16start:  PROGRAM start :  JUN 26/19 at 04:44:10
+hk04:44:16 22-7 21-99-99-99-99
+co04:44:18ab_sk: Running ab_sk from main.asc
+co04:44:40ru: Running ru from uv0626b line -94.96
+co04:44:42ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk04:44:49 22-7 21-99-99-99-99
+co04:44:51hgfw2: HG FW#2 at step  0
+hk04:47:04 22-7 21-99-99-99-99
+hgscan 0narrow 302warm= 286.828304:47:05JUN 26/19 203 198 215 286 3527 9604 15514 22133 27357 28980 30197 27381 21592 15641 9485 4909 3528 2162 1611 1448 1431 1598 2308 3703 5278 10208 16861 23856 30204 33844 32725 30836 24882 17754 10774 3772 304 231 213 202
+hg04:48:37 .9962 163.1164 161 64041 22-1
+co04:48:40uf: Running uf from uv0626b line -94.96
+hk04:48:47 22-7 21-99-99-99-99
+co04:49:28uf: UV fast  scan started
+co04:52:49uf: UV fast  scan finished, incident DUV =  .0157052 mW/m^2
+co04:52:51b1: Running b1 from uv0626b line -94.96
+hk04:52:58 22-7 21-99-99-99-99
+co04:53:23hgfw2: HG FW#2 at step  0
+hk04:58:02 22-7 21-99-99-99-99
+hgscan 0narrow 302warm= 11.0433304:58:03JUN 26/19 189 210 211 241 2892 9830 17640 25166 32315 35247 37163 35010 28603 21031 13332 7146 5007 3338 2133 1893 1915 2153 3296 4952 7098 13231 20766 28259 34818 37076 35350 32545 25561 18088 9978 3157 248 200 190 196
+hg04:59:33 .9963 161.0025 163 74239 22 1
+co04:59:37b2: Running b2 from uv0626b line -94.96
