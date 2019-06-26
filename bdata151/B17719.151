@@ -109,4 +109,27 @@ co04:32:24fi: Still doing FI
 co04:32:30te: Running te from uv0625a line -119.07
 hk04:32:34 28 28 25 1.9 .53-99-99
 hk04:32:42 28 28 25 1.9 .53-99-99
-co04:32:43skc: Waiting until ZA = -95.1 now -96.9
+co04:32:43skc: Waiting until ZA = -95.1 now -96.9
+hk04:42:48 28 28 25 1.9 .53-99-99
+co04:42:49skc: Waiting until ZA = -95.1 now -95.2
+co04:43:20ru: Running ru from uv0625a line -95.07
+co04:43:37start:  PROGRAM start :  JUN 26/19 at 04:43:29
+hk04:43:37 28 28 25 1.9 .53-99-99
+co04:43:39ab_sk: Running ab_sk from main.asc
+co04:44:02ru: Running ru from uv0625a line -95.07
+co04:44:04ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+hk04:44:15 28 28 25 1.9 .53-99-99
+co04:44:19hgfw2: HG FW#2 at step  0
+hk04:46:31 28 28 25 1.9 .53-99-99
+hgscan 0wide 302warm= 286.273404:46:32JUN 26/19 482 821 5760 16215 26659 38653 50681 62938 75141 81486 82512 76467 67502 56966 44735 32474 21065 11590 8003 5153 5146 8071 11847 22069 33578 46116 59357 69958 79253 85586 84959 78730 66940 54639 42270 29286 18189 7431 1009 475
+hg04:48:10 .9997 288.6004 287 168098 28-1
+hk04:48:22 28 28 25 1.9 .53-99-99
+co04:49:04ux: UV extended  scan started
+co04:55:23ux: UV extended  scan finished, incident DUV =  2.133757E-02 mW/m^2
+hk04:55:36 28 28 25 1.9 .53-99-99
+co04:56:01hgfw2: HG FW#2 at step  0
+hk04:57:49 28 28 25 1.9 .53-99-99
+hgscan 0wide 302warm= 11.3466704:57:50JUN 26/19 477 747 5229 14977 24923 37075 48738 60788 72943 79651 80910 75311 66705 56684 44855 32948 21441 11814 8008 5151 5174 8114 11885 22270 34236 46879 59114 69711 78455 84805 83759 76771 64716 52818 40851 27891 16984 6610 884 461
+hg04:59:28 .9997 287.9 288 165715 28 0
+co04:59:32b2: Running b2 from uv0625a line -95.07
+co04:59:59zs: ZS intensity too low ( 58/cy), skipping.
