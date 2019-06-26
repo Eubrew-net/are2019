@@ -154,4 +154,21 @@ co05:09:43zs: ZS intensity too low ( 50/cy), skipping.
 hk05:10:01 27 25 25 71 16.3-99-99
 fv05:11:000az 59.80706-70 1.2ze 89.70201 4 1.6
 hk05:12:16 27 25 25 71.3 16.38-99-99
-co05:12:17skc: Waiting until ZA = -87.3 now -89.7
+co05:12:17skc: Waiting until ZA = -87.3 now -89.7
+hk05:22:20 27 25 25 73.2 16.82-99-99
+co05:22:21skc: Waiting until ZA = -87.3 now -88.2
+co05:27:50ru: Running ru from uv0625b line -87.24
+co05:27:53ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:27:56td: Julian day = 177
+co05:28:00td: Time correction  .4 seconds
+co05:28:01td: Julian day = 177
+hk05:28:09 27 25 25 73.2 16.82-99-99
+co05:30:00ua: UV timed  scan started
+co05:33:58ua: UV timed  scan finished, incident DUV =  .6007492 mW/m^2
+co05:34:01b1: Running b1 from uv0625b line -87.24
+hk05:34:25 27 25 25 75.2 17.27-99-99
+co05:34:31ds: DS intensity too low ( 3/cy), skipping.
+co05:34:51zs: ZS intensity too low ( 250/cy), skipping.
+hk05:34:58 27 25 25 69 15.86-99-99
+co05:35:14hgfw2: HG FW#2 at step  0
+hk05:39:11 27 25 25 74.5 17.12-99-99
