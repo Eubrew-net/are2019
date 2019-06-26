@@ -171,4 +171,32 @@ co05:34:31ds: DS intensity too low ( 3/cy), skipping.
 co05:34:51zs: ZS intensity too low ( 250/cy), skipping.
 hk05:34:58 27 25 25 69 15.86-99-99
 co05:35:14hgfw2: HG FW#2 at step  0
-hk05:39:11 27 25 25 74.5 17.12-99-99
+hk05:39:11 27 25 25 74.5 17.12-99-99
+hgscan 0narrow 296warm= 327.79505:39:12JUN 26/19 84 92 103 114 142 2273 9578 17608 24910 27936 28041 27130 20824 13044 5893 748 158 154 146 106 118 121 143 131 810 6098 13273 21166 27328 28242 28260 24975 17966 9649 2273 144 121 115 95 84
+hg05:40:54 .9989 914.3206 914 56283 27 0
+hk05:41:14 27 25 25 69.7 16.01-99-99
+co05:41:20ds: DS intensity too low ( 3/cy), skipping.
+co05:41:40zs: ZS intensity too low ( 375/cy), skipping.
+hk05:41:57 27 25 25 87.1 20.01-99-99
+co05:42:03ds: DS intensity too low ( 2/cy), skipping.
+co05:42:23zs: ZS intensity too low ( 369/cy), skipping.
+hk05:42:41 27 25 25 73.2 16.82-99-99
+co05:42:46ds: DS intensity too low ( 3/cy), skipping.
+co05:43:06zs: ZS intensity too low ( 420/cy), skipping.
+hk05:43:24 27 25 25 73.2 16.82-99-99
+co05:43:30ds: DS intensity too low ( 4/cy), skipping.
+co05:43:49zs: ZS intensity too low ( 405/cy), skipping.
+co05:43:51ck: Running ck from uv0625b line -87.24
+co05:43:53ck: Illegal command (ck) in schedule uv0625b, ignoring
+ap05:43:58 26.09 24.28 24.65 1643.38 14.97 5.00-15.04 23.98 .00 74.60 .00 .00 5.07-8.06 7.57 .00 26.1 24.29 24.29 1632.44 14.78 4.93-15.05 24.22 0 74.6 0 0 5.08-8.07 1.76 11.59
+hk05:44:32 27 25 25 71.9 16.52-99-99
+co05:44:34skc: Waiting until ZA = -82 now -84.4
+hk05:54:38 27 24 25 69 14.99-99-99
+co05:54:39skc: Waiting until ZA = -82 now -82.6
+co05:57:48ru: Running ru from uv0625b line -81.98001
+co05:57:51ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co05:57:55td: Julian day = 177
+co05:57:58td: Time correction  .5 seconds
+co05:57:59td: Julian day = 177
+hk05:58:08 27 24 25 69.7 15.13-99-99
+co06:00:00ua: UV timed  scan started
