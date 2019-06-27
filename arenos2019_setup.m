@@ -52,7 +52,7 @@ Cal.calibration_days={
    day0:dayend, 168:dayend   , 168:dayend       %017   -already removed on Bfile[168:179,172:dayend]
    day0:dayend,168:172       , 173:dayend       %033  
    day0:dayend,168:172       ,173:dayend       %070  
-   day0:dayend,day0:173   ,174:dayend       %075  
+   day0:dayend,168:169   ,174:dayend       %075  
    %day0:dayend,day0:dayend   ,day0:dayend       %102  
    day0:dayend,day0:172  ,173:dayend        %117  
    day0:dayend,day0:173  ,   174:dayend        %126 
@@ -81,7 +81,7 @@ Cal.brw       = [005,017,033,070,075,117,126,150,151,158,163,166,172,174,185,186
 Cal.brwM      = [2  ,2  ,2  ,4  ,4  ,4  ,4  ,3  ,4  ,3  ,3  ,4  ,3  ,3  ,3  ,3  ,3  ,3  ,3  ,3    ];
 Cal.sl_c      = [0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
 Cal.sl_c_blind= [1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0    ];
-Cal.no_maint   =[0  ,1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,1  ,0  ,0  ,1  ,1  ,0  ,1  ,0  ,1  ,0    ];
+Cal.no_maint   =[0  ,1  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,1  ,1  ,0  ,0  ,1  ,1  ,0  ,1  ,0  ,1  ,1    ];
 Cal.plt       = {'o','+','*','h','x','s','d','v','>','<','p','+','x','p','*','x','s','d','v','>'};
 
 
@@ -226,7 +226,7 @@ Cal.ETC_C={
           [0,0,0,-15,-10,0];    %186
           [0,0,0,0,0,0]         %202
           [0,0,0,0,0,0]         %214
-          [0,0,0,0,0,0]         %228
+          [0,0,0,15,0,0]         %228
                 };
 
 %% Calibration instrument
