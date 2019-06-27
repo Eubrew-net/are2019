@@ -1,5 +1,5 @@
 % options_pub.outputDir=fullfile(pwd,'latex','126','html'); options_pub.showCode=true;
-% Close all; publish(fullfile(pwd,'cal_report_126c.m'),options_pub);
+% close all; publish(fullfile(pwd,'cal_report_126c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
@@ -394,12 +394,12 @@ osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 save(Cal.file_save,'-APPEND','osc_smooth');
 
 %%
-figure(max(findobj('tag','CAL_2P_SCHIST')));
+figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'},'Width',14,'Height',8);
 
-figure(max(findobj('tag','RATIO_ERRORBAR')));
+figure(maxf(findobj('tag','RATIO_ERRORBAR')));
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'});
 
 figure(findobj('tag','RATIO_ERRORBAR_all'));
@@ -409,7 +409,7 @@ close all
 
 
 %% STRAY LIGHT
-if Cal.brwM~=3
+if Cal.brwM(Cal.n_inst)~=3
 close all
 osc_range=2;
 % etc estimaton using the full range 
@@ -505,7 +505,7 @@ label_={'Day','osc range',['O3#',brw_str{n_ref}],'O3std','N',...
                           ['O3#',brw_str{n_inst}],'O3 std','%diff',...
                           ['(*)O3#',brw_str{n_inst}],'O3 std','(*)%diff'};
 
-ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,summary_orig_old,summary_old,summary);
+ozone_osc_sum=o3_daily_osc(Cal,TIME_SYNC,n_ref,ETC_SUG,A1_old,summary_orig_old,summary_old,summary);
 dat=cat(2,num2cell(ozone_osc_sum(:,1)),tags_(ozone_osc_sum(:,end))',num2cell(ozone_osc_sum(:,2:end-1)));
 
 displaytable(dat,label_,12);
@@ -574,10 +574,10 @@ datetick('x',15,'keepLimits','KeepTicks');
 set(gca,'YLim',[min(inst2(j,10))-8 max(inst2(j,10))+8])
 end
 
-figure(max(findobj('tag','_GlobalPlot_')));
+figure(maxf(findobj('tag','_GlobalPlot_')));
 printfiles_report(gcf,Cal.dir_figs,'Height',7,'Width',13);
 
-printfiles_report(min(findobj('-regexp','Tag','^DayPlot_')):max(findobj('-regexp','Tag','^DayPlot_')),...
+printfiles_report(double(minf(findobj('-regexp','Tag','^DayPlot_'))):double(maxf(findobj('-regexp','Tag','^DayPlot_'))),...
                               Cal.dir_figs,'Width',14.5,'Height',7.5);
 graph2latex(Cal.file_latex,{'summaryplot','DayPlot_'},brw_str{n_inst},'scale',0.8);
 
