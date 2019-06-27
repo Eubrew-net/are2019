@@ -117,7 +117,7 @@ ans =
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
-    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
     {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
     {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
@@ -131,7 +131,7 @@ ans =
     {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
-    {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
     {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
 Station.name=<span class="string">''</span>;
@@ -170,62 +170,63 @@ latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_config_'</span>,Cal.
                      DTdef,<span class="string">'\ETCdef'</span>,ETCdef(1),<span class="string">'\Adef'</span>,A1def(1),<span class="keyword">...</span>
                      DTorig,<span class="string">'\ETCorig'</span>,ETCorig(1),<span class="string">'\Aorig'</span>,A1orig(1));
 </pre><pre class="codeinput">makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
-</pre><pre class="codeoutput">ans =
+</pre><pre class="codeoutput">varname error
+ans =
   52&times;2 table
-                           x__CODE_campaigns_are2019_bfiles_202____202_ICF15017_202    x__CODE_campaigns_are2019_bfiles_202____202_ICF15017_202_1
-                           ________________________________________________________    __________________________________________________________
-    ReleaseDate                                   7.3612e+05                                                   7.3612e+05                        
-    o3TempCoef1                                            0                                                            0                        
-    o3TempCoef2                                      -0.5461                                                      -0.5461                        
-    o3TempCoef3                                      -0.8458                                                      -0.8458                        
-    o3TempCoef4                                      -0.9926                                                      -0.9926                        
-    o3TempCoef5                                      -1.0442                                                      -1.0442                        
-    MicrometerSteps_deg                                0.056                                                        0.056                        
-    O3OnO3Ratio                                       0.3444                                                       0.3444                        
-    SO2OnSO2Ratio                                       2.35                                                         2.35                        
-    O3OnSO2Ratio                                      1.1417                                                       1.1417                        
-    ETCOnO3Ratio                                        1480                                                         1480                        
-    ETCOnSO2Ratio                                        206                                                          206                        
-    DeadTime_sec_                                    2.5e-08                                                      2.5e-08                        
-    WLCalStepNumber                                      286                                                          286                        
-    SlitmaskMotorDelay                                    14                                                           14                        
-    UmkehrOffset                                        1699                                                         1699                        
-    NDFilter0                                              0                                                            0                        
-    NDFilter1                                           4143                                                         4143                        
-    NDFilter2                                           8938                                                         8938                        
-    NDFilter3                                          14393                                                        14393                        
-    NDFilter4                                          19432                                                        19432                        
-    NDFilter5                                          25887                                                        25887                        
-    ZenithSteps_rev                                     2972                                                         2972                        
-    BrewerType                                             3                                                            3                        
-    COMPort_                                               1                                                            1                        
-    o3TempCoefHg                                           0                                                            0                        
-    n2TempCoefHg                                           0                                                            0                        
-    n2TempCoef1                                            0                                                            0                        
-    n2TempCoef2                                            0                                                            0                        
-    n2TempCoef3                                            0                                                            0                        
-    n2TempCoef4                                            0                                                            0                        
-    n2TempCoef5                                            0                                                            0                        
-    O3Mic_1Offset                                          3                                                            3                        
-    Mic_2Offset                                            2                                                            2                        
-    O3FW_3Offset                                         242                                                          242                        
-    NO2AbsnCoeff                                          -3                                                           -3                        
-    NO2DsEtc                                             770                                                          770                        
-    NO2ZsEtc                                             740                                                          740                        
-    NO2Mic_1Offset                                      8028                                                         8028                        
-    NO2FW_3Offset                                        178                                                          178                        
-    NO2_O3ModeChange                                    2515                                                         2515                        
-    GratingSlope                                           1                                                            1                        
-    GratingIntercept                                     -18                                                          -18                        
-    MicrometerZero                                      2469                                                         2469                        
-    IrisOpenSteps                                        250                                                          250                        
-    BufferDelay_s_                                       0.4                                                          0.4                        
-    NO2FW_1Pos                                             0                                                            0                        
-    O3FW_1Pos                                            256                                                          256                        
-    FW_2Pos                                                0                                                            0                        
-    uvFW_2Pos                                              0                                                            0                        
-    ZenithOffset                                           0                                                            0                        
-    ZenithUVBPosition                                   2210                                                         2210                        
+                               M1            M2    
+                           __________    __________
+    ReleaseDate            7.3612e+05    7.3612e+05
+    o3TempCoef1                     0             0
+    o3TempCoef2               -0.5461       -0.5461
+    o3TempCoef3               -0.8458       -0.8458
+    o3TempCoef4               -0.9926       -0.9926
+    o3TempCoef5               -1.0442       -1.0442
+    MicrometerSteps_deg         0.056         0.056
+    O3OnO3Ratio                0.3444         0.344
+    SO2OnSO2Ratio                2.35          2.35
+    O3OnSO2Ratio               1.1417        1.1417
+    ETCOnO3Ratio                 1480          1485
+    ETCOnSO2Ratio                 206           206
+    DeadTime_sec_             2.5e-08       2.5e-08
+    WLCalStepNumber               286           286
+    SlitmaskMotorDelay             14            14
+    UmkehrOffset                 1699          1699
+    NDFilter0                       0             0
+    NDFilter1                    4143          4143
+    NDFilter2                    8938          8938
+    NDFilter3                   14393         14393
+    NDFilter4                   19432         19432
+    NDFilter5                   25887         25887
+    ZenithSteps_rev              2972          2972
+    BrewerType                      3             3
+    COMPort_                        1             1
+    o3TempCoefHg                    0             0
+    n2TempCoefHg                    0             0
+    n2TempCoef1                     0             0
+    n2TempCoef2                     0             0
+    n2TempCoef3                     0             0
+    n2TempCoef4                     0             0
+    n2TempCoef5                     0             0
+    O3Mic_1Offset                   3             3
+    Mic_2Offset                     2             2
+    O3FW_3Offset                  242           242
+    NO2AbsnCoeff                   -3            -3
+    NO2DsEtc                      770           770
+    NO2ZsEtc                      740           740
+    NO2Mic_1Offset               8028          8028
+    NO2FW_3Offset                 178           178
+    NO2_O3ModeChange             2515          2515
+    GratingSlope                    1             1
+    GratingIntercept              -18           -18
+    MicrometerZero               2469          2469
+    IrisOpenSteps                 250           250
+    BufferDelay_s_                0.4           0.4
+    NO2FW_1Pos                      0             0
+    O3FW_1Pos                     256           256
+    FW_2Pos                         0             0
+    uvFW_2Pos                       0             0
+    ZenithOffset                    0             0
+    ZenithUVBPosition            2210          2210
 </pre><pre class="codeinput"><span class="keyword">catch</span> exception
       fprintf(<span class="string">'%s, brewer: %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       DTorig=NaN; DTdef=NaN;
@@ -376,26 +377,22 @@ close <span class="string">all</span>
 </pre><h2 id="18">CI REPORT</h2><pre class="codeinput">close <span class="string">all</span>; br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CI*.'</span>,br]),<span class="keyword">...</span>
-                           fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],<span class="string">'CI18711.xxx'</span>),<span class="keyword">...</span>
+                          <span class="string">'CI17619.202'</span>,<span class="keyword">...</span>
                           <span class="string">'depuracion'</span>,1,<span class="string">'outlier_flag'</span>,0,<span class="keyword">...</span>
                           <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Reference file does not exist
-Reference file does not exist
-Reference file does not exist
-Error: analyzeCI, brewer cal_report_202a1
+</pre><pre class="codeoutput">Error: analyzeCI, brewer cal_report_202a1
 Error: instrumentAndRun, brewer evalmxdom
-Error: publish, brewer DNK#202
-</pre><pre class="codeinput"><span class="keyword">try</span>
+Error: publish, brewer informes
+Error: DNK#202, brewer </pre><img vspace="5" hspace="5" src="cal_report_202a1_11.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'CI_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer DNK#202
 </pre><h2 id="20">FV REPORT</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     [azimut zenit]=analyze_FV(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'FV*.'</span>,br]),<span class="keyword">...</span>
@@ -404,7 +401,7 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="cal_report_202a1_11.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
+</pre><img vspace="5" hspace="5" src="cal_report_202a1_12.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'FV_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception
@@ -619,7 +616,7 @@ close all
 close all; br=sprintf('%03d',Cal.brw(Cal.n_inst));
 try
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,['bdata',br],['CI*.',br]),...
-                           fullfile(Cal.path_root,['bdata',br],'CI18711.xxx'),...
+                          'CI17619.202',...
                           'depuracion',1,'outlier_flag',0,...
                           'date_range',datenum(Cal.Date.cal_year,1,[Cal.Date.day0-30 Cal.Date.dayend]));
 catch exception
