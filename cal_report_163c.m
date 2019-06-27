@@ -1,4 +1,4 @@
-% options_pub.outputDir=fullfile(pwd,'latex','163','html'); options_pub.showCode=true;
+% options_pub.outputDir=fullfile(pwd,'latex','166','html'); options_pub.showCode=true;
 % close all; publish(fullfile(pwd,'cal_report_163c.m'),options_pub);
 
 %% Brewer Evaluation
@@ -316,7 +316,7 @@ if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintena
     
     %% Sugerido con los blind_days
     A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); A1_old=unique(A1(~isnan(A1)))
-    osc_range=0.9
+    osc_range=2
     %A1_old=0.3390
     [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_old,A1_old,...
         Cal.n_inst,n_ref,5,osc_range,0.01,blinddays);
@@ -414,7 +414,7 @@ save(Cal.file_save,'-APPEND','etc');
 %% Final Period
 close all
 finaldays=Cal.calibration_days{Cal.n_inst,3};
-finaldays=170:174
+%finaldays=170:174
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
 jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
       diaj2(summary{Cal.n_inst}(:,1))<finaldays(end)); 
@@ -460,11 +460,11 @@ save(Cal.file_save,'-APPEND','etc');
  title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
 
 %% TWO POINT CALIBRATION
-%  o3r= (inst2(:,8)-ETC_NEW(1).TP(1))./(ETC_NEW(1).TP(2)/10000*inst2(:,3)*10);
-%  inst2(:,10)=o3r;
-%      [x,r,rp,ra,dat,ox,osc_smooth_2P]=ratio_min_ozone(...
-%         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-%         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+ o3r= (inst2(:,8)-ETC_NEW(1).TP(1))./(ETC_NEW(1).TP(2)/10000*inst2(:,3)*10);
+ inst2(:,10)=o3r;
+     [x,r,rp,ra,dat,ox,osc_smooth_2P]=ratio_min_ozone(...
+        inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 
 osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 % osc_smooth{Cal.n_inst}.twoP=osc_smooth_2P;

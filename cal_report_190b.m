@@ -97,7 +97,7 @@ for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     try
       [res{jj},detail{jj},DSP_QUAD{jj},QUAD_SUM{jj},QUAD_DETAIL{jj},...
        CUBIC_SUM{jj},CUBIC_DETAIL{jj},salida{jj},CSN_icf{jj},...
-       ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',1);%
+       ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',1,'wlim',3400);%
     catch
        warning(sprintf('Error en %s. DSP: %s',Cal.brw_name{Cal.n_inst},ldsp{jj}));
        res{jj}=NaN*ones(15,9,2); detail{jj}=NaN*ones(7,6,15,2); QUAD_DETAIL{jj}=NaN;

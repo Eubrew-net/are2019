@@ -90,14 +90,15 @@ CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
 ldsp=cellstr(cat(1,l.name));
-ldsp=ldsp(end-3:end)%ldsp=ldsp(end)
+ldsp=ldsp(end-3:end)%
+%ldsp=ldsp(end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
 %    if jj==length(ldsp),confign=2; else confign=1; end
     try
       [res{jj},detail{jj},DSP_QUAD{jj},QUAD_SUM{jj},QUAD_DETAIL{jj},...
        CUBIC_SUM{jj},CUBIC_DETAIL{jj},salida{jj},CSN_icf{jj},...
-       ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',1);%
+       ]=dspreport(Cal,'dsp_dir',fullfile('DSP',ldsp{jj}),'config_n',1,'wlim',3300);%
     catch
        warning(sprintf('Error en %s. DSP: %s',Cal.brw_name{Cal.n_inst},ldsp{jj}));
        res{jj}=NaN*ones(15,9,2); detail{jj}=NaN*ones(7,6,15,2); QUAD_DETAIL{jj}=NaN;
