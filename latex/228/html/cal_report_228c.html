@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_228c</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-25"><meta name="DC.source" content="cal_report_228c.m"><style type="text/css">
+      --><title>cal_report_228c</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_228c.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Evaluation</a></li><li><a href="#3">READ Brewer Summaries</a></li><li><a href="#4">configuration files</a></li><li><a href="#6">DT analysis_</a></li><li><a href="#7">SL Report</a></li><li><a href="#8">SL report plot</a></li><li><a href="#9">Hg Report</a></li><li><a href="#10">READ Configuration</a></li><li><a href="#11">Data recalculation for summaries  and individual observations</a></li><li><a href="#12">Filter distribution</a></li><li><a href="#14">filter correction</a></li><li><a href="#15">Ozone Calibration</a></li><li><a href="#16">Change? No change</a></li><li><a href="#17">Blind Period</a></li><li><a href="#19">Sugerido con los blind_days</a></li><li><a href="#22">Blind days table</a></li><li><a href="#24">Final Period</a></li><li><a href="#26">TEST NEW CONFIG</a></li><li><a href="#27">FINAL CONFIG</a></li><li><a href="#28">TWO POINT CALIBRATION</a></li><li><a href="#31">STRAY</a></li><li><a href="#34">Latex variables</a></li><li><a href="#35">calculation</a></li><li><a href="#36">Apply the SL correction</a></li><li><a href="#37">Difference iter#1 to iter#2</a></li><li><a href="#39">Final days table</a></li><li><a href="#40">Summary  Final Comparison all data detailed for osc ranges</a></li><li><a href="#42">Plot daily summary</a></li><li><a href="#43">final days: final config.</a></li><li><a href="#44">detailed comparison</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;</span>
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Evaluation</a></li><li><a href="#3">READ Brewer Summaries</a></li><li><a href="#4">configuration files</a></li><li><a href="#6">DT analysis_</a></li><li><a href="#8">Campaing AVG info</a></li><li><a href="#10">SL Report</a></li><li><a href="#11">SL report plot</a></li><li><a href="#12">Hg Report</a></li><li><a href="#13">READ Configuration</a></li><li><a href="#14">Data recalculation for summaries  and individual observations</a></li><li><a href="#15">Filter distribution</a></li><li><a href="#17">filter correction</a></li><li><a href="#18">Ozone Calibration</a></li><li><a href="#19">Change? No change</a></li><li><a href="#20">Blind Period</a></li><li><a href="#22">Sugerido con los blind_days</a></li><li><a href="#25">Blind days table</a></li><li><a href="#27">Final Period</a></li><li><a href="#29">TEST NEW CONFIG</a></li><li><a href="#30">FINAL CONFIG</a></li><li><a href="#31">TWO POINT CALIBRATION</a></li><li><a href="#34">STRAY</a></li><li><a href="#37">Latex variables</a></li><li><a href="#38">calculation</a></li><li><a href="#39">Apply the SL correction</a></li><li><a href="#40">Difference iter#1 to iter#2</a></li><li><a href="#42">Final days table</a></li><li><a href="#43">Summary  Final Comparison all data detailed for osc ranges</a></li><li><a href="#45">Plot daily summary</a></li><li><a href="#46">final days: final config.</a></li><li><a href="#47">detailed comparison</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','228','html'); options_pub.showCode=true;</span>
 <span class="comment">% close all; publish(fullfile(pwd,'cal_report_228c.m'),options_pub);</span>
 </pre><h2 id="2">Brewer Evaluation</h2><pre class="codeinput">clear <span class="string">all</span>;
 file_setup=<span class="string">'arenos2019_setup'</span>;
@@ -119,7 +119,7 @@ ans =
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
   Columns 6 through 9
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
@@ -129,7 +129,7 @@ ans =
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
     {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF23318&#8230;'}    {'..\163\ICF23318&#8230;'}    {'0274'}    {'0274'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
     {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
     {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
@@ -138,7 +138,7 @@ ans =
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">READ Brewer Summaries</h2><pre class="codeinput"> <span class="keyword">for</span> i=[Cal.n_ref,Cal.n_inst]
     dsum{i}={};       ozone_raw{i}={};   hg{i}={};
     ozone_sum{i}={};  ozone_raw0{i}={};  bhg{i}={};
@@ -166,41 +166,45 @@ save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'o
 matrix2latex(log{Cal.n_inst},fullfile(Cal.file_latex,[<span class="string">'tabla_fileprocess_'</span>,Cal.brw_str{Cal.n_inst},<span class="string">'.tex'</span>]));
 </pre><pre class="codeoutput">
 Brewer: IZO#185
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B16819.185 IZO#185 ozone obs day 168
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B16919.185 IZO#185 ozone obs day 169
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17019.185 IZO#185 ozone obs day 170
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17119.185 IZO#185 ozone obs day 171
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17219.185 IZO#185 ozone obs day 172
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17319.185 IZO#185 ozone obs day 173
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17419.185 IZO#185 ozone obs day 174
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17519.185 IZO#185 ozone obs day 175
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17619.185 IZO#185 ozone obs day 176
-Missing   ~/CODE/campaigns/are2019/bfiles/B17719.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B17819.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B17919.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18019.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18119.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18219.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18319.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18419.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18519.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18619.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18719.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18819.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B18919.185
-Missing   ~/CODE/campaigns/are2019/bfiles/B19019.185
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B16819.185 IZO#185 ozone obs day 168
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B16919.185 IZO#185 ozone obs day 169
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17019.185 IZO#185 ozone obs day 170
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17119.185 IZO#185 ozone obs day 171
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17219.185 IZO#185 ozone obs day 172
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17319.185 IZO#185 ozone obs day 173
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17419.185 IZO#185 ozone obs day 174
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17519.185 IZO#185 ozone obs day 175
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17619.185 IZO#185 ozone obs day 176
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17719.185 IZO#185 ozone obs day 177
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17819.185 IZO#185 ozone obs day 178
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17919.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18019.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18119.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18219.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18319.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18419.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18519.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18619.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18719.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18819.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18919.185
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B19019.185
   Columns 1 through 4
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'IZO#185'  
-    'ERROR'    '~/CODE/campaigns/&#8230;'    'IZO#185'                'Not found'
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'IZO#185'  
+    'ERROR'    '/Users/aredondas/&#8230;'    'IZO#185'                'Not found'
   Columns 5 through 8
+    ''       '  '    '08-Apr-2019'    '08-Apr-2019'
+    ''       '  '    '08-Apr-2019'    '08-Apr-2019'
     ''       '  '    '08-Apr-2019'    '08-Apr-2019'
     ''       '  '    '08-Apr-2019'    '08-Apr-2019'
     ''       '  '    '08-Apr-2019'    '08-Apr-2019'
@@ -213,52 +217,64 @@ Missing   ~/CODE/campaigns/are2019/bfiles/B19019.185
     '   '    '  '    ''               ''           
 
 Brewer: DNK#228
-Missing   ~/CODE/campaigns/are2019/bfiles/B16819.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B16919.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B17019.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B16819.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B16919.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17019.228
 ans =
-    '22-Jun-2019'
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17119.228 DNK#228 ozone obs day 171
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17119.228 DNK#228 ozone obs day 171
 ans =
-    '22-Jun-2019'
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17219.228 DNK#228 ozone obs day 172
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17219.228 DNK#228 ozone obs day 172
 ans =
-    '22-Jun-2019'
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17319.228 DNK#228 ozone obs day 173
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17319.228 DNK#228 ozone obs day 173
 ans =
-    '22-Jun-2019'
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17419.228 DNK#228 ozone obs day 174
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17419.228 DNK#228 ozone obs day 174
 ans =
-    '22-Jun-2019'
-OK-&gt; ~/CODE/campaigns/are2019/bfiles/B17519.228 DNK#228 ozone obs day 175
-Missing   ~/CODE/campaigns/are2019/bfiles/B17619.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B17719.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B17819.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B17919.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18019.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18119.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18219.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18319.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18419.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18519.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18619.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18719.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18819.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B18919.228
-Missing   ~/CODE/campaigns/are2019/bfiles/B19019.228
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17519.228 DNK#228 ozone obs day 175
+ans =
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17619.228 DNK#228 ozone obs day 176
+ans =
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17719.228 DNK#228 ozone obs day 177
+ans =
+    '23-Jun-2019'
+OK-&gt; /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17819.228 DNK#228 ozone obs day 178
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B17919.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18019.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18119.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18219.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18319.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18419.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18519.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18619.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18719.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18819.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B18919.228
+Missing   /Users/aredondas/CODE/rbcce.aemet.es/campaigns/are2019/bfiles/B19019.228
   Columns 1 through 4
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'DNK#228'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'DNK#228'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'DNK#228'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'DNK#228'  
-    'OK '                         []    '~/CODE/campaigns/&#8230;'    'DNK#228'  
-    'ERROR'    '~/CODE/campaigns/&#8230;'    'DNK#228'                'Not found'
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'OK '                         []    '/Users/aredondas/&#8230;'    'DNK#228'  
+    'ERROR'    '/Users/aredondas/&#8230;'    'DNK#228'                'Not found'
   Columns 5 through 8
-    ''       '  '    '11-Aug-2016'    '22-Jun-2019'
-    ''       '  '    '11-Aug-2016'    '22-Jun-2019'
-    ''       '  '    '11-Aug-2016'    '22-Jun-2019'
-    ''       '  '    '11-Aug-2016'    '22-Jun-2019'
-    ''       '  '    '11-Aug-2016'    '22-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
+    ''       '  '    '11-Aug-2016'    '23-Jun-2019'
     '   '    '  '    ''               ''           
 </pre><h2 id="4">configuration files</h2><pre class="codeinput">change=write_excel_config(config,Cal,Cal.n_inst);
 
@@ -284,7 +300,7 @@ matrix2latex_config([config_orig(2:end),config_def(2:end)],<span class="keyword"
                                               <span class="string">'rowlabels'</span>,rowlabels(2:end),<span class="string">'columnlabels'</span>,columnlabels,<span class="keyword">...</span>
                                               <span class="string">'size'</span>,<span class="string">'footnotesize'</span>);
 </pre><pre class="codeoutput">ans =
-    '22-Jun-2019'
+    '23-Jun-2019'
 Day 173 (22-Jun-2019, DNK#228): WL cal step number
 
 
@@ -294,68 +310,138 @@ Day 174 (23-Jun-2019, DNK#228): O3 Mic #1 Offset
 
 
 ans =
-    '22-Jun-2019'
+    '23-Jun-2019'
 </pre><pre class="codeinput"> makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
-</pre><pre class="codeoutput">ans =
+</pre><pre class="codeoutput">varname error
+ans =
   52&times;2 table
-                           x__CODE_campaigns_are2019_bfiles_228____228_ICF15017_228    x__CODE_campaigns_are2019_bfiles_228____228_ICF17319_228
-                           ________________________________________________________    ________________________________________________________
-    ReleaseDate                                   7.3655e+05                                                  7.376e+05                        
-    o3TempCoef1                                            0                                                          0                        
-    o3TempCoef2                                     -0.90381                                                   -0.90381                        
-    o3TempCoef3                                     -0.88811                                                   -0.88811                        
-    o3TempCoef4                                       -1.018                                                     -1.018                        
-    o3TempCoef5                                      -1.7807                                                    -1.7807                        
-    MicrometerSteps_deg                                    0                                                          0                        
-    O3OnO3Ratio                                        0.341                                                     0.3455                        
-    SO2OnSO2Ratio                                     4.4707                                                     4.4707                        
-    O3OnSO2Ratio                                       1.153                                                      1.153                        
-    ETCOnO3Ratio                                        1499                                                       1465                        
-    ETCOnSO2Ratio                                       -328                                                       -328                        
-    DeadTime_sec_                                    3.8e-08                                                   2.65e-08                        
-    WLCalStepNumber                                     1030                                                       1023                        
-    SlitmaskMotorDelay                                    14                                                         14                        
-    UmkehrOffset                                        2463                                                       2463                        
-    NDFilter0                                              0                                                          0                        
-    NDFilter1                                           4814                                                       4814                        
-    NDFilter2                                          10734                                                      10734                        
-    NDFilter3                                          18672                                                      18672                        
-    NDFilter4                                          22050                                                      22050                        
-    NDFilter5                                          26048                                                      26048                        
-    ZenithSteps_rev                                     2972                                                       2972                        
-    BrewerType                                             3                                                          3                        
-    COMPort_                                               2                                                          1                        
-    o3TempCoefHg                                           0                                                          0                        
-    n2TempCoefHg                                           0                                                          0                        
-    n2TempCoef1                                            0                                                          0                        
-    n2TempCoef2                                            0                                                          0                        
-    n2TempCoef3                                            0                                                          0                        
-    n2TempCoef4                                            0                                                          0                        
-    n2TempCoef5                                            0                                                          0                        
-    O3Mic_1Offset                                        -66                                                          0                        
-    Mic_2Offset                                            1                                                          0                        
-    O3FW_3Offset                                         242                                                        242                        
-    NO2AbsnCoeff                                          -3                                                         -3                        
-    NO2DsEtc                                             770                                                        770                        
-    NO2ZsEtc                                             740                                                        740                        
-    NO2Mic_1Offset                                      8028                                                       8028                        
-    NO2FW_3Offset                                        178                                                        178                        
-    NO2_O3ModeChange                                    2515                                                       2515                        
-    GratingSlope                                     0.99476                                                    0.99476                        
-    GratingIntercept                                   12.88                                                      12.88                        
-    MicrometerZero                                      1725                                                       1725                        
-    IrisOpenSteps                                        250                                                        250                        
-    BufferDelay_s_                                       0.4                                                        0.4                        
-    NO2FW_1Pos                                             0                                                          0                        
-    O3FW_1Pos                                            256                                                        256                        
-    FW_2Pos                                                0                                                          0                        
-    uvFW_2Pos                                              0                                                          0                        
-    ZenithOffset                                           0                                                          0                        
-    ZenithUVBPosition                                   2216                                                       2216                        
+                               M1           M2    
+                           __________    _________
+    ReleaseDate            7.3655e+05    7.376e+05
+    o3TempCoef1                     0            0
+    o3TempCoef2              -0.90381        -0.33
+    o3TempCoef3              -0.88811        -0.35
+    o3TempCoef4                -1.018        -0.44
+    o3TempCoef5               -1.7807        -0.35
+    MicrometerSteps_deg             0            0
+    O3OnO3Ratio                 0.341       0.3455
+    SO2OnSO2Ratio              4.4707       4.4707
+    O3OnSO2Ratio                1.153        1.153
+    ETCOnO3Ratio                 1499         1500
+    ETCOnSO2Ratio                -328         -328
+    DeadTime_sec_             3.8e-08      2.8e-08
+    WLCalStepNumber              1030         1023
+    SlitmaskMotorDelay             14           14
+    UmkehrOffset                 2463         2463
+    NDFilter0                       0            0
+    NDFilter1                    4814         4814
+    NDFilter2                   10734        10734
+    NDFilter3                   18672        18672
+    NDFilter4                   22050        22050
+    NDFilter5                   26048        26048
+    ZenithSteps_rev              2972         2972
+    BrewerType                      3            3
+    COMPort_                        2            1
+    o3TempCoefHg                    0            0
+    n2TempCoefHg                    0            0
+    n2TempCoef1                     0            0
+    n2TempCoef2                     0            0
+    n2TempCoef3                     0            0
+    n2TempCoef4                     0            0
+    n2TempCoef5                     0            0
+    O3Mic_1Offset                 -66            0
+    Mic_2Offset                     1            0
+    O3FW_3Offset                  242          242
+    NO2AbsnCoeff                   -3           -3
+    NO2DsEtc                      770          770
+    NO2ZsEtc                      740          740
+    NO2Mic_1Offset               8028         8028
+    NO2FW_3Offset                 178          178
+    NO2_O3ModeChange             2515         2515
+    GratingSlope              0.99476      0.99476
+    GratingIntercept            12.88        12.88
+    MicrometerZero               1725         1725
+    IrisOpenSteps                 250          250
+    BufferDelay_s_                0.4          0.4
+    NO2FW_1Pos                      0            0
+    O3FW_1Pos                     256          256
+    FW_2Pos                         0            0
+    uvFW_2Pos                       0            0
+    ZenithOffset                    0            0
+    ZenithUVBPosition            2216         2216
 </pre><h2 id="6">DT analysis_</h2><pre class="codeinput"> DT_analysis(Cal,ozone_raw0,config,<span class="string">'plot_flag'</span>,0);
+</pre><img vspace="5" hspace="5" src="cal_report_228c_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_03.png" alt=""> <h2 id="8">Campaing AVG info</h2><pre class="codeinput">load(Cal.file_save,<span class="string">'avg_report'</span>);
+close <span class="string">all</span>;
+cal_range=([datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(1)),datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(end))])
+[sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),<span class="keyword">...</span>
+                                      <span class="string">'date_range'</span>,cal_range,<span class="keyword">...</span>
+                                      <span class="string">'SL_REF'</span>,[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],<span class="keyword">...</span>
+                                      <span class="string">'DT_REF'</span>,[DTorig,DTdef],<span class="keyword">...</span>
+                                      <span class="string">'outlier_flag'</span>,{<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>});
+<span class="keyword">try</span>
 
-<span class="comment">%</span>
-<span class="comment">%figure(findobj('tag','DT_comp'));</span>
+    <span class="keyword">if</span> ~isempty(sl_data)
+       day_ini=find(sl_data(:,2)==Cal.Date.cal_year &amp; sl_data(:,3)&gt;=Cal.Date.FINAL_DAYS(1));
+       day_last=find(sl_data(:,2)==Cal.Date.cal_year &amp; sl_data(:,3)&lt;=Cal.Date.FINAL_DAYS(end));
+       <span class="keyword">if</span> isempty(day_ini)
+            disp(datestr(sl_data(end,1)))
+            RseisAVG=round(nanmean(sl_data(:,12)));
+            RcincoAVG=round(nanmean(sl_data(:,11)));
+       <span class="keyword">else</span>
+           RseisAVG=round(nanmean(sl_data(day_ini(1):day_last(end),12)));
+           RcincoAVG=round(nanmean(sl_data(day_ini(1):day_last(end),11)));
+       <span class="keyword">end</span>
+
+
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> ~isempty(dt_data)
+       day_ini=find(dt_data(:,2)==Cal.Date.cal_year &amp; dt_data(:,3)&gt;=Cal.Date.FINAL_DAYS(1));
+       day_last=find(dt_data(:,2)==Cal.Date.cal_year &amp; dt_data(:,3)&lt;=Cal.Date.FINAL_DAYS(end));
+
+       <span class="keyword">if</span> isempty(day_ini)
+              DTAVG=sprintf(<span class="string">'%g'</span>,10^-9*(round(nanmean(dt_data(:,4)))));
+        <span class="keyword">else</span>
+             DTAVG=sprintf(<span class="string">'%g'</span>,10^-9*round(nanmean(dt_data(day_ini(1):day_last(end),4))));
+       <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+    tableform({<span class="string">'SLR6  orig'</span>,   <span class="string">'Calc. AVG'</span>,<span class="string">'SLR5  orig'</span>,<span class="string">'Calculated'</span>,<span class="string">'DT  orig'</span>,<span class="string">'Calculated'</span>},<span class="keyword">...</span>
+              [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
+
+    avg_report{Cal.n_inst}.RseisAVG_camp=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG_camp=RcincoAVG;
+    avg_report{Cal.n_inst}.DTorig_camp  =DTorig;    avg_report{Cal.n_inst}.DTAVG_avg_camp    =DTAVG;
+
+<span class="keyword">catch</span> exception
+      fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
+<span class="keyword">end</span>
+
+avg_report{Cal.n_inst}.sl_data_camp=sl_data;
+avg_report{Cal.n_inst}.dt_data_camp=dt_data;
+avg_report{Cal.n_inst}.rs_data_camp=rs_data;
+avg_report{Cal.n_inst}.ap_data_camp=ap_data;
+avg_report{Cal.n_inst}.hg_data_camp=hg_data;
+avg_report{Cal.n_inst}.op_data_camp=op_data;
+<span class="keyword">if</span> exist(<span class="string">'Args'</span>,<span class="string">'var'</span>)
+   avg_report{Cal.n_inst}.Args=Args;
+<span class="keyword">else</span> disp(<span class="string">'No se est&#65533;n guardando los inputs de la funci&#65533;n!!'</span>)
+<span class="keyword">end</span>
+save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'avg_report'</span>);
+</pre><pre class="codeoutput">cal_range =
+      737593      737615
+no data on date range
+--------- Validation OK --------------
+List of arguments given default values:
+   'path_to_file'    defaults to .
+--------------------------------------
+
+  Columns 1 through 5
+    'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
+    [       242]    [      336]    [       NaN]    [       582]    [ 3.8e-08]
+  Column 6
+    'Calculated'
+    [   2.8e-08]
+
+</pre><img vspace="5" hspace="5" src="cal_report_228c_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_13.png" alt=""> <pre class="codeinput"><span class="comment">%figure(findobj('tag','DT_comp'));</span>
 <span class="comment">%set(get(gca,'title'),'FontSize',8);</span>
 <span class="comment">%printfiles_report(gcf,Cal.dir_figs,'LockAxes',0,'Height',6);</span>
 
@@ -368,7 +454,7 @@ ans =
 <span class="comment">% printfiles_report(gcf,Cal.dir_figs,'Width',8,'Height',6,'LockAxes',0);</span>
 <span class="comment">%close all</span>
 <span class="comment">%</span>
-</pre><img vspace="5" hspace="5" src="cal_report_228c_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_03.png" alt=""> <h2 id="7">SL Report</h2><pre class="codeinput">close <span class="string">all</span>;
+</pre><h2 id="10">SL Report</h2><pre class="codeinput">close <span class="string">all</span>;
 <span class="keyword">for</span> ii=[Cal.n_ref,Cal.n_inst]
     sl_mov_o{ii}={}; sl_median_o{ii}={}; sl_out_o{ii}={}; R6_o{ii}={};
     sl_mov_n{ii}={}; sl_median_n{ii}={}; sl_out_n{ii}={}; R6_n{ii}={};
@@ -406,9 +492,9 @@ sl_report{Cal.n_inst}.sl_median_n=sl_median_n{Cal.n_inst};   sl_report{Cal.n_ins
 sl_report{Cal.n_inst}.sl_out_n=sl_out_n{Cal.n_inst};         sl_report{Cal.n_inst}.sl_out_o=sl_out_o{Cal.n_inst};
 sl_report{Cal.n_inst}.R6_n{Cal.n_inst}=R6_n{Cal.n_inst};     sl_report{Cal.n_inst}.R6_o{Cal.n_inst}=R6_o{Cal.n_inst};
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'sl_report'</span>);
-</pre><pre class="codeoutput">DNK#228 Old constants:   341 +/-  5.9
-DNK#228 New constants:   338 +/-  5.8
-</pre><img vspace="5" hspace="5" src="cal_report_228c_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_15.png" alt=""> <h2 id="8">SL report plot</h2><pre class="codeinput">ix=sort(findobj(<span class="string">'-regexp'</span>,<span class="string">'Tag'</span>,<span class="string">'SL_R\w+'</span>));
+</pre><pre class="codeoutput">DNK#228 Old constants:   339 +/-  5.8
+DNK#228 New constants:   299 +/-  1.6
+</pre><img vspace="5" hspace="5" src="cal_report_228c_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_25.png" alt=""> <h2 id="11">SL report plot</h2><pre class="codeinput">ix=sort(findobj(<span class="string">'-regexp'</span>,<span class="string">'Tag'</span>,<span class="string">'SL_R\w+'</span>));
 <span class="keyword">if</span> length(ix)&gt;2
    <span class="keyword">for</span> i=ix, set( findobj(i,<span class="string">'Tag'</span>,<span class="string">'legend'</span>),<span class="string">'FontSize'</span>,8); <span class="keyword">end</span>
    set(ix(1),<span class="string">'tag'</span>,<span class="string">'SL_R6_report_old'</span>); set(ix(2),<span class="string">'tag'</span>,<span class="string">'SL_R5_report_old'</span>);
@@ -422,7 +508,7 @@ figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'SL_I
 printfiles_report(gcf,Cal.dir_figs,<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 
 close <span class="string">all</span>
-</pre><h2 id="9">Hg Report</h2><p>Hg failure</p><pre class="codeinput">hg_fail=read_custom(fullfile(Cal.path_root,sprintf(<span class="string">'bdata%s'</span>,Cal.brw_str{Cal.n_inst})),sprintf(<span class="string">'B*.%s'</span>,Cal.brw_str{Cal.n_inst}),<span class="keyword">...</span>
+</pre><h2 id="12">Hg Report</h2><p>Hg failure</p><pre class="codeinput">hg_fail=read_custom(fullfile(Cal.path_root,sprintf(<span class="string">'bdata%s'</span>,Cal.brw_str{Cal.n_inst})),sprintf(<span class="string">'B*.%s'</span>,Cal.brw_str{Cal.n_inst}),<span class="keyword">...</span>
                               <span class="string">'hg: lamp not detected'</span>,<span class="string">'printfile'</span>,0,<span class="keyword">...</span>
                               <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,1));
 <span class="keyword">if</span> ~isempty(hg_fail)
@@ -439,8 +525,8 @@ hg_report(Cal.n_inst,hg,Cal,<span class="string">'outlier_flag'</span>,1,<span c
 21-Jun-2019 |             1
 22-Jun-2019 |             3
 ans =
-    '22-Jun-2019'
-</pre><img vspace="5" hspace="5" src="cal_report_228c_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_19.png" alt=""> <h2 id="10">READ Configuration</h2><pre class="codeinput">close <span class="string">all</span>
+    '23-Jun-2019'
+</pre><img vspace="5" hspace="5" src="cal_report_228c_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_29.png" alt=""> <h2 id="13">READ Configuration</h2><pre class="codeinput">close <span class="string">all</span>
 [A,ETC,SL_B,SL_R,F_corr,cfg]=read_cal_config_new(config,Cal,{sl_median_o,sl_median_n});
 
 <span class="keyword">try</span>
@@ -451,75 +537,35 @@ ans =
   disp(l.message)
   disp(<span class="string">'tabla de configuracion posiblemente incompleta'</span>)
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Brewer TSK#005:  1&#65533; config -&gt; ICF15117.005			2&#65533; config -&gt; ICF15117.005
+</pre><pre class="codeoutput">Brewer TSK#005:  1&#65533; config -&gt; ICF15117.005			2&#65533; config -&gt; ICF17219.005
+Brewer IOS#017:  1&#65533; config -&gt; ICF14919.017			2&#65533; config -&gt; ICF14919.017
+Brewer SCO#033:  1&#65533; config -&gt; ICF15617.033			2&#65533; config -&gt; IOS15617.033
+Brewer MAD#070:  1&#65533; config -&gt; ICF15617.070			2&#65533; config -&gt; IOS15617.070
+Brewer UK_#075:  1&#65533; config -&gt; ICF15017.075			2&#65533; config -&gt; ICF15017.075
 Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
 instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: IOS#017, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: SCO#033, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: MAD#070, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: UK_#075, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: MUR#117, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: UK_#126, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: ARE#150, line: No data. Continue
-Brewer COR#151 data is out of CALC DAYS range. Skipped (clean var.)
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: K&amp;Z#158, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: WRC#163, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: ZAR#166, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: UK_#172, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: JAP#174, line: No data. Continue
+informes File: 9, line: 230, brewer: s
+  File:  , line: 26, brewer: MUR#117
+No data. Continue
+Brewer UK_#126:  1&#65533; config -&gt; ICF15517.126			2&#65533; config -&gt; ICF17419.126
+Brewer ARE#150:  1&#65533; config -&gt; ICF15617.150			2&#65533; config -&gt; ICF15617.150
+index =0 will be an error if you use for matrix asigment
+Brewer COR#151:  1&#65533; config -&gt; ICF15317.151			2&#65533; config -&gt; IOS15317.151
+Brewer K&amp;Z#158:  1&#65533; config -&gt; ICF21218.158			2&#65533; config -&gt; ICF21218.158
+Brewer WRC#163:  1&#65533; config -&gt; ICF21018.163			2&#65533; config -&gt; ICF17519.163
+Brewer ZAR#166:  1&#65533; config -&gt; ICF15217.166			2&#65533; config -&gt; ICF17419.166
+Brewer UK_#172:  1&#65533; config -&gt; ICF15117.172			2&#65533; config -&gt; ICF15117.172
+Brewer JAP#174:  1&#65533; config -&gt; ICF20718.174			2&#65533; config -&gt; ICF20718.174
 Brewer IZO#185:  1&#65533; config -&gt; CONFIG185.CFG			(warning NaN replaced by 0 in 1 config)2&#65533; config -&gt; CONFIG185.CFG
 (warning NaN replaced by 0 in 2 config)IZO#185: est&#65533;s corrigiendo SIEMPRE con las R6 -&gt; 2&#65533; config
-Brewer MAD#186 data is out of CALC DAYS range. Skipped (clean var.)
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: CAN#190, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: TAM#201, line: No data. Continue
-Index in position 1 is invalid. Array indices must be positive integers or logical values. File: read_cal_config_new, line: 99, brewer: al_report_228c
-instrumentAndRun File: evalmxdom, line: 112, brewer: ublish
-: File: &ordf;, line: 115, brewer:  
-  File: DNK#202, line: No data. Continue
-Brewer DNK#228:  1&#65533; config -&gt; ICF15017.228			2&#65533; config -&gt; ICF17319.228
+Brewer MAD#186:  1&#65533; config -&gt; ICF15317.186			2&#65533; config -&gt; IOS15317.186
+Brewer CAN#190:  1&#65533; config -&gt; ICF11419.190			2&#65533; config -&gt; ICF11419.190
+Brewer TAM#201:  1&#65533; config -&gt; ICF14315.201			2&#65533; config -&gt; ICF14315.201
+Brewer DNK#202:  1&#65533; config -&gt; ICF15017.202			2&#65533; config -&gt; ICF15017.202
+Brewer DNK#228:  1&#65533; config -&gt; ICF15017.228			2&#65533; config -&gt; ICF17419.228
 Undefined function 'fix' for input arguments of type 'struct'.
 tabla de configuracion posiblemente incompleta
-</pre><h2 id="11">Data recalculation for summaries  and individual observations</h2><pre class="codeinput"><span class="keyword">for</span> i=[Cal.n_inst Cal.n_ref]
+</pre><h2 id="14">Data recalculation for summaries  and individual observations</h2><pre class="codeinput"><span class="keyword">for</span> i=[Cal.n_inst Cal.n_ref]
     cal{i}={}; summary{i}={}; summary_old{i}={};
     <span class="keyword">if</span> i==Cal.n_inst
     [cal{i},summary{i},summary_old{i}]=test_recalculation(Cal,i,ozone_ds,A,SL_R,SL_B,<span class="string">'flag_sl'</span>,1,<span class="string">'hg_dep'</span>,0);
@@ -534,17 +580,17 @@ tabla de configuracion posiblemente incompleta
 
 summary_orig=summary; summary_orig_old=summary_old;
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'summary_old'</span>,<span class="string">'summary_orig_old'</span>,<span class="string">'summary'</span>,<span class="string">'summary_orig'</span>);
-</pre><h2 id="12">Filter distribution</h2><pre class="codeinput">close <span class="string">all</span>
+</pre><h2 id="15">Filter distribution</h2><pre class="codeinput">close <span class="string">all</span>
 ozone_filter_analysis_mi(summary,Cal);
 </pre><pre class="codeoutput">
     'F#0 &lt;-&gt; F#1'    'F#1 &lt;-&gt; F#2'    'F#2 &lt;-&gt; F#3'    'F#3 &lt;-&gt; F#4'
-    [          2]    [          0]    [         15]    [          1]
+    [          2]    [          1]    [         16]    [          1]
 
-</pre><img vspace="5" hspace="5" src="cal_report_228c_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_22.png" alt=""> <pre class="codeinput">printfiles_report(findobj(<span class="string">'Tag'</span>,<span class="string">'FILTER_DISTRIBUTION'</span>),Cal.dir_figs,<span class="string">'Width'</span>,13,<span class="string">'Height'</span>,7.5);
+</pre><img vspace="5" hspace="5" src="cal_report_228c_30.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_32.png" alt=""> <pre class="codeinput">printfiles_report(findobj(<span class="string">'Tag'</span>,<span class="string">'FILTER_DISTRIBUTION'</span>),Cal.dir_figs,<span class="string">'Width'</span>,13,<span class="string">'Height'</span>,7.5);
 printfiles_report(findobj(<span class="string">'Tag'</span>,<span class="string">'Ozone_diff_filter_rel'</span>),Cal.dir_figs,<span class="string">'Width'</span>,13,<span class="string">'Height'</span>,7.5);
 
 close <span class="string">all</span>
-</pre><h2 id="14">filter correction</h2><p>Si queremos eliminar algun filtro CORREGIR a NaN</p><pre class="codeinput"><span class="comment">%F_corr{Cal.n_inst}=[0,0,0,13,0,0]</span>
+</pre><h2 id="17">filter correction</h2><p>Si queremos eliminar algun filtro CORREGIR a NaN</p><pre class="codeinput"><span class="comment">%F_corr{Cal.n_inst}=[0,0,0,13,0,0]</span>
 <span class="keyword">for</span> ii=[Cal.n_ref Cal.n_inst]
    [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
    summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
@@ -557,16 +603,16 @@ datetick(<span class="string">'x'</span>,26,<span class="string">'KeepLimits'</s
 ozone_filter_analysis_mi(summary,Cal);
 </pre><pre class="codeoutput">
     'F#0 &lt;-&gt; F#1'    'F#1 &lt;-&gt; F#2'    'F#2 &lt;-&gt; F#3'    'F#3 &lt;-&gt; F#4'
-    [          2]    [          0]    [         15]    [          1]
+    [          2]    [          1]    [         16]    [          1]
 
-</pre><img vspace="5" hspace="5" src="cal_report_228c_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_26.png" alt=""> <h2 id="15">Ozone Calibration</h2><p>Reference Brewer #185</p><pre class="codeinput">close <span class="string">all</span>
+</pre><img vspace="5" hspace="5" src="cal_report_228c_33.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_35.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_36.png" alt=""> <h2 id="18">Ozone Calibration</h2><p>Reference Brewer #185</p><pre class="codeinput">close <span class="string">all</span>
 n_ref=Cal.n_ref; <span class="comment">% Cuidado con cual referencia estamos asignando</span>
 n_inst=Cal.n_inst;
 brw=Cal.brw; brw_str=Cal.brw_str;
 
 jday_ref=findm((diaj(summary{n_ref}(:,1))),Cal.calibration_days{n_inst,1},0.5);
 ref=summary{n_ref}(jday_ref,:);
-</pre><h2 id="16">Change? No change</h2><pre class="codeinput"> alldays=Cal.calibration_days{Cal.n_inst,1};
+</pre><h2 id="19">Change? No change</h2><pre class="codeinput"> alldays=Cal.calibration_days{Cal.n_inst,1};
 
  jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),alldays,0.5);<span class="comment">% quiero mostrar la primera config. con sl</span>
  inst1=summary_orig_old{Cal.n_inst}(jday,:);
@@ -575,18 +621,18 @@ ref=summary{n_ref}(jday_ref,:);
        inst1(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),<span class="keyword">...</span>
        5,brw_str{n_inst},brw_str{n_ref},<span class="string">'plot_flag'</span>,0);<span class="comment">% original config</span>
 </pre><pre class="codeoutput">Por defecto, LIM=2.5 (en boxparams)
-      0.78118
-       60.038
-      0.88258
-      0.74979
-       49.187
-      0.81256
-       70.889
+      0.80636
+       49.505
+       0.8869
+      0.77959
+       40.386
+      0.83312
+       58.624
 --------- Validation OK --------------
 List of arguments given default values:
    'OSC_lim'    defaults to 250  1900
 --------------------------------------
-</pre><img vspace="5" hspace="5" src="cal_report_228c_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_29.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_30.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_32.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_33.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_35.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_36.png" alt=""> <h2 id="17">Blind Period</h2><p>etiquetamos con _b, porque eso sera lo que usamos para plotear los individu~ales, con la configuraci?n sugerida</p><pre class="codeinput">close <span class="string">all</span>
+</pre><img vspace="5" hspace="5" src="cal_report_228c_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_39.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_40.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_42.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_43.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_44.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_45.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_46.png" alt=""> <h2 id="20">Blind Period</h2><p>etiquetamos con _b, porque eso sera lo que usamos para plotear los individu~ales, con la configuraci?n sugerida</p><pre class="codeinput">close <span class="string">all</span>
 blinddays=Cal.calibration_days{Cal.n_inst,2};
 
 jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
@@ -599,7 +645,31 @@ inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
     [x,r,rp,ra,dat,ox,osc_smooth_inisl]=ratio_min_ozone(<span class="keyword">...</span>
         inst1_b(:,[1,12,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),<span class="keyword">...</span>
         5,brw_str{n_inst},brw_str{n_ref},<span class="string">'plot_flag'</span>,0);<span class="comment">% original config , sl corrected</span>
-</pre><h2 id="19">Sugerido con los blind_days</h2><pre class="codeinput">    A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); A1_old=unique(A1(~isnan(A1)))
+</pre><pre class="codeoutput">Por defecto, LIM=2.5 (en boxparams)
+      0.44373
+          180
+      0.84189
+      0.41537
+       170.01
+      0.47209
+       189.98
+--------- Validation OK --------------
+List of arguments given default values:
+   'OSC_lim'    defaults to 250  1900
+--------------------------------------
+Por defecto, LIM=2.5 (en boxparams)
+      0.75244
+       86.584
+      0.60841
+      0.66341
+       57.047
+      0.84148
+       116.12
+--------- Validation OK --------------
+List of arguments given default values:
+   'OSC_lim'    defaults to 250  1900
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_228c_47.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_48.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_49.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_50.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_51.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_52.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_53.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_54.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_55.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_56.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_57.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_58.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_59.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_60.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_61.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_62.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_63.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_64.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_65.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_66.png" alt=""> <h2 id="22">Sugerido con los blind_days</h2><pre class="codeinput">    A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); A1_old=unique(A1(~isnan(A1)))
     osc_range=0.9
     <span class="comment">%A1_old=0.3390</span>
     [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_old,A1_old,<span class="keyword">...</span>
@@ -622,7 +692,26 @@ inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
         5,brw_str{n_inst},brw_str{n_ref},<span class="string">'plot_flag'</span>,0);
     <span class="comment">% si es suficiente la correccion por sl</span>
     <span class="comment">% osc_smooth_sug=osc_smooth_inisl;</span>
-</pre><pre class="codeinput">    figure(sort(findobj(<span class="string">'tag'</span>,<span class="string">'CAL_2P_SCHIST'</span>)));
+</pre><pre class="codeoutput">A1_old =
+        0.341
+osc_range =
+          0.9
+              |     ETCorig |   ETCnew 1p |   ETCnew 2p | O3Abs (ICF) |    O3Abs 2p |  O3Abs sug.
+OSC &lt; 0.90 DU |        1499 |        1565 |        1593 |      0.3410 |      0.3343 |      0.3410
+All OSC range |        1499 |        1567 |        1541 |      0.3410 |      0.3474 |      0.3410
+Por defecto, LIM=2.5 (en boxparams)
+      0.65987
+       113.05
+      0.78107
+      0.60834
+       95.623
+       0.7114
+       130.48
+--------- Validation OK --------------
+List of arguments given default values:
+   'OSC_lim'    defaults to 250  1900
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_228c_67.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_68.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_69.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_70.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_71.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_72.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_73.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_74.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_75.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_76.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_77.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_78.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_79.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_80.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_81.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_82.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_83.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_84.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_85.png" alt=""> <pre class="codeinput">    figure(sort(findobj(<span class="string">'tag'</span>,<span class="string">'CAL_2P_SCHIST'</span>)));
     ax=findobj(gca,<span class="string">'type'</span>,<span class="string">'text'</span>);
     set(ax(2),<span class="string">'FontSize'</span>,9,<span class="string">'Backgroundcolor'</span>,<span class="string">'w'</span>); set(ax(3),<span class="string">'FontSize'</span>,9,<span class="string">'Backgroundcolor'</span>,<span class="string">'w'</span>);
     printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'sug'</span>},<span class="string">'Width'</span>,14,<span class="string">'Height'</span>,8);
@@ -632,8 +721,8 @@ inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
     legend(h,<span class="string">'Config. orig'</span>,<span class="string">'Config. orig, SL corrected'</span>,<span class="string">'Suggested'</span>);
     title([ brw_str{n_inst},<span class="string">' - '</span>,brw_str{n_ref},<span class="string">' / '</span>,brw_str{n_ref}]);
     printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'sug'</span>});
-</pre><pre class="codeinput">    close <span class="string">all</span>
-</pre><h2 id="22">Blind days table</h2><p>m_etc: [date, ref_new_slcorr, +sd, +n, ...        inst(6), +sd, inst(10), +sd, inst(6 sl corr), +sd, ...        inst(rcalibrated, ETC sug), +sd]</p><p>Si no hay sugerida, sino que es la orig.SL corr., hacer</p><pre class="codeinput">    <span class="comment">%m_etc=[m_etc_SUG(:,1:6),NaN*m_etc_SUG(:,1),m_etc_SUG(:,9:10)];</span>
+</pre><img vspace="5" hspace="5" src="cal_report_228c_86.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_87.png" alt=""> <pre class="codeinput">    close <span class="string">all</span>
+</pre><h2 id="25">Blind days table</h2><p>m_etc: [date, ref_new_slcorr, +sd, +n, ...        inst(6), +sd, inst(10), +sd, inst(6 sl corr), +sd, ...        inst(rcalibrated, ETC sug), +sd]</p><p>Si no hay sugerida, sino que es la orig.SL corr., hacer</p><pre class="codeinput">    <span class="comment">%m_etc=[m_etc_SUG(:,1:6),NaN*m_etc_SUG(:,1),m_etc_SUG(:,9:10)];</span>
     m_etc=[m_etc_SUG(:,1:6),NaN*m_etc_SUG(:,1),m_etc_SUG(:,11:12)];
     m_etc(:,7)=100*(m_etc(:,5)-m_etc(:,2))./m_etc(:,2);
     m_etc(:,10)=100*(m_etc(:,8)-m_etc(:,2))./m_etc(:,2);
@@ -660,6 +749,20 @@ inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
     total_sugerida=sum(m_etc(:,4))
 latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_status_'</span>,brw_str{n_inst}]),<span class="string">'\diaSUGstart'</span>,m_etc(1,1),<span class="keyword">...</span>
              <span class="string">'\diaSUGend'</span>,m_etc(end,1),<span class="string">'\totalSUG'</span>,total_sugerida);
+</pre><pre class="codeoutput">  Columns 1 through 6
+    'Date'           'Day'    'O3\#185'    'O3std'    'N'     'O3\#228'
+    '20-Jun-2019'    [171]    [  336.9]    [    4]    [63]    [  350.9]
+    '21-Jun-2019'    [172]    [  338.9]    [  4.7]    [32]    [  357.6]
+  Columns 7 through 10
+    'O3 std'    '\%(228-185)/185'    'O3(*)\#228'    'O3std'
+    [   8.1]    [            4.2]    [     335.3]    [  5.4]
+    [     9]    [            5.5]    [     342.4]    [  5.1]
+  Column 11
+    '(*)\%(228-185)/185'
+    [              -0.5]
+    [                 1]
+total_sugerida =
+    95
 </pre><pre class="codeinput"><span class="keyword">else</span>
     disp(<span class="string">'No maintenance'</span>)
     ETC_SUG(1).NEW=NaN; o3c_SUG=NaN;  osc_smooth_sug=NaN*ones(1,7);
@@ -684,18 +787,7 @@ osc_smooth{Cal.n_inst}.ini=osc_smooth_ini; osc_smooth{Cal.n_inst}.ini_sl=osc_smo
 osc_smooth{Cal.n_inst}.sug=osc_smooth_sug;
 
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'etc'</span>);
-</pre><pre class="codeoutput">No maintenance
-Por defecto, LIM=2.5 (en boxparams)
---------- Validation OK --------------
-List of arguments given default values:
-   'OSC_lim'    defaults to 250  1900
---------------------------------------
-Por defecto, LIM=2.5 (en boxparams)
---------- Validation OK --------------
-List of arguments given default values:
-   'OSC_lim'    defaults to 250  1900
---------------------------------------
-</pre><h2 id="24">Final Period</h2><pre class="codeinput">close <span class="string">all</span>
+</pre><h2 id="27">Final Period</h2><pre class="codeinput">close <span class="string">all</span>
 finaldays=Cal.calibration_days{Cal.n_inst,3};
 
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
@@ -704,7 +796,7 @@ jlim=(diaj2(summary{Cal.n_inst}(:,1))&gt;finaldays(1) &amp; <span class="keyword
 inst2=summary{Cal.n_inst}(jday &amp; jlim ,:);
 </pre><pre class="codeinput">A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-osc_range=0.7;
+osc_range=.7;
 <span class="comment">%A1_new=0.3431</span>
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,<span class="keyword">...</span>
                                                                 10,osc_range,0.03,finaldays);
@@ -729,31 +821,31 @@ Not enough points to perform robust estimation.
 
   Columns 1 through 5
     'ETCorig'    'ETCnew 1p'    'ETCnew 2p'    'O3Abs (ICF)'    'O3Abs 2p'
-    [   1465]    [     1556]    [     1555]    [       3410]    [    3458]
-    [   1465]    [     1557]    [     1561]    [       3410]    [    3445]
+    [   1500]    [     1502]    [     1498]    [       3410]    [    3467]
+    [   1500]    [     1503]    [     1477]    [       3410]    [    3520]
   Column 6
     'O3Abs old'
     [     3455]
     [     3410]
 
-</pre><img vspace="5" hspace="5" src="cal_report_228c_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_39.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_40.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_42.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_43.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_44.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_45.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_46.png" alt=""> <h2 id="26">TEST NEW CONFIG</h2><pre class="codeinput">  o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
+</pre><img vspace="5" hspace="5" src="cal_report_228c_88.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_89.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_90.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_91.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_92.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_93.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_94.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_95.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_96.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_97.png" alt=""> <h2 id="29">TEST NEW CONFIG</h2><pre class="codeinput">  o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
   inst2(:,10)=o3r;
       [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(<span class="keyword">...</span>
          inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),<span class="keyword">...</span>
          5,brw_str{n_inst},brw_str{n_ref},<span class="string">'plot_flag'</span>,0);
 </pre><pre class="codeoutput">Por defecto, LIM=2.5 (en boxparams)
-       1.0518
-      -17.112
-      0.93418
-       1.0051
-      -32.103
-       1.0984
-       -2.121
+      0.92247
+       23.158
+      0.90298
+      0.88596
+       11.577
+      0.95897
+        34.74
 --------- Validation OK --------------
 List of arguments given default values:
    'OSC_lim'    defaults to 250  1900
 --------------------------------------
-</pre><img vspace="5" hspace="5" src="cal_report_228c_47.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_48.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_49.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_50.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_51.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_52.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_53.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_54.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_55.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_56.png" alt=""> <h2 id="27">FINAL CONFIG</h2><pre class="codeinput">    [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(<span class="keyword">...</span>
+</pre><img vspace="5" hspace="5" src="cal_report_228c_98.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_99.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_100.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_101.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_102.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_103.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_104.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_105.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_106.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_107.png" alt=""> <h2 id="30">FINAL CONFIG</h2><pre class="codeinput">    [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(<span class="keyword">...</span>
         inst2(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),<span class="keyword">...</span>
         5,brw_str{n_inst},brw_str{n_ref},<span class="string">'plot_flag'</span>,0);
 
@@ -762,25 +854,25 @@ List of arguments given default values:
  legend(h,<span class="string">'Config. orig'</span>,<span class="string">'Config. orig, SL corrected'</span>,<span class="string">'Suggested'</span>); set(gca,<span class="string">'YLim'</span>,[-4 2]);
  title([ brw_str{n_inst},<span class="string">' - '</span>,brw_str{n_ref},<span class="string">' / '</span>,brw_str{n_ref}]);
 </pre><pre class="codeoutput">Por defecto, LIM=2.5 (en boxparams)
-      0.70526
-       81.568
-      0.92287
-       0.6712
-       70.006
-      0.73933
-       93.131
+      0.91966
+       23.684
+       0.9079
+      0.88429
+        12.45
+      0.95502
+       34.917
 --------- Validation OK --------------
 List of arguments given default values:
    'OSC_lim'    defaults to 250  1900
 --------------------------------------
-</pre><img vspace="5" hspace="5" src="cal_report_228c_57.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_58.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_59.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_60.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_61.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_62.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_63.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_64.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_65.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_66.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_67.png" alt=""> <h2 id="28">TWO POINT CALIBRATION</h2><pre>o3r= (inst2(:,8)-ETC_NEW(1).TP(1))./(ETC_NEW(1).TP(2)/10000*inst2(:,3)*10);
+</pre><img vspace="5" hspace="5" src="cal_report_228c_108.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_109.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_110.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_111.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_112.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_113.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_114.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_115.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_116.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_117.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_118.png" alt=""> <h2 id="31">TWO POINT CALIBRATION</h2><pre>o3r= (inst2(:,8)-ETC_NEW(1).TP(1))./(ETC_NEW(1).TP(2)/10000*inst2(:,3)*10);
 inst2(:,10)=o3r;
     [x,r,rp,ra,dat,ox,osc_smooth_2P]=ratio_min_ozone(...
        inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);</pre><pre class="codeinput">osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 <span class="comment">% osc_smooth{Cal.n_inst}.twoP=osc_smooth_2P;</span>
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'osc_smooth'</span>);
-</pre><pre class="codeinput">figure(sort(findobj(<span class="string">'tag'</span>,<span class="string">'CAL_2P_SCHIST'</span>)));
+</pre><pre class="codeinput">figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'CAL_2P_SCHIST'</span>)));
 ax=findobj(gca,<span class="string">'type'</span>,<span class="string">'text'</span>);
 set(ax(2),<span class="string">'FontSize'</span>,9,<span class="string">'Backgroundcolor'</span>,<span class="string">'w'</span>); set(ax(3),<span class="string">'FontSize'</span>,9,<span class="string">'Backgroundcolor'</span>,<span class="string">'w'</span>);
 printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'fin'</span>},<span class="string">'Width'</span>,14,<span class="string">'Height'</span>,8);
@@ -792,7 +884,7 @@ figure(findobj(<span class="string">'tag'</span>,<span class="string">'RATIO_ERR
 printfiles_report(gcf,Cal.dir_figs);
 
 close <span class="string">all</span>
-</pre><h2 id="31">STRAY</h2><pre class="codeinput"><span class="keyword">if</span> Cal.brwM(Cal.n_inst)~=3
+</pre><h2 id="34">STRAY</h2><pre class="codeinput"><span class="keyword">if</span> Cal.brwM(Cal.n_inst)~=3
 </pre><pre class="codeinput">    close <span class="string">all</span>
 
     osc_range=2;
@@ -808,13 +900,13 @@ close <span class="string">all</span>
     <span class="comment">%set(ax(3),'FontSize',9,'Backgroundcolor','w');</span>
     printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'_Det'</span>},<span class="keyword">...</span>
         <span class="string">'Width'</span>,14,<span class="string">'Height'</span>,8,<span class="string">'FontSize'</span>,10);
-</pre><h2 id="34">Latex variables</h2><pre class="codeinput">    a=straylight_{n_inst}.coeff.R(1);
+</pre><h2 id="37">Latex variables</h2><pre class="codeinput">    a=straylight_{n_inst}.coeff.R(1);
     b=straylight_{n_inst}.coeff.R(2);
     sl_etc=straylight_{n_inst}.coeff.R(3);
 
     latexcmd(fullfile([<span class="string">'&gt;'</span>,Cal.file_latex],[<span class="string">'cal_etc_'</span>,brw_str{n_inst}]),<span class="keyword">...</span>
         <span class="string">'\SLETC'</span>,round(sl_etc),<span class="string">'\SLexp'</span>,round(b*100)/100,<span class="string">'\SLcoeff'</span>,round(a*10)/10);
-</pre><h2 id="35">calculation</h2><pre class="codeinput">    a=straylight_{n_inst}.coeff.R(1);
+</pre><h2 id="38">calculation</h2><pre class="codeinput">    a=straylight_{n_inst}.coeff.R(1);
     b=straylight_{n_inst}.coeff.R(2);
     sl_etc=straylight_{n_inst}.coeff.R(3);
 
@@ -836,7 +928,7 @@ close <span class="string">all</span>
     [x,r,rp,ra,dat,ox,osc_stray2]=ratio_min_ozone(<span class="keyword">...</span>
         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),<span class="keyword">...</span>
         5,brw_str{n_inst},brw_str{n_inst},<span class="string">'plot_flag'</span>,0);
-</pre><h2 id="36">Apply the SL correction</h2><pre class="codeinput">    f=figure;
+</pre><h2 id="39">Apply the SL correction</h2><pre class="codeinput">    f=figure;
     set(f,<span class="string">'tag'</span>,<span class="string">'RATIO_ERRORBAR_stray'</span>);
     h=plot_smooth_(osc_smooth_inisl,osc_smooth_fin,osc_stray2);
     legend(h,<span class="string">'Config. initial (SL corrected)'</span>,<span class="string">'Final Configuration'</span>,<span class="string">'Stray Light corrected '</span>,<span class="keyword">...</span>
@@ -847,7 +939,7 @@ close <span class="string">all</span>
     figure(maxf(findobj(<span class="string">'-regexp'</span>,<span class="string">'tag'</span>,<span class="string">'RATIO_ERRORBAR_stray'</span>)));
     printfiles_report(gcf,Cal.dir_figs,<span class="keyword">...</span>
         <span class="string">'Width'</span>,14,<span class="string">'Height'</span>,8);
-</pre><h2 id="37">Difference iter#1 to iter#2</h2><pre class="codeinput">    f=figure;
+</pre><h2 id="40">Difference iter#1 to iter#2</h2><pre class="codeinput">    f=figure;
     set(f,<span class="string">'tag'</span>,<span class="string">'RATIO_ERRORBAR_stray_corr'</span>);
     h=plot_smooth_(osc_smooth_fin,osc_stray,osc_stray2);
     legend(h,<span class="string">'Config.final'</span>,<span class="string">'Stray Light corrected Iter #1'</span>,<span class="string">'Stray Light corrected Iter #2'</span>,<span class="keyword">...</span>
@@ -860,7 +952,7 @@ close <span class="string">all</span>
     printfiles_report(gcf,Cal.dir_figs,<span class="keyword">...</span>
         <span class="string">'Width'</span>,14,<span class="string">'Height'</span>,8);
 </pre><pre class="codeinput"><span class="keyword">end</span>
-</pre><h2 id="39">Final days table</h2><p>m_etc_(lo que sea) son los datos filtrados por Tsync, OSC y sza !!! -&gt; salida de ETC_calibration En ste caso se usa summary, as? que la configuraci?n original ser? 10, y la final 6</p><pre class="codeinput">m_etc=[m_etc_NEW(:,[1:4 7:8]),NaN*m_etc_NEW(:,1),m_etc_NEW(:,5:6)];
+</pre><h2 id="42">Final days table</h2><p>m_etc_(lo que sea) son los datos filtrados por Tsync, OSC y sza !!! -&gt; salida de ETC_calibration En ste caso se usa summary, as? que la configuraci?n original ser? 10, y la final 6</p><pre class="codeinput">m_etc=[m_etc_NEW(:,[1:4 7:8]),NaN*m_etc_NEW(:,1),m_etc_NEW(:,5:6)];
 m_etc(:,7)=100*(m_etc(:,5)-m_etc(:,2))./m_etc(:,2);
 m_etc(:,10)=100*(m_etc(:,8)-m_etc(:,2))./m_etc(:,2);
 <span class="comment">% La diferencia relativa anterior se refiere al ozono recalculado con la ETC que resulta de los c?lculos</span>
@@ -888,20 +980,29 @@ matrix2latex_ctable(M(2:end,2:end),fullfile(Cal.file_latex,[<span class="string"
 <span class="comment">% latexcmd(['&gt;',file_latex,'_etc_',brw_str{n_inst}],'\ETCSOdos',config_def(12),'\SOdosABS',config_def(10),'\OtresSOdosABS',config_def(9));</span>
 </pre><pre class="codeoutput">  Columns 1 through 6
     'Date'           'Day'    'O3\#185'    'O3std'    'N'     'O3\#228'
-    '22-Jun-2019'    [173]    [  336.3]    [  1.3]    [10]    [  355.4]
-    '23-Jun-2019'    [174]    [  329.1]    [  3.2]    [39]    [  345.7]
-    '24-Jun-2019'    [175]    [  310.7]    [  1.5]    [29]    [  325.4]
+    '22-Jun-2019'    [173]    [  333.7]    [  1.4]    [ 8]    [  356.5]
+    '23-Jun-2019'    [174]    [  327.1]    [  2.5]    [39]    [  345.7]
+    '24-Jun-2019'    [175]    [  308.9]    [  1.3]    [30]    [  325.4]
+    '25-Jun-2019'    [176]    [  311.6]    [    2]    [42]    [  329.7]
+    '26-Jun-2019'    [177]    [  313.9]    [  2.8]    [38]    [  332.2]
+    '27-Jun-2019'    [178]    [  308.2]    [  0.6]    [ 3]    [  320.7]
   Columns 7 through 10
     'O3 std'    '\%(228-185)/185'    'O3(*)\#228'    'O3std'
-    [   4.7]    [            5.7]    [     359.1]    [  5.3]
-    [   4.9]    [              5]    [     348.3]    [  5.9]
-    [   2.5]    [            4.7]    [     327.5]    [  3.3]
+    [   3.2]    [            6.8]    [     338.5]    [  2.7]
+    [   4.8]    [            5.7]    [     327.8]    [  2.8]
+    [   2.5]    [            5.3]    [     310.1]    [  2.2]
+    [   4.6]    [            5.8]    [     312.8]    [  2.8]
+    [   3.7]    [            5.8]    [     312.8]    [  3.4]
+    [   2.6]    [            4.1]    [     309.3]    [  1.3]
   Column 11
     '(*)\%(228-185)/185'
-    [               6.8]
-    [               5.8]
-    [               5.4]
-</pre><h2 id="40">Summary  Final Comparison all data detailed for osc ranges</h2><pre class="codeinput">TIME_SYNC=5;
+    [               1.4]
+    [               0.2]
+    [               0.4]
+    [               0.4]
+    [              -0.4]
+    [               0.4]
+</pre><h2 id="43">Summary  Final Comparison all data detailed for osc ranges</h2><pre class="codeinput">TIME_SYNC=5;
 <span class="comment">%rowlabels=regexprep(str_leg, '#', '\#');</span>
 caption=strcat(<span class="string">'Ozone Summary Report. Mean daily ozone, grouped by ozone slant path ranges,'</span>,<span class="keyword">...</span>
                <span class="string">' with original and final configuration (with an asterisk)'</span>);
@@ -919,26 +1020,37 @@ matrix2latex_longtable(dat,fullfile(Cal.file_latex,[<span class="string">'table_
                                    <span class="string">'format'</span>,{<span class="string">'%.0f'</span>,<span class="string">'%s'</span>,<span class="string">'%.0f'</span>,<span class="string">'%.1f'</span>,<span class="string">'%.0f'</span>,<span class="string">'%.0f'</span>,<span class="string">'%.1f'</span>,<span class="string">'%.1f'</span>,<span class="string">'%.0f'</span>,<span class="string">'%.1f'</span>,<span class="string">'%.1f'</span>},<span class="keyword">...</span>
                                    <span class="string">'caption'</span>,caption);
 </pre><pre class="codeoutput">         Day |    osc range |       O3#185 |        O3std |            N |       O3#228 |       O3 std |        %diff |    (*)O3#228 |       O3 std |     (*)%diff
-         171 |   osc$&gt;$1500 |        334.2 |            0 |            2 |        331.3 |          0.2 |         -0.8 |          NaN |          NaN |          NaN
-         171 | 1500$&gt;$osc$&gt; |        334.5 |          0.2 |            2 |        331.7 |          2.3 |         -0.8 |          NaN |          NaN |          NaN
-         171 | 1000$&gt;$osc$&gt; |          330 |          6.1 |            8 |        323.4 |          7.4 |           -2 |          NaN |          NaN |          NaN
-         171 | 700$&gt;$osc$&gt;$ |        334.3 |          4.5 |           28 |        328.4 |          5.2 |         -1.7 |          NaN |          NaN |          NaN
-         171 |    osc$&lt;$400 |        340.2 |          1.3 |           36 |        333.9 |          2.8 |         -1.8 |          NaN |          NaN |          NaN
-         172 |   osc$&gt;$1500 |        325.3 |            0 |            2 |          331 |          1.1 |          1.7 |          NaN |          NaN |          NaN
-         172 | 1500$&gt;$osc$&gt; |        329.1 |          0.8 |            4 |        333.9 |          0.8 |          1.4 |          NaN |          NaN |          NaN
-         172 | 1000$&gt;$osc$&gt; |        332.5 |          0.6 |           10 |        332.8 |          1.1 |          0.1 |          NaN |          NaN |          NaN
-         172 | 700$&gt;$osc$&gt;$ |        335.9 |          3.5 |           11 |        331.8 |          2.4 |         -1.2 |          NaN |          NaN |          NaN
-         172 |    osc$&lt;$400 |        343.7 |          1.5 |           19 |        336.6 |          2.4 |         -2.1 |          NaN |          NaN |          NaN
-         173 |    osc$&lt;$400 |        334.4 |          1.3 |            9 |        327.8 |          4.7 |           -2 |        358.8 |          5.6 |          7.3
-         174 | 1500$&gt;$osc$&gt; |        323.7 |            0 |            1 |        329.5 |            0 |          1.8 |        337.5 |            0 |          4.3
-         174 | 1000$&gt;$osc$&gt; |        321.1 |          3.1 |            7 |        321.3 |          4.3 |          0.1 |        332.6 |          3.8 |          3.6
-         174 | 700$&gt;$osc$&gt;$ |        325.9 |          2.7 |           20 |        323.7 |            2 |         -0.7 |          344 |          4.9 |          5.6
-         174 |    osc$&lt;$400 |          330 |          1.5 |           18 |        324.4 |          1.3 |         -1.7 |        352.8 |          2.4 |          6.9
-         175 |   osc$&gt;$1500 |        309.4 |          0.4 |            2 |        315.7 |          0.5 |          2.1 |        319.9 |            1 |          3.4
-         175 | 1500$&gt;$osc$&gt; |        307.5 |          1.3 |            7 |        310.1 |            1 |          0.9 |        317.4 |          1.5 |          3.2
-         175 | 1000$&gt;$osc$&gt; |        308.1 |          0.5 |            9 |        309.8 |          1.1 |          0.6 |        321.7 |            1 |          4.4
-         175 | 700$&gt;$osc$&gt;$ |        309.4 |          1.5 |           24 |        306.2 |          1.7 |           -1 |        326.7 |          2.7 |          5.6
-         175 |    osc$&lt;$400 |        310.2 |          0.2 |            3 |        304.9 |          1.2 |         -1.7 |        332.8 |          4.2 |          7.3
+         171 |   osc$&gt;$1500 |        334.2 |            0 |            2 |        331.3 |          0.2 |         -0.8 |          333 |          0.2 |         -0.3
+         171 | 1500$&gt;$osc$&gt; |        334.5 |          0.2 |            2 |        331.7 |          2.3 |         -0.8 |        333.9 |          1.9 |         -0.2
+         171 | 1000$&gt;$osc$&gt; |          330 |          6.1 |            8 |        323.4 |          7.4 |           -2 |        326.7 |          7.3 |           -1
+         171 | 700$&gt;$osc$&gt;$ |        333.6 |          4.3 |           28 |        328.4 |          5.2 |         -1.5 |        331.5 |          5.9 |         -0.6
+         171 |    osc$&lt;$400 |        338.9 |          1.3 |           37 |        333.9 |          2.8 |         -1.5 |          338 |          2.3 |         -0.2
+         172 |   osc$&gt;$1500 |        325.3 |            0 |            2 |          331 |          1.1 |          1.7 |        333.1 |          1.1 |          2.4
+         172 | 1500$&gt;$osc$&gt; |        329.1 |          0.8 |            4 |        333.9 |          0.8 |          1.4 |        336.6 |          0.5 |          2.3
+         172 | 1000$&gt;$osc$&gt; |        332.5 |          0.6 |           10 |        332.8 |          1.1 |          0.1 |        336.8 |            1 |          1.3
+         172 | 700$&gt;$osc$&gt;$ |        335.1 |          3.4 |           10 |        332.1 |          2.3 |         -0.9 |          337 |          3.1 |          0.5
+         172 |    osc$&lt;$400 |        342.1 |          1.9 |           20 |        336.4 |          2.9 |         -1.7 |        345.6 |          2.8 |            1
+         173 |    osc$&lt;$400 |        333.1 |          1.4 |            8 |        328.9 |          3.4 |         -1.3 |        338.5 |          2.7 |          1.6
+         174 | 1500$&gt;$osc$&gt; |        323.7 |            0 |            1 |        329.5 |            0 |          1.8 |        330.8 |            0 |          2.2
+         174 | 1000$&gt;$osc$&gt; |        321.1 |          3.1 |            7 |        321.3 |          4.3 |          0.1 |        324.3 |          3.6 |            1
+         174 | 700$&gt;$osc$&gt;$ |        325.3 |          2.4 |           19 |        323.7 |            2 |         -0.5 |        326.9 |          2.6 |          0.5
+         174 |    osc$&lt;$400 |        328.8 |          1.1 |           19 |        324.2 |          1.3 |         -1.4 |        328.7 |          2.9 |           -0
+         175 |   osc$&gt;$1500 |        309.4 |          0.4 |            2 |        315.7 |          0.5 |          2.1 |        315.5 |          0.8 |            2
+         175 | 1500$&gt;$osc$&gt; |        307.5 |          1.3 |            7 |        310.1 |            1 |          0.9 |        311.6 |          0.9 |          1.3
+         175 | 1000$&gt;$osc$&gt; |        308.1 |          0.5 |            9 |        309.8 |          1.1 |          0.6 |        312.2 |          0.7 |          1.3
+         175 | 700$&gt;$osc$&gt;$ |        308.6 |          1.3 |           25 |        306.1 |          1.7 |         -0.8 |          310 |          2.1 |          0.5
+         175 |    osc$&lt;$400 |          309 |          0.1 |            3 |        304.9 |          1.2 |         -1.3 |        311.1 |          3.7 |          0.7
+         176 |   osc$&gt;$1500 |        308.8 |          0.1 |            2 |        314.4 |          0.3 |          1.8 |        313.8 |          0.6 |          1.6
+         176 | 1500$&gt;$osc$&gt; |        309.2 |          2.1 |            7 |        312.8 |          3.6 |          1.2 |        313.5 |          3.1 |          1.4
+         176 | 1000$&gt;$osc$&gt; |        308.6 |          2.6 |            7 |        309.1 |            4 |          0.2 |        311.6 |          3.3 |            1
+         176 | 700$&gt;$osc$&gt;$ |        310.1 |          1.5 |           17 |        307.2 |          1.9 |         -0.9 |        310.3 |          1.6 |          0.1
+         176 |    osc$&lt;$400 |        312.8 |          1.3 |           21 |        307.5 |          1.5 |         -1.7 |        314.5 |          2.2 |          0.5
+         177 |   osc$&gt;$1500 |        314.5 |            0 |            1 |          322 |            0 |          2.4 |        321.5 |            0 |          2.2
+         177 | 1000$&gt;$osc$&gt; |        315.9 |          5.5 |            4 |        317.9 |          6.7 |          0.6 |        320.3 |          5.8 |          1.4
+         177 | 700$&gt;$osc$&gt;$ |        314.5 |          3.9 |           16 |          311 |          4.7 |         -1.1 |        314.3 |          4.3 |         -0.1
+         177 |    osc$&lt;$400 |        313.5 |          1.4 |           18 |        306.9 |          1.6 |         -2.1 |        311.6 |          1.5 |         -0.6
+         178 | 1000$&gt;$osc$&gt; |        305.9 |          0.8 |            5 |        307.6 |          1.4 |          0.6 |        309.9 |          1.6 |          1.3
+         178 | 700$&gt;$osc$&gt;$ |          308 |          0.6 |            3 |        307.4 |          2.7 |         -0.2 |        309.3 |          1.3 |          0.4
 </pre><pre class="codeinput">[m,s,n,grpn]=grpstats(ozone_osc_sum,{ozone_osc_sum(:,1)},{<span class="string">'mean'</span>,<span class="string">'std'</span>,<span class="string">'numel'</span>,<span class="string">'gname'</span>});
 ozone_day_sum=round([m(:,1),m(:,2),s(:,2),m(:,4),m(:,8),s(:,8),100*(m(:,8)-m(:,2))./m(:,2)]*10)/10;
 
@@ -947,12 +1059,15 @@ ozone_day_sum=round([m(:,1),m(:,2),s(:,2),m(:,4),m(:,8),s(:,8),100*(m(:,8)-m(:,2
          <span class="string">'O3 std'</span>,[<span class="string">' % '</span>,brw_str{n_ref},<span class="string">'-'</span>,brw_str{n_inst},<span class="string">'/'</span>,brw_str{n_ref}]})
 </pre><table border="1" cellpadding="4" cellspacing="0">
 <tr><td></td><td>Day</td><td>O3 #185</td><td>O3 std</td><td>N obs</td><td>O3 #228</td><td>O3 std</td><td> % 185-228/185</td></tr>
-<tr><td>20-Jun-2019</td><td>171</td><td>334.6</td><td>3.6</td><td>15.2</td><td>NaN</td><td>NaN</td><td>NaN</td></tr>
-<tr><td>21-Jun-2019</td><td>172</td><td>333.3</td><td>7</td><td>9.2</td><td>NaN</td><td>NaN</td><td>NaN</td></tr>
-<tr><td>22-Jun-2019</td><td>173</td><td>334.4</td><td>0</td><td>9</td><td>358.8</td><td>0</td><td>7.3</td></tr>
-<tr><td>23-Jun-2019</td><td>174</td><td>325.2</td><td>3.8</td><td>11.5</td><td>341.7</td><td>8.7</td><td>5.1</td></tr>
-<tr><td>24-Jun-2019</td><td>175</td><td>308.9</td><td>1.1</td><td>9</td><td>323.7</td><td>6.1</td><td>4.8</td></tr>
-</table><h2 id="42">Plot daily summary</h2><pre class="codeinput">close <span class="string">all</span>
+<tr><td>20-Jun-2019</td><td>171</td><td>334.2</td><td>3.2</td><td>15.4</td><td>332.6</td><td>4.1</td><td>-0.5</td></tr>
+<tr><td>21-Jun-2019</td><td>172</td><td>332.8</td><td>6.4</td><td>9.2</td><td>337.8</td><td>4.6</td><td>1.5</td></tr>
+<tr><td>22-Jun-2019</td><td>173</td><td>333.1</td><td>0</td><td>8</td><td>338.5</td><td>0</td><td>1.6</td></tr>
+<tr><td>23-Jun-2019</td><td>174</td><td>324.7</td><td>3.2</td><td>11.5</td><td>327.7</td><td>2.8</td><td>0.9</td></tr>
+<tr><td>24-Jun-2019</td><td>175</td><td>308.5</td><td>0.7</td><td>9.2</td><td>312.1</td><td>2.1</td><td>1.2</td></tr>
+<tr><td>25-Jun-2019</td><td>176</td><td>309.9</td><td>1.7</td><td>10.8</td><td>312.7</td><td>1.7</td><td>0.9</td></tr>
+<tr><td>26-Jun-2019</td><td>177</td><td>314.6</td><td>1</td><td>9.8</td><td>316.9</td><td>4.7</td><td>0.7</td></tr>
+<tr><td>27-Jun-2019</td><td>178</td><td>307</td><td>1.5</td><td>4</td><td>309.6</td><td>0.4</td><td>0.9</td></tr>
+</table><h2 id="45">Plot daily summary</h2><pre class="codeinput">close <span class="string">all</span>
 figure; set(gcf,<span class="string">'Tag'</span>,<span class="string">'_GlobalPlot_'</span>);
 plot(summary{n_ref}(:,1),summary{n_ref}(:,6),<span class="string">'g*'</span>,<span class="string">'MarkerSize'</span>,5);
 hold <span class="string">on</span>; plot(summary{Cal.n_inst}(:,1),summary{Cal.n_inst}(:,6),<span class="string">'b.'</span>,<span class="string">'MarkerSize'</span>,12);
@@ -986,10 +1101,7 @@ f0=figure;
          set(gca,<span class="string">'YLim'</span>,[min(inst1_b(j,10))-8 max(inst1_b(j,10))+8])
    <span class="keyword">end</span>
 <span class="keyword">end</span>
-</pre><pre class="codeoutput error">Error using matlab.graphics.axis.Axes/set
-Value must be a 1x2 vector of numeric type in which the second element is larger than the first and may be Inf
-Error in cal_report_228c (line 607)
-         set(gca,'YLim',[min(inst1_b(j,10))-8 max(inst1_b(j,10))+8])</pre><h2 id="43">final days: final config.</h2><pre class="codeinput">jday=findm(diaj(summary{Cal.n_inst}(:,1)),finaldays,0.5);<span class="comment">% quiero mostrar la primera config. con sl</span>
+</pre><img vspace="5" hspace="5" src="cal_report_228c_119.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_120.png" alt=""> <h2 id="46">final days: final config.</h2><pre class="codeinput">jday=findm(diaj(summary{Cal.n_inst}(:,1)),finaldays,0.5);<span class="comment">% quiero mostrar la primera config. con sl</span>
 inst2=summary{Cal.n_inst}(jday,:);
 
 <span class="keyword">for</span> dd=1:length(finaldays)
@@ -1017,7 +1129,7 @@ printfiles_report(double(f0):double(f),<span class="keyword">...</span>
                               Cal.dir_figs,<span class="string">'Width'</span>,14.5,<span class="string">'Height'</span>,7.5);
 
 graph2latex(Cal.file_latex,{<span class="string">'summaryplot'</span>,<span class="string">'DayPlot_'</span>},brw_str{n_inst},<span class="string">'scale'</span>,0.8);
-</pre><h2 id="44">detailed comparison</h2><p>%save detailed_comparison o3_c %load detailed_comparison head='Date_matlab date_dif sza_R airm_R temp_R filter_R O3_R sO3_R ms9 sm9 O3_R_o SO3_R_o O3_R_sl sO3_R_sl I_sza I_airm I_temp I_filter O3_I sO3_I ms9_I sm9_I O3_I_o sO3_I_o O3_I_sl sO3_I_sl'; [o3,i,j]=unique(o3_c(:,1)); label_detailed=mmcellstr(strtrim(strrep(head,' ','|'))); columns_detailed_report=[1:8,21,19,23]; aux=[cellstr(datestr(o3_c(i,1))),num2cell(o3_c(i,columns_detailed_report))]; head_end={'date.hour','diff (min)','sza ','airm','MS9','O3ref'}; summary_end=[diaj2(o3_c(i,1)),fix(o3_c(i,2)*24*60),o3_c(i,15),o3_c(i,16),round(o3_c(i,21)),round(o3_c(i,7)*10)/10]; matrix2latex_config(summary_end,fullfile(Cal.file_latex,['table_summary_end_',Cal.brw_str{Cal.n_inst},'.tex']),...                                   'columnlabels',head_end,...                                   'alignment','c');</p><p>% if ispc % xlswrite_(aux,'',['Date';label_detailed(columns_detailed_report)],'detailed_report.xls'); % else %  head1=cellstr(['Date';label_detailed(columns_detailed_report)]'); %  cell2csv(['comparison_report_',brw_str{n_inst},'.csv'],[head1;aux],','); %  % Todo linux outpit % end</p><p>% %% configration files % head2=[cellstr(leg),num2cell(config_def),num2cell(config_orig),num2cell(config_ref)]'; % head2{2}='Final ICF'; % head2{3}='Original ICF'; % head2{4}='Reference ICF'; % if ispc %   xlswrite_(head2','','','config_report.xls'); % else %   cell2csv(['config_report_',brw_str{n_inst},'.csv'],head2',','); % end</p><p>%% %makeHtmlTable(head2,[]);   % 'Date, Diff(min), REF</p><p>%close all;</p><p>%% Stray light [ETC_NEW_ST,o3c,m_etc]=ETC_calibration_C(Cal,summary,A.new(Cal.n_inst),Cal.n_inst,Cal.n_ref(2),7,0.8,0.03,[]);</p><p>%% figure; ms9=o3c(:,21); o3p=o3c(:,13).*o3c(:,16)*ETC_NEW_ST(1).TP(2); %airmas from instrument ozone_slant=o3c(:,13).*o3c(:,16)/1000; %air mass from instrument ozone_scale=fix(ozone_slant/.1)*.1; o3rc=(ms9-ETC_NEW_ST(1).TP(1))./(ETC_NEW_ST(1).TP(2)/1000*o3c(:,16)); y=100*(o3rc-o3c(:,13))./o3c(:,13);</p><p>%%</p><p>[m,s,n,name,v,ci]=grpstats(ms9-o3p,ozone_scale,{'mean','std','numel','gname','var','meanci'}); x=unique(ozone_scale); errorbar(x,m,x-s,x+s); hold on; [r,gof,c]=fit(x,m,'power2','Robust','on');          plot(ozone_slant,ms9-o3p,'.')          plot(r,'r.');</p><pre>        R=coeffvalues(r);</pre><pre>        hline(R(3),'r',num2str(R(3)));
+</pre><img vspace="5" hspace="5" src="cal_report_228c_121.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_122.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_123.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_124.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_125.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_126.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_127.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228c_128.png" alt=""> <h2 id="47">detailed comparison</h2><p>%save detailed_comparison o3_c %load detailed_comparison head='Date_matlab date_dif sza_R airm_R temp_R filter_R O3_R sO3_R ms9 sm9 O3_R_o SO3_R_o O3_R_sl sO3_R_sl I_sza I_airm I_temp I_filter O3_I sO3_I ms9_I sm9_I O3_I_o sO3_I_o O3_I_sl sO3_I_sl'; [o3,i,j]=unique(o3_c(:,1)); label_detailed=mmcellstr(strtrim(strrep(head,' ','|'))); columns_detailed_report=[1:8,21,19,23]; aux=[cellstr(datestr(o3_c(i,1))),num2cell(o3_c(i,columns_detailed_report))]; head_end={'date.hour','diff (min)','sza ','airm','MS9','O3ref'}; summary_end=[diaj2(o3_c(i,1)),fix(o3_c(i,2)*24*60),o3_c(i,15),o3_c(i,16),round(o3_c(i,21)),round(o3_c(i,7)*10)/10]; matrix2latex_config(summary_end,fullfile(Cal.file_latex,['table_summary_end_',Cal.brw_str{Cal.n_inst},'.tex']),...                                   'columnlabels',head_end,...                                   'alignment','c');</p><p>% if ispc % xlswrite_(aux,'',['Date';label_detailed(columns_detailed_report)],'detailed_report.xls'); % else %  head1=cellstr(['Date';label_detailed(columns_detailed_report)]'); %  cell2csv(['comparison_report_',brw_str{n_inst},'.csv'],[head1;aux],','); %  % Todo linux outpit % end</p><p>% %% configration files % head2=[cellstr(leg),num2cell(config_def),num2cell(config_orig),num2cell(config_ref)]'; % head2{2}='Final ICF'; % head2{3}='Original ICF'; % head2{4}='Reference ICF'; % if ispc %   xlswrite_(head2','','','config_report.xls'); % else %   cell2csv(['config_report_',brw_str{n_inst},'.csv'],head2',','); % end</p><p>%% %makeHtmlTable(head2,[]);   % 'Date, Diff(min), REF</p><p>%close all;</p><p>%% Stray light [ETC_NEW_ST,o3c,m_etc]=ETC_calibration_C(Cal,summary,A.new(Cal.n_inst),Cal.n_inst,Cal.n_ref(2),7,0.8,0.03,[]);</p><p>%% figure; ms9=o3c(:,21); o3p=o3c(:,13).*o3c(:,16)*ETC_NEW_ST(1).TP(2); %airmas from instrument ozone_slant=o3c(:,13).*o3c(:,16)/1000; %air mass from instrument ozone_scale=fix(ozone_slant/.1)*.1; o3rc=(ms9-ETC_NEW_ST(1).TP(1))./(ETC_NEW_ST(1).TP(2)/1000*o3c(:,16)); y=100*(o3rc-o3c(:,13))./o3c(:,13);</p><p>%%</p><p>[m,s,n,name,v,ci]=grpstats(ms9-o3p,ozone_scale,{'mean','std','numel','gname','var','meanci'}); x=unique(ozone_scale); errorbar(x,m,x-s,x+s); hold on; [r,gof,c]=fit(x,m,'power2','Robust','on');          plot(ozone_slant,ms9-o3p,'.')          plot(r,'r.');</p><pre>        R=coeffvalues(r);</pre><pre>        hline(R(3),'r',num2str(R(3)));
         hline(ETC_NEW(1).NEW,'g',num2str(ETC_NEW(1).NEW));
         title({formula(r),num2str(coeffvalues(r))});
         suptitle(brw_str(n_inst));</pre><pre>%% cuadratic
@@ -1111,7 +1223,67 @@ matrix2latex_config([config_orig(2:end),config_def(2:end)],...
 
 %% DT analysis_
  DT_analysis(Cal,ozone_raw0,config,'plot_flag',0);
+%%
+%% Campaing AVG info
 
+load(Cal.file_save,'avg_report');
+close all;
+cal_range=([datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(1)),datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(end))])
+[sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
+                                      'date_range',cal_range,...
+                                      'SL_REF',[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],...
+                                      'DT_REF',[DTorig,DTdef],...
+                                      'outlier_flag',{'','','','','','',''});
+try
+    
+    if ~isempty(sl_data)
+       day_ini=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       if isempty(day_ini)
+            disp(datestr(sl_data(end,1)))
+            RseisAVG=round(nanmean(sl_data(:,12)));
+            RcincoAVG=round(nanmean(sl_data(:,11)));
+       else
+           RseisAVG=round(nanmean(sl_data(day_ini(1):day_last(end),12)));
+           RcincoAVG=round(nanmean(sl_data(day_ini(1):day_last(end),11)));
+       end
+       
+
+    end
+    if ~isempty(dt_data)
+       day_ini=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       
+       if isempty(day_ini)
+              DTAVG=sprintf('%g',10^-9*(round(nanmean(dt_data(:,4)))));          
+        else
+             DTAVG=sprintf('%g',10^-9*round(nanmean(dt_data(day_ini(1):day_last(end),4))));
+       end
+    end
+  
+    tableform({'SLR6  orig',   'Calc. AVG','SLR5  orig','Calculated','DT  orig','Calculated'},...
+              [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
+
+    avg_report{Cal.n_inst}.RseisAVG_camp=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG_camp=RcincoAVG;
+    avg_report{Cal.n_inst}.DTorig_camp  =DTorig;    avg_report{Cal.n_inst}.DTAVG_avg_camp    =DTAVG;
+    
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+    
+avg_report{Cal.n_inst}.sl_data_camp=sl_data;
+avg_report{Cal.n_inst}.dt_data_camp=dt_data;
+avg_report{Cal.n_inst}.rs_data_camp=rs_data;
+avg_report{Cal.n_inst}.ap_data_camp=ap_data;
+avg_report{Cal.n_inst}.hg_data_camp=hg_data;
+avg_report{Cal.n_inst}.op_data_camp=op_data;
+if exist('Args','var')
+   avg_report{Cal.n_inst}.Args=Args;
+else disp('No se est�n guardando los inputs de la funci�n!!')
+end
+save(Cal.file_save,'-APPEND','avg_report');
+
+%%
 %
 %figure(findobj('tag','DT_comp'));
 %set(get(gca,'title'),'FontSize',8);
@@ -1394,7 +1566,7 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-osc_range=0.7;
+osc_range=.7;
 %A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 10,osc_range,0.03,finaldays);
@@ -1442,7 +1614,7 @@ osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 save(Cal.file_save,'-APPEND','osc_smooth');
 
 %%
-figure(sort(findobj('tag','CAL_2P_SCHIST')));
+figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'},'Width',14,'Height',8);

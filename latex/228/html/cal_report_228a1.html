@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_228a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-25"><meta name="DC.source" content="cal_report_228a1.m"><style type="text/css">
+      --><title>cal_report_228a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_228a1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -113,7 +113,7 @@ ans =
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
   Columns 6 through 9
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
@@ -123,7 +123,7 @@ ans =
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
     {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF23318&#8230;'}    {'..\163\ICF23318&#8230;'}    {'0274'}    {'0274'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
     {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
     {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
@@ -132,7 +132,7 @@ ans =
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
 Station.name=<span class="string">''</span>;
 Station.lat=67;
@@ -170,64 +170,65 @@ latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_config_'</span>,Cal.
                      DTdef,<span class="string">'\ETCdef'</span>,ETCdef(1),<span class="string">'\Adef'</span>,A1def(1),<span class="keyword">...</span>
                      DTorig,<span class="string">'\ETCorig'</span>,ETCorig(1),<span class="string">'\Aorig'</span>,A1orig(1));
 </pre><pre class="codeoutput">ans =
-    '22-Jun-2019'
+    '23-Jun-2019'
 </pre><pre class="codeinput">makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
-</pre><pre class="codeoutput">ans =
+</pre><pre class="codeoutput">varname error
+ans =
   52&times;2 table
-                           x__CODE_campaigns_are2019_bfiles_228____228_ICF15017_228    x__CODE_campaigns_are2019_bfiles_228____228_ICF17319_228
-                           ________________________________________________________    ________________________________________________________
-    ReleaseDate                                   7.3655e+05                                                  7.376e+05                        
-    o3TempCoef1                                            0                                                          0                        
-    o3TempCoef2                                     -0.90381                                                   -0.90381                        
-    o3TempCoef3                                     -0.88811                                                   -0.88811                        
-    o3TempCoef4                                       -1.018                                                     -1.018                        
-    o3TempCoef5                                      -1.7807                                                    -1.7807                        
-    MicrometerSteps_deg                                    0                                                          0                        
-    O3OnO3Ratio                                        0.341                                                     0.3455                        
-    SO2OnSO2Ratio                                     4.4707                                                     4.4707                        
-    O3OnSO2Ratio                                       1.153                                                      1.153                        
-    ETCOnO3Ratio                                        1499                                                       1465                        
-    ETCOnSO2Ratio                                       -328                                                       -328                        
-    DeadTime_sec_                                    3.8e-08                                                   2.65e-08                        
-    WLCalStepNumber                                     1030                                                       1023                        
-    SlitmaskMotorDelay                                    14                                                         14                        
-    UmkehrOffset                                        2463                                                       2463                        
-    NDFilter0                                              0                                                          0                        
-    NDFilter1                                           4814                                                       4814                        
-    NDFilter2                                          10734                                                      10734                        
-    NDFilter3                                          18672                                                      18672                        
-    NDFilter4                                          22050                                                      22050                        
-    NDFilter5                                          26048                                                      26048                        
-    ZenithSteps_rev                                     2972                                                       2972                        
-    BrewerType                                             3                                                          3                        
-    COMPort_                                               2                                                          1                        
-    o3TempCoefHg                                           0                                                          0                        
-    n2TempCoefHg                                           0                                                          0                        
-    n2TempCoef1                                            0                                                          0                        
-    n2TempCoef2                                            0                                                          0                        
-    n2TempCoef3                                            0                                                          0                        
-    n2TempCoef4                                            0                                                          0                        
-    n2TempCoef5                                            0                                                          0                        
-    O3Mic_1Offset                                        -66                                                          0                        
-    Mic_2Offset                                            1                                                          0                        
-    O3FW_3Offset                                         242                                                        242                        
-    NO2AbsnCoeff                                          -3                                                         -3                        
-    NO2DsEtc                                             770                                                        770                        
-    NO2ZsEtc                                             740                                                        740                        
-    NO2Mic_1Offset                                      8028                                                       8028                        
-    NO2FW_3Offset                                        178                                                        178                        
-    NO2_O3ModeChange                                    2515                                                       2515                        
-    GratingSlope                                     0.99476                                                    0.99476                        
-    GratingIntercept                                   12.88                                                      12.88                        
-    MicrometerZero                                      1725                                                       1725                        
-    IrisOpenSteps                                        250                                                        250                        
-    BufferDelay_s_                                       0.4                                                        0.4                        
-    NO2FW_1Pos                                             0                                                          0                        
-    O3FW_1Pos                                            256                                                        256                        
-    FW_2Pos                                                0                                                          0                        
-    uvFW_2Pos                                              0                                                          0                        
-    ZenithOffset                                           0                                                          0                        
-    ZenithUVBPosition                                   2216                                                       2216                        
+                               M1           M2    
+                           __________    _________
+    ReleaseDate            7.3655e+05    7.376e+05
+    o3TempCoef1                     0            0
+    o3TempCoef2              -0.90381        -0.33
+    o3TempCoef3              -0.88811        -0.35
+    o3TempCoef4                -1.018        -0.44
+    o3TempCoef5               -1.7807        -0.35
+    MicrometerSteps_deg             0            0
+    O3OnO3Ratio                 0.341       0.3455
+    SO2OnSO2Ratio              4.4707       4.4707
+    O3OnSO2Ratio                1.153        1.153
+    ETCOnO3Ratio                 1499         1500
+    ETCOnSO2Ratio                -328         -328
+    DeadTime_sec_             3.8e-08      2.8e-08
+    WLCalStepNumber              1030         1023
+    SlitmaskMotorDelay             14           14
+    UmkehrOffset                 2463         2463
+    NDFilter0                       0            0
+    NDFilter1                    4814         4814
+    NDFilter2                   10734        10734
+    NDFilter3                   18672        18672
+    NDFilter4                   22050        22050
+    NDFilter5                   26048        26048
+    ZenithSteps_rev              2972         2972
+    BrewerType                      3            3
+    COMPort_                        2            1
+    o3TempCoefHg                    0            0
+    n2TempCoefHg                    0            0
+    n2TempCoef1                     0            0
+    n2TempCoef2                     0            0
+    n2TempCoef3                     0            0
+    n2TempCoef4                     0            0
+    n2TempCoef5                     0            0
+    O3Mic_1Offset                 -66            0
+    Mic_2Offset                     1            0
+    O3FW_3Offset                  242          242
+    NO2AbsnCoeff                   -3           -3
+    NO2DsEtc                      770          770
+    NO2ZsEtc                      740          740
+    NO2Mic_1Offset               8028         8028
+    NO2FW_3Offset                 178          178
+    NO2_O3ModeChange             2515         2515
+    GratingSlope              0.99476      0.99476
+    GratingIntercept            12.88        12.88
+    MicrometerZero               1725         1725
+    IrisOpenSteps                 250          250
+    BufferDelay_s_                0.4          0.4
+    NO2FW_1Pos                      0            0
+    O3FW_1Pos                     256          256
+    FW_2Pos                         0            0
+    uvFW_2Pos                       0            0
+    ZenithOffset                    0            0
+    ZenithUVBPosition            2216         2216
 </pre><pre class="codeinput"><span class="keyword">catch</span> exception
       fprintf(<span class="string">'%s, brewer: %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       DTorig=NaN; DTdef=NaN;
@@ -290,13 +291,13 @@ List of arguments given default values:
    'path_to_file'    defaults to .
 --------------------------------------
 RseisAVG =
-   NaN
+   337
 RcincoAVG =
-   NaN
+   582
 
   Columns 1 through 5
     'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
-    [       242]    [      NaN]    [       NaN]    [       NaN]    [ 3.8e-08]
+    [       242]    [      337]    [       NaN]    [       582]    [ 3.8e-08]
   Column 6
     'Calculated'
     [   2.8e-08]
@@ -319,11 +320,11 @@ br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 </pre><pre class="codeoutput">ans =
   2&times;6 cell array
   Columns 1 through 4
-    {'CZ'      }    {'CI'      }    {'CJ'      }    {'FV'      }
-    {0&times;1 struct}    {9&times;1 struct}    {0&times;1 struct}    {8&times;1 struct}
+    {'CZ'      }    {'CI'       }    {'CJ'      }    {'FV'      }
+    {0&times;1 struct}    {11&times;1 struct}    {0&times;1 struct}    {9&times;1 struct}
   Columns 5 through 6
     {'HS'      }    {'HL'      }
-    {7&times;1 struct}    {7&times;1 struct}
+    {9&times;1 struct}    {9&times;1 struct}
 </pre><h2 id="12">CZ REPORT</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CZ*.'</span>,br]),<span class="keyword">...</span>
@@ -395,10 +396,12 @@ Reference file does not exist
 Reference file does not exist
 Reference file does not exist
 Reference file does not exist
+Reference file does not exist
+Reference file does not exist
 Error: analyzeCI, brewer cal_report_228a1
 Error: instrumentAndRun, brewer evalmxdom
-Error: publish, brewer DNK#228
-</pre><pre class="codeinput"><span class="keyword">try</span>
+Error: publish, brewer informes
+Error: DNK#228, brewer </pre><pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'CI_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception

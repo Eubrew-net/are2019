@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_228b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-25"><meta name="DC.source" content="cal_report_228b.m"><style type="text/css">
+      --><title>cal_report_228b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_228b.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -114,7 +114,7 @@ ans =
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
   Columns 6 through 9
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
@@ -124,7 +124,7 @@ ans =
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
     {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF23318&#8230;'}    {'..\163\ICF23318&#8230;'}    {'0274'}    {'0274'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
     {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
     {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
@@ -133,8 +133,7 @@ ans =
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
-Warning: Directory already exists. 
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
@@ -147,7 +146,7 @@ Station.meanozo=350;
 
 cal_step={}; sc_avg={}; sc_raw={}; Args={};
 </pre><pre class="codeoutput">ans =
-    '22-Jun-2019'
+    '23-Jun-2019'
 </pre><h2 id="4">Sun_scan: Before Campaign</h2><pre class="codeinput">close <span class="string">all</span>
 [cal_step{1},sc_avg{1},sc_raw{1},Args{1}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,1},<span class="keyword">...</span>
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[120 159]),<span class="keyword">...</span>
@@ -261,18 +260,38 @@ ans =
 OK-&gt;B14719.228
 Warning no depuerd SC
 </pre><img vspace="5" hspace="5" src="cal_report_228b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_03.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
-                     <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[174 175]),<span class="keyword">...</span>
+                     <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),<span class="keyword">...</span>
                      <span class="string">'CSN_orig'</span>,config_def(14),<span class="string">'OSC'</span>,Station.OSC,<span class="keyword">...</span>
-                     <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,35,<span class="keyword">...</span>
-                     <span class="string">'hg_time'</span>,35,<span class="string">'one_flag'</span>,1);
-<span class="comment">%'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...</span>
+                     <span class="string">'control_flag'</span>,0,<span class="string">'residual_limit'</span>,35,<span class="keyword">...</span>
+                     <span class="string">'hg_time'</span>,25,<span class="string">'one_flag'</span>,1);
 </pre><pre class="codeoutput">228
 ans =
-    '22-Jun-2019'
+    '23-Jun-2019'
+ans =
+    '23-Jun-2019'
+OK-&gt;B17019.228
+ans =
+    '23-Jun-2019'
+OK-&gt;B17119.228
+ans =
+    '23-Jun-2019'
+OK-&gt;B17219.228
+ans =
+    '23-Jun-2019'
+ans =
+    '23-Jun-2019'
 OK-&gt;B17419.228
 ans =
-    '22-Jun-2019'
-</pre><img vspace="5" hspace="5" src="cal_report_228b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_13.png" alt=""> <pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
+    '23-Jun-2019'
+OK-&gt;B17519.228
+ans =
+    '23-Jun-2019'
+ans =
+    '23-Jun-2019'
+ans =
+    '23-Jun-2019'
+Warning no depuerd SC
+</pre><img vspace="5" hspace="5" src="cal_report_228b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_22.png" alt=""> <pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'FontSize'</span>,.9,<span class="string">'Width'</span>,8.5,<span class="string">'Height'</span>,7);
 
 ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'Final_SC_Calculation'</span>));
@@ -742,21 +761,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
 Ratio Ozone for So2(A3)=  1.1741, So2/O3(A2)=  2.7218
 O3 factor from Bass &amp; Paur to Daumont  =  0.9742 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9972 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-Warning: The EraseMode property is no longer supported
-and will error in a future release. 
-</pre><img vspace="5" hspace="5" src="cal_report_228b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_23.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_228b_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_29.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_30.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_32.png" alt=""> <pre class="codeoutput">datefile =
       736114
 now:W1015015.228
 now:W3015015.228
@@ -1166,29 +1171,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
 Ratio Ozone for So2(A3)=  1.1326, So2/O3(A2)=  2.9372
 O3 factor from Bass &amp; Paur to Daumont  =  0.9673 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9926 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-</pre><img vspace="5" hspace="5" src="cal_report_228b_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_29.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_30.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_32.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_33.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_228b_33.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_35.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_36.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_39.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_40.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_42.png" alt=""> <pre class="codeoutput">datefile =
       736848
 now:W1015317.228
 now:W3015317.228
@@ -1594,29 +1577,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.1 DU
 Ratio Ozone for So2(A3)=  1.1173, So2/O3(A2)=  2.9708
 O3 factor from Bass &amp; Paur to Daumont  =  0.9664 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9922 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-</pre><img vspace="5" hspace="5" src="cal_report_228b_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_35.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_36.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_39.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_40.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_42.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_43.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_228b_43.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_44.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_45.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_46.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_47.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_48.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_49.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_50.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_51.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_52.png" alt=""> <pre class="codeoutput">datefile =
       736854
 now:W1015917.228
 now:W3015917.228
@@ -1626,8 +1587,6 @@ now:W9015917.228
 now:W11015917.228
 now:W12015917.228
 now:W1115917.228
-Warning: DSP: Not enough or too many points on either side of the maximum of the
-line 
 now:W3115917.228
 now:W7115917.228
 now:W8115917.228
@@ -1643,8 +1602,6 @@ now:W11215917.228
 now:W12215917.228
 now:W13215917.228
 now:W3315917.228
-Warning: DSP: Not enough or too many points on either side of the maximum of the
-line 
 now:W7315917.228
 now:W8315917.228
 now:W9315917.228
@@ -2028,28 +1985,10 @@ Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
 Ratio Ozone for So2(A3)=  1.1181, So2/O3(A2)=  2.9740
 O3 factor from Bass &amp; Paur to Daumont  =  0.9665 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9923 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-</pre><img vspace="5" hspace="5" src="cal_report_228b_44.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_45.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_46.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_47.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_48.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_49.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_50.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_51.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_52.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_53.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_228b_53.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_54.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_55.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_56.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_57.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_58.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_59.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_60.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_61.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_62.png" alt=""> <pre class="codeoutput">datefile =
       737599
 ans =
-    '22-Jun-2019'
+    '23-Jun-2019'
 now:W1017319.228
 now:W3017319.228
 now:W7017319.228
@@ -2454,29 +2393,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
 Ratio Ozone for So2(A3)=  1.1382, So2/O3(A2)=  2.9029
 O3 factor from Bass &amp; Paur to Daumont  =  0.9689 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9937 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-Warning: The EraseMode property is no longer supported and will error in a
-future release. 
-</pre><img vspace="5" hspace="5" src="cal_report_228b_54.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_55.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_56.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_57.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_58.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_59.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_60.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_61.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_62.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_63.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="cal_report_228b_63.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_64.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_65.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_66.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_67.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_68.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_69.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_70.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_71.png" alt=""> <img vspace="5" hspace="5" src="cal_report_228b_72.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
 load(Cal.file_save,<span class="string">'dsp_summary'</span>);
 dates=sscanf(cell2str(cat(2,ldsp')),<span class="string">'%03d_%03d_%03d,'</span>,[3,Inf]);
 dates=datejul(dates(2:3,:)');dates=dates(:,1);
@@ -2622,7 +2539,7 @@ mc =
          1030       0.3453       9.6559       3.3029       1.1518       1390.5
   Columns 7 through 9
        0.3561       0.3474       9.2855
-</pre><img vspace="5" hspace="5" src="cal_report_228b_64.png" alt=""> <h2 id="15">Eto para escribir resultados a hoja excel.</h2><pre>for dsps=1:length(ldsp)
+</pre><img vspace="5" hspace="5" src="cal_report_228b_73.png" alt=""> <h2 id="15">Eto para escribir resultados a hoja excel.</h2><pre>for dsps=1:length(ldsp)
     legend1={'step',sprintf('ICF (%d, %d)',CSN_icf{dsps}(1),CSN_icf{dsps}(3)),'abs step','A1 Q','A1 S'};
      dsp_table=NaN*ones(9,size(legend1,2));
      dsp_table(:,1:5)=[res{dsps}(:,1,1),NaN*ones(9,1),res{dsps}(:,1,1)+salida{dsps}{1}.cal_ozonepos,...
@@ -2679,11 +2596,11 @@ close all
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
-                     'date_range',datenum(Cal.Date.cal_year,1,[174 175]),...
+                     'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                      'CSN_orig',config_def(14),'OSC',Station.OSC,...
-                     'control_flag',1,'residual_limit',35,...
-                     'hg_time',35,'one_flag',1);
-%'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
+                     'control_flag',0,'residual_limit',35,...
+                     'hg_time',25,'one_flag',1);
+
 %%
 ix=sort(findobj('tag','SC_INDIVIDUAL')); figure(ix); set(get(gca,'title'),'FontSize',8);
 printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'FontSize',.9,'Width',8.5,'Height',7);
