@@ -221,4 +221,22 @@ co07:01:22ux: UV extended  scan started
 co07:09:10ux: UV extended  scan finished, incident DUV =  17.61319 mW/m^2
 hk07:09:18 23 24 23 2.8 .62-99 23
 hpscan07:10:04 0 120464 10 172692 20 227773 30 284297 40 336238 50 376562 60 383988 70 386123 80 386687 90 386034 100 383436 110 357031 120 304125 130 249638 140 198187 150 146646 160 91364
-hp07:11:05 .9930907 401050.2 76.8 23
+hp07:11:05 .9930907 401050.2 76.8 23
+co07:11:34af: Auto FR/HP/HG is now OFF
+co07:11:35b1: Running b1 from uv0626A line -70.82
+hk07:11:51 23 24 24 3 .65-99 24
+co07:12:14ds: HOME key pressed
+co07:12:17ds: DS aborted
+co07:12:18ds: Going to menu
+co07:12:42uv0627a: Running uv0627a from menu line -200
+hk07:12:54 23 24 24 2.8 .62-99 24
+co07:13:39uv: UV extended  scan started
+co07:20:38uv: UV extended  scan finished, incident DUV =  21.97422 mW/m^2
+hk07:20:46 24 24 24 2.8 .62-99 24
+co07:21:17uv: UV extended  scan started
+co07:28:15uv: UV extended  scan finished, incident DUV =  25.27887 mW/m^2
+hk07:28:23 24 25 25 2.9 .66-99 25
+co07:28:54uv: UV extended  scan started
+co07:35:52uv: UV extended  scan finished, incident DUV =  28.90198 mW/m^2
+hk07:36:00 25 26 26 2.9 .69-99 26
+co07:36:31uv: UV extended  scan started
