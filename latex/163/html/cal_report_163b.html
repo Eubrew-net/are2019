@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_163b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-26"><meta name="DC.source" content="cal_report_163b.m"><style type="text/css">
+      --><title>cal_report_163b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_163b.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -114,11 +114,11 @@ ans =
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
   Columns 6 through 9
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
-    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
     {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
     {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
@@ -133,7 +133,7 @@ ans =
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
@@ -164,8 +164,8 @@ Warning no depuerd SC
 </pre><img vspace="5" hspace="5" src="cal_report_163b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_163b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_163b_03.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),<span class="keyword">...</span>
                      <span class="string">'CSN_orig'</span>,config_def(14),<span class="string">'OSC'</span>,Station.OSC,<span class="keyword">...</span>
-                     <span class="string">'control_flag'</span>,0,<span class="string">'residual_limit'</span>,45,<span class="keyword">...</span>
-                     <span class="string">'hg_time'</span>,35,<span class="string">'one_flag'</span>,1);
+                     <span class="string">'control_flag'</span>,0,<span class="string">'residual_limit'</span>,55,<span class="keyword">...</span>
+                     <span class="string">'hg_time'</span>,120,<span class="string">'one_flag'</span>,1);
 </pre><pre class="codeoutput">163
 OK-&gt;B17019.163
 Warning no depuerd SC
@@ -1649,8 +1649,8 @@ close all
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
                      'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                      'CSN_orig',config_def(14),'OSC',Station.OSC,...
-                     'control_flag',0,'residual_limit',45,...
-                     'hg_time',35,'one_flag',1);
+                     'control_flag',0,'residual_limit',55,...
+                     'hg_time',120,'one_flag',1);
 
 %%
 ix=sort(findobj('tag','SC_INDIVIDUAL')); figure(ix); set(get(gca,'title'),'FontSize',8);
