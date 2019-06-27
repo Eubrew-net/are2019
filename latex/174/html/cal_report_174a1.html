@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_174a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-05-20"><meta name="DC.source" content="cal_report_174a1.m"><style type="text/css">
+      --><title>cal_report_174a1</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_174a1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -83,40 +83,28 @@ mkdir(Cal.dir_figs);
       fprintf(<span class="string">'Error: %s\n Initializing data for Brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       save(Cal.file_save);
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">
-ans =
-
+</pre><pre class="codeoutput">ans =
   logical
-
    1
-
-
 ans =
-
   1&times;1 cell array
-
     {'IZO#185'}
-
-
 ans =
-
-  21&times;9 cell array
-
+  20&times;9 cell array
   Columns 1 through 5
-
     {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
     {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
-    {'UM#075' }    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
     {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
-    {'UM#126' }    {[126]}    {[4]}    {[0]}    {'126'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
     {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
     {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
     {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
     {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
     {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
-    {'UM#172' }    {[172]}    {[3]}    {[0]}    {'172'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
     {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
     {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
     {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
@@ -124,55 +112,27 @@ ans =
     {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
-    {'K&amp;Z#230'}    {[230]}    {[3]}    {[0]}    {'230'}
-
   Columns 6 through 9
-
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
-    {'..\017\ICF15315&#8230;'}    {'..\017\ICF15315&#8230;'}    {'2170'}    {'2097'}
-    {'..\033\ICF15617&#8230;'}    {'..\033\ICF15617&#8230;'}    {'2325'}    {'2325'}
-    {'..\070\ICF15617&#8230;'}    {'..\070\ICF15617&#8230;'}    {'1700'}    {'1700'}
-    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1769'}    {'1714'}
-    {'..\117\icf14915&#8230;'}    {'..\117\ICF14915&#8230;'}    {'1536'}    {'1612'}
-    {'..\126\icf15517&#8230;'}    {'..\126\ICF15517&#8230;'}    {'1710'}    {'1710'}
-    {'..\150\Icf14915&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0325'}
-    {'..\151\ICF15317&#8230;'}    {'..\151\ICF15317&#8230;'}    {'1832'}    {'1832'}
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
+    {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
+    {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
+    {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
+    {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
     {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF20118&#8230;'}    {'..\163\ICF20118&#8230;'}    {'0274'}    {'0274'}
-    {'..\166\icf15215&#8230;'}    {'..\166\ICF15215&#8230;'}    {'1952'}    {'1975'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
     {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
-    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0335'}    {'0335'}
-    {'..\186\ICF14915&#8230;'}    {'..\186\ICF14915&#8230;'}    {'0317'}    {'0317'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
+    {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
-    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0283'}    {'0270'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF15017&#8230;'}    {'0242'}    {'0242'}
-    {'..\230\ICF15017&#8230;'}    {'..\230\ICF15017&#8230;'}    {'0283'}    {'0270'}
-
-XLSREAD unable to read sheet 'Incidencias.075'.
-Requested sheet: 'Incidencias.075' not found.
- BrewerUM#075
--&gt;ERROR
-     1
-
-~/CODE/campaigns/are2019/bfiles/150/../150/ICF14915.150
--&gt;ERROR
-     1
-
-~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185.CFG
--&gt;ERROR
-     2
-
-~/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG
--&gt;ERROR
-     1
-
-~/CODE/campaigns/are2019/bfiles/230/../230/ICF15017.230
--&gt;ERROR
-     2
-
-~/CODE/campaigns/are2019/bfiles/230/../230/ICF15017.230
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">Brewer setup</h2><pre class="codeinput">Station.OSC=680;
 Station.name=<span class="string">''</span>;
 Station.lat=67;
@@ -210,12 +170,68 @@ latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_config_'</span>,Cal.
                      DTdef,<span class="string">'\ETCdef'</span>,ETCdef(1),<span class="string">'\Adef'</span>,A1def(1),<span class="keyword">...</span>
                      DTorig,<span class="string">'\ETCorig'</span>,ETCorig(1),<span class="string">'\Aorig'</span>,A1orig(1));
 </pre><pre class="codeinput">makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
+</pre><pre class="codeoutput">ans =
+  52&times;2 table
+                           x__CODE_campaigns_are2019_bfiles_174____174_ICF20718_174    x__CODE_campaigns_are2019_bfiles_174____174_ICF20718_174_1
+                           ________________________________________________________    __________________________________________________________
+    ReleaseDate                                   7.3727e+05                                                   7.3727e+05                        
+    o3TempCoef1                                       10.431                                                       10.431                        
+    o3TempCoef2                                       10.379                                                       10.379                        
+    o3TempCoef3                                       10.376                                                       10.376                        
+    o3TempCoef4                                       10.186                                                       10.186                        
+    o3TempCoef5                                       10.079                                                       10.079                        
+    MicrometerSteps_deg                                    0                                                            0                        
+    O3OnO3Ratio                                       0.3388                                                       0.3388                        
+    SO2OnSO2Ratio                                       2.35                                                         2.35                        
+    O3OnSO2Ratio                                      1.1405                                                       1.1405                        
+    ETCOnO3Ratio                                        1873                                                         1873                        
+    ETCOnSO2Ratio                                        821                                                          821                        
+    DeadTime_sec_                                    2.8e-08                                                      2.8e-08                        
+    WLCalStepNumber                                      289                                                          289                        
+    SlitmaskMotorDelay                                    14                                                           14                        
+    UmkehrOffset                                        1682                                                         1682                        
+    NDFilter0                                              0                                                            0                        
+    NDFilter1                                           4375                                                         4375                        
+    NDFilter2                                          10260                                                        10260                        
+    NDFilter3                                          14100                                                        14100                        
+    NDFilter4                                          21600                                                        21600                        
+    NDFilter5                                          25900                                                        25900                        
+    ZenithSteps_rev                                     2972                                                         2972                        
+    BrewerType                                             3                                                            3                        
+    COMPort_                                               1                                                            1                        
+    o3TempCoefHg                                           0                                                            0                        
+    n2TempCoefHg                                           0                                                            0                        
+    n2TempCoef1                                            0                                                            0                        
+    n2TempCoef2                                            0                                                            0                        
+    n2TempCoef3                                            0                                                            0                        
+    n2TempCoef4                                            0                                                            0                        
+    n2TempCoef5                                            0                                                            0                        
+    O3Mic_1Offset                                       -183                                                         -183                        
+    Mic_2Offset                                           46                                                           46                        
+    O3FW_3Offset                                         242                                                          242                        
+    NO2AbsnCoeff                                          -3                                                           -3                        
+    NO2DsEtc                                             770                                                          770                        
+    NO2ZsEtc                                             740                                                          740                        
+    NO2Mic_1Offset                                      8028                                                         8028                        
+    NO2FW_3Offset                                        178                                                          178                        
+    NO2_O3ModeChange                                    2518                                                         2518                        
+    GratingSlope                                       1.001                                                        1.001                        
+    GratingIntercept                                      -4                                                           -4                        
+    MicrometerZero                                      2469                                                         2469                        
+    IrisOpenSteps                                        260                                                          260                        
+    BufferDelay_s_                                       0.2                                                          0.2                        
+    NO2FW_1Pos                                            64                                                           64                        
+    O3FW_1Pos                                            256                                                          256                        
+    FW_2Pos                                                0                                                            0                        
+    uvFW_2Pos                                              0                                                            0                        
+    ZenithOffset                                           0                                                            0                        
+    ZenithUVBPosition                                   2228                                                         2228                        
 </pre><pre class="codeinput"><span class="keyword">catch</span> exception
       fprintf(<span class="string">'%s, brewer: %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       DTorig=NaN; DTdef=NaN;
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Unable to read file '/home/jlopezs/CODE/campaigns/are2019/bfiles/185/../185/CONFIG185_A.CFG'. No such file or directory., brewer: JAP#174
-</pre><h2 id="8">Historical review AVG info</h2><p>all period</p><pre class="codeinput">close <span class="string">all</span>;
+</pre><h2 id="8">Historical review AVG info</h2><pre class="codeinput">load(Cal.file_save,<span class="string">'avg_report'</span>);
+close <span class="string">all</span>;
 [sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),<span class="keyword">...</span>
                                       <span class="string">'date_range'</span>,[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],<span class="keyword">...</span>
                                       <span class="string">'SL_REF'</span>,[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],<span class="keyword">...</span>
@@ -271,33 +287,17 @@ save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'a
 List of arguments given default values:
    'path_to_file'    defaults to .
 --------------------------------------
-16-May-2019
-
 RseisAVG =
-
-   606
-
-
+   596
 RcincoAVG =
-
-        1077
-
-
-DTAVG =
-
-    '2.6e-08'
-
+        1068
 
   Columns 1 through 5
-
     'SLR6  orig'    'Calc. AVG'    'SLR5  orig'    'Calculated'    'DT  orig'
-    [       605]    [      606]    [       NaN]    [      1077]    [     NaN]
-
+    [       605]    [      596]    [       NaN]    [      1068]    [ 2.8e-08]
   Column 6
-
     'Calculated'
-    [   2.6e-08]
-
+    [   2.5e-08]
 
 </pre><img vspace="5" hspace="5" src="cal_report_174a1_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a1_10.png" alt=""> <pre class="codeinput">ix=sort(double(findobj(<span class="string">'Type'</span>,<span class="string">'figure'</span>)));
 printfiles_report(ix',Cal.dir_figs);
@@ -314,21 +314,14 @@ br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">for</span> i=1:length(ftypes),s{i}=dir(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[ftypes{i},<span class="string">'*.'</span>,br]));<span class="keyword">end</span>
 <span class="comment">%ficheros disponibles</span>
 [ftypes;s]
-</pre><pre class="codeoutput">
-ans =
-
+</pre><pre class="codeoutput">ans =
   2&times;6 cell array
-
   Columns 1 through 4
-
-    {'CZ'      }    {'CI'      }    {'CJ'      }    {'FV'      }
-    {0&times;1 struct}    {0&times;1 struct}    {0&times;1 struct}    {0&times;1 struct}
-
+    {'CZ'      }    {'CI'       }    {'CJ'      }    {'FV'       }
+    {0&times;1 struct}    {11&times;1 struct}    {0&times;1 struct}    {10&times;1 struct}
   Columns 5 through 6
-
-    {'HS'      }    {'HL'      }
-    {0&times;1 struct}    {0&times;1 struct}
-
+    {'HS'       }    {'HL'       }
+    {10&times;1 struct}    {10&times;1 struct}
 </pre><h2 id="12">CZ REPORT</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CZ*.'</span>,br]),<span class="keyword">...</span>
@@ -353,8 +346,11 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No CZ Files
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'plot_flag'    defaults to 1
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_174a1_11.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
 <span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 1.5]);</span>
     printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'HL'</span>});
@@ -362,7 +358,6 @@ close <span class="string">all</span>
     fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer JAP#174
 </pre><h2 id="16">HS Report</h2><pre class="codeinput">br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     analyzeCZ(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'HS*.'</span>,br]),<span class="keyword">...</span>
@@ -370,8 +365,11 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No CZ Files
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeoutput">--------- Validation OK --------------
+List of arguments given default values:
+   'plot_flag'    defaults to 1
+--------------------------------------
+</pre><img vspace="5" hspace="5" src="cal_report_174a1_12.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(max(double(findobj(<span class="string">'tag'</span>,<span class="string">'CZ_Report'</span>))));
 <span class="comment">%    ax=findobj(gcf,'Type','axes'); set(ax(end-1),'YLim',[-0.3 8.5]);</span>
     printfiles_report(gcf,Cal.dir_figs,<span class="string">'aux_pattern'</span>,{<span class="string">'HS'</span>});
@@ -379,7 +377,6 @@ close <span class="string">all</span>
     fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer JAP#174
 </pre><h2 id="18">CI REPORT</h2><pre class="codeinput">close <span class="string">all</span>; br=sprintf(<span class="string">'%03d'</span>,Cal.brw(Cal.n_inst));
 <span class="keyword">try</span>
     [LRatPFHT Error]=analyzeCI(fullfile(Cal.path_root,[<span class="string">'bdata'</span>,br],[<span class="string">'CI*.'</span>,br]),<span class="keyword">...</span>
@@ -389,10 +386,21 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">No CI Files
-Error: cal_report_174a1, brewer instrumentAndRun
-Error: evalmxdom, brewer publish
-Error: JAP#174, brewer </pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><pre class="codeoutput">Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Reference file does not exist
+Error: analyzeCI, brewer cal_report_174a1
+Error: instrumentAndRun, brewer evalmxdom
+Error: publish, brewer JAP#174
+</pre><pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'CI_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception
@@ -408,17 +416,13 @@ close <span class="string">all</span>
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.stack.name,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Error: analyze_FV, brewer cal_report_174a1
-Error: instrumentAndRun, brewer evalmxdom
-Error: publish, brewer JAP#174
-</pre><pre class="codeinput"><span class="keyword">try</span>
+</pre><img vspace="5" hspace="5" src="cal_report_174a1_13.png" alt=""> <pre class="codeinput"><span class="keyword">try</span>
     figure(double(findobj(<span class="string">'tag'</span>,<span class="string">'FV_Report'</span>)));
     printfiles_report(gcf,fullfile(Cal.path_root,Cal.dir_figs),<span class="string">'LockAxes'</span>,0,<span class="string">'no_export'</span>);
 <span class="keyword">catch</span> exception
       fprintf(<span class="string">'Error: %s, brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
 <span class="keyword">end</span>
 close <span class="string">all</span>
-</pre><pre class="codeoutput">Error: Single input must be an existing figure handle or a scalar integer from 1 to 2147483646, brewer JAP#174
 </pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 % options_pub.outputDir=fullfile(pwd,'latex','174','html'); options_pub.showCode=true;
@@ -489,7 +493,7 @@ catch exception
 end
 
 %% Historical review AVG info
-% all period
+load(Cal.file_save,'avg_report');
 close all;
 [sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
                                       'date_range',[datenum(Cal.Date.cal_year-2,7,25),datenum(Cal.Date.cal_year,Cal.Date.cal_month+1,5)],...
