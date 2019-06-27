@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_174b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-19"><meta name="DC.source" content="cal_report_174b.m"><style type="text/css">
+      --><title>cal_report_174b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_174b.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -67,7 +67,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
   </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Evaluation</a></li><li><a href="#3">configuration files</a></li><li><a href="#4">Sun_scan: Before Campaign</a></li><li><a href="#5">Sun_scan: Campaign</a></li><li><a href="#7">Definicion de variables: SC</a></li><li><a href="#8">dsp calibration</a></li><li><a href="#12">Tabla - resumen con resultados DSP y Umkehr</a></li><li><a href="#13">Tablas y ficheros de definiciones latex</a></li><li><a href="#14">Eto para escribir resultados a hoja excel.</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','174','html'); options_pub.showCode=true;</span>
-<span class="comment">% publish(fullfile(pwd,'cal_report_174b.m'),options_pub);</span>
+<span class="comment">% close all;publish(fullfile(pwd,'cal_report_174b.m'),options_pub);</span>
 </pre><h2 id="2">Brewer Evaluation</h2><pre class="codeinput">clear <span class="string">all</span>;
 file_setup=<span class="string">'arenos2019_setup'</span>;
 
@@ -84,33 +84,20 @@ mkdir(Cal.dir_figs);
       fprintf(<span class="string">'Error: %s\n Initializing data for Brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       save(Cal.file_save);
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">
-ans =
-
+</pre><pre class="codeoutput">ans =
   logical
-
    1
-
-
 ans =
-
   1&times;1 cell array
-
     {'IZO#185'}
-
-
 ans =
-
-  21&times;9 cell array
-
+  20&times;9 cell array
   Columns 1 through 5
-
     {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
     {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
     {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
-    {'POR#102'}    {[102]}    {[4]}    {[0]}    {'102'}
     {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
     {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
     {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
@@ -126,31 +113,27 @@ ans =
     {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
-
   Columns 6 through 9
-
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
-    {'..\017\ICF15315&#8230;'}    {'..\017\ICF15315&#8230;'}    {'2170'}    {'2097'}
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
-    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
-    {'..\102\ICF15517&#8230;'}    {'..\102\ICF15517&#8230;'}    {'2718'}    {'2718'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
     {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
-    {'..\126\icf15517&#8230;'}    {'..\126\ICF15517&#8230;'}    {'1710'}    {'1710'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
     {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
     {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF20118&#8230;'}    {'..\163\ICF20118&#8230;'}    {'0274'}    {'0274'}
-    {'..\166\ICF15217&#8230;'}    {'..\166\IOS15717&#8230;'}    {'1955'}    {'1955'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
     {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
-    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0363'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
     {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
     {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
     {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF15017&#8230;'}    {'0242'}    {'0242'}
-
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
@@ -170,55 +153,34 @@ cal_step={}; sc_avg={}; sc_raw={}; Args={};
                      <span class="string">'hg_time'</span>,30,<span class="string">'one_flag'</span>,0);
 </pre><pre class="codeoutput">174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 OK-&gt;B10919.174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 OK-&gt;B11019.174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 OK-&gt;B11119.174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 Error in measure
 ./bdata174/B13019.174
 OK-&gt;B13019.174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 OK-&gt;B13119.174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 OK-&gt;B13219.174
 warning Date error in file
-
 ans =
-
     -1    12    30     0     0     0
-
 OK-&gt;B13319.174
 </pre><img vspace="5" hspace="5" src="cal_report_174b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_06.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),<span class="keyword">...</span>
@@ -226,8 +188,10 @@ OK-&gt;B13319.174
                      <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,35,<span class="keyword">...</span>
                      <span class="string">'hg_time'</span>,30,<span class="string">'one_flag'</span>,1);
 </pre><pre class="codeoutput">174
+OK-&gt;B16819.174
+OK-&gt;B16919.174
 OK-&gt;B17019.174
-</pre><img vspace="5" hspace="5" src="cal_report_174b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_15.png" alt=""> <pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
+</pre><img vspace="5" hspace="5" src="cal_report_174b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_24.png" alt=""> <pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'FontSize'</span>,.9,<span class="string">'Width'</span>,8.5,<span class="string">'Height'</span>,7);
 
 ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'Final_SC_Calculation'</span>));
@@ -240,26 +204,14 @@ ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'Final_SC
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'Width'</span>,Width,<span class="string">'Height'</span>,Height);
 
 close <span class="string">all</span>
-</pre><pre class="codeoutput">
-naux =
-
+</pre><pre class="codeoutput">naux =
      1
-
-
 naux =
-
      1
-
-
 figura =
-
     '174_figures_Final_SC_Calculation_1'
-
-
 naux =
-
      2
-
 </pre><h2 id="7">Definicion de variables: SC</h2><pre class="codeinput"><span class="keyword">if</span> length(cal_step)&gt;1
    d_p=[length(cal_step)-1 length(cal_step)];   tags={<span class="string">''</span>,<span class="string">'new'</span>};
 <span class="keyword">else</span>
@@ -284,7 +236,7 @@ save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'s
 CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile(<span class="string">'DSP'</span>,[Cal.brw_str{Cal.n_inst},<span class="string">'*'</span>]));
-ldsp=cellstr(cat(1,l.name));
+ldsp=cellstr(cat(1,l.name))
 <span class="comment">%ldsp=ldsp(end-3:end)</span>
 <span class="keyword">for</span> jj=1:length(ldsp)  <span class="comment">%% ojo solo funciona si config es igual para todos</span>
 </pre><pre>  if jj==length(ldsp),confign=2; else confign=1; end</pre><pre class="codeinput">    <span class="keyword">try</span>
@@ -296,11 +248,8 @@ ldsp=cellstr(cat(1,l.name));
        res{jj}=NaN*ones(15,9,2); detail{jj}=NaN*ones(7,6,15,2); QUAD_DETAIL{jj}=NaN;
        <span class="comment">%res{jj}=NaN*ones(9,7,2); detail{jj}=NaN*ones(6,6,9,2); QUAD_DETAIL{jj}=NaN;</span>
     <span class="keyword">end</span>
-</pre><pre class="codeoutput">
-datefile =
-
+</pre><pre class="codeoutput">datefile =
       737560
-
 now:W1013519.174
 now:W2013519.174
 now:W3013519.174
@@ -539,56 +488,26 @@ Ratio Ozone for So2(A3)=  1.1260, So2/O3(A2)=  2.8296
 O3 factor from Bass &amp; Paur to Daumont  =  0.9666 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9920 
 saving powfiu7 to DSP/174_19_135/dsp_13419_174.174
-
 freecoef =
-
      4
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
-
 freecoef =
-
      9
-
 saving data to file:DSP/174_19_135/dsp_13419_174.174
 Use brstps2 to calculate steps and wavelengths
 Saving ozonecoeffs to DSP/174_19_135/opos_pow7_13419_174.174
@@ -757,7 +676,442 @@ Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
 Ratio Ozone for So2(A3)=  1.1207, So2/O3(A2)=  2.8397
 O3 factor from Bass &amp; Paur to Daumont  =  0.9667 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9923 
-</pre><img vspace="5" hspace="5" src="cal_report_174b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_26.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="cal_report_174b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_29.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_30.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_32.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_33.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_35.png" alt=""> <pre class="codeoutput">datefile =
+      737599
+now:W1017419.174
+now:W2017419.174
+now:W3017419.174
+now:W4017319.174
+now:W5017319.174
+now:W6017419.174
+now:W8017319.174
+now:W9017319.174
+now:W10017319.174
+now:W11017419.174
+now:W12017319.174
+now:W1117419.174
+now:W2117419.174
+now:W3117419.174
+now:W4117319.174
+now:W5117319.174
+now:W6117419.174
+now:W8117319.174
+now:W9117319.174
+now:W10117319.174
+now:W11117419.174
+now:W12117319.174
+now:W13117319.174
+now:W2217419.174
+now:W3217419.174
+now:W4217319.174
+now:W5217319.174
+now:W6217419.174
+now:W8217319.174
+now:W9217319.174
+now:W10217319.174
+now:W11217419.174
+now:W12217319.174
+now:W13217319.174
+now:W4317319.174
+now:W5317319.174
+now:W6317419.174
+now:W8317319.174
+now:W9317319.174
+now:W10317319.174
+now:W11317419.174
+now:W12317319.174
+now:W13317319.174
+now:W4417319.174
+now:W5417319.174
+now:W6417419.174
+now:W8417319.174
+now:W9417319.174
+now:W10417319.174
+now:W11417419.174
+now:W12417319.174
+now:W13417319.174
+now:W4517319.174
+now:W5517319.174
+now:W6517419.174
+now:W8517319.174
+now:W9517319.174
+now:W10517319.174
+now:W11517419.174
+now:W12517319.174
+now:W13517319.174
+now:W14517319.174
+lines_dsp_17319__174
+saving alldsp to DSP/174_19_174/alldsp_17319_174.174
+eliminamos la linea slit 2 3499.950000 -0.267311
+eliminamos la linea slit 6 3341.480000 0.150679
+eliminamos la linea slit 5 3403.652000 0.124449
+eliminamos la linea slit 4 3341.480000 0.142623
+eliminamos la linea slit 3 3499.950000 -0.203211
+eliminamos la linea slit 2 3403.652000 -0.138742
+eliminamos la linea slit 1 3403.652000 -0.165490
+eliminamos la linea slit 6 3403.652000 0.129700
+eliminamos la linea slit 5 3341.480000 0.154729
+eliminamos la linea slit 4 3403.652000 0.149303
+eliminamos la linea slit 3 3403.652000 -0.141261
+eliminamos la linea slit 4 3133.167000 -0.126878
+saving normaldsp to DSP/174_19_174/dspnorm_17319_174.174 as brewer compatible file
+Use polyval(pwl(2,:),wl) for calculating normal wavelengths
+Saving ozonecoeffs to DSP/174_19_174/opos17319_174.174
+  284 WL(A)         3031.46  3062.64  3100.20  3134.63  3167.69  3199.82
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.6151   1.7875   1.0061   0.6776   0.3749   0.2948 O3:  0.3435
+Daumt O3abs(1/cm)    2.6220   1.7819   0.9979   0.6711   0.3682   0.2952 O3:  0.3541
+     So2abs(1/cm)    3.5447   5.5207   2.3763   1.9614   1.0494   0.6167
+Bremen O3abs(1/cm)    2.6251   1.7852   1.0035   0.6807   0.3733   0.2964 O3:  0.3455
+ Nicolet 1e4*Rayabs(1/cm)   5053.9   4834.7   4586.6   4373.3   4180.3   4003.0 R:  8.4823
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5050.4   4832.8   4586.1   4374.0   4181.9   4005.3 R:  8.1142
+ I0(mW m^-2nm^-1)  11717.45  9411.54  7297.84  4916.43  4051.58  3213.11 ETC:    1388 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1560, So2/O3(A2)=  2.6700
+O3 factor from Bass &amp; Paur to Daumont  =  0.9701 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9942 
+  285 WL(A)         3031.54  3062.72  3100.28  3134.70  3167.76  3199.89
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.6122   1.7861   1.0058   0.6774   0.3750   0.2943 O3:  0.3425
+Daumt O3abs(1/cm)    2.6193   1.7805   0.9975   0.6711   0.3682   0.2948 O3:  0.3532
+     So2abs(1/cm)    3.5255   5.5456   2.3837   1.9501   1.0506   0.6145
+Bremen O3abs(1/cm)    2.6225   1.7837   1.0031   0.6806   0.3733   0.2960 O3:  0.3446
+ Nicolet 1e4*Rayabs(1/cm)   5053.3   4834.2   4586.2   4372.9   4179.9   4002.7 R:  8.4798
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5049.9   4832.3   4585.7   4373.6   4181.5   4005.0 R:  8.1129
+ I0(mW m^-2nm^-1)  11711.13  9405.24  7273.06  4912.56  4041.66  3203.60 ETC:    1371 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1530, So2/O3(A2)=  2.6881
+O3 factor from Bass &amp; Paur to Daumont  =  0.9695 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9937 
+  286 WL(A)         3031.61  3062.79  3100.35  3134.77  3167.83  3199.96
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.6093   1.7846   1.0055   0.6772   0.3750   0.2938 O3:  0.3414
+Daumt O3abs(1/cm)    2.6165   1.7791   0.9972   0.6710   0.3682   0.2945 O3:  0.3523
+     So2abs(1/cm)    3.5063   5.5704   2.3912   1.9387   1.0519   0.6123
+Bremen O3abs(1/cm)    2.6198   1.7823   1.0028   0.6805   0.3734   0.2956 O3:  0.3437
+ Nicolet 1e4*Rayabs(1/cm)   5052.8   4833.7   4585.7   4372.5   4179.5   4002.3 R:  8.4772
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5049.3   4831.8   4585.2   4373.1   4181.1   4004.6 R:  8.1130
+ I0(mW m^-2nm^-1)  11704.82  9398.96  7248.42  4908.69  4031.78  3194.11 ETC:    1354 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1499, So2/O3(A2)=  2.7064
+O3 factor from Bass &amp; Paur to Daumont  =  0.9690 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
+  287 WL(A)         3031.69  3062.86  3100.42  3134.84  3167.90  3200.03
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.6068   1.7832   1.0052   0.6769   0.3750   0.2934 O3:  0.3404
+Daumt O3abs(1/cm)    2.6138   1.7778   0.9968   0.6708   0.3682   0.2941 O3:  0.3513
+     So2abs(1/cm)    3.4874   5.5950   2.3988   1.9270   1.0531   0.6101
+Bremen O3abs(1/cm)    2.6172   1.7808   1.0024   0.6803   0.3734   0.2952 O3:  0.3427
+ Nicolet 1e4*Rayabs(1/cm)   5052.3   4833.2   4585.2   4372.0   4179.1   4001.9 R:  8.4747
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5048.8   4831.3   4584.8   4372.7   4180.7   4004.2 R:  8.1074
+ I0(mW m^-2nm^-1)  11698.52  9392.68  7223.91  4904.82  4021.91  3184.64 ETC:    1337 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1468, So2/O3(A2)=  2.7242
+O3 factor from Bass &amp; Paur to Daumont  =  0.9688 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
+  288 WL(A)         3031.76  3062.93  3100.49  3134.92  3167.98  3200.09
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.6042   1.7816   1.0049   0.6766   0.3750   0.2928 O3:  0.3393
+Daumt O3abs(1/cm)    2.6111   1.7763   0.9965   0.6707   0.3682   0.2937 O3:  0.3503
+     So2abs(1/cm)    3.4701   5.6172   2.4066   1.9152   1.0543   0.6077
+Bremen O3abs(1/cm)    2.6146   1.7793   1.0021   0.6801   0.3734   0.2948 O3:  0.3416
+ Nicolet 1e4*Rayabs(1/cm)   5051.7   4832.7   4584.8   4371.6   4178.7   4001.5 R:  8.4722
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5048.3   4830.8   4584.3   4372.3   4180.3   4003.8 R:  8.1034
+ I0(mW m^-2nm^-1)  11692.23  9386.41  7207.65  4900.95  4012.07  3175.18 ETC:    1328 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1436, So2/O3(A2)=  2.7404
+O3 factor from Bass &amp; Paur to Daumont  =  0.9687 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
+  289 WL(A)         3031.83  3063.01  3100.57  3134.99  3168.05  3200.16
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.6017   1.7799   1.0047   0.6763   0.3751   0.2923 O3:  0.3383
+Daumt O3abs(1/cm)    2.6085   1.7749   0.9961   0.6705   0.3682   0.2933 O3:  0.3493
+     So2abs(1/cm)    3.4533   5.6389   2.4149   1.9036   1.0555   0.6054
+Bremen O3abs(1/cm)    2.6121   1.7778   1.0017   0.6799   0.3735   0.2943 O3:  0.3405
+ Nicolet 1e4*Rayabs(1/cm)   5051.2   4832.2   4584.3   4371.2   4178.3   4001.2 R:  8.4696
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5047.7   4830.3   4583.8   4371.9   4179.9   4003.5 R:  8.1058
+ I0(mW m^-2nm^-1)  11685.94  9380.15  7193.09  4897.09  4002.24  3165.75 ETC:    1321 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1399, So2/O3(A2)=  2.7570
+O3 factor from Bass &amp; Paur to Daumont  =  0.9685 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9933 
+  290 WL(A)         3031.91  3063.08  3100.64  3135.06  3168.12  3200.23
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.5991   1.7782   1.0044   0.6759   0.3752   0.2917 O3:  0.3370
+Daumt O3abs(1/cm)    2.6059   1.7735   0.9958   0.6703   0.3683   0.2928 O3:  0.3482
+     So2abs(1/cm)    3.4366   5.6605   2.4232   1.8921   1.0568   0.6031
+Bremen O3abs(1/cm)    2.6095   1.7762   1.0014   0.6796   0.3735   0.2939 O3:  0.3394
+ Nicolet 1e4*Rayabs(1/cm)   5050.7   4831.7   4583.9   4370.8   4177.9   4000.8 R:  8.4671
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5047.2   4829.8   4583.4   4371.4   4179.5   4003.1 R:  8.1014
+ I0(mW m^-2nm^-1)  11679.66  9373.89  7178.93  4893.23  3992.44  3156.33 ETC:    1315 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1361, So2/O3(A2)=  2.7743
+O3 factor from Bass &amp; Paur to Daumont  =  0.9680 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9930 
+  291 WL(A)         3031.98  3063.15  3100.71  3135.13  3168.19  3200.30
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.5964   1.7767   1.0040   0.6755   0.3752   0.2911 O3:  0.3357
+Daumt O3abs(1/cm)    2.6033   1.7720   0.9955   0.6701   0.3684   0.2924 O3:  0.3470
+     So2abs(1/cm)    3.4203   5.6818   2.4315   1.8804   1.0579   0.6007
+Bremen O3abs(1/cm)    2.6070   1.7746   1.0010   0.6794   0.3736   0.2934 O3:  0.3382
+ Nicolet 1e4*Rayabs(1/cm)   5050.1   4831.2   4583.4   4370.3   4177.5   4000.4 R:  8.4646
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5046.7   4829.3   4582.9   4371.0   4179.1   4002.7 R:  8.0964
+ I0(mW m^-2nm^-1)  11673.40  9367.65  7164.98  4889.37  3982.66  3146.94 ETC:    1308 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1324, So2/O3(A2)=  2.7912
+O3 factor from Bass &amp; Paur to Daumont  =  0.9675 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9926 
+  292 WL(A)         3032.06  3063.23  3100.78  3135.20  3168.26  3200.37
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.5937   1.7751   1.0037   0.6751   0.3753   0.2905 O3:  0.3344
+Daumt O3abs(1/cm)    2.6007   1.7705   0.9951   0.6699   0.3684   0.2919 O3:  0.3458
+     So2abs(1/cm)    3.4055   5.7008   2.4400   1.8683   1.0591   0.5983
+Bremen O3abs(1/cm)    2.6046   1.7731   1.0007   0.6791   0.3737   0.2929 O3:  0.3370
+ Nicolet 1e4*Rayabs(1/cm)   5049.6   4830.7   4582.9   4369.9   4177.1   4000.0 R:  8.4620
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5046.1   4828.8   4582.5   4370.6   4178.7   4002.3 R:  8.0964
+ I0(mW m^-2nm^-1)  11667.14  9361.41  7148.15  4885.52  3972.90  3137.56 ETC:    1299 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1285, So2/O3(A2)=  2.8064
+O3 factor from Bass &amp; Paur to Daumont  =  0.9669 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9922 
+  293 WL(A)         3032.13  3063.30  3100.85  3135.27  3168.33  3200.44
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.5911   1.7735   1.0034   0.6747   0.3754   0.2899 O3:  0.3331
+Daumt O3abs(1/cm)    2.5982   1.7690   0.9948   0.6696   0.3685   0.2914 O3:  0.3446
+     So2abs(1/cm)    3.3913   5.7190   2.4491   1.8567   1.0602   0.5958
+Bremen O3abs(1/cm)    2.6021   1.7714   1.0004   0.6788   0.3737   0.2924 O3:  0.3358
+ Nicolet 1e4*Rayabs(1/cm)   5049.1   4830.3   4582.5   4369.5   4176.7   3999.7 R:  8.4595
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5045.6   4828.3   4582.0   4370.1   4178.3   4002.0 R:  8.0952
+ I0(mW m^-2nm^-1)  11660.89  9355.19  7131.39  4881.67  3963.17  3128.22 ETC:    1290 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1246, So2/O3(A2)=  2.8212
+O3 factor from Bass &amp; Paur to Daumont  =  0.9665 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9919 
+  294 WL(A)         3032.20  3063.37  3100.93  3135.34  3168.40  3200.51
+      Res(A)          11.21    11.15    10.86    11.18    11.04    10.89
+      O3abs(1/cm)    2.5887   1.7718   1.0030   0.6742   0.3755   0.2894 O3:  0.3318
+Daumt O3abs(1/cm)    2.5957   1.7675   0.9944   0.6693   0.3686   0.2909 O3:  0.3433
+     So2abs(1/cm)    3.3772   5.7372   2.4581   1.8451   1.0614   0.5934
+Bremen O3abs(1/cm)    2.5997   1.7698   1.0000   0.6784   0.3738   0.2919 O3:  0.3345
+ Nicolet 1e4*Rayabs(1/cm)   5048.5   4829.8   4582.0   4369.0   4176.3   3999.3 R:  8.4570
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5045.1   4827.8   4581.5   4369.7   4177.9   4001.6 R:  8.0896
+ I0(mW m^-2nm^-1)  11654.65  9348.97  7114.69  4877.82  3953.45  3125.15 ETC:    1291 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.5 DU
+Ozone offset due to Rayleigh (Bodhaine): -2.7 DU
+Ratio Ozone for So2(A3)=  1.1208, So2/O3(A2)=  2.8357
+O3 factor from Bass &amp; Paur to Daumont  =  0.9664 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9920 
+saving powfiu7 to DSP/174_19_174/dsp_17319_174.174
+freecoef =
+     4
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+freecoef =
+     9
+saving data to file:DSP/174_19_174/dsp_17319_174.174
+Use brstps2 to calculate steps and wavelengths
+Saving ozonecoeffs to DSP/174_19_174/opos_pow7_17319_174.174
+  284 WL(A)         3031.50  3062.66  3100.20  3134.76  3167.78  3199.86
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.88
+      O3abs(1/cm)    2.6135   1.7871   1.0061   0.6772   0.3750   0.2945 O3:  0.3432
+Daumt O3abs(1/cm)    2.6205   1.7815   0.9979   0.6710   0.3682   0.2950 O3:  0.3539
+     So2abs(1/cm)    3.5339   5.5290   2.3759   1.9415   1.0509   0.6153
+Bremen O3abs(1/cm)    2.6237   1.7847   1.0035   0.6805   0.3733   0.2962 O3:  0.3453
+ Nicolet 1e4*Rayabs(1/cm)   5053.6   4834.6   4586.6   4372.6   4179.8   4002.8 R:  9.5360
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5050.1   4832.6   4586.1   4373.2   4181.4   4005.1 R:  9.1634
+ I0(mW m^-2nm^-1)  11714.15  9409.54  7298.98  4909.61  4039.51  3206.96 ETC:    1409 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1546, So2/O3(A2)=  2.6712
+O3 factor from Bass &amp; Paur to Daumont  =  0.9697 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9939 
+  285 WL(A)         3031.58  3062.74  3100.27  3134.83  3167.85  3199.93
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.88
+      O3abs(1/cm)    2.6106   1.7857   1.0058   0.6770   0.3750   0.2940 O3:  0.3422
+Daumt O3abs(1/cm)    2.6177   1.7801   0.9975   0.6709   0.3682   0.2946 O3:  0.3530
+     So2abs(1/cm)    3.5146   5.5539   2.3833   1.9299   1.0522   0.6132
+Bremen O3abs(1/cm)    2.6210   1.7833   1.0031   0.6803   0.3733   0.2958 O3:  0.3444
+ Nicolet 1e4*Rayabs(1/cm)   5053.0   4834.1   4586.2   4372.2   4179.4   4002.4 R:  9.5336
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5049.6   4832.1   4585.7   4372.8   4181.0   4004.7 R:  9.1616
+ I0(mW m^-2nm^-1)  11707.83  9403.24  7274.16  4905.74  4029.62  3197.44 ETC:    1392 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1515, So2/O3(A2)=  2.6895
+O3 factor from Bass &amp; Paur to Daumont  =  0.9692 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9935 
+  286 WL(A)         3031.65  3062.81  3100.35  3134.90  3167.92  3200.00
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.6079   1.7842   1.0055   0.6767   0.3750   0.2936 O3:  0.3411
+Daumt O3abs(1/cm)    2.6150   1.7787   0.9972   0.6707   0.3682   0.2943 O3:  0.3521
+     So2abs(1/cm)    3.4955   5.5788   2.3908   1.9180   1.0534   0.6110
+Bremen O3abs(1/cm)    2.6184   1.7818   1.0028   0.6802   0.3734   0.2954 O3:  0.3434
+ Nicolet 1e4*Rayabs(1/cm)   5052.5   4833.6   4585.7   4371.7   4179.0   4002.0 R:  9.5312
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5049.0   4831.6   4585.2   4372.4   4180.6   4004.3 R:  9.1613
+ I0(mW m^-2nm^-1)  11701.52  9396.96  7249.48  4901.87  4019.75  3187.93 ETC:    1375 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1485, So2/O3(A2)=  2.7076
+O3 factor from Bass &amp; Paur to Daumont  =  0.9690 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
+  287 WL(A)         3031.73  3062.88  3100.42  3134.97  3167.99  3200.07
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.6054   1.7827   1.0052   0.6764   0.3750   0.2931 O3:  0.3402
+Daumt O3abs(1/cm)    2.6123   1.7773   0.9968   0.6706   0.3682   0.2939 O3:  0.3511
+     So2abs(1/cm)    3.4774   5.6029   2.3984   1.9065   1.0546   0.6087
+Bremen O3abs(1/cm)    2.6158   1.7803   1.0024   0.6799   0.3734   0.2950 O3:  0.3424
+ Nicolet 1e4*Rayabs(1/cm)   5052.0   4833.1   4585.3   4371.3   4178.6   4001.7 R:  9.5288
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5048.5   4831.1   4584.8   4372.0   4180.2   4004.0 R:  9.1565
+ I0(mW m^-2nm^-1)  11695.22  9390.68  7224.94  4898.00  4009.90  3178.45 ETC:    1358 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1454, So2/O3(A2)=  2.7251
+O3 factor from Bass &amp; Paur to Daumont  =  0.9689 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9935 
+  288 WL(A)         3031.80  3062.96  3100.49  3135.04  3168.06  3200.14
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.6028   1.7811   1.0049   0.6760   0.3751   0.2925 O3:  0.3390
+Daumt O3abs(1/cm)    2.6097   1.7759   0.9965   0.6704   0.3682   0.2934 O3:  0.3500
+     So2abs(1/cm)    3.4606   5.6245   2.4062   1.8949   1.0558   0.6063
+Bremen O3abs(1/cm)    2.6132   1.7788   1.0021   0.6797   0.3735   0.2945 O3:  0.3413
+ Nicolet 1e4*Rayabs(1/cm)   5051.4   4832.6   4584.8   4370.9   4178.2   4001.3 R:  9.5265
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5048.0   4830.6   4584.3   4371.5   4179.8   4003.6 R:  9.1531
+ I0(mW m^-2nm^-1)  11688.92  9384.41  7208.84  4894.14  4000.08  3168.99 ETC:    1349 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1418, So2/O3(A2)=  2.7414
+O3 factor from Bass &amp; Paur to Daumont  =  0.9686 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
+  289 WL(A)         3031.87  3063.03  3100.56  3135.11  3168.13  3200.21
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.6003   1.7794   1.0047   0.6756   0.3752   0.2920 O3:  0.3379
+Daumt O3abs(1/cm)    2.6071   1.7745   0.9962   0.6702   0.3683   0.2930 O3:  0.3489
+     So2abs(1/cm)    3.4438   5.6462   2.4144   1.8833   1.0570   0.6040
+Bremen O3abs(1/cm)    2.6107   1.7773   1.0017   0.6795   0.3735   0.2941 O3:  0.3402
+ Nicolet 1e4*Rayabs(1/cm)   5050.9   4832.1   4584.3   4370.4   4177.8   4000.9 R:  9.5241
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5047.4   4830.1   4583.9   4371.1   4179.4   4003.2 R:  9.1539
+ I0(mW m^-2nm^-1)  11682.64  9378.14  7194.25  4890.28  3990.27  3159.55 ETC:    1342 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1381, So2/O3(A2)=  2.7585
+O3 factor from Bass &amp; Paur to Daumont  =  0.9683 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9932 
+  290 WL(A)         3031.95  3063.10  3100.64  3135.18  3168.20  3200.28
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.5977   1.7778   1.0044   0.6752   0.3752   0.2914 O3:  0.3366
+Daumt O3abs(1/cm)    2.6045   1.7730   0.9958   0.6699   0.3684   0.2926 O3:  0.3478
+     So2abs(1/cm)    3.4273   5.6679   2.4227   1.8712   1.0582   0.6016
+Bremen O3abs(1/cm)    2.6082   1.7757   1.0014   0.6792   0.3736   0.2936 O3:  0.3390
+ Nicolet 1e4*Rayabs(1/cm)   5050.4   4831.6   4583.9   4370.0   4177.4   4000.5 R:  9.5217
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5046.9   4829.6   4583.4   4370.7   4179.0   4002.9 R:  9.1510
+ I0(mW m^-2nm^-1)  11676.36  9371.89  7180.06  4886.43  3980.49  3150.12 ETC:    1335 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1342, So2/O3(A2)=  2.7760
+O3 factor from Bass &amp; Paur to Daumont  =  0.9678 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9929 
+  291 WL(A)         3032.02  3063.18  3100.71  3135.26  3168.27  3200.35
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.5950   1.7762   1.0041   0.6748   0.3753   0.2908 O3:  0.3353
+Daumt O3abs(1/cm)    2.6019   1.7716   0.9955   0.6697   0.3684   0.2921 O3:  0.3466
+     So2abs(1/cm)    3.4117   5.6888   2.4311   1.8595   1.0594   0.5992
+Bremen O3abs(1/cm)    2.6057   1.7742   1.0011   0.6789   0.3737   0.2931 O3:  0.3378
+ Nicolet 1e4*Rayabs(1/cm)   5049.8   4831.1   4583.4   4369.6   4177.0   4000.2 R:  9.5194
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5046.4   4829.1   4582.9   4370.3   4178.6   4002.5 R:  9.1462
+ I0(mW m^-2nm^-1)  11670.10  9365.65  7166.17  4882.57  3970.73  3140.72 ETC:    1329 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1303, So2/O3(A2)=  2.7929
+O3 factor from Bass &amp; Paur to Daumont  =  0.9673 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9924 
+  292 WL(A)         3032.10  3063.25  3100.78  3135.33  3168.34  3200.42
+      Res(A)          11.20    11.15    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.5923   1.7746   1.0037   0.6743   0.3754   0.2902 O3:  0.3340
+Daumt O3abs(1/cm)    2.5993   1.7701   0.9951   0.6694   0.3685   0.2916 O3:  0.3454
+     So2abs(1/cm)    3.3975   5.7070   2.4395   1.8479   1.0605   0.5968
+Bremen O3abs(1/cm)    2.6032   1.7726   1.0007   0.6785   0.3738   0.2926 O3:  0.3366
+ Nicolet 1e4*Rayabs(1/cm)   5049.3   4830.6   4582.9   4369.1   4176.6   3999.8 R:  9.5170
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5045.9   4828.6   4582.5   4369.8   4178.2   4002.1 R:  9.1463
+ I0(mW m^-2nm^-1)  11663.84  9359.41  7149.33  4878.72  3960.99  3131.34 ETC:    1319 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.8 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1265, So2/O3(A2)=  2.8075
+O3 factor from Bass &amp; Paur to Daumont  =  0.9669 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9922 
+  293 WL(A)         3032.17  3063.32  3100.85  3135.40  3168.41  3200.49
+      Res(A)          11.20    11.14    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.5898   1.7730   1.0034   0.6739   0.3755   0.2896 O3:  0.3327
+Daumt O3abs(1/cm)    2.5968   1.7685   0.9948   0.6691   0.3686   0.2911 O3:  0.3442
+     So2abs(1/cm)    3.3832   5.7252   2.4486   1.8363   1.0617   0.5944
+Bremen O3abs(1/cm)    2.6008   1.7710   1.0004   0.6782   0.3739   0.2921 O3:  0.3354
+ Nicolet 1e4*Rayabs(1/cm)   5048.8   4830.1   4582.5   4368.7   4176.2   3999.4 R:  9.5146
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5045.3   4828.1   4582.0   4369.4   4177.8   4001.7 R:  9.1460
+ I0(mW m^-2nm^-1)  11657.59  9353.18  7132.55  4874.88  3951.27  3126.55 ETC:    1317 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.9 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.0 DU
+Ratio Ozone for So2(A3)=  1.1227, So2/O3(A2)=  2.8221
+O3 factor from Bass &amp; Paur to Daumont  =  0.9667 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9922 
+  294 WL(A)         3032.24  3063.40  3100.92  3135.47  3168.48  3200.56
+      Res(A)          11.20    11.14    10.85    11.18    11.03    10.87
+      O3abs(1/cm)    2.5875   1.7713   1.0031   0.6733   0.3756   0.2890 O3:  0.3315
+Daumt O3abs(1/cm)    2.5943   1.7670   0.9944   0.6687   0.3687   0.2906 O3:  0.3429
+     So2abs(1/cm)    3.3693   5.7434   2.4576   1.8242   1.0628   0.5919
+Bremen O3abs(1/cm)    2.5984   1.7693   1.0000   0.6778   0.3740   0.2915 O3:  0.3341
+ Nicolet 1e4*Rayabs(1/cm)   5048.2   4829.6   4582.0   4368.3   4175.8   3999.1 R:  9.5123
+Bates(fix)  1e4*Rayabs(1/cm)      0.0   4870.0   4620.0   4410.0   4220.0   4040.0 R: -1.0000
+Bodhaine  1e4*Rayabs(1/cm)   5044.8   4827.6   4581.6   4369.0   4177.4   4001.4 R:  9.1390
+ I0(mW m^-2nm^-1)  11651.35  9346.97  7115.83  4871.03  3941.58  3123.52 ETC:    1319 
+Ozone offset due to Rayleigh  (RayCOeff/O3Coeff): -2.9 DU
+Ozone offset due to Rayleigh (Bodhaine): -3.1 DU
+Ratio Ozone for So2(A3)=  1.1189, So2/O3(A2)=  2.8368
+O3 factor from Bass &amp; Paur to Daumont  =  0.9668 
+O3 factor from Bass &amp; Paur to Bremen  =  0.9924 
+</pre><img vspace="5" hspace="5" src="cal_report_174b_36.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_39.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_40.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_42.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_43.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_44.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_45.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174b_46.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
 load(Cal.file_save,<span class="string">'dsp_summary'</span>);
 dates=sscanf(cell2str(cat(2,ldsp')),<span class="string">'%03d_%03d_%03d,'</span>,[3,Inf]);
 dates=datejul(dates(2:3,:)');dates=dates(:,1);
@@ -767,15 +1121,20 @@ dsp_summary{Cal.n_inst}.detail=detail;
 dsp_summary{Cal.n_inst}.salida=salida;
 
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'dsp_summary'</span>);
+</pre><pre class="codeoutput">ldsp =
+  2&times;1 cell array
+    {'174_19_135'}
+    {'174_19_174'}
 </pre><pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'DSP_QUAD_RES'</span>));
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix);
 
 close <span class="string">all</span>
-</pre><pre class="codeoutput">
-naux =
-
+</pre><pre class="codeoutput">naux =
      1
-
+figura =
+    '174_figures_DSP_QUAD_RES_1'
+naux =
+     2
 </pre><h2 id="12">Tabla - resumen con resultados DSP y Umkehr</h2><pre class="codeinput"> QUAD_SUM_table={}; rows={}; tabla_QuadSum={}; format <span class="string">short</span> <span class="string">g</span>;
  <span class="keyword">if</span> config_orig(14)~=config_def(14)
     idx=1:length(res)+1; idx(end-1)=0; idx(end)=length(res);
@@ -816,8 +1175,8 @@ UMK_TABLE={};
  <span class="keyword">end</span>
 </pre><pre class="codeoutput">    'Current'        [289]    [0.3388]    [  2.35]    [1.1405]
     '15-May-2019'    [289]    [  0.34]    [3.1469]    [1.1449]
+    '23-Jun-2019'    [289]    [0.3383]    [3.1428]    [1.1399]
     'Final'          [289]    [0.3388]    [  2.35]    [1.1405]
-
 </pre><h2 id="13">Tablas y ficheros de definiciones latex</h2><pre class="codeinput"> indx=1;
 <span class="keyword">for</span> t=1:length(res)
     <span class="keyword">if</span> t==1 indx=[]; <span class="keyword">else</span> indx=t-1; <span class="keyword">end</span>
@@ -867,7 +1226,7 @@ end
      xlswrite('./DSP/dsp_IZO2.xls',[Q_SUM_table_RowLabels',QUAD_SUM_table],[Cal.brw_name{Cal.n_inst},'_sum']);</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 % options_pub.outputDir=fullfile(pwd,'latex','174','html'); options_pub.showCode=true;
-% publish(fullfile(pwd,'cal_report_174b.m'),options_pub);
+% close all;publish(fullfile(pwd,'cal_report_174b.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
@@ -957,7 +1316,7 @@ res={}; detail={}; DSP_QUAD={}; QUAD_SUM={}; QUAD_DETAIL={};
 CUBIC_SUM={}; CUBIC_DETAIL={}; salida={}; CSN_icf={};
 
 l=dir(fullfile('DSP',[Cal.brw_str{Cal.n_inst},'*']));
-ldsp=cellstr(cat(1,l.name));
+ldsp=cellstr(cat(1,l.name))
 %ldsp=ldsp(end-3:end)
 for jj=1:length(ldsp)  %% ojo solo funciona si config es igual para todos
     %%
