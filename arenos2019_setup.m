@@ -66,7 +66,7 @@ Cal.calibration_days={
    167:dayend,167:dayend     ,167:dayend       %185  
    day0:dayend,day0:172   ,173:dayend       %186  
    day0:dayend,day0:dayend   ,day0:dayend       %190
-   day0:dayend,day0:175      ,176:dayend       %201
+   day0:dayend,day0:175      ,177:dayend       %201
    day0:dayend, day0:dayend  ,160:dayend       %202
    day0:dayend, day0:172     ,173:dayend       %228 No blind days!!
    %day0:dayend,day0:dayend   ,day0:dayend       %300
@@ -127,8 +127,8 @@ Cal.brw_name(Cal.brewer_ref)
     '..\174\ICF20718.174' ,   '..\174\ICF17819.174'  ,'0605',  '0605'; %
     '..\185\config185.cfg',   '..\185\config185.cfg'  , '0365',  '0367'; % new temperature coeff
     '..\186\ICF15317.186' ,   '..\186\IOS15317.186'  ,'0315',  '0315'; %   IOS15317.186=ICF15417.186
-    '..\190\ICF11419.190' ,   '..\190\ICF11419.190'  ,'0410',  '0410'; 
-    '..\201\ICF14315.201' ,   '..\201\ICF14315.201'  ,'0320',  '0320'; %
+    '..\190\ICF11419.190' ,   '..\190\ICF17519.190'  ,'0410',  '0410'; 
+    '..\201\ICF14315.201' ,   '..\201\ICF17519.201'  ,'0320',  '0320'; %
     '..\202\ICF15017.202' ,   '..\202\ICF17519.202'  ,'0270',  '0270'; %
     '..\228\ICF15017.228' ,   '..\228\ICF17419.228'  ,'0242',  '0242'; %  IOS(173)
    % '..\230\ICF15017.230' ,   '..\230\ICF15017.230'  ,'0283',  '0270'; %
