@@ -218,15 +218,16 @@ Cal.ETC_C={
           [0,0,0,0,0,0]         %158 
           [0,0,0,0,0,0]         %163
           [0,0,0,0,0,0]         %166 
-          [0,0,0,0,10,0]       %172 -> replace filter#4 very noisy
+          [0,0,0,-15,-20,0]        %172 -> replace filter#4 very noisy
+          [0,0,0,0,0,0]         %174
           [0,0,0,-8,-13,0]      %185 -> used for icf files
-          [0,0,0,-15,-10,0];    %186
-          [0,0,-4,-9,-10,2];    %
+          [0,0,0,-15,-10,0]    %186
+          [0,0,-4,-9,-10,2]    %190
           [0,0,0,0,0,0]         %202
           [0,0,0,0,0,0]         %214
-          [0,0,0,15,0,0]         %228
-                };
-
+          [0,0,0,15,0,0]}         %228
+                
+check=[Cal.brw_name;num2cell(Cal.brw);num2cell(Cal.brwM);num2cell(Cal.sl_c);Cal.brw_str;brw_config_files';Cal.ETC_C']'
 %% Calibration instrument
 % Brewer configuration files
 pa=repmat(cellstr([Cal.path_root,filesep(),'bfiles']),Cal.n_brw,2);
