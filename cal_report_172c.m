@@ -1,5 +1,5 @@
 % options_pub.outputDir=fullfile(pwd,'latex','172','html'); options_pub.showCode=true;
-% Close all; publish(fullfile(pwd,'cal_report_172c.m'),options_pub);
+% close all; publish(fullfile(pwd,'cal_report_172c.m'),options_pub);
 
 %% Brewer Evaluation
 clear all;
@@ -405,6 +405,16 @@ save(Cal.file_save,'-APPEND','etc');
 
 %% Final Period
 close all
+
+% %% filter correction
+% % Si queremos eliminar algun filtro CORREGIR a NaN
+ F_corr{Cal.n_inst}=[NaN,NaN,NaN,0,NaN,NaN]
+ for ii=[Cal.n_ref Cal.n_inst]
+         [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
+    summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
+ end
+
+
 finaldays=Cal.calibration_days{Cal.n_inst,3};
 
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
@@ -470,7 +480,7 @@ close all
 
 
 %% STRAY LIGHT
-if Cal.brwM~=3
+if Cal.brwM(Cal.n_inst)~=3
 close all
 osc_range=2;
 % etc estimaton using the full range 
@@ -636,10 +646,10 @@ datetick('x',15,'keepLimits','KeepTicks');
 set(gca,'YLim',[min(inst2(j,10))-8 max(inst2(j,10))+8])
 end
 
-figure(max(findobj('tag','_GlobalPlot_')));
+figure(maxf(findobj('tag','_GlobalPlot_')));
 printfiles_report(gcf,Cal.dir_figs,'Height',7,'Width',13);
 
-printfiles_report(min(findobj('-regexp','Tag','^DayPlot_')):max(findobj('-regexp','Tag','^DayPlot_')),...
+printfiles_report(double(minf(findobj('-regexp','Tag','^DayPlot_'))):double(maxf(findobj('-regexp','Tag','^DayPlot_'))),...
                               Cal.dir_figs,'Width',14.5,'Height',7.5);
 graph2latex(Cal.file_latex,{'summaryplot','DayPlot_'},brw_str{n_inst},'scale',0.8);
 
