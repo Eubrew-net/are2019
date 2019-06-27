@@ -324,4 +324,40 @@ co07:59:21skc: Starting schedule uv0627a
 co07:59:23ru: Running ru from uv0627a line -59.18
 co07:59:39start:  PROGRAM start :  JUN 27/19 at 07:59:31
 hk07:59:39 29 30 30-99-99-99-99
-co07:59:41ab_sk: Running ab_sk from main.asc
+co07:59:41ab_sk: Running ab_sk from main.asc
+co08:00:08ru: Running ru from uv0627a line -59.18
+co08:00:11ru: Software was restarted less than 2 hrs ago, ignoring request to restart now.
+co08:00:14td: Julian day = 178
+co08:00:17td: Time correction  .3 seconds
+co08:00:17td: Julian day = 178
+co08:00:23ua: UV timed  skipped  8  8.5
+hk08:00:27 29 30 30-99-99-99-99
+co08:01:04ux: UV extended  scan started
+co08:05:01ux: HOME key pressed
+co08:05:04ux: UV extended  scan aborted
+co08:05:28ux: Going to menu
+co08:05:55sl1: Running sl1 from menu line -200
+co08:08:21td: Julian day = 178
+co08:08:24td: Time correction  .4 seconds
+co08:08:24td: Julian day = 178
+co08:08:33sl1: Running sl1 from menu line -200
+co08:09:55tdsl: Running tdsl from menu line -200
+co08:09:58td: Julian day = 178
+co08:10:02td: Time correction  .4 seconds
+co08:10:02td: Julian day = 178
+co08:12:16tdsl: Running tdsl from menu line -200
+co08:12:24td: Julian day = 178
+co08:12:27td: Time correction  .4 seconds
+co08:12:28td: Julian day = 178
+co08:12:52sl: DEL key pressed
+hk08:12:56 30 31 29-99-99-99-99
+sla192 493.280620 852206 106 950985 971368 1020580 906295 739882rat-224.625-322.6563-541.1485-944.8906
+sla192 493.950620 857845 103 959383 980515 1029565 915353 746885rat-219.5469-320.1797-536.0235-947.3828
+sla192 494.620620 862042 115 963219 986485 1034881 919961 751814rat-214.9766-324.8828-536.6641-940.6172
+sla192 495.290620 864260 118 965329 986572 1036201 921809 752849rat-215.7969-316.3672-533.4219-943.4531
+sla192 495.960620 864986 115 965804 988316 1038193 923001 753567rat-212.25-318.4844-536.2422-944.9688
+sla192 496.630620 865613 95 966802 989593 1039567 924019 754699rat-211.9453-319.336-537.2344-943.2109
+sla192 497.30620 866026 101 967302 989218 1038441 924110 754394rat-213.8047-317.2031-531.9688-945.4375
+summary08:15:17JUN 27/19 55.656 1.76 30sl 3-216-320-536-944 2806 1553 962689.2 750584.3 5 3 3 2 7 5 5818.4 5400
+co08:17:57appd: Running appd from menu line -200
+ap08:18:03 29.71 30.08 28.99 1687.14 14.97 5.12-14.94 23.86 .00 9.26 .00 .00 5.10-7.95 .01 .04 29.72 30.08 28.99 1698.08 14.38 5.05-14.95 23.99 0 8.609999 0 0 5.1-7.95 .01 10.62
