@@ -423,7 +423,7 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-osc_range=0.1;
+osc_range=.7;
 %A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 10,osc_range,0.03,finaldays);
@@ -443,16 +443,16 @@ etc{Cal.n_inst}.new=ETC_NEW;
 save(Cal.file_save,'-APPEND','etc');
 
 %% TEST NEW CONFIG
-  o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
-  inst2(:,10)=o3r;
-      [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
-         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+%   o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
+%   inst2(:,10)=o3r;
+%       [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
+%          inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+%          5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 
  %% FINAL CONFIG   
     [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
         inst2(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',1);
     
  figure; set(gcf,'tag','RATIO_ERRORBAR_all');
  h=plot_smooth(osc_smooth_ini,osc_smooth_inisl,osc_smooth_fin);
@@ -471,7 +471,7 @@ osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 save(Cal.file_save,'-APPEND','osc_smooth');
 
 %%
-figure(sort(findobj('tag','CAL_2P_SCHIST')));
+figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'fin'},'Width',14,'Height',8);

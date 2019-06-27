@@ -355,7 +355,7 @@ save(Cal.file_save,'-APPEND','etc');
 %% Final Period
 close all
 finaldays=Cal.calibration_days{Cal.n_inst,3};
-finaldays=173:180
+finaldays=176:180
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
 jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
       diaj2(summary{Cal.n_inst}(:,1))<finaldays(end)); 
@@ -363,7 +363,7 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-osc_range=0.7;
+osc_range=1;
 %A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 10,osc_range,0.03,finaldays);
