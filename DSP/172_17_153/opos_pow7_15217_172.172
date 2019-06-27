@@ -1,4 +1,4 @@
-Analysis on 03-Jun-2019 using files:DSP/172_17_153/ozonedsp_15217_172.172,DSP/172_17_153/dsp_15217_172.172
+Analysis on 18-Jun-2019 using files:DSP\172_17_153\ozonedsp_15217_172.172,DSP\172_17_153\dsp_15217_172.172
 
 Slit #0
 wavelenght     step  stp_std     fwhm fwhm_std 
@@ -9,7 +9,7 @@ wavelenght     step  stp_std     fwhm fwhm_std
 Slit #1
 wavelenght     step  stp_std     fwhm fwhm_std 
   3080.82      3001       0.4    76.57      0.34
-  3133.17      3733       0.2    75.47      0.19
+  3133.17      3733       0.3    75.47      0.19
   3261.06      5573       0.5    76.74      0.10
   3499.95      9211       0.1    78.14      0.16
 Slit #2
@@ -27,7 +27,7 @@ wavelenght     step  stp_std     fwhm fwhm_std
 Slit #4
 wavelenght     step  stp_std     fwhm fwhm_std 
   3080.82      1527       0.6    77.33      0.05
-  3133.17      2260       0.2    77.38      0.21
+  3133.17      2260       0.3    77.38      0.21
   3261.06      4106       0.2    77.98      0.08
   3499.95      7779       0.3    78.78      0.04
 Slit #5
