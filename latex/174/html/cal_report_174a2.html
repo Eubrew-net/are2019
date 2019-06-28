@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_174a2</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-27"><meta name="DC.source" content="cal_report_174a2.m"><style type="text/css">
+      --><title>cal_report_174a2</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-28"><meta name="DC.source" content="cal_report_174a2.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -139,18 +139,120 @@ ans =
     {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
     {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
     {'..\172\ICF15117&#8230;'}    {'..\172\ICF17819&#8230;'}    {'0444'}    {'0444'}
-    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF17819&#8230;'}    {'0605'}    {'0605'}
     {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
     {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
-    {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
-    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF17519&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF17519&#8230;'}    {'0320'}    {'0320'}
     {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
     {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
 
--&gt;ERROR
-     2
 
-D:\CODE\campaigns\are2019\bfiles\202\..\202\ICF17519.202
+Cal = 
+
+  struct with fields:
+
+           path_root: 'D:\CODE\campaigns\are2019'
+           file_save: 'arenos_2019.mat'
+            campaign: 'Arenosillo, Huelva (Spain), Jun 27th -- June 05th, 2019'
+             Station: [1&times;1 struct]
+                Date: [1&times;1 struct]
+    calibration_days: {20&times;3 cell}
+          blind_days: {20&times;1 cell}
+          final_days: {20&times;1 cell}
+                 brw: [1&times;20 double]
+                brwM: [2 2 2 4 4 4 4 3 4 3 3 4 3 3 3 3 3 3 3 3]
+                sl_c: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+          sl_c_blind: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+            no_maint: [0 1 0 0 0 0 0 0 0 1 1 0 0 1 1 0 1 0 1 1]
+                 plt: {1&times;20 cell}
+               n_brw: 20
+            brw_name: {1&times;20 cell}
+             brw_str: {1&times;20 cell}
+               Tsync: 3.5000
+          brewer_ref: 15
+               n_ref: [15 15]
+              events: {1&times;19 cell}
+            events_n: {1&times;19 cell}
+         events_text: {1&times;19 cell}
+          events_raw: {1&times;19 cell}
+     incidences_text: {1&times;19 cell}
+               ETC_C: {20&times;1 cell}
+
+
+check =
+
+  20&times;10 cell array
+
+  Columns 1 through 5
+
+    {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
+    {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
+    {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
+    {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
+    {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
+    {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
+    {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
+    {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
+    {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
+    {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
+    {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
+    {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
+    {'CAN#190'}    {[190]}    {[3]}    {[0]}    {'190'}
+    {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
+    {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
+    {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+
+  Columns 6 through 9
+
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
+    {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
+    {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
+    {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
+    {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF17819&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF17819&#8230;'}    {'0605'}    {'0605'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
+    {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF17519&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF17519&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
+
+  Column 10
+
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>;
 
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
@@ -179,21 +281,21 @@ List of arguments given default values:
    'N_TC'    defaults to []
 --------------------------------------
  ORIG MS9:   590 +/- 1  0.3 +/- 0.03  
-  NEW MS9:   588 +/- 2  -0.0 +/- 0.07  
+  NEW MS9:   588 +/- 2  0.0 +/- 0.06  
 </pre><img vspace="5" hspace="5" src="cal_report_174a2_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a2_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a2_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_174a2_04.png" alt=""> <pre class="codeinput">    makeHtmlTable([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],<span class="keyword">...</span>
         {<span class="string">'slit#2'</span>,<span class="string">'slit#3'</span>,<span class="string">'slit#4'</span>,<span class="string">'slit#5'</span>,<span class="string">'slit#6'</span>,<span class="string">'R5'</span>,<span class="string">'R6'</span>},{<span class="string">'a'</span>,<span class="string">'a SE'</span>,<span class="string">'b'</span>,<span class="string">'b SE'</span>},[],4);
 </pre><table border="1" cellpadding="4" cellspacing="0">
 <tr><td></td><td>a</td><td>a SE</td><td>b</td><td>b SE</td></tr>
-<tr><td>slit#2</td><td>5.965e+04</td><td>5.153</td><td>-14.25</td><td>0.204</td></tr>
-<tr><td>slit#3</td><td>6.042e+04</td><td>4.644</td><td>-14.42</td><td>0.1838</td></tr>
-<tr><td>slit#4</td><td>6.138e+04</td><td>4.555</td><td>-14.38</td><td>0.1803</td></tr>
-<tr><td>slit#5</td><td>6.195e+04</td><td>4.357</td><td>-13.83</td><td>0.1725</td></tr>
-<tr><td>slit#6</td><td>6.234e+04</td><td>4.226</td><td>-13.79</td><td>0.1673</td></tr>
-<tr><td>R5</td><td>1056</td><td>3.186</td><td>0.3534</td><td>0.1261</td></tr>
-<tr><td>R6</td><td>588.2</td><td>1.658</td><td>0.2331</td><td>0.06564</td></tr>
+<tr><td>slit#2</td><td>5.965e+04</td><td>5.061</td><td>-14.23</td><td>0.1998</td></tr>
+<tr><td>slit#3</td><td>6.042e+04</td><td>4.548</td><td>-14.42</td><td>0.1795</td></tr>
+<tr><td>slit#4</td><td>6.138e+04</td><td>4.438</td><td>-14.41</td><td>0.1752</td></tr>
+<tr><td>slit#5</td><td>6.195e+04</td><td>4.26</td><td>-13.85</td><td>0.1682</td></tr>
+<tr><td>slit#6</td><td>6.234e+04</td><td>4.127</td><td>-13.81</td><td>0.1629</td></tr>
+<tr><td>R5</td><td>1056</td><td>3.144</td><td>0.3379</td><td>0.1241</td></tr>
+<tr><td>R6</td><td>588.3</td><td>1.638</td><td>0.2275</td><td>0.06466</td></tr>
 </table><pre class="codeinput">    makeHtmlTable(NTC{1});
 </pre><table border="1" cellpadding="4" cellspacing="0">
-<tr><td>0</td><td>0.17</td><td>0.13</td><td>-0.42</td><td>-0.46</td></tr>
+<tr><td>0</td><td>0.18</td><td>0.17</td><td>-0.39</td><td>-0.43</td></tr>
 </table><pre class="codeinput"><span class="keyword">else</span>
     Fr=NaN*ones(1,9);
     ajuste{1}.orig=NaN*ones(7,4);
@@ -442,9 +544,9 @@ List of arguments given default values:
 --------------------------------------
   Columns 1 through 4
 
-    [         -3]    [          -6]    [          -2]    [        -6]
-    [         -5]    [     -7.1000]    [     -7.4000]    [   -1.7000]
-    '[-7.9 -2.1]'    '[-11.1 -3.1]'    '[-10.3 -4.4]'    '[-5.6 2.6]'
+    [       -3]    [          -6]    [          -2]    [        -6]
+    [       -5]    [     -7.1000]    [     -7.4000]    [   -1.7000]
+    '[-8 -2.1]'    '[-11.3 -3.1]'    '[-10.5 -4.5]'    '[-5.5 2.5]'
 
   Column 5
 
@@ -489,9 +591,9 @@ fi_etc_table =
                              ________    ________    ________    ________    ________
 
     ETCFilt_Corr__median_         -3          -6          -2          -6          -3 
-    ETCFilt_Corr__mean_      -4.9895     -7.1357     -7.4053     -1.6811     -4.9633 
-    ETCFilt_Corr__CI_        -7.8931     -11.143      -10.26     -5.5526     -8.6302 
-    ETCFilt_Corr__CI__1      -2.0756     -3.1276     -4.3625      2.5545     -1.6948 
+    ETCFilt_Corr__mean_      -5.0041     -7.1285     -7.3965     -1.6519      -4.978 
+    ETCFilt_Corr__CI_        -7.9702     -11.272     -10.514     -5.4863     -8.6107 
+    ETCFilt_Corr__CI__1      -2.0891     -3.1359     -4.5175       2.532     -1.6823 
 
 </pre><pre class="codeinput"> figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'FI_wavelength'</span>)));
  printfiles_report(gcf,Cal.dir_figs,<span class="string">'Width'</span>,13.5);
