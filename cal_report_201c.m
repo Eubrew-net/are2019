@@ -111,7 +111,7 @@ for ii=[Cal.n_ref,Cal.n_inst]
                   nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
 % new instrumental constants
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
-                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,3}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s New constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
                   nanmedian(R6_n{ii}(diajul(R6_n{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
@@ -364,7 +364,7 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
 osc_range=1;
-%A1_new=0.3431
+A1_new=0.3414
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 10,osc_range,0.03,finaldays);
 hidx=ismember(Cal.Date.CALC_DAYS,finaldays);
@@ -382,12 +382,12 @@ latexcmd(fullfile(['>',Cal.file_latex],['cal_etc_',brw_str{n_inst}]),'\ETCfin',n
 etc{Cal.n_inst}.new=ETC_NEW;
 save(Cal.file_save,'-APPEND','etc');
 
-%% TEST NEW CONFIG
-  o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
-  inst2(:,10)=o3r;
-      [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
-         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+% %% TEST NEW CONFIG
+%   o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
+%   inst2(:,10)=o3r;
+%       [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
+%          inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+%          5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 
  %% FINAL CONFIG   
     [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...

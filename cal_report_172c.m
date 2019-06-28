@@ -298,15 +298,15 @@ ref=summary{n_ref}(jday_ref,:);
        inst1(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config
 
-%% Blind Period
+%% Blind Period~
 % etiquetamos con _b, porque eso sera lo que usamos para plotear los individu~ales, con la configuraci?n sugerida
 close all
 blinddays=Cal.calibration_days{Cal.n_inst,2};
-
+blinddays=blinddays(3:end)
 jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
 inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
 
-if Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenance
+if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenance
     
     [x,r,rp,ra,dat,ox,osc_smooth_ini]=ratio_min_ozone(...
         inst1_b(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
@@ -316,11 +316,12 @@ if Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenan
         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config , sl corrected
     
     %% Sugerido con los blind_days
-    A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); A1_old=unique(A1(~isnan(A1)))
+    A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); 
+    A1_old=unique(A1(~isnan(A1)))
     osc_range=0.9
     %A1_old=0.3390
-    [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_old,A1_old,...
-        Cal.n_inst,n_ref,5,osc_range,0.01,blinddays);
+    [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_orig_old,A1_old,...
+        Cal.n_inst,n_ref,10,osc_range,0.03,blinddays);
     
     data_tabl=[nanmean(ETC.old(:,n_inst+1)),round([ETC_SUG(1).NEW,ETC_SUG(1).TP(1)]),...
         nanmean(A.old(:,n_inst+1)),ETC_SUG(1).TP(2)/10000,A1_old
@@ -417,11 +418,11 @@ close all
 
 % %% filter correction
 % % Si queremos eliminar algun filtro CORREGIR a NaN
- F_corr{Cal.n_inst}=[0,0,-6,-5,-13,0]
- for ii=[Cal.n_ref Cal.n_inst]
-         [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
-    summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
- end
+%  F_corr{Cal.n_inst}=[0,0,-6,-5,-13,0]
+%  for ii=[Cal.n_ref Cal.n_inst]
+%          [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
+%     summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
+%  end
 
 
 finaldays=Cal.calibration_days{Cal.n_inst,3};
@@ -454,11 +455,11 @@ etc{Cal.n_inst}.new=ETC_NEW;
 save(Cal.file_save,'-APPEND','etc');
 
 %% TEST NEW CONFIG
-   o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
-   inst2(:,10)=o3r;
-       [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
-          inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-          5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+%    o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
+%    inst2(:,10)=o3r;
+%        [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
+%           inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+%           5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 
  %% FINAL CONFIG   
     [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
