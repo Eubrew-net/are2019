@@ -348,17 +348,27 @@ save(Cal.file_save,'-APPEND','etc');
 %% Final Period
 close all
 finaldays=Cal.calibration_days{Cal.n_inst,3};
+finaldays=177:180
+% %% filter correction
+% % Si queremos eliminar algun filtro CORREGIR a NaN
+ F_corr{Cal.n_inst}=[  0  NaN           0         -15         -20          25 ]
+ for ii=[Cal.n_ref Cal.n_inst]
+         [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
+    summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
+ end
+
 
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
 jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
       diaj2(summary{Cal.n_inst}(:,1))<finaldays(end)); 
 inst2=summary{Cal.n_inst}(jday & jlim ,:);
 
-%%
-A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1); A1_new=unique(A1(~isnan(A1)))
-osc_range=.8;
+%
+A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1); 
+A1_new=unique(A1(~isnan(A1)))
+osc_range=1;
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
-                                                                5,osc_range,0.03,finaldays);
+                                                                10,osc_range,0.03,finaldays);
 tableform({'ETCorig','ETCnew 1p','ETCnew 2p','O3Abs (ICF)','O3Abs 2p','O3Abs dsp'},...
           [round([ETC.old(n_inst),ETC_NEW(1).NEW,ETC_NEW(1).TP(1), 10000*A.old(n_inst),ETC_NEW(1).TP(2),10000*A.new(Cal.n_inst)])
 %         solo el rango seleccionado
@@ -385,12 +395,13 @@ h=plot_smooth(osc_smooth_ini,osc_smooth_inisl,osc_smooth_fin);
 legend(h,'Config. orig','Config. orig, SL corrected','Suggested'); set(gca,'YLim',[-4 2]);
 title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
 
-%%
-% o3r= (inst2(:,8)-ETC_NEW(1).TP(1))./(ETC_NEW(1).TP(2)/10000*inst2(:,3)*10);
-% inst2(:,10)=o3r;
-%     [x,r,rp,ra,dat,ox,osc_smooth_2P]=ratio_min_ozone(...
-%        inst2(:,[1,10,3,2,8,9,4,5]),ref2(:,[1,6,3,2,8,9,4,5]),...
-%        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+%% TWO POINT CALIBRATION
+  o3r= (inst2(:,8)-ETC_NEW(1).TP(1))./(ETC_NEW(1).TP(2)/10000*inst2(:,3)*10);
+  inst2(:,10)=o3r;
+      [x,r,rp,ra,dat,ox,osc_smooth_2P]=ratio_min_ozone(...
+         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+
 
 osc_smooth{Cal.n_inst}.fin=osc_smooth_fin;
 % osc_smooth{Cal.n_inst}.twoP=osc_smooth_2P;
