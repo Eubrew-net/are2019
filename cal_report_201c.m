@@ -79,7 +79,7 @@ matrix2latex_config([config_orig(2:end),config_def(2:end)],...
  makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
 
 %% DT analysis_
- DT_analysis(Cal,ozone_raw0,config,'plot_flag',0);
+ DT_analysis(Cal,ozone_raw0,config,'plot_flag',1);
 
 %
 %figure(findobj('tag','DT_comp'));
@@ -292,7 +292,7 @@ if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintena
     title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
     printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'sug'});
     %%
-    close all
+    %close all
     
     %% Blind days table
     % m_etc: [date, ref_new_slcorr, +sd, +n, ...

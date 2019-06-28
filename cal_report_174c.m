@@ -383,11 +383,11 @@ etc{Cal.n_inst}.new=ETC_NEW;
 save(Cal.file_save,'-APPEND','etc');
 
 %% TEST NEW CONFIG
-  o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
-  inst2(:,10)=o3r;
-      [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
-         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+%   o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
+%   inst2(:,10)=o3r;
+%       [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
+%          inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+%          5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 
  %% FINAL CONFIG   
     [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
