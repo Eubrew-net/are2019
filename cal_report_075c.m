@@ -112,8 +112,8 @@ for ii=[Cal.n_ref,Cal.n_inst]
                   nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
 % new instrumental constants
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
-                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
-                               'outlier_flag',0,'hgflag',1,'fplot',0);
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,3}([1 end])),...
+                               'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s New constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
                   nanmedian(R6_n{ii}(diajul(R6_n{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
                   nanstd(   R6_n{ii}(diajul(R6_n{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
@@ -217,6 +217,7 @@ figure; plot(summary{Cal.n_inst}(:,1),summary{Cal.n_inst}(:,6),'r.',...
 %             summary{Cal.n_ref(2)}(:,1),summary{Cal.n_ref(2)}(:,6),'m.');
 legend(gca,'inst','IZO#183','IZO#185','Location','NorthEast'); grid;
 datetick('x',26,'KeepLimits','KeepTicks');
+ozone_filter_analysis_mi(summary,Cal);
 
 %% Ozone Calibration
 % Reference Brewer #185
@@ -225,13 +226,13 @@ n_ref=Cal.n_ref; % Cuidado con cual referencia estamos asignando
 n_inst=Cal.n_inst;
 brw=Cal.brw; brw_str=Cal.brw_str;
 
-jday_ref=findm((diaj(summary{n_ref}(:,1))),Cal.calibration_days{n_inst,1},0.5);
+jday_ref=findm((dayj(summary{n_ref}(:,1))),Cal.calibration_days{n_inst,1},0.5);
 ref=summary{n_ref}(jday_ref,:);
 
 %% Change?
 alldays=Cal.calibration_days{Cal.n_inst,1};
 
-jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),alldays,0.5);% quiero mostrar la primera config. con sl
+jday=findm(dayj(summary_orig_old{Cal.n_inst}(:,1)),alldays,0.5);% quiero mostrar la primera config. con sl
 inst1=summary_orig_old{Cal.n_inst}(jday,:);
 
    [x,r,rp,ra,dat,ox,osc_smooth_ini]=ratio_min_ozone(...
@@ -242,25 +243,25 @@ inst1=summary_orig_old{Cal.n_inst}(jday,:);
 % etiquetamos con _b, porque eso sera lo que usamos para plotear los individuales, con la configuraci�n sugerida
 close all
 blinddays=Cal.calibration_days{Cal.n_inst,2};
-%blinddays=168:169
+blinddays=168:170.5  % decimales requieren dayj
 
-jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
+jday=findm(dayj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
 inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
 
 if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenance
 
     [x,r,rp,ra,dat,ox,osc_smooth_ini]=ratio_min_ozone(...
        inst1_b(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-       5,brw_str{n_inst},brw_str{n_ref},'plot_flag',1);% original config
+       10,brw_str{n_inst},brw_str{n_ref},'plot_flag',1);% original config
     [x,r,rp,ra,dat,ox,osc_smooth_inisl]=ratio_min_ozone(...
        inst1_b(:,[1,12,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-       5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config , sl corrected
+       10,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config , sl corrected
 
 %% Sugerido con los blind_days
 A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); 
-A1_old=unique(A1(~isnan(A1))), osc_range=.8;
+A1_old=unique(A1(~isnan(A1))), osc_range=.6;
 [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_old,A1_old,...
-                   Cal.n_inst,n_ref,5,osc_range,0.01,blinddays);
+                   Cal.n_inst,n_ref,10,osc_range,0.03,blinddays);
 
 data_tabl=[nanmean(ETC.old(:,n_inst+1)),round([ETC_SUG(1).NEW,ETC_SUG(1).TP(1)]),...
            nanmean(A.old(:,n_inst+1)),ETC_SUG(1).TP(2)/10000,A1_old
@@ -272,15 +273,15 @@ displaytable(data_tabl,{'ETCorig','ETCnew 1p','ETCnew 2p','O3Abs (ICF)','O3Abs 2
                      11,{'d','d','d','.4f','.4f','.4f'},{sprintf('OSC < %.2f DU',osc_range),'All OSC range'})
 
 % suggested
-o3r= (inst1_b(:,8)-ETC_SUG(1).NEW)./(A1_old*inst1_b(:,3)*10);
+o3r= (inst1_b(:,8)-ETC_SUG(2).TP(1))./(A1_old*inst1_b(:,3)*10);
 inst1_b(:,10)=o3r;
     [x,r,rp,ra,dat,ox,osc_smooth_sug]=ratio_min_ozone(...
        inst1_b(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-       5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+       10,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 % si es suficiente la correccion por sl
 % osc_smooth_sug=osc_smooth_inisl;
 
-%%
+%
 figure(maxf(findobj('tag','CAL_2P_SCHIST')));
 ax=findobj(gca,'type','text');
 set(ax(2),'FontSize',9,'Backgroundcolor','w'); set(ax(3),'FontSize',9,'Backgroundcolor','w');
@@ -289,10 +290,11 @@ printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'sug'},'Width',14,'Height',8);
 figure; set(gcf,'tag','RATIO_ERRORBAR');
 h=plot_smooth(osc_smooth_ini,osc_smooth_inisl,osc_smooth_sug);
 legend(h,'Config. orig','Config. orig, SL corrected','Suggested');
+set(gca,'YLim',[-Inf,3])
 title([ brw_str{n_inst},' - ',brw_str{n_ref},' / ',brw_str{n_ref}]);
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'sug'});
 
-close all
+%close all
 
 %% Blind days table
 % m_etc: [date, ref_new_slcorr, +sd, +n, ...
