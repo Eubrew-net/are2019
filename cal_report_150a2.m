@@ -42,7 +42,7 @@ NTC={}; tabla_regress={}; ajuste={}; Args={};
 if ~isnan(sl_rw)
     
     [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,'outlier_flag',0,...
-        'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])));
+        'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,3}([1 end])));
     
     disp(sprintf(' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{1}.orig(7,[1 3 2 4])));
     disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{1}.new(7,[1 3 2 4])));
@@ -100,8 +100,9 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
-                        %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
+                  'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
+                                            
+%'date_range',datenum(Cal.Date.cal_year-2,7,15));   % two years before calibration
                         %this year data
                         
                        
@@ -223,7 +224,7 @@ tabla_regress={};
 
 %% Filter attenuation
 [ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},...
-                             'date_range',datenum(Cal.Date.cal_year-4,1,1),...
+                             'date_range',datenum(Cal.Date.cal_year-6,1,1),...
                              'outlier_flag',1,'plot_flag',0,'config',config_orig(17:22));
                              
 filter{Cal.n_inst}.ETC_FILTER_CORRECTION=ETC_FILTER_CORRECTION;
