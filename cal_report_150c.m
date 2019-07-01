@@ -79,7 +79,7 @@ matrix2latex_config([config_orig(2:end),config_def(2:end)],...
  makeHtml_Table([config_orig,config_def],[],cellstr(leg),[Cal.brw_config_files(Cal.n_inst,1),Cal.brw_config_files(Cal.n_inst,2)])
 
 %% DT analysis
- DT_analysis(Cal,ozone_raw0,config,'plot_flag',1);% ,'DTv',[38 41]
+ DT_analysis(Cal,ozone_raw0,config,'plot_flag',1,'DTv',[29 32])
 
 %%
 % figure(findobj('tag','DT_comp'));
@@ -95,7 +95,71 @@ matrix2latex_config([config_orig(2:end),config_def(2:end)],...
 % printfiles_report(gcf,Cal.dir_figs,'Width',8,'Height',6,'LockAxes',0);
 %
 % close all
-%
+
+
+%% Campaing AVG info
+
+load(Cal.file_save,'avg_report');
+close all;
+cal_range=([datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(1)),datenum(Cal.Date.cal_year,0,Cal.Date.CALC_DAYS(end))])
+[sl_data,dt_data,rs_data,ap_data,hg_data,h2o_data,op_data,Args]=brw_avg_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files(Cal.n_inst,:),...
+                                      'date_range',cal_range,...
+                                      'SL_REF',[Cal.SL_OLD_REF(Cal.n_inst),Cal.SL_NEW_REF(Cal.n_inst)],...
+                                      'DT_REF',[DTorig,DTdef],...
+                                      'outlier_flag',{'','','','','','',''});
+try
+    
+    if ~isempty(sl_data)
+       day_ini=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(sl_data(:,2)==Cal.Date.cal_year & sl_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       if isempty(day_ini)
+            disp(datestr(sl_data(end,1)))
+            RseisAVG=round(nanmean(sl_data(:,12)));
+            RcincoAVG=round(nanmean(sl_data(:,11)));
+       else
+           RseisAVG=round(nanmean(sl_data(day_ini(1):day_last(end),12)));
+           RcincoAVG=round(nanmean(sl_data(day_ini(1):day_last(end),11)));
+       end
+       
+
+    end
+    if ~isempty(dt_data)
+       day_ini=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)>=Cal.Date.FINAL_DAYS(1));
+       day_last=find(dt_data(:,2)==Cal.Date.cal_year & dt_data(:,3)<=Cal.Date.FINAL_DAYS(end));
+       
+       if isempty(day_ini)
+              DTAVG=sprintf('%g',10^-9*(round(nanmean(dt_data(:,4)))));          
+        else
+             DTAVG=sprintf('%g',10^-9*round(nanmean(dt_data(day_ini(1):day_last(end),4))));
+       end
+    end
+  
+    tableform({'SLR6  orig',   'Calc. AVG','SLR5  orig','Calculated','DT  orig','Calculated'},...
+              [Cal.SL_OLD_REF(Cal.n_inst), RseisAVG,      NaN,      RcincoAVG,   DTorig, str2double(DTAVG)]);
+
+    avg_report{Cal.n_inst}.RseisAVG_camp=RseisAVG;  avg_report{Cal.n_inst}.RcincoAVG_camp=RcincoAVG;
+    avg_report{Cal.n_inst}.DTorig_camp  =DTorig;    avg_report{Cal.n_inst}.DTAVG_avg_camp    =DTAVG;
+    
+catch exception
+      fprintf('Error: %s, brewer %s\n',exception.message,Cal.brw_name{Cal.n_inst});
+end
+    
+avg_report{Cal.n_inst}.sl_data_camp=sl_data;
+avg_report{Cal.n_inst}.dt_data_camp=dt_data;
+avg_report{Cal.n_inst}.rs_data_camp=rs_data;
+avg_report{Cal.n_inst}.ap_data_camp=ap_data;
+avg_report{Cal.n_inst}.hg_data_camp=hg_data;
+avg_report{Cal.n_inst}.op_data_camp=op_data;
+if exist('Args','var')
+   avg_report{Cal.n_inst}.Args=Args;
+else disp('No se est�n guardando los inputs de la funci�n!!')
+end
+save(Cal.file_save,'-APPEND','avg_report');
+
+
+
+
+
 %% SL Report
 close all;
 for ii=[Cal.n_ref,Cal.n_inst]
@@ -105,14 +169,14 @@ for ii=[Cal.n_ref,Cal.n_inst]
     if ii==Cal.n_inst
 % old instrumental constants
       [sl_mov_o{ii},sl_median_o{ii},sl_out_o{ii},R6_o{ii}]=sl_report_jday(ii,sl,Cal.brw_str,...
-                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,2}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s Old constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
                   nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)),...
                   nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)));
 % new instrumental constants
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
-                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,3}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',0);
       fprintf('%s New constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
                   nanmedian(R6_n{ii}(diajul(R6_n{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
@@ -240,9 +304,12 @@ inst1=summary_orig_old{Cal.n_inst}(jday,:);
 
 %% Blind Period
 % etiquetamos con _b, porque eso sera lo que usamos para plotear los individuales, con la configuraci�n sugerida
+
 close all
+
 blinddays=Cal.calibration_days{Cal.n_inst,2};
-blinddays=167:169
+blinddays=[167,168,170,171]
+
 jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
 inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
 
@@ -256,10 +323,25 @@ if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintena
        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config , sl corrected
 
 %% Sugerido con los blind_days
+
+
+% %% filter correction
+ % Si queremos eliminar algun filtro CORREGIR a NaN
+   F_corr{Cal.n_inst}=[0,0,0,NaN,NaN,NaN]
+   summary_old_back{ii}=summary_old;
+   for ii=[Cal.n_ref Cal.n_inst]
+          [summary_old_corr s_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
+      summary_old{ii}=summary_old_corr; 
+   end
+ 
+
+
+
 A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1); 
-A1_old=unique(A1(~isnan(A1))), osc_range=.8;
+A1_old=unique(A1(~isnan(A1))),
+osc_range=1.2;
 [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_old,A1_old,...
-                   Cal.n_inst,n_ref,5,osc_range,0.01,blinddays);
+                   Cal.n_inst,n_ref,15,osc_range,0.05,blinddays);
 
 data_tabl=[nanmean(ETC.old(:,n_inst+1)),round([ETC_SUG(1).NEW,ETC_SUG(1).TP(1)]),...
            nanmean(A.old(:,n_inst+1)),ETC_SUG(1).TP(2)/10000,A1_old
@@ -269,7 +351,7 @@ data_tabl=[nanmean(ETC.old(:,n_inst+1)),round([ETC_SUG(1).NEW,ETC_SUG(1).TP(1)])
 %         todo el rango
 displaytable(data_tabl,{'ETCorig','ETCnew 1p','ETCnew 2p','O3Abs (ICF)','O3Abs 2p','O3Abs sug.'},...
                      11,{'d','d','d','.4f','.4f','.4f'},{sprintf('OSC < %.2f DU',osc_range),'All OSC range'})
-
+%%
 % suggested
 o3r= (inst1_b(:,8)-ETC_SUG(1).NEW)./(A1_old*inst1_b(:,3)*10);
 inst1_b(:,10)=o3r;
@@ -345,15 +427,28 @@ save(Cal.file_save,'-APPEND','etc');
 %% Final Period
 close all
 finaldays=Cal.calibration_days{Cal.n_inst,3};
+    fialdays=[ 175   176   177   178   179]
+% %% filter correction
+% % Si queremos eliminar algun filtro CORREGIR a NaN
+  F_corr{Cal.n_inst}=[0,0,0,NaN,0,0]
+  for ii=[Cal.n_ref Cal.n_inst]
+          [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
+     summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
+  end
+
+ozone_filter_analysis_mi(summary,Cal);
 
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
 jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
       diaj2(summary{Cal.n_inst}(:,1))<finaldays(end)); 
 inst2=summary{Cal.n_inst}(jday & jlim ,:);
 
+
+
+
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1); A1_new=unique(A1(~isnan(A1)))
-osc_range=.8;
+osc_range=1;
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 5,osc_range,0.03,finaldays);
 tableform({'ETCorig','ETCnew 1p','ETCnew 2p','O3Abs (ICF)','O3Abs 2p','O3Abs dsp'},...
