@@ -111,17 +111,23 @@ summary_orig=summary; summary_orig_old=summary_old;
 save(Cal.file_save,'-append','A','ETC','SL_B','SL_R','F_corr','SL_corr_flag','cfg','summary_orig','summary_orig_old','summary','summary_old')
 
 
+%% Debug
 
+% id_out=find(diajul(summary{Cal.brw==66}(:,1))>201.39 & diajul(summary{Cal.brw==66}(:,1))<201.41);
+% disp(unique(diaj(summary{Cal.brw==66}(id_out,1))));
+% summary{Cal.brw==66}(id_out,:)=[]; summary_old{Cal.brw==66}(id_out,:)=[];
+% 
+% id_out=find(diajul(summary{Cal.brw==66}(:,1))>208.41 & diajul(summary{Cal.brw==66}(:,1))<208.46);
+% disp(unique(diaj(summary{Cal.brw==66}(id_out,1))));
+% summary{Cal.brw==66}(id_out,:)=[]; summary_old{Cal.brw==66}(id_out,:)=[]; 
 
-%%
-blind_calibration_days
-
+summary_orig=summary; summary_orig_old=summary_old;
+save(Cal.file_save);
 
 %% Blinddays
-close all
+blind_calibration_days
 
-
-%%
+%%  SL_Blind table
 sl_old_idx=zeros(size(sl_sum_old,1),size(sl_sum_old,2));
 for ii=1:Cal.n_brw
     %if ii==3
@@ -147,7 +153,9 @@ h=boxplot(matadd(sl_old(:,2:end),-Cal.SL_OLD_REF'),'labels',Cal.brw_str);
 set(gca,'YLim',[-100 100]); set(findobj(gca,'Type','text'),'FontSize',11); 
 set(h,'LineWidth',2);  
 grid; box on; hline([-10 10],'-r');
-ylabel('R6 units','FontSize',11); title({Cal.campaign,' SL - SL ref (Original constants)'},'FontSize',11);
+xlabel('Brw number')
+ylabel('R6 units','FontSize',11);
+title({Cal.campaign,' SL - SL ref (Original constants)'},'FontSize',11);
 
 subplot(5,1,3:5)
 patch([min(diaj(sl_old(:,1)))-1 max(diaj(sl_old(:,1)))+1 max(diaj(sl_old(:,1)))+1 min(diaj(sl_old(:,1)))-1],...
@@ -156,86 +164,75 @@ patch([min(diaj(sl_old(:,1)))-1 max(diaj(sl_old(:,1)))+1 max(diaj(sl_old(:,1)))+
 h=ploty([diaj(sl_old(:,1)),matadd(sl_old(:,2:end),-Cal.SL_OLD_REF')]); set(h,'LineWidth',2);  
 set(gca,'XLim',[min(diaj(sl_old(:,1)))-1.02,max(diaj(sl_old(:,1)))+1.02],'FontSize',12,'YLim',[-150 125]); grid; box on
 %set(h([1 5 6]),'LineWidth',3);
-legendflex(h,Cal.brw_name,'fontsize',7,'xscale',0.5,'anchor',[3 3],'buffer',[53 20]);
+legendflex(h,Cal.brw_name,'fontsize',7,'xscale',0.5,'anchor',[3 3],'buffer',[-10 -10]);
 % lg=legend(h,Cal.brw_name,'Location','SouthEast'); set(lg,'FontSize',7);interactivelegend(h); 
 ylabel('R6 [log_{10}(cnts/s)*10^4]'); xlabel('Day of year'); 
 % title({Cal.campaign,' SL - SL ref (Blind days)'});
 
+%
+printfiles_report(maxf(findobj('Tag','SL_blind')),Cal.dir_figs,'Width',21,'Height',18,'Format','jpeg');
+
 %%
-printfiles_report(findobj('Tag','SL_blind'),Cal.dir_figs,'Width',15,'Height',12,'Format','jpeg');
 close all
 
 %% Finaldays
-close all
-sl_new_idx=zeros(size(sl_sum_new,1),size(sl_sum_new,2));
-% La l?nea que sigue es debida al foll?n que hay con la calibraci?n: en la matriz 
-% (que es la que aparece en el setup, se usan nuevos TC's, pero se mantienen los 
-% originales en la calibraci?n final, icf20014.156)
-sl_sum_new(:,5)=sl_sum_old(:,5);
-for ii=1:Cal.n_brw
-    [t,l]=ismember(diaj(sl_sum_new(:,1)),Cal.calibration_days{ii,3});
-    sl_new_idx(t,ii+1)=1;
-end
-sl_new=sl_sum_new; sl_new(sl_new_idx==0)=NaN; sl_new(:,1)=sl_sum_new(:,1);
-
-table_final_sl=array2table([Cal.brw',Cal.SL_NEW_REF,nanmean(sl_new(:,2:end))',Cal.SL_NEW_REF-nanmean(sl_new(:,2:end))'],...
-'VariableNames',{'brw','SL_NEW_REF','meanSL','Diff'})
-
-figure;  set(gcf,'Tag','SL_final');
-% figure; set(gcf,'Tag','SLDiff_final')
-subplot(5,1,1:2)
-h=boxplot(matadd(sl_new(:,2:end),-Cal.SL_NEW_REF'),'labels',Cal.brw_str);
-set(gca,'YLim',[-10 20]); set(findobj(gca,'Type','text'),'FontSize',11); set(h,'LineWidth',2);  
-grid; box on; hline([-5 5],'-r');
-ylabel('R6 units','FontSize',11); title({Cal.campaign,' SL - SL ref (Final constants)'},'FontSize',11);
-
-subplot(5,1,3:5)
-patch([min(diaj(sl_new(:,1)))-1 max(diaj(sl_new(:,1)))+1 max(diaj(sl_new(:,1)))+1 min(diaj(sl_new(:,1)))-1],...
-     [repmat( -5,1,2) repmat( 5,1,2)], ...
-     [.973,.973,.973],'LineStyle',':'); hold on;
-h=ploty([diaj(sl_new(:,1)),matadd(sl_new(:,2:end),-Cal.SL_NEW_REF')]); set(h,'LineWidth',2);   
-set(gca,'XLim',[min(diaj(sl_new(:,1)))-1.02,max(diaj(sl_new(:,1)))+1.02],'FontSize',11); grid; box on
-legendflex(h,Cal.brw_name,'fontsize',7,'xscale',0.5,'anchor',[3 3],'buffer',[53 20]);
-ylabel('R6 [log_{10}(cnts/s)*10^4]'); xlabel('Day of year'); 
-
-%%
-printfiles_report(findobj('Tag','SL_final'),Cal.dir_figs,'Width',15,'Height',12,'Format','png');
-% printfiles_report(findobj('Tag','SLDiff_final'),Cal.dir_figs,'Width',13,'Height',5);
-close all
-
-%%
-close all
-[A,ETC,SL_B,SL_R,F_corr,SL_corr_flag,cfg]=read_cal_config_new(config,Cal,{sl_s,sl_s_n});
-
-for i=1:Cal.n_brw
-      cal{i}={}; summary{i}={}; summary_old{i}={};
-     [cal{i},summary{i},summary_old{i}]=test_recalculation(Cal,i,ozone_ds,A,SL_R,SL_B,'flag_sl',1);
-end
-
-save(Cal.file_save,'-append','A','ETC','SL_B','SL_R','F_corr','SL_corr_flag','cfg')
-
-% id_out=find(diajul(summary{Cal.brw==66}(:,1))>201.39 & diajul(summary{Cal.brw==66}(:,1))<201.41);
-% disp(unique(diaj(summary{Cal.brw==66}(id_out,1))));
-% summary{Cal.brw==66}(id_out,:)=[]; summary_old{Cal.brw==66}(id_out,:)=[];
+% close all
+% sl_new_idx=zeros(size(sl_sum_new,1),size(sl_sum_new,2));
+% % La l?nea que sigue es debida al foll?n que hay con la calibraci?n: en la matriz 
+% % (que es la que aparece en el setup, se usan nuevos TC's, pero se mantienen los 
+% % originales en la calibraci?n final, icf20014.156)
+% sl_sum_new(:,5)=sl_sum_old(:,5);
+% for ii=1:Cal.n_brw
+%     [t,l]=ismember(diaj(sl_sum_new(:,1)),Cal.calibration_days{ii,3});
+%     sl_new_idx(t,ii+1)=1;
+% end
+% sl_new=sl_sum_new; sl_new(sl_new_idx==0)=NaN; sl_new(:,1)=sl_sum_new(:,1);
 % 
-% id_out=find(diajul(summary{Cal.brw==66}(:,1))>208.41 & diajul(summary{Cal.brw==66}(:,1))<208.46);
-% disp(unique(diaj(summary{Cal.brw==66}(id_out,1))));
-% summary{Cal.brw==66}(id_out,:)=[]; summary_old{Cal.brw==66}(id_out,:)=[]; 
+% table_final_sl=array2table([Cal.brw',Cal.SL_NEW_REF,nanmean(sl_new(:,2:end))',Cal.SL_NEW_REF-nanmean(sl_new(:,2:end))'],...
+% 'VariableNames',{'brw','SL_NEW_REF','meanSL','Diff'})
+% 
+% figure;  set(gcf,'Tag','SL_final');
+% % figure; set(gcf,'Tag','SLDiff_final')
+% subplot(5,1,1:2)
+% h=boxplot(matadd(sl_new(:,2:end),-Cal.SL_NEW_REF'),'labels',Cal.brw_str);
+% set(gca,'YLim',[-10 20]); set(findobj(gca,'Type','text'),'FontSize',11); set(h,'LineWidth',2);  
+% grid; box on; hline([-5 5],'-r');
+% ylabel('R6 units','FontSize',11); title({Cal.campaign,' SL - SL ref (Final constants)'},'FontSize',11);
+% 
+% subplot(5,1,3:5)
+% patch([min(diaj(sl_new(:,1)))-1 max(diaj(sl_new(:,1)))+1 max(diaj(sl_new(:,1)))+1 min(diaj(sl_new(:,1)))-1],...
+%      [repmat( -5,1,2) repmat( 5,1,2)], ...
+%      [.973,.973,.973],'LineStyle',':'); hold on;
+% h=ploty([diaj(sl_new(:,1)),matadd(sl_new(:,2:end),-Cal.SL_NEW_REF')]); set(h,'LineWidth',2);   
+% set(gca,'XLim',[min(diaj(sl_new(:,1)))-1.02,max(diaj(sl_new(:,1)))+1.02],'FontSize',11); grid; box on
+% legendflex(h,Cal.brw_name,'fontsize',7,'xscale',0.5,'anchor',[3 3],'buffer',[53 20]);
+% ylabel('R6 [log_{10}(cnts/s)*10^4]'); xlabel('Day of year'); 
+% 
+% %%
+% printfiles_report(findobj('Tag','SL_final'),Cal.dir_figs,'Width',15,'Height',12,'Format','png');
+% % printfiles_report(findobj('Tag','SLDiff_final'),Cal.dir_figs,'Width',13,'Height',5);
+% close all
 
-summary_orig=summary; summary_orig_old=summary_old;
-save(Cal.file_save);
 
 %% Oveview of campaign
 close all
-figure; p(1)=plot(summary{2}(diaj(summary{2}(:,1))>day0,1),summary{2}(diaj(summary{2}(:,1))>day0,6),'xk','MarkerSize',5); hold on
-        p(2)=plot(summary{17}(diaj(summary{17}(:,1))>day0,1),summary{17}(diaj(summary{17}(:,1))>day0,6),'or','MarkerSize',5); 
-        p(3)=plot(summary{16}(diaj(summary{16}(:,1))>day0,1),summary{16}(diaj(summary{16}(:,1))>day0,6),'sg','MarkerSize',5);
-set(gca,'YLim',[300 360],'XLim',datenum(Cal.Date.cal_year,1,[day0 dayend])); 
+figure;
+n_maint=find(Cal.no_maint)'
+ii=1
+
+for ii=1:6
+  jj=n_maint(ii);  
+  p(ii)=plot(summary{jj}(diaj(summary{jj}(:,1))>day0,1),summary{jj}(diaj(summary{jj}(:,1))>day0,6),Cal.plt{jj},'MarkerSize',5); hold on
+  
+end
+
+
+set(gca,'YLim',[275 350],'XLim',datenum(Cal.Date.cal_year,1,[day0 dayend])); 
 
 title(Cal.campaign,'FontSize',12); ylabel('Total Ozone Content [DU]','FontSize',12); 
 datetick('x',6,'KeepLimits','KeepTicks');
-grid; legendflex(p,Cal.brw_name([2 17 16]),'anchor',{'se','se'},'buffer',[-5 5],...
-                                         'nrow',1,'fontsize',8,'xscale',.5);
+grid; legendflex(p,Cal.brw_name(n_maint),'anchor',{'ne','ne'},'buffer',[-15 -15],...
+                                         'nrow',1,'fontsize',18,'xscale',.5);
 
 %%
 printfiles_report(gcf,Cal.dir_figs,'aux_pattern',{'overview'},'Width',13,'Height',6.5,'Format','png');
