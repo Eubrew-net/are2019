@@ -48,11 +48,11 @@ if ~isnan(sl_rw)
     disp(sprintf('  NEW MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{1}.new(7,[1 3 2 4])));
     
     %%
-    makeHtmlTable([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],...
-        {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4);
+    makeHtml_Table([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],...
+        {'slit#2','slit#3','slit#4','slit#5','slit#6','R5','R6'},{'a','a SE','b','b SE'},[],4)
     
     %%
-    makeHtmlTable(NTC{1});
+    makeHtml_Table(NTC{1})
 else
     Fr=NaN*ones(1,9);
     ajuste{1}.orig=NaN*ones(7,4);
@@ -100,7 +100,7 @@ end
 % set(ylb,'Position',pos);
 
 [NTC{2},ajuste{2},Args{2},Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,...
-                       'date_range',datenum(Cal.Date.cal_year,5,1),'intensity_flag',0);   % two years before calibration
+                       'date_range',datenum(Cal.Date.cal_year,1,1),'intensity_flag',1);   % two years before calibration
                         %'date_range',datenum(Cal.Date.cal_year,1,[1,Cal.calibration_days{Cal.n_inst,1}(1)]));
                         %this year data
                         % ,'temp_flag',[0 30]
@@ -122,9 +122,12 @@ temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
 
 %  Check changes 
  clear year;
-clear year;
+
+[NTCx,ajustex,Argsx,Fraw,Fnew]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
+                                'N_TC',NTC{1},'date_range',datenum(Cal.Date.cal_year,1,1)); 
+ 
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
-                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
+                                'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year,1,1));
 
 Forigx=Forig; Fn=Fnew;
 
