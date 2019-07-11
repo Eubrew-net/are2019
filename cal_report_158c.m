@@ -207,7 +207,7 @@ close all
 
 %% filter correction
 % Si queremos eliminar algun filtro CORREGIR a NaN
-%F_corr{Cal.n_inst}=[0,0,0,13,0,0]
+F_corr{Cal.n_inst}=[0,0,0,13,0,0]
 for ii=[Cal.n_ref Cal.n_inst]
    [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
    summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
@@ -355,6 +355,15 @@ save(Cal.file_save,'-APPEND','etc');
 
 %% Final Period
 close all
+
+%% filter correction
+% Si queremos eliminar algun filtro CORREGIR a NaN
+%  F_corr{Cal.n_inst}=[0,0,0,-13,0,0]
+%  for ii=[Cal.n_ref Cal.n_inst]
+%          [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
+%     summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
+%  end
+
 finaldays=Cal.calibration_days{Cal.n_inst,3};
 
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
@@ -364,8 +373,9 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
+A1_new=0.3435
 osc_range=1;
-A1_new=0.3431
+%A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
                                                                 10,osc_range,0.03,finaldays);
 hidx=ismember(Cal.Date.CALC_DAYS,finaldays);
