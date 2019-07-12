@@ -104,22 +104,28 @@ for ii=[Cal.n_ref,Cal.n_inst]
     if ii==Cal.n_inst
 % old instrumental constants
       [sl_mov_o{ii},sl_median_o{ii},sl_out_o{ii},R6_o{ii}]=sl_report_jday(ii,sl,Cal.brw_str,...
-                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,2}([1 end])),...
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s Old constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
-                  nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
-                  nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
+                  nanmedian(R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)),...
+                  nanstd(   R6_o{ii}(diajul(R6_o{ii}(:,1))>=Cal.calibration_days{ii,2}(1),2)));
 % new instrumental constants
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
-                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,3}([1 end])),...
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                                'outlier_flag',0,'hgflag',1,'fplot',1);
       fprintf('%s New constants: %5.0f +/-%5.1f\n',Cal.brw_name{ii},...
                   nanmedian(R6_n{ii}(diajul(R6_n{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)),...
                   nanstd(   R6_n{ii}(diajul(R6_n{ii}(:,1))>=Cal.calibration_days{ii,3}(1),2)));
     else
+        
+      [sl_mov_o{ii},sl_median_o{ii},sl_out_o{ii},R6_o{ii}]=sl_report_jday(ii,sl,Cal.brw_str,...
+                               'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
+                               'outlier_flag',0,'fplot',0);  
+        
       [sl_mov_n{ii},sl_median_n{ii},sl_out_n{ii},R6_n{ii}]=sl_report_jday(ii,sl_cr,Cal.brw_str,...
                                'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                                'outlier_flag',0,'fplot',0);
+   
     end
     catch exception
           fprintf('%s, brewer: %s\n',exception.message,Cal.brw_str{ii});
@@ -207,7 +213,7 @@ close all
 
 %% filter correction
 % Si queremos eliminar algun filtro CORREGIR a NaN
-F_corr{Cal.n_inst}=[0,0,0,13,0,0]
+%F_corr{Cal.n_inst}=[0,0,0,-13,0,0]
 for ii=[Cal.n_ref Cal.n_inst]
    [summary_old_corr summary_corr]=filter_corr(summary_orig,summary_orig_old,ii,A,F_corr{ii});
    summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
@@ -244,24 +250,43 @@ close all
 blinddays=Cal.calibration_days{Cal.n_inst,2};
 
 jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
-inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
+inst1_b=summary_orig_old{Cal.n_inst}(jday,:); % no filter correction
+%inst1_b=summary_old{Cal.n_inst}(jday,:);
+% nan en blind days
 
 if ~Cal.no_maint(Cal.n_inst)     % if the instrument has changed due to maintenance
     
     [x,r,rp,ra,dat,ox,osc_smooth_ini]=ratio_min_ozone(...
         inst1_b(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config
-    [x,r,rp,ra,dat,ox,osc_smooth_inisl]=ratio_min_ozone(...
+        5,brw_str{n_inst},brw_str{n_inst},'plot_flag',0);% original config
+  
+    % remove outliers
+    jout=find(isoutlier(r(:,2),'gesd' ))
+    jout=find(ismember(fix(summary_orig_old{Cal.n_inst}(:,1)*10000),fix(r(jout,1)*10000)))
+    summary_orig_old{Cal.n_inst}(jout,:)=[];
+    % ojo revisar los NaN
+    %summary_old{Cal.n_inst}(any(isnan( summary_old{Cal.n_inst})')',:)=[];
+    
+    
+    
+    jday=findm(diaj(summary_orig_old{Cal.n_inst}(:,1)),blinddays,0.5);
+    inst1_b=summary_orig_old{Cal.n_inst}(jday,:);
+    
+      [x,r,rp,ra,dat,ox,osc_smooth_inisl]=ratio_min_ozone(...
         inst1_b(:,[1,12,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config , sl corrected
+     [x,r,rp,ra,dat,ox,osc_smooth_ini]=ratio_min_ozone(...
+        inst1_b(:,[1,6,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+        5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);% original config
+  
     
     %% Sugerido con los blind_days
     A1=A.old(ismember(Cal.Date.CALC_DAYS,blinddays),Cal.n_inst+1);
     A1_old=unique(A1(~isnan(A1)))
-    osc_range=0.9
+    osc_range=0.7
     %A1_old=0.3390
-    [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_old,A1_old,...
-        Cal.n_inst,n_ref,4,osc_range,0.01,blinddays);
+    [ETC_SUG,o3c_SUG,m_etc_SUG]=ETC_calibration_C(Cal,summary_orig_old,A1_old,...
+        Cal.n_inst,n_ref,10,osc_range,0.03,blinddays);
     
     data_tabl=[nanmean(ETC.old(:,n_inst+1)),round([ETC_SUG(1).NEW,ETC_SUG(1).TP(1)]),...
         nanmean(A.old(:,n_inst+1)),ETC_SUG(1).TP(2)/10000,A1_old
@@ -364,7 +389,9 @@ close all
 %     summary_old{ii}=summary_old_corr; summary{ii}=summary_corr;
 %  end
 
-finaldays=Cal.calibration_days{Cal.n_inst,3};
+finaldays=Cal.calibration_days{Cal.n_inst,3}; % no change
+finaldays(finaldays==173)=[]
+finaldays(finaldays==172)=[]
 
 jday=ismember(diaj(summary{Cal.n_inst}(:,1)),fix(finaldays));
 jlim=(diaj2(summary{Cal.n_inst}(:,1))>finaldays(1) & ...    % 2st set the limits
@@ -373,7 +400,7 @@ inst2=summary{Cal.n_inst}(jday & jlim ,:);
 %%
 A1=A.new(ismember(Cal.Date.CALC_DAYS,finaldays),Cal.n_inst+1);
 A1_new=unique(A1(~isnan(A1)))
-A1_new=0.3435
+%A1_new=0.3435
 osc_range=1;
 %A1_new=0.3431
 [ETC_NEW,o3c_NEW,m_etc_NEW]=ETC_calibration_C(Cal,summary,A1_new,n_inst,n_ref,...
@@ -393,12 +420,12 @@ latexcmd(fullfile(['>',Cal.file_latex],['cal_etc_',brw_str{n_inst}]),'\ETCfin',n
 etc{Cal.n_inst}.new=ETC_NEW;
 save(Cal.file_save,'-APPEND','etc');
 
-%% TEST NEW CONFIG
-  o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
-  inst2(:,10)=o3r;
-      [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
-         inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
-         5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
+% %% TEST NEW CONFIG
+%   o3r= (inst2(:,8)-ETC_NEW(1).NEW)./(A1_new*inst2(:,3)*10);
+%   inst2(:,10)=o3r;
+%       [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
+%          inst2(:,[1,10,3,2,8,9,4,5]),ref(:,[1,6,3,2,8,9,4,5]),...
+%          5,brw_str{n_inst},brw_str{n_ref},'plot_flag',0);
 
  %% FINAL CONFIG   
     [x,r,rp,ra,dat,ox,osc_smooth_fin]=ratio_min_ozone(...
