@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_172a2</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-25"><meta name="DC.source" content="cal_report_172a2.m"><style type="text/css">
+      --><title>cal_report_172a2</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-10-22"><meta name="DC.source" content="cal_report_172a2.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Setup</a></li><li><a href="#3">configuration files</a></li><li><a href="#4">Temperature dependence.  During campaign</a></li><li><a href="#9">Check previous results</a></li><li><a href="#10">SL summary from bfiles temperature</a></li><li><a href="#13">Check changes</a></li><li><a href="#15">Latex stuff</a></li><li><a href="#16">Filter attenuation</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','172','html'); options_pub.showCode=true;</span>
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Brewer Setup</a></li><li><a href="#3">configuration files</a></li><li><a href="#4">Temperature dependence.  During campaign</a></li><li><a href="#9">Check previous results</a></li><li><a href="#10">SL summary from bfiles temperature</a></li><li><a href="#14">Latex stuff</a></li><li><a href="#15">Filter attenuation</a></li></ul></div><pre class="codeinput"><span class="comment">% options_pub.outputDir=fullfile(pwd,'latex','172','html'); options_pub.showCode=true;</span>
 <span class="comment">% publish(fullfile(pwd,'cal_report_172a2.m'),options_pub);</span>
 </pre><h2 id="2">Brewer Setup</h2><pre class="codeinput">clear <span class="string">all</span>;
 
@@ -89,12 +89,27 @@ mkdir(Cal.dir_figs);
 
 load(Cal.file_save,<span class="string">'temperature'</span>);
 load(Cal.file_save,<span class="string">'filter'</span>);
-</pre><pre class="codeoutput">ans =
-  1&times;1 cell array
-    {'IZO#185'}
+</pre><pre class="codeoutput">
 ans =
+
+  logical
+
+   1
+
+
+ans =
+
+  1&times;1 cell array
+
+    {'IZO#185'}
+
+
+ans =
+
   20&times;9 cell array
+
   Columns 1 through 5
+
     {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
@@ -115,27 +130,136 @@ ans =
     {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+
   Columns 6 through 9
-    {'..\005\ICF15117&#8230;'}    {'..\005\ICF15117&#8230;'}    {'1838'}    {'1838'}
+
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
-    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
     {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
-    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
-    {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'2057'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF17519&#8230;'}    {'0322'}    {'0315'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
-    {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
-    {'..\163\ICF23318&#8230;'}    {'..\163\ICF23318&#8230;'}    {'0274'}    {'0274'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF17519&#8230;'}    {'0558'}    {'0540'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
     {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
-    {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
-    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF17819&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF17819&#8230;'}    {'0605'}    {'0605'}
     {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
     {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
-    {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
-    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
-    {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
-    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17319&#8230;'}    {'0242'}    {'0242'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF17519&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF17519&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
+
+
+Cal = 
+
+  struct with fields:
+
+           path_root: '~/CODE/campaigns/are2019'
+           file_save: 'arenos_2019.mat'
+            campaign: 'Arenosillo, Huelva (Spain), Jun 27th -- June 05th, 2019'
+             Station: [1&times;1 struct]
+                Date: [1&times;1 struct]
+    calibration_days: {20&times;3 cell}
+          blind_days: {20&times;1 cell}
+          final_days: {20&times;1 cell}
+                 brw: [1&times;20 double]
+                brwM: [2 2 2 4 4 4 4 3 4 3 3 4 3 3 3 3 3 3 3 3]
+                sl_c: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+          sl_c_blind: [1 1 0 0 1 0 0 1 1 0 0 0 1 1 0 0 1 1 1 1]
+            no_maint: [0 1 0 0 0 0 0 0 0 0 1 0 0 1 1 0 1 0 0 0]
+                 plt: {1&times;20 cell}
+               n_brw: 20
+            brw_name: {1&times;20 cell}
+             brw_str: {1&times;20 cell}
+               Tsync: 3.5
+          brewer_ref: 15
+               n_ref: [15 15]
+              events: {1&times;19 cell}
+            events_n: {1&times;19 cell}
+         events_text: {1&times;19 cell}
+          events_raw: {1&times;19 cell}
+     incidences_text: {1&times;19 cell}
+               ETC_C: {20&times;1 cell}
+
+
+check =
+
+  20&times;10 cell array
+
+  Columns 1 through 5
+
+    {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
+    {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
+    {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
+    {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
+    {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
+    {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
+    {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
+    {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
+    {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
+    {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
+    {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
+    {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
+    {'CAN#190'}    {[190]}    {[3]}    {[0]}    {'190'}
+    {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
+    {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
+    {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+
+  Columns 6 through 9
+
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
+    {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
+    {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
+    {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'2057'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF17519&#8230;'}    {'0322'}    {'0315'}
+    {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF17519&#8230;'}    {'0558'}    {'0540'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF17819&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF17819&#8230;'}    {'0605'}    {'0605'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
+    {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF17519&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF17519&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
+
+  Column 10
+
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>;
 
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
@@ -149,7 +273,7 @@ NTC={}; tabla_regress={}; ajuste={}; Args={};
 </pre><h2 id="4">Temperature dependence.  During campaign</h2><pre class="codeinput">[sl_rw,tc]=readb_sl_rawl(fullfile(<span class="string">'.'</span>,<span class="string">'bfiles'</span>,[<span class="string">'B*.'</span>,Cal.brw_str{Cal.n_inst}]));<span class="comment">% cambio nombres para poder seguir</span>
 
 <span class="keyword">if</span> ~isnan(sl_rw)
-</pre><pre class="codeinput">    [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,<span class="string">'outlier_flag'</span>,0,<span class="keyword">...</span>
+</pre><pre class="codeinput">    [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,<span class="string">'outlier_flag'</span>,1,<span class="keyword">...</span>
         <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])));
 
     disp(sprintf(<span class="string">' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  '</span>,ajuste{1}.orig(7,[1 3 2 4])));
@@ -163,22 +287,22 @@ List of arguments given default values:
    'TCB'    defaults to []
    'N_TC'    defaults to []
 --------------------------------------
- ORIG MS9:   433 +/- 1  0.2 +/- 0.03  
-  NEW MS9:   433 +/- 2  0.9 +/- 0.07  
-</pre><img vspace="5" hspace="5" src="cal_report_172a2_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_04.png" alt=""> <pre class="codeinput">    makeHtmlTable([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],<span class="keyword">...</span>
+ ORIG MS9:   432 +/- 1  0.2 +/- 0.02  
+  NEW MS9:   433 +/- 2  0.4 +/- 0.06  
+</pre><img vspace="5" hspace="5" src="cal_report_172a2_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_05.png" alt=""> <pre class="codeinput">    makeHtmlTable([ajuste{1}.cero(:,[1 3]) ajuste{1}.cero(:,[2 4])],[],<span class="keyword">...</span>
         {<span class="string">'slit#2'</span>,<span class="string">'slit#3'</span>,<span class="string">'slit#4'</span>,<span class="string">'slit#5'</span>,<span class="string">'slit#6'</span>,<span class="string">'R5'</span>,<span class="string">'R6'</span>},{<span class="string">'a'</span>,<span class="string">'a SE'</span>,<span class="string">'b'</span>,<span class="string">'b SE'</span>},[],4);
 </pre><table border="1" cellpadding="4" cellspacing="0">
 <tr><td></td><td>a</td><td>a SE</td><td>b</td><td>b SE</td></tr>
-<tr><td>slit#2</td><td>6.008e+04</td><td>28.79</td><td>-5.119</td><td>1.15</td></tr>
-<tr><td>slit#3</td><td>6.069e+04</td><td>29.39</td><td>-5.363</td><td>1.174</td></tr>
-<tr><td>slit#4</td><td>6.153e+04</td><td>29.46</td><td>-5.506</td><td>1.177</td></tr>
-<tr><td>slit#5</td><td>6.199e+04</td><td>28.27</td><td>-5.371</td><td>1.129</td></tr>
-<tr><td>slit#6</td><td>6.236e+04</td><td>27.49</td><td>-4.831</td><td>1.098</td></tr>
-<tr><td>R5</td><td>705.3</td><td>3.288</td><td>-0.6637</td><td>0.1313</td></tr>
-<tr><td>R6</td><td>433.2</td><td>1.825</td><td>-0.2343</td><td>0.07288</td></tr>
+<tr><td>slit#2</td><td>5.997e+04</td><td>43.4</td><td>1.704</td><td>1.69</td></tr>
+<tr><td>slit#3</td><td>6.058e+04</td><td>43.32</td><td>1.26</td><td>1.687</td></tr>
+<tr><td>slit#4</td><td>6.142e+04</td><td>42.58</td><td>1.369</td><td>1.659</td></tr>
+<tr><td>slit#5</td><td>6.188e+04</td><td>41.63</td><td>1.445</td><td>1.622</td></tr>
+<tr><td>slit#6</td><td>6.225e+04</td><td>40.85</td><td>1.8</td><td>1.591</td></tr>
+<tr><td>R5</td><td>704.2</td><td>2.726</td><td>-0.6284</td><td>0.1063</td></tr>
+<tr><td>R6</td><td>432.7</td><td>1.577</td><td>-0.2097</td><td>0.06151</td></tr>
 </table><pre class="codeinput">    makeHtmlTable(NTC{1});
 </pre><table border="1" cellpadding="4" cellspacing="0">
-<tr><td>0</td><td>0.2</td><td>0.4</td><td>0.3</td><td>-0.3</td></tr>
+<tr><td>0</td><td>0.4</td><td>0.3</td><td>0.3</td><td>-0.1</td></tr>
 </table><pre class="codeinput"><span class="keyword">else</span>
     Fr=NaN*ones(1,9);
     ajuste{1}.orig=NaN*ones(7,4);
@@ -186,7 +310,7 @@ List of arguments given default values:
     ajuste{1}.new=NaN*ones(7,4);
 
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">processing sl files: 12%     [.         ]Dot indexing is not supported for variables of this typ100%    [..........] sl raw done
+</pre><pre class="codeoutput">processing sl files: 8%      [          ]Dot indexing is not supported for variables of this typ100%    [..........] sl raw done
 </pre><h2 id="9">Check previous results</h2><pre class="codeinput"><span class="keyword">if</span> exist(<span class="string">'sl_raw'</span>,<span class="string">'var'</span>)
     <span class="keyword">if</span> iscell(sl_raw) &amp;&amp; size(sl_raw,2)&gt;=Cal.n_inst
         <span class="keyword">if</span> isempty(sl_raw{Cal.n_inst})
@@ -225,28 +349,31 @@ List of arguments given default values:
 --------------------------------------
  ORIG MS9:   435 +/- 0  0.1 +/- 0.00  
   NEW MS9:   429 +/- 0  -0.0 +/- 0.01  
-</pre><img vspace="5" hspace="5" src="cal_report_172a2_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_09.png" alt=""> <pre class="codeinput">tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],<span class="keyword">...</span>
+</pre><img vspace="5" hspace="5" src="cal_report_172a2_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_10.png" alt=""> <pre class="codeinput">tc_reg_table=makeHtml_Table([ajuste{2}.cero(:,[1 3]) ajuste{2}.cero(:,[2 4])],[],<span class="keyword">...</span>
         {<span class="string">'slit#2'</span>,<span class="string">'slit#3'</span>,<span class="string">'slit#4'</span>,<span class="string">'slit#5'</span>,<span class="string">'slit#6'</span>,<span class="string">'R5'</span>,<span class="string">'R6'</span>},{<span class="string">'a'</span>,<span class="string">'a SE'</span>,<span class="string">'b'</span>,<span class="string">'b SE'</span>},[],4)
 temperature{Cal.n_inst}.regression_table=tc_reg_table;
-</pre><pre class="codeoutput">tc_reg_table =
+</pre><pre class="codeoutput">
+tc_reg_table =
+
   7&times;4 table
-                a         aSE           b            bSE   
-              ______    ________    __________    _________
-    slit_2     61078     0.22231       0.22134     0.010871
-    slit_3     61671     0.13025      0.014358     0.006371
-    slit_4     62506    0.080735    0.00071269    0.0039493
-    slit_5     62964     0.12861      -0.17251    0.0062904
-    slit_6     63337     0.20238     -0.062173    0.0098953
-    R5        691.91     0.45042      -0.75584     0.022034
-    R6        429.27     0.25243      -0.30069     0.012349
+
+                a         aSE          b           bSE   
+              ______    _______    _________    _________
+
+    slit_2     61067    0.21471      0.21529      0.01046
+    slit_3     61661    0.12604     0.010215    0.0061419
+    slit_4     62495    0.07841    0.0022749    0.0038214
+    slit_5     62953     0.1245     -0.17019    0.0060667
+    slit_6     63326    0.19555    -0.056336    0.0095253
+    R5        691.86    0.43767     -0.75814      0.02133
+    R6        429.24    0.24545     -0.29998     0.011963
+
 </pre><pre class="codeinput">tc_coeff_table=makeHtml_Table(NTC{2})
 temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
-</pre><pre class="codeoutput">tc_coeff_table =
-  1&times;5 table
-    M1     M2       M3       M4       M5  
-    __    _____    _____    _____    _____
-    0     0.207    0.221    0.394    0.284
-</pre><h2 id="13">Check changes</h2><pre class="codeinput">[NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},<span class="string">'outlier_flag'</span>,1,<span class="string">'plots'</span>,0,<span class="keyword">...</span>
+
+<span class="comment">%  Check changes</span>
+ clear <span class="string">year</span>;
+[NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},<span class="string">'outlier_flag'</span>,1,<span class="string">'plots'</span>,0,<span class="keyword">...</span>
                                 <span class="string">'N_TC'</span>,TCorig(1:5)',<span class="string">'date_range'</span>,datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
 
 Forigx=Forig; Fn=Fnew;
@@ -275,14 +402,24 @@ lg=legend(<span class="string">'Old temperature coeff'</span>,<span class="strin
 set(lg,<span class="string">'HandleVisibility'</span>,<span class="string">'Off'</span>); set(findobj(lg,<span class="string">'Type'</span>,<span class="string">'text'</span>),<span class="string">'FontSize'</span>,7,<span class="string">'HandleVisibility'</span>,<span class="string">'Off'</span>);
 title([<span class="string">'R6 Temperature dependence Brewer#'</span>, Cal.brw_str{Cal.n_inst}]);
 ylabel(<span class="string">'Standard Lamp R6 ratio'</span>); xlabel(<span class="string">'Temperature'</span>); set(gca,<span class="string">'Box'</span>,<span class="string">'On'</span>);
-</pre><pre class="codeoutput">--------- Validation OK --------------
+</pre><pre class="codeoutput">
+tc_coeff_table =
+
+  1&times;5 table
+
+    M1     M2       M3       M4       M5  
+    __    _____    _____    _____    _____
+
+    0     0.205    0.213    0.385    0.272
+
+--------- Validation OK --------------
 List of arguments given default values:
    'plot_flag'    defaults to 0
    'intensity_flag'    defaults to 0
    'temp_flag'    defaults to []
    'TCB'    defaults to []
 --------------------------------------
-</pre><img vspace="5" hspace="5" src="cal_report_172a2_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_11.png" alt=""> <p>ix=sort(findobj('tag','TEMP_COEF_DESC')); printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',15,'Height',7,'LockAxes',0,'no_export');</p><pre class="codeinput"><span class="comment">% ix=sort(findobj('tag','TEMP_day_new'));</span>
+</pre><img vspace="5" hspace="5" src="cal_report_172a2_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_12.png" alt=""> <p>ix=sort(findobj('tag','TEMP_COEF_DESC')); printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',15,'Height',7,'LockAxes',0,'no_export');</p><pre class="codeinput"><span class="comment">% ix=sort(findobj('tag','TEMP_day_new'));</span>
 <span class="comment">% printfiles_report(ix',Cal.dir_figs,'aux_pattern',ix,'Width',14,'Height',9,'LockAxes',0,'no_export');</span>
 
 ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'TEMP_OLD_VS_NEW'</span>));
@@ -295,18 +432,33 @@ ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'TEMP_COM
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'Width'</span>,12.5,<span class="string">'Height'</span>,6.5);
 
 close <span class="string">all</span>
-</pre><pre class="codeoutput">naux =
+</pre><pre class="codeoutput">
+naux =
+
      1
+
+
 figura =
+
     '172_figures_TEMP_OLD_VS_NEW_1'
+
+
 naux =
+
      2
+
+
 naux =
+
      1
+
+
 naux =
+
      1
-</pre><h2 id="15">Latex stuff</h2><pre class="codeinput"><span class="comment">% Temperature Range</span>
-<span class="comment">% Para que funcione asignamos la salida Fr en la llamada a la funci&yuml;n</span>
+
+</pre><h2 id="14">Latex stuff</h2><pre class="codeinput"><span class="comment">% Temperature Range</span>
+<span class="comment">% Para que funcione asignamos la salida Fr en la llamada a la funci&#65533;n</span>
 <span class="comment">% temp_coeff_raw donde se calculen los TC's (en este caso en {})</span>
 tmp=Fr(:,2);
 latexcmd(fullfile(Cal.file_latex,[<span class="string">'cal_tempcoeff_'</span>,Cal.brw_str{Cal.n_inst}]),<span class="keyword">...</span>
@@ -317,7 +469,7 @@ temperature{Cal.n_inst}.NTC=NTC;
 temperature{Cal.n_inst}.ajuste=ajuste;
 <span class="keyword">if</span> exist(<span class="string">'Args'</span>,<span class="string">'var'</span>)
 temperature{Cal.n_inst}.info=Args;
-<span class="keyword">else</span> warning(<span class="string">'No se est&yuml;n guardando los inputs de la funci&yuml;n!!'</span>)
+<span class="keyword">else</span> warning(<span class="string">'No se est&#65533;n guardando los inputs de la funci&#65533;n!!'</span>)
 <span class="keyword">end</span>
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'temperature'</span>);
 
@@ -354,7 +506,7 @@ tabla_regress={};
                <span class="string">'ColumnLabels'</span>,{<span class="string">'0 abscissa +/- standard error'</span>,<span class="string">'slope +/- standard error'</span>},<span class="keyword">...</span>
                <span class="string">'alignment'</span>, <span class="string">'c'</span>,<span class="string">'resize'</span>,0.8,<span class="string">'size'</span>,<span class="string">'footnotesize'</span>);
  <span class="keyword">end</span>
-</pre><h2 id="16">Filter attenuation</h2><pre class="codeinput">[ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},<span class="keyword">...</span>
+</pre><h2 id="15">Filter attenuation</h2><pre class="codeinput">[ETC_FILTER_CORRECTION,media_fi,fi,fi_avg]=filter_rep(Cal.brw_str{Cal.n_inst},<span class="keyword">...</span>
                              <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year-4,1,1),<span class="keyword">...</span>
                              <span class="string">'outlier_flag'</span>,1,<span class="string">'plot_flag'</span>,0,<span class="string">'config'</span>,config_orig(17:22));
 
@@ -396,10 +548,19 @@ matrix2latex_ctable([num2cell(media_fi);num2cell(fix(mean(media_fi)))],fullfile(
 List of arguments given default values:
    'path_to_file'    defaults to .
 --------------------------------------
-    [      -1]    [        -6]    [         -5]    [       -13]    [        0]
-    [    -2.3]    [      -7.2]    [       -4.6]    [     -11.7]    [      2.2]
-    '[-5.7 1]'    '[-11 -3.6]'    '[-8.2 -1.2]'    '[-18.1 -5]'    '[-8 12.5]'
-</pre><img vspace="5" hspace="5" src="cal_report_172a2_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_17.png" alt=""> <pre class="codeinput">fprintf(<span class="string">'\nFI''s analyzed: %d\n'</span>,NFI);
+  Columns 1 through 4
+
+    [        -3]    [          -6]    [       -5]    [         -17]
+    [      -2.5]    [        -7.5]    [     -4.5]    [       -12.4]
+    '[-5.8 0.8]'    '[-11.3 -3.7]'    '[-8 -1.2]'    '[-18.6 -5.7]'
+
+  Column 5
+
+    [          1]
+    [        1.6]
+    '[-8.1 11.6]'
+
+</pre><img vspace="5" hspace="5" src="cal_report_172a2_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172a2_18.png" alt=""> <pre class="codeinput">fprintf(<span class="string">'\nFI''s analyzed: %d\n'</span>,NFI);
 fi_mean_table=display_table([fix(media_fi);fix(mean(media_fi))],label_2,10,<span class="string">'.5g'</span>,label_1)
 filter{Cal.n_inst}.mean_table=fi_mean_table;
 <span class="comment">%</span>
@@ -410,26 +571,36 @@ filter{Cal.n_inst}.etc_table=fi_etc_table;
 
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'filter'</span>);
 </pre><pre class="codeoutput">
-FI's analyzed: 114
+FI's analyzed: 123
+
 fi_mean_table =
+
   7&times;5 table
+
               filter_1    filter_2    filter_3    filter_4    filter_5
               ________    ________    ________    ________    ________
-    slit_0      4368       10310       13933       21578       25861  
-    slit_1      4373       10290       13942       21552       25822  
-    slit_2      4382       10268       13953       21524       25786  
-    slit_3      4391       10254       13967       21501       25754  
-    slit_4      4399       10240       13979       21483       25720  
-    slit_5      4407       10231       13994       21472       25691  
-    mean        4386       10265       13961       21518       25772  
+
+    slit_0      4367       10310       13933       21578       25860  
+    slit_1      4372       10290       13943       21551       25822  
+    slit_2      4380       10269       13953       21523       25786  
+    slit_3      4390       10254       13967       21500       25752  
+    slit_4      4397       10241       13980       21481       25720  
+    slit_5      4407       10232       13995       21472       25690  
+    mean        4385       10266       13961       21517       25771  
+
+
 fi_etc_table =
+
   4&times;5 table
+
                              filter_1    filter_2    filter_3    filter_4    filter_5
                              ________    ________    ________    ________    ________
-    ETCFilt_Corr__median_         -1          -6          -5         -13           0 
-    ETCFilt_Corr__mean_       -2.344     -7.2469     -4.6151     -11.687      2.2153 
-    ETCFilt_Corr__CI_         -5.712     -11.033     -8.1678     -18.125     -8.0073 
-    ETCFilt_Corr__CI__1      0.95749     -3.5954     -1.2275     -4.9501      12.504 
+
+    ETCFilt_Corr__median_         -3          -6          -5         -17           1 
+    ETCFilt_Corr__mean_      -2.5405     -7.5119     -4.5048      -12.36      1.5779 
+    ETCFilt_Corr__CI_        -5.7612     -11.315     -7.9895      -18.63     -8.1264 
+    ETCFilt_Corr__CI__1      0.79816     -3.7397     -1.1801     -5.6597      11.574 
+
 </pre><pre class="codeinput"> figure(maxf(findobj(<span class="string">'tag'</span>,<span class="string">'FI_wavelength'</span>)));
  printfiles_report(gcf,Cal.dir_figs,<span class="string">'Width'</span>,13.5);
 
@@ -487,7 +658,7 @@ NTC={}; tabla_regress={}; ajuste={}; Args={};
 
 if ~isnan(sl_rw)
     
-    [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,'outlier_flag',0,...
+    [NTC{1},ajuste{1},Args{1},Fr]=temp_coeff_raw(config_temp,sl_rw,'outlier_flag',1,...
         'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])));
     
     disp(sprintf(' ORIG MS9: %5.0f +/-%2.0f  %3.1f +/- %3.2f  ',ajuste{1}.orig(7,[1 3 2 4])));
@@ -565,7 +736,8 @@ temperature{Cal.n_inst}.regression_table=tc_reg_table;
 tc_coeff_table=makeHtml_Table(NTC{2})
 temperature{Cal.n_inst}.coeff_table=tc_coeff_table;
 
-%%  Check changes
+%  Check changes 
+ clear year;
 [NTCx,ajustex,Argsx,Fraw,Forig]=temp_coeff_raw(config_temp,sl_raw{Cal.n_inst},'outlier_flag',1,'plots',0,...
                                 'N_TC',TCorig(1:5)','date_range',datenum(Cal.Date.cal_year-2,1,[Cal.calibration_days{Cal.n_inst,1}(1)]));
 
@@ -617,7 +789,7 @@ close all
 %% Latex stuff
 
 % Temperature Range
-% Para que funcione asignamos la salida Fr en la llamada a la funciÿn
+% Para que funcione asignamos la salida Fr en la llamada a la funci�n
 % temp_coeff_raw donde se calculen los TC's (en este caso en {})
 tmp=Fr(:,2);
 latexcmd(fullfile(Cal.file_latex,['cal_tempcoeff_',Cal.brw_str{Cal.n_inst}]),...
@@ -628,7 +800,7 @@ temperature{Cal.n_inst}.NTC=NTC;
 temperature{Cal.n_inst}.ajuste=ajuste;
 if exist('Args','var')
 temperature{Cal.n_inst}.info=Args;
-else warning('No se estÿn guardando los inputs de la funciÿn!!')
+else warning('No se est�n guardando los inputs de la funci�n!!')
 end
 save(Cal.file_save,'-APPEND','temperature');
 

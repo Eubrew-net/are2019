@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cal_report_172b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-06-26"><meta name="DC.source" content="cal_report_172b.m"><style type="text/css">
+      --><title>cal_report_172b</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-10-23"><meta name="DC.source" content="cal_report_172b.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -84,15 +84,27 @@ mkdir(Cal.dir_figs);
       fprintf(<span class="string">'Error: %s\n Initializing data for Brewer %s\n'</span>,exception.message,Cal.brw_name{Cal.n_inst});
       save(Cal.file_save);
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">ans =
+</pre><pre class="codeoutput">
+ans =
+
   logical
+
    1
+
+
 ans =
+
   1&times;1 cell array
+
     {'IZO#185'}
+
+
 ans =
+
   20&times;9 cell array
+
   Columns 1 through 5
+
     {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
     {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
     {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
@@ -113,27 +125,136 @@ ans =
     {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
     {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
     {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+
   Columns 6 through 9
+
     {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
     {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
     {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
     {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
-    {'..\075\ICF15017&#8230;'}    {'..\075\ICF15017&#8230;'}    {'1714'}    {'1714'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
     {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
-    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'1710'}
-    {'..\150\ICF15617&#8230;'}    {'..\150\ICF15617&#8230;'}    {'0322'}    {'0322'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'2057'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF17519&#8230;'}    {'0322'}    {'0315'}
     {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
-    {'..\158\ICF21218&#8230;'}    {'..\158\ICF21218&#8230;'}    {'0558'}    {'0558'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF17519&#8230;'}    {'0558'}    {'0540'}
     {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
     {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
-    {'..\172\ICF15117&#8230;'}    {'..\172\ICF15117&#8230;'}    {'0444'}    {'0444'}
-    {'..\174\ICF20718&#8230;'}    {'..\174\ICF20718&#8230;'}    {'0605'}    {'0605'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF17819&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF17819&#8230;'}    {'0605'}    {'0605'}
     {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
     {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
-    {'..\190\ICF11419&#8230;'}    {'..\190\ICF11419&#8230;'}    {'0410'}    {'0410'}
-    {'..\201\ICF14315&#8230;'}    {'..\201\ICF14315&#8230;'}    {'0320'}    {'0320'}
-    {'..\202\ICF15017&#8230;'}    {'..\202\ICF15017&#8230;'}    {'0270'}    {'0270'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF17519&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF17519&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
     {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
+
+
+Cal = 
+
+  struct with fields:
+
+           path_root: '~/CODE/campaigns/are2019'
+           file_save: 'arenos_2019.mat'
+            campaign: 'Arenosillo, Huelva (Spain), Jun 27th -- June 05th, 2019'
+             Station: [1&times;1 struct]
+                Date: [1&times;1 struct]
+    calibration_days: {20&times;3 cell}
+          blind_days: {20&times;1 cell}
+          final_days: {20&times;1 cell}
+                 brw: [1&times;20 double]
+                brwM: [2 2 2 4 4 4 4 3 4 3 3 4 3 3 3 3 3 3 3 3]
+                sl_c: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+          sl_c_blind: [1 1 0 0 1 0 0 1 1 0 0 0 1 1 0 0 1 1 1 1]
+            no_maint: [0 1 0 0 0 0 0 0 0 0 1 0 0 1 1 0 1 0 0 0]
+                 plt: {1&times;20 cell}
+               n_brw: 20
+            brw_name: {1&times;20 cell}
+             brw_str: {1&times;20 cell}
+               Tsync: 3.5
+          brewer_ref: 15
+               n_ref: [15 15]
+              events: {1&times;19 cell}
+            events_n: {1&times;19 cell}
+         events_text: {1&times;19 cell}
+          events_raw: {1&times;19 cell}
+     incidences_text: {1&times;19 cell}
+               ETC_C: {20&times;1 cell}
+
+
+check =
+
+  20&times;10 cell array
+
+  Columns 1 through 5
+
+    {'TSK#005'}    {[  5]}    {[2]}    {[0]}    {'005'}
+    {'IOS#017'}    {[ 17]}    {[2]}    {[0]}    {'017'}
+    {'SCO#033'}    {[ 33]}    {[2]}    {[0]}    {'033'}
+    {'MAD#070'}    {[ 70]}    {[4]}    {[0]}    {'070'}
+    {'UK_#075'}    {[ 75]}    {[4]}    {[0]}    {'075'}
+    {'MUR#117'}    {[117]}    {[4]}    {[0]}    {'117'}
+    {'UK_#126'}    {[126]}    {[4]}    {[0]}    {'126'}
+    {'ARE#150'}    {[150]}    {[3]}    {[0]}    {'150'}
+    {'COR#151'}    {[151]}    {[4]}    {[0]}    {'151'}
+    {'K&amp;Z#158'}    {[158]}    {[3]}    {[0]}    {'158'}
+    {'WRC#163'}    {[163]}    {[3]}    {[0]}    {'163'}
+    {'ZAR#166'}    {[166]}    {[4]}    {[0]}    {'166'}
+    {'UK_#172'}    {[172]}    {[3]}    {[0]}    {'172'}
+    {'JAP#174'}    {[174]}    {[3]}    {[0]}    {'174'}
+    {'IZO#185'}    {[185]}    {[3]}    {[0]}    {'185'}
+    {'MAD#186'}    {[186]}    {[3]}    {[0]}    {'186'}
+    {'CAN#190'}    {[190]}    {[3]}    {[0]}    {'190'}
+    {'TAM#201'}    {[201]}    {[3]}    {[0]}    {'201'}
+    {'DNK#202'}    {[202]}    {[3]}    {[0]}    {'202'}
+    {'DNK#228'}    {[228]}    {[3]}    {[0]}    {'228'}
+
+  Columns 6 through 9
+
+    {'..\005\ICF15117&#8230;'}    {'..\005\ICF17219&#8230;'}    {'1838'}    {'1838'}
+    {'..\017\ICF14919&#8230;'}    {'..\017\ICF14919&#8230;'}    {'1680'}    {'1680'}
+    {'..\033\ICF15617&#8230;'}    {'..\033\IOS15617&#8230;'}    {'2325'}    {'2325'}
+    {'..\070\ICF15617&#8230;'}    {'..\070\IOS15617&#8230;'}    {'1685'}    {'1685'}
+    {'..\075\ICF15017&#8230;'}    {'..\075\ICF17819&#8230;'}    {'1714'}    {'1714'}
+    {'..\117\ICF15517&#8230;'}    {'..\117\IOS15517&#8230;'}    {'1620'}    {'1620'}
+    {'..\126\icf15517&#8230;'}    {'..\126\ICF17419&#8230;'}    {'1710'}    {'2057'}
+    {'..\150\ICF15617&#8230;'}    {'..\150\ICF17519&#8230;'}    {'0322'}    {'0315'}
+    {'..\151\ICF15317&#8230;'}    {'..\151\IOS15317&#8230;'}    {'1880'}    {'1880'}
+    {'..\158\ICF21218&#8230;'}    {'..\158\ICF17519&#8230;'}    {'0558'}    {'0540'}
+    {'..\163\ICF21018&#8230;'}    {'..\163\ICF17519&#8230;'}    {'0274'}    {'0274'}
+    {'..\166\ICF15217&#8230;'}    {'..\166\ICF17419&#8230;'}    {'1955'}    {'1955'}
+    {'..\172\ICF15117&#8230;'}    {'..\172\ICF17819&#8230;'}    {'0444'}    {'0444'}
+    {'..\174\ICF20718&#8230;'}    {'..\174\ICF17819&#8230;'}    {'0605'}    {'0605'}
+    {'..\185\config18&#8230;'}    {'..\185\config18&#8230;'}    {'0365'}    {'0367'}
+    {'..\186\ICF15317&#8230;'}    {'..\186\IOS15317&#8230;'}    {'0315'}    {'0315'}
+    {'..\190\ICF11419&#8230;'}    {'..\190\ICF17519&#8230;'}    {'0410'}    {'0410'}
+    {'..\201\ICF14315&#8230;'}    {'..\201\ICF17519&#8230;'}    {'0320'}    {'0320'}
+    {'..\202\ICF15017&#8230;'}    {'..\202\ICF17519&#8230;'}    {'0270'}    {'0270'}
+    {'..\228\ICF15017&#8230;'}    {'..\228\ICF17419&#8230;'}    {'0242'}    {'0242'}
+
+  Column 10
+
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+    {1&times;6 double}
+
 </pre><h2 id="3">configuration files</h2><pre class="codeinput">close <span class="string">all</span>
 [config_def,TCdef,DTdef,ETCdef,A1def,ATdef]=read_icf(Cal.brw_config_files{Cal.n_inst,2});
 [config_orig,TCorig,DTorig,ETCorig,A1orig,ATorig]=read_icf(Cal.brw_config_files{Cal.n_inst,1});
@@ -149,7 +270,7 @@ cal_step={}; sc_avg={}; sc_raw={}; Args={};
 [cal_step{1},sc_avg{1},sc_raw{1},Args{1}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,1},<span class="keyword">...</span>
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,[1 159]),<span class="keyword">...</span>
                      <span class="string">'CSN_orig'</span>,config_orig(14),<span class="string">'OSC'</span>,Station.OSC,<span class="keyword">...</span>
-                     <span class="string">'control_flag'</span>,0,<span class="string">'residual_limit'</span>,45,<span class="keyword">...</span>
+                     <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,45,<span class="keyword">...</span>
                      <span class="string">'hg_time'</span>,45,<span class="string">'one_flag'</span>,0);
 </pre><pre class="codeoutput">172
 OK-&gt;B11619.172
@@ -175,17 +296,17 @@ OK-&gt;B14019.172
 Unable to perform assignment with 0 elements on the right-hand side. (Bfile B14119.172) File/Line: readb_config/33
 Unable to perform assignment with 0 elements on the right-hand side. (Bfile B14219.172) File/Line: readb_config/33
 Unable to perform assignment with 0 elements on the right-hand side. (Bfile B14519.172) File/Line: readb_config/33
-Warning no depuerd SC
-</pre><img vspace="5" hspace="5" src="cal_report_172b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_03.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
+</pre><img vspace="5" hspace="5" src="cal_report_172b_01.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_02.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_03.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_06.png" alt=""> <h2 id="5">Sun_scan: Campaign</h2><pre class="codeinput">[cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},<span class="keyword">...</span>
                      <span class="string">'date_range'</span>,datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),<span class="keyword">...</span>
                      <span class="string">'CSN_orig'</span>,config_def(14),<span class="string">'OSC'</span>,Station.OSC,<span class="keyword">...</span>
-                     <span class="string">'control_flag'</span>,1,<span class="string">'residual_limit'</span>,35,<span class="keyword">...</span>
+                     <span class="string">'control_flag'</span>,0,<span class="string">'residual_limit'</span>,35,<span class="keyword">...</span>
                      <span class="string">'hg_time'</span>,15,<span class="string">'one_flag'</span>,1);
 </pre><pre class="codeoutput">172
 OK-&gt;B17119.172
 OK-&gt;B17219.172
 OK-&gt;B17319.172
-</pre><img vspace="5" hspace="5" src="cal_report_172b_04.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_05.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_06.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_19.png" alt=""> <pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
+Warning no depuerd SC
+</pre><img vspace="5" hspace="5" src="cal_report_172b_07.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_08.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_09.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_10.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_11.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_12.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_13.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_14.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_15.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_16.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_17.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_18.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_19.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_20.png" alt=""> <pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'SC_INDIVIDUAL'</span>)); figure(ix); set(get(gca,<span class="string">'title'</span>),<span class="string">'FontSize'</span>,8);
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'FontSize'</span>,.9,<span class="string">'Width'</span>,8.5,<span class="string">'Height'</span>,7);
 
 ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'Final_SC_Calculation'</span>));
@@ -198,14 +319,26 @@ ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'Final_SC
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix,<span class="string">'Width'</span>,Width,<span class="string">'Height'</span>,Height);
 
 close <span class="string">all</span>
-</pre><pre class="codeoutput">naux =
-     1
+</pre><pre class="codeoutput">
 naux =
+
      1
+
+
+naux =
+
+     1
+
+
 figura =
+
     '172_figures_Final_SC_Calculation_1'
+
+
 naux =
+
      2
+
 </pre><h2 id="7">Definicion de variables: SC</h2><pre class="codeinput"><span class="keyword">if</span> length(cal_step)&gt;1
    d_p=[length(cal_step)-1 length(cal_step)];   tags={<span class="string">''</span>,<span class="string">'new'</span>};
 <span class="keyword">else</span>
@@ -242,8 +375,11 @@ ldsp=ldsp(end-3:end)<span class="comment">%ldsp=ldsp(end)</span>
        res{jj}=NaN*ones(15,9,2); detail{jj}=NaN*ones(7,6,15,2); QUAD_DETAIL{jj}=NaN;
        <span class="comment">%res{jj}=NaN*ones(9,7,2); detail{jj}=NaN*ones(6,6,9,2); QUAD_DETAIL{jj}=NaN;</span>
     <span class="keyword">end</span>
-</pre><pre class="codeoutput">datefile =
+</pre><pre class="codeoutput">
+datefile =
+
       735401
+
 now:W1016613.172
 now:W3016613.172
 now:W7016613.172
@@ -467,26 +603,56 @@ Ratio Ozone for So2(A3)=  1.1373, So2/O3(A2)=  2.8560
 O3 factor from Bass &amp; Paur to Daumont  =  0.9698 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9944 
 saving powfiu7 to DSP/172_13_167/dsp_16613_172.172
+
 freecoef =
+
      4
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
 saving data to file:DSP/172_13_167/dsp_16613_172.172
 Use brstps2 to calculate steps and wavelengths
 Saving ozonecoeffs to DSP/172_13_167/opos_pow7_16613_172.172
@@ -655,8 +821,11 @@ Ozone offset due to Rayleigh (Bodhaine): -3.2 DU
 Ratio Ozone for So2(A3)=  1.1301, So2/O3(A2)=  2.8653
 O3 factor from Bass &amp; Paur to Daumont  =  0.9684 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9934 
-</pre><img vspace="5" hspace="5" src="cal_report_172b_20.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_29.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_172b_21.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_22.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_23.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_24.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_25.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_26.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_27.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_28.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_29.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_30.png" alt=""> <pre class="codeoutput">
+datefile =
+
       736117
+
 now:W1015215.172
 now:W3015215.172
 now:W7015215.172
@@ -882,26 +1051,56 @@ Ratio Ozone for So2(A3)=  1.1287, So2/O3(A2)=  2.8804
 O3 factor from Bass &amp; Paur to Daumont  =  0.9692 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9940 
 saving powfiu7 to DSP/172_15_153/dsp_15215_172.172
+
 freecoef =
+
      4
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
 saving data to file:DSP/172_15_153/dsp_15215_172.172
 Use brstps2 to calculate steps and wavelengths
 Saving ozonecoeffs to DSP/172_15_153/opos_pow7_15215_172.172
@@ -1070,8 +1269,11 @@ Ozone offset due to Rayleigh (Bodhaine): -3.3 DU
 Ratio Ozone for So2(A3)=  1.1235, So2/O3(A2)=  2.8892
 O3 factor from Bass &amp; Paur to Daumont  =  0.9678 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9930 
-</pre><img vspace="5" hspace="5" src="cal_report_172b_30.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_32.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_33.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_35.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_36.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_39.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_172b_31.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_32.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_33.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_34.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_35.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_36.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_37.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_38.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_39.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_40.png" alt=""> <pre class="codeoutput">
+datefile =
+
       736848
+
 now:W7015317.172
 now:W8015317.172
 now:W9015317.172
@@ -1278,26 +1480,56 @@ Ratio Ozone for So2(A3)=  1.1269, So2/O3(A2)=  2.8876
 O3 factor from Bass &amp; Paur to Daumont  =  0.9676 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9927 
 saving powfiu7 to DSP/172_17_153/dsp_15217_172.172
+
 freecoef =
+
      4
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
 saving data to file:DSP/172_17_153/dsp_15217_172.172
 Use brstps2 to calculate steps and wavelengths
 Saving ozonecoeffs to DSP/172_17_153/opos_pow7_15217_172.172
@@ -1466,8 +1698,11 @@ Ozone offset due to Rayleigh (Bodhaine): -3.2 DU
 Ratio Ozone for So2(A3)=  1.1276, So2/O3(A2)=  2.8678
 O3 factor from Bass &amp; Paur to Daumont  =  0.9678 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9929 
-</pre><img vspace="5" hspace="5" src="cal_report_172b_40.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_42.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_43.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_44.png" alt=""> <pre class="codeoutput">datefile =
+</pre><img vspace="5" hspace="5" src="cal_report_172b_41.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_42.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_43.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_44.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_45.png" alt=""> <pre class="codeoutput">
+datefile =
+
       737599
+
 now:W1017319.172
 now:W3017319.172
 now:W7017319.172
@@ -1695,26 +1930,56 @@ Ratio Ozone for So2(A3)=  1.1248, So2/O3(A2)=  2.8763
 O3 factor from Bass &amp; Paur to Daumont  =  0.9676 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9928 
 saving powfiu7 to DSP/172_19_174/dsp_17319_172.172
+
 freecoef =
+
      4
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
+
 freecoef =
+
      9
+
 saving data to file:DSP/172_19_174/dsp_17319_172.172
 Use brstps2 to calculate steps and wavelengths
 Saving ozonecoeffs to DSP/172_19_174/opos_pow7_17319_172.172
@@ -1883,7 +2148,7 @@ Ozone offset due to Rayleigh (Bodhaine): -3.2 DU
 Ratio Ozone for So2(A3)=  1.1236, So2/O3(A2)=  2.8880
 O3 factor from Bass &amp; Paur to Daumont  =  0.9675 
 O3 factor from Bass &amp; Paur to Bremen  =  0.9927 
-</pre><img vspace="5" hspace="5" src="cal_report_172b_45.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_46.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_47.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_48.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_49.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_50.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_51.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_52.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_53.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_54.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="cal_report_172b_46.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_47.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_48.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_49.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_50.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_51.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_52.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_53.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_54.png" alt=""> <img vspace="5" hspace="5" src="cal_report_172b_55.png" alt=""> <pre class="codeinput"><span class="keyword">end</span>
 load(Cal.file_save,<span class="string">'dsp_summary'</span>);
 dates=sscanf(cell2str(cat(2,ldsp')),<span class="string">'%03d_%03d_%03d,'</span>,[3,Inf]);
 dates=datejul(dates(2:3,:)');dates=dates(:,1);
@@ -1893,30 +2158,55 @@ dsp_summary{Cal.n_inst}.detail=detail;
 dsp_summary{Cal.n_inst}.salida=salida;
 
 save(Cal.file_save,<span class="string">'-APPEND'</span>,<span class="string">'dsp_summary'</span>);
-</pre><pre class="codeoutput">ldsp =
+</pre><pre class="codeoutput">
+ldsp =
+
   4&times;1 cell array
+
     {'172_13_167'}
     {'172_15_153'}
     {'172_17_153'}
     {'172_19_174'}
+
 </pre><pre class="codeinput">ix=sort(findobj(<span class="string">'tag'</span>,<span class="string">'DSP_QUAD_RES'</span>));
 printfiles_report(ix',Cal.dir_figs,<span class="string">'aux_pattern'</span>,ix);
 
 close <span class="string">all</span>
-</pre><pre class="codeoutput">naux =
+</pre><pre class="codeoutput">
+naux =
+
      1
+
+
 figura =
+
     '172_figures_DSP_QUAD_RES_1'
+
+
 naux =
+
      2
+
+
 figura =
+
     '172_figures_DSP_QUAD_RES_2'
+
+
 naux =
+
      3
+
+
 figura =
+
     '172_figures_DSP_QUAD_RES_3'
+
+
 naux =
+
      4
+
 </pre><h2 id="12">Tabla - resumen con resultados DSP y Umkehr</h2><pre class="codeinput"> QUAD_SUM_table={}; rows={}; tabla_QuadSum={}; format <span class="string">short</span> <span class="string">g</span>;
  <span class="keyword">if</span> config_orig(14)~=config_def(14)
     idx=1:length(res)+1; idx(end-1)=0; idx(end)=length(res);
@@ -1960,7 +2250,8 @@ UMK_TABLE={};
     '02-Jun-2015'    [286]    [0.3425]    [ 3.219]    [1.1466]
     '02-Jun-2017'    [286]    [ 0.342]    [3.2256]    [1.1452]
     '23-Jun-2019'    [286]    [0.3412]    [3.2053]    [1.1435]
-    'Final'          [286]    [ 0.341]    [  2.35]    [1.1585]
+    'Final'          [286]    [0.3412]    [  2.35]    [1.1585]
+
 </pre><h2 id="13">Tablas y ficheros de definiciones latex</h2><pre class="codeinput"> indx=1;
 <span class="keyword">for</span> t=1:length(res)
     <span class="keyword">if</span> t==1 indx=[]; <span class="keyword">else</span> indx=t-1; <span class="keyword">end</span>
@@ -2011,17 +2302,29 @@ legend(<span class="string">'quad'</span>,<span class="string">'cubic'</span>)
 datetick;
 grid
 title(Cal.brw_name(Cal.n_inst))
-</pre><pre class="codeoutput">mq =
+</pre><pre class="codeoutput">
+mq =
+
   Columns 1 through 6
+
           286      0.34223       9.7798       3.2128       1.1459       1356.2
+
   Columns 7 through 9
+
       0.35275      0.34414        9.409
+
+
 mc =
+
   Columns 1 through 6
+
           286       0.3414       10.093       3.2098       1.1441       1363.7
+
   Columns 7 through 9
+
        0.3522       0.3435       9.7205
-</pre><img vspace="5" hspace="5" src="cal_report_172b_55.png" alt=""> <h2 id="15">Eto para escribir resultados a hoja excel.</h2><pre>for dsps=1:length(ldsp)
+
+</pre><img vspace="5" hspace="5" src="cal_report_172b_56.png" alt=""> <h2 id="15">Eto para escribir resultados a hoja excel.</h2><pre>for dsps=1:length(ldsp)
     legend1={'step',sprintf('ICF (%d, %d)',CSN_icf{dsps}(1),CSN_icf{dsps}(3)),'abs step','A1 Q','A1 S'};
      dsp_table=NaN*ones(9,size(legend1,2));
      dsp_table(:,1:5)=[res{dsps}(:,1,1),NaN*ones(9,1),res{dsps}(:,1,1)+salida{dsps}{1}.cal_ozonepos,...
@@ -2073,14 +2376,14 @@ close all
 [cal_step{1},sc_avg{1},sc_raw{1},Args{1}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,1},...
                      'date_range',datenum(Cal.Date.cal_year,1,[1 159]),...
                      'CSN_orig',config_orig(14),'OSC',Station.OSC,...
-                     'control_flag',0,'residual_limit',45,...
+                     'control_flag',1,'residual_limit',45,...
                      'hg_time',45,'one_flag',0);
 
 %% Sun_scan: Campaign
 [cal_step{2},sc_avg{2},sc_raw{2},Args{2}]=sc_report(Cal.brw_str{Cal.n_inst},Cal.brw_config_files{Cal.n_inst,2},...
                      'date_range',datenum(Cal.Date.cal_year,1,Cal.calibration_days{Cal.n_inst,1}([1 end])),...
                      'CSN_orig',config_def(14),'OSC',Station.OSC,...
-                     'control_flag',1,'residual_limit',35,...
+                     'control_flag',0,'residual_limit',35,...
                      'hg_time',15,'one_flag',1);
 
 %%
