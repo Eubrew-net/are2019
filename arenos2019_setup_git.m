@@ -17,7 +17,7 @@ if exist('servidor.txt')
 end
 
 
-addpath(genpath(fullfile(Cal.path_root,'..','matlab')));
+addpath(genpath(fullfile(Cal.path_root,'..','..','matlab')));
 Cal.file_save='arenos_2019.mat';
 Cal.campaign='Arenosillo, Huelva (Spain), Jun 27th -- June 05th, 2019';
 %startup
@@ -145,13 +145,13 @@ warning('off', 'MATLAB:xlsread:Mode');
 for iz=1:Cal.n_brw
  try   
     if iz==find(Cal.brw==185) %reference
-       icf_op{iz}=xlsread(fullfile(Cal.path_root,'..','configs',['icf',Cal.brw_str{iz},'.xls']),...
+       icf_op{iz}=xlsread(fullfile(Cal.path_root,'..','..','configs',['icf',Cal.brw_str{iz},'.xls']),...
                          ['icf.',Cal.brw_str{iz}],'','basic');      
-       icf_a{iz}=xlsread(fullfile(Cal.path_root,'..','configs',['icf',Cal.brw_str{iz},'.xls']),...
+       icf_a{iz}=xlsread(fullfile(Cal.path_root,'..','..','configs',['icf',Cal.brw_str{iz},'.xls']),...
                          ['icf_a.',Cal.brw_str{iz}],'','basic');                     
-       [events_n{iz},events_text{iz},events_raw{iz}]=xlsread(fullfile(Cal.path_root,'..','configs',['icf',Cal.brw_str{iz},'.xls']),...
+       [events_n{iz},events_text{iz},events_raw{iz}]=xlsread(fullfile(Cal.path_root,'..','..','configs',['icf',Cal.brw_str{iz},'.xls']),...
                                                              ['Eventos.',Cal.brw_str{iz}],'','basic');
-       [inc_n{iz},incidences_text{iz},incidences_raw{iz}]=xlsread(fullfile(Cal.path_root,'..','configs',['icf',Cal.brw_str{iz},'.xls']),...
+       [inc_n{iz},incidences_text{iz},incidences_raw{iz}]=xlsread(fullfile(Cal.path_root,'..','..','configs',['icf',Cal.brw_str{iz},'.xls']),...
                                                              ['Incidencias.',Cal.brw_str{iz}],'','basic');
     else % not reference. Go to bfiles
       if exist(fullfile(Cal.path_root,'bfiles',Cal.brw_str{iz},['icf',Cal.brw_str{iz},'.xls']),'file')
