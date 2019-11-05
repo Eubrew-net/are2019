@@ -1,0 +1,282 @@
+\include{cal_status_xxx}
+
+\section{Calibration Summary}
+The Thirteenth Intercomparison Campaign of the Regional Brewer Calibration Center Europe (RBCC-E) was held from 30 July – 10 August, 2018 at \textit{Arosa Lichtklimatisches Observatorium}, Switzerland.
+
+%% SUMMARY
+% no blindays
+Brewer \brwname\ participated in the campaign for the period from 30 July – 10 August, 2018 (Julian days \CALINI\ -\CALEND). 
+For the evaluation of initial status, we used 321 simultaneous direct sun ozone measurements from days 149 to 155. In opposite, only the days 153 to 155 were used for final calibration purposes (207 simultaneous measurements).
+
+
+%We did not detect any change in instrument performance before and after the maintenance work,  so we use the same dataset to evaluate the initial status of the instrument as well as for final calibration purposes. We detected several focussing problems with this particular instrument, so we had to discard days 189, 190 and 194 from the analysis.
+
+% blindays
+Brewer \brwname\ participated in the campaign for the period from 30 July – 10 August, 2018 (Julian days \CALINI\ -\CALEND). Cal step was updated on day 191 to a new value \textbf{162}. For the evaluation of initial status, we used AAA simultaneous direct sun ozone measurements from days \textbf{\BLINDINI}\ to \textbf{\BLINDEND}, before the \emph{cal-step} change, whereas days \FINALINI\ to \FINALEND\ were used for final calibration purposes.
+
+ \begin{figure}[htp!]
+ \begin{center}
+		\includegraphics[width=14cm, height=8.5cm]{./xxx_figures/xxx_figures_RATIO_ERRORBAR_all.eps}
+		\caption{Mean direct-sun ozone column percentage difference between Brewer \brwname\ and Brewer \brwref\ as a function of ozone slant path. The shadow areas represent the standard deviation of the mean. Plotted are the final days of the campaign}
+		\label{fig:RATIO_ERRORBAR_summary}
+ \end{center}
+ \end{figure}
+
+%% HISTORIC
+
+As Figure \ref{fig:RATIO_ERRORBAR_summary} shown, the current ICF produces ozone values with a difference around -1.5\% (in average) respect to the reference. This important difference could be associated with the change suffers by the brewer just after the previous campaign (Arenosillo 2015, see Figure \ref{fig:SLAVG_R6}). Applied the SL correction, the results improve slightly with a difference around +0.5\% (in average). The great dependence with the solar angle can be corrected easily as it is indicated in the section \ref{sec:stray}. 
+
+The lamp test results from Brewer \brwname\ present an important jump a November 2015. But after this, it has been very stable during the last 2 years. During campaign days the standard lamp ratios stabilized around values \textbf{\slrefNEW} and \textbf{560} for R6 and R5 respectively (Figures \ref{fig:SL_R6_report} and \ref{fig:SL_R5_report}). This values have been calculated taking into account the new temperature coefficients calculated in this campaign. 
+
+% SL stable
+%The lamp test results from Brewer \brwname\ have been very stable during the last 2 years. During campaign days the standard lamp ratios stabilized around values \textbf{1832} and \textbf{3582} for R6 and R5 respectively (Figures \ref{fig:SL_R6_report} and \ref{fig:SL_R5_report}). This values have been calculated taking into account the new temperature coefficients obtained during this campaign. 
+
+
+All the other parameters analyzed (Run/Stop test, Hg lamp intensity, CZ \& CI files) are ok, except for DT value. This parameter shows a small difference between both original and recorded values, around 2 units (\floatE{3}{8}{\ensuremath{-}8}). 
+
+% SL instable
+%The lamp test results for Brewer \brwname\ shows several different periods during the last two years: from September 2009 to January 2010 standard lamp R6 ratio fits fairly well the current reference value, AAA, Then it was recorded a large increasing in both R6 and R5 ratios, possibly due to standard lamp aging. After the standard lamp replacement in February 2011, sl ratios slowly decreased to the new reference value proposed, \slrefNEW\ and 3130 for R6 and R5 respectively. All the other parameters analyzed are ok (see Section \ref{sec:AVG}).
+
+%% TEMPERATURE COEFFICIENTS & FILTER
+% TC no change
+%We did not detect any appreciable temperature dependence in the ozone or the standard lamp observations, which indicates the correct choice of the temperature coefficients.
+
+
+% Filter OK
+The neutral density filters didn't show nonlinearity in the attenuation's spectral characteristics. We have not applied any correction to filters.
+
+% Filter NOOK
+%We have not applied any correction to filters, but there could be nonlinear effects especially for filters \#3 and \#4.
+
+%Concerning filters performance, we have applied a correction factor -18 to Filter\#4.
+
+%% WAVELENGTH
+% Sun Scan OK
+Unfortunately, the sun-scan (SC) tests performed on the before and during the intercomparison are not conclusive enough to analyze the optical position of the CSN. However, the value of the Ozone Absorption Coefficient has not changed respect to the previous calibration what could suggest that the brewer maintains the same CSN.   
+
+
+%The sun-scan tests (SC) performed at the instrument station, before the campaign, and during the first days of the intercomparison, confirm the current cal step value (290, within $\pm1$ step error).
+
+% Sun Scan NOOK
+%The sun-scan (SC) tests performed during the campaign suggested that a change in cal step number was needed (also confirmed with SC tests performed at the instrument's station, before the campaign). It was updated to a new value 162 on day 191.
+
+% DSP OK
+%We did not change the Ozone Absorption Coefficient (\Aorig).
+
+% DSP NOOK
+%The ozone absorption coefficient in use (\Aorig) is quite different to the value derived from dispersion tests performed in 2009 ($\approx 1$\%) and 2011 ($\approx 1.5$\%). A new value \Adef\ was adopted in final configuration, calculated from the dispersion test performed during the campaign.
+
+%We changed the ozone absorption coefficient to the new value 0.3343 (see Section \ref{sec:WVL} for more details).
+
+%Due to this, the final IFC is totally different respect to the current, with changes in the TC, CSN, ozone absorption coefficients, etc. Therefore, this calibration can be considered as a initial calibration (as a new brewer) 
+
+\subsection{Recommendations and Remarks} \label{subsec:RR}
+
+
+
+\begin{enumerate}%[itemsep=0cm]
+
+	\item A new R6 reference value The standard lamp test results from Brewer LKO\#156 have been very stable during the last 2 years, with mean value \textbf{\slrefOLD}$\pm\ 5$ units for R6 ratio. 
+	
+	\item All the other diagnostics analyzed (RS, AP records ...) were normal, except the measurement of the DT which is really low.
+
+	\item  We suggest using a DT constant of \textbf{\DTdef}\ seconds, which is two units less that it proposed during the last intercomparison. Several studies suggested that a difference around to one nanosecond is admissible for single brewer. 
+
+  \item The neutral density filters have an excellent behaviour and, hence, correction factor is not suggested.
+		
+	\item We have adopted new temperature coefficients. 
+	
+	\item The Sun-scan test are not conclusive enough to analyze the optical position of the CSN. Please, chech the SC rountine and its format inside of B-files. We do nott change the current CSN. 
+	
+	\item Be careful with the virtual box used to run the Brewer software. The header of the B-files are different to the standard format what complicates the calibration. The files B15617.xxx and B15717.xxx we can not operate with them. Fortunately, these days correspond with UV days and the number of DS measurements is low. 
+	
+	\item The instrument performed very well after the calibration constants were applied, with minimal ozone deviations when the stray light correction is used. We recommend the use of the Stray Light correction 
+	
+\end{enumerate}
+
+\subsection{External links}
+
+Configuration File
+
+\url{http://rbcce.aemet.es/svn/campaigns/aro2018/bfiles/xxx/ICF15117.xxx}
+
+Calibration Report summary
+
+\url{https://docs.google.com/document/d/1jWhZeSUgSMYxsZzNhtTf0EGmQJJ8oqmnKGsuDpGauEQ/edit}
+
+Calibration Report
+
+\url{https://docs.google.com/spreadsheets/d/1vVnhbKOUtUyDw_5emqG9q2JLHmQi-yYTYM-nsULwA4o/edit#gid=4}
+
+
+\textbf{Calibration Reports Detailed}
+
+Historic and instrumental
+
+\url{http://rbcce.aemet.es/svn/campaigns/aro2018/latex/xxx/html/cal_report_xxxa1.html} 
+
+Temperature \& Filter
+
+\url{http://rbcce.aemet.es/svn/campaigns/aro2018/latex/xxx/html/cal_report_xxxa2.html}
+
+Wavelength 
+
+\url{http://rbcce.aemet.es/svn/campaigns/aro2018/latex/xxx/html/cal_report_xxxb.html}
+
+ETC transfer
+
+\url{http://rbcce.aemet.es/svn/campaigns/aro2018/latex/xxx/html/cal_report_xxxc.html} 
+
+
+\clearpage
+%% ETC transfer
+
+
+
+%% ETC transfer
+
+\section{Instrument History: Analysis of Average files} \label{sec:AVG}
+
+\subsection{Standard Lamp Test} \label{subsec:SL}
+
+As shown in Figure \ref{fig:SLAVG_R6} and \ref{fig:SLAVG_R5}, the standard lamp test performance is very stable since the November 2015 with mean values around \textbf{\slrefNEW} and \textbf{1120} for R6 and R5. However, the current R6 values is 20 units less that the reference value gives in the previous intercomparison campaign. This jump can be associated with a variation of the intensity lamp as shows the Figure \ref{fig:SLAVG_F5}.  Finally, a small seasonal variations can be identified.
+
+\begin{figure}[hbtp!]
+\begin{center}
+     \includegraphics[width=15cm]{./xxx_figures/xxx_figures_SLAVG_R6.eps}
+     \caption{Standard Lamp test R6 (Ozone) ratios. Horizontal lines are labeled with the original and final reference values (the red and the light blue lines respectively)}
+	   \label{fig:SLAVG_R6}
+\end{center}
+\end{figure}
+
+\begin{figure}[hbtp!]
+\begin{center}
+     \includegraphics[width=12.5cm]{./xxx_figures/xxx_figures_SLAVG_R5_1.eps}
+     \caption{Standard Lamp test R5 ($SO_2$) ratios}
+	   \label{fig:SLAVG_R5}
+\end{center}
+\end{figure}
+%% Figura intensidad
+\begin{figure}[hbtp!]
+\begin{center}
+     \includegraphics[width=12.5cm]{./xxx_figures/xxx_figures_SLAVG_F5_2.eps}
+     \caption{SL intensity slit five. The intensity jump is due to the HV increased in the PMT.}
+	   \label{fig:SLAVG_F5}
+\end{center}
+\end{figure}
+
+\newpage
+\subsection{Run Stop and Dead Time} \label{subsec:DT}
+
+Run stops test values are within the test tolerance range. In fact, the Hg slit  is noisier but inside of the normal range of this slit, see Figure \ref{fig:RSAVG}. 
+
+In opposite, the current Dead Time reference value \textbf{\DTorig}\ seconds is slightly lagger to the value recorded during the calibration period (\textbf{\DTAVG}\ s). Therefore, this new value has been used in the new ICF, see Figure \ref{fig:DTAVG}.
+% FIGURA Run Stop
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=10Cm]{./xxx_figures/xxx_figures_RSAVG.eps}
+           \caption{Run Stop test}
+	         \label{fig:RSAVG}
+\end{center}
+\end{figure}
+
+%Figura DT
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=12cm]{./xxx_figures/xxx_figures_DTAVG_4.eps}
+           \caption{Dead Time test. Horizontal lines is labelled with the final reference}
+	         \label{fig:DTAVG}
+\end{center}
+\end{figure}
+%\begin{figure}[hbtp!]
+%\begin{center}
+%\includegraphics{./xxx_figures/DT.png}
+   %        \caption{Monthly average of the Dead Time values.}
+	%         \label{fig:DTAVG}
+%\end{center}
+%\end{figure}
+
+
+\subsection{Analog Test} \label{subsec:AP}
+The Figure \ref{fig:APAVG} shows that high voltage has remained almost constant around at 1610 in the last two years. In addiction, analog test values are within the test tolerance range. 
+
+%However some seasonal cycle in the +5 voltage power supply can be observed, with maximum values ocurring during warmer months. This could be evidence that the seasonal cycle observed in SL ratios is not related to the instrument response.
+
+% Figura APAVG
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=9.5cm]{./xxx_figures/xxx_figures_APAVG_6.eps}
+           \caption{Analog voltages and intensity}
+	         \label{fig:APAVG}
+\end{center}
+\end{figure}
+
+\subsection{Mercury Lamp Test} \label{subsec:HG}
+No noticeable internal mercury lamp intensity events can be reported during the campaign. But, it has been indicated that the Hg lamp was replacement in several times. In the last year, the lamp intensity has decreased slowly. %A certain temperature dependence can be identified.
+
+%Otras frases:::
+%-During the campaign days a small decrease in Hg lamp intensity was recorded, probably due to maintenance works.
+%-During the campaign days an increase in Hg lamp intensity was recorded, mainly related with the Hg internal lamp replacement (the Hg internal lamp was replaced on day 201). It is recommended to check CSN setting during the next months.-During the campaign days an increase in Hg lamp intensity was recorded related with Hg internal lamp replacement. It is recommended to check CSN setting during the next months.
+
+% Figura HGOAVG
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=9.8cm]{./xxx_figures/xxx_figures_HGOAVG_1.eps}
+           \caption{Mercury lamp intensity (green squares) and Brewer temperature registered (black dots). Both parameters refer to maximum values for each day}
+           \label{fig:HGAVG}
+\end{center}
+\end{figure}
+
+%\newpage
+\subsection{CZ scan on mercury lamp} \label{subsec:CZ}
+
+ATENCION: en un brewer simple solo se analiza una línea y en el doble 2, así que hay que adaptar el texto
+
+SImple
+We analyzed the scans performed on the 296.728\ \emph{nm} mercury line, in order to check both the wavelength settings and the slit function width. As a reference, the calculated scan peak, in wavelength units, should be within $ 0.013\;\emph{nm}$ from the nominal value, whereas the calculated slit function width should be no more than $0.65$ \emph{nm}. Analysis of CZ scans performed on Brewer \textbf{\brwname}\ during the campaign show quite nice results, with the peak of the calculated scans within the accepted tolerance range.Regarding the slit function width, results are good, with FWHM parameter lower than 6.5 \AA.
+
+Doble
+We analyzed the scans performed on the 296.728\ \emph{nm} and 334.148\ \emph{nm}  mercury line, in order to check both the wavelength settings and the slit function width. As a reference, the calculated scan peak, in wavelength units, should be within $ 0.013\;\emph{nm}$ from the nominal value, whereas the calculated slit function width should be no more than $0.65$ \emph{nm}. Analysis of CZ scans performed on Brewer \textbf{\brwname}\ during the campaign show quite nice results, with the peak of the calculated scans within the accepted tolerance range.Regarding the slit function width, results are good, with FWHM parameter lower than 6.5 \AA.
+
+- Si la medida sale mal, ponemos esta frase.
+Analysis of CZ scans performed on Brewer \textbf{\brwname}\ during the campaign shows a discrepancy between the calculated line peak and the nominal value just slightly above the upper tolerance limit \mbox{(see Figure \ref{fig:CZreport})}.
+
+
+FIGURAS BREWER SIMPLE
+
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=12Cm]{./xxx_figures/xxx_figures_CZ_Report_HS.eps}
+           \caption{CZ scan on 296.728 \emph{nm}\ Hg line. Upper figure shows differences with respect to the reference line (solid lines represent the limit $\pm0.013\:\emph{nm}$) as computed by two different methods: slopes method (red circles) and center of mass method (green squares). Lower figure shows Full Width at Half Maximum value for each scan performed. Solid line represents the limit 0.65 \emph{nm}}
+	         \label{fig:CZreport}
+\end{center}
+\end{figure}
+
+FIGURAS BREWER DOBLE
+
+\begin{figure}[bhtp!]
+\begin{center}
+%\IfFileExists{./xxx_figures/xxx_figures_CZ_Report_HS.eps}
+
+\subfigure[\textsl{CZ scan on 296.728nm}]{\label{fig:CZreport1_1}
+\includegraphics[width=10Cm]{./xxx_figures/xxx_figures_CZ_Report_HS.eps}}
+\subfigure[\textsl{CZ scan on 334.148nm}]{\label{fig:CZreport1_2}
+\includegraphics[width=10Cm]{./xxx_figures/xxx_figures_CZ_Report_HS.eps}}
+\caption{CZ scan on Hg lines. The figure shows differences with respect to the reference line (solid lines represent the limit $\pm0.013\:\emph{nm}$) as computed by two different methods: slopes method (red circles) and center of mass method (green squares). Lower figure shows Full Width at Half Maximum value for each scan performed. Solid line represents the limit 0.65 \emph{nm}}
+\label{fig:CZreport1}
+
+\end{center}
+\end{figure}
+% Figuras CI
+
+\newpage
+\subsection{CI scan on internal \emph{SL}} \label{subsec:CI}
+CI scans of standard lamp recorded at different times can be compared to investigate whether the instrument has changed its spectral sensitivity. We shown in Figure \ref{fig:CIreport} percentage ratios of the Brewer \textbf{\brwname} CI scans performed during the campaign relative to the scan CI27516.172. As it can be observed, the lamp intensity has varied respect to the reference spectrum around 2\%. Similar variation have been observed in the daily  R6 and R5 values. This behavior is normal for a SL lamp.
+%Unfortunately, the possible changes in the lamp intensity are framed due to maintenance operations (increased HV volt). Therefore, the results of this test are inconclusive.
+\begin{figure}[hbtp!]
+\begin{center}   
+\includegraphics[width=16Cm]{./xxx_figures/xxx_figures_CI_Report.eps}
+           \caption{CI scan of Standard Lamp performed during the campaign days. Scans processed (upper figure) and relative differences with respect to a selected reference scan (lower figure). Red line represents the mean of all relative differences}
+	         \label{fig:CIreport}
+\end{center}
+\end{figure}

@@ -1,0 +1,62 @@
+\include{cal_filter_xxx}
+\section{Attenuation Filter Characterization} \label{sec:FI}
+
+\subsection{Attenuation Filter Correction} \label{subsec:FIC}
+%% general text
+Filter's spectral dependence affects the ozone calculation since it is assumed in brewer software that the attenuation is wavelength-neutral. We can estimate the correction factor needed for this non-linearity by multiplying the attenuation of every filter and every wavelength by the ozone weighting coefficients
+In this respect,during the calibration period a total of \textbf{\NFI}\ FI tests has been analyzed to calculate the attenuation  for every filter and slit. Due to the low number of measurements, attenuation correction factor 
+are nor suggested.
+%No correction factor is needed to account for non-linearity of ND filters. So, ND\#1, ND\#2 and ND\#4 present a correction factor lower than 5 units. In opposite, ND\#3 and ND\#5 the correction factor calculated is higher that 5 units, however, the mean 95\%CI suggested that the values calculated do filter canlow value of correction  (the correction factor deduced was lower than 5 units for both ND\#3 and ND\#4, see Table \ref{tab:filter_correction}). On the other hand, the computed mean attenuation for each filter is quite similar to the operational values (relative percentage differences on the order of 2\%). No change is suggested.
+
+
+
+\begin{table}[b] \centering
+	\caption{ETC correction due to Filter non-linearity. Median value, mean values and, 95\% confidence intervals are calculated using bootstrap technique}
+	\label{tab:filter_correction}
+	\include{table_filter_correction_xxx}
+\end{table}
+
+\begin{figure}[hbtp!]
+\begin{center}
+\includegraphics[width=16cm]{./xxx_figures/xxx_figures_FIOSTATS_2.eps}
+         \caption{Notched box-plot for the calculated attenuation relative differences of neutral density filters with respect to operational values. We show for each subplot relative differences corresponding to correlative filters (color box-plots). Solid lines and boxes mark the median, upper and lower quartiles. The point whose distance from the upper or lower quartile is 1 times larger than the interquartile range is defined as outlier}
+         \label{fig:FIOSTATS}
+\end{center}
+\end{figure}
+%
+%%% Intensity test
+%% No change
+%Calculated mean attenuation values for every filter are compared with operational values (see Table \ref{tab:filter_table} and Figure \ref{fig:FIOSTATS}), updating them (\texttt{ICF} file) when necessary. Individual values for every wavelength and every filter should be used for aerosol optical depth calculations. In the case of Brewer \brwname\ the calculated mean attenuation values for every filter are similar to the operational values (relative percentage differences on the order of 5\%), on the one hand, whereas the observed transitions between successive filters are quite smooth in terms of attenuation (relative percentage differences lower than 10\% when changing filter), on the other hand. No change is suggested.
+%
+%% Change
+%Calculated mean attenuation values for every filter are compared with operational values (see Figure \ref{fig:FIOSTATS}), updating them (\texttt{ICF} file) when necessary. Individual values for every wavelength and every filter should be used for aerosol optical depth calculations. In the case of Brewer \brwname\ the calculated mean attenuations (Table \ref{tab:filter_table}) are quite different to the operational (different from nominal) values, especially for Filters \#1 and \#4. In addition, we observe in Figure \ref{fig:FIOSTATS} notable differences between successive filters. We updated the attenuations in icf file provided.
+%
+%Calculated mean attenuation values for every filter are compared with operational values (see Figure \ref{fig:FIOSTATS}), updating them (\texttt{ICF} file) when necessary. Individual values for every wavelength and every filter should be used for aerosol optical depth calculations. The calculated mean attenuation values for every filter (Table \ref{tab:filter_table}) are quite different to the operational attenuations (nominal values). In addition to that, differences greater than 10\% are observed when changing filter. We update attenuations in icf file provided.
+%
+%
+%\vspace{.5cm}
+%\begin{table}[hbp!] \centering
+	%\caption{Filter attenuation by wavelength}
+	%\label{tab:filter_table}
+	%\rowcolors{8}{}{gray!35}
+	%\include{table_filter_xxx}
+%\end{table}
+%
+%\vspace{.5cm}
+%\begin{figure}[hbtp!]
+%\begin{center}
+%
+%\IfFileExists{./xxx_figures/xxx_figures_FIOSTATS_2.eps}
+%{% if
+%\includegraphics{./xxx_figures/xxx_figures_FIOSTATS_2.eps}
+         %\caption{Notched box-plot for the calculated attenuation relative differences of neutral density filters with respect to operational values. We show for each subplot relative differences corresponding to correlative filters (color box-plots). Solid lines and boxes mark the median, upper and lower quartiles. The point whose distance from the upper or lower quartile is 1 times larger than the interquartile range is defined as outlier}
+         %\label{fig:FIOSTATS}
+%}
+%{% else
+%\includegraphics{./xxx_figures/xxx_figures_FIOSTATS_1.eps}
+         %\caption{Notched box-plot for the calculated attenuation relative differences of neutral density filters with respect to operational values. We show for each subplot relative differences corresponding to correlative filters (color box-plots). Solid lines and boxes mark the median, upper and lower quartiles. The point whose distance from the upper or lower quartile is 1 times larger than the interquartile range is defined as outlier}
+         %\label{fig:FIOSTATS}
+%}
+%
+%\end{center}
+%\end{figure}
